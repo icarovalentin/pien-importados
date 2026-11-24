@@ -21,7 +21,11 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
   const whatsappUrl = getProductWhatsAppUrl(product, defaultVariant);
   const isProntaEntrega = product.status === 'pronta_entrega';
   const hasVariants = Boolean(product.variants && product.variants.length > 0);
-  const displayPrice = defaultVariant?.price ?? product.price;
+  const variantPrices = (product.variants || []).map((v) => v.price ?? product.price);
+  const hasPriceRange = variantPrices.length > 1 && new Set(variantPrices).size > 1;
+  const displayPrice = hasPriceRange
+    ? Math.min(...variantPrices)
+    : defaultVariant?.price ?? product.price;
 
   const toggleInterest = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -93,6 +97,11 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
 
         <div className="pt-1 mt-auto flex items-baseline justify-between gap-2">
           <div className="flex items-baseline gap-2">
+            {hasPriceRange && (
+              <span className="text-[10px] uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
+                a partir de
+              </span>
+            )}
             <span className="text-sm font-semibold text-[#141414] dark:text-white">
               {formatCurrency(displayPrice)}
             </span>

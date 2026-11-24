@@ -8,6 +8,12 @@ export interface ProductVariant {
   id: string;
   label: string;
   price?: number;
+  /** Fotos próprias da variação (trocam a galeria quando selecionada) */
+  images?: string[];
+  /** Descrição própria da variação (substitui a do produto quando selecionada) */
+  description?: string;
+  /** Especificações próprias da variação */
+  specs?: string[];
 }
 
 export interface Product {

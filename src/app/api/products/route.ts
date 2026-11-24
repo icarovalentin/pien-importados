@@ -54,7 +54,7 @@ function isSafeImageUrl(url: unknown): url is string {
   if (typeof url !== 'string') return false;
   const trimmed = url.trim();
   if (trimmed.length > 1000) return false;
-  if (/^\/uploads\/[A-Za-z0-9._-]+$/.test(trimmed) && !trimmed.includes('..')) {
+  if (/^\/(uploads|catalog)\/[A-Za-z0-9._\/-]+$/.test(trimmed) && !trimmed.includes('..')) {
     return true;
   }
   try {
@@ -87,15 +87,25 @@ function sanitizeString(value: unknown, fallback = '', maxLen = 500): string {
   return value.trim().slice(0, maxLen);
 }
 
+function sanitizeStringList(raw: unknown, maxItems: number, maxLen: number): string[] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .filter((s: unknown): s is string => typeof s === 'string' && s.trim().length > 0)
+    .map((s) => s.trim().slice(0, maxLen))
+    .slice(0, maxItems);
+}
+
 function sanitizeVariants(raw: unknown): ProductVariant[] {
   if (!Array.isArray(raw)) return [];
   const result: ProductVariant[] = [];
-  for (let i = 0; i < raw.length && result.length < 20; i++) {
-    const item = raw[i];
+  const usedLabels = new Set<string>();
+  for (let i = 0; i < raw.length && result.length < 100; i++) {
+    const item = raw[i] as ProductVariant | null;
     if (!item || typeof item !== 'object') continue;
-    const label = sanitizeString((item as ProductVariant).label, '', 60);
-    if (!label) continue;
-    const rawPrice = (item as ProductVariant).price;
+    const label = sanitizeString(item.label, '', 60);
+    if (!label || usedLabels.has(label)) continue; // o rótulo identifica a variação na sacola
+    usedLabels.add(label);
+    const rawPrice = item.price;
     let price: number | undefined;
     if (rawPrice !== undefined && rawPrice !== null && String(rawPrice).trim() !== '') {
       const parsed = Number(rawPrice);
@@ -103,8 +113,15 @@ function sanitizeVariants(raw: unknown): ProductVariant[] {
         price = parsed;
       }
     }
-    const id = sanitizeString((item as ProductVariant).id, `var-${i + 1}`, 40) || `var-${i + 1}`;
-    result.push({ id, label, price });
+    const id = sanitizeString(item.id, `var-${i + 1}`, 60) || `var-${i + 1}`;
+    const variant: ProductVariant = { id, label, price };
+    const images = Array.isArray(item.images) ? item.images.filter(isSafeImageUrl).slice(0, 10) : [];
+    if (images.length > 0) variant.images = images;
+    const description = sanitizeString(item.description, '', 2000);
+    if (description) variant.description = description;
+    const specs = sanitizeStringList(item.specs, 20, 200);
+    if (specs.length > 0) variant.specs = specs;
+    result.push(variant);
   }
   return result;
 }
