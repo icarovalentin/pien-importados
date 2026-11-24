@@ -41,7 +41,7 @@ export default function AdminPage() {
   // Campos do Formulário
   const [formName, setFormName] = useState('');
   const [formBrand, setFormBrand] = useState('');
-  const [formCategory, setFormCategory] = useState<'perfumes' | 'beleza' | 'eletronicos' | 'acessorios'>('perfumes');
+  const [formCategory, setFormCategory] = useState<'perfumes' | 'beleza' | 'eletronicos' | 'smartphones' | 'acessorios'>('perfumes');
   const [formCategoryLabel, setFormCategoryLabel] = useState('');
   const [formPrice, setFormPrice] = useState('');
   const [formOriginalPrice, setFormOriginalPrice] = useState('');
@@ -717,19 +717,21 @@ export default function AdminPage() {
                       const cat = e.target.value as any;
                       setFormCategory(cat);
                       const labels: Record<string, string> = {
-                        perfumes: 'Perfumaria Fina',
+                        perfumes: 'Perfumaria',
+                        eletronicos: 'Eletrônicos',
+                        smartphones: 'Smartphones',
+                        acessorios: 'Tech & Acessórios',
                         beleza: "Victoria's Secret & Cuidados",
-                        eletronicos: 'Som JBL & Eletrônicos',
-                        acessorios: 'Acessórios Tech',
                       };
                       setFormCategoryLabel(labels[cat] || cat);
                     }}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-gold-500"
                   >
-                    <option value="perfumes">Perfumaria Fina</option>
+                    <option value="perfumes">Perfumaria</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="smartphones">Smartphones</option>
+                    <option value="acessorios">Tech &amp; Acessórios</option>
                     <option value="beleza">Victoria&apos;s Secret &amp; Cuidados</option>
-                    <option value="eletronicos">Som JBL &amp; Eletrônicos</option>
-                    <option value="acessorios">Acessórios Tech</option>
                   </select>
                 </div>
               </div>

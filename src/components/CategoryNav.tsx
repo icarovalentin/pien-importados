@@ -14,10 +14,10 @@ interface CategoryNavProps {
 }
 
 const CATEGORIES: { id: CategoryType; label: string }[] = [
-  { id: 'todos', label: 'Todos' },
+  { id: 'todos', label: 'Novidades' },
   { id: 'perfumes', label: 'Perfumaria' },
-  { id: 'beleza', label: "Victoria's Secret" },
-  { id: 'eletronicos', label: 'Som JBL' },
+  { id: 'eletronicos', label: 'Eletrônicos' },
+  { id: 'smartphones', label: 'Smartphones' },
   { id: 'acessorios', label: 'Tech & Acessórios' },
 ];
 

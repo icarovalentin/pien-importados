@@ -5,7 +5,7 @@ import { Product } from '@/types/product';
 import { isAdminAuthenticated } from '@/lib/auth';
 
 const filePath = path.join(process.cwd(), 'src', 'data', 'products.json');
-const ALLOWED_CATEGORIES = new Set(['perfumes', 'beleza', 'eletronicos', 'acessorios']);
+const ALLOWED_CATEGORIES = new Set(['perfumes', 'beleza', 'eletronicos', 'smartphones', 'acessorios']);
 const DEFAULT_IMAGE =
   'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80';
 

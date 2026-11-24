@@ -75,7 +75,7 @@ const SLIDES: BannerSlide[] = [
   },
 ];
 
-const FEATURED_BRANDS = [
+const DEFAULT_BRANDS = [
   'DIOR',
   'CAROLINA HERRERA',
   "VICTORIA'S SECRET",
@@ -86,9 +86,17 @@ const FEATURED_BRANDS = [
 interface RotatingHeroBannerProps {
   onScrollToCatalog: () => void;
   onSelectBrand?: (brand: string) => void;
+  brands?: string[];
+  activeBrand?: string;
 }
 
-export function RotatingHeroBanner({ onScrollToCatalog, onSelectBrand }: RotatingHeroBannerProps) {
+export function RotatingHeroBanner({
+  onScrollToCatalog,
+  onSelectBrand,
+  brands,
+  activeBrand,
+}: RotatingHeroBannerProps) {
+  const brandList = brands && brands.length > 0 ? brands : DEFAULT_BRANDS;
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -221,21 +229,29 @@ export function RotatingHeroBanner({ onScrollToCatalog, onSelectBrand }: Rotatin
 
       {/* Faixa de Marcas Trabalhadas */}
       <div className="bg-[#f6f3ec] dark:bg-dark-900/70 border-t border-[#e5e0d5] dark:border-dark-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-6 overflow-x-auto scrollbar-none">
-          {FEATURED_BRANDS.map((brand) => (
-            <button
-              key={brand}
-              onClick={() => {
-                if (onSelectBrand) {
-                  onSelectBrand(brand === "VICTORIA'S SECRET" ? 'Victoria' : brand);
-                }
-                onScrollToCatalog();
-              }}
-              className="text-[10px] sm:text-[11px] uppercase tracking-[0.24em] text-zinc-500 dark:text-zinc-400 hover:text-[#141414] dark:hover:text-gold-400 whitespace-nowrap transition-colors"
-            >
-              {brand}
-            </button>
-          ))}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-start sm:justify-center gap-7 sm:gap-10 overflow-x-auto scrollbar-none">
+          {brandList.map((brand) => {
+            const isActive =
+              activeBrand && activeBrand.trim().toLowerCase() === brand.toLowerCase();
+            return (
+              <button
+                key={brand}
+                onClick={() => {
+                  if (onSelectBrand) {
+                    onSelectBrand(isActive ? '' : brand);
+                  }
+                  onScrollToCatalog();
+                }}
+                className={`text-[10px] sm:text-[11px] uppercase tracking-[0.22em] whitespace-nowrap transition-colors ${
+                  isActive
+                    ? 'text-[#141414] dark:text-gold-400 font-semibold underline underline-offset-4'
+                    : 'text-zinc-500 dark:text-zinc-400 hover:text-[#141414] dark:hover:text-gold-400'
+                }`}
+              >
+                {brand}
+              </button>
+            );
+          })}
         </div>
       </div>
     </section>

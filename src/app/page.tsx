@@ -50,10 +50,32 @@ export default function HomePage() {
     [products]
   );
 
+  // Extrai automaticamente as marcas únicas dos produtos cadastrados
+  const availableBrands = useMemo(() => {
+    const seen = new Set<string>();
+    const result: string[] = [];
+    for (const p of products) {
+      const brand = p.brand?.trim();
+      if (!brand) continue;
+      const key = brand.toLowerCase();
+      if (!seen.has(key)) {
+        seen.add(key);
+        result.push(brand);
+      }
+    }
+    return result;
+  }, [products]);
+
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
-      if (selectedCategory !== 'todos' && product.category !== selectedCategory) {
-        return false;
+      if (selectedCategory !== 'todos') {
+        if (selectedCategory === 'perfumes') {
+          if (product.category !== 'perfumes' && product.category !== 'beleza') {
+            return false;
+          }
+        } else if (product.category !== selectedCategory) {
+          return false;
+        }
       }
 
       if (selectedStock !== 'todos' && product.status !== selectedStock) {
@@ -87,6 +109,8 @@ export default function HomePage() {
 
       <RotatingHeroBanner
         onScrollToCatalog={scrollToCatalog}
+        brands={availableBrands}
+        activeBrand={searchTerm}
         onSelectBrand={(brand) => {
           setSelectedCategory('todos');
           setSelectedStock('todos');
