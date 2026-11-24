@@ -53,7 +53,7 @@ export function Footer() {
             <p className="text-zinc-600 dark:text-zinc-400 text-xs">
               Todas as cotações, pedidos e dúvidas são atendidas diretamente no WhatsApp.
             </p>
-            <div className="pt-1">
+            <div className="pt-1 flex flex-col gap-1.5 items-start">
               <a
                 href={supportUrl}
                 target="_blank"
@@ -61,7 +61,7 @@ export function Footer() {
                 className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs shadow-md transition-all"
               >
                 <MessageCircle className="w-4 h-4 fill-white" />
-                <span>Iniciar Conversa</span>
+                <span>+595 973 860900</span>
               </a>
             </div>
 

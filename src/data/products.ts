@@ -1,6 +1,7 @@
 import { Product } from '@/types/product';
 
-export const STORE_PHONE_NUMBER = '5511999999999'; // Número do WhatsApp (configurável)
+export const STORE_PHONE_NUMBER = '595973860900'; // Número do WhatsApp Pien Importados
+export const STORE_PHONE_DISPLAY = '+595 973 860900';
 
 export const PRODUCTS: Product[] = [
   // --- PERFUMES ---
