@@ -474,7 +474,7 @@ export default function AdminPage() {
           <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-800 shadow-sm flex items-center justify-between">
             <div>
               <p className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
-                🟢 Pronta-Entrega
+                Pronta-Entrega
               </p>
               <p className="text-2xl sm:text-3xl font-extrabold text-zinc-900 dark:text-white mt-1">
                 {stats.pronta}
@@ -488,7 +488,7 @@ export default function AdminPage() {
           <div className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-800 shadow-sm flex items-center justify-between">
             <div>
               <p className="text-xs font-semibold text-amber-600 dark:text-amber-400 uppercase tracking-wider">
-                🟡 Sob Encomenda
+                Sob Encomenda
               </p>
               <p className="text-2xl sm:text-3xl font-extrabold text-zinc-900 dark:text-white mt-1">
                 {stats.encomenda}
@@ -532,7 +532,7 @@ export default function AdminPage() {
                   : 'bg-zinc-100 dark:bg-dark-800 text-zinc-600 dark:text-zinc-400'
               }`}
             >
-              🟢 Pronta ({stats.pronta})
+              Pronta ({stats.pronta})
             </button>
             <button
               onClick={() => setStockFilter('encomenda')}
@@ -542,7 +542,7 @@ export default function AdminPage() {
                   : 'bg-zinc-100 dark:bg-dark-800 text-zinc-600 dark:text-zinc-400'
               }`}
             >
-              🟡 Encomenda ({stats.encomenda})
+              Encomenda ({stats.encomenda})
             </button>
           </div>
         </div>
@@ -624,7 +624,7 @@ export default function AdminPage() {
                           isPronta ? 'bg-emerald-500' : 'bg-amber-500'
                         }`}
                       />
-                      <span>{isPronta ? '🟢 Pronta-Entrega' : '🟡 Sob Encomenda'}</span>
+                      <span>{isPronta ? 'Pronta-Entrega' : 'Sob Encomenda'}</span>
                     </button>
 
                     {/* Botão Editar */}
@@ -726,10 +726,10 @@ export default function AdminPage() {
                     }}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-gold-500"
                   >
-                    <option value="perfumes">🌸 Perfumaria Fina</option>
-                    <option value="beleza">💄 Victoria&apos;s Secret & Cuidados</option>
-                    <option value="eletronicos">🔊 Som JBL & Eletrônicos</option>
-                    <option value="acessorios">⚡ Acessórios Tech</option>
+                    <option value="perfumes">Perfumaria Fina</option>
+                    <option value="beleza">Victoria&apos;s Secret &amp; Cuidados</option>
+                    <option value="eletronicos">Som JBL &amp; Eletrônicos</option>
+                    <option value="acessorios">Acessórios Tech</option>
                   </select>
                 </div>
               </div>
@@ -784,7 +784,7 @@ export default function AdminPage() {
                     }`}
                   >
                     <span className="w-2 h-2 rounded-full bg-white" />
-                    <span>🟢 Pronta-Entrega</span>
+                    <span>Pronta-Entrega</span>
                   </button>
 
                   <button
@@ -800,7 +800,7 @@ export default function AdminPage() {
                     }`}
                   >
                     <span className="w-2 h-2 rounded-full bg-white" />
-                    <span>🟡 Sob Encomenda</span>
+                    <span>Sob Encomenda</span>
                   </button>
                 </div>
 

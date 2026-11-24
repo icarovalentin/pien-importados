@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Pien Importados | Perfumaria, Victoria\'s Secret & Som JBL 100% Originais',
-  description: 'Catálogo oficial da Pien Importados. Perfumes importados, hidratantes Victoria\'s Secret, caixas de som JBL e eletrônicos premium à pronta-entrega e sob encomenda.',
+  title: 'Pien Importados | Perfumaria, Victoria\'s Secret & Som JBL Originais',
+  description: 'Catálogo oficial da Pien Importados. Perfumes importados, hidratantes Victoria\'s Secret, caixas de som JBL e eletrônicos à pronta-entrega e sob encomenda.',
   keywords: [
     'Pien Importados',
     'Victoria Secret original',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Pien Importados | Catálogo Oficial de Importados',
-    description: 'Perfumaria de luxo, Victoria\'s Secret e caixas de som JBL com procedência comprovada e garantia de originalidade.',
+    description: 'Perfumaria de grife, Victoria\'s Secret e caixas de som JBL com procedência comprovada e garantia de originalidade.',
     locale: 'pt_BR',
     type: 'website',
   },
@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`dark ${inter.variable} ${playfair.variable}`}>
+    <html lang="pt-BR" className={`${inter.variable} ${playfair.variable}`}>
       <body className="antialiased min-h-screen font-sans">
         <ThemeProvider>
           <InterestListProvider>

@@ -11,7 +11,7 @@ import { ProductModal } from '@/components/ProductModal';
 import { InterestListDrawer } from '@/components/InterestListDrawer';
 import { TrustSection } from '@/components/TrustSection';
 import { Footer } from '@/components/Footer';
-import { Sparkles, MessageCircle, ShoppingBag } from 'lucide-react';
+import { ShoppingBag, MessageCircle } from 'lucide-react';
 import { useInterestList } from '@/context/InterestListContext';
 import { getGeneralSupportWhatsAppUrl } from '@/utils/whatsapp';
 
@@ -26,7 +26,6 @@ export default function HomePage() {
   const { items, setIsDrawerOpen } = useInterestList();
   const supportUrl = getGeneralSupportWhatsAppUrl();
 
-  // Carrega produtos dinamicamente da API para refletir mudanças do Admin
   useEffect(() => {
     fetch('/api/products')
       .then((res) => res.json())
@@ -42,7 +41,6 @@ export default function HomePage() {
     catalogRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Contadores para os filtros
   const prontaEntregaCount = useMemo(
     () => products.filter((p) => p.status === 'pronta_entrega').length,
     [products]
@@ -52,20 +50,16 @@ export default function HomePage() {
     [products]
   );
 
-  // Filtragem dinâmica de produtos
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
-      // Filtro de Categoria
       if (selectedCategory !== 'todos' && product.category !== selectedCategory) {
         return false;
       }
 
-      // Filtro de Estoque
       if (selectedStock !== 'todos' && product.status !== selectedStock) {
         return false;
       }
 
-      // Filtro de Busca por texto
       if (searchTerm.trim() !== '') {
         const query = searchTerm.toLowerCase();
         const matchName = product.name.toLowerCase().includes(query);
@@ -82,25 +76,62 @@ export default function HomePage() {
   }, [products, selectedCategory, selectedStock, searchTerm]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-dark-950 text-zinc-900 dark:text-zinc-100 selection:bg-gold-500/30 selection:text-gold-900 dark:selection:text-gold-200 transition-colors">
-      {/* Barra de Navegação */}
+    <div className="min-h-screen flex flex-col bg-[#fcfbf8] dark:bg-[#0c0c0f] text-[#141414] dark:text-zinc-100 selection:bg-[#d4af37]/25 transition-colors">
       <Navbar
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
-        selectedStockFilter={selectedStock}
-        setSelectedStockFilter={setSelectedStock}
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        onScrollToCatalog={scrollToCatalog}
       />
 
-      {/* NOVO: Banner Rotativo com 5 Slides de Produtos em Evidência */}
-      <RotatingHeroBanner onScrollToCatalog={scrollToCatalog} />
+      <RotatingHeroBanner
+        onScrollToCatalog={scrollToCatalog}
+        onSelectBrand={(brand) => {
+          setSelectedCategory('todos');
+          setSelectedStock('todos');
+          setSearchTerm(brand);
+        }}
+      />
 
-      {/* Conteúdo Principal do Catálogo */}
       <main
         ref={catalogRef}
         id="catalogo"
-        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6"
+        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8"
       >
-        {/* Navegação por Categorias e Filtros de Estoque */}
+        {/* Cabeçalho da Seção */}
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.22em] text-[#8b6508] dark:text-gold-400 font-semibold">
+              Curadoria Exclusiva
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-display font-normal text-[#141414] dark:text-white mt-1">
+              {selectedStock === 'pronta_entrega'
+                ? 'Pronta-Entrega'
+                : selectedStock === 'encomenda'
+                ? 'Sob Encomenda'
+                : 'Catálogo de Produtos'}
+              <span className="text-sm font-sans text-zinc-400 dark:text-zinc-500 ml-3">
+                ({filteredProducts.length})
+              </span>
+            </h2>
+          </div>
+
+          {(selectedCategory !== 'todos' || selectedStock !== 'todos' || searchTerm) && (
+            <button
+              onClick={() => {
+                setSelectedCategory('todos');
+                setSelectedStock('todos');
+                setSearchTerm('');
+              }}
+              className="text-[11px] uppercase tracking-[0.14em] text-[#8b6508] dark:text-gold-400 hover:underline underline-offset-4 self-start sm:self-auto"
+            >
+              Limpar filtros
+            </button>
+          )}
+        </div>
+
+        {/* Navegação por Categorias e Estoque */}
         <CategoryNav
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
@@ -111,38 +142,9 @@ export default function HomePage() {
           encomendaCount={encomendaCount}
         />
 
-        {/* Cabeçalho da Seção de Produtos com contador */}
-        <div className="flex items-center justify-between pt-2">
-          <div className="flex items-center gap-2">
-            <h2 className="text-lg sm:text-xl font-extrabold text-zinc-900 dark:text-white">
-              {selectedStock === 'pronta_entrega'
-                ? '🟢 Produtos à Pronta-Entrega'
-                : selectedStock === 'encomenda'
-                ? '🟡 Itens Sob Encomenda'
-                : 'Catálogo de Produtos'}
-            </h2>
-            <span className="text-xs px-2.5 py-0.5 rounded-full bg-zinc-200 dark:bg-dark-800 text-zinc-700 dark:text-zinc-400 font-semibold border border-zinc-300 dark:border-dark-700">
-              {filteredProducts.length}
-            </span>
-          </div>
-
-          {(selectedCategory !== 'todos' || selectedStock !== 'todos' || searchTerm) && (
-            <button
-              onClick={() => {
-                setSelectedCategory('todos');
-                setSelectedStock('todos');
-                setSearchTerm('');
-              }}
-              className="text-xs text-gold-700 dark:text-gold-400 hover:text-gold-600 dark:hover:text-gold-300 font-medium underline"
-            >
-              Limpar filtros
-            </button>
-          )}
-        </div>
-
-        {/* Grid de Produtos */}
+        {/* Grid Editorial de Produtos */}
         {filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 pt-2">
             {filteredProducts.map((product) => (
               <ProductCard
                 key={product.id}
@@ -152,13 +154,12 @@ export default function HomePage() {
             ))}
           </div>
         ) : (
-          <div className="py-16 text-center space-y-3 bg-white dark:bg-dark-900/40 rounded-2xl border border-zinc-200 dark:border-dark-800 p-8 shadow-sm">
-            <div className="w-12 h-12 rounded-full bg-zinc-100 dark:bg-dark-800 mx-auto flex items-center justify-center text-zinc-400 dark:text-zinc-500">
-              <Sparkles className="w-6 h-6" />
-            </div>
-            <h3 className="text-base font-bold text-zinc-900 dark:text-white">Nenhum produto encontrado</h3>
+          <div className="py-20 text-center space-y-4 border border-[#e5e0d5] dark:border-dark-800 bg-[#f6f3ec] dark:bg-dark-900/40 px-6">
+            <h3 className="text-xl font-display text-[#141414] dark:text-white">
+              Nenhum produto encontrado
+            </h3>
             <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto">
-              Não encontramos produtos com esses filtros. Tente buscar por outro termo ou limpe os filtros.
+              Não encontramos itens com os filtros atuais. Limpe a busca para visualizar todo o catálogo.
             </p>
             <button
               onClick={() => {
@@ -166,52 +167,46 @@ export default function HomePage() {
                 setSelectedStock('todos');
                 setSearchTerm('');
               }}
-              className="mt-2 px-4 py-2 rounded-xl text-xs font-semibold bg-gold-500 text-dark-950 hover:bg-gold-400 transition-all shadow-md"
+              className="px-5 py-2.5 bg-[#141414] dark:bg-gold-500 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.16em] font-semibold transition-colors"
             >
-              Ver todo o catálogo
+              Ver Todo o Catálogo
             </button>
           </div>
         )}
       </main>
 
-      {/* Seção de Confiança / Anti-Pirataria */}
       <TrustSection />
 
-      {/* Rodapé */}
       <Footer />
 
-      {/* Modal de Detalhes do Produto */}
       <ProductModal
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
       />
 
-      {/* Drawer da Lista de Interesse (Sacola de Orçamento) */}
       <InterestListDrawer />
 
-      {/* Botão Flutuante de WhatsApp / Orçamento no Canto Inferior Direito */}
-      <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3">
-        {/* Notificação Flutuante da Lista se houver itens */}
+      {/* Ações flutuantes discretas */}
+      <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2.5">
         {items.length > 0 && (
           <button
             onClick={() => setIsDrawerOpen(true)}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white dark:bg-dark-900 border border-gold-500/50 shadow-2xl text-gold-700 dark:text-gold-300 hover:scale-105 transition-all text-xs font-bold backdrop-blur-md"
+            className="flex items-center gap-2 px-4 py-2.5 bg-[#fcfbf8] dark:bg-dark-900 border border-[#141414] dark:border-gold-500/60 shadow-lg text-[#141414] dark:text-gold-300 text-[11px] uppercase tracking-[0.14em] font-semibold hover:bg-[#141414] hover:text-white transition-colors"
           >
-            <ShoppingBag className="w-4 h-4 text-gold-500" />
+            <ShoppingBag className="w-3.5 h-3.5" />
             <span>Lista ({items.length})</span>
           </button>
         )}
 
-        {/* Botão Flutuante WhatsApp Principal */}
         <a
           href={supportUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-2xl shadow-emerald-950/40 hover:scale-105 active:scale-95 transition-all"
-          title="Tirar dúvidas ou pedir pelo WhatsApp"
+          className="flex items-center gap-2 px-4 py-3 bg-[#065f46] hover:bg-[#047857] text-white text-[11px] uppercase tracking-[0.14em] font-semibold shadow-lg transition-colors"
+          title="Atendimento pelo WhatsApp"
         >
-          <MessageCircle className="w-5 h-5 fill-white" />
-          <span className="hidden sm:inline">Pedir no WhatsApp</span>
+          <MessageCircle className="w-4 h-4 fill-white" />
+          <span className="hidden sm:inline">WhatsApp</span>
         </a>
       </div>
     </div>

@@ -10,20 +10,14 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 sm:px-3 sm:py-2 rounded-xl border transition-all flex items-center gap-1.5 bg-zinc-100 hover:bg-zinc-200 border-zinc-300 text-zinc-700 dark:bg-dark-900 dark:border-dark-700 dark:hover:border-gold-500/50 dark:text-zinc-300 dark:hover:text-white"
-      title={theme === 'dark' ? 'Mudar para Versão Clara (Light)' : 'Mudar para Versão Escura (Dark)'}
+      className="p-2 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white transition-colors"
+      title={theme === 'dark' ? 'Modo claro' : 'Modo escuro'}
       aria-label="Alternar tema"
     >
       {theme === 'dark' ? (
-        <>
-          <Sun className="w-4 h-4 text-gold-400" />
-          <span className="text-xs font-semibold hidden md:inline">Modo Claro</span>
-        </>
+        <Sun className="w-4 h-4 text-gold-400" />
       ) : (
-        <>
-          <Moon className="w-4 h-4 text-zinc-700" />
-          <span className="text-xs font-semibold hidden md:inline">Modo Escuro</span>
-        </>
+        <Moon className="w-4 h-4" />
       )}
     </button>
   );

@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #fcfbf8;
+  --foreground: #141414;
 }
 
 .dark {
-  --background: #09090b;
+  --background: #0c0c0f;
   --foreground: #f4f4f5;
 }
 
@@ -19,29 +19,26 @@ body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* Custom scrollbar */
+/* Scrollbar sutil */
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
-.dark ::-webkit-scrollbar-track {
-  background: transparent;
-}
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #d6d0c4;
   border-radius: 99px;
 }
 .dark ::-webkit-scrollbar-thumb {
   background: #272732;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d4af37;
+  background: #b89128;
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #8b6508 100%);
+  background: linear-gradient(135deg, #8b6508 0%, #b89128 50%, #6e4f05 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -52,56 +49,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Entrada suave dos cards ao aparecer na tela */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 0.4s ease both;
-}
-
-/* Shimmer para loading state */
-@keyframes shimmer {
-  from { background-position: -400px 0; }
-  to { background-position: 400px 0; }
-}
-
-.shimmer {
-  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
-  background-size: 800px 100%;
-  animation: shimmer 1.5s infinite;
-}
-
-.dark .shimmer {
-  background: linear-gradient(90deg, #1a1a22 25%, #272732 50%, #1a1a22 75%);
-  background-size: 800px 100%;
-  animation: shimmer 1.5s infinite;
-}
-
-/* Ocultar scrollbar horizontal nas pills de categoria */
 .scrollbar-none {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 .scrollbar-none::-webkit-scrollbar {
   display: none;
-}
-
-/* Linha decorativa dourada */
-.gold-line {
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #d4af37, transparent);
-}
-
-/* Noise texture sutil para fundos escuros */
-.dark .noise-bg {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
 }
