@@ -25,7 +25,8 @@ import {
   Check,
 } from 'lucide-react';
 
-const ADMIN_PIN = 'pien123'; // Senha de acesso ao painel administrativo
+// Senha de acesso ao painel administrativo (pode ser definida via variável de ambiente ou aqui)
+const ADMIN_PIN = process.env.NEXT_PUBLIC_ADMIN_PIN || 'pien123';
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { Search, ShoppingBag, MessageCircle, ShieldCheck } from 'lucide-react';
+import Link from 'next/link';
+import { Search, ShoppingBag, MessageCircle, ShieldCheck, Lock } from 'lucide-react';
 import { useInterestList } from '@/context/InterestListContext';
 import { getGeneralSupportWhatsAppUrl } from '@/utils/whatsapp';
 import { ThemeToggle } from '@/components/ThemeToggle';
@@ -80,6 +81,16 @@ export function Navbar({
           <div className="flex items-center gap-1.5 sm:gap-2.5">
             {/* Alternador de Tema Claro / Escuro */}
             <ThemeToggle />
+
+            {/* Botão de Acesso ao Painel Admin */}
+            <Link
+              href="/admin"
+              className="p-2 sm:px-3 sm:py-2 rounded-xl border transition-all flex items-center gap-1.5 bg-zinc-100 hover:bg-zinc-200 border-zinc-300 text-zinc-700 dark:bg-dark-900 dark:border-dark-700 dark:hover:border-gold-500/50 dark:text-zinc-300 dark:hover:text-white"
+              title="Acesso ao Painel Lojista"
+            >
+              <Lock className="w-4 h-4 text-gold-500" />
+              <span className="text-xs font-semibold hidden md:inline">Painel</span>
+            </Link>
 
             {/* Botão de Lista de Interesse */}
             <button
