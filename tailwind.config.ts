@@ -23,6 +23,7 @@ const config: Config = {
           400: "#E6CA65",
           500: "#D4AF37",
           600: "#AA8C2C",
+          700: "#8B6508",
         },
         whatsapp: {
           DEFAULT: "#25D366",
@@ -30,7 +31,27 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["var(--font-playfair)", "Georgia", "serif"],
+      },
+      keyframes: {
+        fadeInUp: {
+          from: { opacity: "0", transform: "translateY(16px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        slideInRight: {
+          from: { opacity: "0", transform: "translateX(20px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        fadeInUp: "fadeInUp 0.4s ease both",
+        fadeIn: "fadeIn 0.3s ease both",
+        slideInRight: "slideInRight 0.35s ease both",
       },
     },
   },

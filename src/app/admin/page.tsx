@@ -322,7 +322,7 @@ export default function AdminPage() {
           <form onSubmit={handleLogin} className="space-y-3">
             <input
               type="password"
-              placeholder="Digite a senha de acesso"
+              placeholder="••••••••"
               value={pinInput}
               onChange={(e) => setPinInput(e.target.value)}
               className="w-full px-4 py-3 rounded-xl bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 text-sm text-center tracking-widest focus:outline-none focus:border-gold-500"
