@@ -28,7 +28,7 @@ No terminal, dentro da pasta do projeto:
 
 ```bash
 # Iniciar o servidor de desenvolvimento
-npm.cmd run dev
+npm run dev
 ```
 
 Abra o navegador em: [http://localhost:3000](http://localhost:3000)
@@ -47,7 +47,7 @@ export const STORE_PHONE_NUMBER = '5511999999999'; // Substitua pelo seu DDI + D
 
 ## 📦 Como Adicionar ou Alterar Produtos
 
-No arquivo `src/data/products.ts`, basta editar a lista de produtos. Cada produto possui o seguinte formato simples:
+Pelo painel `/admin` (login com `ADMIN_PASSWORD`) você cadastra, edita e remove produtos e envia fotos. Os dados ficam no Supabase (rode `supabase/schema.sql`). Em desenvolvimento, sem Supabase, usa-se `src/data/products.json`. Referência do formato de produto: Cada produto possui o seguinte formato simples:
 
 ```typescript
 {
@@ -80,3 +80,7 @@ No arquivo `src/data/products.ts`, basta editar a lista de produtos. Cada produt
 1. Crie uma conta na [Vercel](https://vercel.com).
 2. Conecte o repositório ou suba a pasta pelo terminal com `npx vercel`.
 3. Pronto! Seu catálogo estará no ar com link próprio para colocar na bio do Instagram e compartilhar no WhatsApp.
+
+### 🔐 Variáveis de ambiente (obrigatórias em produção)
+
+Veja `.env.example`. Defina na Vercel: `ADMIN_PASSWORD`, `ADMIN_SESSION_SECRET` (mín. 32 caracteres, gere com `openssl rand -base64 48`), `NEXT_PUBLIC_SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY`. Sem as duas primeiras o login do admin retorna 503. Recomendado: crie um banco gratuito no [Upstash](https://upstash.com) e defina `UPSTASH_REDIS_REST_URL` e `UPSTASH_REDIS_REST_TOKEN` para o limite de tentativas de login valer entre todas as instâncias da Vercel. O painel não tem mais link no site: acesse digitando `/admin` na URL.

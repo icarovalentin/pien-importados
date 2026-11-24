@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
-import { isAdminAuthenticated } from '@/lib/auth';
+import { isAdminAuthenticated, isSameOrigin } from '@/lib/auth';
 import {
   getSupabaseAdmin,
   isSupabaseConfigured,
@@ -19,7 +19,10 @@ const ALLOWED_MIME_TO_EXT: Record<string, string> = {
 };
 
 export async function POST(req: Request) {
-  if (!isAdminAuthenticated()) {
+  if (!isSameOrigin(req)) {
+    return NextResponse.json({ error: 'Origem inválida' }, { status: 403 });
+  }
+  if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
   }
 

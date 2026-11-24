@@ -3,40 +3,55 @@ import {
   ADMIN_COOKIE_NAME,
   createSessionToken,
   getServerAdminPassword,
+  getSessionSecret,
+  isSameOrigin,
   getSessionCookieOptions,
   verifyAdminPassword,
 } from '@/lib/auth';
+import { addFailure, getFailureCount, resetFailures } from '@/lib/rate-limit';
 
-// Limite simples de tentativas por IP para mitigar força bruta
-const MAX_ATTEMPTS = 5;
+const MAX_ATTEMPTS_PER_IP = 5;
+const GLOBAL_MAX_FAILURES = 50; // teto global, independe do IP informado
 const WINDOW_MS = 10 * 60 * 1000; // 10 minutos
-const attemptsByIp = new Map<string, { count: number; resetAt: number }>();
+const GLOBAL_KEY = 'login:global';
 
+// Atrás de proxy confiável (Vercel etc.), x-real-ip é definido pela plataforma;
+// no x-forwarded-for usamos a última entrada (adicionada pelo proxy), nunca a primeira (forjável).
 function getClientIp(req: Request): string {
+  const real = req.headers.get('x-real-ip');
+  if (real) return real.trim();
   const forwarded = req.headers.get('x-forwarded-for');
   if (forwarded) {
-    return forwarded.split(',')[0].trim();
+    const parts = forwarded.split(',');
+    return parts[parts.length - 1].trim();
   }
-  return req.headers.get('x-real-ip') || 'unknown';
+  return 'unknown';
 }
 
 export async function POST(req: Request) {
   try {
-    if (!getServerAdminPassword()) {
+    if (!isSameOrigin(req)) {
+      return NextResponse.json({ success: false, error: 'Origem inválida' }, { status: 403 });
+    }
+
+    if (!getServerAdminPassword() || !getSessionSecret()) {
       return NextResponse.json(
         {
           success: false,
-          error: 'Variável ADMIN_PASSWORD não configurada no servidor.',
+          error:
+            'Servidor sem ADMIN_PASSWORD ou ADMIN_SESSION_SECRET (mín. 32 caracteres) configurados.',
         },
         { status: 503 }
       );
     }
 
-    const ip = getClientIp(req);
-    const now = Date.now();
-    const record = attemptsByIp.get(ip);
+    const ipKey = `login:ip:${getClientIp(req)}`;
+    const [ipFailures, globalFailures] = await Promise.all([
+      getFailureCount(ipKey, WINDOW_MS),
+      getFailureCount(GLOBAL_KEY, WINDOW_MS),
+    ]);
 
-    if (record && record.resetAt > now && record.count >= MAX_ATTEMPTS) {
+    if (ipFailures >= MAX_ATTEMPTS_PER_IP || globalFailures >= GLOBAL_MAX_FAILURES) {
       return NextResponse.json(
         {
           success: false,
@@ -47,10 +62,9 @@ export async function POST(req: Request) {
     }
 
     const body = await req.json().catch(() => null);
-    const password = body?.password;
 
-    if (verifyAdminPassword(password)) {
-      attemptsByIp.delete(ip);
+    if (verifyAdminPassword(body?.password)) {
+      await resetFailures(ipKey);
 
       const token = createSessionToken();
       if (!token) {
@@ -65,12 +79,7 @@ export async function POST(req: Request) {
       return response;
     }
 
-    if (!record || record.resetAt <= now) {
-      attemptsByIp.set(ip, { count: 1, resetAt: now + WINDOW_MS });
-    } else {
-      record.count += 1;
-      attemptsByIp.set(ip, record);
-    }
+    await Promise.all([addFailure(ipKey, WINDOW_MS), addFailure(GLOBAL_KEY, WINDOW_MS)]);
 
     return NextResponse.json(
       { success: false, error: 'Senha incorreta' },

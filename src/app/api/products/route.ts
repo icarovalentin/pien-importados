@@ -2,12 +2,13 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { Product, ProductVariant } from '@/types/product';
-import { isAdminAuthenticated } from '@/lib/auth';
+import { isAdminAuthenticated, isSameOrigin } from '@/lib/auth';
 import {
   getSupabaseAdmin,
   isSupabaseConfigured,
   mapProductToRow,
   mapRowToProduct,
+  PRODUCT_IMAGES_BUCKET,
   ProductRow,
 } from '@/lib/supabase';
 
@@ -37,18 +38,48 @@ function saveLocalProducts(products: Product[]) {
   fs.writeFileSync(filePath, JSON.stringify(products, null, 2), 'utf-8');
 }
 
+function getAllowedImageHosts(): string[] {
+  const hosts = ['images.unsplash.com'];
+  try {
+    if (process.env.NEXT_PUBLIC_SUPABASE_URL) {
+      hosts.push(new URL(process.env.NEXT_PUBLIC_SUPABASE_URL).hostname);
+    }
+  } catch {
+    // ignora URL inválida
+  }
+  return hosts;
+}
+
 function isSafeImageUrl(url: unknown): url is string {
   if (typeof url !== 'string') return false;
   const trimmed = url.trim();
-  if (trimmed.startsWith('/uploads/') && !trimmed.includes('..')) {
+  if (trimmed.length > 1000) return false;
+  if (/^\/uploads\/[A-Za-z0-9._-]+$/.test(trimmed) && !trimmed.includes('..')) {
     return true;
   }
   try {
     const parsed = new URL(trimmed);
-    return parsed.protocol === 'https:';
+    return parsed.protocol === 'https:' && getAllowedImageHosts().includes(parsed.hostname);
   } catch {
     return false;
   }
+}
+
+/** Remove do Supabase Storage as imagens do bucket que deixaram de ser usadas. */
+async function removeOrphanImages(urls: string[]) {
+  if (!isSupabaseConfigured() || urls.length === 0) return;
+  const supabase = getSupabaseAdmin();
+  if (!supabase) return;
+  const marker = `/storage/v1/object/public/${PRODUCT_IMAGES_BUCKET}/`;
+  const paths = urls
+    .map((u) => {
+      const i = u.indexOf(marker);
+      return i >= 0 ? decodeURIComponent(u.slice(i + marker.length)) : null;
+    })
+    .filter((p): p is string => !!p && p.startsWith('products/'));
+  if (paths.length === 0) return;
+  const { error } = await supabase.storage.from(PRODUCT_IMAGES_BUCKET).remove(paths);
+  if (error) console.error('Erro ao remover imagens órfãs:', error);
 }
 
 function sanitizeString(value: unknown, fallback = '', maxLen = 500): string {
@@ -101,7 +132,10 @@ export async function GET() {
 
 // POST /api/products (restrito ao admin autenticado)
 export async function POST(req: Request) {
-  if (!isAdminAuthenticated()) {
+  if (!isSameOrigin(req)) {
+    return NextResponse.json({ error: 'Origem inválida' }, { status: 403 });
+  }
+  if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
   }
 
@@ -196,7 +230,10 @@ export async function POST(req: Request) {
 
 // PUT /api/products (restrito ao admin autenticado)
 export async function PUT(req: Request) {
-  if (!isAdminAuthenticated()) {
+  if (!isSameOrigin(req)) {
+    return NextResponse.json({ error: 'Origem inválida' }, { status: 403 });
+  }
+  if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
   }
 
@@ -314,6 +351,9 @@ export async function PUT(req: Request) {
           return NextResponse.json({ error: 'Falha ao atualizar produto' }, { status: 500 });
         }
 
+        const removed = current.images.filter((u) => !updatedProduct.images.includes(u));
+        await removeOrphanImages(removed);
+
         return NextResponse.json({
           success: true,
           product: mapRowToProduct(data as ProductRow),
@@ -334,7 +374,10 @@ export async function PUT(req: Request) {
 
 // DELETE /api/products?id=... (restrito ao admin autenticado)
 export async function DELETE(req: Request) {
-  if (!isAdminAuthenticated()) {
+  if (!isSameOrigin(req)) {
+    return NextResponse.json({ error: 'Origem inválida' }, { status: 403 });
+  }
+  if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
   }
 
@@ -349,6 +392,12 @@ export async function DELETE(req: Request) {
     if (isSupabaseConfigured()) {
       const supabase = getSupabaseAdmin();
       if (supabase) {
+        const { data: existing } = await supabase
+          .from('products')
+          .select('images')
+          .eq('id', id)
+          .maybeSingle();
+
         const { data, error } = await supabase
           .from('products')
           .delete()
@@ -364,6 +413,7 @@ export async function DELETE(req: Request) {
           return NextResponse.json({ error: 'Produto não encontrado' }, { status: 404 });
         }
 
+        await removeOrphanImages((existing?.images as string[] | null) ?? []);
         return NextResponse.json({ success: true, message: 'Produto removido com sucesso' });
       }
     }

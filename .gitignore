@@ -24,7 +24,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
+.env.*
+!.env.example
 .env*.local
+
+# uploads locais (fallback de desenvolvimento)
+/public/uploads/
 
 # vercel
 .vercel
