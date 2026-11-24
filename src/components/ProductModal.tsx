@@ -1,11 +1,22 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Product } from '@/types/product';
-import { X, MessageCircle, ShieldCheck, Check, Plus, Clock } from 'lucide-react';
+import {
+  X,
+  MessageCircle,
+  ShieldCheck,
+  Check,
+  Plus,
+  Clock,
+  Share2,
+  ChevronLeft,
+  ChevronRight,
+} from 'lucide-react';
 import { formatCurrency, getProductWhatsAppUrl } from '@/utils/whatsapp';
-import { useInterestList } from '@/context/InterestListContext';
+import { makeInterestKey, useInterestList } from '@/context/InterestListContext';
+import { useToast } from '@/context/ToastContext';
 
 interface ProductModalProps {
   product: Product | null;
@@ -14,10 +25,15 @@ interface ProductModalProps {
 
 export function ProductModal({ product, onClose }: ProductModalProps) {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
+  const touchStartX = useRef<number | null>(null);
+
   const { addItem, removeItem, isInList } = useInterestList();
+  const { showToast } = useToast();
 
   useEffect(() => {
     setSelectedImageIndex(0);
+    setSelectedVariantIndex(0);
   }, [product?.id]);
 
   useEffect(() => {
@@ -31,41 +47,113 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
   if (!product) return null;
 
-  const inList = isInList(product.id);
-  const whatsappUrl = getProductWhatsAppUrl(product);
+  const variants = product.variants || [];
+  const activeVariant = variants.length > 0 ? variants[selectedVariantIndex] || variants[0] : undefined;
+  const displayPrice = activeVariant?.price ?? product.price;
+  const inList = isInList(product.id, activeVariant?.label);
+  const whatsappUrl = getProductWhatsAppUrl(product, activeVariant);
   const isProntaEntrega = product.status === 'pronta_entrega';
+  const totalImages = product.images.length;
+
+  const nextImage = () => {
+    if (totalImages <= 1) return;
+    setSelectedImageIndex((prev) => (prev + 1) % totalImages);
+  };
+
+  const prevImage = () => {
+    if (totalImages <= 1) return;
+    setSelectedImageIndex((prev) => (prev - 1 + totalImages) % totalImages);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null || totalImages <= 1) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) nextImage();
+      else prevImage();
+    }
+    touchStartX.current = null;
+  };
+
+  const handleCopyLink = async () => {
+    const shareUrl = `${window.location.origin}/?produto=${encodeURIComponent(product.id)}`;
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      showToast('Link do produto copiado.');
+    } catch {
+      showToast('Copie o endereço da barra do navegador.');
+    }
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/65 backdrop-blur-sm animate-fadeIn">
       <div className="absolute inset-0" onClick={onClose} />
 
       <div className="relative w-full max-w-3xl bg-[#fcfbf8] dark:bg-[#111116] border border-[#e5e0d5] dark:border-dark-700 overflow-hidden shadow-2xl z-10 flex flex-col md:flex-row max-h-[90vh]">
-        <button
-          onClick={onClose}
-          aria-label="Fechar detalhes"
-          className="absolute top-4 right-4 z-20 p-2 bg-white/90 text-[#141414] hover:bg-[#141414] hover:text-white dark:bg-dark-900 dark:text-zinc-300 dark:hover:text-white border border-[#e5e0d5] dark:border-dark-700 transition-colors"
-        >
-          <X className="w-4 h-4" />
-        </button>
+        <div className="absolute top-4 right-4 z-20 flex items-center gap-1.5">
+          <button
+            onClick={handleCopyLink}
+            aria-label="Copiar link do produto"
+            title="Copiar link direto deste produto"
+            className="p-2 bg-white/90 text-[#141414] hover:bg-[#141414] hover:text-white dark:bg-dark-900 dark:text-zinc-300 dark:hover:text-white border border-[#e5e0d5] dark:border-dark-700 transition-colors"
+          >
+            <Share2 className="w-4 h-4" />
+          </button>
 
-        {/* Lado Esquerdo: Galeria */}
+          <button
+            onClick={onClose}
+            aria-label="Fechar detalhes"
+            className="p-2 bg-white/90 text-[#141414] hover:bg-[#141414] hover:text-white dark:bg-dark-900 dark:text-zinc-300 dark:hover:text-white border border-[#e5e0d5] dark:border-dark-700 transition-colors"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        </div>
+
+        {/* Lado Esquerdo: Galeria com swipe no celular */}
         <div className="w-full md:w-1/2 bg-[#f2efe8] dark:bg-dark-950 flex flex-col items-center justify-center p-6">
-          <div className="relative w-full aspect-[4/5] bg-[#ebe6dc] dark:bg-dark-900 overflow-hidden">
+          <div
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            className="relative w-full aspect-[4/5] bg-[#ebe6dc] dark:bg-dark-900 overflow-hidden touch-pan-y"
+          >
             <Image
               src={product.images[selectedImageIndex] || product.images[0]}
               alt={product.name}
               fill
               className="object-cover"
             />
+
+            {totalImages > 1 && (
+              <>
+                <button
+                  onClick={prevImage}
+                  aria-label="Foto anterior"
+                  className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 bg-white/85 hover:bg-white text-[#141414] transition-colors"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  onClick={nextImage}
+                  aria-label="Próxima foto"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 bg-white/85 hover:bg-white text-[#141414] transition-colors"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </>
+            )}
           </div>
 
-          {product.images.length > 1 && (
-            <div className="flex gap-2 mt-4">
+          {totalImages > 1 && (
+            <div className="flex gap-2 mt-4 overflow-x-auto max-w-full">
               {product.images.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setSelectedImageIndex(idx)}
-                  className={`relative w-14 h-14 overflow-hidden border transition-all ${
+                  className={`relative w-14 h-14 shrink-0 overflow-hidden border transition-all ${
                     selectedImageIndex === idx
                       ? 'border-[#141414] dark:border-gold-400 opacity-100'
                       : 'border-[#d6d0c4] dark:border-dark-700 opacity-60 hover:opacity-100'
@@ -80,7 +168,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
         {/* Lado Direito: Detalhes */}
         <div className="w-full md:w-1/2 p-6 sm:p-8 flex flex-col overflow-y-auto space-y-5">
-          <div className="space-y-1.5 pr-6">
+          <div className="space-y-1.5 pr-14">
             <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em]">
               <span className="font-semibold text-[#8b6508] dark:text-gold-400">
                 {product.brand}
@@ -100,7 +188,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           <div className="py-3 border-y border-[#e5e0d5] dark:border-dark-800 space-y-1.5">
             <div className="flex items-baseline gap-2.5">
               <span className="text-2xl font-semibold text-[#141414] dark:text-white">
-                {formatCurrency(product.price)}
+                {formatCurrency(displayPrice)}
               </span>
               {product.originalPrice && (
                 <span className="text-sm text-zinc-400 line-through">
@@ -111,13 +199,48 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
             <p className="text-xs flex items-center gap-2 text-zinc-600 dark:text-zinc-300">
               <Clock className="w-3.5 h-3.5 text-[#8b6508] dark:text-gold-400" />
-              <span className={isProntaEntrega ? 'text-[#065f46] dark:text-emerald-400 font-medium' : 'text-[#92400e] dark:text-amber-400 font-medium'}>
+              <span
+                className={
+                  isProntaEntrega
+                    ? 'text-[#065f46] dark:text-emerald-400 font-medium'
+                    : 'text-[#92400e] dark:text-amber-400 font-medium'
+                }
+              >
                 {isProntaEntrega ? 'Pronta-entrega' : 'Sob encomenda'}
               </span>
               <span className="text-zinc-400">·</span>
               <span>{product.deliveryTime}</span>
             </p>
           </div>
+
+          {/* Seletor de Variações (Armazenamento / Cor / ML) */}
+          {variants.length > 0 && (
+            <div className="space-y-2">
+              <h4 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
+                Selecione uma opção
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {variants.map((variant, idx) => {
+                  const selected = idx === selectedVariantIndex;
+                  return (
+                    <button
+                      key={variant.id || variant.label}
+                      type="button"
+                      onClick={() => setSelectedVariantIndex(idx)}
+                      className={`px-3 py-1.5 text-xs border transition-colors ${
+                        selected
+                          ? 'bg-[#141414] text-white border-[#141414] dark:bg-gold-500 dark:text-[#0c0c0f] dark:border-gold-500 font-semibold'
+                          : 'bg-transparent text-[#141414] dark:text-zinc-300 border-[#d6d0c4] dark:border-dark-700 hover:border-[#141414] dark:hover:border-gold-400'
+                      }`}
+                    >
+                      {variant.label}
+                      {variant.price ? ` · ${formatCurrency(variant.price)}` : ''}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           {/* Descrição */}
           <div>
@@ -152,7 +275,9 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               <ShieldCheck className="w-4 h-4 text-[#8b6508] dark:text-gold-400 shrink-0 mt-0.5" />
               <div>
                 <p className="font-semibold text-[#141414] dark:text-white">Procedência Garantida</p>
-                <p className="text-[11px] text-zinc-600 dark:text-zinc-400 mt-0.5">{product.batchCodeInfo}</p>
+                <p className="text-[11px] text-zinc-600 dark:text-zinc-400 mt-0.5">
+                  {product.batchCodeInfo}
+                </p>
               </div>
             </div>
           )}
@@ -171,8 +296,13 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
             <button
               onClick={() => {
-                if (inList) removeItem(product.id);
-                else addItem(product);
+                if (inList) {
+                  removeItem(makeInterestKey(product.id, activeVariant?.label));
+                  showToast('Item removido da lista de orçamento.');
+                } else {
+                  addItem(product, activeVariant);
+                  showToast('Adicionado à lista de orçamento.');
+                }
               }}
               className={`w-full flex items-center justify-center gap-2 py-2.5 px-4 text-[11px] uppercase tracking-[0.14em] font-semibold border transition-colors ${
                 inList

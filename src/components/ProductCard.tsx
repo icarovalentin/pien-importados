@@ -4,7 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 import { Product } from '@/types/product';
 import { formatCurrency, getProductWhatsAppUrl } from '@/utils/whatsapp';
-import { useInterestList } from '@/context/InterestListContext';
+import { makeInterestKey, useInterestList } from '@/context/InterestListContext';
+import { useToast } from '@/context/ToastContext';
 
 interface ProductCardProps {
   product: Product;
@@ -13,16 +14,23 @@ interface ProductCardProps {
 
 export function ProductCard({ product, onOpenModal }: ProductCardProps) {
   const { addItem, removeItem, isInList } = useInterestList();
+  const { showToast } = useToast();
+
+  const defaultVariant = product.variants && product.variants.length > 0 ? product.variants[0] : undefined;
   const inList = isInList(product.id);
-  const whatsappUrl = getProductWhatsAppUrl(product);
+  const whatsappUrl = getProductWhatsAppUrl(product, defaultVariant);
   const isProntaEntrega = product.status === 'pronta_entrega';
+  const hasVariants = Boolean(product.variants && product.variants.length > 0);
+  const displayPrice = defaultVariant?.price ?? product.price;
 
   const toggleInterest = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (inList) {
-      removeItem(product.id);
+      removeItem(makeInterestKey(product.id, defaultVariant?.label));
+      showToast('Item removido da lista de orçamento.');
     } else {
-      addItem(product);
+      addItem(product, defaultVariant);
+      showToast('Adicionado à lista de orçamento.');
     }
   };
 
@@ -76,10 +84,17 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
           {product.name}
         </h3>
 
+        {hasVariants && (
+          <p className="text-[10px] uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
+            {product.variants!.length}{' '}
+            {product.variants!.length === 1 ? 'opção disponível' : 'opções disponíveis'}
+          </p>
+        )}
+
         <div className="pt-1 mt-auto flex items-baseline justify-between gap-2">
           <div className="flex items-baseline gap-2">
             <span className="text-sm font-semibold text-[#141414] dark:text-white">
-              {formatCurrency(product.price)}
+              {formatCurrency(displayPrice)}
             </span>
             {product.originalPrice && (
               <span className="text-xs text-zinc-400 line-through">

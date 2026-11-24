@@ -2,6 +2,14 @@ export type CategoryType = 'todos' | 'perfumes' | 'eletronicos' | 'smartphones' 
 
 export type StockStatus = 'pronta_entrega' | 'encomenda';
 
+export type SortOption = 'featured' | 'price_asc' | 'price_desc' | 'pronta_first';
+
+export interface ProductVariant {
+  id: string;
+  label: string;
+  price?: number;
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -11,10 +19,12 @@ export interface Product {
   price: number;
   originalPrice?: number;
   status: StockStatus;
-  deliveryTime: string; // Ex: 'Envio Imediato (em até 24h)' ou '10 a 15 dias úteis'
+  deliveryTime: string;
   images: string[];
   description: string;
   specs: string[];
   isFeatured?: boolean;
-  batchCodeInfo?: string; // Ex: "Lote verificado nos EUA"
+  batchCodeInfo?: string;
+  variants?: ProductVariant[];
+  createdAt?: string;
 }

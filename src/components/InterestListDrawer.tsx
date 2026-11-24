@@ -2,16 +2,24 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { X, Trash2, MessageCircle, ShoppingBag, ArrowRight } from 'lucide-react';
+import { X, Trash2, MessageCircle, ShoppingBag, ArrowRight, Minus, Plus } from 'lucide-react';
 import { useInterestList } from '@/context/InterestListContext';
 import { formatCurrency, getInterestListWhatsAppUrl } from '@/utils/whatsapp';
 
 export function InterestListDrawer() {
-  const { items, removeItem, clearList, isDrawerOpen, setIsDrawerOpen } = useInterestList();
+  const {
+    items,
+    totalCount,
+    removeItem,
+    updateQuantity,
+    clearList,
+    isDrawerOpen,
+    setIsDrawerOpen,
+  } = useInterestList();
 
   if (!isDrawerOpen) return null;
 
-  const total = items.reduce((acc, item) => acc + item.price, 0);
+  const total = items.reduce((acc, item) => acc + item.unitPrice * item.quantity, 0);
   const whatsappUrl = getInterestListWhatsAppUrl(items);
 
   return (
@@ -28,7 +36,7 @@ export function InterestListDrawer() {
             <div>
               <h3 className="font-display text-lg text-[#141414] dark:text-white">Lista de Orçamento</h3>
               <p className="text-[11px] uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400 mt-0.5">
-                {items.length} {items.length === 1 ? 'peça selecionada' : 'peças selecionadas'}
+                {totalCount} {totalCount === 1 ? 'unidade selecionada' : 'unidades selecionadas'}
               </p>
             </div>
 
@@ -53,28 +61,54 @@ export function InterestListDrawer() {
               </div>
             ) : (
               items.map((item) => (
-                <div key={item.id} className="flex items-center gap-4 py-4">
+                <div key={item.key} className="flex items-start gap-4 py-4">
                   <div className="relative w-16 h-20 bg-[#f2efe8] dark:bg-dark-900 shrink-0 overflow-hidden">
-                    <Image src={item.images[0]} alt={item.name} fill className="object-cover" />
+                    <Image src={item.product.images[0]} alt={item.product.name} fill className="object-cover" />
                   </div>
 
                   <div className="flex-1 min-w-0 space-y-1">
                     <span className="text-[10px] uppercase tracking-[0.15em] font-semibold text-[#8b6508] dark:text-gold-400">
-                      {item.brand}
+                      {item.product.brand}
                     </span>
-                    <h5 className="text-sm font-display text-[#141414] dark:text-white truncate">{item.name}</h5>
-                    <div className="flex items-center justify-between text-xs pt-0.5">
-                      <span className="font-semibold text-[#141414] dark:text-zinc-200">
-                        {formatCurrency(item.price)}
-                      </span>
-                      <span className={`text-[10px] uppercase tracking-wider ${item.status === 'pronta_entrega' ? 'text-[#065f46] dark:text-emerald-400' : 'text-[#92400e] dark:text-amber-400'}`}>
-                        {item.status === 'pronta_entrega' ? 'Pronta-entrega' : 'Encomenda'}
+                    <h5 className="text-sm font-display text-[#141414] dark:text-white truncate">
+                      {item.product.name}
+                    </h5>
+                    {item.variantLabel && (
+                      <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                        Opção: {item.variantLabel}
+                      </p>
+                    )}
+
+                    <div className="flex items-center justify-between pt-1.5 gap-2">
+                      {/* Controle de Quantidade */}
+                      <div className="inline-flex items-center border border-[#d6d0c4] dark:border-dark-700">
+                        <button
+                          onClick={() => updateQuantity(item.key, -1)}
+                          aria-label="Diminuir quantidade"
+                          className="p-1 text-zinc-600 dark:text-zinc-300 hover:bg-[#f2efe8] dark:hover:bg-dark-800"
+                        >
+                          <Minus className="w-3 h-3" />
+                        </button>
+                        <span className="px-2.5 text-xs font-semibold text-[#141414] dark:text-white tabular-nums">
+                          {item.quantity}
+                        </span>
+                        <button
+                          onClick={() => updateQuantity(item.key, 1)}
+                          aria-label="Aumentar quantidade"
+                          className="p-1 text-zinc-600 dark:text-zinc-300 hover:bg-[#f2efe8] dark:hover:bg-dark-800"
+                        >
+                          <Plus className="w-3 h-3" />
+                        </button>
+                      </div>
+
+                      <span className="text-xs font-semibold text-[#141414] dark:text-zinc-200">
+                        {formatCurrency(item.unitPrice * item.quantity)}
                       </span>
                     </div>
                   </div>
 
                   <button
-                    onClick={() => removeItem(item.id)}
+                    onClick={() => removeItem(item.key)}
                     className="p-1.5 text-zinc-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
                     title="Remover da lista"
                   >

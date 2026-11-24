@@ -3,9 +3,10 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Product, StockStatus } from '@/types/product';
+import { Product, ProductVariant, StockStatus } from '@/types/product';
 import { formatCurrency } from '@/utils/whatsapp';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { useToast } from '@/context/ToastContext';
 import {
   Plus,
   Edit2,
@@ -20,9 +21,11 @@ import {
   CheckCircle2,
   ExternalLink,
   X,
+  Star,
 } from 'lucide-react';
 
 export default function AdminPage() {
+  const { showToast } = useToast();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [checkingSession, setCheckingSession] = useState(true);
   const [pinInput, setPinInput] = useState('');
@@ -47,7 +50,12 @@ export default function AdminPage() {
   const [formOriginalPrice, setFormOriginalPrice] = useState('');
   const [formStatus, setFormStatus] = useState<StockStatus>('pronta_entrega');
   const [formDeliveryTime, setFormDeliveryTime] = useState('Envio Imediato (em até 24h)');
-  const [formImageUrl, setFormImageUrl] = useState('');
+  const [formImages, setFormImages] = useState<string[]>([]);
+  const [formImageUrlInput, setFormImageUrlInput] = useState('');
+  const [formIsFeatured, setFormIsFeatured] = useState(false);
+  const [formVariants, setFormVariants] = useState<ProductVariant[]>([]);
+  const [newVariantLabel, setNewVariantLabel] = useState('');
+  const [newVariantPrice, setNewVariantPrice] = useState('');
   const [formDescription, setFormDescription] = useState('');
   const [formSpecs, setFormSpecs] = useState('');
   const [formBatchCode, setFormBatchCode] = useState('');
@@ -140,7 +148,12 @@ export default function AdminPage() {
     setFormOriginalPrice('');
     setFormStatus('pronta_entrega');
     setFormDeliveryTime('Envio Imediato (em até 24h)');
-    setFormImageUrl('');
+    setFormImages([]);
+    setFormImageUrlInput('');
+    setFormIsFeatured(false);
+    setFormVariants([]);
+    setNewVariantLabel('');
+    setNewVariantPrice('');
     setFormDescription('');
     setFormSpecs('');
     setFormBatchCode('Lote verificado com selo de autenticidade.');
@@ -158,42 +171,76 @@ export default function AdminPage() {
     setFormOriginalPrice(product.originalPrice ? String(product.originalPrice) : '');
     setFormStatus(product.status);
     setFormDeliveryTime(product.deliveryTime);
-    setFormImageUrl(product.images[0] || '');
+    setFormImages(Array.isArray(product.images) ? product.images : []);
+    setFormImageUrlInput('');
+    setFormIsFeatured(Boolean(product.isFeatured));
+    setFormVariants(Array.isArray(product.variants) ? product.variants : []);
+    setNewVariantLabel('');
+    setNewVariantPrice('');
     setFormDescription(product.description || '');
     setFormSpecs(product.specs ? product.specs.join('\n') : '');
     setFormBatchCode(product.batchCodeInfo || '');
     setIsModalOpen(true);
   };
 
-  // Upload direto de imagem
+  // Upload direto de imagem (suporta múltiplos arquivos)
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
 
     setUploadingImage(true);
-    const formData = new FormData();
-    formData.append('file', file);
-
     try {
-      const res = await fetch('/api/upload', {
-        method: 'POST',
-        body: formData,
-      });
-      if (res.status === 401) {
-        setIsAuthenticated(false);
-        return;
+      for (const file of Array.from(files)) {
+        const formData = new FormData();
+        formData.append('file', file);
+
+        const res = await fetch('/api/upload', {
+          method: 'POST',
+          body: formData,
+        });
+        if (res.status === 401) {
+          setIsAuthenticated(false);
+          return;
+        }
+        const data = await res.json();
+        if (res.ok && data.url) {
+          setFormImages((prev) => [...prev, data.url]);
+          showToast('Foto enviada com sucesso.');
+        } else {
+          alert(data.error || 'Erro ao enviar imagem.');
+        }
       }
-      const data = await res.json();
-      if (res.ok && data.url) {
-        setFormImageUrl(data.url);
-      } else {
-        alert(data.error || 'Erro ao enviar imagem.');
-      }
-    } catch (err) {
+    } catch {
       alert('Erro ao enviar imagem. Tente novamente.');
     } finally {
       setUploadingImage(false);
+      if (fileInputRef.current) fileInputRef.current.value = '';
     }
+  };
+
+  const handleAddImageUrl = () => {
+    const trimmed = formImageUrlInput.trim();
+    if (!trimmed) return;
+    setFormImages((prev) => [...prev, trimmed]);
+    setFormImageUrlInput('');
+  };
+
+  const handleAddVariant = () => {
+    const label = newVariantLabel.trim();
+    if (!label) return;
+    const parsedPrice = newVariantPrice.trim()
+      ? parseFloat(newVariantPrice.replace(',', '.'))
+      : undefined;
+    setFormVariants((prev) => [
+      ...prev,
+      {
+        id: `var-${Date.now()}-${prev.length + 1}`,
+        label,
+        price: parsedPrice && Number.isFinite(parsedPrice) && parsedPrice > 0 ? parsedPrice : undefined,
+      },
+    ]);
+    setNewVariantLabel('');
+    setNewVariantPrice('');
   };
 
   // Salvar produto (Criar ou Atualizar)
@@ -211,6 +258,12 @@ export default function AdminPage() {
       .map((s) => s.trim())
       .filter((s) => s.length > 0);
 
+    const pendingUrl = formImageUrlInput.trim();
+    const finalImages =
+      pendingUrl && !formImages.includes(pendingUrl)
+        ? [...formImages, pendingUrl]
+        : formImages;
+
     const payload = {
       id: editingProduct ? editingProduct.id : undefined,
       name: formName,
@@ -221,9 +274,14 @@ export default function AdminPage() {
       originalPrice: formOriginalPrice ? parseFloat(formOriginalPrice.replace(',', '.')) : undefined,
       status: formStatus,
       deliveryTime: formDeliveryTime,
-      images: [formImageUrl || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80'],
+      images:
+        finalImages.length > 0
+          ? finalImages
+          : ['https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80'],
       description: formDescription,
       specs: specsArray,
+      isFeatured: formIsFeatured,
+      variants: formVariants,
       batchCodeInfo: formBatchCode,
     };
 
@@ -244,14 +302,38 @@ export default function AdminPage() {
       if (res.ok) {
         setIsModalOpen(false);
         fetchProducts();
+        showToast(editingProduct ? 'Produto atualizado.' : 'Produto publicado na vitrine.');
       } else {
         const data = await res.json().catch(() => null);
         alert(data?.error || 'Erro ao salvar produto.');
       }
-    } catch (err) {
+    } catch {
       alert('Erro de conexão ao salvar.');
     } finally {
       setSaveLoading(false);
+    }
+  };
+
+  const handleToggleFeatured = async (product: Product) => {
+    const nextFeatured = !product.isFeatured;
+    try {
+      const res = await fetch('/api/products', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: product.id, isFeatured: nextFeatured }),
+      });
+      if (res.status === 401) {
+        setIsAuthenticated(false);
+        return;
+      }
+      if (res.ok) {
+        setProducts((prev) =>
+          prev.map((p) => (p.id === product.id ? { ...p, isFeatured: nextFeatured } : p))
+        );
+        showToast(nextFeatured ? 'Produto destacado no banner.' : 'Removido do banner.');
+      }
+    } catch (err) {
+      console.error('Erro ao destacar produto:', err);
     }
   };
 
@@ -608,7 +690,21 @@ export default function AdminPage() {
                   </div>
 
                   {/* Ações e Alternador Rápido de Estoque */}
-                  <div className="flex items-center justify-between w-full sm:w-auto gap-3 shrink-0 pt-2 sm:pt-0 border-t sm:border-0 border-zinc-100 dark:border-dark-800">
+                  <div className="flex items-center justify-between w-full sm:w-auto gap-2 sm:gap-3 shrink-0 pt-2 sm:pt-0 border-t sm:border-0 border-zinc-100 dark:border-dark-800">
+                    {/* Botão Destacar no Banner */}
+                    <button
+                      onClick={() => handleToggleFeatured(p)}
+                      title={p.isFeatured ? 'Remover do banner principal' : 'Destacar no banner principal'}
+                      className={`flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-semibold border transition-all ${
+                        p.isFeatured
+                          ? 'bg-gold-500/15 text-gold-700 border-gold-500/40 dark:text-gold-300'
+                          : 'bg-zinc-100 text-zinc-500 border-zinc-200 dark:bg-dark-800 dark:text-zinc-400 dark:border-dark-700 hover:text-gold-600'
+                      }`}
+                    >
+                      <Star className={`w-3.5 h-3.5 ${p.isFeatured ? 'fill-gold-500 text-gold-500' : ''}`} />
+                      <span className="hidden md:inline">{p.isFeatured ? 'No Banner' : 'Destacar'}</span>
+                    </button>
+
                     {/* Botão de Troca Rápida de Estoque (1 Clique) */}
                     <button
                       onClick={() => handleQuickToggleStatus(p)}
@@ -819,53 +915,156 @@ export default function AdminPage() {
                 </div>
               </div>
 
-              {/* Upload de Imagem */}
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300 mb-1">
-                  Foto do Produto
-                </label>
-
-                <div className="flex flex-col sm:flex-row gap-4 items-center">
-                  {/* Preview da foto se existir */}
-                  <div className="relative w-24 h-24 rounded-2xl overflow-hidden bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 shrink-0 flex items-center justify-center">
-                    {formImageUrl ? (
-                      <Image src={formImageUrl} alt="" fill className="object-cover" />
-                    ) : (
-                      <Package className="w-8 h-8 text-zinc-400" />
-                    )}
-                  </div>
-
-                  <div className="flex-1 w-full space-y-2">
-                    {/* Botão de Enviar Foto do PC/Celular */}
+              {/* Upload e Gerenciador de Múltiplas Fotos */}
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300">
+                    Fotos do Produto ({formImages.length})
+                  </label>
+                  <label className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300 cursor-pointer">
                     <input
-                      ref={fileInputRef}
-                      type="file"
-                      accept="image/*"
-                      onChange={handleFileUpload}
-                      className="hidden"
+                      type="checkbox"
+                      checked={formIsFeatured}
+                      onChange={(e) => setFormIsFeatured(e.target.checked)}
+                      className="rounded accent-gold-500 w-4 h-4"
                     />
+                    <span>Destacar no banner principal</span>
+                  </label>
+                </div>
 
+                {formImages.length > 0 && (
+                  <div className="grid grid-cols-3 sm:grid-cols-5 gap-2.5">
+                    {formImages.map((imgUrl, idx) => (
+                      <div
+                        key={`${imgUrl}-${idx}`}
+                        className="relative aspect-[3/4] rounded-xl overflow-hidden bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 group"
+                      >
+                        <Image src={imgUrl} alt="" fill className="object-cover" />
+                        {idx === 0 && (
+                          <span className="absolute top-1 left-1 px-1.5 py-0.5 text-[9px] font-bold uppercase bg-gold-500 text-dark-950 rounded">
+                            Capa
+                          </span>
+                        )}
+                        <div className="absolute inset-x-1 bottom-1 flex items-center justify-between gap-1">
+                          {idx > 0 && (
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setFormImages((prev) => [imgUrl, ...prev.filter((_, i) => i !== idx)])
+                              }
+                              className="px-1.5 py-0.5 text-[9px] font-bold bg-black/75 text-white rounded hover:bg-gold-500 hover:text-dark-950"
+                            >
+                              Capa
+                            </button>
+                          )}
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setFormImages((prev) => prev.filter((_, i) => i !== idx))
+                            }
+                            className="ml-auto p-1 bg-black/75 text-white rounded hover:bg-red-600"
+                            title="Remover foto"
+                          >
+                            <X className="w-3 h-3" />
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <div className="space-y-2">
+                  <input
+                    ref={fileInputRef}
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    onChange={handleFileUpload}
+                    className="hidden"
+                  />
+
+                  <button
+                    type="button"
+                    disabled={uploadingImage}
+                    onClick={() => fileInputRef.current?.click()}
+                    className="w-full py-2.5 px-4 rounded-xl border border-dashed border-zinc-400 dark:border-dark-600 hover:border-gold-500 bg-zinc-50 dark:bg-dark-950 text-xs font-semibold text-zinc-700 dark:text-zinc-300 flex items-center justify-center gap-2 transition-colors"
+                  >
+                    <Upload className="w-4 h-4 text-gold-500" />
+                    <span>{uploadingImage ? 'Enviando fotos...' : 'Enviar fotos do computador / celular'}</span>
+                  </button>
+
+                  <div className="flex items-center gap-2">
+                    <input
+                      type="url"
+                      placeholder="Ou cole o link https:// da imagem..."
+                      value={formImageUrlInput}
+                      onChange={(e) => setFormImageUrlInput(e.target.value)}
+                      className="flex-1 px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-dark-950 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
+                    />
                     <button
                       type="button"
-                      disabled={uploadingImage}
-                      onClick={() => fileInputRef.current?.click()}
-                      className="w-full py-2.5 px-4 rounded-xl border border-dashed border-zinc-400 dark:border-dark-600 hover:border-gold-500 bg-zinc-50 dark:bg-dark-950 text-xs font-semibold text-zinc-700 dark:text-zinc-300 flex items-center justify-center gap-2 transition-colors"
+                      onClick={handleAddImageUrl}
+                      className="px-3 py-1.5 rounded-lg bg-zinc-200 dark:bg-dark-800 text-xs font-semibold text-zinc-800 dark:text-zinc-200 hover:bg-zinc-300 dark:hover:bg-dark-700"
                     >
-                      <Upload className="w-4 h-4 text-gold-500" />
-                      <span>{uploadingImage ? 'Enviando foto...' : 'Escolher foto do computador / celular'}</span>
+                      Adicionar
                     </button>
-
-                    <div className="flex items-center gap-2">
-                      <span className="text-[11px] text-zinc-400 shrink-0">Ou link da foto:</span>
-                      <input
-                        type="url"
-                        placeholder="https://..."
-                        value={formImageUrl}
-                        onChange={(e) => setFormImageUrl(e.target.value)}
-                        className="flex-1 px-3 py-1.5 rounded-lg bg-zinc-100 dark:bg-dark-950 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
-                      />
-                    </div>
                   </div>
+                </div>
+              </div>
+
+              {/* Variações (Armazenamento / Cor / Volumetria) */}
+              <div className="p-4 rounded-2xl bg-zinc-50 dark:bg-dark-950 border border-zinc-200 dark:border-dark-800 space-y-3">
+                <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300">
+                  Variações Opcionais <span className="text-zinc-400 font-normal">(Ex: 128GB, 256GB, 100ml, Preto)</span>
+                </label>
+
+                {formVariants.length > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {formVariants.map((v, idx) => (
+                      <span
+                        key={v.id || idx}
+                        className="inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-700 text-xs font-semibold"
+                      >
+                        <span>
+                          {v.label}
+                          {v.price ? ` · ${formatCurrency(v.price)}` : ''}
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setFormVariants((prev) => prev.filter((_, i) => i !== idx))
+                          }
+                          className="text-zinc-400 hover:text-red-500"
+                        >
+                          <X className="w-3.5 h-3.5" />
+                        </button>
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                <div className="grid grid-cols-1 sm:grid-cols-12 gap-2">
+                  <input
+                    type="text"
+                    placeholder="Opção (ex: 256GB ou 100ml)"
+                    value={newVariantLabel}
+                    onChange={(e) => setNewVariantLabel(e.target.value)}
+                    className="sm:col-span-6 px-3 py-2 rounded-xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Preço específico (opcional)"
+                    value={newVariantPrice}
+                    onChange={(e) => setNewVariantPrice(e.target.value)}
+                    className="sm:col-span-4 px-3 py-2 rounded-xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
+                  />
+                  <button
+                    type="button"
+                    onClick={handleAddVariant}
+                    className="sm:col-span-2 px-3 py-2 rounded-xl bg-zinc-900 dark:bg-gold-500 text-white dark:text-dark-950 text-xs font-bold"
+                  >
+                    + Opção
+                  </button>
                 </div>
               </div>
 

@@ -31,7 +31,7 @@ export function Navbar({
   setSelectedCategory,
   onScrollToCatalog,
 }: NavbarProps) {
-  const { items, setIsDrawerOpen } = useInterestList();
+  const { totalCount, setIsDrawerOpen } = useInterestList();
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
   const supportUrl = getGeneralSupportWhatsAppUrl();
 
@@ -115,7 +115,7 @@ export function Navbar({
             >
               <ShoppingBag className="w-4 h-4" />
               <span className="hidden sm:inline">Lista</span>
-              <span className="text-[11px] font-semibold">({items.length})</span>
+              <span className="text-[11px] font-semibold">({totalCount})</span>
             </button>
 
             <a

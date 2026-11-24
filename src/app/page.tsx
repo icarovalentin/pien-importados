@@ -2,14 +2,16 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { PRODUCTS as INITIAL_PRODUCTS } from '@/data/products';
-import { CategoryType, Product, StockStatus } from '@/types/product';
+import { CategoryType, Product, SortOption, StockStatus } from '@/types/product';
 import { Navbar } from '@/components/Navbar';
 import { RotatingHeroBanner } from '@/components/RotatingHeroBanner';
 import { CategoryNav } from '@/components/CategoryNav';
 import { ProductCard } from '@/components/ProductCard';
+import { ProductGridSkeleton } from '@/components/ProductSkeleton';
 import { ProductModal } from '@/components/ProductModal';
 import { InterestListDrawer } from '@/components/InterestListDrawer';
 import { TrustSection } from '@/components/TrustSection';
+import { FaqSection } from '@/components/FaqSection';
 import { Footer } from '@/components/Footer';
 import { ShoppingBag, MessageCircle } from 'lucide-react';
 import { useInterestList } from '@/context/InterestListContext';
@@ -17,25 +19,62 @@ import { getGeneralSupportWhatsAppUrl } from '@/utils/whatsapp';
 
 export default function HomePage() {
   const [products, setProducts] = useState<Product[]>(INITIAL_PRODUCTS);
+  const [loadingProducts, setLoadingProducts] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<CategoryType>('todos');
   const [selectedStock, setSelectedStock] = useState<'todos' | StockStatus>('todos');
+  const [sortBy, setSortBy] = useState<SortOption>('featured');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const catalogRef = useRef<HTMLDivElement>(null);
-  const { items, setIsDrawerOpen } = useInterestList();
+  const { totalCount, setIsDrawerOpen } = useInterestList();
   const supportUrl = getGeneralSupportWhatsAppUrl();
 
   useEffect(() => {
+    let active = true;
     fetch('/api/products')
       .then((res) => res.json())
       .then((data) => {
-        if (Array.isArray(data) && data.length > 0) {
+        if (active && Array.isArray(data) && data.length > 0) {
           setProducts(data);
         }
       })
-      .catch((err) => console.error('Erro ao atualizar produtos da API:', err));
+      .catch((err) => console.error('Erro ao atualizar produtos da API:', err))
+      .finally(() => {
+        if (active) setLoadingProducts(false);
+      });
+
+    return () => {
+      active = false;
+    };
   }, []);
+
+  // Abre produto automaticamente se vier de um link compartilhado (?produto=id)
+  useEffect(() => {
+    if (products.length === 0) return;
+    const params = new URLSearchParams(window.location.search);
+    const sharedId = params.get('produto');
+    if (sharedId) {
+      const found = products.find((p) => p.id === sharedId);
+      if (found) setSelectedProduct(found);
+    }
+  }, [products]);
+
+  const handleOpenProduct = (product: Product) => {
+    setSelectedProduct(product);
+    const url = new URL(window.location.href);
+    url.searchParams.set('produto', product.id);
+    window.history.replaceState({}, '', url.toString());
+  };
+
+  const handleCloseProduct = () => {
+    setSelectedProduct(null);
+    const url = new URL(window.location.href);
+    if (url.searchParams.has('produto')) {
+      url.searchParams.delete('produto');
+      window.history.replaceState({}, '', url.pathname + (url.search ? url.search : ''));
+    }
+  };
 
   const scrollToCatalog = () => {
     catalogRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -50,7 +89,7 @@ export default function HomePage() {
     [products]
   );
 
-  // Extrai automaticamente as marcas únicas dos produtos cadastrados
+  // Marcas dinâmicas para a faixa abaixo do banner
   const availableBrands = useMemo(() => {
     const seen = new Set<string>();
     const result: string[] = [];
@@ -66,8 +105,22 @@ export default function HomePage() {
     return result;
   }, [products]);
 
+  // Seção editorial rápida: 4 destaques à pronta-entrega (visível na visão padrão)
+  const readyHighlights = useMemo(() => {
+    return products
+      .filter((p) => p.status === 'pronta_entrega')
+      .slice(0, 4);
+  }, [products]);
+
+  const showEditorialHighlights =
+    !loadingProducts &&
+    selectedCategory === 'todos' &&
+    selectedStock === 'todos' &&
+    searchTerm.trim() === '' &&
+    readyHighlights.length > 0;
+
   const filteredProducts = useMemo(() => {
-    return products.filter((product) => {
+    const filtered = products.filter((product) => {
       if (selectedCategory !== 'todos') {
         if (selectedCategory === 'perfumes') {
           if (product.category !== 'perfumes' && product.category !== 'beleza') {
@@ -95,7 +148,23 @@ export default function HomePage() {
 
       return true;
     });
-  }, [products, selectedCategory, selectedStock, searchTerm]);
+
+    const sorted = [...filtered];
+    if (sortBy === 'price_asc') {
+      sorted.sort((a, b) => a.price - b.price);
+    } else if (sortBy === 'price_desc') {
+      sorted.sort((a, b) => b.price - a.price);
+    } else if (sortBy === 'pronta_first') {
+      sorted.sort((a, b) => {
+        if (a.status === b.status) return 0;
+        return a.status === 'pronta_entrega' ? -1 : 1;
+      });
+    } else {
+      sorted.sort((a, b) => Number(Boolean(b.isFeatured)) - Number(Boolean(a.isFeatured)));
+    }
+
+    return sorted;
+  }, [products, selectedCategory, selectedStock, searchTerm, sortBy]);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#fcfbf8] dark:bg-[#0c0c0f] text-[#141414] dark:text-zinc-100 selection:bg-[#d4af37]/25 transition-colors">
@@ -108,7 +177,9 @@ export default function HomePage() {
       />
 
       <RotatingHeroBanner
+        products={products}
         onScrollToCatalog={scrollToCatalog}
+        onOpenProduct={handleOpenProduct}
         brands={availableBrands}
         activeBrand={searchTerm}
         onSelectBrand={(brand) => {
@@ -118,12 +189,48 @@ export default function HomePage() {
         }}
       />
 
+      {/* Faixa Editorial: Destaques à Pronta-Entrega */}
+      {showEditorialHighlights && (
+        <section className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4 space-y-6">
+          <div className="flex items-end justify-between border-b border-[#e5e0d5] dark:border-dark-800 pb-3">
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.22em] text-[#065f46] dark:text-emerald-400 font-semibold">
+                Envio em até 24h
+              </p>
+              <h2 className="text-xl sm:text-2xl font-display font-normal text-[#141414] dark:text-white mt-0.5">
+                Destaques à Pronta-Entrega
+              </h2>
+            </div>
+
+            <button
+              onClick={() => {
+                setSelectedStock('pronta_entrega');
+                scrollToCatalog();
+              }}
+              className="text-[11px] uppercase tracking-[0.14em] text-[#8b6508] dark:text-gold-400 hover:underline underline-offset-4"
+            >
+              Ver todos ({prontaEntregaCount})
+            </button>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-8">
+            {readyHighlights.map((product) => (
+              <ProductCard
+                key={`highlight-${product.id}`}
+                product={product}
+                onOpenModal={handleOpenProduct}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Catálogo Completo */}
       <main
         ref={catalogRef}
         id="catalogo"
         className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8"
       >
-        {/* Cabeçalho da Seção */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
           <div>
             <p className="text-[10px] uppercase tracking-[0.22em] text-[#8b6508] dark:text-gold-400 font-semibold">
@@ -134,7 +241,7 @@ export default function HomePage() {
                 ? 'Pronta-Entrega'
                 : selectedStock === 'encomenda'
                 ? 'Sob Encomenda'
-                : 'Catálogo de Produtos'}
+                : 'Catálogo Completo'}
               <span className="text-sm font-sans text-zinc-400 dark:text-zinc-500 ml-3">
                 ({filteredProducts.length})
               </span>
@@ -155,25 +262,27 @@ export default function HomePage() {
           )}
         </div>
 
-        {/* Navegação por Categorias e Estoque */}
         <CategoryNav
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
           selectedStock={selectedStock}
           setSelectedStock={setSelectedStock}
+          sortBy={sortBy}
+          setSortBy={setSortBy}
           totalProductsCount={products.length}
           prontaEntregaCount={prontaEntregaCount}
           encomendaCount={encomendaCount}
         />
 
-        {/* Grid Editorial de Produtos */}
-        {filteredProducts.length > 0 ? (
+        {loadingProducts ? (
+          <ProductGridSkeleton count={8} />
+        ) : filteredProducts.length > 0 ? (
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 pt-2">
             {filteredProducts.map((product) => (
               <ProductCard
                 key={product.id}
                 product={product}
-                onOpenModal={(p) => setSelectedProduct(p)}
+                onOpenModal={handleOpenProduct}
               />
             ))}
           </div>
@@ -183,42 +292,54 @@ export default function HomePage() {
               Nenhum produto encontrado
             </h3>
             <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto">
-              Não encontramos itens com os filtros atuais. Limpe a busca para visualizar todo o catálogo.
+              Não encontramos itens com os filtros atuais. Limpe a busca ou chame no WhatsApp para consultar encomendas.
             </p>
-            <button
-              onClick={() => {
-                setSelectedCategory('todos');
-                setSelectedStock('todos');
-                setSearchTerm('');
-              }}
-              className="px-5 py-2.5 bg-[#141414] dark:bg-gold-500 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.16em] font-semibold transition-colors"
-            >
-              Ver Todo o Catálogo
-            </button>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <button
+                onClick={() => {
+                  setSelectedCategory('todos');
+                  setSelectedStock('todos');
+                  setSearchTerm('');
+                }}
+                className="px-5 py-2.5 bg-[#141414] dark:bg-gold-500 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.16em] font-semibold transition-colors"
+              >
+                Ver Todo o Catálogo
+              </button>
+              <a
+                href={supportUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 border border-[#141414] dark:border-dark-600 text-[#141414] dark:text-zinc-200 text-[11px] uppercase tracking-[0.16em] font-semibold"
+              >
+                Encomendar via WhatsApp
+              </a>
+            </div>
           </div>
         )}
       </main>
 
       <TrustSection />
 
+      <FaqSection />
+
       <Footer />
 
       <ProductModal
         product={selectedProduct}
-        onClose={() => setSelectedProduct(null)}
+        onClose={handleCloseProduct}
       />
 
       <InterestListDrawer />
 
       {/* Ações flutuantes discretas */}
       <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2.5">
-        {items.length > 0 && (
+        {totalCount > 0 && (
           <button
             onClick={() => setIsDrawerOpen(true)}
             className="flex items-center gap-2 px-4 py-2.5 bg-[#fcfbf8] dark:bg-dark-900 border border-[#141414] dark:border-gold-500/60 shadow-lg text-[#141414] dark:text-gold-300 text-[11px] uppercase tracking-[0.14em] font-semibold hover:bg-[#141414] hover:text-white transition-colors"
           >
             <ShoppingBag className="w-3.5 h-3.5" />
-            <span>Lista ({items.length})</span>
+            <span>Lista ({totalCount})</span>
           </button>
         )}
 
