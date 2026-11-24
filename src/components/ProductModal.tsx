@@ -36,6 +36,11 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
     setSelectedVariantIndex(0);
   }, [product?.id]);
 
+  // Trocar de variação volta para a primeira foto dela
+  useEffect(() => {
+    setSelectedImageIndex(0);
+  }, [selectedVariantIndex]);
+
   useEffect(() => {
     if (!product) return;
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -53,7 +58,13 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
   const inList = isInList(product.id, activeVariant?.label);
   const whatsappUrl = getProductWhatsAppUrl(product, activeVariant);
   const isProntaEntrega = product.status === 'pronta_entrega';
-  const totalImages = product.images.length;
+  const galleryImages =
+    activeVariant?.images && activeVariant.images.length > 0 ? activeVariant.images : product.images;
+  const totalImages = galleryImages.length;
+  const displayDescription = activeVariant?.description || product.description;
+  const displaySpecs =
+    activeVariant?.specs && activeVariant.specs.length > 0 ? activeVariant.specs : product.specs;
+  const variantsWithPhotos = variants.some((v) => v.images && v.images.length > 0);
 
   const nextImage = () => {
     if (totalImages <= 1) return;
@@ -121,7 +132,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             className="relative w-full aspect-[4/5] bg-[#ebe6dc] dark:bg-dark-900 overflow-hidden touch-pan-y"
           >
             <Image
-              src={product.images[selectedImageIndex] || product.images[0]}
+              src={galleryImages[selectedImageIndex] || galleryImages[0]}
               alt={product.name}
               fill
               className="object-cover"
@@ -149,7 +160,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
           {totalImages > 1 && (
             <div className="flex gap-2 mt-4 overflow-x-auto max-w-full">
-              {product.images.map((img, idx) => (
+              {galleryImages.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => setSelectedImageIndex(idx)}
@@ -182,6 +193,11 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             <h2 className="text-xl sm:text-2xl font-display font-normal text-[#141414] dark:text-white leading-snug">
               {product.name}
             </h2>
+            {activeVariant && variantsWithPhotos && (
+              <p className="text-sm text-[#8b6508] dark:text-gold-400 font-medium">
+                {activeVariant.label}
+              </p>
+            )}
           </div>
 
           {/* Preço & Disponibilidade */}
@@ -213,32 +229,77 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             </p>
           </div>
 
-          {/* Seletor de Variações (Armazenamento / Cor / ML) */}
+          {/* Seletor de Variações: com fotos vira grade de miniaturas; sem fotos, botões de texto */}
           {variants.length > 0 && (
             <div className="space-y-2">
               <h4 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
-                Selecione uma opção
+                {variantsWithPhotos
+                  ? `Escolha a fragrância (${variants.length})`
+                  : 'Selecione uma opção'}
               </h4>
-              <div className="flex flex-wrap gap-2">
-                {variants.map((variant, idx) => {
-                  const selected = idx === selectedVariantIndex;
-                  return (
-                    <button
-                      key={variant.id || variant.label}
-                      type="button"
-                      onClick={() => setSelectedVariantIndex(idx)}
-                      className={`px-3 py-1.5 text-xs border transition-colors ${
-                        selected
-                          ? 'bg-[#141414] text-white border-[#141414] dark:bg-gold-500 dark:text-[#0c0c0f] dark:border-gold-500 font-semibold'
-                          : 'bg-transparent text-[#141414] dark:text-zinc-300 border-[#d6d0c4] dark:border-dark-700 hover:border-[#141414] dark:hover:border-gold-400'
-                      }`}
-                    >
-                      {variant.label}
-                      {variant.price ? ` · ${formatCurrency(variant.price)}` : ''}
-                    </button>
-                  );
-                })}
-              </div>
+              {variantsWithPhotos ? (
+                <div
+                  role="radiogroup"
+                  aria-label="Fragrâncias disponíveis"
+                  className="grid grid-cols-4 sm:grid-cols-5 gap-2 max-h-56 overflow-y-auto pr-1"
+                >
+                  {variants.map((variant, idx) => {
+                    const selected = idx === selectedVariantIndex;
+                    const thumb = variant.images?.[0];
+                    return (
+                      <button
+                        key={variant.id || variant.label}
+                        type="button"
+                        role="radio"
+                        aria-checked={selected}
+                        aria-label={variant.label}
+                        title={variant.label}
+                        onClick={() => setSelectedVariantIndex(idx)}
+                        className={`relative aspect-square overflow-hidden border bg-white transition-all ${
+                          selected
+                            ? 'border-[#141414] dark:border-gold-400 ring-1 ring-[#141414] dark:ring-gold-400'
+                            : 'border-[#d6d0c4] dark:border-dark-700 opacity-70 hover:opacity-100'
+                        }`}
+                      >
+                        {thumb ? (
+                          <Image
+                            src={thumb}
+                            alt=""
+                            fill
+                            sizes="64px"
+                            className="object-contain p-0.5"
+                          />
+                        ) : (
+                          <span className="absolute inset-0 flex items-center justify-center text-[9px] px-1 text-center leading-tight">
+                            {variant.label}
+                          </span>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {variants.map((variant, idx) => {
+                    const selected = idx === selectedVariantIndex;
+                    return (
+                      <button
+                        key={variant.id || variant.label}
+                        type="button"
+                        onClick={() => setSelectedVariantIndex(idx)}
+                        className={`px-3 py-1.5 text-xs border transition-colors ${
+                          selected
+                            ? 'bg-[#141414] text-white border-[#141414] dark:bg-gold-500 dark:text-[#0c0c0f] dark:border-gold-500 font-semibold'
+                            : 'bg-transparent text-[#141414] dark:text-zinc-300 border-[#d6d0c4] dark:border-dark-700 hover:border-[#141414] dark:hover:border-gold-400'
+                        }`}
+                      >
+                        {variant.label}
+                        {variant.price ? ` · ${formatCurrency(variant.price)}` : ''}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           )}
 
@@ -248,18 +309,18 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               Sobre o produto
             </h4>
             <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
-              {product.description}
+              {displayDescription}
             </p>
           </div>
 
           {/* Especificações */}
-          {product.specs && product.specs.length > 0 && (
+          {displaySpecs && displaySpecs.length > 0 && (
             <div>
               <h4 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400 mb-2">
                 Especificações
               </h4>
               <ul className="space-y-1.5 text-xs text-zinc-600 dark:text-zinc-300">
-                {product.specs.map((spec, i) => (
+                {displaySpecs.map((spec, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <span className="w-1 h-1 rounded-full bg-[#8b6508] dark:bg-gold-400 shrink-0" />
                     <span>{spec}</span>

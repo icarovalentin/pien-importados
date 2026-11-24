@@ -1,0 +1,664 @@
+{
+  "id": "vs-body-mist",
+  "name": "Victoria's Secret Fragrance Body Mist",
+  "brand": "Victoria's Secret",
+  "category": "beleza",
+  "categoryLabel": "Body Mist",
+  "price": 70.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/mists/angel-fantasy-shimmer.webp"
+  ],
+  "description": "Body Mist Angel Fantasy Shimmer. Cintilante e sedutora. Um sonho mergulhado em um desejo deslumbrante.",
+  "specs": [
+    "Tipo de fragrância: Frutal Floral",
+    "Notas de topo: Ameixa Cintilante",
+    "Notas de coração: Orquídea Noturna",
+    "Notas de fundo: Madeiras Glamorosas, Almíscar Suave",
+    "Volume: 250 ml",
+    "100% original Victoria’s Secret"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Victoria’s Secret, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "mists-angel-fantasy-shimmer",
+      "label": "Angel Fantasy Shimmer",
+      "price": 168.9,
+      "images": [
+        "/catalog/mists/angel-fantasy-shimmer.webp"
+      ],
+      "description": "Body Mist Angel Fantasy Shimmer. Cintilante e sedutora. Um sonho mergulhado em um desejo deslumbrante.",
+      "specs": [
+        "Tipo de fragrância: Frutal Floral",
+        "Notas de topo: Ameixa Cintilante",
+        "Notas de coração: Orquídea Noturna",
+        "Notas de fundo: Madeiras Glamorosas, Almíscar Suave",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-spotlight-shimmer",
+      "label": "Spotlight Shimmer",
+      "price": 168.9,
+      "images": [
+        "/catalog/mists/spotlight-shimmer.webp"
+      ],
+      "description": "Body Mist Spotlight Shimmer. Vibrante e cativante. A fruta deliciosa se une a um glamour inebriante.",
+      "specs": [
+        "Tipo de fragrância: Frutal Floral",
+        "Notas de topo: Cereja Brilhante",
+        "Notas de coração: Hibisco Acetinado",
+        "Notas de fundo: Creme de Luxo, Sândalo Sedoso",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-pink-diamond-shimmer",
+      "label": "Pink Diamond Shimmer",
+      "price": 168.9,
+      "images": [
+        "/catalog/mists/pink-diamond-shimmer.webp"
+      ],
+      "description": "Body Mist Pink Diamond Shimmer. Radiante e irresistível. Brilho doce envolto em camadas de pó de diamante.",
+      "specs": [
+        "Tipo de fragrância: Baunilha Gourmand",
+        "Notas de topo: Cristais de Coco",
+        "Notas de coração: Caramelo Luminoso",
+        "Notas de fundo: Baunilha de Veludo, Madeiras de Cashmere",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-pure-seduction",
+      "label": "Pure Seduction",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/pure-seduction.webp"
+      ],
+      "description": "Body Mist Pure Seduction. Ousada e divertida. Uma infusão frutal e sedutora.",
+      "specs": [
+        "Tipo de fragrância: Frutal",
+        "Notas de topo: Melão casaba, ameixa vermelha",
+        "Notas de coração: Ciclâmen do orvalho da manhã, frésia",
+        "Notas de fundo: Almíscar suave, pau-rosa",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-aqua-kiss",
+      "label": "Aqua Kiss",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/aqua-kiss.webp"
+      ],
+      "description": "Body Mist Aqua Kiss. Brilhante e fresca. Uma explosão aquática e refrescante.",
+      "specs": [
+        "Tipo de fragrância: Fresco",
+        "Notas de topo: Toranja rosa, frésia banhada pela chuva",
+        "Notas de coração: Lírio-d’água, gotas de pera",
+        "Notas de fundo: Âmbar branco, almíscar mineral",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-shimmer-velvet-petals",
+      "label": "Shimmer Velvet Petals",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/shimmer-velvet-petals.webp"
+      ],
+      "description": "Body Mist Shimmer Velvet Petals. Feminina e inesperada. Um deleite irresistível para os sentidos.",
+      "specs": [
+        "Tipo de fragrância: Frutal Gourmand",
+        "Notas de topo: Carambola brilhante, glacê de amêndoas doces",
+        "Notas de coração: Leite de coco, flor de damasco açucarada",
+        "Notas de fundo: Almíscares aconchegantes, sândalo cremoso",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-midnight-bloom",
+      "label": "Midnight Bloom",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/midnight-bloom.webp"
+      ],
+      "description": "Body Mist Midnight Bloom. Sonhadora e etérea. Um brilho floral ao luar.",
+      "specs": [
+        "Tipo de fragrância: Floral Quente",
+        "Notas de topo: Frésia rosada aérea, buquê de frutas vermelhas",
+        "Notas de coração: Flor da lua, praliné batido",
+        "Notas de fundo: Madeiras brilhantes, baunilha cremosa",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-velvet-petals",
+      "label": "Velvet Petals",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/velvet-petals.webp"
+      ],
+      "description": "Body Mist Velvet Petals. Feminina e inesperada. Um deleite irresistível para os sentidos.",
+      "specs": [
+        "Tipo de fragrância: Frutal Gourmand",
+        "Notas de topo: Carambola brilhante, glacê de amêndoas doces",
+        "Notas de coração: Leite de coco, flor de damasco açucarada",
+        "Notas de fundo: Almíscares aconchegantes, sândalo cremoso",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-velvet-petals-2",
+      "label": "Velvet Petals (2)",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/velvet-petals-2.webp"
+      ],
+      "description": "Body Mist Velvet Petals (2). Feminina e inesperada. Um deleite irresistível para os sentidos.",
+      "specs": [
+        "Tipo de fragrância: Frutal Gourmand",
+        "Notas de topo: Carambola brilhante, glacê de amêndoas doces",
+        "Notas de coração: Leite de coco, flor de damasco açucarada",
+        "Notas de fundo: Almíscares aconchegantes, sândalo cremoso",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-vanilla-lace",
+      "label": "Vanilla Lace",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/vanilla-lace.webp"
+      ],
+      "description": "Body Mist Vanilla Lace. Suave e doce para sempre. Dos arquivos. Uma onda de calor cremoso.",
+      "specs": [
+        "Tipo de fragrância: Gourmand",
+        "Notas de topo: Orquídea de baunilha, café com leite",
+        "Notas de coração: Hortênsia rosa, pétalas de lírio-do-vale",
+        "Notas de fundo: Baunilha cremosa, sândalo",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-golden-apricot-honey",
+      "label": "Golden Apricot & Honey",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/golden-apricot-honey.webp"
+      ],
+      "description": "Body Mist Golden Apricot & Honey. Aroma: frutado, doce e quente. Notas: damasco dourado e mel. Sensação: radiante, suave e envolvente. Estilo: doce, elegante e quente.",
+      "specs": [
+        "Tipo de fragrância: Frutado, doce e quente",
+        "Notas: Damasco dourado e mel",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-love-spell-intense",
+      "label": "Love Spell Intense",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/love-spell-intense.webp"
+      ],
+      "description": "Body Mist Love Spell Intense. Aroma frutado, floral e vibrante. Uma versão amplificada do clássico Love Spell, com uma combinação de maçã vermelha, pêssego suculento e flores delicadas. Seu fundo de creme de framboesa, baunilha e almíscar de damasco traz uma sensação doce e envolvente.",
+      "specs": [
+        "Tipo de fragrância: Frutado, floral e vibrante",
+        "Notas de topo: Maçã Red Velvet, néctar de pêssego e limão açucarado",
+        "Notas de coração: Flor de cerejeira dourada, jasmim branco e flor de tamarindo",
+        "Notas de fundo: Creme de framboesa, madeiras de baunilha e almíscar de damasco",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-glazed-petals-berries",
+      "label": "Glazed Petals & Berries",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/glazed-petals-berries.webp"
+      ],
+      "description": "Body Mist Glazed Petals & Berries. Esmaltada à perfeição. Uma garoa quente: cheira a doces primaveris com um toque campestre.",
+      "specs": [
+        "Tipo de fragrância: Frutal quente",
+        "Notas de topo: Geleia de damasco, Peach Fuzz",
+        "Notas de coração: Garoa de mel, flor de amendoeira",
+        "Notas de fundo: Âmbar brilhante, almíscar radiante",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-wild-rose-amber",
+      "label": "Wild Rose Amber",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/wild-rose-amber.webp"
+      ],
+      "description": "Body Mist Wild Rose Amber. Seu novo ritual diário. Esta Mist oferece uma explosão de aroma da cabeça aos pés. Aprovado por dermatologistas, vegano, não testado em animais e sem corantes.",
+      "specs": [
+        "Volume: 236 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-love-spell",
+      "label": "Love Spell",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/love-spell.webp"
+      ],
+      "description": "Body Mist Love Spell. Vibrante e sedutora. Uma sensação romântica cativante.",
+      "specs": [
+        "Tipo de fragrância: Floral Frutal",
+        "Notas de topo: Maçã vermelha, flor de cerejeira",
+        "Notas de coração: Lírio leve, pêssego fresco",
+        "Notas de fundo: Almíscar aéreo, madeiras suaves",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-shimmer-aqua-kiss",
+      "label": "Shimmer Aqua Kiss",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/shimmer-aqua-kiss.webp"
+      ],
+      "description": "Body Mist Shimmer Aqua Kiss. Brilhante e fresca. Uma explosão aquática e refrescante.",
+      "specs": [
+        "Tipo de fragrância: Fresco",
+        "Notas de topo: Toranja rosa, frésia banhada pela chuva",
+        "Notas de coração: Lírio-d’água, gotas de pera",
+        "Notas de fundo: Âmbar branco, almíscar mineral",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-rush",
+      "label": "Rush",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/rush.webp"
+      ],
+      "description": "Body Mist Rush. Sensual e envolvente. Uma combinação intensa em que as faíscas ganham vida.",
+      "specs": [
+        "Tipo de fragrância: Frutal Gourmand",
+        "Notas: Madeiras sensuais, tangerina da meia-noite",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-temptation",
+      "label": "Temptation",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/temptation.webp"
+      ],
+      "description": "Body Mist Temptation. Doce e tentadora. Uma combinação irresistível que desperta os sentidos.",
+      "specs": [
+        "Tipo de fragrância: Frutal",
+        "Notas: Maçã suculenta, flor do deserto",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-bare-vanilla",
+      "label": "Bare Vanilla",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/bare-vanilla.webp"
+      ],
+      "description": "Body Mist Bare Vanilla. Quente e reconfortante. Uma explosão de doçura e conforto irresistível.",
+      "specs": [
+        "Tipo de fragrância: Gourmand",
+        "Notas de topo: Bergamota, flor de macieira",
+        "Notas de coração: Orquídea branca, algodão-doce",
+        "Notas de fundo: Baunilha batida, âmbar luminoso",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-coconut-milk-rose",
+      "label": "Coconut Milk Rose",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/coconut-milk-rose.webp"
+      ],
+      "description": "Body Mist Coconut Milk Rose. Seu novo ritual diário. Esta Mist oferece uma explosão de aroma da cabeça aos pés. Aprovado por dermatologistas, vegano, não testado em animais e sem corantes. Leite de coco e rosa: o leite de coco cremoso se une à rosa delicada para um momento de calma. Infusionado com água de coco.",
+      "specs": [
+        "Tipo de fragrância: Floral gourmand",
+        "Notas: Leite de coco, rosa",
+        "Volume: 236 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-blue-jasmine-water-lily",
+      "label": "Blue Jasmine Water Lily",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/blue-jasmine-water-lily.webp"
+      ],
+      "description": "Body Mist Blue Jasmine Water Lily. Seu novo ritual diário. Esta Mist oferece uma explosão de aroma da cabeça aos pés. Aprovado por dermatologistas, vegano, não testado em animais e sem corantes.",
+      "specs": [
+        "Volume: 236 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-pure-seduction-2",
+      "label": "Pure Seduction (2)",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/pure-seduction-2.webp"
+      ],
+      "description": "Body Mist Pure Seduction (2). Ousada e divertida. Uma infusão frutal e sedutora.",
+      "specs": [
+        "Tipo de fragrância: Frutal",
+        "Notas de topo: Melão casaba, ameixa vermelha",
+        "Notas de coração: Ciclâmen do orvalho da manhã, frésia",
+        "Notas de fundo: Almíscar suave, pau-rosa",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-bare-vanilla-intense",
+      "label": "Bare Vanilla Intense",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/bare-vanilla-intense.webp"
+      ],
+      "description": "Body Mist Bare Vanilla Intense. Aroma gourmand, quente e cremoso. Uma versão mais intensa do clássico Bare Vanilla, que combina flores suaves, especiarias e baunilha com um fundo de cacau, sândalo e madeiras de cashmere. Seu perfil é quente, envolvente e sofisticado.",
+      "specs": [
+        "Tipo de fragrância: Gourmand, quente e cremoso",
+        "Notas de topo: Flor de macieira, pimenta-preta e rosa açucarada",
+        "Notas de coração: Orquídea de baunilha, flor de açafrão e cacau cremoso",
+        "Notas de fundo: Fava de baunilha, sândalo cremoso e madeiras de cashmere",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-angel-cake-cream",
+      "label": "Angel Cake & Cream",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/angel-cake-cream.webp"
+      ],
+      "description": "Body Mist Angel Cake & Cream. Um halo de doces sonhos. Indulgentemente floral e cremoso: cheira a doces primaveris de estilo campestre.",
+      "specs": [
+        "Tipo de fragrância: Floral gourmand",
+        "Notas de topo: Flores prensadas, flor de laranjeira",
+        "Notas de coração: Orquídea de baunilha, biscoito amanteigado?",
+        "Notas de fundo: Leite doce, almíscares de nuvem",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-whipped-milk-sugar",
+      "label": "Whipped Milk & Sugar",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/whipped-milk-sugar.webp"
+      ],
+      "description": "Body Mist Whipped Milk & Sugar. Batido e delicioso. Um calor doce: cheira a doces primaveris com um toque campestre.",
+      "specs": [
+        "Tipo de fragrância: Gourmand quente",
+        "Notas de topo: Leite espumado, açúcar de confeiteiro",
+        "Notas de coração: Pétalas de jasmim, creme de baunilha",
+        "Notas de fundo: Madeira batida, fava tonka",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-shimmer-midnight-bloom",
+      "label": "Shimmer Midnight Bloom",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/shimmer-midnight-bloom.webp"
+      ],
+      "description": "Body Mist Shimmer Midnight Bloom. Sonhadora e etérea. Um brilho floral ao luar.",
+      "specs": [
+        "Tipo de fragrância: Floral Quente",
+        "Notas de topo: Frésia rosada aérea, buquê de frutas vermelhas",
+        "Notas de coração: Flor da lua, praliné batido",
+        "Notas de fundo: Madeiras brilhantes, baunilha cremosa",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-cashmerefleur",
+      "label": "Cashmerefleur",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/cashmerefleur.webp"
+      ],
+      "description": "Body Mist Cashmerefleur. Luxuosa e aconchegante. A flor mais doce.",
+      "specs": [
+        "Tipo de fragrância: Floral gourmand",
+        "Notas de topo: Pera fresca, rosa açucarada",
+        "Notas de coração: Jasmim cremoso, cashmere de baunilha",
+        "Notas de fundo: Almíscar suave, acorde amadeirado de sonho",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-amber-romance",
+      "label": "Amber Romance",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/amber-romance.webp"
+      ],
+      "description": "Body Mist Amber Romance. Radiante e nostálgica. Um abraço quente e luminoso.",
+      "specs": [
+        "Tipo de fragrância: Âmbar Gourmand",
+        "Notas de topo: Cereja-preta, damasco dourado",
+        "Notas de coração: Leite com especiarias, nuvem de canela",
+        "Notas de fundo: Baunilha cremosa, âmbar dourado",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-coconut-passion",
+      "label": "Coconut Passion",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/coconut-passion.webp"
+      ],
+      "description": "Body Mist Coconut Passion. Bronzeada e sensual. Um ar inebriante e decadente.",
+      "specs": [
+        "Tipo de fragrância: Gourmand de Coco",
+        "Notas de topo: Amora, leite de coco",
+        "Notas de coração: Lírio silvestre, flor de framboesa",
+        "Notas de fundo: Âmbar açucarado, sândalo quente",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-romantic",
+      "label": "Romantic",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/romantic.webp"
+      ],
+      "description": "Body Mist Romantic. Suave e romântica. Uma combinação delicada e feminina para envolver a pele.",
+      "specs": [
+        "Tipo de fragrância: Floral",
+        "Notas: Pétalas rosadas, almíscar solar",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-white-peach-mango",
+      "label": "White Peach Mango",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/white-peach-mango.webp"
+      ],
+      "description": "Body Mist White Peach Mango. Seu novo ritual diário. Esta Mist oferece uma explosão de aroma da cabeça aos pés. Aprovado por dermatologistas, vegano, não testado em animais e sem corantes.",
+      "specs": [
+        "Volume: 236 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-coconut-passion-2",
+      "label": "Coconut Passion (2)",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/coconut-passion-2.webp"
+      ],
+      "description": "Body Mist Coconut Passion (2). Bronzeada e sensual. Um ar inebriante e decadente.",
+      "specs": [
+        "Tipo de fragrância: Gourmand de Coco",
+        "Notas de topo: Amora, leite de coco",
+        "Notas de coração: Lírio silvestre, flor de framboesa",
+        "Notas de fundo: Âmbar açucarado, sândalo quente",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-love-spell-2",
+      "label": "Love Spell (2)",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/love-spell-2.webp"
+      ],
+      "description": "Body Mist Love Spell (2). Vibrante e sedutora. Uma sensação romântica cativante.",
+      "specs": [
+        "Tipo de fragrância: Floral Frutal",
+        "Notas de topo: Maçã vermelha, flor de cerejeira",
+        "Notas de coração: Lírio leve, pêssego fresco",
+        "Notas de fundo: Almíscar aéreo, madeiras suaves",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-shimmer-amber-romance",
+      "label": "Shimmer Amber Romance",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/shimmer-amber-romance.webp"
+      ],
+      "description": "Body Mist Shimmer Amber Romance. Radiante e nostálgica. Um abraço quente e luminoso.",
+      "specs": [
+        "Tipo de fragrância: Âmbar Gourmand",
+        "Notas de topo: Cereja-preta, damasco dourado",
+        "Notas de coração: Leite com especiarias, nuvem de canela",
+        "Notas de fundo: Baunilha cremosa, âmbar dourado",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-shimmer-coconut-passion",
+      "label": "Shimmer Coconut Passion",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/shimmer-coconut-passion.webp"
+      ],
+      "description": "Body Mist Shimmer Coconut Passion. Bronzeada e sensual. Um ar inebriante e decadente.",
+      "specs": [
+        "Tipo de fragrância: Gourmand de Coco",
+        "Notas de topo: Amora, leite de coco",
+        "Notas de coração: Lírio silvestre, flor de framboesa",
+        "Notas de fundo: Âmbar açucarado, sândalo quente",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-amber-romance-2",
+      "label": "Amber Romance (2)",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/amber-romance-2.webp"
+      ],
+      "description": "Body Mist Amber Romance (2). Radiante e nostálgica. Um abraço quente e luminoso.",
+      "specs": [
+        "Tipo de fragrância: Âmbar Gourmand",
+        "Notas de topo: Cereja-preta, damasco dourado",
+        "Notas de coração: Leite com especiarias, nuvem de canela",
+        "Notas de fundo: Baunilha cremosa, âmbar dourado",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-aqua-kiss-2",
+      "label": "Aqua Kiss (2)",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/aqua-kiss-2.webp"
+      ],
+      "description": "Body Mist Aqua Kiss (2). Brilhante e fresca. Uma explosão aquática e refrescante.",
+      "specs": [
+        "Tipo de fragrância: Fresco",
+        "Notas de topo: Toranja rosa, frésia banhada pela chuva",
+        "Notas de coração: Lírio-d’água, gotas de pera",
+        "Notas de fundo: Âmbar branco, almíscar mineral",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-shimmer-temptation",
+      "label": "Shimmer Temptation",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/shimmer-temptation.webp"
+      ],
+      "description": "Body Mist Shimmer Temptation. Doce e tentadora. Uma combinação irresistível que desperta os sentidos.",
+      "specs": [
+        "Tipo de fragrância: Frutal",
+        "Notas: Maçã suculenta, flor do deserto",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    },
+    {
+      "id": "mists-shimmer-love-spell",
+      "label": "Shimmer Love Spell",
+      "price": 70.9,
+      "images": [
+        "/catalog/mists/shimmer-love-spell.webp"
+      ],
+      "description": "Body Mist Shimmer Love Spell. Vibrante e sedutora. Uma sensação romântica cativante.",
+      "specs": [
+        "Tipo de fragrância: Floral Frutal",
+        "Notas de topo: Maçã vermelha, flor de cerejeira",
+        "Notas de coração: Lírio leve, pêssego fresco",
+        "Notas de fundo: Almíscar aéreo, madeiras suaves",
+        "Volume: 250 ml",
+        "100% original Victoria’s Secret"
+      ]
+    }
+  ]
+}
