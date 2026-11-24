@@ -22,13 +22,19 @@ export function getServerAdminPassword(): string | null {
   return pwd;
 }
 
-function getSigningKey(): Buffer | null {
-  const adminPassword = getServerAdminPassword();
-  const explicitSecret = process.env.ADMIN_SESSION_SECRET;
-  const baseSecret = explicitSecret && explicitSecret.trim().length > 0
-    ? explicitSecret
-    : adminPassword;
+/**
+ * Retorna o segredo de assinatura da sessão (obrigatório e independente da senha).
+ */
+export function getSessionSecret(): string | null {
+  const secret = process.env.ADMIN_SESSION_SECRET;
+  if (!secret || secret.trim().length < 32) {
+    return null;
+  }
+  return secret;
+}
 
+function getSigningKey(): Buffer | null {
+  const baseSecret = getSessionSecret();
   if (!baseSecret) {
     return null;
   }
@@ -127,9 +133,9 @@ export function verifySessionToken(token: string | undefined): boolean {
 /**
  * Verifica nos Route Handlers se a requisição possui sessão administrativa válida.
  */
-export function isAdminAuthenticated(): boolean {
+export async function isAdminAuthenticated(): Promise<boolean> {
   try {
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const token = cookieStore.get(ADMIN_COOKIE_NAME)?.value;
     return verifySessionToken(token);
   } catch {
@@ -145,4 +151,21 @@ export function getSessionCookieOptions(maxAgeSeconds = SESSION_TTL_SECONDS) {
     path: '/',
     maxAge: maxAgeSeconds,
   };
+}
+
+/**
+ * Defesa extra contra CSRF: requisições de escrita devem vir da mesma origem.
+ */
+export function isSameOrigin(req: Request): boolean {
+  const origin = req.headers.get('origin');
+  if (!origin) {
+    // Navegadores sempre enviam Origin em POST/PUT/DELETE cross-site; ausência = cliente não-navegador
+    return req.headers.get('sec-fetch-site') !== 'cross-site';
+  }
+  const host = req.headers.get('x-forwarded-host') || req.headers.get('host');
+  try {
+    return new URL(origin).host === host;
+  } catch {
+    return false;
+  }
 }

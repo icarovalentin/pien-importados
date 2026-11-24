@@ -3,6 +3,8 @@ import {
   ADMIN_COOKIE_NAME,
   createSessionToken,
   getServerAdminPassword,
+  getSessionSecret,
+  isSameOrigin,
   getSessionCookieOptions,
   verifyAdminPassword,
 } from '@/lib/auth';
@@ -12,21 +14,43 @@ const MAX_ATTEMPTS = 5;
 const WINDOW_MS = 10 * 60 * 1000; // 10 minutos
 const attemptsByIp = new Map<string, { count: number; resetAt: number }>();
 
+const MAX_TRACKED_IPS = 5000;
+const GLOBAL_MAX_FAILURES = 50; // teto global, independe do IP informado
+let globalFailures = { count: 0, resetAt: 0 };
+
+// Atrás de proxy confiável (Vercel etc.), x-real-ip é definido pela plataforma;
+// no x-forwarded-for usamos a última entrada (adicionada pelo proxy), nunca a primeira (forjável).
 function getClientIp(req: Request): string {
+  const real = req.headers.get('x-real-ip');
+  if (real) return real.trim();
   const forwarded = req.headers.get('x-forwarded-for');
   if (forwarded) {
-    return forwarded.split(',')[0].trim();
+    const parts = forwarded.split(',');
+    return parts[parts.length - 1].trim();
   }
-  return req.headers.get('x-real-ip') || 'unknown';
+  return 'unknown';
+}
+
+function pruneAttempts(now: number) {
+  if (attemptsByIp.size < MAX_TRACKED_IPS) return;
+  attemptsByIp.forEach((v, k) => {
+    if (v.resetAt <= now) attemptsByIp.delete(k);
+  });
+  if (attemptsByIp.size >= MAX_TRACKED_IPS) attemptsByIp.clear();
 }
 
 export async function POST(req: Request) {
   try {
-    if (!getServerAdminPassword()) {
+    if (!isSameOrigin(req)) {
+      return NextResponse.json({ success: false, error: 'Origem inválida' }, { status: 403 });
+    }
+
+    if (!getServerAdminPassword() || !getSessionSecret()) {
       return NextResponse.json(
         {
           success: false,
-          error: 'Variável ADMIN_PASSWORD não configurada no servidor.',
+          error:
+            'Servidor sem ADMIN_PASSWORD ou ADMIN_SESSION_SECRET (mín. 32 caracteres) configurados.',
         },
         { status: 503 }
       );
@@ -34,9 +58,13 @@ export async function POST(req: Request) {
 
     const ip = getClientIp(req);
     const now = Date.now();
+    if (globalFailures.resetAt <= now) globalFailures = { count: 0, resetAt: now + WINDOW_MS };
     const record = attemptsByIp.get(ip);
 
-    if (record && record.resetAt > now && record.count >= MAX_ATTEMPTS) {
+    if (
+      globalFailures.count >= GLOBAL_MAX_FAILURES ||
+      (record && record.resetAt > now && record.count >= MAX_ATTEMPTS)
+    ) {
       return NextResponse.json(
         {
           success: false,
@@ -65,6 +93,8 @@ export async function POST(req: Request) {
       return response;
     }
 
+    globalFailures.count += 1;
+    pruneAttempts(now);
     if (!record || record.resetAt <= now) {
       attemptsByIp.set(ip, { count: 1, resetAt: now + WINDOW_MS });
     } else {
