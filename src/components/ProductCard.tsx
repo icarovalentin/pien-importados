@@ -31,7 +31,7 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
   return (
     <div
       onClick={() => onOpenModal(product)}
-      className="group relative flex flex-col bg-white dark:bg-dark-900 border border-zinc-100 dark:border-dark-800 rounded-2xl overflow-hidden hover:border-gold-500/40 dark:hover:border-gold-500/30 hover:shadow-2xl hover:shadow-black/8 dark:hover:shadow-black/50 transition-all duration-300 cursor-pointer"
+      className="group relative flex flex-col bg-white dark:bg-dark-900 border border-zinc-100 dark:border-dark-800 rounded-2xl overflow-hidden hover:border-gold-500/40 dark:hover:border-gold-500/30 hover:shadow-2xl hover:shadow-black/10 dark:hover:shadow-black/50 transition-all duration-300 cursor-pointer"
     >
       {/* Imagem do Produto */}
       <div className="relative w-full aspect-[4/5] bg-zinc-50 dark:bg-dark-950 overflow-hidden">
@@ -46,8 +46,8 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
         {/* Overlay gradiente — sutil, só na parte de baixo */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/5 to-transparent opacity-70" />
 
-        {/* Badge de Disponibilidade — canto superior esquerdo */}
-        <div className="absolute top-2.5 left-2.5 flex flex-col gap-1.5">
+        {/* Badges empilhados — canto superior esquerdo */}
+        <div className="absolute top-2.5 left-2.5 flex flex-col items-start gap-1.5">
           {isProntaEntrega ? (
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-black/70 text-emerald-300 border border-emerald-500/40 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
@@ -59,10 +59,7 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
               Sob Encomenda
             </span>
           )}
-        </div>
 
-        {/* Badge Original — canto superior esquerdo, embaixo */}
-        <div className="absolute top-9 left-2.5 mt-1.5">
           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[9px] font-semibold bg-black/60 text-zinc-300 backdrop-blur-sm border border-white/10">
             <ShieldCheck className="w-2.5 h-2.5 text-gold-400" />
             100% Original

@@ -16,7 +16,7 @@ export function ThemeToggle() {
     >
       {theme === 'dark' ? (
         <>
-          <Sun className="w-4 h-4 text-gold-400 animate-spin-slow" />
+          <Sun className="w-4 h-4 text-gold-400" />
           <span className="text-xs font-semibold hidden md:inline">Modo Claro</span>
         </>
       ) : (

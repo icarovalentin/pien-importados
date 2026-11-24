@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Product } from '@/types/product';
 import { X, MessageCircle, ShieldCheck, Check, Plus, Clock } from 'lucide-react';
@@ -15,6 +15,19 @@ interface ProductModalProps {
 export function ProductModal({ product, onClose }: ProductModalProps) {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const { addItem, removeItem, isInList } = useInterestList();
+
+  useEffect(() => {
+    setSelectedImageIndex(0);
+  }, [product?.id]);
+
+  useEffect(() => {
+    if (!product) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [product, onClose]);
 
   if (!product) return null;
 

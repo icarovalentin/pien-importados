@@ -85,13 +85,13 @@ export function TrustSection() {
             </div>
 
             <div className="grid grid-cols-2 gap-3 text-xs">
-              <div className="p-3 rounded-xl bg-zinc-50 dark:bg-dark-850 border border-zinc-200 dark:border-dark-750">
-                <span className="text-gold-700 dark:text-gold-400 font-bold block mb-1">🟢 Pronta-Entrega</span>
+              <div className="p-3 rounded-xl bg-zinc-50 dark:bg-dark-850 border border-zinc-200 dark:border-dark-700">
+                <span className="text-gold-700 dark:text-gold-400 font-bold block mb-1">Pronta-Entrega</span>
                 <span className="text-zinc-500 dark:text-zinc-400 text-[11px]">Postamos em até 24h úteis com código de rastreamento direto no WhatsApp.</span>
               </div>
 
-              <div className="p-3 rounded-xl bg-zinc-50 dark:bg-dark-850 border border-zinc-200 dark:border-dark-750">
-                <span className="text-amber-700 dark:text-amber-400 font-bold block mb-1">🟡 Sob Encomenda</span>
+              <div className="p-3 rounded-xl bg-zinc-50 dark:bg-dark-850 border border-zinc-200 dark:border-dark-700">
+                <span className="text-amber-700 dark:text-amber-400 font-bold block mb-1">Sob Encomenda</span>
                 <span className="text-zinc-500 dark:text-zinc-400 text-[11px]">Trazemos o modelo que você sonha com prazo claro e aviso de cada etapa.</span>
               </div>
             </div>

@@ -62,7 +62,7 @@ export function InterestListDrawer() {
               items.map((item) => (
                 <div
                   key={item.id}
-                  className="flex items-center gap-3 p-3 rounded-2xl bg-zinc-50 dark:bg-dark-850 border border-zinc-200 dark:border-dark-750"
+                  className="flex items-center gap-3 p-3 rounded-2xl bg-zinc-50 dark:bg-dark-850 border border-zinc-200 dark:border-dark-700"
                 >
                   <div className="relative w-16 h-16 rounded-xl overflow-hidden bg-zinc-200 dark:bg-dark-950 shrink-0">
                     <Image src={item.images[0]} alt={item.name} fill className="object-cover" />

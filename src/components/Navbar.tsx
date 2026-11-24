@@ -24,7 +24,7 @@ export function Navbar({
   const supportUrl = getGeneralSupportWhatsAppUrl();
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-zinc-200 dark:border-dark-700/60 bg-white/92 dark:bg-dark-950/92 backdrop-blur-lg transition-colors">
+    <header className="sticky top-0 z-40 w-full border-b border-zinc-200 dark:border-dark-700/60 bg-white/95 dark:bg-dark-950/95 backdrop-blur-lg transition-colors">
       {/* Barra superior de anúncio — fundo escuro sempre */}
       <div className="bg-dark-900 border-b border-dark-800 text-xs py-2 px-4 text-center flex items-center justify-center gap-3">
         <span className="flex items-center gap-1.5 font-semibold text-gold-400 tracking-wide">

@@ -1,8 +1,23 @@
 import { NextResponse } from 'next/server';
+import crypto from 'crypto';
 import fs from 'fs';
 import path from 'path';
+import { isAdminAuthenticated } from '@/lib/auth';
+
+const MAX_FILE_SIZE_BYTES = 5 * 1024 * 1024; // 5 MB
+const ALLOWED_MIME_TO_EXT: Record<string, string> = {
+  'image/jpeg': '.jpg',
+  'image/jpg': '.jpg',
+  'image/png': '.png',
+  'image/webp': '.webp',
+  'image/avif': '.avif',
+};
 
 export async function POST(req: Request) {
+  if (!isAdminAuthenticated()) {
+    return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
+  }
+
   try {
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
@@ -11,19 +26,37 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Nenhum arquivo enviado' }, { status: 400 });
     }
 
+    if (file.size === 0 || file.size > MAX_FILE_SIZE_BYTES) {
+      return NextResponse.json(
+        { error: 'A imagem deve ter no máximo 5 MB.' },
+        { status: 400 }
+      );
+    }
+
+    const ext = ALLOWED_MIME_TO_EXT[file.type.toLowerCase()];
+    if (!ext) {
+      return NextResponse.json(
+        { error: 'Formato não permitido. Envie apenas JPG, PNG, WebP ou AVIF.' },
+        { status: 400 }
+      );
+    }
+
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 
-    // Garante que o diretório public/uploads existe
-    const uploadDir = path.join(process.cwd(), 'public', 'uploads');
+    const uploadDir = path.resolve(process.cwd(), 'public', 'uploads');
     if (!fs.existsSync(uploadDir)) {
       fs.mkdirSync(uploadDir, { recursive: true });
     }
 
-    // Sanitiza e gera nome único para o arquivo
-    const sanitizedOriginalName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
-    const fileName = `${Date.now()}-${sanitizedOriginalName}`;
-    const destination = path.join(uploadDir, fileName);
+    const randomId = crypto.randomBytes(8).toString('hex');
+    const fileName = `${Date.now()}-${randomId}${ext}`;
+    const destination = path.resolve(uploadDir, fileName);
+
+    // Garante que não há escape de diretório
+    if (!destination.startsWith(uploadDir + path.sep)) {
+      return NextResponse.json({ error: 'Caminho de arquivo inválido' }, { status: 400 });
+    }
 
     fs.writeFileSync(destination, buffer);
 

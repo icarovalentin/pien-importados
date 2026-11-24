@@ -14,21 +14,19 @@ import {
   ArrowLeft,
   Search,
   Lock,
-  Unlock,
+  LogOut,
   Package,
   Clock,
-  Sparkles,
   CheckCircle2,
-  AlertCircle,
   ExternalLink,
   X,
-  Check,
 } from 'lucide-react';
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [checkingSession, setCheckingSession] = useState(true);
   const [pinInput, setPinInput] = useState('');
-  const [pinError, setPinError] = useState(false);
+  const [loginError, setLoginError] = useState('');
   const [loginLoading, setLoginLoading] = useState(false);
 
   const [products, setProducts] = useState<Product[]>([]);
@@ -39,13 +37,6 @@ export default function AdminPage() {
   // Estado do Modal de Cadastro / Edição
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
-
-  // Estado do Modal de Alteração de Senha
-  const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
-  const [newPasswordInput, setNewPasswordInput] = useState('');
-  const [confirmPasswordInput, setConfirmPasswordInput] = useState('');
-  const [passwordSuccess, setPasswordSuccess] = useState(false);
-  const [passwordError, setPasswordError] = useState('');
 
   // Campos do Formulário
   const [formName, setFormName] = useState('');
@@ -65,13 +56,23 @@ export default function AdminPage() {
 
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Verifica login salvo na sessão
+  // Verifica sessão real no servidor via cookie HttpOnly
   useEffect(() => {
-    const savedAuth = sessionStorage.getItem('pien_admin_auth');
-    if (savedAuth === 'true') {
-      setIsAuthenticated(true);
-    }
-    fetchProducts();
+    const init = async () => {
+      try {
+        const res = await fetch('/api/admin/session');
+        const data = await res.json();
+        if (res.ok && data.authenticated) {
+          setIsAuthenticated(true);
+        }
+      } catch (err) {
+        console.error('Erro ao verificar sessão:', err);
+      } finally {
+        setCheckingSession(false);
+      }
+      fetchProducts();
+    };
+    init();
   }, []);
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -79,7 +80,7 @@ export default function AdminPage() {
     if (!pinInput.trim()) return;
 
     setLoginLoading(true);
-    setPinError(false);
+    setLoginError('');
 
     try {
       const res = await fetch('/api/admin/login', {
@@ -92,16 +93,24 @@ export default function AdminPage() {
 
       if (res.ok && data.success) {
         setIsAuthenticated(true);
-        sessionStorage.setItem('pien_admin_auth', 'true');
-        setPinError(false);
+        setPinInput('');
+        setLoginError('');
       } else {
-        setPinError(true);
+        setLoginError(data.error || 'Senha incorreta. Tente novamente.');
       }
     } catch (err) {
       console.error('Erro ao autenticar:', err);
-      setPinError(true);
+      setLoginError('Erro de conexão ao autenticar.');
     } finally {
       setLoginLoading(false);
+    }
+  };
+
+  const handleLogout = async () => {
+    try {
+      await fetch('/api/admin/session', { method: 'DELETE' });
+    } finally {
+      setIsAuthenticated(false);
     }
   };
 
@@ -170,9 +179,15 @@ export default function AdminPage() {
         method: 'POST',
         body: formData,
       });
+      if (res.status === 401) {
+        setIsAuthenticated(false);
+        return;
+      }
       const data = await res.json();
-      if (data.url) {
+      if (res.ok && data.url) {
         setFormImageUrl(data.url);
+      } else {
+        alert(data.error || 'Erro ao enviar imagem.');
       }
     } catch (err) {
       alert('Erro ao enviar imagem. Tente novamente.');
@@ -220,11 +235,18 @@ export default function AdminPage() {
         body: JSON.stringify(payload),
       });
 
+      if (res.status === 401) {
+        setIsAuthenticated(false);
+        setIsModalOpen(false);
+        return;
+      }
+
       if (res.ok) {
         setIsModalOpen(false);
         fetchProducts();
       } else {
-        alert('Erro ao salvar produto.');
+        const data = await res.json().catch(() => null);
+        alert(data?.error || 'Erro ao salvar produto.');
       }
     } catch (err) {
       alert('Erro de conexão ao salvar.');
@@ -251,6 +273,11 @@ export default function AdminPage() {
         }),
       });
 
+      if (res.status === 401) {
+        setIsAuthenticated(false);
+        return;
+      }
+
       if (res.ok) {
         setProducts((prev) =>
           prev.map((p) =>
@@ -268,7 +295,11 @@ export default function AdminPage() {
     if (!confirm(`Deseja realmente excluir o produto "${name}"?`)) return;
 
     try {
-      const res = await fetch(`/api/products?id=${id}`, { method: 'DELETE' });
+      const res = await fetch(`/api/products?id=${encodeURIComponent(id)}`, { method: 'DELETE' });
+      if (res.status === 401) {
+        setIsAuthenticated(false);
+        return;
+      }
       if (res.ok) {
         setProducts((prev) => prev.filter((p) => p.id !== id));
       } else {
@@ -303,7 +334,15 @@ export default function AdminPage() {
     });
   }, [products, stockFilter, searchTerm]);
 
-  // Se não autenticado, mostra tela de PIN
+  if (checkingSession) {
+    return (
+      <div className="min-h-screen flex items-center justify-center p-4 bg-slate-50 dark:bg-dark-950 text-zinc-500 text-xs">
+        Verificando sessão...
+      </div>
+    );
+  }
+
+  // Se não autenticado, mostra tela de senha
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen flex items-center justify-center p-4 bg-slate-50 dark:bg-dark-950 text-zinc-900 dark:text-zinc-100">
@@ -329,8 +368,8 @@ export default function AdminPage() {
               autoFocus
             />
 
-            {pinError && (
-              <p className="text-xs text-red-500 font-semibold">Senha incorreta. Tente novamente.</p>
+            {loginError && (
+              <p className="text-xs text-red-500 font-semibold">{loginError}</p>
             )}
 
             <button
@@ -402,6 +441,14 @@ export default function AdminPage() {
             >
               <Plus className="w-4 h-4 stroke-[3]" />
               <span>Novo Produto</span>
+            </button>
+
+            <button
+              onClick={handleLogout}
+              title="Sair do painel"
+              className="p-2 rounded-xl bg-zinc-100 hover:bg-red-50 dark:bg-dark-800 dark:hover:bg-red-950/30 text-zinc-600 hover:text-red-600 dark:text-zinc-400 dark:hover:text-red-400 transition-colors"
+            >
+              <LogOut className="w-4 h-4" />
             </button>
           </div>
         </div>

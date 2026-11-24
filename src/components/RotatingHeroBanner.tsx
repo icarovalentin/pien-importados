@@ -149,10 +149,10 @@ export function RotatingHeroBanner({ onScrollToCatalog }: RotatingHeroBannerProp
       className="relative overflow-hidden bg-white dark:bg-dark-950 border-b border-zinc-100 dark:border-dark-800"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-        <div className="relative rounded-2xl overflow-hidden bg-zinc-50 dark:bg-dark-900 border border-zinc-100 dark:border-dark-800 shadow-lg min-h-[420px] sm:min-h-[400px] flex flex-col md:flex-row">
+        <div className="group relative rounded-2xl overflow-hidden bg-zinc-50 dark:bg-dark-900 border border-zinc-100 dark:border-dark-800 shadow-lg min-h-[420px] sm:min-h-[400px] flex flex-col md:flex-row">
 
           {/* Lado Esquerdo — Conteúdo Textual */}
-          <div className="flex-1 p-7 sm:p-10 flex flex-col justify-between z-10 relative">
+          <div className="flex-1 p-7 pl-12 pr-12 sm:p-10 md:pl-14 md:pr-10 flex flex-col justify-between z-10 relative">
             {/* Fio dourado decorativo no topo */}
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent" />
 
