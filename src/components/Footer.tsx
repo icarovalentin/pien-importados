@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
-import { Lock } from 'lucide-react';
 import { getGeneralSupportWhatsAppUrl } from '@/utils/whatsapp';
 import { STORE_PHONE_DISPLAY } from '@/data/products';
 import { ThemeToggle } from '@/components/ThemeToggle';
@@ -71,13 +69,6 @@ export function Footer() {
             <div className="sm:hidden">
               <ThemeToggle />
             </div>
-            <Link
-              href="/admin"
-              className="inline-flex items-center gap-1.5 text-zinc-500 hover:text-zinc-300 transition-colors"
-            >
-              <Lock className="w-3 h-3 text-[#d4af37]" />
-              <span>Painel do Lojista</span>
-            </Link>
           </div>
         </div>
       </div>

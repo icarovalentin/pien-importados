@@ -8,15 +8,12 @@ import {
   getSessionCookieOptions,
   verifyAdminPassword,
 } from '@/lib/auth';
+import { addFailure, getFailureCount, resetFailures } from '@/lib/rate-limit';
 
-// Limite simples de tentativas por IP para mitigar força bruta
-const MAX_ATTEMPTS = 5;
-const WINDOW_MS = 10 * 60 * 1000; // 10 minutos
-const attemptsByIp = new Map<string, { count: number; resetAt: number }>();
-
-const MAX_TRACKED_IPS = 5000;
+const MAX_ATTEMPTS_PER_IP = 5;
 const GLOBAL_MAX_FAILURES = 50; // teto global, independe do IP informado
-let globalFailures = { count: 0, resetAt: 0 };
+const WINDOW_MS = 10 * 60 * 1000; // 10 minutos
+const GLOBAL_KEY = 'login:global';
 
 // Atrás de proxy confiável (Vercel etc.), x-real-ip é definido pela plataforma;
 // no x-forwarded-for usamos a última entrada (adicionada pelo proxy), nunca a primeira (forjável).
@@ -29,14 +26,6 @@ function getClientIp(req: Request): string {
     return parts[parts.length - 1].trim();
   }
   return 'unknown';
-}
-
-function pruneAttempts(now: number) {
-  if (attemptsByIp.size < MAX_TRACKED_IPS) return;
-  attemptsByIp.forEach((v, k) => {
-    if (v.resetAt <= now) attemptsByIp.delete(k);
-  });
-  if (attemptsByIp.size >= MAX_TRACKED_IPS) attemptsByIp.clear();
 }
 
 export async function POST(req: Request) {
@@ -56,15 +45,13 @@ export async function POST(req: Request) {
       );
     }
 
-    const ip = getClientIp(req);
-    const now = Date.now();
-    if (globalFailures.resetAt <= now) globalFailures = { count: 0, resetAt: now + WINDOW_MS };
-    const record = attemptsByIp.get(ip);
+    const ipKey = `login:ip:${getClientIp(req)}`;
+    const [ipFailures, globalFailures] = await Promise.all([
+      getFailureCount(ipKey, WINDOW_MS),
+      getFailureCount(GLOBAL_KEY, WINDOW_MS),
+    ]);
 
-    if (
-      globalFailures.count >= GLOBAL_MAX_FAILURES ||
-      (record && record.resetAt > now && record.count >= MAX_ATTEMPTS)
-    ) {
+    if (ipFailures >= MAX_ATTEMPTS_PER_IP || globalFailures >= GLOBAL_MAX_FAILURES) {
       return NextResponse.json(
         {
           success: false,
@@ -75,10 +62,9 @@ export async function POST(req: Request) {
     }
 
     const body = await req.json().catch(() => null);
-    const password = body?.password;
 
-    if (verifyAdminPassword(password)) {
-      attemptsByIp.delete(ip);
+    if (verifyAdminPassword(body?.password)) {
+      await resetFailures(ipKey);
 
       const token = createSessionToken();
       if (!token) {
@@ -93,14 +79,7 @@ export async function POST(req: Request) {
       return response;
     }
 
-    globalFailures.count += 1;
-    pruneAttempts(now);
-    if (!record || record.resetAt <= now) {
-      attemptsByIp.set(ip, { count: 1, resetAt: now + WINDOW_MS });
-    } else {
-      record.count += 1;
-      attemptsByIp.set(ip, record);
-    }
+    await Promise.all([addFailure(ipKey, WINDOW_MS), addFailure(GLOBAL_KEY, WINDOW_MS)]);
 
     return NextResponse.json(
       { success: false, error: 'Senha incorreta' },

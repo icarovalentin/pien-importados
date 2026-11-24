@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
-import { Search, ShoppingBag, X, Lock } from 'lucide-react';
+import { Search, ShoppingBag, X } from 'lucide-react';
 import { CategoryType } from '@/types/product';
 import { useInterestList } from '@/context/InterestListContext';
 import { getGeneralSupportWhatsAppUrl } from '@/utils/whatsapp';
@@ -99,14 +98,6 @@ export function Navbar({
               <ThemeToggle />
             </div>
 
-            <Link
-              href="/admin"
-              className="flex items-center gap-1 text-[11px] uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400 hover:text-[#141414] dark:hover:text-gold-400 transition-colors p-1"
-              title="Painel Administrativo"
-            >
-              <Lock className="w-3.5 h-3.5 text-[#8b6508] dark:text-gold-400" />
-              <span className="hidden lg:inline">Admin</span>
-            </Link>
 
             <button
               onClick={() => setIsDrawerOpen(true)}
