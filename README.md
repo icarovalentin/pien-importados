@@ -1,0 +1,82 @@
+# 🛍️ Pien Importados — Catálogo Digital para WhatsApp
+
+Vitrine online moderna e sofisticada para produtos importados (Perfumaria Fina, Victoria's Secret, Caixas JBL e Eletrônicos), com foco 100% em conversão e fechamento direto via WhatsApp.
+
+---
+
+## ✨ Destaques da Aplicação
+
+- **Identidade Visual Premium (Dark Luxury):** Fundo grafite/chumbo com detalhes em ouro champagne e tipografia moderna. Unissex, elegante e imponente.
+- **Filtros de Disponibilidade:**
+  - 🟢 **Pronta-Entrega:** Itens em estoque no Brasil com envio imediato (em até 24h).
+  - 🟡 **Sob Encomenda:** Itens trazidos dos EUA e Europa com prazo claro de entrega.
+- **Botão Inteligente de WhatsApp:**
+  - O cliente clica em "Pedir no WhatsApp" e uma mensagem personalizada é gerada com o nome do produto, lote, preço e status.
+- **Sacola de Orçamento (Lista de Interesse):**
+  - O cliente pode selecionar múltiplos itens (ex: 1 perfume + 1 hidratante + 1 caixa JBL) e enviar uma única mensagem com a lista completa para o WhatsApp!
+- **Pilar Anti-Pirataria & Confiança:**
+  - Selos de "100% Original e Lacrado".
+  - Campo explicativo de **Batch Code (Código de Lote)** para validação de autenticidade.
+- **Busca Rápida em Tempo Real:** Pesquisa por nome, marca ou categoria com resposta instantânea.
+- **Mobile First:** Totalmente fluido e otimizado para celulares.
+
+---
+
+## 🚀 Como Executar Localmente
+
+No terminal, dentro da pasta do projeto:
+
+```bash
+# Iniciar o servidor de desenvolvimento
+npm.cmd run dev
+```
+
+Abra o navegador em: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## ⚙️ Como Configurar o Número do seu WhatsApp
+
+Abra o arquivo `src/data/products.ts` e altere a constante na linha 3:
+
+```typescript
+export const STORE_PHONE_NUMBER = '5511999999999'; // Substitua pelo seu DDI + DDD + Número (ex: 5541999999999)
+```
+
+---
+
+## 📦 Como Adicionar ou Alterar Produtos
+
+No arquivo `src/data/products.ts`, basta editar a lista de produtos. Cada produto possui o seguinte formato simples:
+
+```typescript
+{
+  id: 'novo-01',
+  name: 'Nome do Produto',
+  brand: 'Marca',
+  category: 'perfumes', // 'perfumes' | 'beleza' | 'eletronicos' | 'acessorios'
+  categoryLabel: 'Perfumaria Masculina',
+  price: 499.90,
+  originalPrice: 599.00, // opcional
+  status: 'pronta_entrega', // 'pronta_entrega' ou 'encomenda'
+  deliveryTime: 'Envio Imediato (em até 24h)',
+  images: [
+    'https://sua-imagem-aqui.jpg'
+  ],
+  description: 'Descrição envolvente do produto...',
+  specs: [
+    '100% Original Lacrado',
+    'Volumetria: 100ml'
+  ],
+  isFeatured: true,
+  batchCodeInfo: 'Lote conferível nos sites de batch check.'
+}
+```
+
+---
+
+## 🌐 Publicação na Internet (Deploy Gratuito na Vercel)
+
+1. Crie uma conta na [Vercel](https://vercel.com).
+2. Conecte o repositório ou suba a pasta pelo terminal com `npx vercel`.
+3. Pronto! Seu catálogo estará no ar com link próprio para colocar na bio do Instagram e compartilhar no WhatsApp.
