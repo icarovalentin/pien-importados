@@ -56,6 +56,9 @@ export default function AdminPage() {
   const [formVariants, setFormVariants] = useState<ProductVariant[]>([]);
   const [newVariantLabel, setNewVariantLabel] = useState('');
   const [newVariantPrice, setNewVariantPrice] = useState('');
+  const [expandedVariant, setExpandedVariant] = useState<number | null>(null);
+  const [variantFilter, setVariantFilter] = useState('');
+  const [uploadingVariant, setUploadingVariant] = useState<number | null>(null);
   const [formDescription, setFormDescription] = useState('');
   const [formSpecs, setFormSpecs] = useState('');
   const [formBatchCode, setFormBatchCode] = useState('');
@@ -154,6 +157,8 @@ export default function AdminPage() {
     setFormVariants([]);
     setNewVariantLabel('');
     setNewVariantPrice('');
+    setExpandedVariant(null);
+    setVariantFilter('');
     setFormDescription('');
     setFormSpecs('');
     setFormBatchCode('Lote verificado com selo de autenticidade.');
@@ -177,6 +182,8 @@ export default function AdminPage() {
     setFormVariants(Array.isArray(product.variants) ? product.variants : []);
     setNewVariantLabel('');
     setNewVariantPrice('');
+    setExpandedVariant(null);
+    setVariantFilter('');
     setFormDescription(product.description || '');
     setFormSpecs(product.specs ? product.specs.join('\n') : '');
     setFormBatchCode(product.batchCodeInfo || '');
@@ -243,11 +250,51 @@ export default function AdminPage() {
     setNewVariantPrice('');
   };
 
+  const updateVariant = (idx: number, patch: Partial<ProductVariant>) => {
+    setFormVariants((prev) => prev.map((v, i) => (i === idx ? { ...v, ...patch } : v)));
+  };
+
+  const handleVariantPhotoUpload = async (idx: number, file: File | undefined) => {
+    if (!file) return;
+    setUploadingVariant(idx);
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      const res = await fetch('/api/upload', { method: 'POST', body: formData });
+      if (res.status === 401) {
+        setIsAuthenticated(false);
+        return;
+      }
+      const data = await res.json();
+      if (res.ok && data.url) {
+        updateVariant(idx, { images: [data.url] });
+        showToast('Foto da variação atualizada.');
+      } else {
+        alert(data.error || 'Erro ao enviar imagem.');
+      }
+    } catch {
+      alert('Erro ao enviar imagem. Tente novamente.');
+    } finally {
+      setUploadingVariant(null);
+    }
+  };
+
   // Salvar produto (Criar ou Atualizar)
   const handleSaveProduct = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formName || !formPrice) {
       alert('Nome e Preço são obrigatórios!');
+      return;
+    }
+
+    const labels = formVariants.map((v) => v.label.trim());
+    if (labels.some((l) => !l)) {
+      alert('Toda variação precisa ter um nome.');
+      return;
+    }
+    const dup = labels.find((l, i) => labels.indexOf(l) !== i);
+    if (dup) {
+      alert(`Há duas variações chamadas "${dup}". Use nomes diferentes.`);
       return;
     }
 
@@ -1015,31 +1062,192 @@ export default function AdminPage() {
               {/* Variações (Armazenamento / Cor / Volumetria) */}
               <div className="p-4 rounded-2xl bg-zinc-50 dark:bg-dark-950 border border-zinc-200 dark:border-dark-800 space-y-3">
                 <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300">
-                  Variações Opcionais <span className="text-zinc-400 font-normal">(Ex: 128GB, 256GB, 100ml, Preto)</span>
+                  Variações Opcionais <span className="text-zinc-400 font-normal">(Ex: fragrância, 128GB, 100ml, Preto — cada uma pode ter foto e descrição)</span>
                 </label>
 
+                {formVariants.length > 8 && (
+                  <input
+                    type="search"
+                    placeholder={`Buscar entre ${formVariants.length} variações...`}
+                    value={variantFilter}
+                    onChange={(e) => setVariantFilter(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
+                  />
+                )}
+
                 {formVariants.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
-                    {formVariants.map((v, idx) => (
-                      <span
-                        key={v.id || idx}
-                        className="inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-700 text-xs font-semibold"
-                      >
-                        <span>
-                          {v.label}
-                          {v.price ? ` · ${formatCurrency(v.price)}` : ''}
-                        </span>
-                        <button
-                          type="button"
-                          onClick={() =>
-                            setFormVariants((prev) => prev.filter((_, i) => i !== idx))
-                          }
-                          className="text-zinc-400 hover:text-red-500"
+                  <div className="space-y-2 max-h-[28rem] overflow-y-auto pr-1">
+                    {formVariants.map((v, idx) => {
+                      if (
+                        variantFilter.trim() &&
+                        !v.label.toLowerCase().includes(variantFilter.trim().toLowerCase())
+                      ) {
+                        return null;
+                      }
+                      const open = expandedVariant === idx;
+                      const thumb = v.images?.[0];
+                      const duplicated =
+                        formVariants.filter((o) => o.label.trim() === v.label.trim()).length > 1;
+                      return (
+                        <div
+                          key={v.id || idx}
+                          className="rounded-xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-700"
                         >
-                          <X className="w-3.5 h-3.5" />
-                        </button>
-                      </span>
-                    ))}
+                          <div className="flex items-center gap-3 p-2">
+                            <div className="relative w-10 h-10 shrink-0 rounded-lg overflow-hidden bg-zinc-100 dark:bg-dark-950">
+                              {thumb && (
+                                <Image src={thumb} alt="" fill sizes="40px" className="object-contain" />
+                              )}
+                            </div>
+                            <div className="flex-1 min-w-0 text-xs">
+                              <p className="font-semibold truncate text-zinc-900 dark:text-white">
+                                {v.label}
+                                {v.price ? ` · ${formatCurrency(v.price)}` : ''}
+                              </p>
+                              <p className="text-[11px] text-zinc-500 truncate">
+                                {v.description ? 'Com descrição própria' : 'Usa a descrição do produto'}
+                                {!thumb && ' · sem foto'}
+                              </p>
+                            </div>
+                            <button
+                              type="button"
+                              onClick={() => setExpandedVariant(open ? null : idx)}
+                              className="px-2.5 py-1.5 rounded-lg border border-zinc-300 dark:border-dark-700 text-[11px] font-bold text-zinc-700 dark:text-zinc-200 hover:border-gold-500"
+                            >
+                              {open ? 'Fechar' : 'Editar'}
+                            </button>
+                            <button
+                              type="button"
+                              aria-label={`Remover ${v.label}`}
+                              onClick={() => {
+                                setFormVariants((prev) => prev.filter((_, i) => i !== idx));
+                                setExpandedVariant(null);
+                              }}
+                              className="text-zinc-400 hover:text-red-500"
+                            >
+                              <X className="w-4 h-4" />
+                            </button>
+                          </div>
+
+                          {open && (
+                            <div className="p-3 border-t border-zinc-200 dark:border-dark-700 space-y-3">
+                              <div className="grid grid-cols-1 sm:grid-cols-12 gap-2">
+                                <div className="sm:col-span-8">
+                                  <label className="block text-[10px] font-bold uppercase tracking-wider text-zinc-500 mb-1">
+                                    Nome da opção
+                                  </label>
+                                  <input
+                                    type="text"
+                                    value={v.label}
+                                    maxLength={60}
+                                    onChange={(e) => updateVariant(idx, { label: e.target.value })}
+                                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-dark-950 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
+                                  />
+                                  {duplicated && (
+                                    <p className="text-[11px] text-red-500 mt-1">
+                                      Já existe outra opção com esse nome. Use nomes diferentes.
+                                    </p>
+                                  )}
+                                </div>
+                                <div className="sm:col-span-4">
+                                  <label className="block text-[10px] font-bold uppercase tracking-wider text-zinc-500 mb-1">
+                                    Preço (R$)
+                                  </label>
+                                  <input
+                                    type="text"
+                                    inputMode="decimal"
+                                    placeholder="Igual ao produto"
+                                    defaultValue={v.price ? String(v.price).replace('.', ',') : ''}
+                                    onBlur={(e) => {
+                                      const raw = e.target.value.trim().replace(',', '.');
+                                      const n = raw ? parseFloat(raw) : undefined;
+                                      updateVariant(idx, {
+                                        price: n !== undefined && Number.isFinite(n) && n > 0 ? n : undefined,
+                                      });
+                                    }}
+                                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-dark-950 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
+                                  />
+                                </div>
+                              </div>
+
+                              <div>
+                                <label className="block text-[10px] font-bold uppercase tracking-wider text-zinc-500 mb-1">
+                                  Foto da opção
+                                </label>
+                                <div className="flex items-center gap-3">
+                                  <div className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-zinc-100 dark:bg-dark-950 border border-zinc-200 dark:border-dark-700">
+                                    {thumb && (
+                                      <Image src={thumb} alt="" fill sizes="80px" className="object-contain" />
+                                    )}
+                                  </div>
+                                  <div className="flex-1 space-y-2">
+                                    <label className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-zinc-900 dark:bg-gold-500 text-white dark:text-dark-950 text-xs font-bold cursor-pointer">
+                                      {uploadingVariant === idx ? 'Enviando...' : thumb ? 'Trocar foto' : 'Enviar foto'}
+                                      <input
+                                        type="file"
+                                        accept="image/jpeg,image/png,image/webp,image/avif"
+                                        className="hidden"
+                                        disabled={uploadingVariant !== null}
+                                        onChange={(e) => {
+                                          handleVariantPhotoUpload(idx, e.target.files?.[0]);
+                                          e.target.value = '';
+                                        }}
+                                      />
+                                    </label>
+                                    {thumb && (
+                                      <button
+                                        type="button"
+                                        onClick={() => updateVariant(idx, { images: [] })}
+                                        className="ml-2 text-[11px] text-zinc-500 hover:text-red-500 underline"
+                                      >
+                                        Remover foto
+                                      </button>
+                                    )}
+                                    <p className="text-[11px] text-zinc-500">
+                                      JPG, PNG, WebP ou AVIF, até 5 MB. Sem foto própria, vale a do produto.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div>
+                                <label className="block text-[10px] font-bold uppercase tracking-wider text-zinc-500 mb-1">
+                                  Descrição desta opção
+                                </label>
+                                <textarea
+                                  rows={4}
+                                  maxLength={2000}
+                                  placeholder="Deixe vazio para usar a descrição do produto."
+                                  value={v.description || ''}
+                                  onChange={(e) => updateVariant(idx, { description: e.target.value })}
+                                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-dark-950 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
+                                />
+                              </div>
+
+                              <div>
+                                <label className="block text-[10px] font-bold uppercase tracking-wider text-zinc-500 mb-1">
+                                  Especificações desta opção <span className="font-normal normal-case">(uma por linha)</span>
+                                </label>
+                                <textarea
+                                  rows={4}
+                                  placeholder="Deixe vazio para usar as do produto."
+                                  defaultValue={(v.specs || []).join('\n')}
+                                  onBlur={(e) =>
+                                    updateVariant(idx, {
+                                      specs: e.target.value
+                                        .split('\n')
+                                        .map((x) => x.trim())
+                                        .filter(Boolean),
+                                    })
+                                  }
+                                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-dark-950 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
+                                />
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
 
