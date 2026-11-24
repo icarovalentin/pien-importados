@@ -25,13 +25,11 @@ import {
   Check,
 } from 'lucide-react';
 
-// Senha de acesso ao painel administrativo (pode ser definida via variável de ambiente ou aqui)
-const ADMIN_PIN = process.env.NEXT_PUBLIC_ADMIN_PIN || 'pien123';
-
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pinInput, setPinInput] = useState('');
   const [pinError, setPinError] = useState(false);
+  const [loginLoading, setLoginLoading] = useState(false);
 
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
@@ -41,6 +39,13 @@ export default function AdminPage() {
   // Estado do Modal de Cadastro / Edição
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
+
+  // Estado do Modal de Alteração de Senha
+  const [isPasswordModalOpen, setIsPasswordModalOpen] = useState(false);
+  const [newPasswordInput, setNewPasswordInput] = useState('');
+  const [confirmPasswordInput, setConfirmPasswordInput] = useState('');
+  const [passwordSuccess, setPasswordSuccess] = useState(false);
+  const [passwordError, setPasswordError] = useState('');
 
   // Campos do Formulário
   const [formName, setFormName] = useState('');
@@ -69,14 +74,34 @@ export default function AdminPage() {
     fetchProducts();
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (pinInput === ADMIN_PIN) {
-      setIsAuthenticated(true);
-      sessionStorage.setItem('pien_admin_auth', 'true');
-      setPinError(false);
-    } else {
+    if (!pinInput.trim()) return;
+
+    setLoginLoading(true);
+    setPinError(false);
+
+    try {
+      const res = await fetch('/api/admin/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password: pinInput }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setIsAuthenticated(true);
+        sessionStorage.setItem('pien_admin_auth', 'true');
+        setPinError(false);
+      } else {
+        setPinError(true);
+      }
+    } catch (err) {
+      console.error('Erro ao autenticar:', err);
       setPinError(true);
+    } finally {
+      setLoginLoading(false);
     }
   };
 
@@ -297,7 +322,7 @@ export default function AdminPage() {
           <form onSubmit={handleLogin} className="space-y-3">
             <input
               type="password"
-              placeholder="Senha de acesso (padrão: pien123)"
+              placeholder="Digite a senha de acesso"
               value={pinInput}
               onChange={(e) => setPinInput(e.target.value)}
               className="w-full px-4 py-3 rounded-xl bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 text-sm text-center tracking-widest focus:outline-none focus:border-gold-500"
@@ -310,9 +335,10 @@ export default function AdminPage() {
 
             <button
               type="submit"
+              disabled={loginLoading}
               className="w-full py-3 rounded-xl bg-gold-500 hover:bg-gold-400 text-dark-950 font-bold text-sm shadow-md transition-all active:scale-95"
             >
-              Entrar no Painel
+              {loginLoading ? 'Verificando...' : 'Entrar no Painel'}
             </button>
           </form>
 
