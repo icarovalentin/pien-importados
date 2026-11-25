@@ -1,0 +1,24 @@
+{
+  "id": "fm-tirzec-15",
+  "name": "Tirzec 15 (Tirzepatida 15 mg/0,5 mL)",
+  "brand": "Tirzec",
+  "category": "farmacia",
+  "categoryLabel": "Farmácia",
+  "price": 1.0,
+  "status": "encomenda",
+  "deliveryTime": "Venda exclusiva no Paraguai",
+  "images": [
+    "/catalog/farmacia/tirzec-15.webp"
+  ],
+  "description": "Tirzec 15, tirzepatida 15 mg/0,5 mL, solução injetável. Caixa com 4 frascos-ampola de 0,5 mL.\n\nVENDA NO PARAGUAI: este produto é divulgado para venda no Paraguai, e a compra e a retirada são feitas apenas lá.\n\nMedicamento de venda sob prescrição médica. Use somente com orientação de um profissional de saúde.\n\nAtenção, clientes do Brasil: este produto não tem registro na Anvisa, e a importação, a comercialização e o uso no Brasil são proibidos pela Anvisa. Não leve este produto para o Brasil.",
+  "specs": [
+    "Princípio ativo: tirzepatida",
+    "Concentração: 15 mg/0,5 mL",
+    "Apresentação: 4 frascos-ampola de 0,5 mL (solução injetável)",
+    "Venda: exclusiva no Paraguai",
+    "Tipo: medicamento de venda sob prescrição médica",
+    "Registro na Anvisa: não possui (importação e uso no Brasil proibidos)"
+  ],
+  "isFeatured": false,
+  "variants": []
+}
