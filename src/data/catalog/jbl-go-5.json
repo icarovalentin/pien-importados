@@ -1,0 +1,207 @@
+{
+  "id": "jbl-go-5",
+  "name": "JBL Go 5",
+  "brand": "JBL",
+  "category": "eletronicos",
+  "categoryLabel": "Caixas de Som",
+  "price": 223.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/jbl/go-5/azul-1.webp",
+    "/catalog/jbl/go-5/azul-2.webp",
+    "/catalog/jbl/go-5/azul-3.webp"
+  ],
+  "description": "JBL Go 5 na cor Azul. Caixa de som Bluetooth 5.3 ultraportátil, com potência de 4,2 W, resistência IP67 à água e poeira e bateria de 850 mAh, que toca por até 7 horas (mais 2 horas com o Playtime Boost). Carrega via USB-C.",
+  "specs": [
+    "Cor: Azul",
+    "Conectividade: Bluetooth 5.3",
+    "Potência: 4,2 W",
+    "Driver: 45 mm",
+    "Resistência: IP67 (água e poeira)",
+    "Bateria: 850 mAh, até 7 h (+2 h com Playtime Boost)",
+    "Recarga: cerca de 3 horas, via USB-C",
+    "Peso: 190 g",
+    "Produto original JBL"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original JBL, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "jbl-go-5-azul",
+      "label": "Azul",
+      "price": 223.9,
+      "images": [
+        "/catalog/jbl/go-5/azul-1.webp",
+        "/catalog/jbl/go-5/azul-2.webp",
+        "/catalog/jbl/go-5/azul-3.webp"
+      ],
+      "description": "JBL Go 5 na cor Azul. Caixa de som Bluetooth 5.3 ultraportátil, com potência de 4,2 W, resistência IP67 à água e poeira e bateria de 850 mAh, que toca por até 7 horas (mais 2 horas com o Playtime Boost). Carrega via USB-C.",
+      "specs": [
+        "Cor: Azul",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 4,2 W",
+        "Driver: 45 mm",
+        "Resistência: IP67 (água e poeira)",
+        "Bateria: 850 mAh, até 7 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas, via USB-C",
+        "Peso: 190 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-go-5-preto",
+      "label": "Preto",
+      "price": 223.9,
+      "images": [
+        "/catalog/jbl/go-5/preto-1.webp",
+        "/catalog/jbl/go-5/preto-2.webp",
+        "/catalog/jbl/go-5/preto-3.webp"
+      ],
+      "description": "JBL Go 5 na cor Preto. Caixa de som Bluetooth 5.3 ultraportátil, com potência de 4,2 W, resistência IP67 à água e poeira e bateria de 850 mAh, que toca por até 7 horas (mais 2 horas com o Playtime Boost). Carrega via USB-C.",
+      "specs": [
+        "Cor: Preto",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 4,2 W",
+        "Driver: 45 mm",
+        "Resistência: IP67 (água e poeira)",
+        "Bateria: 850 mAh, até 7 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas, via USB-C",
+        "Peso: 190 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-go-5-branco",
+      "label": "Branco",
+      "price": 223.9,
+      "images": [
+        "/catalog/jbl/go-5/branco-1.webp",
+        "/catalog/jbl/go-5/branco-2.webp",
+        "/catalog/jbl/go-5/branco-3.webp"
+      ],
+      "description": "JBL Go 5 na cor Branco. Caixa de som Bluetooth 5.3 ultraportátil, com potência de 4,2 W, resistência IP67 à água e poeira e bateria de 850 mAh, que toca por até 7 horas (mais 2 horas com o Playtime Boost). Carrega via USB-C.",
+      "specs": [
+        "Cor: Branco",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 4,2 W",
+        "Driver: 45 mm",
+        "Resistência: IP67 (água e poeira)",
+        "Bateria: 850 mAh, até 7 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas, via USB-C",
+        "Peso: 190 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-go-5-vermelho",
+      "label": "Vermelho",
+      "price": 223.9,
+      "images": [
+        "/catalog/jbl/go-5/vermelho-1.webp",
+        "/catalog/jbl/go-5/vermelho-2.webp",
+        "/catalog/jbl/go-5/vermelho-3.webp"
+      ],
+      "description": "JBL Go 5 na cor Vermelho. Caixa de som Bluetooth 5.3 ultraportátil, com potência de 4,2 W, resistência IP67 à água e poeira e bateria de 850 mAh, que toca por até 7 horas (mais 2 horas com o Playtime Boost). Carrega via USB-C.",
+      "specs": [
+        "Cor: Vermelho",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 4,2 W",
+        "Driver: 45 mm",
+        "Resistência: IP67 (água e poeira)",
+        "Bateria: 850 mAh, até 7 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas, via USB-C",
+        "Peso: 190 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-go-5-camuflado",
+      "label": "Camuflado",
+      "price": 223.9,
+      "images": [
+        "/catalog/jbl/go-5/camuflado-1.webp",
+        "/catalog/jbl/go-5/camuflado-2.webp",
+        "/catalog/jbl/go-5/camuflado-3.webp"
+      ],
+      "description": "JBL Go 5 na cor Camuflado. Caixa de som Bluetooth 5.3 ultraportátil, com potência de 4,2 W, resistência IP67 à água e poeira e bateria de 850 mAh, que toca por até 7 horas (mais 2 horas com o Playtime Boost). Carrega via USB-C.",
+      "specs": [
+        "Cor: Camuflado",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 4,2 W",
+        "Driver: 45 mm",
+        "Resistência: IP67 (água e poeira)",
+        "Bateria: 850 mAh, até 7 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas, via USB-C",
+        "Peso: 190 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-go-5-roxo",
+      "label": "Roxo",
+      "price": 223.9,
+      "images": [
+        "/catalog/jbl/go-5/roxo-1.webp",
+        "/catalog/jbl/go-5/roxo-2.webp",
+        "/catalog/jbl/go-5/roxo-3.webp"
+      ],
+      "description": "JBL Go 5 na cor Roxo. Caixa de som Bluetooth 5.3 ultraportátil, com potência de 4,2 W, resistência IP67 à água e poeira e bateria de 850 mAh, que toca por até 7 horas (mais 2 horas com o Playtime Boost). Carrega via USB-C.",
+      "specs": [
+        "Cor: Roxo",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 4,2 W",
+        "Driver: 45 mm",
+        "Resistência: IP67 (água e poeira)",
+        "Bateria: 850 mAh, até 7 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas, via USB-C",
+        "Peso: 190 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-go-5-amarelo",
+      "label": "Amarelo",
+      "price": 223.9,
+      "images": [
+        "/catalog/jbl/go-5/amarelo-1.webp",
+        "/catalog/jbl/go-5/amarelo-2.webp",
+        "/catalog/jbl/go-5/amarelo-3.webp"
+      ],
+      "description": "JBL Go 5 na cor Amarelo. Caixa de som Bluetooth 5.3 ultraportátil, com potência de 4,2 W, resistência IP67 à água e poeira e bateria de 850 mAh, que toca por até 7 horas (mais 2 horas com o Playtime Boost). Carrega via USB-C.",
+      "specs": [
+        "Cor: Amarelo",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 4,2 W",
+        "Driver: 45 mm",
+        "Resistência: IP67 (água e poeira)",
+        "Bateria: 850 mAh, até 7 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas, via USB-C",
+        "Peso: 190 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-go-5-laranja",
+      "label": "Laranja",
+      "price": 223.9,
+      "images": [
+        "/catalog/jbl/go-5/laranja-1.webp",
+        "/catalog/jbl/go-5/laranja-2.webp",
+        "/catalog/jbl/go-5/laranja-3.webp"
+      ],
+      "description": "JBL Go 5 na cor Laranja. Caixa de som Bluetooth 5.3 ultraportátil, com potência de 4,2 W, resistência IP67 à água e poeira e bateria de 850 mAh, que toca por até 7 horas (mais 2 horas com o Playtime Boost). Carrega via USB-C.",
+      "specs": [
+        "Cor: Laranja",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 4,2 W",
+        "Driver: 45 mm",
+        "Resistência: IP67 (água e poeira)",
+        "Bateria: 850 mAh, até 7 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas, via USB-C",
+        "Peso: 190 g",
+        "Produto original JBL"
+      ]
+    }
+  ]
+}
