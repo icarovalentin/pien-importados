@@ -1,0 +1,207 @@
+{
+  "id": "tb-apple-ipad-11a-geracao",
+  "name": "Apple iPad 11ª Geração",
+  "brand": "Apple",
+  "category": "eletronicos",
+  "categoryLabel": "Tablets",
+  "price": 2692.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/tablets/tb-apple-ipad-11a-geracao/11-128gb-prata-1.webp",
+    "/catalog/tablets/tb-apple-ipad-11a-geracao/11-128gb-prata-2.webp",
+    "/catalog/tablets/tb-apple-ipad-11a-geracao/11-128gb-prata-3.webp"
+  ],
+  "description": "Apple iPad 11ª Geração 11\" · 128GB · Prata. Conta com tela IPS de 11\", resolução 2360 x 1640p, chip A16, câmera traseira de 12 MP, câmera frontal de 12 MP, bateria polímero de lítio com capacidade de 28,93 watts/hora. Sistema: iPadOS 18.",
+  "specs": [
+    "Tela: IPS de 11\"",
+    "Resolução: 2360 x 1640p",
+    "Memória: 128GB",
+    "Cor: Prata",
+    "Chip: Chip A16",
+    "Câmera traseira: 12 MP",
+    "Câmera frontal: 12 MP",
+    "Bateria: polímero de lítio com capacidade de 28,93 watts/hora",
+    "Conectividade: Wi-Fi 6 (802.11ax)",
+    "Sistema: iPadOS 18",
+    "Peso: 477 g",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "tb-apple-ipad-11a-geracao-11-128gb-prata",
+      "label": "11\" · 128GB · Prata",
+      "price": 2692.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/11-128gb-prata-1.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/11-128gb-prata-2.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/11-128gb-prata-3.webp"
+      ],
+      "description": "Apple iPad 11ª Geração 11\" · 128GB · Prata. Conta com tela IPS de 11\", resolução 2360 x 1640p, chip A16, câmera traseira de 12 MP, câmera frontal de 12 MP, bateria polímero de lítio com capacidade de 28,93 watts/hora. Sistema: iPadOS 18.",
+      "specs": [
+        "Tela: IPS de 11\"",
+        "Resolução: 2360 x 1640p",
+        "Memória: 128GB",
+        "Cor: Prata",
+        "Chip: Chip A16",
+        "Câmera traseira: 12 MP",
+        "Câmera frontal: 12 MP",
+        "Bateria: polímero de lítio com capacidade de 28,93 watts/hora",
+        "Conectividade: Wi-Fi 6 (802.11ax)",
+        "Sistema: iPadOS 18",
+        "Peso: 477 g",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-11a-geracao-10-9-128gb-6gb-azul",
+      "label": "10.9\" · 128GB/6GB · Azul",
+      "price": 2710.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-128gb-6gb-azul-1.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-128gb-6gb-azul-2.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-128gb-6gb-azul-3.webp"
+      ],
+      "description": "Apple iPad 11ª Geração 10.9\" · 128GB/6GB · Azul. Conta com tela 10.9\", resolução 2360 x 1640p, chip A16 Bionic, câmera traseira de 12 MP, câmera frontal de 12 MP, bateria de 28.93 Wh. Sistema: iPadOS 18.3.",
+      "specs": [
+        "Tela: 10.9\"",
+        "Resolução: 2360 x 1640p",
+        "Memória: 128GB/6GB",
+        "Cor: Azul",
+        "Chip: A16 Bionic",
+        "Câmera traseira: 12 MP",
+        "Câmera frontal: 12 MP",
+        "Bateria: 28.93 Wh",
+        "Conectividade: Wi-Fi 6",
+        "Sistema: iPadOS 18.3",
+        "Peso: 477 g",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-11a-geracao-10-9-128gb-6gb-rosa",
+      "label": "10.9\" · 128GB/6GB · Rosa",
+      "price": 2710.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-128gb-6gb-rosa-1.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-128gb-6gb-rosa-2.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-128gb-6gb-rosa-3.webp"
+      ],
+      "description": "Apple iPad 11ª Geração 10.9\" · 128GB/6GB · Rosa. Conta com tela 10.9\", resolução 2K (2360 x 1640p), chip A16 Bionic, câmera frontal de 12 MP, bateria de 28.93 Wh. Sistema: iPadOS.",
+      "specs": [
+        "Tela: 10.9\"",
+        "Resolução: 2K (2360 x 1640p)",
+        "Memória: 128GB/6GB",
+        "Cor: Rosa",
+        "Chip: Chip A16 Bionic",
+        "Câmera frontal: 12 MP",
+        "Bateria: 28.93 Wh",
+        "Conectividade: Wi-Fi 6 (802.11ax), Bluetooth 5.3",
+        "Sistema: iPadOS",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-11a-geracao-10-9-256gb-prata",
+      "label": "10.9\" · 256GB · Prata",
+      "price": 3357.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-256gb-prata-1.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-256gb-prata-2.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-256gb-prata-3.webp"
+      ],
+      "description": "Apple iPad 11ª Geração 10.9\" · 256GB · Prata. Conta com tela IPS de 11\", resolução 2360 x 1640p, chip A16, câmera traseira de 12 MP, câmera frontal de 12 MP, bateria polímero de lítio com capacidade de 28,93 watts/hora. Sistema: iPadOS 18.",
+      "specs": [
+        "Tela: IPS de 11\"",
+        "Resolução: 2360 x 1640p",
+        "Memória: 256GB",
+        "Cor: Prata",
+        "Chip: Chip A16",
+        "Câmera traseira: 12 MP",
+        "Câmera frontal: 12 MP",
+        "Bateria: polímero de lítio com capacidade de 28,93 watts/hora",
+        "Conectividade: Wi-Fi 6 (802.11ax)",
+        "Sistema: iPadOS 18",
+        "Peso: 477 g",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-11a-geracao-10-9-256gb-6gb-azul",
+      "label": "10.9\" · 256GB/6GB · Azul",
+      "price": 3357.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-256gb-6gb-azul-1.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-256gb-6gb-azul-2.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-256gb-6gb-azul-3.webp"
+      ],
+      "description": "Apple iPad 11ª Geração 10.9\" · 256GB/6GB · Azul. Conta com tela Display Liquid Retina, resolução 2360 x 1640 p, chip A16 Bionic, câmera traseira de 12 MP, câmera frontal de 12 MP, bateria de 10 horas de navegação na web via Wi-Fi. Sistema: iPadOS 18.3.",
+      "specs": [
+        "Tela: Display Liquid Retina",
+        "Resolução: 2360 x 1640 p",
+        "Memória: 256GB/6GB",
+        "Cor: Azul",
+        "Chip: A16 Bionic",
+        "Câmera traseira: 12 MP",
+        "Câmera frontal: 12 MP",
+        "Bateria: 10 horas de navegação na web via Wi-Fi",
+        "Conectividade: Wi-Fi 6 (802.11ax), Bluetooth 5.3",
+        "Sistema: iPadOS 18.3",
+        "Peso: 477 g",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-11a-geracao-10-9-256gb-amarelo",
+      "label": "10.9\" · 256GB · Amarelo",
+      "price": 3630.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-256gb-amarelo-1.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-256gb-amarelo-2.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-256gb-amarelo-3.webp"
+      ],
+      "description": "Apple iPad 11ª Geração 10.9\" · 256GB · Amarelo. Conta com tela IPS de 11\", resolução 2360 x 1640p, chip A16, câmera traseira de 12 MP, câmera frontal de 12 MP, bateria polímero de lítio com capacidade de 28,93 watts/hora. Sistema: iPadOS 18.",
+      "specs": [
+        "Tela: IPS de 11\"",
+        "Resolução: 2360 x 1640p",
+        "Memória: 256GB",
+        "Cor: Amarelo",
+        "Chip: Chip A16",
+        "Câmera traseira: 12 MP",
+        "Câmera frontal: 12 MP",
+        "Bateria: polímero de lítio com capacidade de 28,93 watts/hora",
+        "Conectividade: Wi-Fi 6 (802.11ax)",
+        "Sistema: iPadOS 18",
+        "Peso: 477 g",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-11a-geracao-10-9-512gb-6gb-amarelo",
+      "label": "10.9\" · 512GB/6GB · Amarelo",
+      "price": 3805.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-512gb-6gb-amarelo-1.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-512gb-6gb-amarelo-2.webp",
+        "/catalog/tablets/tb-apple-ipad-11a-geracao/10-9-512gb-6gb-amarelo-3.webp"
+      ],
+      "description": "Apple iPad 11ª Geração 10.9\" · 512GB/6GB · Amarelo. Conta com tela IPS de 10.9\", resolução 2360 x 1640p, chip A16, câmera traseira de 12 MP, câmera frontal de 12 MP, bateria polímero de lítio com capacidade de 28,93 watts/hora. Sistema: iPadOS 18.",
+      "specs": [
+        "Tela: IPS de 10.9\"",
+        "Resolução: 2360 x 1640p",
+        "Memória: 512GB/6GB",
+        "Cor: Amarelo",
+        "Chip: Chip A16",
+        "Câmera traseira: 12 MP",
+        "Câmera frontal: 12 MP",
+        "Bateria: polímero de lítio com capacidade de 28,93 watts/hora",
+        "Conectividade: Wi-Fi 6 (802.11ax)",
+        "Sistema: iPadOS 18",
+        "Peso: 477 g",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

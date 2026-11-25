@@ -1,0 +1,105 @@
+{
+  "id": "tb-samsung-galaxy-tab-s11",
+  "name": "Samsung Galaxy Tab S11",
+  "brand": "Samsung",
+  "category": "eletronicos",
+  "categoryLabel": "Tablets",
+  "price": 4023.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-1.webp",
+    "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-2.webp",
+    "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-3.webp"
+  ],
+  "description": "Samsung Galaxy Tab S11 11\" · 128GB/12GB · Cinza · com caneta. Conta com tela Dynamic AMOLED 11\", resolução 2.560 × 1.600, chip Mediatek Dimensity 9400+, câmera traseira de 13 MP, câmera frontal de 12 MP, bateria de 8.400 mAh. Sistema: Android 16.",
+  "specs": [
+    "Tela: Dynamic AMOLED 11\"",
+    "Resolução: 2.560 × 1.600",
+    "Memória: 128GB/12GB",
+    "Cor: Cinza",
+    "Chip: Mediatek Dimensity 9400+",
+    "Câmera traseira: 13 MP",
+    "Câmera frontal: 12 MP",
+    "Bateria: 8.400 mAh",
+    "Conectividade: Wi-Fi 6E",
+    "Sistema: Android 16",
+    "Peso: 469 g",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "tb-samsung-galaxy-tab-s11-11-128gb-12gb-cinza-com-caneta",
+      "label": "11\" · 128GB/12GB · Cinza · com caneta",
+      "price": 4023.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab S11 11\" · 128GB/12GB · Cinza · com caneta. Conta com tela Dynamic AMOLED 11\", resolução 2.560 × 1.600, chip Mediatek Dimensity 9400+, câmera traseira de 13 MP, câmera frontal de 12 MP, bateria de 8.400 mAh. Sistema: Android 16.",
+      "specs": [
+        "Tela: Dynamic AMOLED 11\"",
+        "Resolução: 2.560 × 1.600",
+        "Memória: 128GB/12GB",
+        "Cor: Cinza",
+        "Chip: Mediatek Dimensity 9400+",
+        "Câmera traseira: 13 MP",
+        "Câmera frontal: 12 MP",
+        "Bateria: 8.400 mAh",
+        "Conectividade: Wi-Fi 6E",
+        "Sistema: Android 16",
+        "Peso: 469 g",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-samsung-galaxy-tab-s11-11-128gb-12gb-cinza-com-caneta-2",
+      "label": "11\" · 128GB/12GB · Cinza · com caneta (2)",
+      "price": 4108.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-2-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-2-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-2-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab S11 11\" · 128GB/12GB · Cinza · com caneta (2). Conta com tela 11\", resolução WQXGA (1600 x 2560), chip Mediatek Dimensity 9400+, câmera frontal de 12 MP, bateria de 8400 mAh. Sistema: Android 16.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: WQXGA (1600 x 2560)",
+        "Memória: 128GB/12GB",
+        "Cor: Cinza",
+        "Chip: Mediatek Dimensity 9400+",
+        "Câmera frontal: 12 MP",
+        "Bateria: 8400 mAh",
+        "Conectividade: Wi-Fi 6, Bluetooth 5.4",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-samsung-galaxy-tab-s11-11-128gb-12gb-prata-com-caneta",
+      "label": "11\" · 128GB/12GB · Prata · com caneta",
+      "price": 4108.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-prata-com-caneta-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-prata-com-caneta-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-prata-com-caneta-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab S11 11\" · 128GB/12GB · Prata · com caneta. Conta com tela 11\", resolução WQXGA (1600 x 2560), chip Mediatek Dimensity 9400+, câmera frontal de 12 MP, bateria de 8400 mAh. Sistema: Android 16.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: WQXGA (1600 x 2560)",
+        "Memória: 128GB/12GB",
+        "Cor: Prata",
+        "Chip: Mediatek Dimensity 9400+",
+        "Câmera frontal: 12 MP",
+        "Bateria: 8400 mAh",
+        "Conectividade: Wi-Fi 6, Bluetooth 5.4",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

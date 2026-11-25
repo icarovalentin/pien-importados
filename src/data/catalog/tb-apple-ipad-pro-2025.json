@@ -1,0 +1,59 @@
+{
+  "id": "tb-apple-ipad-pro-2025",
+  "name": "Apple iPad Pro 2025",
+  "brand": "Apple",
+  "category": "eletronicos",
+  "categoryLabel": "Tablets",
+  "price": 7193.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/tablets/tb-apple-ipad-pro-2025/11-256gb-12gb-preto-1.webp",
+    "/catalog/tablets/tb-apple-ipad-pro-2025/11-256gb-12gb-preto-2.webp",
+    "/catalog/tablets/tb-apple-ipad-pro-2025/11-256gb-12gb-preto-3.webp"
+  ],
+  "description": "Apple iPad Pro 2025 11\" · 256GB/12GB · Preto. Conta com tela XDR OLED 11\", resolução 2388×1668, chip M5 SoC, câmera traseira de 12MP, câmera frontal de 12MP, bateria de 31,29 Wh. Sistema: iPadOS 26.",
+  "specs": [
+    "Tela: XDR OLED 11\"",
+    "Resolução: 2388×1668",
+    "Memória: 256GB/12GB",
+    "Cor: Preto",
+    "Chip: M5 SoC",
+    "Câmera traseira: 12MP",
+    "Câmera frontal: 12MP",
+    "Bateria: 31,29 Wh",
+    "Conectividade: Wi-Fi 7",
+    "Sistema: iPadOS 26",
+    "Peso: 444g",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "tb-apple-ipad-pro-2025-11-256gb-12gb-preto",
+      "label": "11\" · 256GB/12GB · Preto",
+      "price": 7193.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-pro-2025/11-256gb-12gb-preto-1.webp",
+        "/catalog/tablets/tb-apple-ipad-pro-2025/11-256gb-12gb-preto-2.webp",
+        "/catalog/tablets/tb-apple-ipad-pro-2025/11-256gb-12gb-preto-3.webp"
+      ],
+      "description": "Apple iPad Pro 2025 11\" · 256GB/12GB · Preto. Conta com tela XDR OLED 11\", resolução 2388×1668, chip M5 SoC, câmera traseira de 12MP, câmera frontal de 12MP, bateria de 31,29 Wh. Sistema: iPadOS 26.",
+      "specs": [
+        "Tela: XDR OLED 11\"",
+        "Resolução: 2388×1668",
+        "Memória: 256GB/12GB",
+        "Cor: Preto",
+        "Chip: M5 SoC",
+        "Câmera traseira: 12MP",
+        "Câmera frontal: 12MP",
+        "Bateria: 31,29 Wh",
+        "Conectividade: Wi-Fi 7",
+        "Sistema: iPadOS 26",
+        "Peso: 444g",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

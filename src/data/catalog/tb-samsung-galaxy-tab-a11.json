@@ -1,0 +1,105 @@
+{
+  "id": "tb-samsung-galaxy-tab-a11",
+  "name": "Samsung Galaxy Tab A11",
+  "brand": "Samsung",
+  "category": "eletronicos",
+  "categoryLabel": "Tablets",
+  "price": 798.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-1.webp",
+    "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-2.webp",
+    "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-3.webp"
+  ],
+  "description": "Samsung Galaxy Tab A11 8.7\" · 64GB/4GB · Cinza. Conta com tela 8.7 pol., resolução 1340 x 800 (WXGA+), chip MediaTek Helio G99, câmera traseira de 8.0 MP, câmera frontal de 5.0 MP, bateria de 5.100 mAh. Sistema: Android.",
+  "specs": [
+    "Tela: 8.7 pol.",
+    "Resolução: 1340 x 800 (WXGA+)",
+    "Memória: 64GB/4GB",
+    "Cor: Cinza",
+    "Chip: MediaTek Helio G99",
+    "Câmera traseira: 8.0 MP",
+    "Câmera frontal: 5.0 MP",
+    "Bateria: 5.100 mAh",
+    "Conectividade: Wi-Fi 5 / Bluetooth 5.3",
+    "Sistema: Android",
+    "Peso: 335 gr",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "tb-samsung-galaxy-tab-a11-8-7-64gb-4gb-cinza",
+      "label": "8.7\" · 64GB/4GB · Cinza",
+      "price": 798.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab A11 8.7\" · 64GB/4GB · Cinza. Conta com tela 8.7 pol., resolução 1340 x 800 (WXGA+), chip MediaTek Helio G99, câmera traseira de 8.0 MP, câmera frontal de 5.0 MP, bateria de 5.100 mAh. Sistema: Android.",
+      "specs": [
+        "Tela: 8.7 pol.",
+        "Resolução: 1340 x 800 (WXGA+)",
+        "Memória: 64GB/4GB",
+        "Cor: Cinza",
+        "Chip: MediaTek Helio G99",
+        "Câmera traseira: 8.0 MP",
+        "Câmera frontal: 5.0 MP",
+        "Bateria: 5.100 mAh",
+        "Conectividade: Wi-Fi 5 / Bluetooth 5.3",
+        "Sistema: Android",
+        "Peso: 335 gr",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-samsung-galaxy-tab-a11-8-7-64gb-4gb-cinza-wi-fi-plus-celular",
+      "label": "8.7\" · 64GB/4GB · Cinza · Wi-Fi + Celular",
+      "price": 865.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-wi-fi-plus-celular-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-wi-fi-plus-celular-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-wi-fi-plus-celular-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab A11 8.7\" · 64GB/4GB · Cinza · Wi-Fi + Celular. Conta com tela 8.7 pol., resolução 800 x 1340 (WXGA+), chip MediaTek Helio G99, câmera traseira de 8.0 MP, câmera frontal de 2.0 MP. Sistema: Android.",
+      "specs": [
+        "Tela: 8.7 pol.",
+        "Resolução: 800 x 1340 (WXGA+)",
+        "Memória: 64GB/4GB",
+        "Cor: Cinza",
+        "Chip: MediaTek Helio G99",
+        "Câmera traseira: 8.0 MP",
+        "Câmera frontal: 2.0 MP",
+        "Conectividade: Wi-Fi / Bluetooth v5.3",
+        "Sistema: Android",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-samsung-galaxy-tab-a11-8-7-64gb-4gb-prata-wi-fi-plus-celular",
+      "label": "8.7\" · 64GB/4GB · Prata · Wi-Fi + Celular",
+      "price": 865.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-prata-wi-fi-plus-celular-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-prata-wi-fi-plus-celular-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-prata-wi-fi-plus-celular-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab A11 8.7\" · 64GB/4GB · Prata · Wi-Fi + Celular. Conta com tela 8.7\" TFT LCD (90Hz), resolução 1340 x 800 (WXGA+), chip MediaTek Helio G99, câmera traseira de 8.0 MP, câmera frontal de 5.0 MP. Sistema: Android.",
+      "specs": [
+        "Tela: 8.7\" TFT LCD (90Hz)",
+        "Resolução: 1340 x 800 (WXGA+)",
+        "Memória: 64GB/4GB",
+        "Cor: Prata",
+        "Chip: MediaTek Helio G99",
+        "Câmera traseira: 8.0 MP",
+        "Câmera frontal: 5.0 MP",
+        "Conectividade: Wi-Fi 802.11 a/b/g/n/ac, BT 5.3",
+        "Sistema: Android",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

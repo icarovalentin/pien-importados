@@ -1,0 +1,107 @@
+{
+  "id": "tb-samsung-galaxy-tab-a11-plus",
+  "name": "Samsung Galaxy Tab A11+",
+  "brand": "Samsung",
+  "category": "eletronicos",
+  "categoryLabel": "Tablets",
+  "price": 1361.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-grafite-1.webp",
+    "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-grafite-2.webp",
+    "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-grafite-3.webp"
+  ],
+  "description": "Samsung Galaxy Tab A11+ 11\" · 128GB/6GB · Grafite. Conta com tela 11.0\" TFT LCD (90Hz), resolução 1920 x 1200, chip Mediatek Dimensity 7300, câmera traseira de 8.0 MP (Autofoco), câmera frontal de 5.0 MP, bateria de 7.040 mAh. Sistema: Android 16.",
+  "specs": [
+    "Tela: 11.0\" TFT LCD (90Hz)",
+    "Resolução: 1920 x 1200",
+    "Memória: 128GB/6GB",
+    "Cor: Grafite",
+    "Chip: Mediatek Dimensity 7300",
+    "Câmera traseira: 8.0 MP (Autofoco)",
+    "Câmera frontal: 5.0 MP",
+    "Bateria: 7.040 mAh",
+    "Conectividade: Wi-Fi 802.11 a/b/g/n/ac",
+    "Sistema: Android 16",
+    "Peso: 477 gr",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "tb-samsung-galaxy-tab-a11-plus-11-128gb-6gb-grafite",
+      "label": "11\" · 128GB/6GB · Grafite",
+      "price": 1361.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-grafite-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-grafite-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-grafite-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab A11+ 11\" · 128GB/6GB · Grafite. Conta com tela 11.0\" TFT LCD (90Hz), resolução 1920 x 1200, chip Mediatek Dimensity 7300, câmera traseira de 8.0 MP (Autofoco), câmera frontal de 5.0 MP, bateria de 7.040 mAh. Sistema: Android 16.",
+      "specs": [
+        "Tela: 11.0\" TFT LCD (90Hz)",
+        "Resolução: 1920 x 1200",
+        "Memória: 128GB/6GB",
+        "Cor: Grafite",
+        "Chip: Mediatek Dimensity 7300",
+        "Câmera traseira: 8.0 MP (Autofoco)",
+        "Câmera frontal: 5.0 MP",
+        "Bateria: 7.040 mAh",
+        "Conectividade: Wi-Fi 802.11 a/b/g/n/ac",
+        "Sistema: Android 16",
+        "Peso: 477 gr",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-samsung-galaxy-tab-a11-plus-11-128gb-6gb-prata",
+      "label": "11\" · 128GB/6GB · Prata",
+      "price": 1361.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-prata-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-prata-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-prata-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab A11+ 11\" · 128GB/6GB · Prata. Conta com tela 11.0 pol., resolução 1920 x 1200, chip Mediatek Dimensity 7300, câmera traseira de 8.0 MP com Auto Foco, câmera frontal de 5.0 MP, bateria de 7,040 mAh. Sistema: Android 16.",
+      "specs": [
+        "Tela: 11.0 pol.",
+        "Resolução: 1920 x 1200",
+        "Memória: 128GB/6GB",
+        "Cor: Prata",
+        "Chip: Mediatek Dimensity 7300",
+        "Câmera traseira: 8.0 MP com Auto Foco",
+        "Câmera frontal: 5.0 MP",
+        "Bateria: 7,040 mAh",
+        "Conectividade: Wi-Fi 5 (802.11ac) / Bluetooth 5.3",
+        "Sistema: Android 16",
+        "Peso: 477 gr",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-samsung-galaxy-tab-a11-plus-11-256gb-8gb-prata",
+      "label": "11\" · 256GB/8GB · Prata",
+      "price": 2051.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-256gb-8gb-prata-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-256gb-8gb-prata-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-256gb-8gb-prata-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab A11+ 11\" · 256GB/8GB · Prata. Conta com tela 11\", resolução WXGA (1200 x 1920), chip Mediatek Dimensity 7300, câmera frontal de 5 MP, bateria de 700 mAh. Sistema: Android 16.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: WXGA (1200 x 1920)",
+        "Memória: 256GB/8GB",
+        "Cor: Prata",
+        "Chip: Mediatek Dimensity 7300",
+        "Câmera frontal: 5 MP",
+        "Bateria: 700 mAh",
+        "Conectividade: Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.3",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

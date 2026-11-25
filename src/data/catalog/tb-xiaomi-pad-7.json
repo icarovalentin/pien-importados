@@ -1,0 +1,81 @@
+{
+  "id": "tb-xiaomi-pad-7",
+  "name": "Xiaomi Pad 7",
+  "brand": "Xiaomi",
+  "category": "eletronicos",
+  "categoryLabel": "Tablets",
+  "price": 1875.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/tablets/tb-xiaomi-pad-7/11-256gb-8gb-verde-1.webp",
+    "/catalog/tablets/tb-xiaomi-pad-7/11-256gb-8gb-verde-2.webp",
+    "/catalog/tablets/tb-xiaomi-pad-7/11-256gb-8gb-verde-3.webp"
+  ],
+  "description": "Xiaomi Pad 7 11\" · 256GB/8GB · Verde. Conta com tela IPS LCD, 11\", 144Hz, resolução 2136 x 3200, chip Qualcomm SM7675-AB Snapdragon 7+ Gen 3, câmera traseira de 13 MP, câmera frontal de 8 MP, bateria de 8850 mAh. Sistema: Android 15.",
+  "specs": [
+    "Tela: IPS LCD, 11\", 144Hz",
+    "Resolução: 2136 x 3200",
+    "Memória: 256GB/8GB",
+    "Cor: Verde",
+    "Chip: Qualcomm SM7675-AB Snapdragon 7+ Gen 3",
+    "Câmera traseira: 13 MP",
+    "Câmera frontal: 8 MP",
+    "Bateria: 8850 mAh",
+    "Conectividade: Wi-Fi 802.11 a/b/g/n/a/6e, dual-band, Wi-Fi Direct, Bluetooth 5.4",
+    "Sistema: Android 15",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "tb-xiaomi-pad-7-11-256gb-8gb-verde",
+      "label": "11\" · 256GB/8GB · Verde",
+      "price": 1875.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-pad-7/11-256gb-8gb-verde-1.webp",
+        "/catalog/tablets/tb-xiaomi-pad-7/11-256gb-8gb-verde-2.webp",
+        "/catalog/tablets/tb-xiaomi-pad-7/11-256gb-8gb-verde-3.webp"
+      ],
+      "description": "Xiaomi Pad 7 11\" · 256GB/8GB · Verde. Conta com tela IPS LCD, 11\", 144Hz, resolução 2136 x 3200, chip Qualcomm SM7675-AB Snapdragon 7+ Gen 3, câmera traseira de 13 MP, câmera frontal de 8 MP, bateria de 8850 mAh. Sistema: Android 15.",
+      "specs": [
+        "Tela: IPS LCD, 11\", 144Hz",
+        "Resolução: 2136 x 3200",
+        "Memória: 256GB/8GB",
+        "Cor: Verde",
+        "Chip: Qualcomm SM7675-AB Snapdragon 7+ Gen 3",
+        "Câmera traseira: 13 MP",
+        "Câmera frontal: 8 MP",
+        "Bateria: 8850 mAh",
+        "Conectividade: Wi-Fi 802.11 a/b/g/n/a/6e, dual-band, Wi-Fi Direct, Bluetooth 5.4",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-xiaomi-pad-7-11-2-256gb-8gb-azul",
+      "label": "11.2\" · 256GB/8GB · Azul",
+      "price": 1875.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-pad-7/11-2-256gb-8gb-azul-1.webp",
+        "/catalog/tablets/tb-xiaomi-pad-7/11-2-256gb-8gb-azul-2.webp",
+        "/catalog/tablets/tb-xiaomi-pad-7/11-2-256gb-8gb-azul-3.webp"
+      ],
+      "description": "Xiaomi Pad 7 11.2\" · 256GB/8GB · Azul. Conta com tela IPS LCD, 11.2\", 144Hz, resolução 2136 x 3200, chip Qualcomm SM7675-AB Snapdragon 7+ Gen 3, câmera traseira de 13 MP, câmera frontal de 8 MP, bateria de 8850 mAh. Sistema: Android 15, HyperOS 2.",
+      "specs": [
+        "Tela: IPS LCD, 11.2\", 144Hz",
+        "Resolução: 2136 x 3200",
+        "Memória: 256GB/8GB",
+        "Cor: Azul",
+        "Chip: Qualcomm SM7675-AB Snapdragon 7+ Gen 3 (4 nm)",
+        "Câmera traseira: 13 MP",
+        "Câmera frontal: 8 MP",
+        "Bateria: 8850 mAh",
+        "Conectividade: Wi-Fi 802.11 a/b/g/n/a/6e, Bluetooth 5.4",
+        "Sistema: Android 15, HyperOS 2",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

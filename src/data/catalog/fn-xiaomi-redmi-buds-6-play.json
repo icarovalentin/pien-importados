@@ -1,0 +1,118 @@
+{
+  "id": "fn-xiaomi-redmi-buds-6-play",
+  "name": "Xiaomi Redmi Buds 6 Play",
+  "brand": "Xiaomi",
+  "category": "eletronicos",
+  "categoryLabel": "Fones de Ouvido",
+  "price": 54.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/fones/fn-xiaomi-redmi-buds-6-play/rosa-1.webp",
+    "/catalog/fones/fn-xiaomi-redmi-buds-6-play/rosa-2.webp",
+    "/catalog/fones/fn-xiaomi-redmi-buds-6-play/rosa-3.webp"
+  ],
+  "description": "Xiaomi Redmi Buds 6 Play na cor Rosa. Fone de ouvido sem fio com Bluetooth 5.4, cancelamento de ruído, drivers de 10 mm, autonomia de Fone de Ouvido: 57mAh.",
+  "specs": [
+    "Cor: Rosa",
+    "Conectividade: Bluetooth 5.4",
+    "Cancelamento de ruído: Sim",
+    "Drivers: 10 mm",
+    "Microfone: Integrado",
+    "Autonomia: Fone de Ouvido: 57mAh",
+    "Tempo de carregamento: Até 7,5 horas com uma única carga, Até 36 horas com o estojo de carregamento.",
+    "Conexão de carga: USB-C",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "fn-xiaomi-redmi-buds-6-play-rosa",
+      "label": "Rosa",
+      "price": 54.9,
+      "images": [
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/rosa-1.webp",
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/rosa-2.webp",
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/rosa-3.webp"
+      ],
+      "description": "Xiaomi Redmi Buds 6 Play na cor Rosa. Fone de ouvido sem fio com Bluetooth 5.4, cancelamento de ruído, drivers de 10 mm, autonomia de Fone de Ouvido: 57mAh.",
+      "specs": [
+        "Cor: Rosa",
+        "Conectividade: Bluetooth 5.4",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 10 mm",
+        "Microfone: Integrado",
+        "Autonomia: Fone de Ouvido: 57mAh",
+        "Tempo de carregamento: Até 7,5 horas com uma única carga, Até 36 horas com o estojo de carregamento.",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-xiaomi-redmi-buds-6-play-branco",
+      "label": "Branco",
+      "price": 54.9,
+      "images": [
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/branco-1.webp",
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/branco-2.webp",
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/branco-3.webp"
+      ],
+      "description": "Xiaomi Redmi Buds 6 Play na cor Branco. Fone de ouvido sem fio com Bluetooth 5.4, sem cancelamento de ruído, drivers de 10 mm, resistência IPX4, proteção contra respingos de água, autonomia de 7,5 horas nos fones. Recursos: Controle por toque (Touch)., Dois toques = Atenda e desligue ligações / Reproduza ou pause as músicas., Três toques = Mude para a próxima música / Recuse uma chamada.",
+      "specs": [
+        "Cor: Branco",
+        "Conectividade: Bluetooth 5.4",
+        "Cancelamento de ruído: Não",
+        "Drivers: 10 mm",
+        "Microfone: Integrado",
+        "Autonomia: Fones: 7,5 horas",
+        "Tempo de carregamento: 2 horas",
+        "Resistência à água: IPX4, proteção contra respingos de água",
+        "Conexão de carga: USB-C",
+        "Recursos: Controle por toque (Touch)., Dois toques = Atenda e desligue ligações / Reproduza ou pause as músicas., Três toques = Mude para a próxima música / Recuse uma chamada",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-xiaomi-redmi-buds-6-play-azul",
+      "label": "Azul",
+      "price": 54.9,
+      "images": [
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/azul-1.webp",
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/azul-2.webp",
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/azul-3.webp"
+      ],
+      "description": "Xiaomi Redmi Buds 6 Play na cor Azul. Fone de ouvido sem fio com Bluetooth 5.4, drivers de 10 mm, autonomia de até 36 horas com estojo.",
+      "specs": [
+        "Cor: Azul",
+        "Conectividade: Bluetooth 5.4",
+        "Drivers: 10 mm",
+        "Microfone: Integrado",
+        "Autonomia: Até 36 horas com estojo",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-xiaomi-redmi-buds-6-play-preto",
+      "label": "Preto",
+      "price": 63.9,
+      "images": [
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/preto-1.webp",
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/preto-2.webp",
+        "/catalog/fones/fn-xiaomi-redmi-buds-6-play/preto-3.webp"
+      ],
+      "description": "Xiaomi Redmi Buds 6 Play na cor Preto. Fone de ouvido sem fio com Bluetooth 5.4, cancelamento de ruído, drivers de 10 mm, autonomia de 7,5 horas nos fones.",
+      "specs": [
+        "Cor: Preto",
+        "Conectividade: Bluetooth 5.4",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 10 mm",
+        "Autonomia: Fones: 7,5 horas",
+        "Tempo de carregamento: 2 horas",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}
