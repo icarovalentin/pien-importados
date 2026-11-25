@@ -23,7 +23,8 @@ const ALLOWED_CATEGORIES = new Set([
 const DEFAULT_IMAGE =
   'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80';
 const MAX_IMAGES = 8;
-const MAX_VARIANTS = 20;
+// O catalogo importado da Victoria's Secret tem ate 55 variacoes por produto.
+const MAX_VARIANTS = 200;
 const MAX_IMAGE_URL_LENGTH = 1000;
 const PRICE_MIN = 0.01;
 const PRICE_MAX = 9999999999.99;
