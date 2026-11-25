@@ -1,0 +1,218 @@
+{
+  "id": "tb-xiaomi-redmi-pad-2",
+  "name": "Xiaomi Redmi Pad 2",
+  "brand": "Xiaomi",
+  "category": "eletronicos",
+  "categoryLabel": "Tablets",
+  "price": 845.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-64gb-4gb-cinza-1.webp",
+    "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-64gb-4gb-cinza-2.webp",
+    "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-64gb-4gb-cinza-3.webp"
+  ],
+  "description": "Xiaomi Redmi Pad 2 9.7\" · 64GB/4GB · Cinza. Conta com tela 9.7\", resolução WQXGA (1600 x 2560), chip Mediatek Helio G100 Ultra, câmera frontal de 5 MP, bateria de 9000 mAh. Sistema: Android 15 HyperOS 2.",
+  "specs": [
+    "Tela: 9.7\"",
+    "Resolução: WQXGA (1600 x 2560)",
+    "Memória: 64GB/4GB",
+    "Cor: Cinza",
+    "Chip: Mediatek Helio G100 Ultra (6 nm)",
+    "Câmera frontal: 5 MP",
+    "Bateria: 9000 mAh",
+    "Conectividade: Wi-Fi 5, Bluetooth 5.3",
+    "Sistema: Android 15 HyperOS 2",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "tb-xiaomi-redmi-pad-2-9-7-64gb-4gb-cinza",
+      "label": "9.7\" · 64GB/4GB · Cinza",
+      "price": 845.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-64gb-4gb-cinza-1.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-64gb-4gb-cinza-2.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-64gb-4gb-cinza-3.webp"
+      ],
+      "description": "Xiaomi Redmi Pad 2 9.7\" · 64GB/4GB · Cinza. Conta com tela 9.7\", resolução WQXGA (1600 x 2560), chip Mediatek Helio G100 Ultra, câmera frontal de 5 MP, bateria de 9000 mAh. Sistema: Android 15 HyperOS 2.",
+      "specs": [
+        "Tela: 9.7\"",
+        "Resolução: WQXGA (1600 x 2560)",
+        "Memória: 64GB/4GB",
+        "Cor: Cinza",
+        "Chip: Mediatek Helio G100 Ultra (6 nm)",
+        "Câmera frontal: 5 MP",
+        "Bateria: 9000 mAh",
+        "Conectividade: Wi-Fi 5, Bluetooth 5.3",
+        "Sistema: Android 15 HyperOS 2",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-xiaomi-redmi-pad-2-9-7-128gb-4gb-cinza",
+      "label": "9.7\" · 128GB/4GB · Cinza",
+      "price": 962.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-128gb-4gb-cinza-1.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-128gb-4gb-cinza-2.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-128gb-4gb-cinza-3.webp"
+      ],
+      "description": "Xiaomi Redmi Pad 2 9.7\" · 128GB/4GB · Cinza. Conta com tela 9.7\", resolução 2K (1280 x 2048), chip Qualcomm Snapdragon 6s 4G Gen 2, câmera frontal de 5 MP, bateria de 7600 mAh. Sistema: Android 16.",
+      "specs": [
+        "Tela: 9.7\"",
+        "Resolução: 2K (1280 x 2048)",
+        "Memória: 128GB/4GB",
+        "Cor: Cinza",
+        "Chip: Qualcomm Snapdragon 6s 4G Gen 2",
+        "Câmera frontal: 5 MP",
+        "Bateria: 7600 mAh",
+        "Conectividade: Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.0",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-xiaomi-redmi-pad-2-11-128gb-4gb-verde",
+      "label": "11\" · 128GB/4GB · Verde",
+      "price": 1046.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-128gb-4gb-verde-1.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-128gb-4gb-verde-2.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-128gb-4gb-verde-3.webp"
+      ],
+      "description": "Xiaomi Redmi Pad 2 11\" · 128GB/4GB · Verde. Conta com tela 11\", resolução 2.5K (1600 x 2560), chip Mediatek Helio G100 Ultra, câmera frontal de 5 MP, bateria de 9000 mAh. Sistema: Android 15 HyperOS 2.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: 2.5K (1600 x 2560)",
+        "Memória: 128GB/4GB",
+        "Cor: Verde",
+        "Chip: Mediatek Helio G100 Ultra (6 nm)",
+        "Câmera frontal: 5 MP",
+        "Bateria: 9000 mAh",
+        "Conectividade: Wi-Fi 5, Bluetooth 5.3",
+        "Sistema: Android 15 HyperOS 2",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-xiaomi-redmi-pad-2-11-256gb-4gb-cinza",
+      "label": "11\" · 256GB/4GB · Cinza",
+      "price": 1113.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-4gb-cinza-1.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-4gb-cinza-2.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-4gb-cinza-3.webp"
+      ],
+      "description": "Xiaomi Redmi Pad 2 11\" · 256GB/4GB · Cinza. Conta com tela 11\", resolução 2K (1600 x 2560), chip Mediatek Helio G100 Ultra, câmera frontal de 5 MP, bateria de 9000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: 2K (1600 x 2560)",
+        "Memória: 256GB/4GB",
+        "Cor: Cinza",
+        "Chip: Mediatek Helio G100 Ultra",
+        "Câmera frontal: 5 MP",
+        "Bateria: 9000 mAh",
+        "Conectividade: Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.3",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-xiaomi-redmi-pad-2-11-256gb-4gb-cinza-2",
+      "label": "11\" · 256GB/4GB · Cinza (2)",
+      "price": 1113.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-4gb-cinza-2-1.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-4gb-cinza-2-2.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-4gb-cinza-2-3.webp"
+      ],
+      "description": "Xiaomi Redmi Pad 2 11\" · 256GB/4GB · Cinza (2). Conta com tela 11\", resolução 2K (1600 x 2560), chip Mediatek Helio G100 Ultra, câmera frontal de 5 MP, bateria de 9000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: 2K (1600 x 2560)",
+        "Memória: 256GB/4GB",
+        "Cor: Cinza",
+        "Chip: Mediatek Helio G100 Ultra",
+        "Câmera frontal: 5 MP",
+        "Bateria: 9000 mAh",
+        "Conectividade: Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.3",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-xiaomi-redmi-pad-2-11-256gb-8gb-cinza",
+      "label": "11\" · 256GB/8GB · Cinza",
+      "price": 1318.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-cinza-1.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-cinza-2.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-cinza-3.webp"
+      ],
+      "description": "Xiaomi Redmi Pad 2 11\" · 256GB/8GB · Cinza. Conta com tela 11\", resolução 2.5K (1600 x 2560), chip Mediatek Helio G100 Ultra, câmera frontal de 5 MP, bateria de 9000 mAh. Sistema: Android 15 HyperOS 2.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: 2.5K (1600 x 2560)",
+        "Memória: 256GB/8GB",
+        "Cor: Cinza",
+        "Chip: Mediatek Helio G100 Ultra (6 nm)",
+        "Câmera frontal: 5 MP",
+        "Bateria: 9000 mAh",
+        "Conectividade: Wi-Fi 5, Bluetooth 5.3",
+        "Sistema: Android 15 HyperOS 2",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-xiaomi-redmi-pad-2-11-256gb-8gb-cinza-com-capa",
+      "label": "11\" · 256GB/8GB · Cinza · com capa",
+      "price": 1325.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-cinza-com-capa-1.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-cinza-com-capa-2.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-cinza-com-capa-3.webp"
+      ],
+      "description": "Xiaomi Redmi Pad 2 11\" · 256GB/8GB · Cinza · com capa. Conta com tela IPS LCD 11\", 90Hz, resolução 2500 x 1600, chip MediaTek Helio G100, câmera traseira de 8 MP, câmera frontal de 5 MP, bateria de 9000 mAh. Sistema: Android 15, HyperOS 2.1.",
+      "specs": [
+        "Tela: IPS LCD 11\", 90Hz",
+        "Resolução: 2500 x 1600",
+        "Memória: 256GB/8GB",
+        "Cor: Cinza",
+        "Chip: MediaTek Helio G100",
+        "Câmera traseira: 8 MP",
+        "Câmera frontal: 5 MP",
+        "Bateria: 9000 mAh",
+        "Conectividade: Wi-Fi",
+        "Sistema: Android 15, HyperOS 2.1",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-xiaomi-redmi-pad-2-11-256gb-8gb-roxo-com-capa",
+      "label": "11\" · 256GB/8GB · Roxo · com capa",
+      "price": 1325.9,
+      "images": [
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-roxo-com-capa-1.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-roxo-com-capa-2.webp",
+        "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-roxo-com-capa-3.webp"
+      ],
+      "description": "Xiaomi Redmi Pad 2 11\" · 256GB/8GB · Roxo · com capa. Conta com tela 11\", resolução 2560×1600, chip MediaTek Helio G100-Ultra, câmera traseira de 8 MP, câmera frontal de 5 MP, bateria de 9 000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: 2560×1600",
+        "Memória: 256GB/8GB",
+        "Cor: Roxo",
+        "Chip: MediaTek Helio G100-Ultra",
+        "Câmera traseira: 8 MP",
+        "Câmera frontal: 5 MP",
+        "Bateria: 9 000 mAh",
+        "Conectividade: Wi-Fi 5",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

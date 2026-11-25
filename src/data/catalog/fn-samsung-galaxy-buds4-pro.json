@@ -1,0 +1,74 @@
+{
+  "id": "fn-samsung-galaxy-buds4-pro",
+  "name": "Samsung Galaxy Buds4 Pro",
+  "brand": "Samsung",
+  "category": "eletronicos",
+  "categoryLabel": "Fones de Ouvido",
+  "price": 998.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-1.webp",
+    "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-2.webp",
+    "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-3.webp"
+  ],
+  "description": "Samsung Galaxy Buds4 Pro na cor Branco. Fone de ouvido sem fio com Bluetooth 6.1, cancelamento de ruído, resistência IP57, autonomia de 6 horas nos fones.",
+  "specs": [
+    "Cor: Branco",
+    "Conectividade: Bluetooth 6.1",
+    "Cancelamento de ruído: Sim",
+    "Microfone: 6",
+    "Autonomia: Fones: 6 horas",
+    "Tempo de carregamento: 1 hora, Compatibilidade, Android e iOS",
+    "Resistência à água: IP57",
+    "Conexão de carga: USB-C",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "fn-samsung-galaxy-buds4-pro-branco",
+      "label": "Branco",
+      "price": 998.9,
+      "images": [
+        "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-1.webp",
+        "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-2.webp",
+        "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-3.webp"
+      ],
+      "description": "Samsung Galaxy Buds4 Pro na cor Branco. Fone de ouvido sem fio com Bluetooth 6.1, cancelamento de ruído, resistência IP57, autonomia de 6 horas nos fones.",
+      "specs": [
+        "Cor: Branco",
+        "Conectividade: Bluetooth 6.1",
+        "Cancelamento de ruído: Sim",
+        "Microfone: 6",
+        "Autonomia: Fones: 6 horas",
+        "Tempo de carregamento: 1 hora, Compatibilidade, Android e iOS",
+        "Resistência à água: IP57",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-samsung-galaxy-buds4-pro-preto",
+      "label": "Preto",
+      "price": 998.9,
+      "images": [
+        "/catalog/fones/fn-samsung-galaxy-buds4-pro/preto-1.webp",
+        "/catalog/fones/fn-samsung-galaxy-buds4-pro/preto-2.webp",
+        "/catalog/fones/fn-samsung-galaxy-buds4-pro/preto-3.webp"
+      ],
+      "description": "Samsung Galaxy Buds4 Pro na cor Preto. Fone de ouvido sem fio com Bluetooth 6.1, cancelamento de ruído, resistência IP57, autonomia de 6 horas nos fones.",
+      "specs": [
+        "Cor: Preto",
+        "Conectividade: Bluetooth 6.1",
+        "Cancelamento de ruído: Sim",
+        "Microfone: Integrado",
+        "Autonomia: Fone: 6 horas",
+        "Resistência à água: IP57",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

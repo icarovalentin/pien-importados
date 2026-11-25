@@ -1,0 +1,82 @@
+{
+  "id": "tb-samsung-galaxy-tab-s10-fe-plus",
+  "name": "Samsung Galaxy Tab S10 FE+",
+  "brand": "Samsung",
+  "category": "eletronicos",
+  "categoryLabel": "Tablets",
+  "price": 3085.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-cinza-com-caneta-1.webp",
+    "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-cinza-com-caneta-2.webp",
+    "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-cinza-com-caneta-3.webp"
+  ],
+  "description": "Samsung Galaxy Tab S10 FE+ 13.1\" · 128GB/8GB · Cinza · com caneta. Conta com tela IPS LCD, 13\", resolução WQXGA+ (2880 x 1800), chip Exynos 1580, câmera traseira de 13 MP, câmera frontal de 12 MP, bateria de 10090 mAh. Sistema: Android 15.",
+  "specs": [
+    "Tela: IPS LCD, 13\"",
+    "Resolução: WQXGA+ (2880 x 1800)",
+    "Memória: 128GB/8GB",
+    "Cor: Cinza",
+    "Chip: Exynos 1580",
+    "Câmera traseira: 13 MP",
+    "Câmera frontal: 12 MP",
+    "Bateria: 10090 mAh",
+    "Conectividade: Wi-Fi 6",
+    "Sistema: Android 15",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "tb-samsung-galaxy-tab-s10-fe-plus-13-1-128gb-8gb-cinza-com-caneta",
+      "label": "13.1\" · 128GB/8GB · Cinza · com caneta",
+      "price": 3085.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-cinza-com-caneta-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-cinza-com-caneta-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-cinza-com-caneta-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab S10 FE+ 13.1\" · 128GB/8GB · Cinza · com caneta. Conta com tela IPS LCD, 13\", resolução WQXGA+ (2880 x 1800), chip Exynos 1580, câmera traseira de 13 MP, câmera frontal de 12 MP, bateria de 10090 mAh. Sistema: Android 15.",
+      "specs": [
+        "Tela: IPS LCD, 13\"",
+        "Resolução: WQXGA+ (2880 x 1800)",
+        "Memória: 128GB/8GB",
+        "Cor: Cinza",
+        "Chip: Exynos 1580",
+        "Câmera traseira: 13 MP",
+        "Câmera frontal: 12 MP",
+        "Bateria: 10090 mAh",
+        "Conectividade: Wi-Fi 6",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-samsung-galaxy-tab-s10-fe-plus-13-1-128gb-8gb-prata-com-caneta",
+      "label": "13.1\" · 128GB/8GB · Prata · com caneta",
+      "price": 3085.9,
+      "images": [
+        "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-prata-com-caneta-1.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-prata-com-caneta-2.webp",
+        "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-prata-com-caneta-3.webp"
+      ],
+      "description": "Samsung Galaxy Tab S10 FE+ 13.1\" · 128GB/8GB · Prata · com caneta. Conta com tela IPS LCD de 13.1\", resolução 2880 x 1800p, chip Exynos 1580, câmera traseira de 13 MP, câmera frontal de 12 MP, bateria de 10090 mAh. Sistema: Android 15.",
+      "specs": [
+        "Tela: IPS LCD de 13.1\"",
+        "Resolução: 2880 x 1800p",
+        "Memória: 128GB/8GB",
+        "Cor: Prata",
+        "Chip: Exynos 1580 (4 nm)",
+        "Câmera traseira: 13 MP",
+        "Câmera frontal: 12 MP",
+        "Bateria: 10090 mAh",
+        "Conectividade: Wi-Fi 802.11 a/b/g/n/ac/6e",
+        "Sistema: Android 15",
+        "Peso: 664 g",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

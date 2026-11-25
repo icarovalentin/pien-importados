@@ -1,0 +1,101 @@
+{
+  "id": "fn-jbl-tune-680nc",
+  "name": "JBL Tune 680NC",
+  "brand": "JBL",
+  "category": "eletronicos",
+  "categoryLabel": "Fones de Ouvido",
+  "price": 308.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/fones/fn-jbl-tune-680nc/azul-1.webp",
+    "/catalog/fones/fn-jbl-tune-680nc/azul-2.webp",
+    "/catalog/fones/fn-jbl-tune-680nc/azul-3.webp"
+  ],
+  "description": "JBL Tune 680NC na cor Azul. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 32 mm, resistência Não, autonomia de até 44 horas com ANC ligado.",
+  "specs": [
+    "Cor: Azul",
+    "Conectividade: Bluetooth 5.3",
+    "Cancelamento de ruído: Sim",
+    "Drivers: 32 mm",
+    "Microfone: Sim, integrado com captação de voz nítida para chamadas viva-voz",
+    "Autonomia: Até 44 horas com ANC ligado",
+    "Tempo de carregamento: 2 horas para carga completa",
+    "Resistência à água: Não",
+    "Conexão de carga: USB-C, Comprimento do cabo, 1.2 m",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original JBL, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "fn-jbl-tune-680nc-azul",
+      "label": "Azul",
+      "price": 308.9,
+      "images": [
+        "/catalog/fones/fn-jbl-tune-680nc/azul-1.webp",
+        "/catalog/fones/fn-jbl-tune-680nc/azul-2.webp",
+        "/catalog/fones/fn-jbl-tune-680nc/azul-3.webp"
+      ],
+      "description": "JBL Tune 680NC na cor Azul. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 32 mm, resistência Não, autonomia de até 44 horas com ANC ligado.",
+      "specs": [
+        "Cor: Azul",
+        "Conectividade: Bluetooth 5.3",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 32 mm",
+        "Microfone: Sim, integrado com captação de voz nítida para chamadas viva-voz",
+        "Autonomia: Até 44 horas com ANC ligado",
+        "Tempo de carregamento: 2 horas para carga completa",
+        "Resistência à água: Não",
+        "Conexão de carga: USB-C, Comprimento do cabo, 1.2 m",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-jbl-tune-680nc-branco",
+      "label": "Branco",
+      "price": 308.9,
+      "images": [
+        "/catalog/fones/fn-jbl-tune-680nc/branco-1.webp",
+        "/catalog/fones/fn-jbl-tune-680nc/branco-2.webp",
+        "/catalog/fones/fn-jbl-tune-680nc/branco-3.webp"
+      ],
+      "description": "JBL Tune 680NC na cor Branco. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 32 mm, resistência Não possui certificação IPX contra água, autonomia de até 44 horas com ANC ligado.",
+      "specs": [
+        "Cor: Branco",
+        "Conectividade: Bluetooth 5.3",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 32 mm",
+        "Microfone: Sim, integrado com captação de voz nítida para chamadas viva-voz",
+        "Autonomia: Até 44 horas com ANC ligado",
+        "Tempo de carregamento: 2 horas para carga completa",
+        "Resistência à água: Não possui certificação IPX contra água",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-jbl-tune-680nc-preto",
+      "label": "Preto",
+      "price": 308.9,
+      "images": [
+        "/catalog/fones/fn-jbl-tune-680nc/preto-1.webp",
+        "/catalog/fones/fn-jbl-tune-680nc/preto-2.webp",
+        "/catalog/fones/fn-jbl-tune-680nc/preto-3.webp"
+      ],
+      "description": "JBL Tune 680NC na cor Preto. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 32 mm, resistência Não possui certificação IPX contra água, autonomia de até 44 horas com ANC ligado.",
+      "specs": [
+        "Cor: Preto",
+        "Conectividade: Bluetooth 5.3",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 32 mm",
+        "Microfone: Sim, integrado com captação de voz nítida para chamadas viva-voz",
+        "Autonomia: Até 44 horas com ANC ligado",
+        "Tempo de carregamento: 2 horas para carga completa",
+        "Resistência à água: Não possui certificação IPX contra água",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

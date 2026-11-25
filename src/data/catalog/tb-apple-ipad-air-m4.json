@@ -1,0 +1,195 @@
+{
+  "id": "tb-apple-ipad-air-m4",
+  "name": "Apple iPad Air (M4)",
+  "brand": "Apple",
+  "category": "eletronicos",
+  "categoryLabel": "Tablets",
+  "price": 4380.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-1.webp",
+    "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-2.webp",
+    "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-3.webp"
+  ],
+  "description": "Apple iPad Air (M4) 11\" · 128GB/12GB · Azul. Conta com tela 10.86\", resolução Full HD 2360 x 1640 pixels, chip Apple M4, câmera frontal de Ultra-angular, bateria de 28.93 Wh. Sistema: iPadOS 19.",
+  "specs": [
+    "Tela: 10.86\"",
+    "Resolução: Full HD 2360 x 1640 pixels",
+    "Memória: 128GB/12GB",
+    "Cor: Azul",
+    "Chip: Apple M4",
+    "Câmera frontal: Ultra-angular",
+    "Bateria: 28.93 Wh",
+    "Conectividade: Wi-Fi 7, Bluetooth 6",
+    "Sistema: iPadOS 19",
+    "Peso: 464 g",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "tb-apple-ipad-air-m4-11-128gb-12gb-azul",
+      "label": "11\" · 128GB/12GB · Azul",
+      "price": 4380.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-1.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-2.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-3.webp"
+      ],
+      "description": "Apple iPad Air (M4) 11\" · 128GB/12GB · Azul. Conta com tela 10.86\", resolução Full HD 2360 x 1640 pixels, chip Apple M4, câmera frontal de Ultra-angular, bateria de 28.93 Wh. Sistema: iPadOS 19.",
+      "specs": [
+        "Tela: 10.86\"",
+        "Resolução: Full HD 2360 x 1640 pixels",
+        "Memória: 128GB/12GB",
+        "Cor: Azul",
+        "Chip: Apple M4",
+        "Câmera frontal: Ultra-angular",
+        "Bateria: 28.93 Wh",
+        "Conectividade: Wi-Fi 7, Bluetooth 6",
+        "Sistema: iPadOS 19",
+        "Peso: 464 g",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-air-m4-11-128gb-12gb-azul-2",
+      "label": "11\" · 128GB/12GB · Azul (2)",
+      "price": 4410.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-2-1.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-2-2.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-2-3.webp"
+      ],
+      "description": "Apple iPad Air (M4) 11\" · 128GB/12GB · Azul (2). Conta com tela 11\", resolução QHD (1640 x 2360), chip M4, câmera frontal de 12 MP, bateria de 7606 mAh. Sistema: iPadOS 26.3.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: QHD (1640 x 2360)",
+        "Memória: 128GB/12GB",
+        "Cor: Azul",
+        "Chip: M4",
+        "Câmera frontal: 12 MP",
+        "Bateria: 7606 mAh",
+        "Conectividade: Wi-Fi 7, Bluetooth 6.0",
+        "Sistema: iPadOS 26.3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-air-m4-11-128gb-12gb-azul-3",
+      "label": "11\" · 128GB/12GB · Azul (3)",
+      "price": 5439.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-3-1.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-3-2.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-3-3.webp"
+      ],
+      "description": "Apple iPad Air (M4) 11\" · 128GB/12GB · Azul (3). Conta com tela 11\", resolução QHD (1640 x 2360), chip M4, câmera frontal de 12 MP, bateria de 7606 mAh. Sistema: iPadOS 26.3.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: QHD (1640 x 2360)",
+        "Memória: 128GB/12GB",
+        "Cor: Azul",
+        "Chip: M4",
+        "Câmera frontal: 12 MP",
+        "Bateria: 7606 mAh",
+        "Conectividade: Wi-Fi 7, Bluetooth 6.0",
+        "Sistema: iPadOS 26.3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-air-m4-13-128gb-12gb-azul",
+      "label": "13\" · 128GB/12GB · Azul",
+      "price": 5626.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-air-m4/13-128gb-12gb-azul-1.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/13-128gb-12gb-azul-2.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/13-128gb-12gb-azul-3.webp"
+      ],
+      "description": "Apple iPad Air (M4) 13\" · 128GB/12GB · Azul. Conta com tela 13\", resolução QHD (2048 x 2732), chip M4, câmera frontal de 12 MP, bateria de 9705 mAh. Sistema: iPadOS 26.3.",
+      "specs": [
+        "Tela: 13\"",
+        "Resolução: QHD (2048 x 2732)",
+        "Memória: 128GB/12GB",
+        "Cor: Azul",
+        "Chip: M4",
+        "Câmera frontal: 12 MP",
+        "Bateria: 9705 mAh",
+        "Conectividade: Wi-Fi 7, Bluetooth 6.0",
+        "Sistema: iPadOS 26.3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-air-m4-13-128gb-12gb-roxo",
+      "label": "13\" · 128GB/12GB · Roxo",
+      "price": 5717.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-air-m4/13-128gb-12gb-roxo-1.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/13-128gb-12gb-roxo-2.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/13-128gb-12gb-roxo-3.webp"
+      ],
+      "description": "Apple iPad Air (M4) 13\" · 128GB/12GB · Roxo. Conta com tela 13\", resolução QHD (2048 x 2732), chip M4, câmera frontal de 12 MP, bateria de 9705 mAh. Sistema: iPadOS 26.3.",
+      "specs": [
+        "Tela: 13\"",
+        "Resolução: QHD (2048 x 2732)",
+        "Memória: 128GB/12GB",
+        "Cor: Roxo",
+        "Chip: M4",
+        "Câmera frontal: 12 MP",
+        "Bateria: 9705 mAh",
+        "Conectividade: Wi-Fi 7, Bluetooth 6.0",
+        "Sistema: iPadOS 26.3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-air-m4-11-256gb-12gb-azul",
+      "label": "11\" · 256GB/12GB · Azul",
+      "price": 6292.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-256gb-12gb-azul-1.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-256gb-12gb-azul-2.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-256gb-12gb-azul-3.webp"
+      ],
+      "description": "Apple iPad Air (M4) 11\" · 256GB/12GB · Azul. Conta com tela 11\", resolução QHD (1640 x 2360), chip M4, câmera frontal de 12 MP, bateria de 9705 mAh. Sistema: iPadOS 26.3.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: QHD (1640 x 2360)",
+        "Memória: 256GB/12GB",
+        "Cor: Azul",
+        "Chip: M4",
+        "Câmera frontal: 12 MP",
+        "Bateria: 9705 mAh",
+        "Conectividade: Wi-Fi 7, Bluetooth 6.0",
+        "Sistema: iPadOS 26.3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "tb-apple-ipad-air-m4-11-256gb-12gb-cinza",
+      "label": "11\" · 256GB/12GB · Cinza",
+      "price": 6352.9,
+      "images": [
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-256gb-12gb-cinza-1.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-256gb-12gb-cinza-2.webp",
+        "/catalog/tablets/tb-apple-ipad-air-m4/11-256gb-12gb-cinza-3.webp"
+      ],
+      "description": "Apple iPad Air (M4) 11\" · 256GB/12GB · Cinza. Conta com tela 11\", resolução QHD (1640 x 2360), chip M4, câmera frontal de 12 MP, bateria de 9705 mAh. Sistema: iPadOS 26.3.",
+      "specs": [
+        "Tela: 11\"",
+        "Resolução: QHD (1640 x 2360)",
+        "Memória: 256GB/12GB",
+        "Cor: Cinza",
+        "Chip: M4",
+        "Câmera frontal: 12 MP",
+        "Bateria: 9705 mAh",
+        "Conectividade: Wi-Fi 7, Bluetooth 6.0",
+        "Sistema: iPadOS 26.3",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

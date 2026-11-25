@@ -1,0 +1,93 @@
+{
+  "id": "fn-apple-airpods-max-2",
+  "name": "Apple AirPods Max 2",
+  "brand": "Apple",
+  "category": "eletronicos",
+  "categoryLabel": "Fones de Ouvido",
+  "price": 2952.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/fones/fn-apple-airpods-max-2/roxo-1.webp",
+    "/catalog/fones/fn-apple-airpods-max-2/roxo-2.webp",
+    "/catalog/fones/fn-apple-airpods-max-2/roxo-3.webp"
+  ],
+  "description": "Apple AirPods Max 2 na cor Roxo. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 40 mm, autonomia de 20 horas.",
+  "specs": [
+    "Cor: Roxo",
+    "Conectividade: Bluetooth 5.3",
+    "Cancelamento de ruído: Sim",
+    "Drivers: 40 mm",
+    "Microfone: 9",
+    "Autonomia: 20 horas",
+    "Conexão de carga: USB-C",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "fn-apple-airpods-max-2-roxo",
+      "label": "Roxo",
+      "price": 2952.9,
+      "images": [
+        "/catalog/fones/fn-apple-airpods-max-2/roxo-1.webp",
+        "/catalog/fones/fn-apple-airpods-max-2/roxo-2.webp",
+        "/catalog/fones/fn-apple-airpods-max-2/roxo-3.webp"
+      ],
+      "description": "Apple AirPods Max 2 na cor Roxo. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 40 mm, autonomia de 20 horas.",
+      "specs": [
+        "Cor: Roxo",
+        "Conectividade: Bluetooth 5.3",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 40 mm",
+        "Microfone: 9",
+        "Autonomia: 20 horas",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-apple-airpods-max-2-branco",
+      "label": "Branco",
+      "price": 3019.9,
+      "images": [
+        "/catalog/fones/fn-apple-airpods-max-2/branco-1.webp",
+        "/catalog/fones/fn-apple-airpods-max-2/branco-2.webp",
+        "/catalog/fones/fn-apple-airpods-max-2/branco-3.webp"
+      ],
+      "description": "Apple AirPods Max 2 na cor Branco. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 40 mm, autonomia de 20 horas.",
+      "specs": [
+        "Cor: Branco",
+        "Conectividade: Bluetooth 5.3",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 40 mm",
+        "Microfone: 9",
+        "Autonomia: 20 horas",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-apple-airpods-max-2-laranja",
+      "label": "Laranja",
+      "price": 3019.9,
+      "images": [
+        "/catalog/fones/fn-apple-airpods-max-2/laranja-1.webp",
+        "/catalog/fones/fn-apple-airpods-max-2/laranja-2.webp",
+        "/catalog/fones/fn-apple-airpods-max-2/laranja-3.webp"
+      ],
+      "description": "Apple AirPods Max 2 na cor Laranja. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 40 mm, autonomia de 20 horas.",
+      "specs": [
+        "Cor: Laranja",
+        "Conectividade: Bluetooth 5.3",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 40 mm",
+        "Microfone: 9",
+        "Autonomia: 20 horas",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

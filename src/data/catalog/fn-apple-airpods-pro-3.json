@@ -1,0 +1,53 @@
+{
+  "id": "fn-apple-airpods-pro-3",
+  "name": "Apple AirPods Pro 3",
+  "brand": "Apple",
+  "category": "eletronicos",
+  "categoryLabel": "Fones de Ouvido",
+  "price": 1482.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/fones/fn-apple-airpods-pro-3/branco-1.webp",
+    "/catalog/fones/fn-apple-airpods-pro-3/branco-2.webp",
+    "/catalog/fones/fn-apple-airpods-pro-3/branco-3.webp"
+  ],
+  "description": "Apple AirPods Pro 3 na cor Branco. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, resistência IP57, autonomia de 8 horas. Recursos: Controle por toque, Tradução ao Vivo.",
+  "specs": [
+    "Cor: Branco",
+    "Conectividade: Bluetooth 5.3",
+    "Cancelamento de ruído: Sim",
+    "Microfone: Duplos com filtragem espacial",
+    "Autonomia: 8 horas",
+    "Resistência à água: IP57",
+    "Conexão de carga: USB-C",
+    "Recursos: Controle por toque, Tradução ao Vivo",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "fn-apple-airpods-pro-3-branco",
+      "label": "Branco",
+      "price": 1482.9,
+      "images": [
+        "/catalog/fones/fn-apple-airpods-pro-3/branco-1.webp",
+        "/catalog/fones/fn-apple-airpods-pro-3/branco-2.webp",
+        "/catalog/fones/fn-apple-airpods-pro-3/branco-3.webp"
+      ],
+      "description": "Apple AirPods Pro 3 na cor Branco. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, resistência IP57, autonomia de 8 horas. Recursos: Controle por toque, Tradução ao Vivo.",
+      "specs": [
+        "Cor: Branco",
+        "Conectividade: Bluetooth 5.3",
+        "Cancelamento de ruído: Sim",
+        "Microfone: Duplos com filtragem espacial",
+        "Autonomia: 8 horas",
+        "Resistência à água: IP57",
+        "Conexão de carga: USB-C",
+        "Recursos: Controle por toque, Tradução ao Vivo",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

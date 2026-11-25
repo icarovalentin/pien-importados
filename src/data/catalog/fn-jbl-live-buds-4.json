@@ -1,0 +1,124 @@
+{
+  "id": "fn-jbl-live-buds-4",
+  "name": "JBL Live Buds 4",
+  "brand": "JBL",
+  "category": "eletronicos",
+  "categoryLabel": "Fones de Ouvido",
+  "price": 877.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/fones/fn-jbl-live-buds-4/azul-1.webp",
+    "/catalog/fones/fn-jbl-live-buds-4/azul-2.webp",
+    "/catalog/fones/fn-jbl-live-buds-4/azul-3.webp"
+  ],
+  "description": "JBL Live Buds 4 na cor Azul. Fone de ouvido sem fio com Bluetooth 6.0, cancelamento de ruído, drivers de 10 mm, resistência Certificação IP55, autonomia de até 40 horas.",
+  "specs": [
+    "Cor: Azul",
+    "Conectividade: Bluetooth 6.0",
+    "Cancelamento de ruído: Sim",
+    "Drivers: 10 mm",
+    "Microfone: Integrado",
+    "Autonomia: Até 40 horas",
+    "Tempo de carregamento: Aproximadamente 2 horas",
+    "Resistência à água: Certificação IP55",
+    "Conexão de carga: USB-C",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original JBL, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "fn-jbl-live-buds-4-azul",
+      "label": "Azul",
+      "price": 877.9,
+      "images": [
+        "/catalog/fones/fn-jbl-live-buds-4/azul-1.webp",
+        "/catalog/fones/fn-jbl-live-buds-4/azul-2.webp",
+        "/catalog/fones/fn-jbl-live-buds-4/azul-3.webp"
+      ],
+      "description": "JBL Live Buds 4 na cor Azul. Fone de ouvido sem fio com Bluetooth 6.0, cancelamento de ruído, drivers de 10 mm, resistência Certificação IP55, autonomia de até 40 horas.",
+      "specs": [
+        "Cor: Azul",
+        "Conectividade: Bluetooth 6.0",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 10 mm",
+        "Microfone: Integrado",
+        "Autonomia: Até 40 horas",
+        "Tempo de carregamento: Aproximadamente 2 horas",
+        "Resistência à água: Certificação IP55",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-jbl-live-buds-4-branco",
+      "label": "Branco",
+      "price": 877.9,
+      "images": [
+        "/catalog/fones/fn-jbl-live-buds-4/branco-1.webp",
+        "/catalog/fones/fn-jbl-live-buds-4/branco-2.webp",
+        "/catalog/fones/fn-jbl-live-buds-4/branco-3.webp"
+      ],
+      "description": "JBL Live Buds 4 na cor Branco. Fone de ouvido sem fio com Bluetooth 6.0, cancelamento de ruído, drivers de 10 mm, resistência Certificação IP55, autonomia de até 40 horas.",
+      "specs": [
+        "Cor: Branco",
+        "Conectividade: Bluetooth 6.0",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 10 mm",
+        "Microfone: Integrado",
+        "Autonomia: Até 40 horas",
+        "Tempo de carregamento: Aproximadamente 2 horas",
+        "Resistência à água: Certificação IP55",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-jbl-live-buds-4-prata",
+      "label": "Prata",
+      "price": 877.9,
+      "images": [
+        "/catalog/fones/fn-jbl-live-buds-4/prata-1.webp",
+        "/catalog/fones/fn-jbl-live-buds-4/prata-2.webp",
+        "/catalog/fones/fn-jbl-live-buds-4/prata-3.webp"
+      ],
+      "description": "JBL Live Buds 4 na cor Prata. Fone de ouvido sem fio com Bluetooth 6.0, cancelamento de ruído, drivers de 10 mm, resistência Certificação IP55, autonomia de até 40 horas.",
+      "specs": [
+        "Cor: Prata",
+        "Conectividade: Bluetooth 6.0",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 10 mm",
+        "Microfone: Integrado",
+        "Autonomia: Até 40 horas",
+        "Tempo de carregamento: Aproximadamente 2 horas",
+        "Resistência à água: Certificação IP55",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "fn-jbl-live-buds-4-preto",
+      "label": "Preto",
+      "price": 877.9,
+      "images": [
+        "/catalog/fones/fn-jbl-live-buds-4/preto-1.webp",
+        "/catalog/fones/fn-jbl-live-buds-4/preto-2.webp",
+        "/catalog/fones/fn-jbl-live-buds-4/preto-3.webp"
+      ],
+      "description": "JBL Live Buds 4 na cor Preto. Fone de ouvido sem fio com Bluetooth 6.0, cancelamento de ruído, drivers de 10 mm, resistência Certificação IP55, autonomia de até 40 horas.",
+      "specs": [
+        "Cor: Preto",
+        "Conectividade: Bluetooth 6.0",
+        "Cancelamento de ruído: Sim",
+        "Drivers: 10 mm",
+        "Microfone: Integrado",
+        "Autonomia: Até 40 horas",
+        "Tempo de carregamento: Aproximadamente 2 horas",
+        "Resistência à água: Certificação IP55",
+        "Conexão de carga: USB-C",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}
