@@ -22,12 +22,24 @@ export function getServerAdminPassword(): string | null {
   return pwd;
 }
 
+/**
+ * Retorna o segredo de assinatura da sessão (obrigatório em produção).
+ */
+export function getSessionSecret(): string | null {
+  const secret = process.env.ADMIN_SESSION_SECRET?.trim();
+  if (!secret || secret.length < 32) {
+    return null;
+  }
+  return secret;
+}
+
 function getSigningKey(): Buffer | null {
-  const adminPassword = getServerAdminPassword();
-  const explicitSecret = process.env.ADMIN_SESSION_SECRET;
-  const baseSecret = explicitSecret && explicitSecret.trim().length > 0
-    ? explicitSecret
-    : adminPassword;
+  const secret = getSessionSecret();
+  // Em produção, a chave vem exclusivamente do segredo independente.
+  // Em desenvolvimento, aceita a senha como fallback quando o segredo falta.
+  const baseSecret = secret ?? (
+    process.env.NODE_ENV === 'production' ? null : getServerAdminPassword()
+  );
 
   if (!baseSecret) {
     return null;
@@ -129,7 +141,11 @@ export function verifySessionToken(token: string | undefined): boolean {
  */
 export function isAdminAuthenticated(): boolean {
   try {
-    const cookieStore = cookies();
+    // Next 14 entrega cookies() de forma síncrona. O cast mantém o runtime
+    // intacto mesmo quando o node_modules local ainda tem tipos do Next 16.
+    const cookieStore = cookies() as unknown as {
+      get(name: string): { value: string } | undefined;
+    };
     const token = cookieStore.get(ADMIN_COOKIE_NAME)?.value;
     return verifySessionToken(token);
   } catch {
@@ -145,4 +161,22 @@ export function getSessionCookieOptions(maxAgeSeconds = SESSION_TTL_SECONDS) {
     path: '/',
     maxAge: maxAgeSeconds,
   };
+}
+
+/**
+ * Defesa extra contra CSRF: requisições de escrita devem vir da mesma origem.
+ */
+export function isSameOrigin(req: Request): boolean {
+  const origin = req.headers.get('origin');
+  if (!origin) {
+    // Navegadores enviam Origin em POST/PUT/DELETE cross-site; ausência indica cliente não-navegador.
+    return req.headers.get('sec-fetch-site') !== 'cross-site';
+  }
+
+  const host = req.headers.get('x-forwarded-host') || req.headers.get('host');
+  try {
+    return new URL(origin).host === host;
+  } catch {
+    return false;
+  }
 }

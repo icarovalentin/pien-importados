@@ -4,13 +4,35 @@ import {
   createSessionToken,
   getServerAdminPassword,
   getSessionCookieOptions,
+  getSessionSecret,
+  isSameOrigin,
   verifyAdminPassword,
 } from '@/lib/auth';
 
 // Limite simples de tentativas por IP para mitigar força bruta
 const MAX_ATTEMPTS = 5;
 const WINDOW_MS = 10 * 60 * 1000; // 10 minutos
+const MAX_CONTENT_LENGTH = 4096;
 const attemptsByIp = new Map<string, { count: number; resetAt: number }>();
+const NO_STORE_HEADERS = { 'Cache-Control': 'no-store' };
+
+function jsonNoStore(body: unknown, status = 200) {
+  return NextResponse.json(body, { status, headers: NO_STORE_HEADERS });
+}
+
+function logError(context: string, error: unknown) {
+  const message =
+    error instanceof Error
+      ? error.message
+      : error && typeof error === 'object' && typeof (error as { message?: unknown }).message === 'string'
+        ? (error as { message: string }).message
+        : String(error);
+  const code =
+    error && typeof error === 'object' && 'code' in error
+      ? (error as { code?: unknown }).code
+      : undefined;
+  console.error(`[${context}] ${message}${code !== undefined ? ` (code: ${String(code)})` : ''}`);
+}
 
 function getClientIp(req: Request): string {
   const forwarded = req.headers.get('x-forwarded-for');
@@ -22,13 +44,38 @@ function getClientIp(req: Request): string {
 
 export async function POST(req: Request) {
   try {
-    if (!getServerAdminPassword()) {
-      return NextResponse.json(
+    if (!isSameOrigin(req)) {
+      return jsonNoStore({ success: false, error: 'Origem inválida' }, 403);
+    }
+
+    const contentLength = req.headers.get('content-length');
+    if (contentLength !== null) {
+      const length = Number(contentLength);
+      if (!Number.isFinite(length) || length < 0) {
+        return jsonNoStore({ success: false, error: 'Content-Length inválido' }, 400);
+      }
+      if (length > MAX_CONTENT_LENGTH) {
+        return jsonNoStore({ success: false, error: 'Corpo da requisição muito grande' }, 413);
+      }
+    }
+
+    const contentType = req.headers.get('content-type');
+    if (!contentType || contentType.split(';')[0].trim().toLowerCase() !== 'application/json') {
+      return jsonNoStore(
+        { success: false, error: 'Content-Type deve ser application/json' },
+        415
+      );
+    }
+
+    const requiresSessionSecret = process.env.NODE_ENV === 'production';
+    if (!getServerAdminPassword() || (requiresSessionSecret && !getSessionSecret())) {
+      return jsonNoStore(
         {
           success: false,
-          error: 'Variável ADMIN_PASSWORD não configurada no servidor.',
+          error:
+            'Servidor sem ADMIN_PASSWORD ou ADMIN_SESSION_SECRET (mín. 32 caracteres) configurados.',
         },
-        { status: 503 }
+        503
       );
     }
 
@@ -37,30 +84,39 @@ export async function POST(req: Request) {
     const record = attemptsByIp.get(ip);
 
     if (record && record.resetAt > now && record.count >= MAX_ATTEMPTS) {
-      return NextResponse.json(
+      return jsonNoStore(
         {
           success: false,
           error: 'Muitas tentativas incorretas. Aguarde alguns minutos.',
         },
-        { status: 429 }
+        429
       );
     }
 
-    const body = await req.json().catch(() => null);
-    const password = body?.password;
+    const parsedBody = await req.json().catch(() => null);
+    if (
+      !parsedBody ||
+      typeof parsedBody !== 'object' ||
+      Array.isArray(parsedBody) ||
+      typeof (parsedBody as { password?: unknown }).password !== 'string'
+    ) {
+      return jsonNoStore({ success: false, error: 'Requisição inválida' }, 400);
+    }
+
+    const password = (parsedBody as { password: string }).password;
 
     if (verifyAdminPassword(password)) {
       attemptsByIp.delete(ip);
 
       const token = createSessionToken();
       if (!token) {
-        return NextResponse.json(
+        return jsonNoStore(
           { success: false, error: 'Erro ao iniciar sessão segura.' },
-          { status: 500 }
+          500
         );
       }
 
-      const response = NextResponse.json({ success: true });
+      const response = jsonNoStore({ success: true });
       response.cookies.set(ADMIN_COOKIE_NAME, token, getSessionCookieOptions());
       return response;
     }
@@ -72,15 +128,15 @@ export async function POST(req: Request) {
       attemptsByIp.set(ip, record);
     }
 
-    return NextResponse.json(
+    return jsonNoStore(
       { success: false, error: 'Senha incorreta' },
-      { status: 401 }
+      401
     );
   } catch (error) {
-    console.error('Erro na autenticação:', error);
-    return NextResponse.json(
+    logError('POST /api/admin/login', error);
+    return jsonNoStore(
       { success: false, error: 'Erro no servidor' },
-      { status: 500 }
+      500
     );
   }
 }

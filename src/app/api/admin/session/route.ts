@@ -3,14 +3,27 @@ import {
   ADMIN_COOKIE_NAME,
   getSessionCookieOptions,
   isAdminAuthenticated,
+  isSameOrigin,
 } from '@/lib/auth';
 
-export async function GET() {
-  return NextResponse.json({ authenticated: isAdminAuthenticated() });
+export const dynamic = 'force-dynamic';
+
+const NO_STORE_HEADERS = { 'Cache-Control': 'no-store' };
+
+function jsonNoStore(body: unknown, status = 200) {
+  return NextResponse.json(body, { status, headers: NO_STORE_HEADERS });
 }
 
-export async function DELETE() {
-  const response = NextResponse.json({ success: true });
+export async function GET() {
+  return jsonNoStore({ authenticated: isAdminAuthenticated() });
+}
+
+export async function DELETE(req: Request) {
+  if (!isSameOrigin(req)) {
+    return jsonNoStore({ error: 'Origem inválida' }, 403);
+  }
+
+  const response = jsonNoStore({ success: true });
   response.cookies.set(ADMIN_COOKIE_NAME, '', getSessionCookieOptions(0));
   return response;
 }
