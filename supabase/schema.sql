@@ -17,6 +17,8 @@ CREATE TABLE IF NOT EXISTS public.products (
   description TEXT NOT NULL DEFAULT '',
   specs TEXT[] NOT NULL DEFAULT '{}',
   is_featured BOOLEAN NOT NULL DEFAULT FALSE,
+  is_hidden BOOLEAN NOT NULL DEFAULT FALSE,
+  is_unavailable BOOLEAN NOT NULL DEFAULT FALSE,
   batch_code_info TEXT,
   variants JSONB NOT NULL DEFAULT '[]'::jsonb,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()

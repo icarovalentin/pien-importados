@@ -33,6 +33,10 @@ export interface Product {
   description: string;
   specs: string[];
   isFeatured?: boolean;
+  /** Oculto: não aparece na vitrine do site (só no painel admin) */
+  isHidden?: boolean;
+  /** Indisponível: continua visível, mas sem pedido/orçamento */
+  isUnavailable?: boolean;
   batchCodeInfo?: string;
   variants?: ProductVariant[];
   createdAt?: string;

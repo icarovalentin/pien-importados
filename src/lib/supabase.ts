@@ -39,6 +39,8 @@ export interface ProductRow {
   description: string | null;
   specs: string[] | null;
   is_featured: boolean | null;
+  is_hidden?: boolean | null;
+  is_unavailable?: boolean | null;
   batch_code_info: string | null;
   variants: ProductVariant[] | null;
   created_at?: string;
@@ -61,6 +63,8 @@ export function mapRowToProduct(row: ProductRow): Product {
     description: row.description || '',
     specs: Array.isArray(row.specs) ? row.specs : [],
     isFeatured: Boolean(row.is_featured),
+    isHidden: Boolean(row.is_hidden),
+    isUnavailable: Boolean(row.is_unavailable),
     batchCodeInfo: row.batch_code_info || undefined,
     variants: Array.isArray(row.variants) ? row.variants : [],
     createdAt: row.created_at,
@@ -82,6 +86,8 @@ export function mapProductToRow(product: Product): Omit<ProductRow, 'created_at'
     description: product.description,
     specs: product.specs,
     is_featured: Boolean(product.isFeatured),
+    is_hidden: Boolean(product.isHidden),
+    is_unavailable: Boolean(product.isUnavailable),
     batch_code_info: product.batchCodeInfo ?? null,
     variants: product.variants && product.variants.length > 0 ? product.variants : [],
   };

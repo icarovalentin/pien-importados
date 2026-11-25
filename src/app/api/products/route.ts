@@ -225,7 +225,12 @@ function validateVariants(
 }
 
 // GET /api/products (público — leitura da vitrine)
-export async function GET() {
+export async function GET(req: Request) {
+  // O painel admin (autenticado) pede ?all=1 para ver também os produtos ocultos
+  const includeHidden =
+    new URL(req.url).searchParams.get('all') === '1' && isAdminAuthenticated();
+  const visible = <T extends { isHidden?: boolean }>(list: T[]) =>
+    includeHidden ? list : list.filter((p) => !p.isHidden);
   let supabaseFailure: unknown = null;
 
   if (isSupabaseConfigured()) {
@@ -238,7 +243,7 @@ export async function GET() {
         .order('created_at', { ascending: false });
 
       if (!error && Array.isArray(data)) {
-        return NextResponse.json((data as ProductRow[]).map(mapRowToProduct));
+        return NextResponse.json(visible((data as ProductRow[]).map(mapRowToProduct)));
       }
 
       supabaseFailure = error ?? new Error('Resposta inválida do Supabase');
@@ -262,7 +267,7 @@ export async function GET() {
     logError('GET /api/products (fallback local)', supabaseFailure);
   }
 
-  return NextResponse.json(getLocalProducts());
+  return NextResponse.json(visible(getLocalProducts()));
 }
 
 // POST /api/products (restrito ao admin autenticado)
@@ -304,6 +309,9 @@ export async function POST(req: Request) {
       }
       isFeatured = featuredResult.value;
     }
+
+    const isHidden = body.isHidden === true;
+    const isUnavailable = body.isUnavailable === true;
 
     let validImages: string[] = [];
     if (body.images !== undefined) {
@@ -353,6 +361,8 @@ export async function POST(req: Request) {
             .slice(0, 20)
         : [],
       isFeatured,
+      isHidden,
+      isUnavailable,
       batchCodeInfo: sanitizeString(
         body.batchCodeInfo,
         'Produto com selo e garantia de originalidade.',
@@ -546,6 +556,9 @@ export async function PUT(req: Request) {
           ? sanitizeString(body.batchCodeInfo, '', 300)
           : current.batchCodeInfo,
       isFeatured: nextIsFeatured,
+      isHidden: typeof body.isHidden === 'boolean' ? body.isHidden : Boolean(current.isHidden),
+      isUnavailable:
+        typeof body.isUnavailable === 'boolean' ? body.isUnavailable : Boolean(current.isUnavailable),
       variants: nextVariants,
     };
 

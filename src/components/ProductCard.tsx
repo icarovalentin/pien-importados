@@ -23,6 +23,7 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
   const inList = isInList(product.id);
   const whatsappUrl = getProductWhatsAppUrl(product, defaultVariant);
   const isProntaEntrega = product.status === 'pronta_entrega';
+  const isUnavailable = Boolean(product.isUnavailable);
   const variantPrices = (product.variants || []).map((v) => v.price ?? product.price);
   const hasPriceRange = variantPrices.length > 1 && new Set(variantPrices).size > 1;
   const displayPrice = hasPriceRange
@@ -31,6 +32,7 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
 
   const handleListAction = (e: React.MouseEvent) => {
     e.stopPropagation();
+    if (isUnavailable) return;
     if (hasMultipleVariants) {
       onOpenModal(product);
       return;
@@ -57,10 +59,19 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           quality={90}
-          className="object-contain object-center p-2 mix-blend-multiply dark:mix-blend-normal brightness-[1.05] group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+          className={`object-contain object-center p-2 mix-blend-multiply dark:mix-blend-normal brightness-[1.05] group-hover:scale-[1.04] transition-transform duration-700 ease-out ${
+            isUnavailable ? 'grayscale opacity-60' : ''
+          }`}
         />
 
+        {isUnavailable && (
+          <span className="absolute top-2 left-2 px-2 py-1 bg-[#141414] text-white text-[9px] sm:text-[10px] uppercase tracking-[0.12em] font-semibold">
+            Indisponível
+          </span>
+        )}
+
         {/* Botão discreto de lista/opções no canto inferior direito */}
+        {!isUnavailable && (
         <button
           onClick={handleListAction}
           title={
@@ -78,6 +89,7 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
         >
           {inList ? 'Na lista' : hasMultipleVariants ? 'Ver opções' : '+ Lista'}
         </button>
+        )}
       </div>
 
       {/* Informações editoriais soltas abaixo da imagem */}
@@ -125,7 +137,11 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
             )}
           </div>
 
-          {hasMultipleVariants ? (
+          {isUnavailable ? (
+            <span className="block w-full text-center py-2 text-[11px] uppercase tracking-[0.12em] font-semibold text-zinc-400 border border-zinc-300 dark:border-dark-700 cursor-not-allowed">
+              Indisponível
+            </span>
+          ) : hasMultipleVariants ? (
             <button
               type="button"
               onClick={(e) => {
