@@ -16,10 +16,15 @@ interface SessionPayload {
  */
 export function getServerAdminPassword(): string | null {
   const pwd = process.env.ADMIN_PASSWORD;
-  if (!pwd || pwd.trim().length === 0) {
+  if (!pwd) {
     return null;
   }
-  return pwd;
+  // Variáveis coladas na Vercel podem carregar espaço ou quebra de linha nas pontas.
+  const trimmed = pwd.trim();
+  if (trimmed.length === 0) {
+    return null;
+  }
+  return trimmed;
 }
 
 /**
@@ -64,7 +69,7 @@ export function verifyAdminPassword(inputPassword: unknown): boolean {
     return false;
   }
 
-  const inputDigest = crypto.createHash('sha256').update(inputPassword).digest();
+  const inputDigest = crypto.createHash('sha256').update(inputPassword.trim()).digest();
   const serverDigest = crypto.createHash('sha256').update(serverPassword).digest();
 
   return crypto.timingSafeEqual(inputDigest, serverDigest);
