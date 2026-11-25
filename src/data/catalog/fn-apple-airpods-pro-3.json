@@ -8,9 +8,7 @@
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/fones/fn-apple-airpods-pro-3/branco-1.webp",
-    "/catalog/fones/fn-apple-airpods-pro-3/branco-2.webp",
-    "/catalog/fones/fn-apple-airpods-pro-3/branco-3.webp"
+    "/catalog/fones/fn-apple-airpods-pro-3/branco-1.webp"
   ],
   "description": "Apple AirPods Pro 3 na cor Branco. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, resistência IP57, autonomia de 8 horas. Recursos: Controle por toque, Tradução ao Vivo.",
   "specs": [
@@ -32,9 +30,7 @@
       "label": "Branco",
       "price": 1482.9,
       "images": [
-        "/catalog/fones/fn-apple-airpods-pro-3/branco-1.webp",
-        "/catalog/fones/fn-apple-airpods-pro-3/branco-2.webp",
-        "/catalog/fones/fn-apple-airpods-pro-3/branco-3.webp"
+        "/catalog/fones/fn-apple-airpods-pro-3/branco-1.webp"
       ],
       "description": "Apple AirPods Pro 3 na cor Branco. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, resistência IP57, autonomia de 8 horas. Recursos: Controle por toque, Tradução ao Vivo.",
       "specs": [

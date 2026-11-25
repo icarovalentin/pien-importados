@@ -8,9 +8,7 @@
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/fones/fn-samsung-galaxy-buds4/branco-1.webp",
-    "/catalog/fones/fn-samsung-galaxy-buds4/branco-2.webp",
-    "/catalog/fones/fn-samsung-galaxy-buds4/branco-3.webp"
+    "/catalog/fones/fn-samsung-galaxy-buds4/branco-1.webp"
   ],
   "description": "Samsung Galaxy Buds4 na cor Branco. Fone de ouvido sem fio com Bluetooth 6.1, cancelamento de ruído, drivers de 11 mm Dinâmico, resistência Classificação IP54, autonomia de até 30h (ANC off). Recursos: Galaxy AI, Tradução em Tempo Real.",
   "specs": [
@@ -33,9 +31,7 @@
       "label": "Branco",
       "price": 756.9,
       "images": [
-        "/catalog/fones/fn-samsung-galaxy-buds4/branco-1.webp",
-        "/catalog/fones/fn-samsung-galaxy-buds4/branco-2.webp",
-        "/catalog/fones/fn-samsung-galaxy-buds4/branco-3.webp"
+        "/catalog/fones/fn-samsung-galaxy-buds4/branco-1.webp"
       ],
       "description": "Samsung Galaxy Buds4 na cor Branco. Fone de ouvido sem fio com Bluetooth 6.1, cancelamento de ruído, drivers de 11 mm Dinâmico, resistência Classificação IP54, autonomia de até 30h (ANC off). Recursos: Galaxy AI, Tradução em Tempo Real.",
       "specs": [
@@ -56,9 +52,7 @@
       "label": "Preto",
       "price": 756.9,
       "images": [
-        "/catalog/fones/fn-samsung-galaxy-buds4/preto-1.webp",
-        "/catalog/fones/fn-samsung-galaxy-buds4/preto-2.webp",
-        "/catalog/fones/fn-samsung-galaxy-buds4/preto-3.webp"
+        "/catalog/fones/fn-samsung-galaxy-buds4/preto-1.webp"
       ],
       "description": "Samsung Galaxy Buds4 na cor Preto. Fone de ouvido sem fio com Bluetooth 5.4, cancelamento de ruído, drivers de Alto-falante duplo (10.5mm + 6.1mm), resistência Classificação IP57, autonomia de até 30 horas (com estojo).",
       "specs": [

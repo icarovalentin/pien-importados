@@ -8,9 +8,7 @@
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/fones/fn-jbl-tune-730bt/azul-1.webp",
-    "/catalog/fones/fn-jbl-tune-730bt/azul-2.webp",
-    "/catalog/fones/fn-jbl-tune-730bt/azul-3.webp"
+    "/catalog/fones/fn-jbl-tune-730bt/azul-1.webp"
   ],
   "description": "JBL Tune 730BT na cor Azul. Fone de ouvido sem fio com Bluetooth 6.0, cancelamento de ruído, drivers de 40 mm, autonomia de 76 horas.",
   "specs": [
@@ -32,9 +30,7 @@
       "label": "Azul",
       "price": 223.9,
       "images": [
-        "/catalog/fones/fn-jbl-tune-730bt/azul-1.webp",
-        "/catalog/fones/fn-jbl-tune-730bt/azul-2.webp",
-        "/catalog/fones/fn-jbl-tune-730bt/azul-3.webp"
+        "/catalog/fones/fn-jbl-tune-730bt/azul-1.webp"
       ],
       "description": "JBL Tune 730BT na cor Azul. Fone de ouvido sem fio com Bluetooth 6.0, cancelamento de ruído, drivers de 40 mm, autonomia de 76 horas.",
       "specs": [
@@ -54,9 +50,7 @@
       "label": "Preto",
       "price": 223.9,
       "images": [
-        "/catalog/fones/fn-jbl-tune-730bt/preto-1.webp",
-        "/catalog/fones/fn-jbl-tune-730bt/preto-2.webp",
-        "/catalog/fones/fn-jbl-tune-730bt/preto-3.webp"
+        "/catalog/fones/fn-jbl-tune-730bt/preto-1.webp"
       ],
       "description": "JBL Tune 730BT na cor Preto. Fone de ouvido sem fio com Bluetooth 6.0, cancelamento de ruído, drivers de 40 mm, autonomia de 76 horas.",
       "specs": [
@@ -76,9 +70,7 @@
       "label": "Preto (2)",
       "price": 223.9,
       "images": [
-        "/catalog/fones/fn-jbl-tune-730bt/preto-2-1.webp",
-        "/catalog/fones/fn-jbl-tune-730bt/preto-2-2.webp",
-        "/catalog/fones/fn-jbl-tune-730bt/preto-2-3.webp"
+        "/catalog/fones/fn-jbl-tune-730bt/preto-2-1.webp"
       ],
       "description": "JBL Tune 730BT na cor Preto. Fone de ouvido sem fio com Bluetooth 6.0, cancelamento de ruído, drivers de 40 mm, autonomia de 76 horas.",
       "specs": [

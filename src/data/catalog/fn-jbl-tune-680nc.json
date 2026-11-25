@@ -8,9 +8,7 @@
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/fones/fn-jbl-tune-680nc/azul-1.webp",
-    "/catalog/fones/fn-jbl-tune-680nc/azul-2.webp",
-    "/catalog/fones/fn-jbl-tune-680nc/azul-3.webp"
+    "/catalog/fones/fn-jbl-tune-680nc/azul-1.webp"
   ],
   "description": "JBL Tune 680NC na cor Azul. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 32 mm, resistência Não, autonomia de até 44 horas com ANC ligado.",
   "specs": [
@@ -33,9 +31,7 @@
       "label": "Azul",
       "price": 308.9,
       "images": [
-        "/catalog/fones/fn-jbl-tune-680nc/azul-1.webp",
-        "/catalog/fones/fn-jbl-tune-680nc/azul-2.webp",
-        "/catalog/fones/fn-jbl-tune-680nc/azul-3.webp"
+        "/catalog/fones/fn-jbl-tune-680nc/azul-1.webp"
       ],
       "description": "JBL Tune 680NC na cor Azul. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 32 mm, resistência Não, autonomia de até 44 horas com ANC ligado.",
       "specs": [
@@ -56,9 +52,7 @@
       "label": "Branco",
       "price": 308.9,
       "images": [
-        "/catalog/fones/fn-jbl-tune-680nc/branco-1.webp",
-        "/catalog/fones/fn-jbl-tune-680nc/branco-2.webp",
-        "/catalog/fones/fn-jbl-tune-680nc/branco-3.webp"
+        "/catalog/fones/fn-jbl-tune-680nc/branco-1.webp"
       ],
       "description": "JBL Tune 680NC na cor Branco. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 32 mm, resistência Não possui certificação IPX contra água, autonomia de até 44 horas com ANC ligado.",
       "specs": [
@@ -79,9 +73,7 @@
       "label": "Preto",
       "price": 308.9,
       "images": [
-        "/catalog/fones/fn-jbl-tune-680nc/preto-1.webp",
-        "/catalog/fones/fn-jbl-tune-680nc/preto-2.webp",
-        "/catalog/fones/fn-jbl-tune-680nc/preto-3.webp"
+        "/catalog/fones/fn-jbl-tune-680nc/preto-1.webp"
       ],
       "description": "JBL Tune 680NC na cor Preto. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 32 mm, resistência Não possui certificação IPX contra água, autonomia de até 44 horas com ANC ligado.",
       "specs": [

@@ -8,9 +8,7 @@
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/fones/fn-apple-airpods-max-2/roxo-1.webp",
-    "/catalog/fones/fn-apple-airpods-max-2/roxo-2.webp",
-    "/catalog/fones/fn-apple-airpods-max-2/roxo-3.webp"
+    "/catalog/fones/fn-apple-airpods-max-2/roxo-1.webp"
   ],
   "description": "Apple AirPods Max 2 na cor Roxo. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 40 mm, autonomia de 20 horas.",
   "specs": [
@@ -31,9 +29,7 @@
       "label": "Roxo",
       "price": 2952.9,
       "images": [
-        "/catalog/fones/fn-apple-airpods-max-2/roxo-1.webp",
-        "/catalog/fones/fn-apple-airpods-max-2/roxo-2.webp",
-        "/catalog/fones/fn-apple-airpods-max-2/roxo-3.webp"
+        "/catalog/fones/fn-apple-airpods-max-2/roxo-1.webp"
       ],
       "description": "Apple AirPods Max 2 na cor Roxo. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 40 mm, autonomia de 20 horas.",
       "specs": [
@@ -52,9 +48,7 @@
       "label": "Branco",
       "price": 3019.9,
       "images": [
-        "/catalog/fones/fn-apple-airpods-max-2/branco-1.webp",
-        "/catalog/fones/fn-apple-airpods-max-2/branco-2.webp",
-        "/catalog/fones/fn-apple-airpods-max-2/branco-3.webp"
+        "/catalog/fones/fn-apple-airpods-max-2/branco-1.webp"
       ],
       "description": "Apple AirPods Max 2 na cor Branco. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 40 mm, autonomia de 20 horas.",
       "specs": [
@@ -73,9 +67,7 @@
       "label": "Laranja",
       "price": 3019.9,
       "images": [
-        "/catalog/fones/fn-apple-airpods-max-2/laranja-1.webp",
-        "/catalog/fones/fn-apple-airpods-max-2/laranja-2.webp",
-        "/catalog/fones/fn-apple-airpods-max-2/laranja-3.webp"
+        "/catalog/fones/fn-apple-airpods-max-2/laranja-1.webp"
       ],
       "description": "Apple AirPods Max 2 na cor Laranja. Fone de ouvido sem fio com Bluetooth 5.3, cancelamento de ruído, drivers de 40 mm, autonomia de 20 horas.",
       "specs": [

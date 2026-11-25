@@ -8,9 +8,7 @@
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/jbl/clip-5/azul-1.webp",
-    "/catalog/jbl/clip-5/azul-2.webp",
-    "/catalog/jbl/clip-5/azul-3.webp"
+    "/catalog/jbl/clip-5/azul-1.webp"
   ],
   "description": "JBL Clip 5 na cor Azul. Caixa de som Bluetooth 5.3 compacta com mosquetão, com potência de 7 W RMS, driver de 45 mm, microfone integrado e resistência IP67. A bateria de 1400 mAh toca por até 12 horas (mais 3 horas com o Playtime Boost) e a recarga é via USB-C.",
   "specs": [
@@ -32,9 +30,7 @@
       "label": "Azul",
       "price": 226.9,
       "images": [
-        "/catalog/jbl/clip-5/azul-1.webp",
-        "/catalog/jbl/clip-5/azul-2.webp",
-        "/catalog/jbl/clip-5/azul-3.webp"
+        "/catalog/jbl/clip-5/azul-1.webp"
       ],
       "description": "JBL Clip 5 na cor Azul. Caixa de som Bluetooth 5.3 compacta com mosquetão, com potência de 7 W RMS, driver de 45 mm, microfone integrado e resistência IP67. A bateria de 1400 mAh toca por até 12 horas (mais 3 horas com o Playtime Boost) e a recarga é via USB-C.",
       "specs": [
@@ -54,9 +50,7 @@
       "label": "Vermelho",
       "price": 217.9,
       "images": [
-        "/catalog/jbl/clip-5/vermelho-1.webp",
-        "/catalog/jbl/clip-5/vermelho-2.webp",
-        "/catalog/jbl/clip-5/vermelho-3.webp"
+        "/catalog/jbl/clip-5/vermelho-1.webp"
       ],
       "description": "JBL Clip 5 na cor Vermelho. Caixa de som Bluetooth 5.3 compacta com mosquetão, com potência de 7 W RMS, driver de 45 mm, microfone integrado e resistência IP67. A bateria de 1400 mAh toca por até 12 horas (mais 3 horas com o Playtime Boost) e a recarga é via USB-C.",
       "specs": [
@@ -76,9 +70,7 @@
       "label": "Preto",
       "price": 226.9,
       "images": [
-        "/catalog/jbl/clip-5/preto-1.webp",
-        "/catalog/jbl/clip-5/preto-2.webp",
-        "/catalog/jbl/clip-5/preto-3.webp"
+        "/catalog/jbl/clip-5/preto-1.webp"
       ],
       "description": "JBL Clip 5 na cor Preto. Caixa de som Bluetooth 5.3 compacta com mosquetão, com potência de 7 W RMS, driver de 45 mm, microfone integrado e resistência IP67. A bateria de 1400 mAh toca por até 12 horas (mais 3 horas com o Playtime Boost) e a recarga é via USB-C.",
       "specs": [

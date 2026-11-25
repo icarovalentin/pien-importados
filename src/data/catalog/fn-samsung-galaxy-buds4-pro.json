@@ -8,9 +8,7 @@
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-1.webp",
-    "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-2.webp",
-    "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-3.webp"
+    "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-1.webp"
   ],
   "description": "Samsung Galaxy Buds4 Pro na cor Branco. Fone de ouvido sem fio com Bluetooth 6.1, cancelamento de ruído, resistência IP57, autonomia de 6 horas nos fones.",
   "specs": [
@@ -32,9 +30,7 @@
       "label": "Branco",
       "price": 998.9,
       "images": [
-        "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-1.webp",
-        "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-2.webp",
-        "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-3.webp"
+        "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-1.webp"
       ],
       "description": "Samsung Galaxy Buds4 Pro na cor Branco. Fone de ouvido sem fio com Bluetooth 6.1, cancelamento de ruído, resistência IP57, autonomia de 6 horas nos fones.",
       "specs": [
@@ -54,9 +50,7 @@
       "label": "Preto",
       "price": 998.9,
       "images": [
-        "/catalog/fones/fn-samsung-galaxy-buds4-pro/preto-1.webp",
-        "/catalog/fones/fn-samsung-galaxy-buds4-pro/preto-2.webp",
-        "/catalog/fones/fn-samsung-galaxy-buds4-pro/preto-3.webp"
+        "/catalog/fones/fn-samsung-galaxy-buds4-pro/preto-1.webp"
       ],
       "description": "Samsung Galaxy Buds4 Pro na cor Preto. Fone de ouvido sem fio com Bluetooth 6.1, cancelamento de ruído, resistência IP57, autonomia de 6 horas nos fones.",
       "specs": [

@@ -8,9 +8,7 @@
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/phones/xm-redmi-15c/128gb-4gb-verde-1.webp",
-    "/catalog/phones/xm-redmi-15c/128gb-4gb-verde-2.webp",
-    "/catalog/phones/xm-redmi-15c/128gb-4gb-verde-3.webp"
+    "/catalog/phones/xm-redmi-15c/128gb-4gb-verde-1.webp"
   ],
   "description": "Xiaomi Redmi 15C 128GB/4GB na cor Verde. Conta com tela IPS LCD, 120Hz de 6.9\", chipset Mediatek Helio G81 Ultra, câmera traseira 50 MP, câmera frontal 8MP, bateria de 6000 mAh. Sistema: Android 15, HyperOS 2.",
   "specs": [
@@ -33,9 +31,7 @@
       "label": "128GB/4GB · Verde",
       "price": 803.9,
       "images": [
-        "/catalog/phones/xm-redmi-15c/128gb-4gb-verde-1.webp",
-        "/catalog/phones/xm-redmi-15c/128gb-4gb-verde-2.webp",
-        "/catalog/phones/xm-redmi-15c/128gb-4gb-verde-3.webp"
+        "/catalog/phones/xm-redmi-15c/128gb-4gb-verde-1.webp"
       ],
       "description": "Xiaomi Redmi 15C 128GB/4GB na cor Verde. Conta com tela IPS LCD, 120Hz de 6.9\", chipset Mediatek Helio G81 Ultra, câmera traseira 50 MP, câmera frontal 8MP, bateria de 6000 mAh. Sistema: Android 15, HyperOS 2.",
       "specs": [
@@ -56,8 +52,7 @@
       "label": "256GB/8GB · Verde",
       "price": 978.9,
       "images": [
-        "/catalog/phones/xm-redmi-15c/256gb-8gb-verde-1.webp",
-        "/catalog/phones/xm-redmi-15c/256gb-8gb-verde-2.webp"
+        "/catalog/phones/xm-redmi-15c/256gb-8gb-verde-1.webp"
       ],
       "description": "Xiaomi Redmi 15C 256GB/8GB na cor Verde. Conta com tela IPS LCD de 6,9\", câmera traseira 50 MP, câmera frontal 13MP, bateria de 6.000 mAh. Sistema: Android 15.",
       "specs": [
@@ -76,9 +71,7 @@
       "label": "256GB/8GB · Preto",
       "price": 984.9,
       "images": [
-        "/catalog/phones/xm-redmi-15c/256gb-8gb-preto-1.webp",
-        "/catalog/phones/xm-redmi-15c/256gb-8gb-preto-2.webp",
-        "/catalog/phones/xm-redmi-15c/256gb-8gb-preto-3.webp"
+        "/catalog/phones/xm-redmi-15c/256gb-8gb-preto-1.webp"
       ],
       "description": "Xiaomi Redmi 15C 256GB/8GB na cor Preto. Conta com tela IPS LCD de 6,9\", chipset Mediatek Helio G81 Ultra, câmera traseira 50 MP, câmera frontal 13MP, bateria de 6.000 mAh. Sistema: Android 15.",
       "specs": [
