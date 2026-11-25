@@ -97,3 +97,7 @@ Tudo fica em **um único arquivo: `src/config/site.ts`**.
 - **Texto da faixa preta no topo e aviso de maiores de 18:** objeto `SITE`, no mesmo arquivo.
 
 O painel `/admin`, a API e o menu (computador e celular) leem essa mesma lista, então não é preciso editar mais nada.
+
+### Filtros dentro de cada categoria
+
+As barrinhas abaixo de "Todos / Pronta-entrega / Encomenda" (Masculino/Feminino, marcas dos smartphones, tipos de Tech & Acessórios e de Bebidas) ficam em `src/utils/subfilters.ts`. Para mudar um filtro, edite a lista da categoria nesse arquivo.

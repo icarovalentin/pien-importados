@@ -2,16 +2,17 @@
 
 import React from 'react';
 import { SortOption, StockStatus } from '@/types/product';
-import type { GenderFilter } from '@/utils/gender';
+import type { SubFilter } from '@/utils/subfilters';
 
 interface CategoryNavProps {
   selectedStock: 'todos' | StockStatus;
   setSelectedStock: (stock: 'todos' | StockStatus) => void;
   sortBy: SortOption;
   setSortBy: (sort: SortOption) => void;
-  /** só em Perfumaria / Perfumaria Árabe: mostra o filtro Masculino / Feminino */
-  selectedGender?: GenderFilter;
-  setSelectedGender?: (g: GenderFilter) => void;
+  /** filtros da categoria atual (marca, tipo, gênero...). Definidos em src/utils/subfilters.ts */
+  subFilters?: { allLabel: string; filters: SubFilter[] };
+  selectedSub?: string;
+  setSelectedSub?: (id: string) => void;
   totalProductsCount: number;
   prontaEntregaCount: number;
   encomendaCount: number;
@@ -19,8 +20,9 @@ interface CategoryNavProps {
 
 /** Barra de filtros da vitrine: disponibilidade + ordenação (as categorias ficam no menu do topo). */
 export function CategoryNav({
-  selectedGender,
-  setSelectedGender,
+  subFilters,
+  selectedSub = 'todos',
+  setSelectedSub,
   selectedStock,
   setSelectedStock,
   sortBy,
@@ -35,11 +37,7 @@ export function CategoryNav({
     { id: 'encomenda', label: 'Encomenda', count: encomendaCount, dot: 'bg-amber-600 dark:bg-amber-400' },
   ];
 
-  const genders: { id: GenderFilter; label: string }[] = [
-    { id: 'todos', label: 'Todos os perfumes' },
-    { id: 'masculino', label: 'Masculino' },
-    { id: 'feminino', label: 'Feminino' },
-  ];
+  const subs = subFilters ? [{ id: 'todos', label: subFilters.allLabel }, ...subFilters.filters.map((f) => ({ id: f.id, label: f.label }))] : [];
 
   const chipCls = (active: boolean) =>
     `shrink-0 inline-flex items-center gap-1.5 whitespace-nowrap px-3 py-1.5 rounded-full border text-xs transition-colors ${
@@ -71,10 +69,10 @@ export function CategoryNav({
           );
         })}
       </div>
-      {selectedGender !== undefined && setSelectedGender && (
-        <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none" role="group" aria-label="Filtrar por gênero">
-          {genders.map((g) => (
-            <button key={g.id} onClick={() => setSelectedGender(g.id)} aria-pressed={selectedGender === g.id} className={chipCls(selectedGender === g.id)}>
+      {subFilters && setSelectedSub && (
+        <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none" role="group" aria-label="Filtrar por tipo">
+          {subs.map((g) => (
+            <button key={g.id} onClick={() => setSelectedSub(g.id)} aria-pressed={selectedSub === g.id} className={chipCls(selectedSub === g.id)}>
               {g.label}
             </button>
           ))}
