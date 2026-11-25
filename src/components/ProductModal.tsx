@@ -65,6 +65,10 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
   const displaySpecs =
     activeVariant?.specs && activeVariant.specs.length > 0 ? activeVariant.specs : product.specs;
   const variantsWithPhotos = variants.some((v) => v.images && v.images.length > 0);
+  const isFragranceCategory =
+    product.category === 'perfumes' ||
+    product.category === 'arabes' ||
+    product.category === 'beleza';
 
   const nextImage = () => {
     if (totalImages <= 1) return;
@@ -237,13 +241,15 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             <div className="space-y-2">
               <h4 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
                 {variantsWithPhotos
-                  ? `Escolha a fragrância (${variants.length})`
+                  ? isFragranceCategory
+                    ? `Escolha a fragrância (${variants.length})`
+                    : `Escolha a opção (${variants.length})`
                   : 'Selecione uma opção'}
               </h4>
               {variantsWithPhotos ? (
                 <div
                   role="radiogroup"
-                  aria-label="Fragrâncias disponíveis"
+                  aria-label={isFragranceCategory ? 'Fragrâncias disponíveis' : 'Opções disponíveis'}
                   className="grid grid-cols-4 sm:grid-cols-5 gap-2 max-h-56 overflow-y-auto pr-1"
                 >
                   {variants.map((variant, idx) => {

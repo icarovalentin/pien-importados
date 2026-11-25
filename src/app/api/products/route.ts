@@ -91,6 +91,28 @@ function isSafeImageUrl(url: unknown): url is string {
   }
 }
 
+function collectProductImageUrls(
+  images?: string[] | null,
+  variants?: ProductVariant[] | null
+): string[] {
+  const urls = new Set<string>();
+  if (Array.isArray(images)) {
+    for (const u of images) {
+      if (typeof u === 'string' && u) urls.add(u);
+    }
+  }
+  if (Array.isArray(variants)) {
+    for (const v of variants) {
+      if (Array.isArray(v?.images)) {
+        for (const u of v.images) {
+          if (typeof u === 'string' && u) urls.add(u);
+        }
+      }
+    }
+  }
+  return Array.from(urls);
+}
+
 /** Remove do Supabase Storage as imagens do bucket que deixaram de ser usadas. */
 async function removeOrphanImages(urls: string[]) {
   if (!isSupabaseConfigured() || urls.length === 0) return;
@@ -553,7 +575,11 @@ export async function PUT(req: Request) {
           );
         }
 
-        const removed = current.images.filter((u) => !updatedProduct.images.includes(u));
+        const prevUrls = collectProductImageUrls(current.images, current.variants);
+        const nextUrls = new Set(
+          collectProductImageUrls(updatedProduct.images, updatedProduct.variants)
+        );
+        const removed = prevUrls.filter((u) => !nextUrls.has(u));
         await removeOrphanImages(removed);
 
         return NextResponse.json({
@@ -607,7 +633,7 @@ export async function DELETE(req: Request) {
       } else {
         const { data: existing, error: existingError } = await supabase
           .from('products')
-          .select('images')
+          .select('images, variants')
           .eq('id', id)
           .maybeSingle();
 
@@ -633,7 +659,12 @@ export async function DELETE(req: Request) {
           return NextResponse.json({ error: 'Produto não encontrado' }, { status: 404 });
         }
 
-        await removeOrphanImages((existing?.images as string[] | null) ?? []);
+        await removeOrphanImages(
+          collectProductImageUrls(
+            existing?.images as string[] | null,
+            existing?.variants as ProductVariant[] | null
+          )
+        );
         return NextResponse.json({ success: true, message: 'Produto removido com sucesso' });
       }
     }

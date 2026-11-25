@@ -6,7 +6,36 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Product } from '@/types/product';
 import { formatCurrency, getProductWhatsAppUrl } from '@/utils/whatsapp';
 
-const DEFAULT_BRANDS = ['DIOR', 'CAROLINA HERRERA', "VICTORIA'S SECRET", 'JBL', 'APPLE'];
+const DEFAULT_BRANDS = ['Apple', 'JBL', "Victoria's Secret", 'Xiaomi'];
+
+function pickDiverseSlides(items: Product[], maxSlides = 5): Product[] {
+  const buckets = new Map<string, Product[]>();
+  for (const item of items) {
+    const key = (item.brand || 'outros').trim().toLowerCase();
+    const list = buckets.get(key) || [];
+    list.push(item);
+    buckets.set(key, list);
+  }
+
+  const picked: Product[] = [];
+  const queue = Array.from(buckets.values());
+  let round = 0;
+
+  while (picked.length < maxSlides) {
+    let addedInRound = false;
+    for (const group of queue) {
+      if (round < group.length) {
+        picked.push(group[round]);
+        addedInRound = true;
+        if (picked.length >= maxSlides) break;
+      }
+    }
+    if (!addedInRound) break;
+    round += 1;
+  }
+
+  return picked;
+}
 
 interface RotatingHeroBannerProps {
   products: Product[];
@@ -30,11 +59,13 @@ export function RotatingHeroBanner({
   const [isPaused, setIsPaused] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Usa os produtos marcados como destaque no Painel Admin (ou os 5 primeiros se nenhum estiver marcado)
+  // Usa os produtos destacados no Painel Admin; caso nenhum esteja marcado, alterna marcas organicamente
   const slides = useMemo(() => {
     const featured = products.filter((p) => p.isFeatured);
-    const pool = featured.length > 0 ? featured : products;
-    return pool.slice(0, 6);
+    if (featured.length > 0) {
+      return featured.slice(0, 6);
+    }
+    return pickDiverseSlides(products, 5);
   }, [products]);
 
   const totalSlides = slides.length;
@@ -216,12 +247,27 @@ export function RotatingHeroBanner({
         </div>
       </div>
 
-      {/* Faixa dinâmica de marcas */}
+      {/* Faixa de Marcas (somente marcas vendidas) */}
       <div className="bg-[#f6f3ec] dark:bg-dark-900/70 border-t border-[#e5e0d5] dark:border-dark-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-start sm:justify-center gap-7 sm:gap-10 overflow-x-auto scrollbar-none">
+          <button
+            onClick={() => {
+              if (onSelectBrand) onSelectBrand('');
+              onScrollToCatalog();
+            }}
+            className={`text-[10px] sm:text-[11px] uppercase tracking-[0.22em] whitespace-nowrap transition-colors ${
+              !activeBrand
+                ? 'text-[#141414] dark:text-gold-400 font-semibold underline underline-offset-4'
+                : 'text-zinc-500 dark:text-zinc-400 hover:text-[#141414] dark:hover:text-gold-400'
+            }`}
+          >
+            Todas as Marcas
+          </button>
+
           {brandList.map((brand) => {
             const isActive =
-              activeBrand && activeBrand.trim().toLowerCase() === brand.toLowerCase();
+              Boolean(activeBrand) &&
+              activeBrand!.trim().toLowerCase() === brand.toLowerCase();
             return (
               <button
                 key={brand}

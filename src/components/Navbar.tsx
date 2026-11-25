@@ -12,17 +12,18 @@ interface NavbarProps {
   setSearchTerm: (term: string) => void;
   selectedCategory: CategoryType;
   setSelectedCategory: (cat: CategoryType) => void;
+  onSelectCategory?: (cat: CategoryType) => void;
   onScrollToCatalog: () => void;
 }
 
 const NAV_DEPARTMENTS: { id: CategoryType; label: string }[] = [
   { id: 'todos', label: 'Novidades' },
-  { id: 'farmacia', label: 'Farmácia' },
   { id: 'perfumes', label: 'Perfumaria' },
-  { id: 'arabes', label: 'Perfumes Árabes' },
+  { id: 'arabes', label: 'Perfumaria Árabe' },
   { id: 'eletronicos', label: 'Eletrônicos' },
   { id: 'smartphones', label: 'Smartphones' },
   { id: 'acessorios', label: 'Tech & Acessórios' },
+  { id: 'farmacia', label: 'Farmácia' },
 ];
 
 export function Navbar({
@@ -30,6 +31,7 @@ export function Navbar({
   setSearchTerm,
   selectedCategory,
   setSelectedCategory,
+  onSelectCategory,
   onScrollToCatalog,
 }: NavbarProps) {
   const { totalCount, setIsDrawerOpen } = useInterestList();
@@ -37,7 +39,11 @@ export function Navbar({
   const supportUrl = getGeneralSupportWhatsAppUrl();
 
   const handleSelectDepartment = (id: CategoryType) => {
-    setSelectedCategory(id);
+    if (onSelectCategory) {
+      onSelectCategory(id);
+    } else {
+      setSelectedCategory(id);
+    }
     onScrollToCatalog();
   };
 

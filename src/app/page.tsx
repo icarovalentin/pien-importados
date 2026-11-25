@@ -17,11 +17,22 @@ import { ShoppingBag, MessageCircle } from 'lucide-react';
 import { useInterestList } from '@/context/InterestListContext';
 import { getGeneralSupportWhatsAppUrl } from '@/utils/whatsapp';
 
+const CATEGORY_LABELS: Record<CategoryType, string> = {
+  todos: 'Catálogo Completo',
+  perfumes: 'Perfumaria',
+  arabes: 'Perfumaria Árabe',
+  eletronicos: 'Eletrônicos',
+  smartphones: 'Smartphones',
+  acessorios: 'Tech & Acessórios',
+  farmacia: 'Farmácia',
+};
+
 export default function HomePage() {
-  const [products, setProducts] = useState<Product[]>(INITIAL_PRODUCTS);
+  const [products, setProducts] = useState<Product[]>([]);
   const [loadingProducts, setLoadingProducts] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<CategoryType>('todos');
+  const [selectedBrand, setSelectedBrand] = useState('');
   const [selectedStock, setSelectedStock] = useState<'todos' | StockStatus>('todos');
   const [sortBy, setSortBy] = useState<SortOption>('featured');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -35,11 +46,14 @@ export default function HomePage() {
     fetch('/api/products')
       .then((res) => res.json())
       .then((data) => {
-        if (active && Array.isArray(data) && data.length > 0) {
+        if (active && Array.isArray(data)) {
           setProducts(data);
         }
       })
-      .catch((err) => console.error('Erro ao atualizar produtos da API:', err))
+      .catch((err) => {
+        console.error('Erro ao atualizar produtos da API:', err);
+        if (active) setProducts(INITIAL_PRODUCTS);
+      })
       .finally(() => {
         if (active) setLoadingProducts(false);
       });
@@ -80,16 +94,19 @@ export default function HomePage() {
     catalogRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const prontaEntregaCount = useMemo(
-    () => products.filter((p) => p.status === 'pronta_entrega').length,
-    [products]
-  );
-  const encomendaCount = useMemo(
-    () => products.filter((p) => p.status === 'encomenda').length,
-    [products]
-  );
+  const handleSelectCategory = (cat: CategoryType) => {
+    setSelectedCategory(cat);
+    setSelectedBrand('');
+  };
 
-  // Marcas dinâmicas para a faixa abaixo do banner
+  const clearAllFilters = () => {
+    setSelectedCategory('todos');
+    setSelectedBrand('');
+    setSelectedStock('todos');
+    setSearchTerm('');
+  };
+
+  // Marcas dinâmicas ordenadas alfabeticamente para a faixa abaixo do banner
   const availableBrands = useMemo(() => {
     const seen = new Set<string>();
     const result: string[] = [];
@@ -102,25 +119,25 @@ export default function HomePage() {
         result.push(brand);
       }
     }
-    return result;
+    return result.sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }));
   }, [products]);
 
   // Seção editorial rápida: 4 destaques à pronta-entrega (visível na visão padrão)
   const readyHighlights = useMemo(() => {
-    return products
-      .filter((p) => p.status === 'pronta_entrega')
-      .slice(0, 4);
+    return products.filter((p) => p.status === 'pronta_entrega').slice(0, 4);
   }, [products]);
 
   const showEditorialHighlights =
     !loadingProducts &&
     selectedCategory === 'todos' &&
+    selectedBrand === '' &&
     selectedStock === 'todos' &&
     searchTerm.trim() === '' &&
     readyHighlights.length > 0;
 
-  const filteredProducts = useMemo(() => {
-    const filtered = products.filter((product) => {
+  // Produtos filtrados por categoria, marca e busca (contadores coerentes com a seleção atual)
+  const baseFilteredProducts = useMemo(() => {
+    return products.filter((product) => {
       if (selectedCategory !== 'todos') {
         if (selectedCategory === 'perfumes') {
           if (product.category !== 'perfumes' && product.category !== 'beleza') {
@@ -131,8 +148,10 @@ export default function HomePage() {
         }
       }
 
-      if (selectedStock !== 'todos' && product.status !== selectedStock) {
-        return false;
+      if (selectedBrand.trim() !== '') {
+        if (product.brand.trim().toLowerCase() !== selectedBrand.trim().toLowerCase()) {
+          return false;
+        }
       }
 
       if (searchTerm.trim() !== '') {
@@ -148,6 +167,22 @@ export default function HomePage() {
 
       return true;
     });
+  }, [products, selectedCategory, selectedBrand, searchTerm]);
+
+  const prontaEntregaCount = useMemo(
+    () => baseFilteredProducts.filter((p) => p.status === 'pronta_entrega').length,
+    [baseFilteredProducts]
+  );
+  const encomendaCount = useMemo(
+    () => baseFilteredProducts.filter((p) => p.status === 'encomenda').length,
+    [baseFilteredProducts]
+  );
+
+  const filteredProducts = useMemo(() => {
+    const filtered =
+      selectedStock === 'todos'
+        ? baseFilteredProducts
+        : baseFilteredProducts.filter((p) => p.status === selectedStock);
 
     const sorted = [...filtered];
     if (sortBy === 'price_asc') {
@@ -164,7 +199,23 @@ export default function HomePage() {
     }
 
     return sorted;
-  }, [products, selectedCategory, selectedStock, searchTerm, sortBy]);
+  }, [baseFilteredProducts, selectedStock, sortBy]);
+
+  const sectionTitle = selectedBrand
+    ? selectedBrand
+    : selectedCategory !== 'todos'
+      ? CATEGORY_LABELS[selectedCategory]
+      : selectedStock === 'pronta_entrega'
+        ? 'Pronta-Entrega'
+        : selectedStock === 'encomenda'
+          ? 'Sob Encomenda'
+          : 'Catálogo Completo';
+
+  const hasActiveFilters =
+    selectedCategory !== 'todos' ||
+    selectedBrand !== '' ||
+    selectedStock !== 'todos' ||
+    searchTerm !== '';
 
   return (
     <div className="min-h-screen flex flex-col bg-[#fcfbf8] dark:bg-[#0c0c0f] text-[#141414] dark:text-zinc-100 selection:bg-[#d4af37]/25 transition-colors">
@@ -173,21 +224,38 @@ export default function HomePage() {
         setSearchTerm={setSearchTerm}
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
+        onSelectCategory={handleSelectCategory}
         onScrollToCatalog={scrollToCatalog}
       />
 
-      <RotatingHeroBanner
-        products={products}
-        onScrollToCatalog={scrollToCatalog}
-        onOpenProduct={handleOpenProduct}
-        brands={availableBrands}
-        activeBrand={searchTerm}
-        onSelectBrand={(brand) => {
-          setSelectedCategory('todos');
-          setSelectedStock('todos');
-          setSearchTerm(brand);
-        }}
-      />
+      {loadingProducts ? (
+        <div className="w-full border-b border-[#e5e0d5] dark:border-dark-800 bg-[#fcfbf8] dark:bg-[#0c0c0f]">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 animate-pulse">
+            <div className="lg:col-span-6 min-h-[320px] sm:min-h-[420px] lg:min-h-[470px] bg-[#ebe6dc] dark:bg-dark-900" />
+            <div className="lg:col-span-6 px-6 py-12 sm:px-12 lg:px-14 flex flex-col justify-center space-y-5">
+              <div className="h-3 w-36 bg-[#ebe6dc] dark:bg-dark-800" />
+              <div className="h-9 w-4/5 bg-[#ebe6dc] dark:bg-dark-800" />
+              <div className="h-4 w-full bg-[#ebe6dc] dark:bg-dark-800" />
+              <div className="h-4 w-2/3 bg-[#ebe6dc] dark:bg-dark-800" />
+              <div className="h-10 w-44 bg-[#ebe6dc] dark:bg-dark-800 pt-2" />
+            </div>
+          </div>
+          <div className="h-11 bg-[#f6f3ec] dark:bg-dark-900/70 border-t border-[#e5e0d5] dark:border-dark-800" />
+        </div>
+      ) : (
+        <RotatingHeroBanner
+          products={products}
+          onScrollToCatalog={scrollToCatalog}
+          onOpenProduct={handleOpenProduct}
+          brands={availableBrands}
+          activeBrand={selectedBrand}
+          onSelectBrand={(brand) => {
+            setSelectedCategory('todos');
+            setSelectedStock('todos');
+            setSelectedBrand(brand);
+          }}
+        />
+      )}
 
       {/* Faixa Editorial: Destaques à Pronta-Entrega */}
       {showEditorialHighlights && (
@@ -237,24 +305,16 @@ export default function HomePage() {
               Curadoria Exclusiva
             </p>
             <h2 className="text-2xl sm:text-3xl font-display font-normal text-[#141414] dark:text-white mt-1">
-              {selectedStock === 'pronta_entrega'
-                ? 'Pronta-Entrega'
-                : selectedStock === 'encomenda'
-                ? 'Sob Encomenda'
-                : 'Catálogo Completo'}
+              {sectionTitle}
               <span className="text-sm font-sans text-zinc-400 dark:text-zinc-500 ml-3">
                 ({filteredProducts.length})
               </span>
             </h2>
           </div>
 
-          {(selectedCategory !== 'todos' || selectedStock !== 'todos' || searchTerm) && (
+          {hasActiveFilters && (
             <button
-              onClick={() => {
-                setSelectedCategory('todos');
-                setSelectedStock('todos');
-                setSearchTerm('');
-              }}
+              onClick={clearAllFilters}
               className="text-[11px] uppercase tracking-[0.14em] text-[#8b6508] dark:text-gold-400 hover:underline underline-offset-4 self-start sm:self-auto"
             >
               Limpar filtros
@@ -263,13 +323,11 @@ export default function HomePage() {
         </div>
 
         <CategoryNav
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
           selectedStock={selectedStock}
           setSelectedStock={setSelectedStock}
           sortBy={sortBy}
           setSortBy={setSortBy}
-          totalProductsCount={products.length}
+          totalProductsCount={baseFilteredProducts.length}
           prontaEntregaCount={prontaEntregaCount}
           encomendaCount={encomendaCount}
         />
@@ -296,11 +354,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <button
-                onClick={() => {
-                  setSelectedCategory('todos');
-                  setSelectedStock('todos');
-                  setSearchTerm('');
-                }}
+                onClick={clearAllFilters}
                 className="px-5 py-2.5 bg-[#141414] dark:bg-gold-500 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.16em] font-semibold transition-colors"
               >
                 Ver Todo o Catálogo
@@ -324,10 +378,7 @@ export default function HomePage() {
 
       <Footer />
 
-      <ProductModal
-        product={selectedProduct}
-        onClose={handleCloseProduct}
-      />
+      <ProductModal product={selectedProduct} onClose={handleCloseProduct} />
 
       <InterestListDrawer />
 

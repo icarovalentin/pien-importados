@@ -16,19 +16,25 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
   const { addItem, removeItem, isInList } = useInterestList();
   const { showToast } = useToast();
 
-  const defaultVariant = product.variants && product.variants.length > 0 ? product.variants[0] : undefined;
+  const defaultVariant =
+    product.variants && product.variants.length > 0 ? product.variants[0] : undefined;
+  const hasVariants = Boolean(product.variants && product.variants.length > 0);
+  const hasMultipleVariants = Boolean(product.variants && product.variants.length > 1);
   const inList = isInList(product.id);
   const whatsappUrl = getProductWhatsAppUrl(product, defaultVariant);
   const isProntaEntrega = product.status === 'pronta_entrega';
-  const hasVariants = Boolean(product.variants && product.variants.length > 0);
   const variantPrices = (product.variants || []).map((v) => v.price ?? product.price);
   const hasPriceRange = variantPrices.length > 1 && new Set(variantPrices).size > 1;
   const displayPrice = hasPriceRange
     ? Math.min(...variantPrices)
     : defaultVariant?.price ?? product.price;
 
-  const toggleInterest = (e: React.MouseEvent) => {
+  const handleListAction = (e: React.MouseEvent) => {
     e.stopPropagation();
+    if (hasMultipleVariants) {
+      onOpenModal(product);
+      return;
+    }
     if (inList) {
       removeItem(makeInterestKey(product.id, defaultVariant?.label));
       showToast('Item removido da lista de orçamento.');
@@ -43,8 +49,8 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
       onClick={() => onOpenModal(product)}
       className="group flex flex-col cursor-pointer space-y-3"
     >
-      {/* Fotografia limpa sem borda de caixa */}
-      <div className="relative w-full aspect-[3/4] bg-white overflow-hidden">
+      {/* Fotografia limpa sem corte */}
+      <div className="relative w-full aspect-[3/4] bg-white border border-[#ece7dc] dark:border-dark-800 overflow-hidden">
         <Image
           src={product.images[0]}
           alt={product.name}
@@ -54,17 +60,23 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
           className="object-contain object-center p-2 group-hover:scale-[1.04] transition-transform duration-700 ease-out"
         />
 
-        {/* Botão discreto de lista no canto inferior direito */}
+        {/* Botão discreto de lista/opções no canto inferior direito */}
         <button
-          onClick={toggleInterest}
-          title={inList ? 'Remover da lista' : 'Adicionar à lista de orçamento'}
+          onClick={handleListAction}
+          title={
+            hasMultipleVariants
+              ? 'Escolher opção'
+              : inList
+                ? 'Remover da lista'
+                : 'Adicionar à lista de orçamento'
+          }
           className={`absolute bottom-3 right-3 px-2.5 py-1.5 text-[10px] uppercase tracking-[0.14em] font-semibold transition-all ${
             inList
               ? 'bg-[#141414] text-[#d4af37] dark:bg-gold-500 dark:text-[#0c0c0f]'
-              : 'bg-white/95 text-[#141414] hover:bg-[#141414] hover:text-white dark:bg-dark-950/90 dark:text-zinc-100 dark:hover:bg-gold-500 dark:hover:text-[#0c0c0f] shadow-sm'
+              : 'bg-white/95 text-[#141414] hover:bg-[#141414] hover:text-white dark:bg-dark-950/90 dark:text-zinc-100 dark:hover:bg-gold-500 dark:hover:text-[#0c0c0f] shadow-sm border border-[#ece7dc] dark:border-dark-700'
           }`}
         >
-          {inList ? 'Na lista' : '+ Lista'}
+          {inList ? 'Na lista' : hasMultipleVariants ? 'Ver opções' : '+ Lista'}
         </button>
       </div>
 
@@ -113,15 +125,28 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
             )}
           </div>
 
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="text-[11px] uppercase tracking-[0.12em] font-semibold text-[#065f46] dark:text-emerald-400 hover:underline underline-offset-4 shrink-0"
-          >
-            Pedir &rarr;
-          </a>
+          {hasMultipleVariants ? (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onOpenModal(product);
+              }}
+              className="text-[11px] uppercase tracking-[0.12em] font-semibold text-[#065f46] dark:text-emerald-400 hover:underline underline-offset-4 shrink-0"
+            >
+              Pedir &rarr;
+            </button>
+          ) : (
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="text-[11px] uppercase tracking-[0.12em] font-semibold text-[#065f46] dark:text-emerald-400 hover:underline underline-offset-4 shrink-0"
+            >
+              Pedir &rarr;
+            </a>
+          )}
         </div>
       </div>
     </article>
