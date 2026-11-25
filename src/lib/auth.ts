@@ -16,25 +16,36 @@ interface SessionPayload {
  */
 export function getServerAdminPassword(): string | null {
   const pwd = process.env.ADMIN_PASSWORD;
-  if (!pwd || pwd.trim().length === 0) {
+  if (!pwd) {
     return null;
   }
-  return pwd;
+  // Variáveis coladas na Vercel podem carregar espaço ou quebra de linha nas pontas.
+  const trimmed = pwd.trim();
+  if (trimmed.length === 0) {
+    return null;
+  }
+  return trimmed;
 }
 
 /**
- * Retorna o segredo de assinatura da sessão (obrigatório e independente da senha).
+ * Retorna o segredo de assinatura da sessão (obrigatório em produção).
  */
 export function getSessionSecret(): string | null {
-  const secret = process.env.ADMIN_SESSION_SECRET;
-  if (!secret || secret.trim().length < 32) {
+  const secret = process.env.ADMIN_SESSION_SECRET?.trim();
+  if (!secret || secret.length < 32) {
     return null;
   }
   return secret;
 }
 
 function getSigningKey(): Buffer | null {
-  const baseSecret = getSessionSecret();
+  const secret = getSessionSecret();
+  // Em produção, a chave vem exclusivamente do segredo independente.
+  // Em desenvolvimento, aceita a senha como fallback quando o segredo falta.
+  const baseSecret = secret ?? (
+    process.env.NODE_ENV === 'production' ? null : getServerAdminPassword()
+  );
+
   if (!baseSecret) {
     return null;
   }
@@ -58,7 +69,7 @@ export function verifyAdminPassword(inputPassword: unknown): boolean {
     return false;
   }
 
-  const inputDigest = crypto.createHash('sha256').update(inputPassword).digest();
+  const inputDigest = crypto.createHash('sha256').update(inputPassword.trim()).digest();
   const serverDigest = crypto.createHash('sha256').update(serverPassword).digest();
 
   return crypto.timingSafeEqual(inputDigest, serverDigest);
@@ -133,9 +144,9 @@ export function verifySessionToken(token: string | undefined): boolean {
 /**
  * Verifica nos Route Handlers se a requisição possui sessão administrativa válida.
  */
-export async function isAdminAuthenticated(): Promise<boolean> {
+export function isAdminAuthenticated(): boolean {
   try {
-    const cookieStore = await cookies();
+    const cookieStore = cookies();
     const token = cookieStore.get(ADMIN_COOKIE_NAME)?.value;
     return verifySessionToken(token);
   } catch {
@@ -162,6 +173,7 @@ export function isSameOrigin(req: Request): boolean {
     // Navegadores sempre enviam Origin em POST/PUT/DELETE cross-site; ausência = cliente não-navegador
     return req.headers.get('sec-fetch-site') !== 'cross-site';
   }
+
   const host = req.headers.get('x-forwarded-host') || req.headers.get('host');
   try {
     return new URL(origin).host === host;

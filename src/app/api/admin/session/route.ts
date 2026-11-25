@@ -6,15 +6,24 @@ import {
   isSameOrigin,
 } from '@/lib/auth';
 
+export const dynamic = 'force-dynamic';
+
+const NO_STORE_HEADERS = { 'Cache-Control': 'no-store' };
+
+function jsonNoStore(body: unknown, status = 200) {
+  return NextResponse.json(body, { status, headers: NO_STORE_HEADERS });
+}
+
 export async function GET() {
-  return NextResponse.json({ authenticated: await isAdminAuthenticated() });
+  return jsonNoStore({ authenticated: isAdminAuthenticated() });
 }
 
 export async function DELETE(req: Request) {
   if (!isSameOrigin(req)) {
-    return NextResponse.json({ error: 'Origem inválida' }, { status: 403 });
+    return jsonNoStore({ error: 'Origem inválida' }, 403);
   }
-  const response = NextResponse.json({ success: true });
+
+  const response = jsonNoStore({ success: true });
   response.cookies.set(ADMIN_COOKIE_NAME, '', getSessionCookieOptions(0));
   return response;
 }
