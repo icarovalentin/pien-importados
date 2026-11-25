@@ -1,0 +1,22 @@
+{
+  "id": "bb-licor-jagermeister-1-litro",
+  "name": "Licor Jägermeister 1 Litro",
+  "brand": "Jägermeister",
+  "category": "bebidas",
+  "categoryLabel": "Bebidas",
+  "price": 118.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/bebidas/licor-jagermeister-1-litro.webp"
+  ],
+  "description": "Licor de ervas Jägermeister, garrafa de 1 litro. Produto original, importado. Venda e entrega somente para maiores de 18 anos.",
+  "specs": [
+    "Tipo: Licor de ervas",
+    "Volume: 1 litro",
+    "Venda proibida para menores de 18 anos"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Bebida original, importada com procedência garantida. Venda somente para maiores de 18 anos.",
+  "markup": 1.0
+}

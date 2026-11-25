@@ -1,0 +1,23 @@
+{
+  "id": "bb-whisky-johnnie-walker-black-label-375ml-petaca",
+  "name": "Whisky Johnnie Walker Black Label 375ml (Petaca)",
+  "brand": "Johnnie Walker",
+  "category": "bebidas",
+  "categoryLabel": "Bebidas",
+  "price": 89.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/bebidas/whisky-johnnie-walker-black-label-375ml-petaca.webp"
+  ],
+  "description": "Whisky escocês blended Johnnie Walker Black Label, formato petaca de 375 ml. Produto original, importado. Venda e entrega somente para maiores de 18 anos.",
+  "specs": [
+    "Tipo: Whisky escocês blended",
+    "Linha: Black Label",
+    "Volume: 375 ml (petaca)",
+    "Venda proibida para menores de 18 anos"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Bebida original, importada com procedência garantida. Venda somente para maiores de 18 anos.",
+  "markup": 1.0
+}

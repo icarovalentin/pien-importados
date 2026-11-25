@@ -1,0 +1,23 @@
+{
+  "id": "bb-rum-havana-club-anejo-7-anos-750ml",
+  "name": "Rum Havana Club Añejo 7 Anos 750ml",
+  "brand": "Havana Club",
+  "category": "bebidas",
+  "categoryLabel": "Bebidas",
+  "price": 100.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/bebidas/rum-havana-club-anejo-7-anos-750ml.webp"
+  ],
+  "description": "Rum cubano Havana Club Añejo 7 Años, garrafa de 750 ml. Produto original, importado. Venda e entrega somente para maiores de 18 anos.",
+  "specs": [
+    "Tipo: Rum",
+    "Envelhecimento: 7 anos",
+    "Volume: 750 ml",
+    "Venda proibida para menores de 18 anos"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Bebida original, importada com procedência garantida. Venda somente para maiores de 18 anos.",
+  "markup": 1.0
+}

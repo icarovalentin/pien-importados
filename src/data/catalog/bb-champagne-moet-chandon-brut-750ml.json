@@ -1,0 +1,23 @@
+{
+  "id": "bb-champagne-moet-chandon-brut-750ml",
+  "name": "Champagne Moët & Chandon Brut 750ml",
+  "brand": "Moët & Chandon",
+  "category": "bebidas",
+  "categoryLabel": "Bebidas",
+  "price": 465.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/bebidas/champagne-moet-chandon-brut-750ml.webp"
+  ],
+  "description": "Champagne francês Moët & Chandon Brut, garrafa de 750 ml. Produto original, importado. Venda e entrega somente para maiores de 18 anos.",
+  "specs": [
+    "Tipo: Champagne",
+    "Estilo: Brut",
+    "Volume: 750 ml",
+    "Venda proibida para menores de 18 anos"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Bebida original, importada com procedência garantida. Venda somente para maiores de 18 anos.",
+  "markup": 1.0
+}
