@@ -1,0 +1,116 @@
+{
+  "id": "xm-redmi-note-17-pro-5g",
+  "name": "Xiaomi Redmi Note 17 Pro 5G",
+  "brand": "Xiaomi",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 1.0,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/xiaomi/redmi-note-17-pro-5g/preto.webp",
+    "/catalog/xiaomi/redmi-note-17-pro-5g/laranja-acetinado.webp",
+    "/catalog/xiaomi/redmi-note-17-pro-5g/roxo.webp"
+  ],
+  "description": "Xiaomi Redmi Note 17 Pro 5G na cor Preto. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
+  "specs": [
+    "Cor: Preto",
+    "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
+    "Processador: Snapdragon 6s Gen 4",
+    "Bateria: bateria de 8340 mAh com carregamento de 67 W",
+    "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
+    "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
+    "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
+    "Resistência a poeira e água IP66/IP68",
+    "Vidro Corning Gorilla Glass Victus 2",
+    "Produto original Xiaomi"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "xm-redmi-note-17-pro-5g-preto",
+      "label": "Preto",
+      "price": 1.0,
+      "images": [
+        "/catalog/xiaomi/redmi-note-17-pro-5g/preto.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 Pro 5G na cor Preto. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
+      "specs": [
+        "Cor: Preto",
+        "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
+        "Processador: Snapdragon 6s Gen 4",
+        "Bateria: bateria de 8340 mAh com carregamento de 67 W",
+        "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
+        "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
+        "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
+        "Resistência a poeira e água IP66/IP68",
+        "Vidro Corning Gorilla Glass Victus 2",
+        "Produto original Xiaomi"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-pro-5g-laranja-acetinado",
+      "label": "Laranja Acetinado",
+      "price": 1.0,
+      "images": [
+        "/catalog/xiaomi/redmi-note-17-pro-5g/laranja-acetinado.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 Pro 5G na cor Laranja Acetinado. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
+      "specs": [
+        "Cor: Laranja Acetinado",
+        "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
+        "Processador: Snapdragon 6s Gen 4",
+        "Bateria: bateria de 8340 mAh com carregamento de 67 W",
+        "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
+        "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
+        "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
+        "Resistência a poeira e água IP66/IP68",
+        "Vidro Corning Gorilla Glass Victus 2",
+        "Produto original Xiaomi"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-pro-5g-roxo",
+      "label": "Roxo",
+      "price": 1.0,
+      "images": [
+        "/catalog/xiaomi/redmi-note-17-pro-5g/roxo.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 Pro 5G na cor Roxo. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
+      "specs": [
+        "Cor: Roxo",
+        "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
+        "Processador: Snapdragon 6s Gen 4",
+        "Bateria: bateria de 8340 mAh com carregamento de 67 W",
+        "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
+        "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
+        "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
+        "Resistência a poeira e água IP66/IP68",
+        "Vidro Corning Gorilla Glass Victus 2",
+        "Produto original Xiaomi"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-pro-5g-azul-celeste",
+      "label": "Azul Celeste",
+      "price": 1.0,
+      "images": [
+        "/catalog/xiaomi/redmi-note-17-pro-5g/azul-celeste.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 Pro 5G na cor Azul Celeste. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
+      "specs": [
+        "Cor: Azul Celeste",
+        "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
+        "Processador: Snapdragon 6s Gen 4",
+        "Bateria: bateria de 8340 mAh com carregamento de 67 W",
+        "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
+        "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
+        "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
+        "Resistência a poeira e água IP66/IP68",
+        "Vidro Corning Gorilla Glass Victus 2",
+        "Produto original Xiaomi"
+      ]
+    }
+  ]
+}

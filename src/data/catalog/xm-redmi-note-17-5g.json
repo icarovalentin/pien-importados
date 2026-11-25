@@ -1,0 +1,87 @@
+{
+  "id": "xm-redmi-note-17-5g",
+  "name": "Xiaomi Redmi Note 17 5G",
+  "brand": "Xiaomi",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 1.0,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/xiaomi/redmi-note-17-5g/preto.webp",
+    "/catalog/xiaomi/redmi-note-17-5g/verde-celeste.webp",
+    "/catalog/xiaomi/redmi-note-17-5g/roxo-cosmico.webp"
+  ],
+  "description": "Xiaomi Redmi Note 17 5G na cor Preto. Conta com tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz, processador Snapdragon 4 Gen 4, bateria de 7700 mAh com carregamento turbo de 45 W, câmera principal de 50 MP e câmera frontal de 16 MP. Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB).",
+  "specs": [
+    "Cor: Preto",
+    "Tela: tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz",
+    "Processador: Snapdragon 4 Gen 4",
+    "Bateria: bateria de 7700 mAh com carregamento turbo de 45 W",
+    "Câmeras: câmera principal de 50 MP e câmera frontal de 16 MP",
+    "Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB)",
+    "Dimensões e peso: 169,70 × 79,14 × 8,45 mm, 225 g",
+    "Produto original Xiaomi"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "xm-redmi-note-17-5g-preto",
+      "label": "Preto",
+      "price": 1.0,
+      "images": [
+        "/catalog/xiaomi/redmi-note-17-5g/preto.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 5G na cor Preto. Conta com tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz, processador Snapdragon 4 Gen 4, bateria de 7700 mAh com carregamento turbo de 45 W, câmera principal de 50 MP e câmera frontal de 16 MP. Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB).",
+      "specs": [
+        "Cor: Preto",
+        "Tela: tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz",
+        "Processador: Snapdragon 4 Gen 4",
+        "Bateria: bateria de 7700 mAh com carregamento turbo de 45 W",
+        "Câmeras: câmera principal de 50 MP e câmera frontal de 16 MP",
+        "Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB)",
+        "Dimensões e peso: 169,70 × 79,14 × 8,45 mm, 225 g",
+        "Produto original Xiaomi"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-5g-verde-celeste",
+      "label": "Verde-Celeste",
+      "price": 1.0,
+      "images": [
+        "/catalog/xiaomi/redmi-note-17-5g/verde-celeste.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 5G na cor Verde-Celeste. Conta com tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz, processador Snapdragon 4 Gen 4, bateria de 7700 mAh com carregamento turbo de 45 W, câmera principal de 50 MP e câmera frontal de 16 MP. Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB).",
+      "specs": [
+        "Cor: Verde-Celeste",
+        "Tela: tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz",
+        "Processador: Snapdragon 4 Gen 4",
+        "Bateria: bateria de 7700 mAh com carregamento turbo de 45 W",
+        "Câmeras: câmera principal de 50 MP e câmera frontal de 16 MP",
+        "Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB)",
+        "Dimensões e peso: 169,70 × 79,14 × 8,45 mm, 225 g",
+        "Produto original Xiaomi"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-5g-roxo-cosmico",
+      "label": "Roxo Cósmico",
+      "price": 1.0,
+      "images": [
+        "/catalog/xiaomi/redmi-note-17-5g/roxo-cosmico.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 5G na cor Roxo Cósmico. Conta com tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz, processador Snapdragon 4 Gen 4, bateria de 7700 mAh com carregamento turbo de 45 W, câmera principal de 50 MP e câmera frontal de 16 MP. Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB).",
+      "specs": [
+        "Cor: Roxo Cósmico",
+        "Tela: tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz",
+        "Processador: Snapdragon 4 Gen 4",
+        "Bateria: bateria de 7700 mAh com carregamento turbo de 45 W",
+        "Câmeras: câmera principal de 50 MP e câmera frontal de 16 MP",
+        "Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB)",
+        "Dimensões e peso: 169,70 × 79,14 × 8,45 mm, 225 g",
+        "Produto original Xiaomi"
+      ]
+    }
+  ]
+}
