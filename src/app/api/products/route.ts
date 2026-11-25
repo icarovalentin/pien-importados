@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { Product, ProductVariant } from '@/types/product';
+import { ALL_PRODUCT_CATEGORY_IDS } from '@/config/site';
 import { isAdminAuthenticated, isSameOrigin } from '@/lib/auth';
 import {
   getSupabaseAdmin,
@@ -13,15 +14,7 @@ import {
 } from '@/lib/supabase';
 
 const filePath = path.join(process.cwd(), 'src', 'data', 'products.json');
-const ALLOWED_CATEGORIES = new Set([
-  'farmacia',
-  'perfumes',
-  'arabes',
-  'beleza',
-  'eletronicos',
-  'smartphones',
-  'acessorios',
-]);
+const ALLOWED_CATEGORIES = new Set<string>(ALL_PRODUCT_CATEGORY_IDS);
 const DEFAULT_IMAGE =
   'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80';
 const MAX_IMAGES = 8;

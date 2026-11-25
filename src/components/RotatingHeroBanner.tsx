@@ -115,7 +115,7 @@ export function RotatingHeroBanner({
         {/* Lado Esquerdo: Fotografia Editorial */}
         <div
           onClick={() => onOpenProduct(slide)}
-          className={`group lg:col-span-6 relative min-h-[320px] sm:min-h-[420px] lg:min-h-[470px] overflow-hidden cursor-pointer ${
+          className={`group lg:col-span-6 relative min-h-[230px] sm:min-h-[360px] lg:min-h-[470px] overflow-hidden cursor-pointer ${
             heroFit === 'contain' ? 'bg-[#fcfbf8] dark:bg-white' : 'bg-[#ebe6dc] dark:bg-dark-900'
           }`}
         >
@@ -133,7 +133,7 @@ export function RotatingHeroBanner({
             }}
             className={
               heroFit === 'contain'
-                ? 'object-contain object-center p-8 sm:p-12 mix-blend-multiply dark:mix-blend-normal brightness-[1.05] group-hover:scale-[1.03] transition-transform duration-700 ease-out'
+                ? 'object-contain object-center p-5 sm:p-12 mix-blend-multiply dark:mix-blend-normal brightness-[1.05] group-hover:scale-[1.03] transition-transform duration-700 ease-out'
                 : 'object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out'
             }
           />
@@ -176,25 +176,25 @@ export function RotatingHeroBanner({
         </div>
 
         {/* Lado Direito: Texto Editorial */}
-        <div className="lg:col-span-6 px-6 py-9 sm:px-12 lg:px-14 flex flex-col justify-between bg-[#fcfbf8] dark:bg-[#0c0c0f]">
-          <div className="space-y-5 my-auto">
+        <div className="lg:col-span-6 px-5 py-6 sm:px-12 sm:py-9 lg:px-14 flex flex-col justify-between bg-[#fcfbf8] dark:bg-[#0c0c0f]">
+          <div className="space-y-3 sm:space-y-5 my-auto">
             <p className="text-[10px] uppercase tracking-[0.24em] text-[#8b6508] dark:text-gold-400 font-semibold">
               Destaque · {slide.brand} · {slide.categoryLabel}
             </p>
 
             <h1
               onClick={() => onOpenProduct(slide)}
-              className="text-3xl sm:text-4xl lg:text-[2.45rem] leading-[1.16] font-normal font-display text-[#141414] dark:text-white cursor-pointer hover:opacity-80 transition-opacity"
+              className="text-2xl sm:text-4xl lg:text-[2.45rem] leading-[1.16] font-normal font-display text-[#141414] dark:text-white cursor-pointer hover:opacity-80 transition-opacity"
             >
               {slide.name}
             </h1>
 
-            <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-lg line-clamp-3">
+            <p className="hidden sm:block text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-lg line-clamp-3">
               {slide.description}
             </p>
 
             <div className="flex items-baseline gap-3 pt-1">
-              <span className="text-2xl font-semibold text-[#141414] dark:text-white">
+              <span className="text-xl sm:text-2xl font-semibold text-[#141414] dark:text-white">
                 {formatCurrency(slide.price)}
               </span>
               {slide.originalPrice && (
@@ -204,19 +204,19 @@ export function RotatingHeroBanner({
               )}
             </div>
 
-            <div className="pt-2 flex flex-wrap items-center gap-3">
+            <div className="pt-1 sm:pt-2 flex items-center gap-2 sm:gap-3">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-[#141414] hover:bg-[#2c2c2c] dark:bg-gold-500 dark:hover:bg-gold-400 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.18em] font-semibold transition-colors"
+                className="flex-1 sm:flex-none text-center px-4 py-3 sm:px-6 bg-[#141414] hover:bg-[#2c2c2c] dark:bg-gold-500 dark:hover:bg-gold-400 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.18em] font-semibold transition-colors"
               >
                 Pedir Agora
               </a>
 
               <button
                 onClick={() => onOpenProduct(slide)}
-                className="px-6 py-3 border border-[#141414] dark:border-dark-600 text-[#141414] dark:text-zinc-200 hover:bg-[#f3efe7] dark:hover:bg-dark-800 text-[11px] uppercase tracking-[0.18em] font-semibold transition-colors"
+                className="flex-1 sm:flex-none px-4 py-3 sm:px-6 border border-[#141414] dark:border-dark-600 text-[#141414] dark:text-zinc-200 hover:bg-[#f3efe7] dark:hover:bg-dark-800 text-[11px] uppercase tracking-[0.18em] font-semibold transition-colors"
               >
                 Ver Detalhes
               </button>
@@ -225,7 +225,7 @@ export function RotatingHeroBanner({
 
           {/* Indicadores horizontais minimalistas */}
           {totalSlides > 1 && (
-            <div className="pt-8 flex items-center gap-2">
+            <div className="pt-5 sm:pt-8 flex items-center gap-2">
               {slides.map((s, idx) => (
                 <button
                   key={s.id}
@@ -245,7 +245,7 @@ export function RotatingHeroBanner({
 
       {/* Faixa de Marcas (somente marcas vendidas) */}
       <div className="bg-[#f6f3ec] dark:bg-dark-900/70 border-t border-[#e5e0d5] dark:border-dark-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-start sm:justify-center gap-7 sm:gap-10 overflow-x-auto scrollbar-none">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-start sm:justify-center gap-6 sm:gap-10 overflow-x-auto scrollbar-none">
           <button
             onClick={() => {
               if (onSelectBrand) onSelectBrand('');

@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS public.products (
   id TEXT PRIMARY KEY,
   name TEXT NOT NULL,
   brand TEXT NOT NULL DEFAULT 'Importado',
-  category TEXT NOT NULL CHECK (category IN ('farmacia', 'perfumes', 'arabes', 'beleza', 'eletronicos', 'smartphones', 'acessorios')),
+  category TEXT NOT NULL CHECK (category IN ('farmacia', 'perfumes', 'arabes', 'bebidas', 'beleza', 'eletronicos', 'smartphones', 'acessorios')),
   category_label TEXT NOT NULL DEFAULT 'Diversos',
   price NUMERIC(12, 2) NOT NULL CHECK (price > 0),
   original_price NUMERIC(12, 2) CHECK (original_price IS NULL OR original_price > 0),
