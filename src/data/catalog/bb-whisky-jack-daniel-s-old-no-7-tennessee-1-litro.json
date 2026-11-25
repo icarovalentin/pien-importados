@@ -1,0 +1,24 @@
+{
+  "id": "bb-whisky-jack-daniel-s-old-no-7-tennessee-1-litro",
+  "name": "Whisky Jack Daniel's Old No. 7 Tennessee 1 Litro",
+  "brand": "Jack Daniel's",
+  "category": "bebidas",
+  "categoryLabel": "Bebidas",
+  "price": 118.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/bebidas/whisky-jack-daniel-s-old-no-7-tennessee-1-litro.webp"
+  ],
+  "description": "Whisky Tennessee Jack Daniel's Old No. 7, garrafa de 1 litro (sem caixa). Produto original, importado. Venda e entrega somente para maiores de 18 anos.",
+  "specs": [
+    "Tipo: Tennessee whiskey",
+    "Linha: Old No. 7",
+    "Volume: 1 litro",
+    "Embalagem: sem caixa",
+    "Venda proibida para menores de 18 anos"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Bebida original, importada com procedência garantida. Venda somente para maiores de 18 anos.",
+  "markup": 1.0
+}

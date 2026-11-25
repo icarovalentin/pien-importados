@@ -1,0 +1,23 @@
+{
+  "id": "bb-gin-tanqueray-750ml",
+  "name": "Gin Tanqueray 750ml",
+  "brand": "Tanqueray",
+  "category": "bebidas",
+  "categoryLabel": "Bebidas",
+  "price": 104.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/bebidas/gin-tanqueray-750ml.webp"
+  ],
+  "description": "Gin Tanqueray, garrafa de 750 ml (sem caixa). Produto original, importado. Venda e entrega somente para maiores de 18 anos.",
+  "specs": [
+    "Tipo: Gin",
+    "Volume: 750 ml",
+    "Embalagem: sem caixa",
+    "Venda proibida para menores de 18 anos"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Bebida original, importada com procedência garantida. Venda somente para maiores de 18 anos.",
+  "markup": 1.0
+}

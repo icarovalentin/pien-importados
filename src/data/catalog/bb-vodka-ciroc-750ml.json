@@ -1,0 +1,23 @@
+{
+  "id": "bb-vodka-ciroc-750ml",
+  "name": "Vodka Ciroc 750ml",
+  "brand": "Ciroc",
+  "category": "bebidas",
+  "categoryLabel": "Bebidas",
+  "price": 158.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/bebidas/vodka-ciroc-750ml.webp"
+  ],
+  "description": "Vodka Ciroc, garrafa de 750 ml, 40% de teor alcoólico. Produto original, importado. Venda e entrega somente para maiores de 18 anos.",
+  "specs": [
+    "Tipo: Vodka",
+    "Teor alcoólico: 40%",
+    "Volume: 750 ml",
+    "Venda proibida para menores de 18 anos"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Bebida original, importada com procedência garantida. Venda somente para maiores de 18 anos.",
+  "markup": 1.0
+}
