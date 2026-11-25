@@ -4,7 +4,7 @@
   "brand": "Lancôme",
   "category": "perfumes",
   "categoryLabel": "Perfumaria",
-  "price": 465.9,
+  "price": 698.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "pf-lancome-la-vie-est-belle-feminino-la-vie-est-belle-eau-de-parfum-100ml",
       "label": "La Vie Est Belle · Eau de Parfum · 100ml",
-      "price": 465.9,
+      "price": 698.9,
       "images": [
         "/catalog/perfumes/pf-lancome-la-vie-est-belle-feminino/la-vie-est-belle-eau-de-parfum-100ml-1.webp"
       ],
@@ -45,5 +45,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

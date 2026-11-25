@@ -4,7 +4,7 @@
   "brand": "Victoria's Secret",
   "category": "beleza",
   "categoryLabel": "Body Lotion",
-  "price": 70.9,
+  "price": 106.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -23,7 +23,7 @@
     {
       "id": "locoes-deep-vanilla-oud",
       "label": "Deep Vanilla Oud",
-      "price": 168.9,
+      "price": 253.9,
       "images": [
         "/catalog/locoes/deep-vanilla-oud.webp"
       ],
@@ -38,7 +38,7 @@
     {
       "id": "locoes-spotlight-shimmer",
       "label": "Spotlight Shimmer",
-      "price": 168.9,
+      "price": 253.9,
       "images": [
         "/catalog/locoes/spotlight-shimmer.webp"
       ],
@@ -55,7 +55,7 @@
     {
       "id": "locoes-angel-fantasy-shimmer",
       "label": "Angel Fantasy Shimmer",
-      "price": 168.9,
+      "price": 253.9,
       "images": [
         "/catalog/locoes/angel-fantasy-shimmer.webp"
       ],
@@ -72,7 +72,7 @@
     {
       "id": "locoes-pink-diamond-shimmer",
       "label": "Pink Diamond Shimmer",
-      "price": 168.9,
+      "price": 253.9,
       "images": [
         "/catalog/locoes/pink-diamond-shimmer.webp"
       ],
@@ -89,7 +89,7 @@
     {
       "id": "locoes-bare-vanilla",
       "label": "Bare Vanilla",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/bare-vanilla.webp"
       ],
@@ -106,7 +106,7 @@
     {
       "id": "locoes-pure-seduction",
       "label": "Pure Seduction",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/pure-seduction.webp"
       ],
@@ -123,7 +123,7 @@
     {
       "id": "locoes-cherry-desire",
       "label": "Cherry Desire",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/cherry-desire.webp"
       ],
@@ -140,7 +140,7 @@
     {
       "id": "locoes-velvet-petals",
       "label": "Velvet Petals",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/velvet-petals.webp"
       ],
@@ -157,7 +157,7 @@
     {
       "id": "locoes-wild-rose-amber",
       "label": "Wild Rose Amber",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/wild-rose-amber.webp"
       ],
@@ -170,7 +170,7 @@
     {
       "id": "locoes-coconut-milk-rose",
       "label": "Coconut Milk Rose",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/coconut-milk-rose.webp"
       ],
@@ -183,7 +183,7 @@
     {
       "id": "locoes-white-peach-mango",
       "label": "White Peach Mango",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/white-peach-mango.webp"
       ],
@@ -196,7 +196,7 @@
     {
       "id": "locoes-blue-jasmine-water-lily",
       "label": "Blue Jasmine Water Lily",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/blue-jasmine-water-lily.webp"
       ],
@@ -209,7 +209,7 @@
     {
       "id": "locoes-mango-temptation",
       "label": "Mango Temptation",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/mango-temptation.webp"
       ],
@@ -225,7 +225,7 @@
     {
       "id": "locoes-shimmer-pure-seduction",
       "label": "Shimmer Pure Seduction",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-pure-seduction.webp"
       ],
@@ -242,7 +242,7 @@
     {
       "id": "locoes-vanilla-orchid-sandalwood",
       "label": "Vanilla Orchid Sandalwood",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/vanilla-orchid-sandalwood.webp"
       ],
@@ -255,7 +255,7 @@
     {
       "id": "locoes-aqua-kiss",
       "label": "Aqua Kiss",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/aqua-kiss.webp"
       ],
@@ -272,7 +272,7 @@
     {
       "id": "locoes-shimmer-aqua-kiss",
       "label": "Shimmer Aqua Kiss",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-aqua-kiss.webp"
       ],
@@ -289,7 +289,7 @@
     {
       "id": "locoes-shimmer-pure-seduction-2",
       "label": "Shimmer Pure Seduction (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-pure-seduction-2.webp"
       ],
@@ -306,7 +306,7 @@
     {
       "id": "locoes-aqua-kiss-2",
       "label": "Aqua Kiss (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/aqua-kiss-2.webp"
       ],
@@ -323,7 +323,7 @@
     {
       "id": "locoes-velvet-petals-intense",
       "label": "Velvet Petals Intense",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/velvet-petals-intense.webp"
       ],
@@ -340,7 +340,7 @@
     {
       "id": "locoes-shimmer-coconut-passion",
       "label": "Shimmer Coconut Passion",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-coconut-passion.webp"
       ],
@@ -357,7 +357,7 @@
     {
       "id": "locoes-midnight-bloom",
       "label": "Midnight Bloom",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/midnight-bloom.webp"
       ],
@@ -374,7 +374,7 @@
     {
       "id": "locoes-romantic",
       "label": "Romantic",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/romantic.webp"
       ],
@@ -389,7 +389,7 @@
     {
       "id": "locoes-temptation",
       "label": "Temptation",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/temptation.webp"
       ],
@@ -404,7 +404,7 @@
     {
       "id": "locoes-love-spell",
       "label": "Love Spell",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/love-spell.webp"
       ],
@@ -421,7 +421,7 @@
     {
       "id": "locoes-coconut-passion",
       "label": "Coconut Passion",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/coconut-passion.webp"
       ],
@@ -438,7 +438,7 @@
     {
       "id": "locoes-shimmer-coconut-passion-2",
       "label": "Shimmer Coconut Passion (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-coconut-passion-2.webp"
       ],
@@ -455,7 +455,7 @@
     {
       "id": "locoes-shimmer-love-spell",
       "label": "Shimmer Love Spell",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-love-spell.webp"
       ],
@@ -472,7 +472,7 @@
     {
       "id": "locoes-sheer-love",
       "label": "Sheer Love",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/sheer-love.webp"
       ],
@@ -488,7 +488,7 @@
     {
       "id": "locoes-shimmer-pure-seduction-joy",
       "label": "Shimmer Pure Seduction Joy",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-pure-seduction-joy.webp"
       ],
@@ -505,7 +505,7 @@
     {
       "id": "locoes-shimmer-velvet-petals-joy",
       "label": "Shimmer Velvet Petals Joy",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-velvet-petals-joy.webp"
       ],
@@ -522,7 +522,7 @@
     {
       "id": "locoes-shimmer-bare-vanilla-joy",
       "label": "Shimmer Bare Vanilla Joy",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-bare-vanilla-joy.webp"
       ],
@@ -539,7 +539,7 @@
     {
       "id": "locoes-shimmer-love-spell-joy",
       "label": "Shimmer Love Spell Joy",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-love-spell-joy.webp"
       ],
@@ -556,7 +556,7 @@
     {
       "id": "locoes-midnight-bloom-2",
       "label": "Midnight Bloom (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/midnight-bloom-2.webp"
       ],
@@ -573,7 +573,7 @@
     {
       "id": "locoes-pure-seduction-2",
       "label": "Pure Seduction (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/pure-seduction-2.webp"
       ],
@@ -590,7 +590,7 @@
     {
       "id": "locoes-shimmer-bare-vanilla",
       "label": "Shimmer Bare Vanilla",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-bare-vanilla.webp"
       ],
@@ -607,7 +607,7 @@
     {
       "id": "locoes-angel-cake-cream",
       "label": "Angel Cake & Cream",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/angel-cake-cream.webp"
       ],
@@ -622,7 +622,7 @@
     {
       "id": "locoes-pure-seduction-intense",
       "label": "Pure Seduction Intense",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/pure-seduction-intense.webp"
       ],
@@ -639,7 +639,7 @@
     {
       "id": "locoes-vanilla-lace",
       "label": "Vanilla Lace",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/vanilla-lace.webp"
       ],
@@ -656,7 +656,7 @@
     {
       "id": "locoes-whipped-sugar-milk",
       "label": "Whipped Sugar & Milk",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/whipped-sugar-milk.webp"
       ],
@@ -673,7 +673,7 @@
     {
       "id": "locoes-glazed-petals-berries",
       "label": "Glazed Petals & Berries",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/glazed-petals-berries.webp"
       ],
@@ -688,7 +688,7 @@
     {
       "id": "locoes-golden-apricot-honey",
       "label": "Golden Apricot & Honey",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/golden-apricot-honey.webp"
       ],
@@ -702,7 +702,7 @@
     {
       "id": "locoes-love-spell-intense",
       "label": "Love Spell Intense",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/love-spell-intense.webp"
       ],
@@ -719,7 +719,7 @@
     {
       "id": "locoes-shimmer-amber-romance",
       "label": "Shimmer Amber Romance",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-amber-romance.webp"
       ],
@@ -736,7 +736,7 @@
     {
       "id": "locoes-cashmerefleur",
       "label": "Cashmerefleur",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/cashmerefleur.webp"
       ],
@@ -753,7 +753,7 @@
     {
       "id": "locoes-shimmer-love-spell-2",
       "label": "Shimmer Love Spell (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-love-spell-2.webp"
       ],
@@ -770,7 +770,7 @@
     {
       "id": "locoes-temptation-2",
       "label": "Temptation (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/temptation-2.webp"
       ],
@@ -785,7 +785,7 @@
     {
       "id": "locoes-love-spell-2",
       "label": "Love Spell (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/love-spell-2.webp"
       ],
@@ -802,7 +802,7 @@
     {
       "id": "locoes-shimmer-bare-vanilla-2",
       "label": "Shimmer Bare Vanilla (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-bare-vanilla-2.webp"
       ],
@@ -819,7 +819,7 @@
     {
       "id": "locoes-shimmer-velvet-petals",
       "label": "Shimmer Velvet Petals",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/shimmer-velvet-petals.webp"
       ],
@@ -836,7 +836,7 @@
     {
       "id": "locoes-bare-vanilla-2",
       "label": "Bare Vanilla (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/bare-vanilla-2.webp"
       ],
@@ -853,7 +853,7 @@
     {
       "id": "locoes-coconut-passion-2",
       "label": "Coconut Passion (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/coconut-passion-2.webp"
       ],
@@ -870,7 +870,7 @@
     {
       "id": "locoes-amber-romance",
       "label": "Amber Romance",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/amber-romance.webp"
       ],
@@ -887,7 +887,7 @@
     {
       "id": "locoes-romantic-2",
       "label": "Romantic (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/romantic-2.webp"
       ],
@@ -902,7 +902,7 @@
     {
       "id": "locoes-bare-vanilla-intense",
       "label": "Bare Vanilla Intense",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/locoes/bare-vanilla-intense.webp"
       ],
@@ -916,5 +916,6 @@
         "100% original Victoria’s Secret"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

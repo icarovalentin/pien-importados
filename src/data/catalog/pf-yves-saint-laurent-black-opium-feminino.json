@@ -1,0 +1,54 @@
+{
+  "id": "pf-yves-saint-laurent-black-opium-feminino",
+  "name": "Yves Saint Laurent Black Opium Feminino",
+  "brand": "Yves",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 816.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-yves-saint-laurent-black-opium-feminino/black-opium-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-yves-saint-laurent-black-opium-feminino/black-opium-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-yves-saint-laurent-black-opium-feminino/black-opium-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": " Black Opium, Eau de Parfum 100 ml. Perfume feminino de família olfativa oriental baunilha. Notas de topo: Pera, Pimenta Rosa e Flor de Laranjeira; coração: Café, Jasmim, Amêndoa Amarga e Alcaçuz; fundo: Baunilha, Patchouli, Madeira de Cashmere e Cedro.",
+  "specs": [
+    "Edição: Black Opium",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Oriental Baunilha",
+    "Notas de topo: Pera, Pimenta Rosa e Flor de Laranjeira",
+    "Notas de coração: Café, Jasmim, Amêndoa Amarga e Alcaçuz",
+    "Notas de fundo: Baunilha, Patchouli, Madeira de Cashmere e Cedro",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Yves, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-yves-saint-laurent-black-opium-feminino-black-opium-eau-de-parfum-100ml",
+      "label": "Black Opium · Eau de Parfum · 100ml",
+      "price": 816.9,
+      "images": [
+        "/catalog/perfumes/pf-yves-saint-laurent-black-opium-feminino/black-opium-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-yves-saint-laurent-black-opium-feminino/black-opium-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-yves-saint-laurent-black-opium-feminino/black-opium-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": " Black Opium, Eau de Parfum 100 ml. Perfume feminino de família olfativa oriental baunilha. Notas de topo: Pera, Pimenta Rosa e Flor de Laranjeira; coração: Café, Jasmim, Amêndoa Amarga e Alcaçuz; fundo: Baunilha, Patchouli, Madeira de Cashmere e Cedro.",
+      "specs": [
+        "Edição: Black Opium",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Oriental Baunilha",
+        "Notas de topo: Pera, Pimenta Rosa e Flor de Laranjeira",
+        "Notas de coração: Café, Jasmim, Amêndoa Amarga e Alcaçuz",
+        "Notas de fundo: Baunilha, Patchouli, Madeira de Cashmere e Cedro",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

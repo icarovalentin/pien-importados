@@ -4,7 +4,7 @@
   "brand": "Armaf",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 121.9,
+  "price": 182.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "pf-armaf-club-de-nuit-woman-feminino-club-de-nuit-intense-woman-eau-de-parfum-105ml",
       "label": "Club de Nuit Intense Woman · Eau de Parfum · 105ml",
-      "price": 121.9,
+      "price": 182.9,
       "images": [
         "/catalog/perfumes/pf-armaf-club-de-nuit-woman-feminino/club-de-nuit-intense-woman-eau-de-parfum-105ml-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "pf-armaf-club-de-nuit-woman-feminino-club-de-nuit-woman-extrait-de-parfum-70ml",
       "label": "Club De Nuit Woman · Extrait de Parfum · 70ml",
-      "price": 181.9,
+      "price": 272.9,
       "images": [
         "/catalog/perfumes/pf-armaf-club-de-nuit-woman-feminino/club-de-nuit-woman-extrait-de-parfum-70ml-1.webp"
       ],
@@ -68,7 +68,7 @@
     {
       "id": "pf-armaf-club-de-nuit-woman-feminino-club-de-nuit-woman-eau-de-parfum-200ml",
       "label": "Club de Nuit Woman · Eau de Parfum · 200ml",
-      "price": 211.9,
+      "price": 317.9,
       "images": [
         "/catalog/perfumes/pf-armaf-club-de-nuit-woman-feminino/club-de-nuit-woman-eau-de-parfum-200ml-1.webp",
         "/catalog/perfumes/pf-armaf-club-de-nuit-woman-feminino/club-de-nuit-woman-eau-de-parfum-200ml-2.webp"
@@ -86,5 +86,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

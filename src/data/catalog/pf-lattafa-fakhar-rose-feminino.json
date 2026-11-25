@@ -1,0 +1,54 @@
+{
+  "id": "pf-lattafa-fakhar-rose-feminino",
+  "name": "Lattafa Fakhar Rose Feminino",
+  "brand": "Lattafa",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 206.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lattafa-fakhar-rose-feminino/fakhar-rose-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-lattafa-fakhar-rose-feminino/fakhar-rose-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-lattafa-fakhar-rose-feminino/fakhar-rose-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "Lattafa Fakhar Rose, Eau de Parfum 100 ml. Perfume feminino de família olfativa floral. Notas de topo: Frutas, Azucena, Romã e Aldeídos; coração: Nardos, Jasmim, Gardênia, Ylang-Ylang, Madressilva, Rosa e Peônia; fundo: Baunilha, Almíscar Branco, Sândalo e Ambroxan.",
+  "specs": [
+    "Edição: Fakhar Rose",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Floral",
+    "Notas de topo: Frutas, Azucena, Romã e Aldeídos",
+    "Notas de coração: Nardos, Jasmim, Gardênia, Ylang-Ylang, Madressilva, Rosa e Peônia",
+    "Notas de fundo: Baunilha, Almíscar Branco, Sândalo e Ambroxan",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Lattafa, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lattafa-fakhar-rose-feminino-fakhar-rose-eau-de-parfum-100ml",
+      "label": "Fakhar Rose · Eau de Parfum · 100ml",
+      "price": 206.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-fakhar-rose-feminino/fakhar-rose-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-fakhar-rose-feminino/fakhar-rose-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-fakhar-rose-feminino/fakhar-rose-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lattafa Fakhar Rose, Eau de Parfum 100 ml. Perfume feminino de família olfativa floral. Notas de topo: Frutas, Azucena, Romã e Aldeídos; coração: Nardos, Jasmim, Gardênia, Ylang-Ylang, Madressilva, Rosa e Peônia; fundo: Baunilha, Almíscar Branco, Sândalo e Ambroxan.",
+      "specs": [
+        "Edição: Fakhar Rose",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Floral",
+        "Notas de topo: Frutas, Azucena, Romã e Aldeídos",
+        "Notas de coração: Nardos, Jasmim, Gardênia, Ylang-Ylang, Madressilva, Rosa e Peônia",
+        "Notas de fundo: Baunilha, Almíscar Branco, Sândalo e Ambroxan",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

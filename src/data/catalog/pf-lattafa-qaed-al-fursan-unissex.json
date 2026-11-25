@@ -1,0 +1,54 @@
+{
+  "id": "pf-lattafa-qaed-al-fursan-unissex",
+  "name": "Lattafa Qaed Al Fursan Unissex",
+  "brand": "Lattafa",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 95.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lattafa-qaed-al-fursan-unissex/qaed-al-fursan-unlimited-eau-de-parfum-90ml-1.webp",
+    "/catalog/perfumes/pf-lattafa-qaed-al-fursan-unissex/qaed-al-fursan-unlimited-eau-de-parfum-90ml-2.webp",
+    "/catalog/perfumes/pf-lattafa-qaed-al-fursan-unissex/qaed-al-fursan-unlimited-eau-de-parfum-90ml-3.webp"
+  ],
+  "description": "Lattafa Qaed Al Fursan Unlimited, Eau de Parfum 90 ml. Perfume unissex de família olfativa cítrico e frutado. Notas de topo: Coco, Cítrico e Abacaxi; coração: Ylang Ylang, Jasmim e Jasmim-Manga; fundo: Baunilha, Almíscar e Sândalo.",
+  "specs": [
+    "Edição: Qaed Al Fursan Unlimited",
+    "Concentração: Eau de Parfum",
+    "Volume: 90 ml",
+    "Família olfativa: Cítrico e Frutado",
+    "Notas de topo: Coco, Cítrico e Abacaxi",
+    "Notas de coração: Ylang Ylang, Jasmim e Jasmim-Manga",
+    "Notas de fundo: Baunilha, Almíscar e Sândalo",
+    "Gênero: Unissex",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Lattafa, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lattafa-qaed-al-fursan-unissex-qaed-al-fursan-unlimited-eau-de-parfum-90ml",
+      "label": "Qaed Al Fursan Unlimited · Eau de Parfum · 90ml",
+      "price": 95.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-qaed-al-fursan-unissex/qaed-al-fursan-unlimited-eau-de-parfum-90ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-qaed-al-fursan-unissex/qaed-al-fursan-unlimited-eau-de-parfum-90ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-qaed-al-fursan-unissex/qaed-al-fursan-unlimited-eau-de-parfum-90ml-3.webp"
+      ],
+      "description": "Lattafa Qaed Al Fursan Unlimited, Eau de Parfum 90 ml. Perfume unissex de família olfativa cítrico e frutado. Notas de topo: Coco, Cítrico e Abacaxi; coração: Ylang Ylang, Jasmim e Jasmim-Manga; fundo: Baunilha, Almíscar e Sândalo.",
+      "specs": [
+        "Edição: Qaed Al Fursan Unlimited",
+        "Concentração: Eau de Parfum",
+        "Volume: 90 ml",
+        "Família olfativa: Cítrico e Frutado",
+        "Notas de topo: Coco, Cítrico e Abacaxi",
+        "Notas de coração: Ylang Ylang, Jasmim e Jasmim-Manga",
+        "Notas de fundo: Baunilha, Almíscar e Sândalo",
+        "Gênero: Unissex",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

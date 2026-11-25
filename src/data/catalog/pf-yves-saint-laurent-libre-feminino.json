@@ -4,7 +4,7 @@
   "brand": "Yves Saint Laurent",
   "category": "perfumes",
   "categoryLabel": "Perfumaria",
-  "price": 647.9,
+  "price": 971.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "pf-yves-saint-laurent-libre-feminino-libre-eau-de-parfum-90ml",
       "label": "Libre · Eau de Parfum · 90ml",
-      "price": 647.9,
+      "price": 971.9,
       "images": [
         "/catalog/perfumes/pf-yves-saint-laurent-libre-feminino/libre-eau-de-parfum-90ml-1.webp",
         "/catalog/perfumes/pf-yves-saint-laurent-libre-feminino/libre-eau-de-parfum-90ml-2.webp"
@@ -47,5 +47,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

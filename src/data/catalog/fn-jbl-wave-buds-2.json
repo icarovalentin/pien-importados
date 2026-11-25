@@ -2,9 +2,9 @@
   "id": "fn-jbl-wave-buds-2",
   "name": "JBL Wave Buds 2",
   "brand": "JBL",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 205.9,
+  "price": 308.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "fn-jbl-wave-buds-2-rosa",
       "label": "Rosa",
-      "price": 205.9,
+      "price": 308.9,
       "images": [
         "/catalog/fones/fn-jbl-wave-buds-2/rosa-1.webp"
       ],
@@ -47,5 +47,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -1,0 +1,46 @@
+{
+  "id": "pf-rasasi-hawas-pink-for-her-feminino",
+  "name": "Rasasi Hawas Pink for Her Feminino",
+  "brand": "Rasasi",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 291.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-rasasi-hawas-pink-for-her-feminino/pink-for-her-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-rasasi-hawas-pink-for-her-feminino/pink-for-her-eau-de-parfum-100ml-2.webp"
+  ],
+  "description": "Rasasi Pink for Her, Eau de Parfum (EDP) 100ml. Perfume feminino de família olfativa âmbar floral.",
+  "specs": [
+    "Edição: Pink for Her",
+    "Concentração: Eau de Parfum (EDP)",
+    "Volume: 100ml",
+    "Família olfativa: Âmbar Floral",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Rasasi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-rasasi-hawas-pink-for-her-feminino-pink-for-her-eau-de-parfum-100ml",
+      "label": "Pink for Her · Eau de Parfum · 100ml",
+      "price": 291.9,
+      "images": [
+        "/catalog/perfumes/pf-rasasi-hawas-pink-for-her-feminino/pink-for-her-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-rasasi-hawas-pink-for-her-feminino/pink-for-her-eau-de-parfum-100ml-2.webp"
+      ],
+      "description": "Rasasi Pink for Her, Eau de Parfum (EDP) 100ml. Perfume feminino de família olfativa âmbar floral.",
+      "specs": [
+        "Edição: Pink for Her",
+        "Concentração: Eau de Parfum (EDP)",
+        "Volume: 100ml",
+        "Família olfativa: Âmbar Floral",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

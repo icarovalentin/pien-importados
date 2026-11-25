@@ -2,9 +2,9 @@
   "id": "aw-ultra-3",
   "name": "Apple Watch Ultra 3",
   "brand": "Apple",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Smartwatch",
-  "price": 4198.9,
+  "price": 6298.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -33,7 +33,7 @@
     {
       "id": "aw-ultra-3-titanio-preto-49mm-oceano-preto",
       "label": "Titânio Preto 49mm · Oceano Preto",
-      "price": 4198.9,
+      "price": 6298.9,
       "images": [
         "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-oceano-preto-1.webp"
       ],
@@ -58,7 +58,7 @@
     {
       "id": "aw-ultra-3-titanio-preto-49mm-loop-alpine-preto",
       "label": "Titânio Preto 49mm · Loop Alpine Preto",
-      "price": 4295.9,
+      "price": 6443.9,
       "images": [
         "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-alpine-preto-1.webp"
       ],
@@ -83,7 +83,7 @@
     {
       "id": "aw-ultra-3-titanio-preto-49mm-loop-trail-preto-m-l",
       "label": "Titânio Preto 49mm · Loop Trail Preto M/L",
-      "price": 4337.9,
+      "price": 6506.9,
       "images": [
         "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-trail-preto-m-l-1.webp"
       ],
@@ -108,7 +108,7 @@
     {
       "id": "aw-ultra-3-titanio-natural-49mm-loop-trail-azul-m-l",
       "label": "Titânio Natural 49mm · Loop Trail Azul M/L",
-      "price": 4386.9,
+      "price": 6580.9,
       "images": [
         "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-loop-trail-azul-m-l-1.webp"
       ],
@@ -132,7 +132,7 @@
     {
       "id": "aw-ultra-3-titanio-preto-49mm-loop-alpine-preto-2",
       "label": "Titânio Preto 49mm · Loop Alpine Preto (2)",
-      "price": 4386.9,
+      "price": 6580.9,
       "images": [
         "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-alpine-preto-2-1.webp"
       ],
@@ -157,7 +157,7 @@
     {
       "id": "aw-ultra-3-titanio-natural-49mm-loop-alpine-azul",
       "label": "Titânio Natural 49mm · Loop Alpine Azul",
-      "price": 4434.9,
+      "price": 6652.9,
       "images": [
         "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-loop-alpine-azul-1.webp"
       ],
@@ -182,7 +182,7 @@
     {
       "id": "aw-ultra-3-titanio-preto-49mm-milanes-de-titanio-preto",
       "label": "Titânio Preto 49mm · Milanês de Titânio Preto",
-      "price": 4809.9,
+      "price": 7214.9,
       "images": [
         "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-milanes-de-titanio-preto-1.webp"
       ],
@@ -206,7 +206,7 @@
     {
       "id": "aw-ultra-3-titanio-natural-49mm-milanes-de-titanio-l",
       "label": "Titânio Natural 49mm · Milanês de Titânio L",
-      "price": 5354.9,
+      "price": 8032.9,
       "images": [
         "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-milanes-de-titanio-l-1.webp"
       ],
@@ -227,5 +227,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -1,0 +1,52 @@
+{
+  "id": "pf-paco-rabanne-invictus-masculino",
+  "name": "Paco Rabanne Invictus Masculino",
+  "brand": "Paco",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 481.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-paco-rabanne-invictus-masculino/rabanne-invictus-eau-de-toilette-100ml-1.webp",
+    "/catalog/perfumes/pf-paco-rabanne-invictus-masculino/rabanne-invictus-eau-de-toilette-100ml-2.webp",
+    "/catalog/perfumes/pf-paco-rabanne-invictus-masculino/rabanne-invictus-eau-de-toilette-100ml-3.webp"
+  ],
+  "description": "Paco Rabanne Invictus, Eau de Toilette 100 ml. Notas de topo: Acorde marinho, Toranja, Tangerina; coração: Folha de louro, Jasmim; fundo: Madeira guaiac, Musgo de carvalho, Patchouli, Âmbar-gris.",
+  "specs": [
+    "Edição: Rabanne Invictus",
+    "Concentração: Eau de Toilette",
+    "Volume: 100 ml",
+    "Notas de topo: Acorde marinho, Toranja, Tangerina",
+    "Notas de coração: Folha de louro, Jasmim",
+    "Notas de fundo: Madeira guaiac, Musgo de carvalho, Patchouli, Âmbar-gris",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Paco, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-paco-rabanne-invictus-masculino-rabanne-invictus-eau-de-toilette-100ml",
+      "label": "Rabanne Invictus · Eau de Toilette · 100ml",
+      "price": 481.9,
+      "images": [
+        "/catalog/perfumes/pf-paco-rabanne-invictus-masculino/rabanne-invictus-eau-de-toilette-100ml-1.webp",
+        "/catalog/perfumes/pf-paco-rabanne-invictus-masculino/rabanne-invictus-eau-de-toilette-100ml-2.webp",
+        "/catalog/perfumes/pf-paco-rabanne-invictus-masculino/rabanne-invictus-eau-de-toilette-100ml-3.webp"
+      ],
+      "description": "Paco Rabanne Invictus, Eau de Toilette 100 ml. Notas de topo: Acorde marinho, Toranja, Tangerina; coração: Folha de louro, Jasmim; fundo: Madeira guaiac, Musgo de carvalho, Patchouli, Âmbar-gris.",
+      "specs": [
+        "Edição: Rabanne Invictus",
+        "Concentração: Eau de Toilette",
+        "Volume: 100 ml",
+        "Notas de topo: Acorde marinho, Toranja, Tangerina",
+        "Notas de coração: Folha de louro, Jasmim",
+        "Notas de fundo: Madeira guaiac, Musgo de carvalho, Patchouli, Âmbar-gris",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

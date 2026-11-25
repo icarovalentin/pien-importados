@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 5439.9,
+  "price": 8159.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "ap-iphone-17-256gb-8gb-salvia",
       "label": "256GB/8GB · Sálvia",
-      "price": 5439.9,
+      "price": 8159.9,
       "images": [
         "/catalog/phones/ap-iphone-17/256gb-8gb-salvia-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "ap-iphone-17-256gb-8gb-branco",
       "label": "256GB/8GB · Branco",
-      "price": 5747.9,
+      "price": 8621.9,
       "images": [
         "/catalog/phones/ap-iphone-17/256gb-8gb-branco-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "ap-iphone-17-256gb-8gb-lavanda",
       "label": "256GB/8GB · Lavanda",
-      "price": 5747.9,
+      "price": 8621.9,
       "images": [
         "/catalog/phones/ap-iphone-17/256gb-8gb-lavanda-1.webp"
       ],
@@ -90,7 +90,7 @@
     {
       "id": "ap-iphone-17-256gb-8gb-preto",
       "label": "256GB/8GB · Preto",
-      "price": 5747.9,
+      "price": 8621.9,
       "images": [
         "/catalog/phones/ap-iphone-17/256gb-8gb-preto-1.webp"
       ],
@@ -111,7 +111,7 @@
     {
       "id": "ap-iphone-17-256gb-8gb-lavanda-a3519-4j",
       "label": "256GB/8GB · Lavanda (A3519 4J)",
-      "price": 5777.9,
+      "price": 8666.9,
       "images": [
         "/catalog/phones/ap-iphone-17/256gb-8gb-lavanda-a3519-4j-1.webp"
       ],
@@ -131,7 +131,7 @@
     {
       "id": "ap-iphone-17-256gb-8gb-preto-a3519-4j",
       "label": "256GB/8GB · Preto (A3519 4J)",
-      "price": 5838.9,
+      "price": 8758.9,
       "images": [
         "/catalog/phones/ap-iphone-17/256gb-8gb-preto-a3519-4j-1.webp"
       ],
@@ -152,7 +152,7 @@
     {
       "id": "ap-iphone-17-256gb-8gb-branco-a3519-4j",
       "label": "256GB/8GB · Branco (A3519 4J)",
-      "price": 5868.9,
+      "price": 8803.9,
       "images": [
         "/catalog/phones/ap-iphone-17/256gb-8gb-branco-a3519-4j-1.webp"
       ],
@@ -170,5 +170,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

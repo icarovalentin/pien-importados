@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 2238.9,
+  "price": 3358.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "sg-galaxy-a56-5g-256gb-8gb-azul",
       "label": "256GB/8GB · Azul",
-      "price": 2238.9,
+      "price": 3358.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-azul-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "sg-galaxy-a56-5g-256gb-8gb-verde",
       "label": "256GB/8GB · Verde",
-      "price": 2238.9,
+      "price": 3358.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-verde-1.webp"
       ],
@@ -68,5 +68,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

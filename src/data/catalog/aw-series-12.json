@@ -2,9 +2,9 @@
   "id": "aw-series-12",
   "name": "Apple Watch Series 12",
   "brand": "Apple",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Smartwatch",
-  "price": 2414.9,
+  "price": 3622.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -32,7 +32,7 @@
     {
       "id": "aw-series-12-aluminio-42mm-bronze-escuro-esportiva-olive-s-m",
       "label": "Alumínio 42mm Bronze Escuro · Esportiva Olive S/M",
-      "price": 2414.9,
+      "price": 3622.9,
       "images": [
         "/catalog/applewatch/aw-series-12/aluminio-42mm-bronze-escuro-esportiva-olive-s-m-1.webp"
       ],
@@ -56,7 +56,7 @@
     {
       "id": "aw-series-12-aluminio-42mm-preto-esportiva-preto-s-m",
       "label": "Alumínio 42mm Preto · Esportiva Preto S/M",
-      "price": 2420.9,
+      "price": 3631.9,
       "images": [
         "/catalog/applewatch/aw-series-12/aluminio-42mm-preto-esportiva-preto-s-m-1.webp"
       ],
@@ -80,7 +80,7 @@
     {
       "id": "aw-series-12-aluminio-42mm-dourado-esportiva-areia-s-m",
       "label": "Alumínio 42mm Dourado · Esportiva Areia S/M",
-      "price": 2444.9,
+      "price": 3667.9,
       "images": [
         "/catalog/applewatch/aw-series-12/aluminio-42mm-dourado-esportiva-areia-s-m-1.webp"
       ],
@@ -104,7 +104,7 @@
     {
       "id": "aw-series-12-aluminio-42mm-cinza-espacial-esportiva-azul-marinho-s-m",
       "label": "Alumínio 42mm Cinza Espacial · Esportiva Azul Marinho S/M",
-      "price": 2510.9,
+      "price": 3766.9,
       "images": [
         "/catalog/applewatch/aw-series-12/aluminio-42mm-cinza-espacial-esportiva-azul-marinho-s-m-1.webp"
       ],
@@ -128,7 +128,7 @@
     {
       "id": "aw-series-12-aluminio-46mm-cinza-espacial-esportiva-azul-marinho-m-l",
       "label": "Alumínio 46mm Cinza Espacial · Esportiva Azul Marinho M/L",
-      "price": 2752.9,
+      "price": 4129.9,
       "images": [
         "/catalog/applewatch/aw-series-12/aluminio-46mm-cinza-espacial-esportiva-azul-marinho-m-l-1.webp"
       ],
@@ -152,7 +152,7 @@
     {
       "id": "aw-series-12-aluminio-46mm-preto-esportiva-preto-m-l",
       "label": "Alumínio 46mm Preto · Esportiva Preto M/L",
-      "price": 2752.9,
+      "price": 4129.9,
       "images": [
         "/catalog/applewatch/aw-series-12/aluminio-46mm-preto-esportiva-preto-m-l-1.webp"
       ],
@@ -176,7 +176,7 @@
     {
       "id": "aw-series-12-aluminio-46mm-bronze-escuro-esportiva-oliva-m-l",
       "label": "Alumínio 46mm Bronze Escuro · Esportiva Oliva M/L",
-      "price": 2752.9,
+      "price": 4129.9,
       "images": [
         "/catalog/applewatch/aw-series-12/aluminio-46mm-bronze-escuro-esportiva-oliva-m-l-1.webp"
       ],
@@ -197,5 +197,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

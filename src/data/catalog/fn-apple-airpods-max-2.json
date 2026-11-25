@@ -2,9 +2,9 @@
   "id": "fn-apple-airpods-max-2",
   "name": "Apple AirPods Max 2",
   "brand": "Apple",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 2952.9,
+  "price": 4429.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -27,7 +27,7 @@
     {
       "id": "fn-apple-airpods-max-2-roxo",
       "label": "Roxo",
-      "price": 2952.9,
+      "price": 4429.9,
       "images": [
         "/catalog/fones/fn-apple-airpods-max-2/roxo-1.webp"
       ],
@@ -46,7 +46,7 @@
     {
       "id": "fn-apple-airpods-max-2-branco",
       "label": "Branco",
-      "price": 3019.9,
+      "price": 4529.9,
       "images": [
         "/catalog/fones/fn-apple-airpods-max-2/branco-1.webp"
       ],
@@ -65,7 +65,7 @@
     {
       "id": "fn-apple-airpods-max-2-laranja",
       "label": "Laranja",
-      "price": 3019.9,
+      "price": 4529.9,
       "images": [
         "/catalog/fones/fn-apple-airpods-max-2/laranja-1.webp"
       ],
@@ -81,5 +81,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

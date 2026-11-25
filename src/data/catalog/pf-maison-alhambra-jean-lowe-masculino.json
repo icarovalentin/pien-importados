@@ -4,7 +4,7 @@
   "brand": "MAISON",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 102.9,
+  "price": 154.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "pf-maison-alhambra-jean-lowe-masculino-summer-vibes-eau-de-parfum-100ml",
       "label": "Summer Vibes · Eau de Parfum · 100ml",
-      "price": 102.9,
+      "price": 154.9,
       "images": [
         "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/summer-vibes-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/summer-vibes-eau-de-parfum-100ml-2.webp"
@@ -50,7 +50,7 @@
     {
       "id": "pf-maison-alhambra-jean-lowe-masculino-jean-lowe-summer-vibes-eau-de-parfum-100ml",
       "label": "Jean Lowe Summer Vibes · Eau de Parfum · 100ml",
-      "price": 115.9,
+      "price": 173.9,
       "images": [
         "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/jean-lowe-summer-vibes-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/jean-lowe-summer-vibes-eau-de-parfum-100ml-2.webp"
@@ -68,5 +68,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

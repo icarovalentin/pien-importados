@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "eletronicos",
   "categoryLabel": "Tablets",
-  "price": 7193.9,
+  "price": 10790.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -31,7 +31,7 @@
     {
       "id": "tb-apple-ipad-pro-2025-11-256gb-12gb-preto",
       "label": "11\" · 256GB/12GB · Preto",
-      "price": 7193.9,
+      "price": 10790.9,
       "images": [
         "/catalog/tablets/tb-apple-ipad-pro-2025/11-256gb-12gb-preto-1.webp"
       ],
@@ -51,5 +51,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

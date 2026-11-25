@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 604.9,
+  "price": 907.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "xm-redmi-a7-64gb-3gb-preto",
       "label": "64GB/3GB · Preto",
-      "price": 604.9,
+      "price": 907.9,
       "images": [
         "/catalog/phones/xm-redmi-a7/64gb-3gb-preto-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "xm-redmi-a7-64gb-3gb-roxo",
       "label": "64GB/3GB · Roxo",
-      "price": 604.9,
+      "price": 907.9,
       "images": [
         "/catalog/phones/xm-redmi-a7/64gb-3gb-roxo-1.webp"
       ],
@@ -65,5 +65,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -1,0 +1,52 @@
+{
+  "id": "pf-lattafa-angham-unissex",
+  "name": "Lattafa Angham Unissex",
+  "brand": "Lattafa",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 181.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lattafa-angham-unissex/angham-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-lattafa-angham-unissex/angham-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-lattafa-angham-unissex/angham-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "Lattafa Angham, Eau de Parfum 100 ml. Notas de topo: Gengibre, Mandarina, Pimenta Rosa; coração: Lavanda, Pralinê, Cacau, Jasmim; fundo: Baunilha, Âmbar, Almíscar.",
+  "specs": [
+    "Edição: Angham",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Notas de topo: Gengibre, Mandarina, Pimenta Rosa",
+    "Notas de coração: Lavanda, Pralinê, Cacau, Jasmim",
+    "Notas de fundo: Baunilha, Âmbar, Almíscar",
+    "Gênero: Unissex",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Lattafa, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lattafa-angham-unissex-angham-eau-de-parfum-100ml",
+      "label": "Angham · Eau de Parfum · 100ml",
+      "price": 181.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-angham-unissex/angham-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-angham-unissex/angham-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-angham-unissex/angham-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lattafa Angham, Eau de Parfum 100 ml. Notas de topo: Gengibre, Mandarina, Pimenta Rosa; coração: Lavanda, Pralinê, Cacau, Jasmim; fundo: Baunilha, Âmbar, Almíscar.",
+      "specs": [
+        "Edição: Angham",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Notas de topo: Gengibre, Mandarina, Pimenta Rosa",
+        "Notas de coração: Lavanda, Pralinê, Cacau, Jasmim",
+        "Notas de fundo: Baunilha, Âmbar, Almíscar",
+        "Gênero: Unissex",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

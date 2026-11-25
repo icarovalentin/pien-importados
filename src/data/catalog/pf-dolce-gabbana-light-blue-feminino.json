@@ -1,0 +1,42 @@
+{
+  "id": "pf-dolce-gabbana-light-blue-feminino",
+  "name": "Dolce & Gabbana Light Blue Feminino",
+  "brand": "Dolce Gabbana",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 619.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-dolce-gabbana-light-blue-feminino/light-blue-eau-de-toilette-100ml-1.webp"
+  ],
+  "description": "Dolce Gabbana Light Blue, 100ml. Perfume feminino de família olfativa floral frutal.",
+  "specs": [
+    "Edição: Light Blue",
+    "Volume: 100ml",
+    "Família olfativa: Floral Frutal",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Dolce Gabbana, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-dolce-gabbana-light-blue-feminino-light-blue-eau-de-toilette-100ml",
+      "label": "Light Blue · Eau de Toilette · 100ml",
+      "price": 619.9,
+      "images": [
+        "/catalog/perfumes/pf-dolce-gabbana-light-blue-feminino/light-blue-eau-de-toilette-100ml-1.webp"
+      ],
+      "description": "Dolce Gabbana Light Blue, 100ml. Perfume feminino de família olfativa floral frutal.",
+      "specs": [
+        "Edição: Light Blue",
+        "Volume: 100ml",
+        "Família olfativa: Floral Frutal",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

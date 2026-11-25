@@ -1,0 +1,94 @@
+{
+  "id": "pf-lattafa-khamrah-unissex",
+  "name": "Lattafa Khamrah Unissex",
+  "brand": "LATTAFA",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 158.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lattafa-khamrah-unissex/khamrah-dukhan-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-lattafa-khamrah-unissex/khamrah-dukhan-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-lattafa-khamrah-unissex/khamrah-dukhan-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "LATTAFA Khamrah Dukhan, Eau de Parfum 100 ml. Perfume unissex de família olfativa oriental especiado. Notas de topo: Canela, Noz-moscada e Bergamota; coração: Tâmaras, Pralinê, Tuberosa e Mahonial; fundo: Incenso, Baunilha, Âmbar e Mirra.",
+  "specs": [
+    "Edição: Khamrah Dukhan",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Oriental Especiado",
+    "Notas de topo: Canela, Noz-moscada e Bergamota",
+    "Notas de coração: Tâmaras, Pralinê, Tuberosa e Mahonial",
+    "Notas de fundo: Incenso, Baunilha, Âmbar e Mirra",
+    "Gênero: Unissex",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original LATTAFA, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lattafa-khamrah-unissex-khamrah-dukhan-eau-de-parfum-100ml",
+      "label": "Khamrah Dukhan · Eau de Parfum · 100ml",
+      "price": 158.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-khamrah-unissex/khamrah-dukhan-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-khamrah-unissex/khamrah-dukhan-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-khamrah-unissex/khamrah-dukhan-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "LATTAFA Khamrah Dukhan, Eau de Parfum 100 ml. Perfume unissex de família olfativa oriental especiado. Notas de topo: Canela, Noz-moscada e Bergamota; coração: Tâmaras, Pralinê, Tuberosa e Mahonial; fundo: Incenso, Baunilha, Âmbar e Mirra.",
+      "specs": [
+        "Edição: Khamrah Dukhan",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Oriental Especiado",
+        "Notas de topo: Canela, Noz-moscada e Bergamota",
+        "Notas de coração: Tâmaras, Pralinê, Tuberosa e Mahonial",
+        "Notas de fundo: Incenso, Baunilha, Âmbar e Mirra",
+        "Gênero: Unissex",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-lattafa-khamrah-unissex-khamrah-qahwa-eau-de-parfum-100ml",
+      "label": "Khamrah Qahwa · Eau de Parfum · 100ml",
+      "price": 171.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-khamrah-unissex/khamrah-qahwa-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-khamrah-unissex/khamrah-qahwa-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-khamrah-unissex/khamrah-qahwa-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lattafa Khamrah Qahwa, Eau de Parfum 100 ml. Perfume unissex de família olfativa agridoce e floral. Notas de topo: Canela, Cardamomo, Gengibre; coração: Pralinê, Fruta Cristalizada, Flores Brancas; fundo: Baunilha, Café, Fava Tonka, Benjoim, Almíscar.",
+      "specs": [
+        "Edição: Khamrah Qahwa",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Agridoce e Floral",
+        "Notas de topo: Canela, Cardamomo, Gengibre",
+        "Notas de coração: Pralinê, Fruta Cristalizada, Flores Brancas",
+        "Notas de fundo: Baunilha, Café, Fava Tonka, Benjoim, Almíscar",
+        "Gênero: Unissex",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-lattafa-khamrah-unissex-waha-eau-de-parfum-100ml",
+      "label": "Waha · Eau de Parfum · 100ml",
+      "price": 286.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-khamrah-unissex/waha-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-khamrah-unissex/waha-eau-de-parfum-100ml-2.webp"
+      ],
+      "description": "Lattafa Waha, Eau de Parfum (EDP) 100ml. Perfume unissex de família olfativa acuática aromática.",
+      "specs": [
+        "Edição: Waha",
+        "Concentração: Eau de Parfum (EDP)",
+        "Volume: 100ml",
+        "Família olfativa: Acuática aromática",
+        "Gênero: Unissex",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

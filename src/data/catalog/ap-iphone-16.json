@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 4567.9,
+  "price": 6851.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "ap-iphone-16-128gb-8gb-verde",
       "label": "128GB/8GB · Verde",
-      "price": 4567.9,
+      "price": 6851.9,
       "images": [
         "/catalog/phones/ap-iphone-16/128gb-8gb-verde-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "ap-iphone-16-128gb-8gb-preto",
       "label": "128GB/8GB · Preto",
-      "price": 4622.9,
+      "price": 6934.9,
       "images": [
         "/catalog/phones/ap-iphone-16/128gb-8gb-preto-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "ap-iphone-16-128gb-8gb-verde-acinzentado",
       "label": "128GB/8GB · Verde acinzentado",
-      "price": 4622.9,
+      "price": 6934.9,
       "images": [
         "/catalog/phones/ap-iphone-16/128gb-8gb-verde-acinzentado-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "ap-iphone-16-128gb-8gb-branco",
       "label": "128GB/8GB · Branco",
-      "price": 4622.9,
+      "price": 6934.9,
       "images": [
         "/catalog/phones/ap-iphone-16/128gb-8gb-branco-1.webp"
       ],
@@ -112,7 +112,7 @@
     {
       "id": "ap-iphone-16-128gb-8gb-ultramarino",
       "label": "128GB/8GB · Ultramarino",
-      "price": 4628.9,
+      "price": 6943.9,
       "images": [
         "/catalog/phones/ap-iphone-16/128gb-8gb-ultramarino-1.webp"
       ],
@@ -133,7 +133,7 @@
     {
       "id": "ap-iphone-16-128gb-8gb-rosa",
       "label": "128GB/8GB · Rosa",
-      "price": 4749.9,
+      "price": 7124.9,
       "images": [
         "/catalog/phones/ap-iphone-16/128gb-8gb-rosa-1.webp"
       ],
@@ -153,7 +153,7 @@
     {
       "id": "ap-iphone-16-128gb-8gb-branco-a3286-3j-a",
       "label": "128GB/8GB · Branco (A3286 3J/A)",
-      "price": 4834.9,
+      "price": 7252.9,
       "images": [
         "/catalog/phones/ap-iphone-16/128gb-8gb-branco-a3286-3j-a-1.webp"
       ],
@@ -174,7 +174,7 @@
     {
       "id": "ap-iphone-16-128gb-8gb-preto-a3286-3j-a",
       "label": "128GB/8GB · Preto (A3286 3J/A)",
-      "price": 4834.9,
+      "price": 7252.9,
       "images": [
         "/catalog/phones/ap-iphone-16/128gb-8gb-preto-a3286-3j-a-1.webp"
       ],
@@ -191,5 +191,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

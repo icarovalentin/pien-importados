@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 732.9,
+  "price": 1099.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -27,7 +27,7 @@
     {
       "id": "sg-galaxy-a07-64gb-4gb-verde",
       "label": "64GB/4GB · Verde",
-      "price": 732.9,
+      "price": 1099.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a07/64gb-4gb-verde-1.webp"
       ],
@@ -46,7 +46,7 @@
     {
       "id": "sg-galaxy-a07-64gb-4gb-violeta-claro",
       "label": "64GB/4GB · Violeta claro",
-      "price": 732.9,
+      "price": 1099.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a07/64gb-4gb-violeta-claro-1.webp"
       ],
@@ -66,7 +66,7 @@
     {
       "id": "sg-galaxy-a07-128gb-4gb-preto",
       "label": "128GB/4GB · Preto",
-      "price": 834.9,
+      "price": 1252.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-1.webp"
       ],
@@ -87,7 +87,7 @@
     {
       "id": "sg-galaxy-a07-128gb-4gb-roxo",
       "label": "128GB/4GB · Roxo",
-      "price": 853.9,
+      "price": 1280.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a07/128gb-4gb-roxo-1.webp"
       ],
@@ -107,7 +107,7 @@
     {
       "id": "sg-galaxy-a07-128gb-4gb-verde",
       "label": "128GB/4GB · Verde",
-      "price": 853.9,
+      "price": 1280.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a07/128gb-4gb-verde-1.webp"
       ],
@@ -127,7 +127,7 @@
     {
       "id": "sg-galaxy-a07-128gb-4gb-preto-2",
       "label": "128GB/4GB · Preto (2)",
-      "price": 877.9,
+      "price": 1316.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-2-1.webp"
       ],
@@ -147,7 +147,7 @@
     {
       "id": "sg-galaxy-a07-128gb-4gb-preto-3",
       "label": "128GB/4GB · Preto (3)",
-      "price": 877.9,
+      "price": 1316.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-3-1.webp"
       ],
@@ -165,5 +165,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

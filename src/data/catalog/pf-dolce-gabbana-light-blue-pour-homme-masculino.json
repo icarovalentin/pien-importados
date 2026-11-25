@@ -1,0 +1,46 @@
+{
+  "id": "pf-dolce-gabbana-light-blue-pour-homme-masculino",
+  "name": "Dolce & Gabbana Light Blue Pour Homme Masculino",
+  "brand": "Dolce Gabbana",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 630.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-dolce-gabbana-light-blue-pour-homme-masculino/light-blue-pour-homme-eau-de-toilette-100ml-1.webp",
+    "/catalog/perfumes/pf-dolce-gabbana-light-blue-pour-homme-masculino/light-blue-pour-homme-eau-de-toilette-100ml-2.webp"
+  ],
+  "description": "Dolce Gabbana Light Blue Pour Homme, Eau de Toilette (EDT) 100ml. Perfume masculino de família olfativa cítrica aromática.",
+  "specs": [
+    "Edição: Light Blue Pour Homme",
+    "Concentração: Eau de Toilette (EDT)",
+    "Volume: 100ml",
+    "Família olfativa: Cítrica aromática",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Dolce Gabbana, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-dolce-gabbana-light-blue-pour-homme-masculino-light-blue-pour-homme-eau-de-toilette-100ml",
+      "label": "Light Blue Pour Homme · Eau de Toilette · 100ml",
+      "price": 630.9,
+      "images": [
+        "/catalog/perfumes/pf-dolce-gabbana-light-blue-pour-homme-masculino/light-blue-pour-homme-eau-de-toilette-100ml-1.webp",
+        "/catalog/perfumes/pf-dolce-gabbana-light-blue-pour-homme-masculino/light-blue-pour-homme-eau-de-toilette-100ml-2.webp"
+      ],
+      "description": "Dolce Gabbana Light Blue Pour Homme, Eau de Toilette (EDT) 100ml. Perfume masculino de família olfativa cítrica aromática.",
+      "specs": [
+        "Edição: Light Blue Pour Homme",
+        "Concentração: Eau de Toilette (EDT)",
+        "Volume: 100ml",
+        "Família olfativa: Cítrica aromática",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

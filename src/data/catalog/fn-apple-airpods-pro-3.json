@@ -2,9 +2,9 @@
   "id": "fn-apple-airpods-pro-3",
   "name": "Apple AirPods Pro 3",
   "brand": "Apple",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 1482.9,
+  "price": 2224.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "fn-apple-airpods-pro-3-branco",
       "label": "Branco",
-      "price": 1482.9,
+      "price": 2224.9,
       "images": [
         "/catalog/fones/fn-apple-airpods-pro-3/branco-1.webp"
       ],
@@ -45,5 +45,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

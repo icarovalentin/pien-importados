@@ -1,0 +1,40 @@
+{
+  "id": "pf-carolina-herrera-212-vip-black-masculino",
+  "name": "Carolina Herrera 212 VIP Black Masculino",
+  "brand": "Carolina Herrera",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 572.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-carolina-herrera-212-vip-black-masculino/212-vip-black-eau-de-parfum-100ml-1.webp"
+  ],
+  "description": "Carolina Herrera 212 VIP Black, 100ml.",
+  "specs": [
+    "Edição: 212 VIP Black",
+    "Volume: 100ml",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Carolina Herrera, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-carolina-herrera-212-vip-black-masculino-212-vip-black-eau-de-parfum-100ml",
+      "label": "212 VIP Black · Eau de Parfum · 100ml",
+      "price": 572.9,
+      "images": [
+        "/catalog/perfumes/pf-carolina-herrera-212-vip-black-masculino/212-vip-black-eau-de-parfum-100ml-1.webp"
+      ],
+      "description": "Carolina Herrera 212 VIP Black, 100ml.",
+      "specs": [
+        "Edição: 212 VIP Black",
+        "Volume: 100ml",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

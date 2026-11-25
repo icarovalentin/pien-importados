@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "eletronicos",
   "categoryLabel": "Tablets",
-  "price": 845.9,
+  "price": 1268.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-9-7-64gb-4gb-cinza",
       "label": "9.7\" · 64GB/4GB · Cinza",
-      "price": 845.9,
+      "price": 1268.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-64gb-4gb-cinza-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-9-7-128gb-4gb-cinza",
       "label": "9.7\" · 128GB/4GB · Cinza",
-      "price": 962.9,
+      "price": 1444.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2/9-7-128gb-4gb-cinza-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-11-128gb-4gb-verde",
       "label": "11\" · 128GB/4GB · Verde",
-      "price": 1046.9,
+      "price": 1570.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-128gb-4gb-verde-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-11-256gb-4gb-cinza",
       "label": "11\" · 256GB/4GB · Cinza",
-      "price": 1113.9,
+      "price": 1670.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-4gb-cinza-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-11-256gb-4gb-cinza-2",
       "label": "11\" · 256GB/4GB · Cinza (2)",
-      "price": 1113.9,
+      "price": 1670.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-4gb-cinza-2-1.webp"
       ],
@@ -134,7 +134,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-11-256gb-8gb-cinza",
       "label": "11\" · 256GB/8GB · Cinza",
-      "price": 1318.9,
+      "price": 1978.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-cinza-1.webp"
       ],
@@ -155,7 +155,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-11-256gb-8gb-cinza-com-capa",
       "label": "11\" · 256GB/8GB · Cinza · com capa",
-      "price": 1325.9,
+      "price": 1988.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-cinza-com-capa-1.webp"
       ],
@@ -177,7 +177,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-11-256gb-8gb-roxo-com-capa",
       "label": "11\" · 256GB/8GB · Roxo · com capa",
-      "price": 1325.9,
+      "price": 1988.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2/11-256gb-8gb-roxo-com-capa-1.webp"
       ],
@@ -196,5 +196,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -4,7 +4,7 @@
   "brand": "French Avenue",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 181.9,
+  "price": 272.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -30,7 +30,7 @@
     {
       "id": "pf-french-avenue-liquid-brun-masculino-liquid-brun-eau-de-parfum-100ml",
       "label": "Liquid Brun · Eau de Parfum · 100ml",
-      "price": 181.9,
+      "price": 272.9,
       "images": [
         "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-100ml-2.webp",
@@ -52,7 +52,7 @@
     {
       "id": "pf-french-avenue-liquid-brun-masculino-liquid-brun-eau-de-parfum-150ml",
       "label": "Liquid Brun · Eau de Parfum · 150ml",
-      "price": 260.9,
+      "price": 391.9,
       "images": [
         "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-150ml-1.webp"
       ],
@@ -69,5 +69,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

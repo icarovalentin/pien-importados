@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 5414.9,
+  "price": 8122.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "ap-iphone-air-256gb-12gb-preto",
       "label": "256GB/12GB · Preto",
-      "price": 5414.9,
+      "price": 8122.9,
       "images": [
         "/catalog/phones/ap-iphone-air/256gb-12gb-preto-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "ap-iphone-air-256gb-12gb-branco",
       "label": "256GB/12GB · Branco",
-      "price": 5626.9,
+      "price": 8440.9,
       "images": [
         "/catalog/phones/ap-iphone-air/256gb-12gb-branco-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "ap-iphone-air-256gb-12gb-dourado",
       "label": "256GB/12GB · Dourado",
-      "price": 5626.9,
+      "price": 8440.9,
       "images": [
         "/catalog/phones/ap-iphone-air/256gb-12gb-dourado-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "ap-iphone-air-512gb-12gb-preto",
       "label": "512GB/12GB · Preto",
-      "price": 6019.9,
+      "price": 9029.9,
       "images": [
         "/catalog/phones/ap-iphone-air/512gb-12gb-preto-1.webp"
       ],
@@ -110,5 +110,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

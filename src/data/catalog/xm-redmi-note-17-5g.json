@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 1299.9,
+  "price": 1949.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-redmi-note-17-5g-128gb-6gb-preto",
       "label": "128GB/6GB · Preto",
-      "price": 1299.9,
+      "price": 1949.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-5g/128gb-6gb-preto-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-redmi-note-17-5g-256gb-8gb-preto",
       "label": "256GB/8GB · Preto",
-      "price": 1438.9,
+      "price": 2158.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-5g/256gb-8gb-preto-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "xm-redmi-note-17-5g-256gb-6gb-verde",
       "label": "256GB/6GB · Verde",
-      "price": 1492.9,
+      "price": 2239.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-5g/256gb-6gb-verde-1.webp"
       ],
@@ -89,5 +89,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

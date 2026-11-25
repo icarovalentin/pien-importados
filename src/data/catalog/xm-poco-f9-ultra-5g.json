@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 4348.9,
+  "price": 6523.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-poco-f9-ultra-5g-256gb-12gb-preto",
       "label": "256GB/12GB · Preto",
-      "price": 4348.9,
+      "price": 6523.9,
       "images": [
         "/catalog/phones/xm-poco-f9-ultra-5g/256gb-12gb-preto-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-poco-f9-ultra-5g-256gb-12gb-vermelho",
       "label": "256GB/12GB · Vermelho",
-      "price": 4348.9,
+      "price": 6523.9,
       "images": [
         "/catalog/phones/xm-poco-f9-ultra-5g/256gb-12gb-vermelho-1.webp"
       ],
@@ -70,7 +70,7 @@
     {
       "id": "xm-poco-f9-ultra-5g-512gb-16gb-preto",
       "label": "512GB/16GB · Preto",
-      "price": 5020.9,
+      "price": 7531.9,
       "images": [
         "/catalog/phones/xm-poco-f9-ultra-5g/512gb-16gb-preto-1.webp"
       ],
@@ -90,7 +90,7 @@
     {
       "id": "xm-poco-f9-ultra-5g-1tb-16gb-vermelho",
       "label": "1TB/16GB · Vermelho",
-      "price": 6532.9,
+      "price": 9799.9,
       "images": [
         "/catalog/phones/xm-poco-f9-ultra-5g/1tb-16gb-vermelho-1.webp"
       ],
@@ -107,5 +107,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

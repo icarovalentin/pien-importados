@@ -4,7 +4,7 @@
   "brand": "Al Wataniah",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 81.9,
+  "price": 122.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "pf-al-wataniah-sabah-al-ward-feminino-sabah-al-ward-sugar-eau-de-parfum-100ml",
       "label": "Sabah Al Ward Sugar · Eau de Parfum · 100ml",
-      "price": 81.9,
+      "price": 122.9,
       "images": [
         "/catalog/perfumes/pf-al-wataniah-sabah-al-ward-feminino/sabah-al-ward-sugar-eau-de-parfum-100ml-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "pf-al-wataniah-sabah-al-ward-feminino-sabah-al-ward-eau-de-parfum-100ml",
       "label": "Sabah Al Ward · Eau de Parfum · 100ml",
-      "price": 90.9,
+      "price": 136.9,
       "images": [
         "/catalog/perfumes/pf-al-wataniah-sabah-al-ward-feminino/sabah-al-ward-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-al-wataniah-sabah-al-ward-feminino/sabah-al-ward-eau-de-parfum-100ml-2.webp",
@@ -70,7 +70,7 @@
     {
       "id": "pf-al-wataniah-sabah-al-ward-feminino-sabah-al-ward-al-wataniah-eau-de-parfum-100ml",
       "label": "Sabah Al Ward Al Wataniah · Eau de Parfum · 100ml",
-      "price": 121.9,
+      "price": 182.9,
       "images": [
         "/catalog/perfumes/pf-al-wataniah-sabah-al-ward-feminino/sabah-al-ward-al-wataniah-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-al-wataniah-sabah-al-ward-feminino/sabah-al-ward-al-wataniah-eau-de-parfum-100ml-2.webp"
@@ -88,5 +88,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

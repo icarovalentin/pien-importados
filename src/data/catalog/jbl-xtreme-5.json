@@ -2,9 +2,9 @@
   "id": "jbl-xtreme-5",
   "name": "JBL Xtreme 5",
   "brand": "JBL",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Caixas de Som",
-  "price": 1433.9,
+  "price": 2150.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "jbl-xtreme-5-azul",
       "label": "Azul",
-      "price": 1433.9,
+      "price": 2150.9,
       "images": [
         "/catalog/jbl/xtreme-5/azul-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "jbl-xtreme-5-camuflado",
       "label": "Camuflado",
-      "price": 1433.9,
+      "price": 2150.9,
       "images": [
         "/catalog/jbl/xtreme-5/camuflado-1.webp"
       ],
@@ -68,7 +68,7 @@
     {
       "id": "jbl-xtreme-5-preto",
       "label": "Preto",
-      "price": 1433.9,
+      "price": 2150.9,
       "images": [
         "/catalog/jbl/xtreme-5/preto-1.webp"
       ],
@@ -85,5 +85,6 @@
         "Produto original JBL"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

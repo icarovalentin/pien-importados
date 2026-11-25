@@ -2,9 +2,9 @@
   "id": "jbl-go-5",
   "name": "JBL Go 5",
   "brand": "JBL",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Caixas de Som",
-  "price": 223.9,
+  "price": 335.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "jbl-go-5-azul",
       "label": "Azul",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/jbl/go-5/azul-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "jbl-go-5-preto",
       "label": "Preto",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/jbl/go-5/preto-1.webp"
       ],
@@ -68,7 +68,7 @@
     {
       "id": "jbl-go-5-branco",
       "label": "Branco",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/jbl/go-5/branco-1.webp"
       ],
@@ -88,7 +88,7 @@
     {
       "id": "jbl-go-5-vermelho",
       "label": "Vermelho",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/jbl/go-5/vermelho-1.webp"
       ],
@@ -108,7 +108,7 @@
     {
       "id": "jbl-go-5-camuflado",
       "label": "Camuflado",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/jbl/go-5/camuflado-1.webp"
       ],
@@ -128,7 +128,7 @@
     {
       "id": "jbl-go-5-roxo",
       "label": "Roxo",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/jbl/go-5/roxo-1.webp"
       ],
@@ -148,7 +148,7 @@
     {
       "id": "jbl-go-5-amarelo",
       "label": "Amarelo",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/jbl/go-5/amarelo-1.webp"
       ],
@@ -168,7 +168,7 @@
     {
       "id": "jbl-go-5-laranja",
       "label": "Laranja",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/jbl/go-5/laranja-1.webp"
       ],
@@ -185,5 +185,6 @@
         "Produto original JBL"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

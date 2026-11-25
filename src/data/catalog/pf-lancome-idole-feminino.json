@@ -4,7 +4,7 @@
   "brand": "Lancôme",
   "category": "perfumes",
   "categoryLabel": "Perfumaria",
-  "price": 602.9,
+  "price": 904.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "pf-lancome-idole-feminino-idole-eau-de-parfum-100ml",
       "label": "Idôle · Eau de Parfum · 100ml",
-      "price": 602.9,
+      "price": 904.9,
       "images": [
         "/catalog/perfumes/pf-lancome-idole-feminino/idole-eau-de-parfum-100ml-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "pf-lancome-idole-feminino-idole-lancome-eau-de-toilette-100ml",
       "label": "Idôle Lancôme · Eau de Toilette · 100ml",
-      "price": 617.9,
+      "price": 926.9,
       "images": [
         "/catalog/perfumes/pf-lancome-idole-feminino/idole-lancome-eau-de-toilette-100ml-1.webp",
         "/catalog/perfumes/pf-lancome-idole-feminino/idole-lancome-eau-de-toilette-100ml-2.webp"
@@ -66,5 +66,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

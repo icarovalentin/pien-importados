@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 3944.9,
+  "price": 5917.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "ap-iphone-15-128gb-6gb-azul",
       "label": "128GB/6GB · Azul",
-      "price": 3944.9,
+      "price": 5917.9,
       "images": [
         "/catalog/phones/ap-iphone-15/128gb-6gb-azul-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "ap-iphone-15-128gb-6gb-preto",
       "label": "128GB/6GB · Preto",
-      "price": 4023.9,
+      "price": 6035.9,
       "images": [
         "/catalog/phones/ap-iphone-15/128gb-6gb-preto-1.webp"
       ],
@@ -68,5 +68,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

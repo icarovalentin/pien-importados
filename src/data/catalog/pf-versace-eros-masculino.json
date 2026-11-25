@@ -1,0 +1,60 @@
+{
+  "id": "pf-versace-eros-masculino",
+  "name": "Versace Eros Masculino",
+  "brand": "Versace",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 631.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-versace-eros-masculino/eros-eau-de-toilette-100ml-1.webp",
+    "/catalog/perfumes/pf-versace-eros-masculino/eros-eau-de-toilette-100ml-2.webp"
+  ],
+  "description": "Versace Eros, 100ml.",
+  "specs": [
+    "Edição: Eros",
+    "Volume: 100ml",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Versace, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-versace-eros-masculino-eros-eau-de-toilette-100ml",
+      "label": "Eros · Eau de Toilette · 100ml",
+      "price": 631.9,
+      "images": [
+        "/catalog/perfumes/pf-versace-eros-masculino/eros-eau-de-toilette-100ml-1.webp",
+        "/catalog/perfumes/pf-versace-eros-masculino/eros-eau-de-toilette-100ml-2.webp"
+      ],
+      "description": "Versace Eros, 100ml.",
+      "specs": [
+        "Edição: Eros",
+        "Volume: 100ml",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-versace-eros-masculino-eros-eau-de-parfum-100ml",
+      "label": "Eros · Eau de Parfum · 100ml",
+      "price": 758.9,
+      "images": [
+        "/catalog/perfumes/pf-versace-eros-masculino/eros-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-versace-eros-masculino/eros-eau-de-parfum-100ml-2.webp"
+      ],
+      "description": "Versace Eros, Eau de Parfum 100ml. Perfume masculino de família olfativa âmbar amaderada.",
+      "specs": [
+        "Edição: Eros",
+        "Concentração: Eau de Parfum",
+        "Volume: 100ml",
+        "Família olfativa: Âmbar amaderada",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

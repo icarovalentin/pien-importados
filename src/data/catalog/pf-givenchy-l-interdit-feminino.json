@@ -4,7 +4,7 @@
   "brand": "GIVENCHY",
   "category": "perfumes",
   "categoryLabel": "Perfumaria",
-  "price": 438.9,
+  "price": 658.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -30,7 +30,7 @@
     {
       "id": "pf-givenchy-l-interdit-feminino-l-interdit-eau-de-toilette-80ml",
       "label": "l'interdit · Eau de Toilette · 80ml",
-      "price": 438.9,
+      "price": 658.9,
       "images": [
         "/catalog/perfumes/pf-givenchy-l-interdit-feminino/l-interdit-eau-de-toilette-80ml-1.webp",
         "/catalog/perfumes/pf-givenchy-l-interdit-feminino/l-interdit-eau-de-toilette-80ml-2.webp",
@@ -52,7 +52,7 @@
     {
       "id": "pf-givenchy-l-interdit-feminino-linterdit-parfum-80ml",
       "label": "L’Interdit · Parfum · 80ml",
-      "price": 605.9,
+      "price": 908.9,
       "images": [
         "/catalog/perfumes/pf-givenchy-l-interdit-feminino/linterdit-parfum-80ml-1.webp",
         "/catalog/perfumes/pf-givenchy-l-interdit-feminino/linterdit-parfum-80ml-2.webp"
@@ -70,5 +70,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

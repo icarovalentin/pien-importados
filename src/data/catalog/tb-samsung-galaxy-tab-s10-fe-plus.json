@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "eletronicos",
   "categoryLabel": "Tablets",
-  "price": 3085.9,
+  "price": 4628.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -30,7 +30,7 @@
     {
       "id": "tb-samsung-galaxy-tab-s10-fe-plus-13-1-128gb-8gb-cinza-com-caneta",
       "label": "13.1\" · 128GB/8GB · Cinza · com caneta",
-      "price": 3085.9,
+      "price": 4628.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-cinza-com-caneta-1.webp"
       ],
@@ -52,7 +52,7 @@
     {
       "id": "tb-samsung-galaxy-tab-s10-fe-plus-13-1-128gb-8gb-prata-com-caneta",
       "label": "13.1\" · 128GB/8GB · Prata · com caneta",
-      "price": 3085.9,
+      "price": 4628.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-s10-fe-plus/13-1-128gb-8gb-prata-com-caneta-1.webp"
       ],
@@ -72,5 +72,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

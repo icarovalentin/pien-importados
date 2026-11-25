@@ -1,0 +1,46 @@
+{
+  "id": "pf-lattafa-sutoor-feminino",
+  "name": "Lattafa Sutoor Feminino",
+  "brand": "Lattafa",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 146.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lattafa-sutoor-feminino/sutoor-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-lattafa-sutoor-feminino/sutoor-eau-de-parfum-100ml-2.webp"
+  ],
+  "description": "Lattafa Sutoor, Eau de Parfum 100ml. Perfume feminino de família olfativa frutal y floral.",
+  "specs": [
+    "Edição: Sutoor",
+    "Concentração: Eau de Parfum",
+    "Volume: 100ml",
+    "Família olfativa: Frutal y floral",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Lattafa, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lattafa-sutoor-feminino-sutoor-eau-de-parfum-100ml",
+      "label": "Sutoor · Eau de Parfum · 100ml",
+      "price": 146.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-sutoor-feminino/sutoor-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-sutoor-feminino/sutoor-eau-de-parfum-100ml-2.webp"
+      ],
+      "description": "Lattafa Sutoor, Eau de Parfum 100ml. Perfume feminino de família olfativa frutal y floral.",
+      "specs": [
+        "Edição: Sutoor",
+        "Concentração: Eau de Parfum",
+        "Volume: 100ml",
+        "Família olfativa: Frutal y floral",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

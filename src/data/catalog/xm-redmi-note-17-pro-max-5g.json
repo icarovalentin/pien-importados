@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 2339.9,
+  "price": 3509.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-256gb-8gb-preto",
       "label": "256GB/8GB · Preto",
-      "price": 2339.9,
+      "price": 3509.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/256gb-8gb-preto-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-256gb-8gb-preto-2",
       "label": "256GB/8GB · Preto (2)",
-      "price": 2339.9,
+      "price": 3509.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/256gb-8gb-preto-2-1.webp"
       ],
@@ -69,7 +69,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-256gb-8gb-branco",
       "label": "256GB/8GB · Branco",
-      "price": 2339.9,
+      "price": 3509.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/256gb-8gb-branco-1.webp"
       ],
@@ -90,7 +90,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-256gb-8gb-roxo",
       "label": "256GB/8GB · Roxo",
-      "price": 2339.9,
+      "price": 3509.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/256gb-8gb-roxo-1.webp"
       ],
@@ -111,7 +111,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-256gb-8gb-roxo-2",
       "label": "256GB/8GB · Roxo (2)",
-      "price": 2339.9,
+      "price": 3509.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/256gb-8gb-roxo-2-1.webp"
       ],
@@ -132,7 +132,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-256gb-8gb-verde",
       "label": "256GB/8GB · Verde",
-      "price": 2339.9,
+      "price": 3509.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/256gb-8gb-verde-1.webp"
       ],
@@ -153,7 +153,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-512gb-8gb-verde",
       "label": "512GB/8GB · Verde",
-      "price": 2613.9,
+      "price": 3920.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/512gb-8gb-verde-1.webp"
       ],
@@ -173,7 +173,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-512gb-8gb-verde-2",
       "label": "512GB/8GB · Verde (2)",
-      "price": 2613.9,
+      "price": 3920.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/512gb-8gb-verde-2-1.webp"
       ],
@@ -194,7 +194,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-512gb-8gb-branco",
       "label": "512GB/8GB · Branco",
-      "price": 2631.9,
+      "price": 3947.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/512gb-8gb-branco-1.webp"
       ],
@@ -215,7 +215,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-512gb-8gb-preto",
       "label": "512GB/8GB · Preto",
-      "price": 2631.9,
+      "price": 3947.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/512gb-8gb-preto-1.webp"
       ],
@@ -235,7 +235,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-512gb-8gb-branco-2",
       "label": "512GB/8GB · Branco (2)",
-      "price": 2631.9,
+      "price": 3947.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/512gb-8gb-branco-2-1.webp"
       ],
@@ -256,7 +256,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-512gb-8gb-roxo",
       "label": "512GB/8GB · Roxo",
-      "price": 2631.9,
+      "price": 3947.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/512gb-8gb-roxo-1.webp"
       ],
@@ -277,7 +277,7 @@
     {
       "id": "xm-redmi-note-17-pro-max-5g-512gb-8gb-roxo-2",
       "label": "512GB/8GB · Roxo (2)",
-      "price": 2631.9,
+      "price": 3947.9,
       "images": [
         "/catalog/phones/xm-redmi-note-17-pro-max-5g/512gb-8gb-roxo-2-1.webp"
       ],
@@ -294,5 +294,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

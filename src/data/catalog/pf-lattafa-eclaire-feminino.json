@@ -4,7 +4,7 @@
   "brand": "Lattafa",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 175.9,
+  "price": 263.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "pf-lattafa-eclaire-feminino-eclaire-eau-de-parfum-100ml",
       "label": "Eclaire · Eau de Parfum · 100ml",
-      "price": 175.9,
+      "price": 263.9,
       "images": [
         "/catalog/perfumes/pf-lattafa-eclaire-feminino/eclaire-eau-de-parfum-100ml-1.webp"
       ],
@@ -45,5 +45,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

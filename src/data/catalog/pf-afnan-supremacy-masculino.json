@@ -4,7 +4,7 @@
   "brand": "Afnan",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 293.9,
+  "price": 440.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -26,7 +26,7 @@
     {
       "id": "pf-afnan-supremacy-masculino-afnan-supremacy-collectors-edition-eau-de-parfum-masculino-100ml-eau-de-parfum",
       "label": "Afnan Supremacy Collector’s Edition Eau de Parfum Masculino 100ml · Eau de Parfum",
-      "price": 293.9,
+      "price": 440.9,
       "images": [
         "/catalog/perfumes/pf-afnan-supremacy-masculino/afnan-supremacy-collectors-edition-eau-de-parfum-masculino-100ml-eau-de-parfum-1.webp"
       ],
@@ -41,5 +41,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

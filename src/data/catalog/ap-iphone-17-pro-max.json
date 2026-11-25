@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 7139.9,
+  "price": 10709.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-laranja",
       "label": "256GB/12GB · Laranja",
-      "price": 7139.9,
+      "price": 10709.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-laranja-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-azul",
       "label": "256GB/12GB · Azul",
-      "price": 7350.9,
+      "price": 11026.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-azul-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-laranja-a3257-ll",
       "label": "256GB/12GB · Laranja (A3257 LL)",
-      "price": 7435.9,
+      "price": 11153.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-laranja-a3257-ll-1.webp"
       ],
@@ -91,7 +91,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-prata",
       "label": "256GB/12GB · Prata",
-      "price": 7502.9,
+      "price": 11254.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-prata-1.webp"
       ],
@@ -112,7 +112,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-prata-a3525-4j",
       "label": "256GB/12GB · Prata (A3525 4J)",
-      "price": 7562.9,
+      "price": 11344.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-prata-a3525-4j-1.webp"
       ],
@@ -133,7 +133,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-azul-a3257-ll",
       "label": "256GB/12GB · Azul (A3257 LL)",
-      "price": 7592.9,
+      "price": 11389.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-azul-a3257-ll-1.webp"
       ],
@@ -154,7 +154,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-laranja-a3525-aa",
       "label": "256GB/12GB · Laranja (A3525 AA)",
-      "price": 7592.9,
+      "price": 11389.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-laranja-a3525-aa-1.webp"
       ],
@@ -175,7 +175,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-laranja-a3257-ll-2",
       "label": "256GB/12GB · Laranja (A3257 LL) (2)",
-      "price": 7744.9,
+      "price": 11617.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-laranja-a3257-ll-2-1.webp"
       ],
@@ -196,7 +196,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-azul-a3525-4j",
       "label": "256GB/12GB · Azul (A3525 4J)",
-      "price": 7774.9,
+      "price": 11662.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-azul-a3525-4j-1.webp"
       ],
@@ -217,7 +217,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-laranja-a3525-4j",
       "label": "256GB/12GB · Laranja (A3525 4J)",
-      "price": 7774.9,
+      "price": 11662.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-laranja-a3525-4j-1.webp"
       ],
@@ -238,7 +238,7 @@
     {
       "id": "ap-iphone-17-pro-max-256gb-12gb-prata-a3525-4j-2",
       "label": "256GB/12GB · Prata (A3525 4J) (2)",
-      "price": 7792.9,
+      "price": 11689.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/256gb-12gb-prata-a3525-4j-2-1.webp"
       ],
@@ -258,7 +258,7 @@
     {
       "id": "ap-iphone-17-pro-max-512gb-12gb-laranja",
       "label": "512GB/12GB · Laranja",
-      "price": 8802.9,
+      "price": 13204.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/512gb-12gb-laranja-1.webp"
       ],
@@ -278,7 +278,7 @@
     {
       "id": "ap-iphone-17-pro-max-512gb-12gb-azul",
       "label": "512GB/12GB · Azul",
-      "price": 8893.9,
+      "price": 13340.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/512gb-12gb-azul-1.webp"
       ],
@@ -299,7 +299,7 @@
     {
       "id": "ap-iphone-17-pro-max-512gb-12gb-prata",
       "label": "512GB/12GB · Prata",
-      "price": 8923.9,
+      "price": 13385.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/512gb-12gb-prata-1.webp"
       ],
@@ -320,7 +320,7 @@
     {
       "id": "ap-iphone-17-pro-max-512gb-12gb-laranja-a3525-ah",
       "label": "512GB/12GB · Laranja (A3525 AH)",
-      "price": 8923.9,
+      "price": 13385.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/512gb-12gb-laranja-a3525-ah-1.webp"
       ],
@@ -341,7 +341,7 @@
     {
       "id": "ap-iphone-17-pro-max-512gb-12gb-azul-a3525-ah",
       "label": "512GB/12GB · Azul (A3525 AH)",
-      "price": 8984.9,
+      "price": 13477.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/512gb-12gb-azul-a3525-ah-1.webp"
       ],
@@ -362,7 +362,7 @@
     {
       "id": "ap-iphone-17-pro-max-512gb-12gb-laranja-a3526-be",
       "label": "512GB/12GB · Laranja (A3526 BE)",
-      "price": 9135.9,
+      "price": 13703.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/512gb-12gb-laranja-a3526-be-1.webp"
       ],
@@ -383,7 +383,7 @@
     {
       "id": "ap-iphone-17-pro-max-1tb-12gb-prata",
       "label": "1TB/12GB · Prata",
-      "price": 10012.9,
+      "price": 15019.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro-max/1tb-12gb-prata-1.webp"
       ],
@@ -401,5 +401,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -4,7 +4,7 @@
   "brand": "Lattafa",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 27.9,
+  "price": 41.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "pf-lattafa-yara-feminino-yara-eau-de-parfum-50ml",
       "label": "Yara · Eau de Parfum · 50ml",
-      "price": 27.9,
+      "price": 41.9,
       "images": [
         "/catalog/perfumes/pf-lattafa-yara-feminino/yara-eau-de-parfum-50ml-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "pf-lattafa-yara-feminino-tous-eau-de-parfum-100ml",
       "label": "Tous · Eau de Parfum · 100ml",
-      "price": 99.9,
+      "price": 149.9,
       "images": [
         "/catalog/perfumes/pf-lattafa-yara-feminino/tous-eau-de-parfum-100ml-1.webp"
       ],
@@ -68,7 +68,7 @@
     {
       "id": "pf-lattafa-yara-feminino-yara-moi-eau-de-parfum-100ml",
       "label": "Yara Moi · Eau de Parfum · 100ml",
-      "price": 118.9,
+      "price": 178.9,
       "images": [
         "/catalog/perfumes/pf-lattafa-yara-feminino/yara-moi-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-lattafa-yara-feminino/yara-moi-eau-de-parfum-100ml-2.webp"
@@ -88,7 +88,7 @@
     {
       "id": "pf-lattafa-yara-feminino-yara-candy-eau-de-parfum-100ml",
       "label": "Yara Candy · Eau de Parfum · 100ml",
-      "price": 127.9,
+      "price": 191.9,
       "images": [
         "/catalog/perfumes/pf-lattafa-yara-feminino/yara-candy-eau-de-parfum-100ml-1.webp"
       ],
@@ -108,7 +108,7 @@
     {
       "id": "pf-lattafa-yara-feminino-yara-elixir-eau-de-parfum-100ml",
       "label": "Yara Elixir · Eau de Parfum · 100ml",
-      "price": 145.9,
+      "price": 218.9,
       "images": [
         "/catalog/perfumes/pf-lattafa-yara-feminino/yara-elixir-eau-de-parfum-100ml-1.webp"
       ],
@@ -125,5 +125,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 4325.9,
+  "price": 6488.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "ap-iphone-17e-256gb-8gb-branco",
       "label": "256GB/8GB · Branco",
-      "price": 4325.9,
+      "price": 6488.9,
       "images": [
         "/catalog/phones/ap-iphone-17e/256gb-8gb-branco-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "ap-iphone-17e-256gb-8gb-rosa",
       "label": "256GB/8GB · Rosa",
-      "price": 4325.9,
+      "price": 6488.9,
       "images": [
         "/catalog/phones/ap-iphone-17e/256gb-8gb-rosa-1.webp"
       ],
@@ -68,5 +68,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

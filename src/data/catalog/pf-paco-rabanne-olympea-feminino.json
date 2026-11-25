@@ -1,0 +1,54 @@
+{
+  "id": "pf-paco-rabanne-olympea-feminino",
+  "name": "Paco Rabanne Olympéa Feminino",
+  "brand": "Paco Rabanne",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 653.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-paco-rabanne-olympea-feminino/olympea-eau-de-parfum-80ml-1.webp",
+    "/catalog/perfumes/pf-paco-rabanne-olympea-feminino/olympea-eau-de-parfum-80ml-2.webp",
+    "/catalog/perfumes/pf-paco-rabanne-olympea-feminino/olympea-eau-de-parfum-80ml-3.webp"
+  ],
+  "description": "Paco Rabanne Olympéa, Eau de Parfum 80 ml. Perfume feminino de família olfativa oriental floral. Notas de topo: Tangerina Verde, Flor de Gengibre, Jasmim Aquático; coração: Baunilha Salgada; fundo: Ambergris, Caxemira, Sândalo.",
+  "specs": [
+    "Edição: Olympéa",
+    "Concentração: Eau de Parfum",
+    "Volume: 80 ml",
+    "Família olfativa: Oriental Floral",
+    "Notas de topo: Tangerina Verde, Flor de Gengibre, Jasmim Aquático",
+    "Notas de coração: Baunilha Salgada",
+    "Notas de fundo: Ambergris, Caxemira, Sândalo",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Paco Rabanne, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-paco-rabanne-olympea-feminino-olympea-eau-de-parfum-80ml",
+      "label": "Olympéa · Eau de Parfum · 80ml",
+      "price": 653.9,
+      "images": [
+        "/catalog/perfumes/pf-paco-rabanne-olympea-feminino/olympea-eau-de-parfum-80ml-1.webp",
+        "/catalog/perfumes/pf-paco-rabanne-olympea-feminino/olympea-eau-de-parfum-80ml-2.webp",
+        "/catalog/perfumes/pf-paco-rabanne-olympea-feminino/olympea-eau-de-parfum-80ml-3.webp"
+      ],
+      "description": "Paco Rabanne Olympéa, Eau de Parfum 80 ml. Perfume feminino de família olfativa oriental floral. Notas de topo: Tangerina Verde, Flor de Gengibre, Jasmim Aquático; coração: Baunilha Salgada; fundo: Ambergris, Caxemira, Sândalo.",
+      "specs": [
+        "Edição: Olympéa",
+        "Concentração: Eau de Parfum",
+        "Volume: 80 ml",
+        "Família olfativa: Oriental Floral",
+        "Notas de topo: Tangerina Verde, Flor de Gengibre, Jasmim Aquático",
+        "Notas de coração: Baunilha Salgada",
+        "Notas de fundo: Ambergris, Caxemira, Sândalo",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}
