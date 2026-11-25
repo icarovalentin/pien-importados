@@ -58,6 +58,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
   const inList = isInList(product.id, activeVariant?.label);
   const whatsappUrl = getProductWhatsAppUrl(product, activeVariant);
   const isProntaEntrega = product.status === 'pronta_entrega';
+  const isUnavailable = Boolean(product.isUnavailable);
   const galleryImages =
     activeVariant?.images && activeVariant.images.length > 0 ? activeVariant.images : product.images;
   const totalImages = galleryImages.length;
@@ -354,6 +355,12 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
           {/* Ações */}
           <div className="pt-2 space-y-2.5 mt-auto">
+            {isUnavailable ? (
+              <div className="w-full py-3.5 px-6 text-center text-xs uppercase tracking-[0.16em] font-semibold bg-zinc-200 text-zinc-500 dark:bg-dark-800 dark:text-zinc-400 cursor-not-allowed">
+                Produto indisponível no momento
+              </div>
+            ) : (
+            <>
             <a
               href={whatsappUrl}
               target="_blank"
@@ -392,6 +399,8 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                 </>
               )}
             </button>
+            </>
+            )}
           </div>
         </div>
       </div>

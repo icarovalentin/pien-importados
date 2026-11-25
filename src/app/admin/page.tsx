@@ -23,6 +23,9 @@ import {
   ExternalLink,
   X,
   Star,
+  Eye,
+  EyeOff,
+  Ban,
 } from 'lucide-react';
 
 export default function AdminPage() {
@@ -129,7 +132,7 @@ export default function AdminPage() {
   const fetchProducts = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/api/products');
+      const res = await fetch('/api/products?all=1');
       const data = await res.json();
       if (Array.isArray(data)) {
         setProducts(data);
@@ -420,6 +423,35 @@ export default function AdminPage() {
     }
   };
 
+  // Ocultar/mostrar no site e marcar como indisponível/disponível
+  const handleToggleFlag = async (
+    product: Product,
+    field: 'isHidden' | 'isUnavailable',
+    messages: [string, string]
+  ) => {
+    const next = !product[field];
+    try {
+      const res = await fetch('/api/products', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: product.id, [field]: next }),
+      });
+      if (res.status === 401) {
+        setIsAuthenticated(false);
+        return;
+      }
+      if (res.ok) {
+        setProducts((prev) => prev.map((p) => (p.id === product.id ? { ...p, [field]: next } : p)));
+        showToast(next ? messages[0] : messages[1]);
+      } else {
+        showToast('Erro ao atualizar produto.');
+      }
+    } catch (err) {
+      console.error('Erro ao atualizar produto:', err);
+      showToast('Erro ao atualizar produto.');
+    }
+  };
+
   // Excluir produto
   const handleDeleteProduct = async (id: string, name: string) => {
     if (!confirm(`Deseja realmente excluir o produto "${name}"?`)) return;
@@ -698,7 +730,7 @@ export default function AdminPage() {
               return (
                 <div
                   key={p.id}
-                  className="p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 hover:bg-zinc-50 dark:hover:bg-dark-850/60 transition-colors"
+                  className={`${p.isHidden ? 'opacity-60 ' : ''}p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 hover:bg-zinc-50 dark:hover:bg-dark-850/60 transition-colors`}
                 >
                   {/* Foto + Informações */}
                   <div className="flex items-center gap-4 min-w-0">
@@ -733,6 +765,16 @@ export default function AdminPage() {
                         <span className="text-zinc-400 text-[11px] hidden sm:inline">
                           ({p.deliveryTime})
                         </span>
+                        {p.isHidden && (
+                          <span className="px-1.5 py-0.5 rounded bg-red-100 text-red-700 dark:bg-red-950/40 dark:text-red-400 text-[10px] font-bold uppercase">
+                            Oculto
+                          </span>
+                        )}
+                        {p.isUnavailable && (
+                          <span className="px-1.5 py-0.5 rounded bg-orange-100 text-orange-700 dark:bg-orange-950/40 dark:text-orange-400 text-[10px] font-bold uppercase">
+                            Indisponível
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -778,6 +820,42 @@ export default function AdminPage() {
                       title="Editar detalhes do produto"
                     >
                       <Edit2 className="w-4 h-4" />
+                    </button>
+
+                    {/* Botão Ocultar do site */}
+                    <button
+                      onClick={() =>
+                        handleToggleFlag(p, 'isHidden', [
+                          'Produto oculto do site.',
+                          'Produto visível no site novamente.',
+                        ])
+                      }
+                      className={`p-2 rounded-xl transition-colors ${
+                        p.isHidden
+                          ? 'text-red-600 bg-red-50 dark:bg-red-950/30 dark:text-red-400'
+                          : 'text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-dark-800'
+                      }`}
+                      title={p.isHidden ? 'Oculto no site — clique para mostrar' : 'Visível no site — clique para ocultar'}
+                    >
+                      {p.isHidden ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                    </button>
+
+                    {/* Botão Produto indisponível */}
+                    <button
+                      onClick={() =>
+                        handleToggleFlag(p, 'isUnavailable', [
+                          'Produto marcado como indisponível.',
+                          'Produto disponível novamente.',
+                        ])
+                      }
+                      className={`p-2 rounded-xl transition-colors ${
+                        p.isUnavailable
+                          ? 'text-orange-600 bg-orange-50 dark:bg-orange-950/30 dark:text-orange-400'
+                          : 'text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-dark-800'
+                      }`}
+                      title={p.isUnavailable ? 'Indisponível — clique para liberar pedidos' : 'Marcar como indisponível (continua no site, sem pedido)'}
+                    >
+                      <Ban className="w-4 h-4" />
                     </button>
 
                     {/* Botão Excluir */}
