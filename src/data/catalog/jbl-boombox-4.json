@@ -1,0 +1,119 @@
+{
+  "id": "jbl-boombox-4",
+  "name": "JBL Boombox 4",
+  "brand": "JBL",
+  "category": "eletronicos",
+  "categoryLabel": "Caixas de Som",
+  "price": 1905.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/jbl/boombox-4/branco-1.webp",
+    "/catalog/jbl/boombox-4/branco-2.webp",
+    "/catalog/jbl/boombox-4/branco-3.webp"
+  ],
+  "description": "JBL Boombox 4 na cor Branco. Caixa de som Bluetooth 5.4 portátil de grande porte, com resposta de frequência de 37 Hz a 20 kHz, resistência IP68 e modo Bass Boost. A bateria toca por até 28 horas (até 34 horas com o Playtime Boost) e a recarga leva cerca de 3 horas.",
+  "specs": [
+    "Cor: Branco",
+    "Conectividade: Bluetooth 5.4",
+    "Resposta de frequência: 37 Hz – 20 kHz",
+    "Resistência: IP68 (água e poeira)",
+    "Bateria: até 28 h (até 34 h com Playtime Boost)",
+    "Recarga: cerca de 3 horas (entrada AC ou USB-C)",
+    "Dimensões: 506,4 × 262,9 × 212,9 mm",
+    "Peso: 5,89 kg",
+    "Produto original JBL"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original JBL, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "jbl-boombox-4-branco",
+      "label": "Branco",
+      "price": 2329.9,
+      "images": [
+        "/catalog/jbl/boombox-4/branco-1.webp",
+        "/catalog/jbl/boombox-4/branco-2.webp",
+        "/catalog/jbl/boombox-4/branco-3.webp"
+      ],
+      "description": "JBL Boombox 4 na cor Branco. Caixa de som Bluetooth 5.4 portátil de grande porte, com resposta de frequência de 37 Hz a 20 kHz, resistência IP68 e modo Bass Boost. A bateria toca por até 28 horas (até 34 horas com o Playtime Boost) e a recarga leva cerca de 3 horas.",
+      "specs": [
+        "Cor: Branco",
+        "Conectividade: Bluetooth 5.4",
+        "Resposta de frequência: 37 Hz – 20 kHz",
+        "Resistência: IP68 (água e poeira)",
+        "Bateria: até 28 h (até 34 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas (entrada AC ou USB-C)",
+        "Dimensões: 506,4 × 262,9 × 212,9 mm",
+        "Peso: 5,89 kg",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-boombox-4-laranja",
+      "label": "Laranja",
+      "price": 2329.9,
+      "images": [
+        "/catalog/jbl/boombox-4/laranja-1.webp",
+        "/catalog/jbl/boombox-4/laranja-2.webp",
+        "/catalog/jbl/boombox-4/laranja-3.webp"
+      ],
+      "description": "JBL Boombox 4 na cor Laranja. Caixa de som Bluetooth 5.4 portátil de grande porte, com resposta de frequência de 37 Hz a 20 kHz, resistência IP68 e modo Bass Boost. A bateria toca por até 28 horas (até 34 horas com o Playtime Boost) e a recarga leva cerca de 3 horas.",
+      "specs": [
+        "Cor: Laranja",
+        "Conectividade: Bluetooth 5.4",
+        "Resposta de frequência: 37 Hz – 20 kHz",
+        "Resistência: IP68 (água e poeira)",
+        "Bateria: até 28 h (até 34 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas (entrada AC ou USB-C)",
+        "Dimensões: 506,4 × 262,9 × 212,9 mm",
+        "Peso: 5,89 kg",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-boombox-4-camuflado",
+      "label": "Camuflado",
+      "price": 1905.9,
+      "images": [
+        "/catalog/jbl/boombox-4/camuflado-1.webp",
+        "/catalog/jbl/boombox-4/camuflado-2.webp",
+        "/catalog/jbl/boombox-4/camuflado-3.webp"
+      ],
+      "description": "JBL Boombox 4 na cor Camuflado. Caixa de som Bluetooth 5.4 portátil de grande porte, com resposta de frequência de 37 Hz a 20 kHz, resistência IP68 e modo Bass Boost. A bateria toca por até 28 horas (até 34 horas com o Playtime Boost) e a recarga leva cerca de 3 horas.",
+      "specs": [
+        "Cor: Camuflado",
+        "Conectividade: Bluetooth 5.4",
+        "Resposta de frequência: 37 Hz – 20 kHz",
+        "Resistência: IP68 (água e poeira)",
+        "Bateria: até 28 h (até 34 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas (entrada AC ou USB-C)",
+        "Dimensões: 506,4 × 262,9 × 212,9 mm",
+        "Peso: 5,89 kg",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-boombox-4-preto",
+      "label": "Preto",
+      "price": 1996.9,
+      "images": [
+        "/catalog/jbl/boombox-4/preto-1.webp",
+        "/catalog/jbl/boombox-4/preto-2.webp",
+        "/catalog/jbl/boombox-4/preto-3.webp"
+      ],
+      "description": "JBL Boombox 4 na cor Preto. Caixa de som Bluetooth 5.4 portátil de grande porte, com resposta de frequência de 37 Hz a 20 kHz, resistência IP68 e modo Bass Boost. A bateria toca por até 28 horas (até 34 horas com o Playtime Boost) e a recarga leva cerca de 3 horas.",
+      "specs": [
+        "Cor: Preto",
+        "Conectividade: Bluetooth 5.4",
+        "Resposta de frequência: 37 Hz – 20 kHz",
+        "Resistência: IP68 (água e poeira)",
+        "Bateria: até 28 h (até 34 h com Playtime Boost)",
+        "Recarga: cerca de 3 horas (entrada AC ou USB-C)",
+        "Dimensões: 506,4 × 262,9 × 212,9 mm",
+        "Peso: 5,89 kg",
+        "Produto original JBL"
+      ]
+    }
+  ]
+}

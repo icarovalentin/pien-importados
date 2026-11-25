@@ -1,0 +1,193 @@
+{
+  "id": "jbl-flip-7",
+  "name": "JBL Flip 7",
+  "brand": "JBL",
+  "category": "eletronicos",
+  "categoryLabel": "Caixas de Som",
+  "price": 456.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/jbl/flip-7/camuflado-1.webp",
+    "/catalog/jbl/flip-7/camuflado-2.webp",
+    "/catalog/jbl/flip-7/camuflado-3.webp"
+  ],
+  "description": "JBL Flip 7 na cor Camuflado. Caixa de som Bluetooth 5.4 portátil, com potência de 35 W RMS, woofer de 45 × 80 mm e tweeter de 16 mm, resistência IP68 e AI Sound Boost. A bateria dura até 14 horas (mais 2 horas com o Playtime Boost) e carrega via USB-C.",
+  "specs": [
+    "Cor: Camuflado",
+    "Conectividade: Bluetooth 5.4",
+    "Potência: 35 W RMS",
+    "Drivers: woofer de 45 × 80 mm + tweeter de 16 mm",
+    "Resistência: IP68",
+    "Bateria: 17,28 Wh, até 14 h (+2 h com Playtime Boost)",
+    "Recarga: cerca de 2,5 horas, via USB-C",
+    "Recurso: AI Sound Boost",
+    "Peso: 560 g",
+    "Produto original JBL"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original JBL, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "jbl-flip-7-camuflado",
+      "label": "Camuflado",
+      "price": 456.9,
+      "images": [
+        "/catalog/jbl/flip-7/camuflado-1.webp",
+        "/catalog/jbl/flip-7/camuflado-2.webp",
+        "/catalog/jbl/flip-7/camuflado-3.webp"
+      ],
+      "description": "JBL Flip 7 na cor Camuflado. Caixa de som Bluetooth 5.4 portátil, com potência de 35 W RMS, woofer de 45 × 80 mm e tweeter de 16 mm, resistência IP68 e AI Sound Boost. A bateria dura até 14 horas (mais 2 horas com o Playtime Boost) e carrega via USB-C.",
+      "specs": [
+        "Cor: Camuflado",
+        "Conectividade: Bluetooth 5.4",
+        "Potência: 35 W RMS",
+        "Drivers: woofer de 45 × 80 mm + tweeter de 16 mm",
+        "Resistência: IP68",
+        "Bateria: 17,28 Wh, até 14 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 2,5 horas, via USB-C",
+        "Recurso: AI Sound Boost",
+        "Peso: 560 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-flip-7-vermelho",
+      "label": "Vermelho",
+      "price": 456.9,
+      "images": [
+        "/catalog/jbl/flip-7/vermelho-1.webp",
+        "/catalog/jbl/flip-7/vermelho-2.webp",
+        "/catalog/jbl/flip-7/vermelho-3.webp"
+      ],
+      "description": "JBL Flip 7 na cor Vermelho. Caixa de som Bluetooth 5.4 portátil, com potência de 35 W RMS, woofer de 45 × 80 mm e tweeter de 16 mm, resistência IP68 e AI Sound Boost. A bateria dura até 14 horas (mais 2 horas com o Playtime Boost) e carrega via USB-C.",
+      "specs": [
+        "Cor: Vermelho",
+        "Conectividade: Bluetooth 5.4",
+        "Potência: 35 W RMS",
+        "Drivers: woofer de 45 × 80 mm + tweeter de 16 mm",
+        "Resistência: IP68",
+        "Bateria: 17,28 Wh, até 14 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 2,5 horas, via USB-C",
+        "Recurso: AI Sound Boost",
+        "Peso: 560 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-flip-7-rosa",
+      "label": "Rosa",
+      "price": 456.9,
+      "images": [
+        "/catalog/jbl/flip-7/rosa-1.webp",
+        "/catalog/jbl/flip-7/rosa-2.webp",
+        "/catalog/jbl/flip-7/rosa-3.webp"
+      ],
+      "description": "JBL Flip 7 na cor Rosa. Caixa de som Bluetooth 5.4 portátil, com potência de 35 W RMS, woofer de 45 × 80 mm e tweeter de 16 mm, resistência IP68 e AI Sound Boost. A bateria dura até 14 horas (mais 2 horas com o Playtime Boost) e carrega via USB-C.",
+      "specs": [
+        "Cor: Rosa",
+        "Conectividade: Bluetooth 5.4",
+        "Potência: 35 W RMS",
+        "Drivers: woofer de 45 × 80 mm + tweeter de 16 mm",
+        "Resistência: IP68",
+        "Bateria: 17,28 Wh, até 14 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 2,5 horas, via USB-C",
+        "Recurso: AI Sound Boost",
+        "Peso: 560 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-flip-7-turquesa",
+      "label": "Turquesa",
+      "price": 456.9,
+      "images": [
+        "/catalog/jbl/flip-7/turquesa-1.webp",
+        "/catalog/jbl/flip-7/turquesa-2.webp",
+        "/catalog/jbl/flip-7/turquesa-3.webp"
+      ],
+      "description": "JBL Flip 7 na cor Turquesa. Caixa de som Bluetooth 5.4 portátil, com potência de 35 W RMS, woofer de 45 × 80 mm e tweeter de 16 mm, resistência IP68 e AI Sound Boost. A bateria dura até 14 horas (mais 2 horas com o Playtime Boost) e carrega via USB-C.",
+      "specs": [
+        "Cor: Turquesa",
+        "Conectividade: Bluetooth 5.4",
+        "Potência: 35 W RMS",
+        "Drivers: woofer de 45 × 80 mm + tweeter de 16 mm",
+        "Resistência: IP68",
+        "Bateria: 17,28 Wh, até 14 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 2,5 horas, via USB-C",
+        "Recurso: AI Sound Boost",
+        "Peso: 560 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-flip-7-roxo",
+      "label": "Roxo",
+      "price": 456.9,
+      "images": [
+        "/catalog/jbl/flip-7/roxo-1.webp",
+        "/catalog/jbl/flip-7/roxo-2.webp",
+        "/catalog/jbl/flip-7/roxo-3.webp"
+      ],
+      "description": "JBL Flip 7 na cor Roxo. Caixa de som Bluetooth 5.4 portátil, com potência de 35 W RMS, woofer de 45 × 80 mm e tweeter de 16 mm, resistência IP68 e AI Sound Boost. A bateria dura até 14 horas (mais 2 horas com o Playtime Boost) e carrega via USB-C.",
+      "specs": [
+        "Cor: Roxo",
+        "Conectividade: Bluetooth 5.4",
+        "Potência: 35 W RMS",
+        "Drivers: woofer de 45 × 80 mm + tweeter de 16 mm",
+        "Resistência: IP68",
+        "Bateria: 17,28 Wh, até 14 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 2,5 horas, via USB-C",
+        "Recurso: AI Sound Boost",
+        "Peso: 560 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-flip-7-azul",
+      "label": "Azul",
+      "price": 456.9,
+      "images": [
+        "/catalog/jbl/flip-7/azul-1.webp",
+        "/catalog/jbl/flip-7/azul-2.webp",
+        "/catalog/jbl/flip-7/azul-3.webp"
+      ],
+      "description": "JBL Flip 7 na cor Azul. Caixa de som Bluetooth 5.4 portátil, com potência de 35 W RMS, woofer de 45 × 80 mm e tweeter de 16 mm, resistência IP68 e AI Sound Boost. A bateria dura até 14 horas (mais 2 horas com o Playtime Boost) e carrega via USB-C.",
+      "specs": [
+        "Cor: Azul",
+        "Conectividade: Bluetooth 5.4",
+        "Potência: 35 W RMS",
+        "Drivers: woofer de 45 × 80 mm + tweeter de 16 mm",
+        "Resistência: IP68",
+        "Bateria: 17,28 Wh, até 14 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 2,5 horas, via USB-C",
+        "Recurso: AI Sound Boost",
+        "Peso: 560 g",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-flip-7-preto",
+      "label": "Preto",
+      "price": 465.9,
+      "images": [
+        "/catalog/jbl/flip-7/preto-1.webp",
+        "/catalog/jbl/flip-7/preto-2.webp",
+        "/catalog/jbl/flip-7/preto-3.webp"
+      ],
+      "description": "JBL Flip 7 na cor Preto. Caixa de som Bluetooth 5.4 portátil, com potência de 35 W RMS, woofer de 45 × 80 mm e tweeter de 16 mm, resistência IP68 e AI Sound Boost. A bateria dura até 14 horas (mais 2 horas com o Playtime Boost) e carrega via USB-C.",
+      "specs": [
+        "Cor: Preto",
+        "Conectividade: Bluetooth 5.4",
+        "Potência: 35 W RMS",
+        "Drivers: woofer de 45 × 80 mm + tweeter de 16 mm",
+        "Resistência: IP68",
+        "Bateria: 17,28 Wh, até 14 h (+2 h com Playtime Boost)",
+        "Recarga: cerca de 2,5 horas, via USB-C",
+        "Recurso: AI Sound Boost",
+        "Peso: 560 g",
+        "Produto original JBL"
+      ]
+    }
+  ]
+}

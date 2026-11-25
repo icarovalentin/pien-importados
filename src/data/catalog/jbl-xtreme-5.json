@@ -1,0 +1,97 @@
+{
+  "id": "jbl-xtreme-5",
+  "name": "JBL Xtreme 5",
+  "brand": "JBL",
+  "category": "eletronicos",
+  "categoryLabel": "Caixas de Som",
+  "price": 1433.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/jbl/xtreme-5/azul-1.webp",
+    "/catalog/jbl/xtreme-5/azul-2.webp",
+    "/catalog/jbl/xtreme-5/azul-3.webp"
+  ],
+  "description": "JBL Xtreme 5 na cor Azul. Caixa de som Bluetooth 5.3 portátil de alta potência, com 100 W de potência, 2 woofers de 70 mm, 2 tweeters de 20 mm e resistência IP67. A bateria de 10.000 mAh toca por até 24 horas e a recarga leva de 3 a 4 horas via USB-C.",
+  "specs": [
+    "Cor: Azul",
+    "Conectividade: Bluetooth 5.3",
+    "Potência: 100 W",
+    "Drivers: 2 woofers de 70 mm + 2 tweeters de 20 mm",
+    "Resistência: IP67",
+    "Bateria: 10.000 mAh, até 24 h",
+    "Recarga: 3 a 4 horas, via USB-C",
+    "Peso: 2,1 kg",
+    "Produto original JBL"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original JBL, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "jbl-xtreme-5-azul",
+      "label": "Azul",
+      "price": 1433.9,
+      "images": [
+        "/catalog/jbl/xtreme-5/azul-1.webp",
+        "/catalog/jbl/xtreme-5/azul-2.webp",
+        "/catalog/jbl/xtreme-5/azul-3.webp"
+      ],
+      "description": "JBL Xtreme 5 na cor Azul. Caixa de som Bluetooth 5.3 portátil de alta potência, com 100 W de potência, 2 woofers de 70 mm, 2 tweeters de 20 mm e resistência IP67. A bateria de 10.000 mAh toca por até 24 horas e a recarga leva de 3 a 4 horas via USB-C.",
+      "specs": [
+        "Cor: Azul",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 100 W",
+        "Drivers: 2 woofers de 70 mm + 2 tweeters de 20 mm",
+        "Resistência: IP67",
+        "Bateria: 10.000 mAh, até 24 h",
+        "Recarga: 3 a 4 horas, via USB-C",
+        "Peso: 2,1 kg",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-xtreme-5-camuflado",
+      "label": "Camuflado",
+      "price": 1433.9,
+      "images": [
+        "/catalog/jbl/xtreme-5/camuflado-1.webp",
+        "/catalog/jbl/xtreme-5/camuflado-2.webp",
+        "/catalog/jbl/xtreme-5/camuflado-3.webp"
+      ],
+      "description": "JBL Xtreme 5 na cor Camuflado. Caixa de som Bluetooth 5.3 portátil de alta potência, com 100 W de potência, 2 woofers de 70 mm, 2 tweeters de 20 mm e resistência IP67. A bateria de 10.000 mAh toca por até 24 horas e a recarga leva de 3 a 4 horas via USB-C.",
+      "specs": [
+        "Cor: Camuflado",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 100 W",
+        "Drivers: 2 woofers de 70 mm + 2 tweeters de 20 mm",
+        "Resistência: IP67",
+        "Bateria: 10.000 mAh, até 24 h",
+        "Recarga: 3 a 4 horas, via USB-C",
+        "Peso: 2,1 kg",
+        "Produto original JBL"
+      ]
+    },
+    {
+      "id": "jbl-xtreme-5-preto",
+      "label": "Preto",
+      "price": 1433.9,
+      "images": [
+        "/catalog/jbl/xtreme-5/preto-1.webp",
+        "/catalog/jbl/xtreme-5/preto-2.webp",
+        "/catalog/jbl/xtreme-5/preto-3.webp"
+      ],
+      "description": "JBL Xtreme 5 na cor Preto. Caixa de som Bluetooth 5.3 portátil de alta potência, com 100 W de potência, 2 woofers de 70 mm, 2 tweeters de 20 mm e resistência IP67. A bateria de 10.000 mAh toca por até 24 horas e a recarga leva de 3 a 4 horas via USB-C.",
+      "specs": [
+        "Cor: Preto",
+        "Conectividade: Bluetooth 5.3",
+        "Potência: 100 W",
+        "Drivers: 2 woofers de 70 mm + 2 tweeters de 20 mm",
+        "Resistência: IP67",
+        "Bateria: 10.000 mAh, até 24 h",
+        "Recarga: 3 a 4 horas, via USB-C",
+        "Peso: 2,1 kg",
+        "Produto original JBL"
+      ]
+    }
+  ]
+}
