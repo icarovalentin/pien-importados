@@ -1,0 +1,75 @@
+{
+  "id": "sg-galaxy-a57",
+  "name": "Samsung Galaxy A57",
+  "brand": "Samsung",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 2238.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/samsung/sg-galaxy-a57/128gb-8gb-azul-gelo-1.webp",
+    "/catalog/samsung/sg-galaxy-a57/128gb-8gb-azul-gelo-2.webp",
+    "/catalog/samsung/sg-galaxy-a57/128gb-8gb-azul-gelo-3.webp"
+  ],
+  "description": "Samsung Galaxy A57 128GB/8GB na cor Azul gelo. Conta com tela Super AMOLED 120Hz de 6.7pol, chipset Octa-core, câmera traseira Tripla 50 MP (OIS) e 12 MP e 5 MP, câmera frontal Única 32 MP, bateria de 5000 mAh. Sistema: Android 16.",
+  "specs": [
+    "Memória: 128GB/8GB",
+    "Cor: Azul gelo",
+    "Tela: Super AMOLED 120Hz 6.7pol Full HD+",
+    "Chipset: Octa-core",
+    "Câmera traseira: Tripla 50 MP (OIS) + 12 MP + 5 MP",
+    "Câmera frontal: Única 32 MP",
+    "Bateria: 5000 mAh",
+    "Sistema: Android 16",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "sg-galaxy-a57-128gb-8gb-azul-gelo",
+      "label": "128GB/8GB · Azul gelo",
+      "price": 2238.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a57/128gb-8gb-azul-gelo-1.webp",
+        "/catalog/samsung/sg-galaxy-a57/128gb-8gb-azul-gelo-2.webp",
+        "/catalog/samsung/sg-galaxy-a57/128gb-8gb-azul-gelo-3.webp"
+      ],
+      "description": "Samsung Galaxy A57 128GB/8GB na cor Azul gelo. Conta com tela Super AMOLED 120Hz de 6.7pol, chipset Octa-core, câmera traseira Tripla 50 MP (OIS) e 12 MP e 5 MP, câmera frontal Única 32 MP, bateria de 5000 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 128GB/8GB",
+        "Cor: Azul gelo",
+        "Tela: Super AMOLED 120Hz 6.7pol Full HD+",
+        "Chipset: Octa-core",
+        "Câmera traseira: Tripla 50 MP (OIS) + 12 MP + 5 MP",
+        "Câmera frontal: Única 32 MP",
+        "Bateria: 5000 mAh",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-a57-128gb-8gb-roxo",
+      "label": "128GB/8GB · Roxo",
+      "price": 2238.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a57/128gb-8gb-roxo-1.webp",
+        "/catalog/samsung/sg-galaxy-a57/128gb-8gb-roxo-2.webp",
+        "/catalog/samsung/sg-galaxy-a57/128gb-8gb-roxo-3.webp"
+      ],
+      "description": "Samsung Galaxy A57 128GB/8GB na cor Roxo. Conta com tela Super AMOLED de 6.7\", chipset Exynos 1680, câmera traseira Tripla 50 MP e 12 MP 5 MP, câmera frontal Única 12 MP, bateria de 5000 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 128GB/8GB",
+        "Cor: Roxo",
+        "Tela: Super AMOLED 6.7\" Full HD+ (1080 x 2340)",
+        "Chipset: Exynos 1680",
+        "Câmera traseira: Tripla 50 MP + 12 MP 5 MP",
+        "Câmera frontal: Única 12 MP",
+        "Bateria: 5000 mAh",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

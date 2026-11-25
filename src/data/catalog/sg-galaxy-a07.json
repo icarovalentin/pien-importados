@@ -1,0 +1,185 @@
+{
+  "id": "sg-galaxy-a07",
+  "name": "Samsung Galaxy A07",
+  "brand": "Samsung",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 732.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/samsung/sg-galaxy-a07/64gb-4gb-verde-1.webp",
+    "/catalog/samsung/sg-galaxy-a07/64gb-4gb-verde-2.webp",
+    "/catalog/samsung/sg-galaxy-a07/64gb-4gb-verde-3.webp"
+  ],
+  "description": "Samsung Galaxy A07 64GB/4GB na cor Verde. Conta com tela TFT LCD de 6,7\", câmera traseira 50 MP e 2 MP, câmera frontal 8MP, bateria de 5.000 mAh. Sistema: Android 15.",
+  "specs": [
+    "Memória: 64GB/4GB",
+    "Cor: Verde",
+    "Tela: TFT LCD 6,7\" 720 × 1600",
+    "Câmera traseira: 50 MP + 2 MP",
+    "Câmera frontal: 8MP",
+    "Bateria: 5.000 mAh",
+    "Sistema: Android 15",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "sg-galaxy-a07-64gb-4gb-verde",
+      "label": "64GB/4GB · Verde",
+      "price": 732.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a07/64gb-4gb-verde-1.webp",
+        "/catalog/samsung/sg-galaxy-a07/64gb-4gb-verde-2.webp",
+        "/catalog/samsung/sg-galaxy-a07/64gb-4gb-verde-3.webp"
+      ],
+      "description": "Samsung Galaxy A07 64GB/4GB na cor Verde. Conta com tela TFT LCD de 6,7\", câmera traseira 50 MP e 2 MP, câmera frontal 8MP, bateria de 5.000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 64GB/4GB",
+        "Cor: Verde",
+        "Tela: TFT LCD 6,7\" 720 × 1600",
+        "Câmera traseira: 50 MP + 2 MP",
+        "Câmera frontal: 8MP",
+        "Bateria: 5.000 mAh",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-a07-64gb-4gb-violeta-claro",
+      "label": "64GB/4GB · Violeta claro",
+      "price": 732.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a07/64gb-4gb-violeta-claro-1.webp",
+        "/catalog/samsung/sg-galaxy-a07/64gb-4gb-violeta-claro-2.webp",
+        "/catalog/samsung/sg-galaxy-a07/64gb-4gb-violeta-claro-3.webp"
+      ],
+      "description": "Samsung Galaxy A07 64GB/4GB na cor Violeta claro. Conta com tela TFT LCD de 6,7\", chipset MediaTek Helio G99, câmera traseira 50 MP e 2 MP, câmera frontal 8MP, bateria de 5.000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 64GB/4GB",
+        "Cor: Violeta claro",
+        "Tela: TFT LCD 6,7\" 720 × 1600",
+        "Chipset: MediaTek Helio G99",
+        "Câmera traseira: 50 MP + 2 MP",
+        "Câmera frontal: 8MP",
+        "Bateria: 5.000 mAh",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-a07-128gb-4gb-preto",
+      "label": "128GB/4GB · Preto",
+      "price": 834.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-1.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-2.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-3.webp"
+      ],
+      "description": "Samsung Galaxy A07 128GB/4GB na cor Preto. Conta com tela PLS LCD de 6,7\", chipset Helio G99, câmera traseira 50 MP e 2 MP, câmera frontal 8MP, bateria de 5.000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 128GB/4GB",
+        "Cor: Preto",
+        "Tela: PLS LCD 6,7\" 720 × 1600",
+        "Chipset: Helio G99",
+        "Câmera traseira: 50 MP + 2 MP",
+        "Câmera frontal: 8MP",
+        "Bateria: 5.000 mAh",
+        "Recursos: Resistência IP54 para água/pó; suporte para cartão microSD; tela com taxa de atualização elevada (90Hz); botão lateral de impressão digital + Observações + Caixa Slim*",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-a07-128gb-4gb-roxo",
+      "label": "128GB/4GB · Roxo",
+      "price": 853.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-roxo-1.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-roxo-2.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-roxo-3.webp"
+      ],
+      "description": "Samsung Galaxy A07 128GB/4GB na cor Roxo. Conta com tela PLS LCD de 6.7\", chipset Mediatek Dimensity 6300, câmera traseira Dupla 50 MP e Lente auxiliar, câmera frontal Única 8 MP, bateria de 6000 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 128GB/4GB",
+        "Cor: Roxo",
+        "Tela: PLS LCD 6.7\" HD+ (720 x 1600)",
+        "Chipset: Mediatek Dimensity 6300",
+        "Câmera traseira: Dupla 50 MP + Lente auxiliar",
+        "Câmera frontal: Única 8 MP",
+        "Bateria: 6000 mAh",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-a07-128gb-4gb-verde",
+      "label": "128GB/4GB · Verde",
+      "price": 853.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-verde-1.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-verde-2.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-verde-3.webp"
+      ],
+      "description": "Samsung Galaxy A07 128GB/4GB na cor Verde. Conta com tela PLS LCD de 6.7\", chipset Mediatek Dimensity 6300, câmera traseira Dupla 50 MP e Lente auxiliar, câmera frontal Única 8 MP, bateria de 6000 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 128GB/4GB",
+        "Cor: Verde",
+        "Tela: PLS LCD 6.7\" HD+ (720 x 1600)",
+        "Chipset: Mediatek Dimensity 6300",
+        "Câmera traseira: Dupla 50 MP + Lente auxiliar",
+        "Câmera frontal: Única 8 MP",
+        "Bateria: 6000 mAh",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-a07-128gb-4gb-preto-2",
+      "label": "128GB/4GB · Preto (2)",
+      "price": 877.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-2-1.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-2-2.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-2-3.webp"
+      ],
+      "description": "Samsung Galaxy A07 128GB/4GB na cor Preto. Conta com tela PLS LCD, 90Hz de 6.7polegadas, câmera traseira 50 MP e 2 MP, câmera frontal 8MP, bateria de 5000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 128GB/4GB",
+        "Cor: Preto",
+        "Tela: PLS LCD, 90Hz 6.7polegadas 720 x 1600 (HD+)",
+        "Câmera traseira: 50 MP + 2 MP",
+        "Câmera frontal: 8MP",
+        "Bateria: 5000 mAh",
+        "Recursos: IP54 / 6 anos de updates",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-a07-128gb-4gb-preto-3",
+      "label": "128GB/4GB · Preto (3)",
+      "price": 877.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-3-1.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-3-2.webp",
+        "/catalog/samsung/sg-galaxy-a07/128gb-4gb-preto-3-3.webp"
+      ],
+      "description": "Samsung Galaxy A07 128GB/4GB na cor Preto. Conta com tela PLS LCD 90Hz de 6.7\", chipset Mediatek Helio G99, câmera traseira Única 50 MP, câmera frontal Única 8 MP, bateria de 5000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 128GB/4GB",
+        "Cor: Preto",
+        "Tela: PLS LCD 90Hz 6.7\" HD+ (720 x 1600)",
+        "Chipset: Mediatek Helio G99",
+        "Câmera traseira: Única 50 MP",
+        "Câmera frontal: Única 8 MP",
+        "Bateria: 5000 mAh",
+        "Recursos: Resistência a poeira e respingos IP54 + Observações + Carregador Brasil",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}
