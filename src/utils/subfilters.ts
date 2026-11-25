@@ -17,6 +17,7 @@ export interface SubFilter {
 }
 
 const lower = (s: string) => s.toLowerCase();
+const isPoco = (p: Product) => /\bpoco\b/i.test(p.name);
 const nameStarts = (p: Product, ...words: string[]) => words.some((w) => lower(p.name).startsWith(w));
 
 const gender = (g: 'masculino' | 'feminino'): SubFilter['match'] => (p) => {
@@ -38,8 +39,8 @@ export const SUBFILTERS: Record<string, { allLabel: string; filters: SubFilter[]
     allLabel: 'Todas as marcas',
     filters: [
       { id: 'samsung', label: 'Samsung', match: (p) => lower(p.brand) === 'samsung' },
-      { id: 'xiaomi', label: 'Xiaomi', match: (p) => lower(p.brand) === 'xiaomi' && !nameStarts(p, 'poco') },
-      { id: 'poco', label: 'POCO', match: (p) => nameStarts(p, 'poco') || lower(p.brand) === 'poco' },
+      { id: 'xiaomi', label: 'Xiaomi (Redmi)', match: (p) => lower(p.brand) === 'xiaomi' && !isPoco(p) },
+      { id: 'poco', label: 'POCO', match: (p) => isPoco(p) },
       { id: 'apple', label: 'Apple', match: (p) => lower(p.brand) === 'apple' },
     ],
   },
