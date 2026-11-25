@@ -1,0 +1,101 @@
+{
+  "id": "sg-galaxy-s25-ultra",
+  "name": "Samsung Galaxy S25 Ultra",
+  "brand": "Samsung",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 5868.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-cinza-1.webp",
+    "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-cinza-2.webp",
+    "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-cinza-3.webp"
+  ],
+  "description": "Samsung Galaxy S25 Ultra 1TB/12GB na cor Titânio cinza. Conta com tela Dynamic LTPO AMOLED 2X, 120Hz de 6.8\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira 200 MP e 10 MP e 50 MP e 50 MP, câmera frontal 12MP, bateria de 5000 mAh. Sistema: Android 15.",
+  "specs": [
+    "Memória: 1TB/12GB",
+    "Cor: Titânio cinza",
+    "Tela: Dynamic LTPO AMOLED 2X, 120Hz 6.8\" 1440 x 3120p",
+    "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+    "Câmera traseira: 200 MP + 10 MP + 50 MP + 50 MP",
+    "Câmera frontal: 12MP",
+    "Bateria: 5000 mAh",
+    "Recursos: Resistente a poeira e água IP68",
+    "Sistema: Android 15",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "sg-galaxy-s25-ultra-1tb-12gb-titanio-cinza",
+      "label": "1TB/12GB · Titânio cinza",
+      "price": 5868.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-cinza-1.webp",
+        "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-cinza-2.webp",
+        "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-cinza-3.webp"
+      ],
+      "description": "Samsung Galaxy S25 Ultra 1TB/12GB na cor Titânio cinza. Conta com tela Dynamic LTPO AMOLED 2X, 120Hz de 6.8\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira 200 MP e 10 MP e 50 MP e 50 MP, câmera frontal 12MP, bateria de 5000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 1TB/12GB",
+        "Cor: Titânio cinza",
+        "Tela: Dynamic LTPO AMOLED 2X, 120Hz 6.8\" 1440 x 3120p",
+        "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+        "Câmera traseira: 200 MP + 10 MP + 50 MP + 50 MP",
+        "Câmera frontal: 12MP",
+        "Bateria: 5000 mAh",
+        "Recursos: Resistente a poeira e água IP68",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-s25-ultra-1tb-12gb-titanio-branco",
+      "label": "1TB/12GB · Titânio branco",
+      "price": 5868.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-branco-1.webp",
+        "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-branco-2.webp",
+        "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-branco-3.webp"
+      ],
+      "description": "Samsung Galaxy S25 Ultra 1TB/12GB na cor Titânio branco. Conta com tela Dynamic LTPO AMOLED 2X, 120Hz de 6.9\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira 200 MP e 10 MP e 50 MP e 50 MP, câmera frontal 12MP, bateria de 5000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 1TB/12GB",
+        "Cor: Titânio branco",
+        "Tela: Dynamic LTPO AMOLED 2X, 120Hz 6.9\" 1440 x 3120p",
+        "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+        "Câmera traseira: 200 MP + 10 MP + 50 MP + 50 MP",
+        "Câmera frontal: 12MP",
+        "Bateria: 5000 mAh",
+        "Recursos: Resistente a poeira e água IP68",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-s25-ultra-1tb-12gb-titanio-cinza-caixa-slim",
+      "label": "1TB/12GB · Titânio cinza (caixa slim)",
+      "price": 5868.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-cinza-caixa-slim-1.webp",
+        "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-cinza-caixa-slim-2.webp",
+        "/catalog/samsung/sg-galaxy-s25-ultra/1tb-12gb-titanio-cinza-caixa-slim-3.webp"
+      ],
+      "description": "Samsung Galaxy S25 Ultra 1TB/12GB na cor Titânio cinza. Conta com tela AMOLED 2X, 120Hz de 6.9\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira 200 MP e 10 MP e 50 MP e 50 MP, câmera frontal 12MP, bateria de 5000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 1TB/12GB",
+        "Cor: Titânio cinza",
+        "Tela: AMOLED 2X, 120Hz 6.9\" 1440 x 3120",
+        "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+        "Câmera traseira: 200 MP + 10 MP + 50 MP + 50 MP",
+        "Câmera frontal: 12MP",
+        "Bateria: 5000 mAh",
+        "Recursos: Resistente a poeira e água IP68 + Observações + Caixa Slim*",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

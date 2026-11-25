@@ -1,0 +1,97 @@
+{
+  "id": "sg-galaxy-s26-plus",
+  "name": "Samsung Galaxy S26+",
+  "brand": "Samsung",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 4767.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/samsung/sg-galaxy-s26-plus/256gb-12gb-roxo-cobalto-1.webp",
+    "/catalog/samsung/sg-galaxy-s26-plus/256gb-12gb-roxo-cobalto-2.webp",
+    "/catalog/samsung/sg-galaxy-s26-plus/256gb-12gb-roxo-cobalto-3.webp"
+  ],
+  "description": "Samsung Galaxy S26+ 256GB/12GB na cor Roxo cobalto. Conta com tela AMOLED de 6.7\", chipset Exynos 2600, câmera traseira Tripla 50 MP e 12 MP e 10 MP, câmera frontal Única 12 MP, bateria de 4.900 mAh. Sistema: Android 16.",
+  "specs": [
+    "Memória: 256GB/12GB",
+    "Cor: Roxo cobalto",
+    "Tela: AMOLED 6.7\" QHD+",
+    "Chipset: Exynos 2600",
+    "Câmera traseira: Tripla 50 MP + 12 MP + 10 MP",
+    "Câmera frontal: Única 12 MP",
+    "Bateria: 4.900 mAh",
+    "Sistema: Android 16",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "sg-galaxy-s26-plus-256gb-12gb-roxo-cobalto",
+      "label": "256GB/12GB · Roxo cobalto",
+      "price": 4767.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-s26-plus/256gb-12gb-roxo-cobalto-1.webp",
+        "/catalog/samsung/sg-galaxy-s26-plus/256gb-12gb-roxo-cobalto-2.webp",
+        "/catalog/samsung/sg-galaxy-s26-plus/256gb-12gb-roxo-cobalto-3.webp"
+      ],
+      "description": "Samsung Galaxy S26+ 256GB/12GB na cor Roxo cobalto. Conta com tela AMOLED de 6.7\", chipset Exynos 2600, câmera traseira Tripla 50 MP e 12 MP e 10 MP, câmera frontal Única 12 MP, bateria de 4.900 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Roxo cobalto",
+        "Tela: AMOLED 6.7\" QHD+",
+        "Chipset: Exynos 2600",
+        "Câmera traseira: Tripla 50 MP + 12 MP + 10 MP",
+        "Câmera frontal: Única 12 MP",
+        "Bateria: 4.900 mAh",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-s26-plus-512gb-12gb-preto",
+      "label": "512GB/12GB · Preto",
+      "price": 5929.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-s26-plus/512gb-12gb-preto-1.webp",
+        "/catalog/samsung/sg-galaxy-s26-plus/512gb-12gb-preto-2.webp",
+        "/catalog/samsung/sg-galaxy-s26-plus/512gb-12gb-preto-3.webp"
+      ],
+      "description": "Samsung Galaxy S26+ 512GB/12GB na cor Preto. Conta com tela LTPO AMOLED de 6.7\", chipset Snapdragon 9 Elite, câmera traseira Tripla 50 MP e 10 MP e 12 MP, câmera frontal Única 12 MP, bateria de 4.900 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Preto",
+        "Tela: LTPO AMOLED 6.7\" QHD+",
+        "Chipset: Snapdragon 9 Elite",
+        "Câmera traseira: Tripla 50 MP + 10 MP + 12 MP",
+        "Câmera frontal: Única 12 MP",
+        "Bateria: 4.900 mAh",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-s26-plus-512gb-12gb-roxo",
+      "label": "512GB/12GB · Roxo",
+      "price": 5929.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-s26-plus/512gb-12gb-roxo-1.webp",
+        "/catalog/samsung/sg-galaxy-s26-plus/512gb-12gb-roxo-2.webp",
+        "/catalog/samsung/sg-galaxy-s26-plus/512gb-12gb-roxo-3.webp"
+      ],
+      "description": "Samsung Galaxy S26+ 512GB/12GB na cor Roxo. Conta com tela Dynamic AMOLED de 6.7\", chipset Qualcomm SM8850-1-AD Snapdragon 8 Elite Gen 5, câmera traseira Tripla 50 MP e 10 MP e 12 MP, câmera frontal Única 12 MP, bateria de 4900 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Roxo",
+        "Tela: Dynamic AMOLED 6.7\" 2K (1440 x 3120)",
+        "Chipset: Qualcomm SM8850-1-AD Snapdragon 8 Elite Gen 5",
+        "Câmera traseira: Tripla 50 MP + 10 MP + 12 MP",
+        "Câmera frontal: Única 12 MP",
+        "Bateria: 4900 mAh",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "sg-galaxy-s26",
+  "name": "Samsung Galaxy S26",
+  "brand": "Samsung",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 4295.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/samsung/sg-galaxy-s26/256gb-12gb-azul-celeste-1.webp",
+    "/catalog/samsung/sg-galaxy-s26/256gb-12gb-azul-celeste-2.webp",
+    "/catalog/samsung/sg-galaxy-s26/256gb-12gb-azul-celeste-3.webp"
+  ],
+  "description": "Samsung Galaxy S26 256GB/12GB na cor Azul celeste. Conta com tela LTPO AMOLED de 6.3\", chipset Snapdragon 9 Elite, câmera traseira Tripla 50 MP e 10 MP e 12 MP, câmera frontal Única 12 MP, bateria de 4.000 mAh. Sistema: Android 16.",
+  "specs": [
+    "Memória: 256GB/12GB",
+    "Cor: Azul celeste",
+    "Tela: LTPO AMOLED 6.3\" Full HD+",
+    "Chipset: Snapdragon 9 Elite",
+    "Câmera traseira: Tripla 50 MP + 10 MP + 12 MP",
+    "Câmera frontal: Única 12 MP",
+    "Bateria: 4.000 mAh",
+    "Recursos: Galaxy AI 2.0, IP68",
+    "Sistema: Android 16",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "sg-galaxy-s26-256gb-12gb-azul-celeste",
+      "label": "256GB/12GB · Azul celeste",
+      "price": 4295.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-s26/256gb-12gb-azul-celeste-1.webp",
+        "/catalog/samsung/sg-galaxy-s26/256gb-12gb-azul-celeste-2.webp",
+        "/catalog/samsung/sg-galaxy-s26/256gb-12gb-azul-celeste-3.webp"
+      ],
+      "description": "Samsung Galaxy S26 256GB/12GB na cor Azul celeste. Conta com tela LTPO AMOLED de 6.3\", chipset Snapdragon 9 Elite, câmera traseira Tripla 50 MP e 10 MP e 12 MP, câmera frontal Única 12 MP, bateria de 4.000 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Azul celeste",
+        "Tela: LTPO AMOLED 6.3\" Full HD+",
+        "Chipset: Snapdragon 9 Elite",
+        "Câmera traseira: Tripla 50 MP + 10 MP + 12 MP",
+        "Câmera frontal: Única 12 MP",
+        "Bateria: 4.000 mAh",
+        "Recursos: Galaxy AI 2.0, IP68",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-s26-256gb-12gb-roxo-cobalto",
+      "label": "256GB/12GB · Roxo cobalto",
+      "price": 4295.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-s26/256gb-12gb-roxo-cobalto-1.webp",
+        "/catalog/samsung/sg-galaxy-s26/256gb-12gb-roxo-cobalto-2.webp",
+        "/catalog/samsung/sg-galaxy-s26/256gb-12gb-roxo-cobalto-3.webp"
+      ],
+      "description": "Samsung Galaxy S26 256GB/12GB na cor Roxo cobalto. Conta com tela LTPO AMOLED de 6.3\", chipset Snapdragon 9 Elite, câmera traseira Tripla 50 MP e 10 MP e 12 MP, câmera frontal Única 12 MP, bateria de 4.000 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Roxo cobalto",
+        "Tela: LTPO AMOLED 6.3\" Full HD+",
+        "Chipset: Snapdragon 9 Elite",
+        "Câmera traseira: Tripla 50 MP + 10 MP + 12 MP",
+        "Câmera frontal: Única 12 MP",
+        "Bateria: 4.000 mAh",
+        "Recursos: Galaxy AI 2.0, IP68",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

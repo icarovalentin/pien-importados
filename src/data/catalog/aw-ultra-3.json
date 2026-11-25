@@ -1,0 +1,249 @@
+{
+  "id": "aw-ultra-3",
+  "name": "Apple Watch Ultra 3",
+  "brand": "Apple",
+  "category": "eletronicos",
+  "categoryLabel": "Smartwatch",
+  "price": 4198.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-oceano-preto-1.webp",
+    "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-oceano-preto-2.webp",
+    "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-oceano-preto-3.webp"
+  ],
+  "description": "Apple Watch Ultra 3 Titânio Preto 49mm · Oceano Preto. Conta com tela LTPO OLED, até 3000 nits, caixa de 49mm, chip S10, resistência à água até 100 metros (WR100), autonomia de até 36h (uso típico) / até 72h (modo de baixo consumo), navegação GPS duplo, mapas offline, Backtrack, bússola, altímetro. Compatibilidade: iPhone (iOS 17+).",
+  "specs": [
+    "Caixa: 49 mm",
+    "Cor: Titânio preto",
+    "Pulseira: Black Ocean Band",
+    "Tela: LTPO OLED, até 3000 nits",
+    "Chip: Chip S10",
+    "Sistema: WatchOS",
+    "Conectividade: Wi-Fi, Bluetooth, 4G LTE, 5G, GPS, Comunicação via satélite (SOS)",
+    "Resistência à água: Até 100 metros (WR100) ",
+    "Autonomia: Até 36h (uso típico) / até 72h (modo de baixo consumo)",
+    "Memória: 64¿GB",
+    "Monitoramento de saúde: Frequência cardíaca, ECG, Oxigênio no sangue, Detecção de quedas, Apneia do sono, Notificações de saúde cardíaca",
+    "Compatibilidade: iPhone (iOS 17+)",
+    "Referência: MF0J4LW/A",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "aw-ultra-3-titanio-preto-49mm-oceano-preto",
+      "label": "Titânio Preto 49mm · Oceano Preto",
+      "price": 4198.9,
+      "images": [
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-oceano-preto-1.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-oceano-preto-2.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-oceano-preto-3.webp"
+      ],
+      "description": "Apple Watch Ultra 3 Titânio Preto 49mm · Oceano Preto. Conta com tela LTPO OLED, até 3000 nits, caixa de 49mm, chip S10, resistência à água até 100 metros (WR100), autonomia de até 36h (uso típico) / até 72h (modo de baixo consumo), navegação GPS duplo, mapas offline, Backtrack, bússola, altímetro. Compatibilidade: iPhone (iOS 17+).",
+      "specs": [
+        "Caixa: 49 mm",
+        "Cor: Titânio preto",
+        "Pulseira: Black Ocean Band",
+        "Tela: LTPO OLED, até 3000 nits",
+        "Chip: Chip S10",
+        "Sistema: WatchOS",
+        "Conectividade: Wi-Fi, Bluetooth, 4G LTE, 5G, GPS, Comunicação via satélite (SOS)",
+        "Resistência à água: Até 100 metros (WR100) ",
+        "Autonomia: Até 36h (uso típico) / até 72h (modo de baixo consumo)",
+        "Memória: 64¿GB",
+        "Monitoramento de saúde: Frequência cardíaca, ECG, Oxigênio no sangue, Detecção de quedas, Apneia do sono, Notificações de saúde cardíaca",
+        "Compatibilidade: iPhone (iOS 17+)",
+        "Referência: MF0J4LW/A",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "aw-ultra-3-titanio-preto-49mm-loop-alpine-preto",
+      "label": "Titânio Preto 49mm · Loop Alpine Preto",
+      "price": 4295.9,
+      "images": [
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-alpine-preto-1.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-alpine-preto-2.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-alpine-preto-3.webp"
+      ],
+      "description": "Apple Watch Ultra 3 Titânio Preto 49mm · Loop Alpine Preto. Conta com tela LTPO3 OLED Always-On, caixa de 49mm, chip Apple S10 dual-core, resistência à água 100m, autonomia de até 42 h, navegação GPS L1/L5, GLONASS, Galileo, QZSS, BeiDou. Compatibilidade: iOS.",
+      "specs": [
+        "Caixa: 49 mm",
+        "Cor: Preto titânio",
+        "Pulseira: Alpine Loop M",
+        "Tela: LTPO3 OLED Always-On",
+        "Chip: Chip Apple S10 dual-core",
+        "Sistema: watchOS 26",
+        "Conectividade: Wi-Fi + Bluetooth 5.3",
+        "Resistência à água: 100m",
+        "Autonomia: 42 h",
+        "Memória: 64 GB",
+        "Monitoramento de saúde: Frequência cardíaca, ECG, oxigênio no sangue, temperatura, sono, hipertensão",
+        "Compatibilidade: iOS",
+        "Referência: MF0V4AF/A",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "aw-ultra-3-titanio-preto-49mm-loop-trail-preto-m-l",
+      "label": "Titânio Preto 49mm · Loop Trail Preto M/L",
+      "price": 4337.9,
+      "images": [
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-trail-preto-m-l-1.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-trail-preto-m-l-2.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-trail-preto-m-l-3.webp"
+      ],
+      "description": "Apple Watch Ultra 3 Titânio Preto 49mm · Loop Trail Preto M/L. Conta com tela LTPO3 OLED Always-On, caixa de 49mm, chip Apple S10 dual-core, resistência à água 100m, autonomia de até 42 h, navegação GPS L1/L5, GLONASS, Galileo, QZSS, BeiDou. Compatibilidade: iOS.",
+      "specs": [
+        "Caixa: 49 mm",
+        "Cor: Preto",
+        "Pulseira: Trail Loop M/L",
+        "Tela: LTPO3 OLED Always-On",
+        "Chip: Apple S10 dual-core",
+        "Sistema: watchOS 26",
+        "Conectividade: Wi-Fi + Bluetooth 5.3",
+        "Resistência à água: 100m",
+        "Autonomia: 42 h",
+        "Memória: 64 GB",
+        "Monitoramento de saúde: Frequência cardíaca, ECG, oxigênio no sangue, temperatura, sono, hipertensão",
+        "Compatibilidade: iOS",
+        "Referência: MF1H4AF/A",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "aw-ultra-3-titanio-natural-49mm-loop-trail-azul-m-l",
+      "label": "Titânio Natural 49mm · Loop Trail Azul M/L",
+      "price": 4386.9,
+      "images": [
+        "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-loop-trail-azul-m-l-1.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-loop-trail-azul-m-l-2.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-loop-trail-azul-m-l-3.webp"
+      ],
+      "description": "Apple Watch Ultra 3 Titânio Natural 49mm · Loop Trail Azul M/L. Conta com tela OLED, caixa de 49mm, chip S10, resistência à água IP6X (100M), autonomia de até Aproximadamente 42 horas, navegação GPS, GLONASS, Galileo, QZSS, BeiDou.",
+      "specs": [
+        "Caixa: 49 mm",
+        "Cor: Titânio natural",
+        "Pulseira: Loop Trail Azul",
+        "Tela: OLED",
+        "Chip: S10",
+        "Sistema: watchOS",
+        "Conectividade: Wi-Fi 4 (802.11n) + Bluetooth 5.3 + LTE",
+        "Resistência à água: IP6X (100M)",
+        "Autonomia: Aproximadamente 42 horas",
+        "Memória: 64 GB",
+        "Monitoramento de saúde: Oxigênio no sangue, batimentos, sono, ciclo feminino, estado emocional",
+        "Referência: MEWU4AF/A",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "aw-ultra-3-titanio-preto-49mm-loop-alpine-preto-2",
+      "label": "Titânio Preto 49mm · Loop Alpine Preto (2)",
+      "price": 4386.9,
+      "images": [
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-alpine-preto-2-1.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-alpine-preto-2-2.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-loop-alpine-preto-2-3.webp"
+      ],
+      "description": "Apple Watch Ultra 3 Titânio Preto 49mm · Loop Alpine Preto (2). Conta com tela LTPO3 OLED Always-On, caixa de 49mm, chip Apple S10 dual-core, resistência à água 100m, autonomia de até 42 h, navegação GPS L1/L5, GLONASS, Galileo, QZSS, BeiDou. Compatibilidade: iOS.",
+      "specs": [
+        "Caixa: 49 mm",
+        "Cor: Preto",
+        "Pulseira: Alpine Loop L",
+        "Tela: LTPO3 OLED Always-On",
+        "Chip: Apple S10 dual-core",
+        "Sistema: watchOS 26",
+        "Conectividade: Wi-Fi + Bluetooth 5.3",
+        "Resistência à água: 100m",
+        "Autonomia: 42 h",
+        "Memória: 64 GB",
+        "Monitoramento de saúde: Frequência cardíaca, ECG, oxigênio no sangue, temperatura, sono, hipertensão",
+        "Compatibilidade: iOS",
+        "Referência: MF0X4AF/A",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "aw-ultra-3-titanio-natural-49mm-loop-alpine-azul",
+      "label": "Titânio Natural 49mm · Loop Alpine Azul",
+      "price": 4434.9,
+      "images": [
+        "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-loop-alpine-azul-1.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-loop-alpine-azul-2.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-loop-alpine-azul-3.webp"
+      ],
+      "description": "Apple Watch Ultra 3 Titânio Natural 49mm · Loop Alpine Azul. Conta com tela OLED, caixa de 49mm, chip Apple S9 SiP (System in Package) de 64 bits de 2 núcleos, resistência à água 10 ATM, autonomia de até 36 horas em uso normal / Até 72 horas no Modo de Pouca Energia, navegação GPS, GLONASS, Galileo, BeiDou. Compatibilidade: iPhone XS ou posterior rodando iOS 17 ou superior.",
+      "specs": [
+        "Caixa: 49 mm",
+        "Cor: Titânio",
+        "Pulseira: Alpine Loop Azul (Tamanho M/L)",
+        "Tela: OLED",
+        "Chip: Apple S9 SiP (System in Package) de 64 bits de 2 núcleos",
+        "Sistema: watchOS",
+        "Conectividade: Wi-Fi 4, Bluetooth 5.3",
+        "Resistência à água: 10 ATM",
+        "Autonomia: Até 36 horas em uso normal / Até 72 horas no Modo de Pouca Energia",
+        "Memória: 64 GB",
+        "Monitoramento de saúde: ECG (eletrocardiograma), Frequência cardíaca, Temperatura corporal, Monitoramento do sono",
+        "Compatibilidade: iPhone XS ou posterior rodando iOS 17 ou superior",
+        "Referência: MEWM4AF/A",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "aw-ultra-3-titanio-preto-49mm-milanes-de-titanio-preto",
+      "label": "Titânio Preto 49mm · Milanês de Titânio Preto",
+      "price": 4809.9,
+      "images": [
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-milanes-de-titanio-preto-1.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-milanes-de-titanio-preto-2.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-preto-49mm-milanes-de-titanio-preto-3.webp"
+      ],
+      "description": "Apple Watch Ultra 3 Titânio Preto 49mm · Milanês de Titânio Preto. Conta com tela OLED, caixa de 49mm, chip S10, resistência à água IP6X (100M), autonomia de até Aproximadamente 42 horas, navegação GPS, GLONASS, Galileo, QZSS, BeiDou.",
+      "specs": [
+        "Caixa: 49 mm",
+        "Cor: Titânio preto",
+        "Pulseira: Loop Milanês Preto",
+        "Tela: OLED",
+        "Chip: S10",
+        "Sistema: watchOS",
+        "Conectividade: Wi-Fi 4 (802.11n) + Bluetooth 5.3 + LTE",
+        "Resistência à água: IP6X (100M)",
+        "Autonomia: Aproximadamente 42 horas",
+        "Memória: 64 GB",
+        "Monitoramento de saúde: Oxigênio no sangue, batimentos, sono, ciclo feminino, estado emocional",
+        "Referência: MF1Q4AF/A",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "aw-ultra-3-titanio-natural-49mm-milanes-de-titanio-l",
+      "label": "Titânio Natural 49mm · Milanês de Titânio L",
+      "price": 5354.9,
+      "images": [
+        "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-milanes-de-titanio-l-1.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-milanes-de-titanio-l-2.webp",
+        "/catalog/applewatch/aw-ultra-3/titanio-natural-49mm-milanes-de-titanio-l-3.webp"
+      ],
+      "description": "Apple Watch Ultra 3 Titânio Natural 49mm · Milanês de Titânio L. Conta com tela Retina OLED LTPO, caixa de 49mm, chip S10 SiP, autonomia de até 36h (Normal) / 72h (Eco), navegação GPS de dupla frequência. Compatibilidade: iOS 18 ou superior.",
+      "specs": [
+        "Caixa: 49 mm",
+        "Cor: Titânio natural",
+        "Pulseira: Milanese Loop de Titânio (L)",
+        "Tela: Retina OLED LTPO",
+        "Chip: Chip S10 SiP",
+        "Sistema: watchOS 12",
+        "Conectividade: LTE, Wi-Fi 4, BT 5.3, U2",
+        "Autonomia: Até 36h (Normal) / 72h (Eco)",
+        "Memória: 64 GB",
+        "Monitoramento de saúde: Mensagens, Apps, Alertas",
+        "Compatibilidade: iOS 18 ou superior",
+        "Referência: MF0E4LW/A",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "sg-galaxy-a56-5g",
+  "name": "Samsung Galaxy A56 5G",
+  "brand": "Samsung",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 2238.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-azul-1.webp",
+    "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-azul-2.webp",
+    "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-azul-3.webp"
+  ],
+  "description": "Samsung Galaxy A56 5G 256GB/8GB na cor Azul. Conta com tela Super AMOLED 120Hz de 6.7\", chipset Exynos 1580, câmera traseira Tripla 50 MP e 12 MP e 5 MP, câmera frontal Única 12 MP, bateria de 5000 mAh. Sistema: Android 15.",
+  "specs": [
+    "Memória: 256GB/8GB",
+    "Cor: Azul",
+    "Tela: Super AMOLED 120Hz 6.7\" Full HD+ (1080 x 2340)",
+    "Chipset: Exynos 1580",
+    "Câmera traseira: Tripla 50 MP + 12 MP + 5 MP",
+    "Câmera frontal: Única 12 MP",
+    "Bateria: 5000 mAh",
+    "Recursos: Resistência a poeira e água IP67 + Observações + Caixa Slim",
+    "Sistema: Android 15",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Samsung, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "sg-galaxy-a56-5g-256gb-8gb-azul",
+      "label": "256GB/8GB · Azul",
+      "price": 2238.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-azul-1.webp",
+        "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-azul-2.webp",
+        "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-azul-3.webp"
+      ],
+      "description": "Samsung Galaxy A56 5G 256GB/8GB na cor Azul. Conta com tela Super AMOLED 120Hz de 6.7\", chipset Exynos 1580, câmera traseira Tripla 50 MP e 12 MP e 5 MP, câmera frontal Única 12 MP, bateria de 5000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Azul",
+        "Tela: Super AMOLED 120Hz 6.7\" Full HD+ (1080 x 2340)",
+        "Chipset: Exynos 1580",
+        "Câmera traseira: Tripla 50 MP + 12 MP + 5 MP",
+        "Câmera frontal: Única 12 MP",
+        "Bateria: 5000 mAh",
+        "Recursos: Resistência a poeira e água IP67 + Observações + Caixa Slim",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "sg-galaxy-a56-5g-256gb-8gb-verde",
+      "label": "256GB/8GB · Verde",
+      "price": 2238.9,
+      "images": [
+        "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-verde-1.webp",
+        "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-verde-2.webp",
+        "/catalog/samsung/sg-galaxy-a56-5g/256gb-8gb-verde-3.webp"
+      ],
+      "description": "Samsung Galaxy A56 5G 256GB/8GB na cor Verde. Conta com tela Super AMOLED, 120Hz de 6.7\", chipset Exynos 1580, câmera traseira 50 MP e 12 MP e 5 MP, câmera frontal 12MP, bateria de 5000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Verde",
+        "Tela: Super AMOLED, 120Hz 6.7\" 1080 x 2340",
+        "Chipset: Exynos 1580",
+        "Câmera traseira: 50 MP + 12 MP + 5 MP",
+        "Câmera frontal: 12MP",
+        "Bateria: 5000 mAh",
+        "Recursos: Resistente a poeira e água IP67",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

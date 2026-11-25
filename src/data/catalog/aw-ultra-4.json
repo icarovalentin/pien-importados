@@ -1,0 +1,61 @@
+{
+  "id": "aw-ultra-4",
+  "name": "Apple Watch Ultra 4",
+  "brand": "Apple",
+  "category": "eletronicos",
+  "categoryLabel": "Smartwatch",
+  "price": 4827.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/applewatch/aw-ultra-4/titanio-preto-49mm-oceano-cinza-translucido-1.webp",
+    "/catalog/applewatch/aw-ultra-4/titanio-preto-49mm-oceano-cinza-translucido-2.webp",
+    "/catalog/applewatch/aw-ultra-4/titanio-preto-49mm-oceano-cinza-translucido-3.webp"
+  ],
+  "description": "Apple Watch Ultra 4 Titânio Preto 49mm · Oceano Cinza Translúcido. Conta com tela OLED, caixa de 49mm, chip Apple S11, resistência à água 10 ATM, autonomia de até 45 horas, navegação GPS, GLONASS, Galileo, BDS, QZSS.",
+  "specs": [
+    "Caixa: 49 mm",
+    "Cor: Titânio preto",
+    "Pulseira: Ocean",
+    "Tela: OLED",
+    "Chip: Apple S11",
+    "Sistema: watchOS 27",
+    "Conectividade: Wi-Fi 802.11 b/g/n, Celular 5G, Bluetooth 5.3",
+    "Resistência à água: 10 ATM",
+    "Autonomia: 45 horas",
+    "Memória: 64 GB",
+    "Monitoramento de saúde: SpO2 (oxigênio no sangue), Contagem de passos, Distância percorrida, Frequência cardíaca, Modos esportivos, Monitoramento de estresse, Monitoramento de exercícios, Monitoramento do sono, Temperatura corporal",
+    "Referência: MJAY4LS/A",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "aw-ultra-4-titanio-preto-49mm-oceano-cinza-translucido",
+      "label": "Titânio Preto 49mm · Oceano Cinza Translúcido",
+      "price": 4827.9,
+      "images": [
+        "/catalog/applewatch/aw-ultra-4/titanio-preto-49mm-oceano-cinza-translucido-1.webp",
+        "/catalog/applewatch/aw-ultra-4/titanio-preto-49mm-oceano-cinza-translucido-2.webp",
+        "/catalog/applewatch/aw-ultra-4/titanio-preto-49mm-oceano-cinza-translucido-3.webp"
+      ],
+      "description": "Apple Watch Ultra 4 Titânio Preto 49mm · Oceano Cinza Translúcido. Conta com tela OLED, caixa de 49mm, chip Apple S11, resistência à água 10 ATM, autonomia de até 45 horas, navegação GPS, GLONASS, Galileo, BDS, QZSS.",
+      "specs": [
+        "Caixa: 49 mm",
+        "Cor: Titânio preto",
+        "Pulseira: Ocean",
+        "Tela: OLED",
+        "Chip: Apple S11",
+        "Sistema: watchOS 27",
+        "Conectividade: Wi-Fi 802.11 b/g/n, Celular 5G, Bluetooth 5.3",
+        "Resistência à água: 10 ATM",
+        "Autonomia: 45 horas",
+        "Memória: 64 GB",
+        "Monitoramento de saúde: SpO2 (oxigênio no sangue), Contagem de passos, Distância percorrida, Frequência cardíaca, Modos esportivos, Monitoramento de estresse, Monitoramento de exercícios, Monitoramento do sono, Temperatura corporal",
+        "Referência: MJAY4LS/A",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}
