@@ -44,7 +44,7 @@ export default function AdminPage() {
   // Campos do Formulário
   const [formName, setFormName] = useState('');
   const [formBrand, setFormBrand] = useState('');
-  const [formCategory, setFormCategory] = useState<'perfumes' | 'arabes' | 'beleza' | 'eletronicos' | 'smartphones' | 'acessorios'>('perfumes');
+  const [formCategory, setFormCategory] = useState<'farmacia' | 'perfumes' | 'arabes' | 'beleza' | 'eletronicos' | 'smartphones' | 'acessorios'>('perfumes');
   const [formCategoryLabel, setFormCategoryLabel] = useState('');
   const [formPrice, setFormPrice] = useState('');
   const [formOriginalPrice, setFormOriginalPrice] = useState('');
@@ -702,7 +702,7 @@ export default function AdminPage() {
                   {/* Foto + Informações */}
                   <div className="flex items-center gap-4 min-w-0">
                     <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-zinc-100 dark:bg-dark-950 shrink-0 border border-zinc-200 dark:border-dark-700">
-                      <Image src={p.images[0]} alt={p.name} fill className="object-cover" />
+                      <Image src={p.images[0]} alt={p.name} fill sizes="64px" className="object-contain bg-white" />
                     </div>
 
                     <div className="min-w-0 space-y-1">
@@ -860,6 +860,7 @@ export default function AdminPage() {
                       const cat = e.target.value as any;
                       setFormCategory(cat);
                       const labels: Record<string, string> = {
+                        farmacia: 'Farmácia',
                         perfumes: 'Perfumaria',
                         arabes: 'Perfumes Árabes',
                         eletronicos: 'Eletrônicos',
@@ -871,6 +872,7 @@ export default function AdminPage() {
                     }}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-gold-500"
                   >
+                    <option value="farmacia">Farmácia</option>
                     <option value="perfumes">Perfumaria</option>
                     <option value="arabes">Perfumes Árabes</option>
                     <option value="eletronicos">Eletrônicos</option>
@@ -988,7 +990,7 @@ export default function AdminPage() {
                         key={`${imgUrl}-${idx}`}
                         className="relative aspect-[3/4] rounded-xl overflow-hidden bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 group"
                       >
-                        <Image src={imgUrl} alt="" fill className="object-cover" />
+                        <Image src={imgUrl} alt="" fill sizes="120px" className="object-contain bg-white" />
                         {idx === 0 && (
                           <span className="absolute top-1 left-1 px-1.5 py-0.5 text-[9px] font-bold uppercase bg-gold-500 text-dark-950 rounded">
                             Capa

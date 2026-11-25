@@ -129,13 +129,16 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           <div
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
-            className="relative w-full aspect-[4/5] bg-[#ebe6dc] dark:bg-dark-900 overflow-hidden touch-pan-y"
+            className="relative w-full aspect-[4/5] bg-white overflow-hidden touch-pan-y"
           >
             <Image
               src={galleryImages[selectedImageIndex] || galleryImages[0]}
               alt={product.name}
               fill
-              className="object-cover"
+              sizes="(max-width: 768px) 90vw, 420px"
+              quality={90}
+              priority
+              className="object-contain"
             />
 
             {totalImages > 1 && (
@@ -170,7 +173,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                       : 'border-[#d6d0c4] dark:border-dark-700 opacity-60 hover:opacity-100'
                   }`}
                 >
-                  <Image src={img} alt="" fill className="object-cover" />
+                  <Image src={img} alt="" fill sizes="56px" className="object-contain bg-white p-0.5" />
                 </button>
               ))}
             </div>

@@ -26,6 +26,7 @@ export function RotatingHeroBanner({
   activeBrand,
 }: RotatingHeroBannerProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [heroFit, setHeroFit] = useState<'cover' | 'contain'>('cover');
   const [isPaused, setIsPaused] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -85,14 +86,35 @@ export function RotatingHeroBanner({
           onClick={() => onOpenProduct(slide)}
           className="group lg:col-span-6 relative min-h-[320px] sm:min-h-[420px] lg:min-h-[470px] bg-[#ebe6dc] dark:bg-dark-900 overflow-hidden cursor-pointer"
         >
+          {/* Foto vertical ou quadrada: aparece inteira sobre um fundo desfocado da própria foto */}
+          {heroFit === 'contain' && (
+            <Image
+              key={`bg-${slide.id}`}
+              src={slide.images[0]}
+              alt=""
+              aria-hidden
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover scale-125 blur-2xl opacity-60"
+            />
+          )}
           <Image
             key={slide.id}
             src={slide.images[0]}
             alt={slide.name}
             fill
             priority
+            quality={90}
             sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+            onLoad={(e) => {
+              const img = e.currentTarget;
+              setHeroFit(img.naturalWidth / img.naturalHeight < 1.15 ? 'contain' : 'cover');
+            }}
+            className={
+              heroFit === 'contain'
+                ? 'object-contain object-center p-6 group-hover:scale-[1.03] transition-transform duration-700 ease-out'
+                : 'object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out'
+            }
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 

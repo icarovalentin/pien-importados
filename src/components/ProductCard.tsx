@@ -44,13 +44,14 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
       className="group flex flex-col cursor-pointer space-y-3"
     >
       {/* Fotografia limpa sem borda de caixa */}
-      <div className="relative w-full aspect-[3/4] bg-[#f2efe8] dark:bg-dark-900 overflow-hidden">
+      <div className="relative w-full aspect-[3/4] bg-white overflow-hidden">
         <Image
           src={product.images[0]}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-          className="object-cover object-center group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+          quality={90}
+          className="object-contain object-center p-2 group-hover:scale-[1.04] transition-transform duration-700 ease-out"
         />
 
         {/* Botão discreto de lista no canto inferior direito */}

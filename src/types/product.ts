@@ -1,4 +1,4 @@
-export type CategoryType = 'todos' | 'perfumes' | 'arabes' | 'eletronicos' | 'smartphones' | 'acessorios';
+export type CategoryType = 'todos' | 'farmacia' | 'perfumes' | 'arabes' | 'eletronicos' | 'smartphones' | 'acessorios';
 
 export type StockStatus = 'pronta_entrega' | 'encomenda';
 
@@ -20,7 +20,7 @@ export interface Product {
   id: string;
   name: string;
   brand: string;
-  category: 'perfumes' | 'arabes' | 'beleza' | 'eletronicos' | 'smartphones' | 'acessorios';
+  category: 'farmacia' | 'perfumes' | 'arabes' | 'beleza' | 'eletronicos' | 'smartphones' | 'acessorios';
   categoryLabel: string;
   price: number;
   originalPrice?: number;

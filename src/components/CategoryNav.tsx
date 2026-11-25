@@ -17,6 +17,7 @@ interface CategoryNavProps {
 
 const CATEGORIES: { id: CategoryType; label: string }[] = [
   { id: 'todos', label: 'Novidades' },
+  { id: 'farmacia', label: 'Farmácia' },
   { id: 'perfumes', label: 'Perfumaria' },
   { id: 'arabes', label: 'Perfumes Árabes' },
   { id: 'eletronicos', label: 'Eletrônicos' },
