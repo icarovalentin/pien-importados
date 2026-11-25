@@ -115,20 +115,10 @@ export function RotatingHeroBanner({
         {/* Lado Esquerdo: Fotografia Editorial */}
         <div
           onClick={() => onOpenProduct(slide)}
-          className="group lg:col-span-6 relative min-h-[320px] sm:min-h-[420px] lg:min-h-[470px] bg-[#ebe6dc] dark:bg-dark-900 overflow-hidden cursor-pointer"
+          className={`group lg:col-span-6 relative min-h-[320px] sm:min-h-[420px] lg:min-h-[470px] overflow-hidden cursor-pointer ${
+            heroFit === 'contain' ? 'bg-[#fcfbf8] dark:bg-white' : 'bg-[#ebe6dc] dark:bg-dark-900'
+          }`}
         >
-          {/* Foto vertical ou quadrada: aparece inteira sobre um fundo desfocado da própria foto */}
-          {heroFit === 'contain' && (
-            <Image
-              key={`bg-${slide.id}`}
-              src={slide.images[0]}
-              alt=""
-              aria-hidden
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover scale-125 blur-2xl opacity-60"
-            />
-          )}
           <Image
             key={slide.id}
             src={slide.images[0]}
@@ -143,14 +133,20 @@ export function RotatingHeroBanner({
             }}
             className={
               heroFit === 'contain'
-                ? 'object-contain object-center p-6 group-hover:scale-[1.03] transition-transform duration-700 ease-out'
+                ? 'object-contain object-center p-8 sm:p-12 mix-blend-multiply dark:mix-blend-normal brightness-[1.05] group-hover:scale-[1.03] transition-transform duration-700 ease-out'
                 : 'object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out'
             }
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+          {heroFit !== 'contain' && (
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+          )}
 
           {/* Contador editorial sobre a foto */}
-          <div className="absolute bottom-4 left-5 z-10 text-[11px] uppercase tracking-[0.2em] text-white/95 font-medium">
+          <div
+            className={`absolute bottom-4 left-5 z-10 text-[11px] uppercase tracking-[0.2em] font-medium ${
+              heroFit === 'contain' ? 'text-zinc-500 dark:text-zinc-600' : 'text-white/95'
+            }`}
+          >
             {String(currentSlide + 1).padStart(2, '0')} / {String(totalSlides).padStart(2, '0')} ·{' '}
             {isPronta ? 'Pronta-entrega' : 'Sob encomenda'}
           </div>

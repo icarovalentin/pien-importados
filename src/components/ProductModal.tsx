@@ -129,11 +129,11 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
         </div>
 
         {/* Lado Esquerdo: Galeria com swipe no celular */}
-        <div className="w-full md:w-1/2 bg-[#f2efe8] dark:bg-dark-950 flex flex-col items-center justify-center p-6">
+        <div className="w-full md:w-1/2 bg-[#fcfbf8] dark:bg-dark-950 flex flex-col items-center justify-center p-6">
           <div
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
-            className="relative w-full aspect-[4/5] bg-white overflow-hidden touch-pan-y"
+            className="relative w-full aspect-[4/5] bg-[#fcfbf8] dark:bg-white overflow-hidden touch-pan-y"
           >
             <Image
               src={galleryImages[selectedImageIndex] || galleryImages[0]}
@@ -142,7 +142,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               sizes="(max-width: 768px) 90vw, 420px"
               quality={90}
               priority
-              className="object-contain"
+              className="object-contain mix-blend-multiply dark:mix-blend-normal brightness-[1.05]"
             />
 
             {totalImages > 1 && (
@@ -177,7 +177,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                       : 'border-[#d6d0c4] dark:border-dark-700 opacity-60 hover:opacity-100'
                   }`}
                 >
-                  <Image src={img} alt="" fill sizes="56px" className="object-contain bg-white p-0.5" />
+                  <Image src={img} alt="" fill sizes="56px" className="object-contain mix-blend-multiply dark:mix-blend-normal brightness-[1.05] p-0.5" />
                 </button>
               ))}
             </div>
@@ -264,7 +264,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                         aria-label={variant.label}
                         title={variant.label}
                         onClick={() => setSelectedVariantIndex(idx)}
-                        className={`relative aspect-square overflow-hidden border bg-white transition-all ${
+                        className={`relative aspect-square overflow-hidden border bg-[#fcfbf8] dark:bg-white transition-all ${
                           selected
                             ? 'border-[#141414] dark:border-gold-400 ring-1 ring-[#141414] dark:ring-gold-400'
                             : 'border-[#d6d0c4] dark:border-dark-700 opacity-70 hover:opacity-100'
@@ -276,7 +276,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                             alt=""
                             fill
                             sizes="64px"
-                            className="object-contain p-0.5"
+                            className="object-contain mix-blend-multiply dark:mix-blend-normal brightness-[1.05] p-0.5"
                           />
                         ) : (
                           <span className="absolute inset-0 flex items-center justify-center text-[9px] px-1 text-center leading-tight">
