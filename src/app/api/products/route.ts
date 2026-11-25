@@ -469,7 +469,7 @@ export async function PUT(req: Request) {
         body.deliveryTime !== undefined
           ? sanitizeString(body.deliveryTime, current.deliveryTime, 120)
           : current.deliveryTime,
-      images: nextImages,
+      images: nextImages.length > 0 ? nextImages : current.images,
       description:
         body.description !== undefined
           ? sanitizeString(body.description, '', 2000)
