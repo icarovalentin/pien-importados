@@ -8,7 +8,7 @@
 ALTER TABLE public.products DROP CONSTRAINT IF EXISTS products_category_check;
 ALTER TABLE public.products
   ADD CONSTRAINT products_category_check
-  CHECK (category IN ('farmacia', 'perfumes', 'arabes', 'beleza', 'eletronicos', 'smartphones', 'acessorios'));
+  CHECK (category IN ('farmacia', 'perfumes', 'arabes', 'bebidas', 'beleza', 'eletronicos', 'smartphones', 'acessorios'));
 
 INSERT INTO public.products
   (id, name, brand, category, category_label, price, original_price, status, delivery_time, images, description, specs, is_featured, batch_code_info, variants)

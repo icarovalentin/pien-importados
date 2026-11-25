@@ -84,3 +84,16 @@ Pelo painel `/admin` (login com `ADMIN_PASSWORD`) você cadastra, edita e remove
 ### 🔐 Variáveis de ambiente (obrigatórias em produção)
 
 Veja `.env.example`. Defina na Vercel: `ADMIN_PASSWORD`, `ADMIN_SESSION_SECRET` (mín. 32 caracteres, gere com `openssl rand -base64 48`), `NEXT_PUBLIC_SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY`. Sem as duas primeiras o login do admin retorna 503. Recomendado: crie um banco gratuito no [Upstash](https://upstash.com) e defina `UPSTASH_REDIS_REST_URL` e `UPSTASH_REDIS_REST_TOKEN` para o limite de tentativas de login valer entre todas as instâncias da Vercel. O deploy é automático: cada merge no `main` publica o site na Vercel. O painel não tem mais link no site: acesse digitando `/admin` na URL.
+
+---
+
+## ✏️ Como mexer no menu e nas categorias
+
+Tudo fica em **um único arquivo: `src/config/site.ts`**.
+
+- **Mudar o nome de uma categoria ou a ordem do menu:** edite a lista `CATEGORIES` (a ordem da lista é a ordem do menu, no computador e no celular).
+- **Adicionar uma categoria:** acrescente uma linha em `CATEGORIES` (`id` sem acento e minúsculo, e o nome que aparece no menu), inclua o mesmo `id` na lista do arquivo `supabase/add-categorias.sql` e rode esse arquivo uma vez no SQL Editor do Supabase.
+- **Categoria só para maiores de 18 anos (bebidas):** use `adultOnly: true`. O site mostra o aviso automaticamente.
+- **Texto da faixa preta no topo e aviso de maiores de 18:** objeto `SITE`, no mesmo arquivo.
+
+O painel `/admin`, a API e o menu (computador e celular) leem essa mesma lista, então não é preciso editar mais nada.

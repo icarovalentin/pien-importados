@@ -1,4 +1,7 @@
-export type CategoryType = 'todos' | 'farmacia' | 'perfumes' | 'arabes' | 'eletronicos' | 'smartphones' | 'acessorios';
+import type { MenuCategoryId, LegacyCategoryId } from '@/config/site';
+
+export type ProductCategory = MenuCategoryId | LegacyCategoryId;
+export type CategoryType = 'todos' | MenuCategoryId;
 
 export type StockStatus = 'pronta_entrega' | 'encomenda';
 
@@ -20,7 +23,7 @@ export interface Product {
   id: string;
   name: string;
   brand: string;
-  category: 'farmacia' | 'perfumes' | 'arabes' | 'beleza' | 'eletronicos' | 'smartphones' | 'acessorios';
+  category: ProductCategory;
   categoryLabel: string;
   price: number;
   originalPrice?: number;

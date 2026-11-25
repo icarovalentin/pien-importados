@@ -16,16 +16,8 @@ import { Footer } from '@/components/Footer';
 import { ShoppingBag, MessageCircle } from 'lucide-react';
 import { useInterestList } from '@/context/InterestListContext';
 import { getGeneralSupportWhatsAppUrl } from '@/utils/whatsapp';
+import { getCategoryLabel, isAdultCategory, SITE } from '@/config/site';
 
-const CATEGORY_LABELS: Record<CategoryType, string> = {
-  todos: 'Catálogo Completo',
-  perfumes: 'Perfumaria',
-  arabes: 'Perfumaria Árabe',
-  eletronicos: 'Eletrônicos',
-  smartphones: 'Smartphones',
-  acessorios: 'Tech & Acessórios',
-  farmacia: 'Farmácia',
-};
 
 export default function HomePage() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -90,8 +82,11 @@ export default function HomePage() {
     }
   };
 
+  // Espera o React redesenhar (os destaques somem ao filtrar) antes de rolar até o catálogo
   const scrollToCatalog = () => {
-    catalogRef.current?.scrollIntoView({ behavior: 'smooth' });
+    window.setTimeout(() => {
+      catalogRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 80);
   };
 
   const handleSelectCategory = (cat: CategoryType) => {
@@ -204,12 +199,14 @@ export default function HomePage() {
   const sectionTitle = selectedBrand
     ? selectedBrand
     : selectedCategory !== 'todos'
-      ? CATEGORY_LABELS[selectedCategory]
+      ? getCategoryLabel(selectedCategory)
       : selectedStock === 'pronta_entrega'
         ? 'Pronta-Entrega'
         : selectedStock === 'encomenda'
           ? 'Sob Encomenda'
           : 'Catálogo Completo';
+
+  const showAdultNotice = isAdultCategory(selectedCategory);
 
   const hasActiveFilters =
     selectedCategory !== 'todos' ||
@@ -231,8 +228,8 @@ export default function HomePage() {
       {loadingProducts ? (
         <div className="w-full border-b border-[#e5e0d5] dark:border-dark-800 bg-[#fcfbf8] dark:bg-[#0c0c0f]">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 animate-pulse">
-            <div className="lg:col-span-6 min-h-[320px] sm:min-h-[420px] lg:min-h-[470px] bg-[#ebe6dc] dark:bg-dark-900" />
-            <div className="lg:col-span-6 px-6 py-12 sm:px-12 lg:px-14 flex flex-col justify-center space-y-5">
+            <div className="lg:col-span-6 min-h-[240px] sm:min-h-[360px] lg:min-h-[470px] bg-[#ebe6dc] dark:bg-dark-900" />
+            <div className="lg:col-span-6 px-5 py-8 sm:px-12 sm:py-12 lg:px-14 flex flex-col justify-center space-y-4">
               <div className="h-3 w-36 bg-[#ebe6dc] dark:bg-dark-800" />
               <div className="h-9 w-4/5 bg-[#ebe6dc] dark:bg-dark-800" />
               <div className="h-4 w-full bg-[#ebe6dc] dark:bg-dark-800" />
@@ -259,13 +256,13 @@ export default function HomePage() {
 
       {/* Faixa Editorial: Destaques à Pronta-Entrega */}
       {showEditorialHighlights && (
-        <section className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4 space-y-6">
+        <section className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-2 sm:pb-4 space-y-4 sm:space-y-6">
           <div className="flex items-end justify-between border-b border-[#e5e0d5] dark:border-dark-800 pb-3">
             <div>
               <p className="text-[10px] uppercase tracking-[0.22em] text-[#065f46] dark:text-emerald-400 font-semibold">
                 Envio em até 24h
               </p>
-              <h2 className="text-xl sm:text-2xl font-display font-normal text-[#141414] dark:text-white mt-0.5">
+              <h2 className="text-lg sm:text-2xl font-display font-normal text-[#141414] dark:text-white mt-0.5">
                 Destaques à Pronta-Entrega
               </h2>
             </div>
@@ -281,7 +278,7 @@ export default function HomePage() {
             </button>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-6 sm:gap-x-5 sm:gap-y-8">
             {readyHighlights.map((product) => (
               <ProductCard
                 key={`highlight-${product.id}`}
@@ -297,14 +294,14 @@ export default function HomePage() {
       <main
         ref={catalogRef}
         id="catalogo"
-        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8"
+        className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 sm:py-12 space-y-5 sm:space-y-8 scroll-mt-14"
       >
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
           <div>
             <p className="text-[10px] uppercase tracking-[0.22em] text-[#8b6508] dark:text-gold-400 font-semibold">
               Curadoria Exclusiva
             </p>
-            <h2 className="text-2xl sm:text-3xl font-display font-normal text-[#141414] dark:text-white mt-1">
+            <h2 className="text-xl sm:text-3xl font-display font-normal text-[#141414] dark:text-white mt-1">
               {sectionTitle}
               <span className="text-sm font-sans text-zinc-400 dark:text-zinc-500 ml-3">
                 ({filteredProducts.length})
@@ -332,10 +329,16 @@ export default function HomePage() {
           encomendaCount={encomendaCount}
         />
 
+        {showAdultNotice && (
+          <p className="text-xs sm:text-sm text-[#92400e] dark:text-amber-400 bg-[#fbf3e4] dark:bg-amber-950/30 border border-[#ecd9b0] dark:border-amber-900/50 px-4 py-3">
+            {SITE.adultNotice}
+          </p>
+        )}
+
         {loadingProducts ? (
           <ProductGridSkeleton count={8} />
         ) : filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-10 pt-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-6 sm:gap-x-5 sm:gap-y-10 pt-1">
             {filteredProducts.map((product) => (
               <ProductCard
                 key={product.id}
@@ -383,11 +386,11 @@ export default function HomePage() {
       <InterestListDrawer />
 
       {/* Ações flutuantes discretas */}
-      <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2.5">
+      <div className="fixed bottom-4 right-4 sm:bottom-5 sm:right-5 z-40 flex flex-col items-end gap-2.5">
         {totalCount > 0 && (
           <button
             onClick={() => setIsDrawerOpen(true)}
-            className="flex items-center gap-2 px-4 py-2.5 bg-[#fcfbf8] dark:bg-dark-900 border border-[#141414] dark:border-gold-500/60 shadow-lg text-[#141414] dark:text-gold-300 text-[11px] uppercase tracking-[0.14em] font-semibold hover:bg-[#141414] hover:text-white transition-colors"
+            className="hidden md:flex items-center gap-2 px-4 py-2.5 bg-[#fcfbf8] dark:bg-dark-900 border border-[#141414] dark:border-gold-500/60 shadow-lg text-[#141414] dark:text-gold-300 text-[11px] uppercase tracking-[0.14em] font-semibold hover:bg-[#141414] hover:text-white transition-colors"
           >
             <ShoppingBag className="w-3.5 h-3.5" />
             <span>Lista ({totalCount})</span>
@@ -398,7 +401,7 @@ export default function HomePage() {
           href={supportUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-3 bg-[#065f46] hover:bg-[#047857] text-white text-[11px] uppercase tracking-[0.14em] font-semibold shadow-lg transition-colors"
+          className="flex items-center justify-center gap-2 w-11 h-11 sm:w-auto sm:h-auto rounded-full sm:rounded-none sm:px-4 sm:py-3 bg-[#065f46] hover:bg-[#047857] text-white text-[11px] uppercase tracking-[0.14em] font-semibold shadow-lg transition-colors"
           title="Atendimento pelo WhatsApp"
         >
           <MessageCircle className="w-4 h-4 fill-white" />

@@ -70,7 +70,7 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
                 ? 'Remover da lista'
                 : 'Adicionar à lista de orçamento'
           }
-          className={`absolute bottom-3 right-3 px-2.5 py-1.5 text-[10px] uppercase tracking-[0.14em] font-semibold transition-all ${
+          className={`absolute bottom-2 right-2 sm:bottom-3 sm:right-3 px-2 py-1 sm:px-2.5 sm:py-1.5 text-[9px] sm:text-[10px] uppercase tracking-[0.12em] font-semibold transition-all ${
             inList
               ? 'bg-[#141414] text-[#d4af37] dark:bg-gold-500 dark:text-[#0c0c0f]'
               : 'bg-white/95 text-[#141414] hover:bg-[#141414] hover:text-white dark:bg-dark-950/90 dark:text-zinc-100 dark:hover:bg-gold-500 dark:hover:text-[#0c0c0f] shadow-sm border border-[#ece7dc] dark:border-dark-700'
@@ -82,7 +82,7 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
 
       {/* Informações editoriais soltas abaixo da imagem */}
       <div className="flex flex-col flex-1 space-y-1.5">
-        <div className="flex items-center justify-between gap-2 text-[10px] uppercase tracking-[0.15em]">
+        <div className="flex items-center justify-between gap-2 text-[9px] sm:text-[10px] uppercase tracking-[0.12em] sm:tracking-[0.15em]">
           <span className="font-semibold text-[#8b6508] dark:text-gold-400 truncate">
             {product.brand}
           </span>
@@ -97,25 +97,25 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
           </span>
         </div>
 
-        <h3 className="text-sm sm:text-[15px] font-display text-[#141414] dark:text-zinc-100 leading-snug line-clamp-2 group-hover:text-zinc-600 dark:group-hover:text-white transition-colors">
+        <h3 className="text-[13px] sm:text-[15px] font-display text-[#141414] dark:text-zinc-100 leading-snug line-clamp-2 group-hover:text-zinc-600 dark:group-hover:text-white transition-colors">
           {product.name}
         </h3>
 
         {hasVariants && (
           <p className="text-[10px] uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
             {product.variants!.length}{' '}
-            {product.variants!.length === 1 ? 'opção disponível' : 'opções disponíveis'}
+            {product.variants!.length === 1 ? 'opção' : 'opções'}
           </p>
         )}
 
-        <div className="pt-1 mt-auto flex items-baseline justify-between gap-2">
-          <div className="flex items-baseline gap-2">
+        <div className="pt-1 mt-auto space-y-2">
+          <div className="flex flex-wrap items-baseline gap-x-2">
             {hasPriceRange && (
-              <span className="text-[10px] uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
+              <span className="w-full text-[10px] uppercase tracking-[0.1em] text-zinc-500 dark:text-zinc-400">
                 a partir de
               </span>
             )}
-            <span className="text-sm font-semibold text-[#141414] dark:text-white">
+            <span className="text-[15px] sm:text-base font-semibold text-[#141414] dark:text-white">
               {formatCurrency(displayPrice)}
             </span>
             {product.originalPrice && (
@@ -132,9 +132,9 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
                 e.stopPropagation();
                 onOpenModal(product);
               }}
-              className="text-[11px] uppercase tracking-[0.12em] font-semibold text-[#065f46] dark:text-emerald-400 hover:underline underline-offset-4 shrink-0"
+              className="w-full py-2 text-[11px] uppercase tracking-[0.12em] font-semibold text-[#065f46] dark:text-emerald-400 border border-[#065f46]/50 dark:border-emerald-400/50 hover:bg-[#065f46] hover:text-white dark:hover:bg-emerald-500 dark:hover:text-[#0c0c0f] transition-colors"
             >
-              Pedir &rarr;
+              Pedir
             </button>
           ) : (
             <a
@@ -142,9 +142,9 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="text-[11px] uppercase tracking-[0.12em] font-semibold text-[#065f46] dark:text-emerald-400 hover:underline underline-offset-4 shrink-0"
+              className="block w-full text-center py-2 text-[11px] uppercase tracking-[0.12em] font-semibold text-[#065f46] dark:text-emerald-400 border border-[#065f46]/50 dark:border-emerald-400/50 hover:bg-[#065f46] hover:text-white dark:hover:bg-emerald-500 dark:hover:text-[#0c0c0f] transition-colors"
             >
-              Pedir &rarr;
+              Pedir
             </a>
           )}
         </div>

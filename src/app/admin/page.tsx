@@ -3,7 +3,8 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Product, ProductVariant, StockStatus } from '@/types/product';
+import { Product, ProductCategory, ProductVariant, StockStatus } from '@/types/product';
+import { CATEGORIES } from '@/config/site';
 import { formatCurrency } from '@/utils/whatsapp';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { useToast } from '@/context/ToastContext';
@@ -44,7 +45,7 @@ export default function AdminPage() {
   // Campos do Formulário
   const [formName, setFormName] = useState('');
   const [formBrand, setFormBrand] = useState('');
-  const [formCategory, setFormCategory] = useState<'farmacia' | 'perfumes' | 'arabes' | 'beleza' | 'eletronicos' | 'smartphones' | 'acessorios'>('perfumes');
+  const [formCategory, setFormCategory] = useState<ProductCategory>('perfumes');
   const [formCategoryLabel, setFormCategoryLabel] = useState('');
   const [formPrice, setFormPrice] = useState('');
   const [formOriginalPrice, setFormOriginalPrice] = useState('');
@@ -860,24 +861,18 @@ export default function AdminPage() {
                       const cat = e.target.value as any;
                       setFormCategory(cat);
                       const labels: Record<string, string> = {
-                        farmacia: 'Farmácia',
-                        perfumes: 'Perfumaria',
-                        arabes: 'Perfumes Árabes',
-                        eletronicos: 'Eletrônicos',
-                        smartphones: 'Smartphones',
-                        acessorios: 'Tech & Acessórios',
+                        ...Object.fromEntries(CATEGORIES.map((c) => [c.id, c.label])),
                         beleza: "Victoria's Secret & Cuidados",
                       };
                       setFormCategoryLabel(labels[cat] || cat);
                     }}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-gold-500"
                   >
-                    <option value="farmacia">Farmácia</option>
-                    <option value="perfumes">Perfumaria</option>
-                    <option value="arabes">Perfumes Árabes</option>
-                    <option value="eletronicos">Eletrônicos</option>
-                    <option value="smartphones">Smartphones</option>
-                    <option value="acessorios">Tech &amp; Acessórios</option>
+                    {CATEGORIES.map((c) => (
+                      <option key={c.id} value={c.id}>
+                        {c.label}
+                      </option>
+                    ))}
                     <option value="beleza">Victoria&apos;s Secret &amp; Cuidados</option>
                   </select>
                 </div>
