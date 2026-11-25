@@ -24,10 +24,13 @@ const headers = {
 };
 const endpoint = `${url.replace(/\/$/, '')}/rest/v1/products?on_conflict=id`;
 const dir = path.join(process.cwd(), 'src', 'data', 'catalog');
+// Uso opcional: node scripts/import-catalog.mjs pf- fm-   (importa só os produtos cujo id começa com esses prefixos)
+const onlyPrefixes = process.argv.slice(2);
 const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
 
 for (const file of files) {
   const p = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf-8'));
+  if (onlyPrefixes.length > 0 && !onlyPrefixes.some((pre) => p.id.startsWith(pre))) continue;
   const row = {
     id: p.id,
     name: p.name,
