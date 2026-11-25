@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 2081.9,
+  "price": 3122.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "sg-galaxy-a37-256gb-8gb-roxo",
       "label": "256GB/8GB · Roxo",
-      "price": 2081.9,
+      "price": 3122.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a37/256gb-8gb-roxo-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "sg-galaxy-a37-256gb-8gb-verde-escuro",
       "label": "256GB/8GB · Verde escuro",
-      "price": 2081.9,
+      "price": 3122.9,
       "images": [
         "/catalog/samsung/sg-galaxy-a37/256gb-8gb-verde-escuro-1.webp"
       ],
@@ -66,5 +66,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -1,0 +1,44 @@
+{
+  "id": "pf-giorgio-armani-si-passione-feminino",
+  "name": "Giorgio Armani Sì Passione Feminino",
+  "brand": "Giorgio Armani",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 943.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-giorgio-armani-si-passione-feminino/si-passione-eau-de-parfum-100ml-1.webp"
+  ],
+  "description": "Giorgio Armani Sì Passione, Eau de Parfum 100ml. Perfume feminino de família olfativa floral frutal.",
+  "specs": [
+    "Edição: Sì Passione",
+    "Concentração: Eau de Parfum",
+    "Volume: 100ml",
+    "Família olfativa: Floral frutal",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Giorgio Armani, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-giorgio-armani-si-passione-feminino-si-passione-eau-de-parfum-100ml",
+      "label": "Sì Passione · Eau de Parfum · 100ml",
+      "price": 943.9,
+      "images": [
+        "/catalog/perfumes/pf-giorgio-armani-si-passione-feminino/si-passione-eau-de-parfum-100ml-1.webp"
+      ],
+      "description": "Giorgio Armani Sì Passione, Eau de Parfum 100ml. Perfume feminino de família olfativa floral frutal.",
+      "specs": [
+        "Edição: Sì Passione",
+        "Concentração: Eau de Parfum",
+        "Volume: 100ml",
+        "Família olfativa: Floral frutal",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

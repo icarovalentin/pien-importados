@@ -2,9 +2,9 @@
   "id": "fn-samsung-galaxy-buds4-pro",
   "name": "Samsung Galaxy Buds4 Pro",
   "brand": "Samsung",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 998.9,
+  "price": 1498.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "fn-samsung-galaxy-buds4-pro-branco",
       "label": "Branco",
-      "price": 998.9,
+      "price": 1498.9,
       "images": [
         "/catalog/fones/fn-samsung-galaxy-buds4-pro/branco-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "fn-samsung-galaxy-buds4-pro-preto",
       "label": "Preto",
-      "price": 998.9,
+      "price": 1498.9,
       "images": [
         "/catalog/fones/fn-samsung-galaxy-buds4-pro/preto-1.webp"
       ],
@@ -64,5 +64,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

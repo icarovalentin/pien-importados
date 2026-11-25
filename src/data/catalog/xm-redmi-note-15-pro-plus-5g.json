@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 1734.9,
+  "price": 2602.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-redmi-note-15-pro-plus-5g-256gb-12gb-preto",
       "label": "256GB/12GB · Preto",
-      "price": 1734.9,
+      "price": 2602.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-pro-plus-5g/256gb-12gb-preto-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-redmi-note-15-pro-plus-5g-256gb-12gb-roxo",
       "label": "256GB/12GB · Roxo",
-      "price": 1734.9,
+      "price": 2602.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-pro-plus-5g/256gb-12gb-roxo-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "xm-redmi-note-15-pro-plus-5g-256gb-8gb-marrom",
       "label": "256GB/8GB · Marrom",
-      "price": 2025.9,
+      "price": 3038.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-pro-plus-5g/256gb-8gb-marrom-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "xm-redmi-note-15-pro-plus-5g-512gb-12gb-preto",
       "label": "512GB/12GB · Preto",
-      "price": 2394.9,
+      "price": 3592.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-pro-plus-5g/512gb-12gb-preto-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "xm-redmi-note-15-pro-plus-5g-512gb-12gb-preto-2",
       "label": "512GB/12GB · Preto (2)",
-      "price": 2394.9,
+      "price": 3592.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-pro-plus-5g/512gb-12gb-preto-2-1.webp"
       ],
@@ -130,5 +130,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

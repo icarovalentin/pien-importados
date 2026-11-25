@@ -2,9 +2,9 @@
   "id": "fn-apple-airpods-4",
   "name": "Apple AirPods 4",
   "brand": "Apple",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 695.9,
+  "price": 1043.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -27,7 +27,7 @@
     {
       "id": "fn-apple-airpods-4-branco",
       "label": "Branco",
-      "price": 695.9,
+      "price": 1043.9,
       "images": [
         "/catalog/fones/fn-apple-airpods-4/branco-1.webp"
       ],
@@ -46,7 +46,7 @@
     {
       "id": "fn-apple-airpods-4-branco-mxp63ll-a",
       "label": "Branco (MXP63LL/A)",
-      "price": 695.9,
+      "price": 1043.9,
       "images": [
         "/catalog/fones/fn-apple-airpods-4/branco-mxp63ll-a-1.webp"
       ],
@@ -64,7 +64,7 @@
     {
       "id": "fn-apple-airpods-4-branco-mxp63ll-a-2",
       "label": "Branco (MXP63LL/A) (2)",
-      "price": 937.9,
+      "price": 1406.9,
       "images": [
         "/catalog/fones/fn-apple-airpods-4/branco-mxp63ll-a-2-1.webp"
       ],
@@ -82,7 +82,7 @@
     {
       "id": "fn-apple-airpods-4-branco-mxp93za-a",
       "label": "Branco (MXP93ZA/A)",
-      "price": 937.9,
+      "price": 1406.9,
       "images": [
         "/catalog/fones/fn-apple-airpods-4/branco-mxp93za-a-1.webp"
       ],
@@ -98,5 +98,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

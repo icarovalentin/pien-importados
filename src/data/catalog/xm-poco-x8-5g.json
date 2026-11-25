@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 1505.9,
+  "price": 2258.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-poco-x8-5g-128gb-6gb-preto",
       "label": "128GB/6GB · Preto",
-      "price": 1505.9,
+      "price": 2258.9,
       "images": [
         "/catalog/phones/xm-poco-x8-5g/128gb-6gb-preto-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-poco-x8-5g-256gb-8gb-preto",
       "label": "256GB/8GB · Preto",
-      "price": 1777.9,
+      "price": 2666.9,
       "images": [
         "/catalog/phones/xm-poco-x8-5g/256gb-8gb-preto-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "xm-poco-x8-5g-256gb-12gb-branco",
       "label": "256GB/12GB · Branco",
-      "price": 1886.9,
+      "price": 2830.9,
       "images": [
         "/catalog/phones/xm-poco-x8-5g/256gb-12gb-branco-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "xm-poco-x8-5g-256gb-12gb-preto",
       "label": "256GB/12GB · Preto",
-      "price": 1886.9,
+      "price": 2830.9,
       "images": [
         "/catalog/phones/xm-poco-x8-5g/256gb-12gb-preto-1.webp"
       ],
@@ -110,5 +110,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

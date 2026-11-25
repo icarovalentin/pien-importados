@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 2716.9,
+  "price": 4075.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-poco-x8-pro-max-5g-256gb-12gb-branco",
       "label": "256GB/12GB · Branco",
-      "price": 2716.9,
+      "price": 4075.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-max-5g/256gb-12gb-branco-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-poco-x8-pro-max-5g-256gb-12gb-preto",
       "label": "256GB/12GB · Preto",
-      "price": 2716.9,
+      "price": 4075.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-max-5g/256gb-12gb-preto-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "xm-poco-x8-pro-max-5g-256gb-12gb-preto-2",
       "label": "256GB/12GB · Preto (2)",
-      "price": 2914.9,
+      "price": 4372.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-max-5g/256gb-12gb-preto-2-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "xm-poco-x8-pro-max-5g-512gb-12gb-azul",
       "label": "512GB/12GB · Azul",
-      "price": 3247.9,
+      "price": 4871.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-max-5g/512gb-12gb-azul-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "xm-poco-x8-pro-max-5g-512gb-12gb-branco",
       "label": "512GB/12GB · Branco",
-      "price": 3283.9,
+      "price": 4925.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-max-5g/512gb-12gb-branco-1.webp"
       ],
@@ -134,7 +134,7 @@
     {
       "id": "xm-poco-x8-pro-max-5g-512gb-12gb-preto",
       "label": "512GB/12GB · Preto",
-      "price": 3283.9,
+      "price": 4925.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-max-5g/512gb-12gb-preto-1.webp"
       ],
@@ -152,5 +152,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

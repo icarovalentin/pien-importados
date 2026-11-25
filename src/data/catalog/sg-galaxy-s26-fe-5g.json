@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 3297.9,
+  "price": 4946.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "sg-galaxy-s26-fe-5g-128gb-8gb-azul",
       "label": "128GB/8GB · Azul",
-      "price": 3297.9,
+      "price": 4946.9,
       "images": [
         "/catalog/samsung/sg-galaxy-s26-fe-5g/128gb-8gb-azul-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "sg-galaxy-s26-fe-5g-128gb-8gb-grafite",
       "label": "128GB/8GB · Grafite",
-      "price": 3297.9,
+      "price": 4946.9,
       "images": [
         "/catalog/samsung/sg-galaxy-s26-fe-5g/128gb-8gb-grafite-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "sg-galaxy-s26-fe-5g-128gb-8gb-verde",
       "label": "128GB/8GB · Verde",
-      "price": 3297.9,
+      "price": 4946.9,
       "images": [
         "/catalog/samsung/sg-galaxy-s26-fe-5g/128gb-8gb-verde-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "sg-galaxy-s26-fe-5g-256gb-8gb-grafite",
       "label": "256GB/8GB · Grafite",
-      "price": 3618.9,
+      "price": 5428.9,
       "images": [
         "/catalog/samsung/sg-galaxy-s26-fe-5g/256gb-8gb-grafite-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "sg-galaxy-s26-fe-5g-256gb-8gb-verde",
       "label": "256GB/8GB · Verde",
-      "price": 3618.9,
+      "price": 5428.9,
       "images": [
         "/catalog/samsung/sg-galaxy-s26-fe-5g/256gb-8gb-verde-1.webp"
       ],
@@ -134,7 +134,7 @@
     {
       "id": "sg-galaxy-s26-fe-5g-512gb-8gb-verde",
       "label": "512GB/8GB · Verde",
-      "price": 4749.9,
+      "price": 7124.9,
       "images": [
         "/catalog/samsung/sg-galaxy-s26-fe-5g/512gb-8gb-verde-1.webp"
       ],
@@ -155,7 +155,7 @@
     {
       "id": "sg-galaxy-s26-fe-5g-512gb-8gb-azul",
       "label": "512GB/8GB · Azul",
-      "price": 4779.9,
+      "price": 7169.9,
       "images": [
         "/catalog/samsung/sg-galaxy-s26-fe-5g/512gb-8gb-azul-1.webp"
       ],
@@ -173,5 +173,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

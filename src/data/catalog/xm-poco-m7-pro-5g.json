@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 863.9,
+  "price": 1295.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "xm-poco-m7-pro-5g-128gb-6gb-lavanda",
       "label": "128GB/6GB · Lavanda",
-      "price": 863.9,
+      "price": 1295.9,
       "images": [
         "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-lavanda-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "xm-poco-m7-pro-5g-128gb-6gb-verde",
       "label": "128GB/6GB · Verde",
-      "price": 863.9,
+      "price": 1295.9,
       "images": [
         "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-verde-1.webp"
       ],
@@ -65,5 +65,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

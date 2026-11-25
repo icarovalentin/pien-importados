@@ -4,7 +4,7 @@
   "brand": "Rasasi",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 133.9,
+  "price": 200.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-hawas-elixir-eau-de-parfum-100ml",
       "label": "Hawas Elixir · Eau de Parfum · 100ml",
-      "price": 133.9,
+      "price": 200.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/hawas-elixir-eau-de-parfum-100ml-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-hawas-kobra-eau-de-parfum-100ml",
       "label": "Hawas Kobra · Eau de Parfum · 100ml",
-      "price": 142.9,
+      "price": 214.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/hawas-kobra-eau-de-parfum-100ml-1.webp"
       ],
@@ -68,7 +68,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-hawas-ice-eau-de-parfum-100ml",
       "label": "Hawas Ice · Eau de Parfum · 100ml",
-      "price": 145.9,
+      "price": 218.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/hawas-ice-eau-de-parfum-100ml-1.webp"
       ],
@@ -88,7 +88,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-hawas-tropical-eau-de-parfum-100ml",
       "label": "Hawas Tropical · Eau de Parfum · 100ml",
-      "price": 146.9,
+      "price": 220.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/hawas-tropical-eau-de-parfum-100ml-1.webp"
       ],
@@ -108,7 +108,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-hawas-black-eau-de-parfum-100ml",
       "label": "Hawas Black · Eau de Parfum · 100ml",
-      "price": 154.9,
+      "price": 232.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/hawas-black-eau-de-parfum-100ml-1.webp"
       ],
@@ -127,7 +127,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-rasasi-hawas-nautilus-eau-de-parfum-100ml",
       "label": "Rasasi Hawas Nautilus · Eau de Parfum · 100ml",
-      "price": 199.9,
+      "price": 299.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/rasasi-hawas-nautilus-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-rasasi-hawas-masculino/rasasi-hawas-nautilus-eau-de-parfum-100ml-2.webp"
@@ -148,7 +148,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-hawas-lava-gold-eau-de-parfum-100ml",
       "label": "Hawas Lava Gold · Eau de Parfum · 100ml",
-      "price": 217.9,
+      "price": 326.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/hawas-lava-gold-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-rasasi-hawas-masculino/hawas-lava-gold-eau-de-parfum-100ml-2.webp"
@@ -169,7 +169,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-rasasi-hawas-exotic-eau-de-parfum-100ml",
       "label": "Rasasi Hawas Exotic · Eau de Parfum · 100ml",
-      "price": 230.9,
+      "price": 346.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/rasasi-hawas-exotic-eau-de-parfum-100ml-1.webp"
       ],
@@ -189,7 +189,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-rasasi-hawas-gold-digger-eau-de-parfum-100ml",
       "label": "Rasasi Hawas Gold Digger · Eau de Parfum · 100ml",
-      "price": 254.9,
+      "price": 382.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/rasasi-hawas-gold-digger-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-rasasi-hawas-masculino/rasasi-hawas-gold-digger-eau-de-parfum-100ml-2.webp"
@@ -210,7 +210,7 @@
     {
       "id": "pf-rasasi-hawas-masculino-rasasi-hawas-overdose-eau-de-parfum-100ml",
       "label": "Rasasi Hawas Overdose · Eau de Parfum · 100ml",
-      "price": 254.9,
+      "price": 382.9,
       "images": [
         "/catalog/perfumes/pf-rasasi-hawas-masculino/rasasi-hawas-overdose-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-rasasi-hawas-masculino/rasasi-hawas-overdose-eau-de-parfum-100ml-2.webp"
@@ -228,5 +228,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

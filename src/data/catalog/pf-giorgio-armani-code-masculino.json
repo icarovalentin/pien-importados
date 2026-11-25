@@ -4,7 +4,7 @@
   "brand": "GIORGIO ARMANI",
   "category": "perfumes",
   "categoryLabel": "Perfumaria",
-  "price": 520.9,
+  "price": 781.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "pf-giorgio-armani-code-masculino-armani-code-eau-de-parfum-150ml",
       "label": "Armani Code · Eau de Parfum · 150ml",
-      "price": 520.9,
+      "price": 781.9,
       "images": [
         "/catalog/perfumes/pf-giorgio-armani-code-masculino/armani-code-eau-de-parfum-150ml-1.webp",
         "/catalog/perfumes/pf-giorgio-armani-code-masculino/armani-code-eau-de-parfum-150ml-2.webp"
@@ -47,5 +47,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "eletronicos",
   "categoryLabel": "Tablets",
-  "price": 4023.9,
+  "price": 6035.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -31,7 +31,7 @@
     {
       "id": "tb-samsung-galaxy-tab-s11-11-128gb-12gb-cinza-com-caneta",
       "label": "11\" · 128GB/12GB · Cinza · com caneta",
-      "price": 4023.9,
+      "price": 6035.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-1.webp"
       ],
@@ -54,7 +54,7 @@
     {
       "id": "tb-samsung-galaxy-tab-s11-11-128gb-12gb-cinza-com-caneta-2",
       "label": "11\" · 128GB/12GB · Cinza · com caneta (2)",
-      "price": 4108.9,
+      "price": 6163.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-cinza-com-caneta-2-1.webp"
       ],
@@ -75,7 +75,7 @@
     {
       "id": "tb-samsung-galaxy-tab-s11-11-128gb-12gb-prata-com-caneta",
       "label": "11\" · 128GB/12GB · Prata · com caneta",
-      "price": 4108.9,
+      "price": 6163.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-s11/11-128gb-12gb-prata-com-caneta-1.webp"
       ],
@@ -93,5 +93,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

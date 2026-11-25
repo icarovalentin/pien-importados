@@ -2,9 +2,9 @@
   "id": "jbl-boombox-4",
   "name": "JBL Boombox 4",
   "brand": "JBL",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Caixas de Som",
-  "price": 1905.9,
+  "price": 2858.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "jbl-boombox-4-branco",
       "label": "Branco",
-      "price": 2329.9,
+      "price": 3494.9,
       "images": [
         "/catalog/jbl/boombox-4/branco-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "jbl-boombox-4-laranja",
       "label": "Laranja",
-      "price": 2329.9,
+      "price": 3494.9,
       "images": [
         "/catalog/jbl/boombox-4/laranja-1.webp"
       ],
@@ -68,7 +68,7 @@
     {
       "id": "jbl-boombox-4-camuflado",
       "label": "Camuflado",
-      "price": 1905.9,
+      "price": 2858.9,
       "images": [
         "/catalog/jbl/boombox-4/camuflado-1.webp"
       ],
@@ -88,7 +88,7 @@
     {
       "id": "jbl-boombox-4-preto",
       "label": "Preto",
-      "price": 1996.9,
+      "price": 2995.9,
       "images": [
         "/catalog/jbl/boombox-4/preto-1.webp"
       ],
@@ -105,5 +105,6 @@
         "Produto original JBL"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

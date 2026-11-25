@@ -2,9 +2,9 @@
   "id": "aw-ultra-4",
   "name": "Apple Watch Ultra 4",
   "brand": "Apple",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Smartwatch",
-  "price": 4827.9,
+  "price": 7241.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -32,7 +32,7 @@
     {
       "id": "aw-ultra-4-titanio-preto-49mm-oceano-cinza-translucido",
       "label": "Titânio Preto 49mm · Oceano Cinza Translúcido",
-      "price": 4827.9,
+      "price": 7241.9,
       "images": [
         "/catalog/applewatch/aw-ultra-4/titanio-preto-49mm-oceano-cinza-translucido-1.webp"
       ],
@@ -53,5 +53,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

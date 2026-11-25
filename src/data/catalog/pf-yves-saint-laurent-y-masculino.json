@@ -4,7 +4,7 @@
   "brand": "Yves Saint Laurent",
   "category": "perfumes",
   "categoryLabel": "Perfumaria",
-  "price": 768.9,
+  "price": 1153.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "pf-yves-saint-laurent-y-masculino-y-eau-de-parfum-eau-de-parfum-100ml",
       "label": "Y Eau de Parfum · Eau de Parfum · 100ml",
-      "price": 768.9,
+      "price": 1153.9,
       "images": [
         "/catalog/perfumes/pf-yves-saint-laurent-y-masculino/y-eau-de-parfum-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-yves-saint-laurent-y-masculino/y-eau-de-parfum-eau-de-parfum-100ml-2.webp"
@@ -47,5 +47,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

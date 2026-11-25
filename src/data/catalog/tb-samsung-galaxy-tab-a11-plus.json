@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "eletronicos",
   "categoryLabel": "Tablets",
-  "price": 1361.9,
+  "price": 2042.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -31,7 +31,7 @@
     {
       "id": "tb-samsung-galaxy-tab-a11-plus-11-128gb-6gb-grafite",
       "label": "11\" · 128GB/6GB · Grafite",
-      "price": 1361.9,
+      "price": 2042.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-grafite-1.webp"
       ],
@@ -54,7 +54,7 @@
     {
       "id": "tb-samsung-galaxy-tab-a11-plus-11-128gb-6gb-prata",
       "label": "11\" · 128GB/6GB · Prata",
-      "price": 1361.9,
+      "price": 2042.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-128gb-6gb-prata-1.webp"
       ],
@@ -77,7 +77,7 @@
     {
       "id": "tb-samsung-galaxy-tab-a11-plus-11-256gb-8gb-prata",
       "label": "11\" · 256GB/8GB · Prata",
-      "price": 2051.9,
+      "price": 3077.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-a11-plus/11-256gb-8gb-prata-1.webp"
       ],
@@ -95,5 +95,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -2,9 +2,9 @@
   "id": "jbl-flip-7",
   "name": "JBL Flip 7",
   "brand": "JBL",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Caixas de Som",
-  "price": 456.9,
+  "price": 685.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "jbl-flip-7-camuflado",
       "label": "Camuflado",
-      "price": 456.9,
+      "price": 685.9,
       "images": [
         "/catalog/jbl/flip-7/camuflado-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "jbl-flip-7-vermelho",
       "label": "Vermelho",
-      "price": 456.9,
+      "price": 685.9,
       "images": [
         "/catalog/jbl/flip-7/vermelho-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "jbl-flip-7-rosa",
       "label": "Rosa",
-      "price": 456.9,
+      "price": 685.9,
       "images": [
         "/catalog/jbl/flip-7/rosa-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "jbl-flip-7-turquesa",
       "label": "Turquesa",
-      "price": 456.9,
+      "price": 685.9,
       "images": [
         "/catalog/jbl/flip-7/turquesa-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "jbl-flip-7-roxo",
       "label": "Roxo",
-      "price": 456.9,
+      "price": 685.9,
       "images": [
         "/catalog/jbl/flip-7/roxo-1.webp"
       ],
@@ -134,7 +134,7 @@
     {
       "id": "jbl-flip-7-azul",
       "label": "Azul",
-      "price": 456.9,
+      "price": 685.9,
       "images": [
         "/catalog/jbl/flip-7/azul-1.webp"
       ],
@@ -155,7 +155,7 @@
     {
       "id": "jbl-flip-7-preto",
       "label": "Preto",
-      "price": 465.9,
+      "price": 698.9,
       "images": [
         "/catalog/jbl/flip-7/preto-1.webp"
       ],
@@ -173,5 +173,6 @@
         "Produto original JBL"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "eletronicos",
   "categoryLabel": "Tablets",
-  "price": 4380.9,
+  "price": 6571.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -30,7 +30,7 @@
     {
       "id": "tb-apple-ipad-air-m4-11-128gb-12gb-azul",
       "label": "11\" · 128GB/12GB · Azul",
-      "price": 4380.9,
+      "price": 6571.9,
       "images": [
         "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-1.webp"
       ],
@@ -52,7 +52,7 @@
     {
       "id": "tb-apple-ipad-air-m4-11-128gb-12gb-azul-2",
       "label": "11\" · 128GB/12GB · Azul (2)",
-      "price": 4410.9,
+      "price": 6616.9,
       "images": [
         "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-2-1.webp"
       ],
@@ -73,7 +73,7 @@
     {
       "id": "tb-apple-ipad-air-m4-11-128gb-12gb-azul-3",
       "label": "11\" · 128GB/12GB · Azul (3)",
-      "price": 5439.9,
+      "price": 8159.9,
       "images": [
         "/catalog/tablets/tb-apple-ipad-air-m4/11-128gb-12gb-azul-3-1.webp"
       ],
@@ -94,7 +94,7 @@
     {
       "id": "tb-apple-ipad-air-m4-13-128gb-12gb-azul",
       "label": "13\" · 128GB/12GB · Azul",
-      "price": 5626.9,
+      "price": 8440.9,
       "images": [
         "/catalog/tablets/tb-apple-ipad-air-m4/13-128gb-12gb-azul-1.webp"
       ],
@@ -115,7 +115,7 @@
     {
       "id": "tb-apple-ipad-air-m4-13-128gb-12gb-roxo",
       "label": "13\" · 128GB/12GB · Roxo",
-      "price": 5717.9,
+      "price": 8576.9,
       "images": [
         "/catalog/tablets/tb-apple-ipad-air-m4/13-128gb-12gb-roxo-1.webp"
       ],
@@ -136,7 +136,7 @@
     {
       "id": "tb-apple-ipad-air-m4-11-256gb-12gb-azul",
       "label": "11\" · 256GB/12GB · Azul",
-      "price": 6292.9,
+      "price": 9439.9,
       "images": [
         "/catalog/tablets/tb-apple-ipad-air-m4/11-256gb-12gb-azul-1.webp"
       ],
@@ -157,7 +157,7 @@
     {
       "id": "tb-apple-ipad-air-m4-11-256gb-12gb-cinza",
       "label": "11\" · 256GB/12GB · Cinza",
-      "price": 6352.9,
+      "price": 9529.9,
       "images": [
         "/catalog/tablets/tb-apple-ipad-air-m4/11-256gb-12gb-cinza-1.webp"
       ],
@@ -175,5 +175,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

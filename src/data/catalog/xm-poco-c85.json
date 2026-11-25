@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 779.9,
+  "price": 1169.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-poco-c85-128gb-6gb-roxo",
       "label": "128GB/6GB · Roxo",
-      "price": 779.9,
+      "price": 1169.9,
       "images": [
         "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-poco-c85-128gb-6gb-roxo-2",
       "label": "128GB/6GB · Roxo (2)",
-      "price": 841.9,
+      "price": 1262.9,
       "images": [
         "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-2-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "xm-poco-c85-128gb-6gb-preto",
       "label": "128GB/6GB · Preto",
-      "price": 845.9,
+      "price": 1268.9,
       "images": [
         "/catalog/phones/xm-poco-c85/128gb-6gb-preto-1.webp"
       ],
@@ -87,7 +87,7 @@
     {
       "id": "xm-poco-c85-256gb-8gb-preto",
       "label": "256GB/8GB · Preto",
-      "price": 1016.9,
+      "price": 1525.9,
       "images": [
         "/catalog/phones/xm-poco-c85/256gb-8gb-preto-1.webp"
       ],
@@ -108,7 +108,7 @@
     {
       "id": "xm-poco-c85-256gb-8gb-preto-2",
       "label": "256GB/8GB · Preto (2)",
-      "price": 1016.9,
+      "price": 1525.9,
       "images": [
         "/catalog/phones/xm-poco-c85/256gb-8gb-preto-2-1.webp"
       ],
@@ -129,7 +129,7 @@
     {
       "id": "xm-poco-c85-256gb-8gb-verde",
       "label": "256GB/8GB · Verde",
-      "price": 1016.9,
+      "price": 1525.9,
       "images": [
         "/catalog/phones/xm-poco-c85/256gb-8gb-verde-1.webp"
       ],
@@ -147,5 +147,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -1,0 +1,42 @@
+{
+  "id": "pf-giorgio-armani-acqua-di-gio-profondo-masculino",
+  "name": "Giorgio Armani Acqua di Giò Profondo Masculino",
+  "brand": "Giorgio Armani",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 967.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-giorgio-armani-acqua-di-gio-profondo-masculino/acqua-di-gio-profondo-parfum-100ml-1.webp"
+  ],
+  "description": "Giorgio Armani Acqua di Giò Profondo, Eau de Parfum 100ml.",
+  "specs": [
+    "Edição: Acqua di Giò Profondo",
+    "Concentração: Eau de Parfum",
+    "Volume: 100ml",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Giorgio Armani, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-giorgio-armani-acqua-di-gio-profondo-masculino-acqua-di-gio-profondo-parfum-100ml",
+      "label": "Acqua di Giò Profondo · Parfum · 100ml",
+      "price": 967.9,
+      "images": [
+        "/catalog/perfumes/pf-giorgio-armani-acqua-di-gio-profondo-masculino/acqua-di-gio-profondo-parfum-100ml-1.webp"
+      ],
+      "description": "Giorgio Armani Acqua di Giò Profondo, Eau de Parfum 100ml.",
+      "specs": [
+        "Edição: Acqua di Giò Profondo",
+        "Concentração: Eau de Parfum",
+        "Volume: 100ml",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

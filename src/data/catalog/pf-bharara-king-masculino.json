@@ -4,7 +4,7 @@
   "brand": "BHARARA",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 226.9,
+  "price": 340.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "pf-bharara-king-masculino-king-bharara-eau-de-parfum-100ml",
       "label": "King Bharara · Eau de Parfum · 100ml",
-      "price": 226.9,
+      "price": 340.9,
       "images": [
         "/catalog/perfumes/pf-bharara-king-masculino/king-bharara-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-bharara-king-masculino/king-bharara-eau-de-parfum-100ml-2.webp"
@@ -47,5 +47,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 7834.9,
+  "price": 11752.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "ap-iphone-18-pro-256gb-12gb-preto",
       "label": "256GB/12GB · Preto",
-      "price": 7834.9,
+      "price": 11752.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro/256gb-12gb-preto-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "ap-iphone-18-pro-256gb-12gb-bordo",
       "label": "256GB/12GB · Bordô",
-      "price": 7865.9,
+      "price": 11798.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro/256gb-12gb-bordo-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "ap-iphone-18-pro-256gb-12gb-azul",
       "label": "256GB/12GB · Azul",
-      "price": 7865.9,
+      "price": 11798.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro/256gb-12gb-azul-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "ap-iphone-18-pro-256gb-12gb-prata",
       "label": "256GB/12GB · Prata",
-      "price": 7865.9,
+      "price": 11798.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro/256gb-12gb-prata-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "ap-iphone-18-pro-512gb-12gb-bordo",
       "label": "512GB/12GB · Bordô",
-      "price": 8833.9,
+      "price": 13250.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro/512gb-12gb-bordo-1.webp"
       ],
@@ -133,7 +133,7 @@
     {
       "id": "ap-iphone-18-pro-512gb-12gb-prata",
       "label": "512GB/12GB · Prata",
-      "price": 9014.9,
+      "price": 13522.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro/512gb-12gb-prata-1.webp"
       ],
@@ -154,7 +154,7 @@
     {
       "id": "ap-iphone-18-pro-512gb-12gb-preto",
       "label": "512GB/12GB · Preto",
-      "price": 9014.9,
+      "price": 13522.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro/512gb-12gb-preto-1.webp"
       ],
@@ -175,7 +175,7 @@
     {
       "id": "ap-iphone-18-pro-512gb-12gb-branco",
       "label": "512GB/12GB · Branco",
-      "price": 9075.9,
+      "price": 13613.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro/512gb-12gb-branco-1.webp"
       ],
@@ -196,7 +196,7 @@
     {
       "id": "ap-iphone-18-pro-1tb-12gb-bordo",
       "label": "1TB/12GB · Bordô",
-      "price": 12826.9,
+      "price": 19240.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro/1tb-12gb-bordo-1.webp"
       ],
@@ -214,5 +214,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

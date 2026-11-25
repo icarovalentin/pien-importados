@@ -1,0 +1,52 @@
+{
+  "id": "pf-afnan-9pm-masculino",
+  "name": "Afnan 9PM Masculino",
+  "brand": "Afnan",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 190.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-afnan-9pm-masculino/9pm-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-afnan-9pm-masculino/9pm-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-afnan-9pm-masculino/9pm-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "Afnan 9PM, Eau de Parfum 100 ml. Notas de topo: Maçã, Canela, Lavanda Silvestre, Bergamota; coração: Flor de Laranjeira, Lírio-do-Vale; fundo: Baunilha, Fava Tonka, Âmbar, Patchouli.",
+  "specs": [
+    "Edição: 9PM",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Notas de topo: Maçã, Canela, Lavanda Silvestre, Bergamota",
+    "Notas de coração: Flor de Laranjeira, Lírio-do-Vale",
+    "Notas de fundo: Baunilha, Fava Tonka, Âmbar, Patchouli",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Afnan, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-afnan-9pm-masculino-9pm-eau-de-parfum-100ml",
+      "label": "9PM · Eau de Parfum · 100ml",
+      "price": 190.9,
+      "images": [
+        "/catalog/perfumes/pf-afnan-9pm-masculino/9pm-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-afnan-9pm-masculino/9pm-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-afnan-9pm-masculino/9pm-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Afnan 9PM, Eau de Parfum 100 ml. Notas de topo: Maçã, Canela, Lavanda Silvestre, Bergamota; coração: Flor de Laranjeira, Lírio-do-Vale; fundo: Baunilha, Fava Tonka, Âmbar, Patchouli.",
+      "specs": [
+        "Edição: 9PM",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Notas de topo: Maçã, Canela, Lavanda Silvestre, Bergamota",
+        "Notas de coração: Flor de Laranjeira, Lírio-do-Vale",
+        "Notas de fundo: Baunilha, Fava Tonka, Âmbar, Patchouli",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

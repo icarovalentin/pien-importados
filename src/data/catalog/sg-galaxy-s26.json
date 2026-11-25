@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 4295.9,
+  "price": 6443.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "sg-galaxy-s26-256gb-12gb-azul-celeste",
       "label": "256GB/12GB · Azul celeste",
-      "price": 4295.9,
+      "price": 6443.9,
       "images": [
         "/catalog/samsung/sg-galaxy-s26/256gb-12gb-azul-celeste-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "sg-galaxy-s26-256gb-12gb-roxo-cobalto",
       "label": "256GB/12GB · Roxo cobalto",
-      "price": 4295.9,
+      "price": 6443.9,
       "images": [
         "/catalog/samsung/sg-galaxy-s26/256gb-12gb-roxo-cobalto-1.webp"
       ],
@@ -68,5 +68,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

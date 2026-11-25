@@ -1,0 +1,62 @@
+{
+  "id": "pf-dior-sauvage-masculino",
+  "name": "Dior Sauvage Masculino",
+  "brand": "Christian Dior",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 1068.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-dior-sauvage-masculino/sauvage-eau-de-toilette-100ml-1.webp",
+    "/catalog/perfumes/pf-dior-sauvage-masculino/sauvage-eau-de-toilette-100ml-2.webp"
+  ],
+  "description": "Christian Dior Sauvage, Eau de Toilette 100ml.",
+  "specs": [
+    "Edição: Sauvage",
+    "Concentração: Eau de Toilette",
+    "Volume: 100ml",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Christian Dior, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-dior-sauvage-masculino-sauvage-eau-de-toilette-100ml",
+      "label": "Sauvage · Eau de Toilette · 100ml",
+      "price": 1068.9,
+      "images": [
+        "/catalog/perfumes/pf-dior-sauvage-masculino/sauvage-eau-de-toilette-100ml-1.webp",
+        "/catalog/perfumes/pf-dior-sauvage-masculino/sauvage-eau-de-toilette-100ml-2.webp"
+      ],
+      "description": "Christian Dior Sauvage, Eau de Toilette 100ml.",
+      "specs": [
+        "Edição: Sauvage",
+        "Concentração: Eau de Toilette",
+        "Volume: 100ml",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-dior-sauvage-masculino-sauvage-eau-de-parfum-100ml",
+      "label": "Sauvage · Eau de Parfum · 100ml",
+      "price": 1452.9,
+      "images": [
+        "/catalog/perfumes/pf-dior-sauvage-masculino/sauvage-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-dior-sauvage-masculino/sauvage-eau-de-parfum-100ml-2.webp"
+      ],
+      "description": "Christian Dior Sauvage, Eau de Parfum 100ml. Perfume masculino de família olfativa âmbar fougère.",
+      "specs": [
+        "Edição: Sauvage",
+        "Concentração: Eau de Parfum",
+        "Volume: 100ml",
+        "Família olfativa: Âmbar fougère",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

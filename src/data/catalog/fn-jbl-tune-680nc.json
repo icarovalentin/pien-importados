@@ -2,9 +2,9 @@
   "id": "fn-jbl-tune-680nc",
   "name": "JBL Tune 680NC",
   "brand": "JBL",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 308.9,
+  "price": 463.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "fn-jbl-tune-680nc-azul",
       "label": "Azul",
-      "price": 308.9,
+      "price": 463.9,
       "images": [
         "/catalog/fones/fn-jbl-tune-680nc/azul-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "fn-jbl-tune-680nc-branco",
       "label": "Branco",
-      "price": 308.9,
+      "price": 463.9,
       "images": [
         "/catalog/fones/fn-jbl-tune-680nc/branco-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "fn-jbl-tune-680nc-preto",
       "label": "Preto",
-      "price": 308.9,
+      "price": 463.9,
       "images": [
         "/catalog/fones/fn-jbl-tune-680nc/preto-1.webp"
       ],
@@ -89,5 +89,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

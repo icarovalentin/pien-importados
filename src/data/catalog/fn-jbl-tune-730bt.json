@@ -2,9 +2,9 @@
   "id": "fn-jbl-tune-730bt",
   "name": "JBL Tune 730BT",
   "brand": "JBL",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 223.9,
+  "price": 335.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "fn-jbl-tune-730bt-azul",
       "label": "Azul",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/fones/fn-jbl-tune-730bt/azul-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "fn-jbl-tune-730bt-preto",
       "label": "Preto",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/fones/fn-jbl-tune-730bt/preto-1.webp"
       ],
@@ -68,7 +68,7 @@
     {
       "id": "fn-jbl-tune-730bt-preto-2",
       "label": "Preto (2)",
-      "price": 223.9,
+      "price": 335.9,
       "images": [
         "/catalog/fones/fn-jbl-tune-730bt/preto-2-1.webp"
       ],
@@ -85,5 +85,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

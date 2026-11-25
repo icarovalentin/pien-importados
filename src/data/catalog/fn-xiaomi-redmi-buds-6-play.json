@@ -2,9 +2,9 @@
   "id": "fn-xiaomi-redmi-buds-6-play",
   "name": "Xiaomi Redmi Buds 6 Play",
   "brand": "Xiaomi",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 54.9,
+  "price": 82.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -28,7 +28,7 @@
     {
       "id": "fn-xiaomi-redmi-buds-6-play-rosa",
       "label": "Rosa",
-      "price": 54.9,
+      "price": 82.9,
       "images": [
         "/catalog/fones/fn-xiaomi-redmi-buds-6-play/rosa-1.webp"
       ],
@@ -48,7 +48,7 @@
     {
       "id": "fn-xiaomi-redmi-buds-6-play-branco",
       "label": "Branco",
-      "price": 54.9,
+      "price": 82.9,
       "images": [
         "/catalog/fones/fn-xiaomi-redmi-buds-6-play/branco-1.webp"
       ],
@@ -70,7 +70,7 @@
     {
       "id": "fn-xiaomi-redmi-buds-6-play-azul",
       "label": "Azul",
-      "price": 54.9,
+      "price": 82.9,
       "images": [
         "/catalog/fones/fn-xiaomi-redmi-buds-6-play/azul-1.webp"
       ],
@@ -88,7 +88,7 @@
     {
       "id": "fn-xiaomi-redmi-buds-6-play-preto",
       "label": "Preto",
-      "price": 63.9,
+      "price": 95.9,
       "images": [
         "/catalog/fones/fn-xiaomi-redmi-buds-6-play/preto-1.webp"
       ],
@@ -104,5 +104,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

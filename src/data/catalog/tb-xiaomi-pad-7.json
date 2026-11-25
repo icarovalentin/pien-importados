@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "eletronicos",
   "categoryLabel": "Tablets",
-  "price": 1875.9,
+  "price": 2813.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -30,7 +30,7 @@
     {
       "id": "tb-xiaomi-pad-7-11-256gb-8gb-verde",
       "label": "11\" · 256GB/8GB · Verde",
-      "price": 1875.9,
+      "price": 2813.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-pad-7/11-256gb-8gb-verde-1.webp"
       ],
@@ -52,7 +52,7 @@
     {
       "id": "tb-xiaomi-pad-7-11-2-256gb-8gb-azul",
       "label": "11.2\" · 256GB/8GB · Azul",
-      "price": 1875.9,
+      "price": 2813.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-pad-7/11-2-256gb-8gb-azul-1.webp"
       ],
@@ -71,5 +71,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 1087.9,
+  "price": 1631.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-redmi-note-15-4g-128gb-6gb-verde",
       "label": "128GB/6GB · Verde",
-      "price": 1087.9,
+      "price": 1631.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-4g/128gb-6gb-verde-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-redmi-note-15-4g-128gb-6gb-azul",
       "label": "128GB/6GB · Azul",
-      "price": 1107.9,
+      "price": 1661.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-4g/128gb-6gb-azul-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "xm-redmi-note-15-4g-256gb-8gb-azul",
       "label": "256GB/8GB · Azul",
-      "price": 1323.9,
+      "price": 1985.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-4g/256gb-8gb-azul-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "xm-redmi-note-15-4g-256gb-8gb-preto",
       "label": "256GB/8GB · Preto",
-      "price": 1323.9,
+      "price": 1985.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-4g/256gb-8gb-preto-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "xm-redmi-note-15-4g-256gb-8gb-roxo",
       "label": "256GB/8GB · Roxo",
-      "price": 1323.9,
+      "price": 1985.9,
       "images": [
         "/catalog/phones/xm-redmi-note-15-4g/256gb-8gb-roxo-1.webp"
       ],
@@ -131,5 +131,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

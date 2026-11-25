@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 8591.9,
+  "price": 12887.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "ap-iphone-18-pro-max-256gb-12gb-azul",
       "label": "256GB/12GB · Azul",
-      "price": 8591.9,
+      "price": 12887.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/256gb-12gb-azul-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "ap-iphone-18-pro-max-256gb-12gb-preto",
       "label": "256GB/12GB · Preto",
-      "price": 8591.9,
+      "price": 12887.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/256gb-12gb-preto-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "ap-iphone-18-pro-max-256gb-12gb-bordo",
       "label": "256GB/12GB · Bordô",
-      "price": 8712.9,
+      "price": 13069.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/256gb-12gb-bordo-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "ap-iphone-18-pro-max-256gb-12gb-prata",
       "label": "256GB/12GB · Prata",
-      "price": 8712.9,
+      "price": 13069.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/256gb-12gb-prata-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "ap-iphone-18-pro-max-256gb-12gb-bordo-a3717-za",
       "label": "256GB/12GB · Bordô (A3717 ZA)",
-      "price": 8712.9,
+      "price": 13069.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/256gb-12gb-bordo-a3717-za-1.webp"
       ],
@@ -134,7 +134,7 @@
     {
       "id": "ap-iphone-18-pro-max-256gb-12gb-azul-a3717-za",
       "label": "256GB/12GB · Azul (A3717 ZA)",
-      "price": 8712.9,
+      "price": 13069.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/256gb-12gb-azul-a3717-za-1.webp"
       ],
@@ -155,7 +155,7 @@
     {
       "id": "ap-iphone-18-pro-max-256gb-12gb-azul-a3473-ll",
       "label": "256GB/12GB · Azul (A3473 LL)",
-      "price": 8833.9,
+      "price": 13250.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/256gb-12gb-azul-a3473-ll-1.webp"
       ],
@@ -176,7 +176,7 @@
     {
       "id": "ap-iphone-18-pro-max-256gb-12gb-azul-2",
       "label": "256GB/12GB · Azul (2)",
-      "price": 9317.9,
+      "price": 13976.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/256gb-12gb-azul-2-1.webp"
       ],
@@ -197,7 +197,7 @@
     {
       "id": "ap-iphone-18-pro-max-512gb-12gb-azul",
       "label": "512GB/12GB · Azul",
-      "price": 10151.9,
+      "price": 15227.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/512gb-12gb-azul-1.webp"
       ],
@@ -218,7 +218,7 @@
     {
       "id": "ap-iphone-18-pro-max-512gb-12gb-bordo",
       "label": "512GB/12GB · Bordô",
-      "price": 10224.9,
+      "price": 15337.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/512gb-12gb-bordo-1.webp"
       ],
@@ -239,7 +239,7 @@
     {
       "id": "ap-iphone-18-pro-max-512gb-12gb-prata",
       "label": "512GB/12GB · Prata",
-      "price": 10769.9,
+      "price": 16154.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/512gb-12gb-prata-1.webp"
       ],
@@ -260,7 +260,7 @@
     {
       "id": "ap-iphone-18-pro-max-512gb-12gb-preto",
       "label": "512GB/12GB · Preto",
-      "price": 10769.9,
+      "price": 16154.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/512gb-12gb-preto-1.webp"
       ],
@@ -281,7 +281,7 @@
     {
       "id": "ap-iphone-18-pro-max-1tb-12gb-preto",
       "label": "1TB/12GB · Preto",
-      "price": 13189.9,
+      "price": 19784.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/1tb-12gb-preto-1.webp"
       ],
@@ -302,7 +302,7 @@
     {
       "id": "ap-iphone-18-pro-max-1tb-12gb-bordo",
       "label": "1TB/12GB · Bordô",
-      "price": 13431.9,
+      "price": 20147.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/1tb-12gb-bordo-1.webp"
       ],
@@ -323,7 +323,7 @@
     {
       "id": "ap-iphone-18-pro-max-1tb-12gb-azul",
       "label": "1TB/12GB · Azul",
-      "price": 13431.9,
+      "price": 20147.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/1tb-12gb-azul-1.webp"
       ],
@@ -344,7 +344,7 @@
     {
       "id": "ap-iphone-18-pro-max-1tb-12gb-prata",
       "label": "1TB/12GB · Prata",
-      "price": 13733.9,
+      "price": 20600.9,
       "images": [
         "/catalog/phones/ap-iphone-18-pro-max/1tb-12gb-prata-1.webp"
       ],
@@ -362,5 +362,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -6,6 +6,7 @@ import { CategoryType, Product, SortOption, StockStatus } from '@/types/product'
 import { Navbar } from '@/components/Navbar';
 import { RotatingHeroBanner } from '@/components/RotatingHeroBanner';
 import { CategoryNav } from '@/components/CategoryNav';
+import { GENDER_FILTER_CATEGORIES, GenderFilter, matchesGender } from '@/utils/gender';
 import { ProductCard } from '@/components/ProductCard';
 import { ProductGridSkeleton } from '@/components/ProductSkeleton';
 import { ProductModal } from '@/components/ProductModal';
@@ -25,6 +26,7 @@ export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<CategoryType>('todos');
   const [selectedBrand, setSelectedBrand] = useState('');
+  const [selectedGender, setSelectedGender] = useState<GenderFilter>('todos');
   const [selectedStock, setSelectedStock] = useState<'todos' | StockStatus>('todos');
   const [sortBy, setSortBy] = useState<SortOption>('featured');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -92,12 +94,14 @@ export default function HomePage() {
   const handleSelectCategory = (cat: CategoryType) => {
     setSelectedCategory(cat);
     setSelectedBrand('');
+    setSelectedGender('todos');
   };
 
   const clearAllFilters = () => {
     setSelectedCategory('todos');
     setSelectedBrand('');
     setSelectedStock('todos');
+    setSelectedGender('todos');
     setSearchTerm('');
   };
 
@@ -130,6 +134,8 @@ export default function HomePage() {
     searchTerm.trim() === '' &&
     readyHighlights.length > 0;
 
+  const showGenderFilter = GENDER_FILTER_CATEGORIES.includes(selectedCategory);
+
   // Produtos filtrados por categoria, marca e busca (contadores coerentes com a seleção atual)
   const baseFilteredProducts = useMemo(() => {
     return products.filter((product) => {
@@ -141,6 +147,10 @@ export default function HomePage() {
         } else if (product.category !== selectedCategory) {
           return false;
         }
+      }
+
+      if (showGenderFilter && !matchesGender(product, selectedGender)) {
+        return false;
       }
 
       if (selectedBrand.trim() !== '') {
@@ -162,7 +172,7 @@ export default function HomePage() {
 
       return true;
     });
-  }, [products, selectedCategory, selectedBrand, searchTerm]);
+  }, [products, selectedCategory, selectedBrand, searchTerm, selectedGender, showGenderFilter]);
 
   const prontaEntregaCount = useMemo(
     () => baseFilteredProducts.filter((p) => p.status === 'pronta_entrega').length,
@@ -249,6 +259,7 @@ export default function HomePage() {
           onSelectBrand={(brand) => {
             setSelectedCategory('todos');
             setSelectedStock('todos');
+            setSelectedGender('todos');
             setSelectedBrand(brand);
           }}
         />
@@ -320,6 +331,8 @@ export default function HomePage() {
         </div>
 
         <CategoryNav
+          selectedGender={showGenderFilter ? selectedGender : undefined}
+          setSelectedGender={setSelectedGender}
           selectedStock={selectedStock}
           setSelectedStock={setSelectedStock}
           sortBy={sortBy}

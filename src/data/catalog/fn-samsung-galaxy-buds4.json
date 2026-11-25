@@ -2,9 +2,9 @@
   "id": "fn-samsung-galaxy-buds4",
   "name": "Samsung Galaxy Buds4",
   "brand": "Samsung",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 756.9,
+  "price": 1135.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "fn-samsung-galaxy-buds4-branco",
       "label": "Branco",
-      "price": 756.9,
+      "price": 1135.9,
       "images": [
         "/catalog/fones/fn-samsung-galaxy-buds4/branco-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "fn-samsung-galaxy-buds4-preto",
       "label": "Preto",
-      "price": 756.9,
+      "price": 1135.9,
       "images": [
         "/catalog/fones/fn-samsung-galaxy-buds4/preto-1.webp"
       ],
@@ -67,5 +67,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

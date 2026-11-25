@@ -2,9 +2,9 @@
   "id": "jbl-charge-6",
   "name": "JBL Charge 6",
   "brand": "JBL",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Caixas de Som",
-  "price": 629.9,
+  "price": 944.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "jbl-charge-6-vermelho",
       "label": "Vermelho",
-      "price": 629.9,
+      "price": 944.9,
       "images": [
         "/catalog/jbl/charge-6/vermelho-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "jbl-charge-6-rose",
       "label": "Rose",
-      "price": 629.9,
+      "price": 944.9,
       "images": [
         "/catalog/jbl/charge-6/rose-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "jbl-charge-6-turquesa",
       "label": "Turquesa",
-      "price": 629.9,
+      "price": 944.9,
       "images": [
         "/catalog/jbl/charge-6/turquesa-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "jbl-charge-6-azul",
       "label": "Azul",
-      "price": 726.9,
+      "price": 1090.9,
       "images": [
         "/catalog/jbl/charge-6/azul-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "jbl-charge-6-roxo",
       "label": "Roxo",
-      "price": 629.9,
+      "price": 944.9,
       "images": [
         "/catalog/jbl/charge-6/roxo-1.webp"
       ],
@@ -131,5 +131,6 @@
         "Produto original JBL"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

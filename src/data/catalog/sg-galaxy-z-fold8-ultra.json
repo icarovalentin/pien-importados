@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 10466.9,
+  "price": 15700.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "sg-galaxy-z-fold8-ultra-256gb-12gb-bege",
       "label": "256GB/12GB · Bege",
-      "price": 10466.9,
+      "price": 15700.9,
       "images": [
         "/catalog/samsung/sg-galaxy-z-fold8-ultra/256gb-12gb-bege-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "sg-galaxy-z-fold8-ultra-256gb-12gb-grafite",
       "label": "256GB/12GB · Grafite",
-      "price": 10769.9,
+      "price": 16154.9,
       "images": [
         "/catalog/samsung/sg-galaxy-z-fold8-ultra/256gb-12gb-grafite-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "sg-galaxy-z-fold8-ultra-256gb-12gb-roxo",
       "label": "256GB/12GB · Roxo",
-      "price": 10769.9,
+      "price": 16154.9,
       "images": [
         "/catalog/samsung/sg-galaxy-z-fold8-ultra/256gb-12gb-roxo-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "sg-galaxy-z-fold8-ultra-512gb-12gb-bege",
       "label": "512GB/12GB · Bege",
-      "price": 11404.9,
+      "price": 17107.9,
       "images": [
         "/catalog/samsung/sg-galaxy-z-fold8-ultra/512gb-12gb-bege-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "sg-galaxy-z-fold8-ultra-512gb-12gb-grafite",
       "label": "512GB/12GB · Grafite",
-      "price": 11404.9,
+      "price": 17107.9,
       "images": [
         "/catalog/samsung/sg-galaxy-z-fold8-ultra/512gb-12gb-grafite-1.webp"
       ],
@@ -131,5 +131,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

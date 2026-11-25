@@ -1,0 +1,46 @@
+{
+  "id": "pf-paco-rabanne-1-million-gold-elixir-masculino",
+  "name": "Paco Rabanne 1 Million Gold Elixir Masculino",
+  "brand": "Paco Rabanne",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 589.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-paco-rabanne-1-million-gold-elixir-masculino/1-million-gold-elixir-parfum-intense-100ml-1.webp",
+    "/catalog/perfumes/pf-paco-rabanne-1-million-gold-elixir-masculino/1-million-gold-elixir-parfum-intense-100ml-2.webp"
+  ],
+  "description": "Paco Rabanne 1 Million Gold Elixir, Parfum Intense 100ml. Perfume masculino de família olfativa oriental vainilla.",
+  "specs": [
+    "Edição: 1 Million Gold Elixir",
+    "Concentração: Parfum Intense",
+    "Volume: 100ml",
+    "Família olfativa: Oriental vainilla",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Paco Rabanne, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-paco-rabanne-1-million-gold-elixir-masculino-1-million-gold-elixir-parfum-intense-100ml",
+      "label": "1 Million Gold Elixir · Parfum Intense · 100ml",
+      "price": 589.9,
+      "images": [
+        "/catalog/perfumes/pf-paco-rabanne-1-million-gold-elixir-masculino/1-million-gold-elixir-parfum-intense-100ml-1.webp",
+        "/catalog/perfumes/pf-paco-rabanne-1-million-gold-elixir-masculino/1-million-gold-elixir-parfum-intense-100ml-2.webp"
+      ],
+      "description": "Paco Rabanne 1 Million Gold Elixir, Parfum Intense 100ml. Perfume masculino de família olfativa oriental vainilla.",
+      "specs": [
+        "Edição: 1 Million Gold Elixir",
+        "Concentração: Parfum Intense",
+        "Volume: 100ml",
+        "Família olfativa: Oriental vainilla",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

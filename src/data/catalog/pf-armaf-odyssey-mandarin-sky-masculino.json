@@ -4,7 +4,7 @@
   "brand": "Armaf",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 110.9,
+  "price": 166.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -27,7 +27,7 @@
     {
       "id": "pf-armaf-odyssey-mandarin-sky-masculino-odyssey-mandarin-sky-eau-de-parfum-100ml",
       "label": "Odyssey Mandarin Sky · Eau de Parfum · 100ml",
-      "price": 110.9,
+      "price": 166.9,
       "images": [
         "/catalog/perfumes/pf-armaf-odyssey-mandarin-sky-masculino/odyssey-mandarin-sky-eau-de-parfum-100ml-1.webp"
       ],
@@ -46,7 +46,7 @@
     {
       "id": "pf-armaf-odyssey-mandarin-sky-masculino-elixir-eau-de-parfum-100ml",
       "label": "Elixir · Eau de Parfum · 100ml",
-      "price": 150.9,
+      "price": 226.9,
       "images": [
         "/catalog/perfumes/pf-armaf-odyssey-mandarin-sky-masculino/elixir-eau-de-parfum-100ml-1.webp"
       ],
@@ -65,7 +65,7 @@
     {
       "id": "pf-armaf-odyssey-mandarin-sky-masculino-mandarin-sky-vintage-eau-de-parfum-100ml",
       "label": "Mandarin Sky Vintage · Eau de Parfum · 100ml",
-      "price": 154.9,
+      "price": 232.9,
       "images": [
         "/catalog/perfumes/pf-armaf-odyssey-mandarin-sky-masculino/mandarin-sky-vintage-eau-de-parfum-100ml-1.webp"
       ],
@@ -82,5 +82,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

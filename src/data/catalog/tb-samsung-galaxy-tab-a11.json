@@ -4,7 +4,7 @@
   "brand": "Samsung",
   "category": "eletronicos",
   "categoryLabel": "Tablets",
-  "price": 798.9,
+  "price": 1198.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -31,7 +31,7 @@
     {
       "id": "tb-samsung-galaxy-tab-a11-8-7-64gb-4gb-cinza",
       "label": "8.7\" · 64GB/4GB · Cinza",
-      "price": 798.9,
+      "price": 1198.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-1.webp"
       ],
@@ -54,7 +54,7 @@
     {
       "id": "tb-samsung-galaxy-tab-a11-8-7-64gb-4gb-cinza-wi-fi-plus-celular",
       "label": "8.7\" · 64GB/4GB · Cinza · Wi-Fi + Celular",
-      "price": 865.9,
+      "price": 1298.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-cinza-wi-fi-plus-celular-1.webp"
       ],
@@ -75,7 +75,7 @@
     {
       "id": "tb-samsung-galaxy-tab-a11-8-7-64gb-4gb-prata-wi-fi-plus-celular",
       "label": "8.7\" · 64GB/4GB · Prata · Wi-Fi + Celular",
-      "price": 865.9,
+      "price": 1298.9,
       "images": [
         "/catalog/tablets/tb-samsung-galaxy-tab-a11/8-7-64gb-4gb-prata-wi-fi-plus-celular-1.webp"
       ],
@@ -93,5 +93,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 1081.9,
+  "price": 1622.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-redmi-17-4g-256gb-4gb-azul",
       "label": "256GB/4GB · Azul",
-      "price": 1081.9,
+      "price": 1622.9,
       "images": [
         "/catalog/phones/xm-redmi-17-4g/256gb-4gb-azul-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-redmi-17-4g-256gb-6gb-preto",
       "label": "256GB/6GB · Preto",
-      "price": 1202.9,
+      "price": 1804.9,
       "images": [
         "/catalog/phones/xm-redmi-17-4g/256gb-6gb-preto-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "xm-redmi-17-4g-256gb-6gb-verde",
       "label": "256GB/6GB · Verde",
-      "price": 1202.9,
+      "price": 1804.9,
       "images": [
         "/catalog/phones/xm-redmi-17-4g/256gb-6gb-verde-1.webp"
       ],
@@ -89,5 +89,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -2,9 +2,9 @@
   "id": "aw-se-3",
   "name": "Apple Watch SE 3",
   "brand": "Apple",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Smartwatch",
-  "price": 1482.9,
+  "price": 2224.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -31,7 +31,7 @@
     {
       "id": "aw-se-3-aluminio-40mm-estelar-esportiva-estelar-s-m",
       "label": "Alumínio 40mm Estelar · Esportiva Estelar S/M",
-      "price": 1482.9,
+      "price": 2224.9,
       "images": [
         "/catalog/applewatch/aw-se-3/aluminio-40mm-estelar-esportiva-estelar-s-m-1.webp"
       ],
@@ -54,7 +54,7 @@
     {
       "id": "aw-se-3-aluminio-44mm-estelar-esportiva-estelar",
       "label": "Alumínio 44mm Estelar · Esportiva Estelar",
-      "price": 1627.9,
+      "price": 2441.9,
       "images": [
         "/catalog/applewatch/aw-se-3/aluminio-44mm-estelar-esportiva-estelar-1.webp"
       ],
@@ -78,7 +78,7 @@
     {
       "id": "aw-se-3-aluminio-44mm-estelar-esportiva-estelar-m-l",
       "label": "Alumínio 44mm Estelar · Esportiva Estelar M/L",
-      "price": 1627.9,
+      "price": 2441.9,
       "images": [
         "/catalog/applewatch/aw-se-3/aluminio-44mm-estelar-esportiva-estelar-m-l-1.webp"
       ],
@@ -102,7 +102,7 @@
     {
       "id": "aw-se-3-aluminio-44mm-meia-noite-esportiva-meia-noite-m-l",
       "label": "Alumínio 44mm Meia Noite · Esportiva Meia Noite M/L",
-      "price": 1657.9,
+      "price": 2486.9,
       "images": [
         "/catalog/applewatch/aw-se-3/aluminio-44mm-meia-noite-esportiva-meia-noite-m-l-1.webp"
       ],
@@ -126,7 +126,7 @@
     {
       "id": "aw-se-3-aluminio-44mm-meia-noite-esportiva-meia-noite-m-l-2025",
       "label": "Alumínio 44mm Meia Noite · Esportiva Meia Noite M/L (2025)",
-      "price": 1657.9,
+      "price": 2486.9,
       "images": [
         "/catalog/applewatch/aw-se-3/aluminio-44mm-meia-noite-esportiva-meia-noite-m-l-2025-1.webp"
       ],
@@ -150,7 +150,7 @@
     {
       "id": "aw-se-3-aluminio-44mm-estelar-esportiva-estelar-m-l-2026",
       "label": "Alumínio 44mm Estelar · Esportiva Estelar M/L (2026)",
-      "price": 1657.9,
+      "price": 2486.9,
       "images": [
         "/catalog/applewatch/aw-se-3/aluminio-44mm-estelar-esportiva-estelar-m-l-2026-1.webp"
       ],
@@ -175,7 +175,7 @@
     {
       "id": "aw-se-3-aluminio-44mm-meia-noite-esportiva-meia-noite",
       "label": "Alumínio 44mm Meia Noite · Esportiva Meia Noite",
-      "price": 1663.9,
+      "price": 2495.9,
       "images": [
         "/catalog/applewatch/aw-se-3/aluminio-44mm-meia-noite-esportiva-meia-noite-1.webp"
       ],
@@ -199,7 +199,7 @@
     {
       "id": "aw-se-3-aluminio-44mm-meia-noite-esportiva-azul-marinho-s-b",
       "label": "Alumínio 44mm Meia Noite · Esportiva Azul Marinho S/B",
-      "price": 1669.9,
+      "price": 2504.9,
       "images": [
         "/catalog/applewatch/aw-se-3/aluminio-44mm-meia-noite-esportiva-azul-marinho-s-b-1.webp"
       ],
@@ -221,5 +221,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

@@ -1,0 +1,46 @@
+{
+  "id": "pf-lattafa-fakhar-masculino",
+  "name": "Lattafa Fakhar Masculino",
+  "brand": "Lattafa",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 164.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lattafa-fakhar-masculino/fakhar-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-lattafa-fakhar-masculino/fakhar-eau-de-parfum-100ml-2.webp"
+  ],
+  "description": "Lattafa Fakhar, Eau de Parfum 100ml. Perfume masculino de família olfativa âmbar.",
+  "specs": [
+    "Edição: Fakhar",
+    "Concentração: Eau de Parfum",
+    "Volume: 100ml",
+    "Família olfativa: Âmbar",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Lattafa, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lattafa-fakhar-masculino-fakhar-eau-de-parfum-100ml",
+      "label": "Fakhar · Eau de Parfum · 100ml",
+      "price": 164.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-fakhar-masculino/fakhar-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-fakhar-masculino/fakhar-eau-de-parfum-100ml-2.webp"
+      ],
+      "description": "Lattafa Fakhar, Eau de Parfum 100ml. Perfume masculino de família olfativa âmbar.",
+      "specs": [
+        "Edição: Fakhar",
+        "Concentração: Eau de Parfum",
+        "Volume: 100ml",
+        "Família olfativa: Âmbar",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

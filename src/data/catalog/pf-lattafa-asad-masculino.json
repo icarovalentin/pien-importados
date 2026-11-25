@@ -4,7 +4,7 @@
   "brand": "LATTAFA",
   "category": "arabes",
   "categoryLabel": "Perfumes Árabes",
-  "price": 118.9,
+  "price": 178.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "pf-lattafa-asad-masculino-asad-eau-de-parfum-100ml",
       "label": "Asad · Eau de Parfum · 100ml",
-      "price": 118.9,
+      "price": 178.9,
       "images": [
         "/catalog/perfumes/pf-lattafa-asad-masculino/asad-eau-de-parfum-100ml-1.webp",
         "/catalog/perfumes/pf-lattafa-asad-masculino/asad-eau-de-parfum-100ml-2.webp"
@@ -47,5 +47,6 @@
         "Produto novo e lacrado"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

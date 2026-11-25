@@ -1,0 +1,52 @@
+{
+  "id": "pf-carolina-herrera-212-nyc-feminino",
+  "name": "Carolina Herrera 212 NYC Feminino",
+  "brand": "Carolina Herrera",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 626.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-carolina-herrera-212-nyc-feminino/212-nyc-eau-de-toilette-100ml-1.webp",
+    "/catalog/perfumes/pf-carolina-herrera-212-nyc-feminino/212-nyc-eau-de-toilette-100ml-2.webp",
+    "/catalog/perfumes/pf-carolina-herrera-212-nyc-feminino/212-nyc-eau-de-toilette-100ml-3.webp"
+  ],
+  "description": "Carolina Herrera 212 NYC, Eau de Toilette 100 ml. Notas de topo: Especiarias, Petitgrain, Lavanda, Notas Verdes, Toranja, Bergamota; coração: Gengibre, Gardênia, Violeta, Sálvia; fundo: Lándano, Sândalo, Almíscar, Madeira, Vetiver, Incenso.",
+  "specs": [
+    "Edição: 212 NYC",
+    "Concentração: Eau de Toilette",
+    "Volume: 100 ml",
+    "Notas de topo: Especiarias, Petitgrain, Lavanda, Notas Verdes, Toranja, Bergamota",
+    "Notas de coração: Gengibre, Gardênia, Violeta, Sálvia",
+    "Notas de fundo: Lándano, Sândalo, Almíscar, Madeira, Vetiver, Incenso",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Carolina Herrera, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-carolina-herrera-212-nyc-feminino-212-nyc-eau-de-toilette-100ml",
+      "label": "212 NYC · Eau de Toilette · 100ml",
+      "price": 626.9,
+      "images": [
+        "/catalog/perfumes/pf-carolina-herrera-212-nyc-feminino/212-nyc-eau-de-toilette-100ml-1.webp",
+        "/catalog/perfumes/pf-carolina-herrera-212-nyc-feminino/212-nyc-eau-de-toilette-100ml-2.webp",
+        "/catalog/perfumes/pf-carolina-herrera-212-nyc-feminino/212-nyc-eau-de-toilette-100ml-3.webp"
+      ],
+      "description": "Carolina Herrera 212 NYC, Eau de Toilette 100 ml. Notas de topo: Especiarias, Petitgrain, Lavanda, Notas Verdes, Toranja, Bergamota; coração: Gengibre, Gardênia, Violeta, Sálvia; fundo: Lándano, Sândalo, Almíscar, Madeira, Vetiver, Incenso.",
+      "specs": [
+        "Edição: 212 NYC",
+        "Concentração: Eau de Toilette",
+        "Volume: 100 ml",
+        "Notas de topo: Especiarias, Petitgrain, Lavanda, Notas Verdes, Toranja, Bergamota",
+        "Notas de coração: Gengibre, Gardênia, Violeta, Sálvia",
+        "Notas de fundo: Lándano, Sândalo, Almíscar, Madeira, Vetiver, Incenso",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

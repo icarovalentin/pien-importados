@@ -4,7 +4,7 @@
   "brand": "Victoria's Secret",
   "category": "beleza",
   "categoryLabel": "Body Mist",
-  "price": 70.9,
+  "price": 106.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -25,7 +25,7 @@
     {
       "id": "mists-angel-fantasy-shimmer",
       "label": "Angel Fantasy Shimmer",
-      "price": 168.9,
+      "price": 253.9,
       "images": [
         "/catalog/mists/angel-fantasy-shimmer.webp"
       ],
@@ -42,7 +42,7 @@
     {
       "id": "mists-spotlight-shimmer",
       "label": "Spotlight Shimmer",
-      "price": 168.9,
+      "price": 253.9,
       "images": [
         "/catalog/mists/spotlight-shimmer.webp"
       ],
@@ -59,7 +59,7 @@
     {
       "id": "mists-pink-diamond-shimmer",
       "label": "Pink Diamond Shimmer",
-      "price": 168.9,
+      "price": 253.9,
       "images": [
         "/catalog/mists/pink-diamond-shimmer.webp"
       ],
@@ -76,7 +76,7 @@
     {
       "id": "mists-pure-seduction",
       "label": "Pure Seduction",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/pure-seduction.webp"
       ],
@@ -93,7 +93,7 @@
     {
       "id": "mists-aqua-kiss",
       "label": "Aqua Kiss",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/aqua-kiss.webp"
       ],
@@ -110,7 +110,7 @@
     {
       "id": "mists-shimmer-velvet-petals",
       "label": "Shimmer Velvet Petals",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/shimmer-velvet-petals.webp"
       ],
@@ -127,7 +127,7 @@
     {
       "id": "mists-midnight-bloom",
       "label": "Midnight Bloom",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/midnight-bloom.webp"
       ],
@@ -144,7 +144,7 @@
     {
       "id": "mists-velvet-petals",
       "label": "Velvet Petals",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/velvet-petals.webp"
       ],
@@ -161,7 +161,7 @@
     {
       "id": "mists-velvet-petals-2",
       "label": "Velvet Petals (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/velvet-petals-2.webp"
       ],
@@ -178,7 +178,7 @@
     {
       "id": "mists-vanilla-lace",
       "label": "Vanilla Lace",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/vanilla-lace.webp"
       ],
@@ -195,7 +195,7 @@
     {
       "id": "mists-golden-apricot-honey",
       "label": "Golden Apricot & Honey",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/golden-apricot-honey.webp"
       ],
@@ -209,7 +209,7 @@
     {
       "id": "mists-love-spell-intense",
       "label": "Love Spell Intense",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/love-spell-intense.webp"
       ],
@@ -226,7 +226,7 @@
     {
       "id": "mists-glazed-petals-berries",
       "label": "Glazed Petals & Berries",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/glazed-petals-berries.webp"
       ],
@@ -243,7 +243,7 @@
     {
       "id": "mists-wild-rose-amber",
       "label": "Wild Rose Amber",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/wild-rose-amber.webp"
       ],
@@ -256,7 +256,7 @@
     {
       "id": "mists-love-spell",
       "label": "Love Spell",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/love-spell.webp"
       ],
@@ -273,7 +273,7 @@
     {
       "id": "mists-shimmer-aqua-kiss",
       "label": "Shimmer Aqua Kiss",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/shimmer-aqua-kiss.webp"
       ],
@@ -290,7 +290,7 @@
     {
       "id": "mists-rush",
       "label": "Rush",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/rush.webp"
       ],
@@ -305,7 +305,7 @@
     {
       "id": "mists-temptation",
       "label": "Temptation",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/temptation.webp"
       ],
@@ -320,7 +320,7 @@
     {
       "id": "mists-bare-vanilla",
       "label": "Bare Vanilla",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/bare-vanilla.webp"
       ],
@@ -337,7 +337,7 @@
     {
       "id": "mists-coconut-milk-rose",
       "label": "Coconut Milk Rose",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/coconut-milk-rose.webp"
       ],
@@ -352,7 +352,7 @@
     {
       "id": "mists-blue-jasmine-water-lily",
       "label": "Blue Jasmine Water Lily",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/blue-jasmine-water-lily.webp"
       ],
@@ -365,7 +365,7 @@
     {
       "id": "mists-pure-seduction-2",
       "label": "Pure Seduction (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/pure-seduction-2.webp"
       ],
@@ -382,7 +382,7 @@
     {
       "id": "mists-bare-vanilla-intense",
       "label": "Bare Vanilla Intense",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/bare-vanilla-intense.webp"
       ],
@@ -399,7 +399,7 @@
     {
       "id": "mists-angel-cake-cream",
       "label": "Angel Cake & Cream",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/angel-cake-cream.webp"
       ],
@@ -416,7 +416,7 @@
     {
       "id": "mists-whipped-milk-sugar",
       "label": "Whipped Milk & Sugar",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/whipped-milk-sugar.webp"
       ],
@@ -433,7 +433,7 @@
     {
       "id": "mists-shimmer-midnight-bloom",
       "label": "Shimmer Midnight Bloom",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/shimmer-midnight-bloom.webp"
       ],
@@ -450,7 +450,7 @@
     {
       "id": "mists-cashmerefleur",
       "label": "Cashmerefleur",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/cashmerefleur.webp"
       ],
@@ -467,7 +467,7 @@
     {
       "id": "mists-amber-romance",
       "label": "Amber Romance",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/amber-romance.webp"
       ],
@@ -484,7 +484,7 @@
     {
       "id": "mists-coconut-passion",
       "label": "Coconut Passion",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/coconut-passion.webp"
       ],
@@ -501,7 +501,7 @@
     {
       "id": "mists-romantic",
       "label": "Romantic",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/romantic.webp"
       ],
@@ -516,7 +516,7 @@
     {
       "id": "mists-white-peach-mango",
       "label": "White Peach Mango",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/white-peach-mango.webp"
       ],
@@ -529,7 +529,7 @@
     {
       "id": "mists-coconut-passion-2",
       "label": "Coconut Passion (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/coconut-passion-2.webp"
       ],
@@ -546,7 +546,7 @@
     {
       "id": "mists-love-spell-2",
       "label": "Love Spell (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/love-spell-2.webp"
       ],
@@ -563,7 +563,7 @@
     {
       "id": "mists-shimmer-amber-romance",
       "label": "Shimmer Amber Romance",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/shimmer-amber-romance.webp"
       ],
@@ -580,7 +580,7 @@
     {
       "id": "mists-shimmer-coconut-passion",
       "label": "Shimmer Coconut Passion",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/shimmer-coconut-passion.webp"
       ],
@@ -597,7 +597,7 @@
     {
       "id": "mists-amber-romance-2",
       "label": "Amber Romance (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/amber-romance-2.webp"
       ],
@@ -614,7 +614,7 @@
     {
       "id": "mists-aqua-kiss-2",
       "label": "Aqua Kiss (2)",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/aqua-kiss-2.webp"
       ],
@@ -631,7 +631,7 @@
     {
       "id": "mists-shimmer-temptation",
       "label": "Shimmer Temptation",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/shimmer-temptation.webp"
       ],
@@ -646,7 +646,7 @@
     {
       "id": "mists-shimmer-love-spell",
       "label": "Shimmer Love Spell",
-      "price": 70.9,
+      "price": 106.9,
       "images": [
         "/catalog/mists/shimmer-love-spell.webp"
       ],
@@ -660,5 +660,6 @@
         "100% original Victoria’s Secret"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

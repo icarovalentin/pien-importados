@@ -1,0 +1,46 @@
+{
+  "id": "pf-giorgio-armani-stronger-with-you-intensely-masculino",
+  "name": "Giorgio Armani Stronger With You Intensely Masculino",
+  "brand": "Giorgio Armani",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 792.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-giorgio-armani-stronger-with-you-intensely-masculino/stronger-with-you-intensely-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-giorgio-armani-stronger-with-you-intensely-masculino/stronger-with-you-intensely-eau-de-parfum-100ml-2.webp"
+  ],
+  "description": "Giorgio Armani Stronger With You Intensely, Eau de Parfum 100ml. Perfume masculino de família olfativa âmbar fougère.",
+  "specs": [
+    "Edição: Stronger With You Intensely",
+    "Concentração: Eau de Parfum",
+    "Volume: 100ml",
+    "Família olfativa: Âmbar fougère",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Giorgio Armani, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-giorgio-armani-stronger-with-you-intensely-masculino-stronger-with-you-intensely-eau-de-parfum-100ml",
+      "label": "Stronger With You Intensely · Eau de Parfum · 100ml",
+      "price": 792.9,
+      "images": [
+        "/catalog/perfumes/pf-giorgio-armani-stronger-with-you-intensely-masculino/stronger-with-you-intensely-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-giorgio-armani-stronger-with-you-intensely-masculino/stronger-with-you-intensely-eau-de-parfum-100ml-2.webp"
+      ],
+      "description": "Giorgio Armani Stronger With You Intensely, Eau de Parfum 100ml. Perfume masculino de família olfativa âmbar fougère.",
+      "specs": [
+        "Edição: Stronger With You Intensely",
+        "Concentração: Eau de Parfum",
+        "Volume: 100ml",
+        "Família olfativa: Âmbar fougère",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ],
+  "markup": 1.5
+}

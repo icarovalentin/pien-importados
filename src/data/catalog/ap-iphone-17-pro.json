@@ -4,7 +4,7 @@
   "brand": "Apple",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 6806.9,
+  "price": 10210.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "ap-iphone-17-pro-256gb-12gb-laranja",
       "label": "256GB/12GB · Laranja",
-      "price": 6806.9,
+      "price": 10210.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "ap-iphone-17-pro-256gb-12gb-prata",
       "label": "256GB/12GB · Prata",
-      "price": 7078.9,
+      "price": 10618.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro/256gb-12gb-prata-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "ap-iphone-17-pro-256gb-12gb-laranja-cosmico",
       "label": "256GB/12GB · Laranja cósmico",
-      "price": 7108.9,
+      "price": 10663.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-cosmico-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "ap-iphone-17-pro-512gb-12gb-laranja",
       "label": "512GB/12GB · Laranja",
-      "price": 8409.9,
+      "price": 12614.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro/512gb-12gb-laranja-1.webp"
       ],
@@ -113,7 +113,7 @@
     {
       "id": "ap-iphone-17-pro-512gb-12gb-laranja-a3523-be",
       "label": "512GB/12GB · Laranja (A3523 BE)",
-      "price": 8470.9,
+      "price": 12706.9,
       "images": [
         "/catalog/phones/ap-iphone-17-pro/512gb-12gb-laranja-a3523-be-1.webp"
       ],
@@ -130,5 +130,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

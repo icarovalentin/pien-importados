@@ -2,9 +2,9 @@
   "id": "fn-jbl-live-buds-4",
   "name": "JBL Live Buds 4",
   "brand": "JBL",
-  "category": "eletronicos",
+  "category": "acessorios",
   "categoryLabel": "Fones de Ouvido",
-  "price": 877.9,
+  "price": 1316.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "fn-jbl-live-buds-4-azul",
       "label": "Azul",
-      "price": 877.9,
+      "price": 1316.9,
       "images": [
         "/catalog/fones/fn-jbl-live-buds-4/azul-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "fn-jbl-live-buds-4-branco",
       "label": "Branco",
-      "price": 877.9,
+      "price": 1316.9,
       "images": [
         "/catalog/fones/fn-jbl-live-buds-4/branco-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "fn-jbl-live-buds-4-prata",
       "label": "Prata",
-      "price": 877.9,
+      "price": 1316.9,
       "images": [
         "/catalog/fones/fn-jbl-live-buds-4/prata-1.webp"
       ],
@@ -92,7 +92,7 @@
     {
       "id": "fn-jbl-live-buds-4-preto",
       "label": "Preto",
-      "price": 877.9,
+      "price": 1316.9,
       "images": [
         "/catalog/fones/fn-jbl-live-buds-4/preto-1.webp"
       ],
@@ -110,5 +110,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

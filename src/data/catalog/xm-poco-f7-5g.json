@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 2238.9,
+  "price": 3358.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-poco-f7-5g-256gb-12gb-prata",
       "label": "256GB/12GB · Prata",
-      "price": 2238.9,
+      "price": 3358.9,
       "images": [
         "/catalog/phones/xm-poco-f7-5g/256gb-12gb-prata-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-poco-f7-5g-256gb-12gb-preto",
       "label": "256GB/12GB · Preto",
-      "price": 2274.9,
+      "price": 3412.9,
       "images": [
         "/catalog/phones/xm-poco-f7-5g/256gb-12gb-preto-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "xm-poco-f7-5g-256gb-12gb-preto-2",
       "label": "256GB/12GB · Preto (2)",
-      "price": 2274.9,
+      "price": 3412.9,
       "images": [
         "/catalog/phones/xm-poco-f7-5g/256gb-12gb-preto-2-1.webp"
       ],
@@ -89,5 +89,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

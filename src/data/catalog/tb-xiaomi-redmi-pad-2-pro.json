@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "eletronicos",
   "categoryLabel": "Tablets",
-  "price": 1446.9,
+  "price": 2170.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-pro-12-1-128gb-6gb-cinza",
       "label": "12.1\" · 128GB/6GB · Cinza",
-      "price": 1446.9,
+      "price": 2170.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2-pro/12-1-128gb-6gb-cinza-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "tb-xiaomi-redmi-pad-2-pro-12-1-256gb-8gb-cinza",
       "label": "12.1\" · 256GB/8GB · Cinza",
-      "price": 1688.9,
+      "price": 2533.9,
       "images": [
         "/catalog/tablets/tb-xiaomi-redmi-pad-2-pro/12-1-256gb-8gb-cinza-1.webp"
       ],
@@ -70,5 +70,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }

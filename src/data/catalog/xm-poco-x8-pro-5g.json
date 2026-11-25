@@ -4,7 +4,7 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 2293.9,
+  "price": 3440.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
@@ -29,7 +29,7 @@
     {
       "id": "xm-poco-x8-pro-5g-256gb-8gb-amarelo",
       "label": "256GB/8GB · Amarelo",
-      "price": 2293.9,
+      "price": 3440.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-amarelo-1.webp"
       ],
@@ -50,7 +50,7 @@
     {
       "id": "xm-poco-x8-pro-5g-256gb-8gb-branco",
       "label": "256GB/8GB · Branco",
-      "price": 2376.9,
+      "price": 3565.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-branco-1.webp"
       ],
@@ -71,7 +71,7 @@
     {
       "id": "xm-poco-x8-pro-5g-512gb-8gb-verde",
       "label": "512GB/8GB · Verde",
-      "price": 2432.9,
+      "price": 3649.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-5g/512gb-8gb-verde-1.webp"
       ],
@@ -91,7 +91,7 @@
     {
       "id": "xm-poco-x8-pro-5g-512gb-12gb-amarelo",
       "label": "512GB/12GB · Amarelo",
-      "price": 2571.9,
+      "price": 3857.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-amarelo-1.webp"
       ],
@@ -112,7 +112,7 @@
     {
       "id": "xm-poco-x8-pro-5g-512gb-12gb-verde",
       "label": "512GB/12GB · Verde",
-      "price": 2589.9,
+      "price": 3884.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-verde-1.webp"
       ],
@@ -133,7 +133,7 @@
     {
       "id": "xm-poco-x8-pro-5g-512gb-12gb-vermelho-dourado",
       "label": "512GB/12GB · Vermelho, dourado",
-      "price": 2619.9,
+      "price": 3929.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-vermelho-dourado-1.webp"
       ],
@@ -154,7 +154,7 @@
     {
       "id": "xm-poco-x8-pro-5g-512gb-12gb-preto",
       "label": "512GB/12GB · Preto",
-      "price": 2630.9,
+      "price": 3946.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-preto-1.webp"
       ],
@@ -174,7 +174,7 @@
     {
       "id": "xm-poco-x8-pro-5g-512gb-12gb-preto-versao-eua",
       "label": "512GB/12GB · Preto (versão EUA)",
-      "price": 2630.9,
+      "price": 3946.9,
       "images": [
         "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-preto-versao-eua-1.webp"
       ],
@@ -192,5 +192,6 @@
         "Produto novo e original, com lacre"
       ]
     }
-  ]
+  ],
+  "markup": 1.5
 }
