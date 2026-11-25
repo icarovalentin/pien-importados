@@ -1,0 +1,53 @@
+{
+  "id": "pf-yves-saint-laurent-y-masculino",
+  "name": "Yves Saint Laurent Y Masculino",
+  "brand": "Yves Saint Laurent",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 768.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-yves-saint-laurent-y-masculino/y-eau-de-parfum-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-yves-saint-laurent-y-masculino/y-eau-de-parfum-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-yves-saint-laurent-y-masculino/y-eau-de-parfum-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "Yves Saint Laurent Y Eau de Parfum, Eau de Parfum 100ml. Perfume masculino de família olfativa aromático fougère. Notas de topo: Maçã, Gengibre e Bergamota; coração: Sálvia, Zimbro (Zimbro/Enebro) e Gerânio; fundo: Madeira de Âmbar (Amberwood), Fava Tonka, Cedro, Vetiver e Incenso de Olíbano.",
+  "specs": [
+    "Edição: Y Eau de Parfum",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Aromático Fougère",
+    "Notas de topo: Maçã, Gengibre e Bergamota",
+    "Notas de coração: Sálvia, Zimbro (Zimbro/Enebro) e Gerânio",
+    "Notas de fundo: Madeira de Âmbar (Amberwood), Fava Tonka, Cedro, Vetiver e Incenso de Olíbano",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Yves Saint Laurent, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-yves-saint-laurent-y-masculino-y-eau-de-parfum-eau-de-parfum-100ml",
+      "label": "Y Eau de Parfum · Eau de Parfum · 100ml",
+      "price": 768.9,
+      "images": [
+        "/catalog/perfumes/pf-yves-saint-laurent-y-masculino/y-eau-de-parfum-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-yves-saint-laurent-y-masculino/y-eau-de-parfum-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-yves-saint-laurent-y-masculino/y-eau-de-parfum-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Yves Saint Laurent Y Eau de Parfum, Eau de Parfum 100ml. Perfume masculino de família olfativa aromático fougère. Notas de topo: Maçã, Gengibre e Bergamota; coração: Sálvia, Zimbro (Zimbro/Enebro) e Gerânio; fundo: Madeira de Âmbar (Amberwood), Fava Tonka, Cedro, Vetiver e Incenso de Olíbano.",
+      "specs": [
+        "Edição: Y Eau de Parfum",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Aromático Fougère",
+        "Notas de topo: Maçã, Gengibre e Bergamota",
+        "Notas de coração: Sálvia, Zimbro (Zimbro/Enebro) e Gerânio",
+        "Notas de fundo: Madeira de Âmbar (Amberwood), Fava Tonka, Cedro, Vetiver e Incenso de Olíbano",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

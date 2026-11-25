@@ -1,0 +1,53 @@
+{
+  "id": "pf-carolina-herrera-good-girl-feminino",
+  "name": "Carolina Herrera Good Girl Feminino",
+  "brand": "CAROLINA HERRERA",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 538.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-carolina-herrera-good-girl-feminino/very-good-girl-elixir-eau-de-parfum-80ml-1.webp",
+    "/catalog/perfumes/pf-carolina-herrera-good-girl-feminino/very-good-girl-elixir-eau-de-parfum-80ml-2.webp",
+    "/catalog/perfumes/pf-carolina-herrera-good-girl-feminino/very-good-girl-elixir-eau-de-parfum-80ml-3.webp"
+  ],
+  "description": "CAROLINA HERRERA Very Good Girl Elixir, Eau de Parfum 80ml. Perfume feminino de família olfativa âmbar floral frutado. Notas de topo: Cereja Preta, Amêndoa Amarga; coração: Rosa Vermelha, Tuberosa; fundo: Baunilha, Cacau.",
+  "specs": [
+    "Edição: Very Good Girl Elixir",
+    "Concentração: Eau de Parfum",
+    "Volume: 80 ml",
+    "Família olfativa: Âmbar Floral Frutado",
+    "Notas de topo: Cereja Preta, Amêndoa Amarga",
+    "Notas de coração: Rosa Vermelha, Tuberosa",
+    "Notas de fundo: Baunilha, Cacau",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original CAROLINA HERRERA, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-carolina-herrera-good-girl-feminino-very-good-girl-elixir-eau-de-parfum-80ml",
+      "label": "Very Good Girl Elixir · Eau de Parfum · 80ml",
+      "price": 538.9,
+      "images": [
+        "/catalog/perfumes/pf-carolina-herrera-good-girl-feminino/very-good-girl-elixir-eau-de-parfum-80ml-1.webp",
+        "/catalog/perfumes/pf-carolina-herrera-good-girl-feminino/very-good-girl-elixir-eau-de-parfum-80ml-2.webp",
+        "/catalog/perfumes/pf-carolina-herrera-good-girl-feminino/very-good-girl-elixir-eau-de-parfum-80ml-3.webp"
+      ],
+      "description": "CAROLINA HERRERA Very Good Girl Elixir, Eau de Parfum 80ml. Perfume feminino de família olfativa âmbar floral frutado. Notas de topo: Cereja Preta, Amêndoa Amarga; coração: Rosa Vermelha, Tuberosa; fundo: Baunilha, Cacau.",
+      "specs": [
+        "Edição: Very Good Girl Elixir",
+        "Concentração: Eau de Parfum",
+        "Volume: 80 ml",
+        "Família olfativa: Âmbar Floral Frutado",
+        "Notas de topo: Cereja Preta, Amêndoa Amarga",
+        "Notas de coração: Rosa Vermelha, Tuberosa",
+        "Notas de fundo: Baunilha, Cacau",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

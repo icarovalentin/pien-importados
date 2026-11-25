@@ -1,0 +1,145 @@
+{
+  "id": "xm-poco-f8-pro-5g",
+  "name": "Xiaomi POCO F8 Pro 5G",
+  "brand": "Xiaomi",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 2831.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/xm-poco-f8-pro-5g/256gb-12gb-titanio-prata-1.webp",
+    "/catalog/phones/xm-poco-f8-pro-5g/256gb-12gb-titanio-prata-2.webp",
+    "/catalog/phones/xm-poco-f8-pro-5g/256gb-12gb-titanio-prata-3.webp"
+  ],
+  "description": "Xiaomi POCO F8 Pro 5G 256GB/12GB na cor Titânio prata. Conta com tela AMOLED, 120Hz de 6.5\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira 50 MP e 50 MP e 8 MP, câmera frontal 20MP, bateria de 6210 mAh. Sistema: Android 16, HyperOS 3.",
+  "specs": [
+    "Memória: 256GB/12GB",
+    "Cor: Titânio prata",
+    "Tela: AMOLED, 120Hz 6.5\" 1156 x 2510",
+    "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+    "Câmera traseira: 50 MP + 50 MP + 8 MP",
+    "Câmera frontal: 20MP",
+    "Bateria: 6210 mAh",
+    "Recursos: Resistente a poeira e água IP68 + Observações",
+    "Sistema: Android 16, HyperOS 3",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "xm-poco-f8-pro-5g-256gb-12gb-titanio-prata",
+      "label": "256GB/12GB · Titânio prata",
+      "price": 2831.9,
+      "images": [
+        "/catalog/phones/xm-poco-f8-pro-5g/256gb-12gb-titanio-prata-1.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/256gb-12gb-titanio-prata-2.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/256gb-12gb-titanio-prata-3.webp"
+      ],
+      "description": "Xiaomi POCO F8 Pro 5G 256GB/12GB na cor Titânio prata. Conta com tela AMOLED, 120Hz de 6.5\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira 50 MP e 50 MP e 8 MP, câmera frontal 20MP, bateria de 6210 mAh. Sistema: Android 16, HyperOS 3.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Titânio prata",
+        "Tela: AMOLED, 120Hz 6.5\" 1156 x 2510",
+        "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+        "Câmera traseira: 50 MP + 50 MP + 8 MP",
+        "Câmera frontal: 20MP",
+        "Bateria: 6210 mAh",
+        "Recursos: Resistente a poeira e água IP68 + Observações",
+        "Sistema: Android 16, HyperOS 3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-f8-pro-5g-256gb-12gb-azul",
+      "label": "256GB/12GB · Azul",
+      "price": 2837.9,
+      "images": [
+        "/catalog/phones/xm-poco-f8-pro-5g/256gb-12gb-azul-1.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/256gb-12gb-azul-2.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/256gb-12gb-azul-3.webp"
+      ],
+      "description": "Xiaomi POCO F8 Pro 5G 256GB/12GB na cor Azul. Conta com tela AMOLED, 120Hz de 6.5\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira 50 MP e 50 MP e 8 MP, câmera frontal 20MP, bateria de 6210 mAh. Sistema: Android 16, HyperOS 3.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Azul",
+        "Tela: AMOLED, 120Hz 6.5\" 1156 x 2510",
+        "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+        "Câmera traseira: 50 MP + 50 MP + 8 MP",
+        "Câmera frontal: 20MP",
+        "Bateria: 6210 mAh",
+        "Recursos: Resistente a poeira e água IP68",
+        "Sistema: Android 16, HyperOS 3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-f8-pro-5g-512gb-12gb-azul",
+      "label": "512GB/12GB · Azul",
+      "price": 3248.9,
+      "images": [
+        "/catalog/phones/xm-poco-f8-pro-5g/512gb-12gb-azul-1.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/512gb-12gb-azul-2.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/512gb-12gb-azul-3.webp"
+      ],
+      "description": "Xiaomi POCO F8 Pro 5G 512GB/12GB na cor Azul. Conta com tela AMOLED, 120Hz de 6.5\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira 50 MP e 50 MP e 8 MP, câmera frontal 20MP, bateria de 6210 mAh. Sistema: Android 16, HyperOS 3.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Azul",
+        "Tela: AMOLED, 120Hz 6.5\" 1156 x 2510",
+        "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+        "Câmera traseira: 50 MP + 50 MP + 8 MP",
+        "Câmera frontal: 20MP",
+        "Bateria: 6210 mAh",
+        "Sistema: Android 16, HyperOS 3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-f8-pro-5g-512gb-12gb-azul-2",
+      "label": "512GB/12GB · Azul (2)",
+      "price": 3248.9,
+      "images": [
+        "/catalog/phones/xm-poco-f8-pro-5g/512gb-12gb-azul-2-1.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/512gb-12gb-azul-2-2.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/512gb-12gb-azul-2-3.webp"
+      ],
+      "description": "Xiaomi POCO F8 Pro 5G 512GB/12GB na cor Azul. Conta com tela AMOLED 120Hz de 6.5\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira Tripla 50 MP e 50 MP e 8 MP, câmera frontal Única 20 MP, bateria de 6210 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Azul",
+        "Tela: AMOLED 120Hz 6.5\" 1.5K (1156 x 2510)",
+        "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+        "Câmera traseira: Tripla 50 MP + 50 MP + 8 MP",
+        "Câmera frontal: Única 20 MP",
+        "Bateria: 6210 mAh",
+        "Recursos: Resistência a poeira e água IP68 + Observações + Carregador Brasil",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-f8-pro-5g-512gb-12gb-preto",
+      "label": "512GB/12GB · Preto",
+      "price": 3255.9,
+      "images": [
+        "/catalog/phones/xm-poco-f8-pro-5g/512gb-12gb-preto-1.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/512gb-12gb-preto-2.webp",
+        "/catalog/phones/xm-poco-f8-pro-5g/512gb-12gb-preto-3.webp"
+      ],
+      "description": "Xiaomi POCO F8 Pro 5G 512GB/12GB na cor Preto. Conta com tela AMOLED, 120Hz de 6.5\", chipset Qualcomm SM8750-AB Snapdragon 8 Elite, câmera traseira 50 MP e 50 MP e 8 MP, câmera frontal 20MP, bateria de 6210 mAh. Sistema: Android 16, HyperOS 3.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Preto",
+        "Tela: AMOLED, 120Hz 6.5\" 1156 x 2510",
+        "Chipset: Qualcomm SM8750-AB Snapdragon 8 Elite",
+        "Câmera traseira: 50 MP + 50 MP + 8 MP",
+        "Câmera frontal: 20MP",
+        "Bateria: 6210 mAh",
+        "Sistema: Android 16, HyperOS 3",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

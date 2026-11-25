@@ -1,0 +1,49 @@
+{
+  "id": "pf-afnan-supremacy-masculino",
+  "name": "Afnan Supremacy Masculino",
+  "brand": "Afnan",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 293.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-afnan-supremacy-masculino/afnan-supremacy-collectors-edition-eau-de-parfum-masculino-100ml-eau-de-parfum-1.webp",
+    "/catalog/perfumes/pf-afnan-supremacy-masculino/afnan-supremacy-collectors-edition-eau-de-parfum-masculino-100ml-eau-de-parfum-2.webp",
+    "/catalog/perfumes/pf-afnan-supremacy-masculino/afnan-supremacy-collectors-edition-eau-de-parfum-masculino-100ml-eau-de-parfum-3.webp"
+  ],
+  "description": "Afnan Afnan Supremacy Collector’s Edition Eau de Parfum Masculino 100ml, Eau de Parfum . Perfume masculino de família olfativa chipre frutado. Notas de topo: Abacaxi; coração: Flor de Laranjeira.",
+  "specs": [
+    "Edição: Afnan Supremacy Collector’s Edition Eau de Parfum Masculino 100ml",
+    "Concentração: Eau de Parfum",
+    "Família olfativa: Chipre Frutado",
+    "Notas de topo: Abacaxi",
+    "Notas de coração: Flor de Laranjeira",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Afnan, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-afnan-supremacy-masculino-afnan-supremacy-collectors-edition-eau-de-parfum-masculino-100ml-eau-de-parfum",
+      "label": "Afnan Supremacy Collector’s Edition Eau de Parfum Masculino 100ml · Eau de Parfum",
+      "price": 293.9,
+      "images": [
+        "/catalog/perfumes/pf-afnan-supremacy-masculino/afnan-supremacy-collectors-edition-eau-de-parfum-masculino-100ml-eau-de-parfum-1.webp",
+        "/catalog/perfumes/pf-afnan-supremacy-masculino/afnan-supremacy-collectors-edition-eau-de-parfum-masculino-100ml-eau-de-parfum-2.webp",
+        "/catalog/perfumes/pf-afnan-supremacy-masculino/afnan-supremacy-collectors-edition-eau-de-parfum-masculino-100ml-eau-de-parfum-3.webp"
+      ],
+      "description": "Afnan Afnan Supremacy Collector’s Edition Eau de Parfum Masculino 100ml, Eau de Parfum . Perfume masculino de família olfativa chipre frutado. Notas de topo: Abacaxi; coração: Flor de Laranjeira.",
+      "specs": [
+        "Edição: Afnan Supremacy Collector’s Edition Eau de Parfum Masculino 100ml",
+        "Concentração: Eau de Parfum",
+        "Família olfativa: Chipre Frutado",
+        "Notas de topo: Abacaxi",
+        "Notas de coração: Flor de Laranjeira",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

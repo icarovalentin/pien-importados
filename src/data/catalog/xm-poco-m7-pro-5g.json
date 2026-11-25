@@ -1,0 +1,75 @@
+{
+  "id": "xm-poco-m7-pro-5g",
+  "name": "Xiaomi POCO M7 Pro 5G",
+  "brand": "Xiaomi",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 863.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-lavanda-1.webp",
+    "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-lavanda-2.webp",
+    "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-lavanda-3.webp"
+  ],
+  "description": "Xiaomi POCO M7 Pro 5G 128GB/6GB na cor Lavanda. Conta com tela AMOLED, 120Hz de 6.6\", chipset Mediatek Dimensity 7025 Ultra, câmera traseira 50 MP e 2 MP, câmera frontal 20MP, bateria de 5110 mAh. Sistema: Android 14.",
+  "specs": [
+    "Memória: 128GB/6GB",
+    "Cor: Lavanda",
+    "Tela: AMOLED, 120Hz 6.6\" 1080 x 2400",
+    "Chipset: Mediatek Dimensity 7025 Ultra",
+    "Câmera traseira: 50 MP + 2 MP",
+    "Câmera frontal: 20MP",
+    "Bateria: 5110 mAh",
+    "Sistema: Android 14",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "xm-poco-m7-pro-5g-128gb-6gb-lavanda",
+      "label": "128GB/6GB · Lavanda",
+      "price": 863.9,
+      "images": [
+        "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-lavanda-1.webp",
+        "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-lavanda-2.webp",
+        "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-lavanda-3.webp"
+      ],
+      "description": "Xiaomi POCO M7 Pro 5G 128GB/6GB na cor Lavanda. Conta com tela AMOLED, 120Hz de 6.6\", chipset Mediatek Dimensity 7025 Ultra, câmera traseira 50 MP e 2 MP, câmera frontal 20MP, bateria de 5110 mAh. Sistema: Android 14.",
+      "specs": [
+        "Memória: 128GB/6GB",
+        "Cor: Lavanda",
+        "Tela: AMOLED, 120Hz 6.6\" 1080 x 2400",
+        "Chipset: Mediatek Dimensity 7025 Ultra",
+        "Câmera traseira: 50 MP + 2 MP",
+        "Câmera frontal: 20MP",
+        "Bateria: 5110 mAh",
+        "Sistema: Android 14",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-m7-pro-5g-128gb-6gb-verde",
+      "label": "128GB/6GB · Verde",
+      "price": 863.9,
+      "images": [
+        "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-verde-1.webp",
+        "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-verde-2.webp",
+        "/catalog/phones/xm-poco-m7-pro-5g/128gb-6gb-verde-3.webp"
+      ],
+      "description": "Xiaomi POCO M7 Pro 5G 128GB/6GB na cor Verde. Conta com tela AMOLED, 120Hz de 6.6\", chipset Mediatek Dimensity 7025 Ultra, câmera traseira 50 MP e 2 MP, bateria de 5110 mAh. Sistema: Android 14.",
+      "specs": [
+        "Memória: 128GB/6GB",
+        "Cor: Verde",
+        "Tela: AMOLED, 120Hz 6.6\" 1080 x 2400",
+        "Chipset: Mediatek Dimensity 7025 Ultra",
+        "Câmera traseira: 50 MP + 2 MP",
+        "Bateria: 5110 mAh",
+        "Recursos: Resistente a poeira e água IP64",
+        "Sistema: Android 14",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

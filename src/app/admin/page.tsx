@@ -44,7 +44,7 @@ export default function AdminPage() {
   // Campos do Formulário
   const [formName, setFormName] = useState('');
   const [formBrand, setFormBrand] = useState('');
-  const [formCategory, setFormCategory] = useState<'perfumes' | 'beleza' | 'eletronicos' | 'smartphones' | 'acessorios'>('perfumes');
+  const [formCategory, setFormCategory] = useState<'perfumes' | 'arabes' | 'beleza' | 'eletronicos' | 'smartphones' | 'acessorios'>('perfumes');
   const [formCategoryLabel, setFormCategoryLabel] = useState('');
   const [formPrice, setFormPrice] = useState('');
   const [formOriginalPrice, setFormOriginalPrice] = useState('');
@@ -861,6 +861,7 @@ export default function AdminPage() {
                       setFormCategory(cat);
                       const labels: Record<string, string> = {
                         perfumes: 'Perfumaria',
+                        arabes: 'Perfumes Árabes',
                         eletronicos: 'Eletrônicos',
                         smartphones: 'Smartphones',
                         acessorios: 'Tech & Acessórios',
@@ -871,6 +872,7 @@ export default function AdminPage() {
                     className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-gold-500"
                   >
                     <option value="perfumes">Perfumaria</option>
+                    <option value="arabes">Perfumes Árabes</option>
                     <option value="eletronicos">Eletrônicos</option>
                     <option value="smartphones">Smartphones</option>
                     <option value="acessorios">Tech &amp; Acessórios</option>

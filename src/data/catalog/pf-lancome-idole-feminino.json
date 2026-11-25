@@ -1,0 +1,75 @@
+{
+  "id": "pf-lancome-idole-feminino",
+  "name": "Lancôme Idôle Feminino",
+  "brand": "Lancôme",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 602.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lancome-idole-feminino/idole-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-lancome-idole-feminino/idole-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-lancome-idole-feminino/idole-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "Lancôme Idôle, Eau de Parfum 100ml. Perfume feminino de família olfativa chipre floral. Notas de topo: Pera, Bergamota, Pimenta Rosa; coração: Rosa, Jasmim; fundo: Almíscar Branco, Baunilha, Patchouli, Cedro.",
+  "specs": [
+    "Edição: Idôle",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Chipre Floral",
+    "Notas de topo: Pera, Bergamota, Pimenta Rosa",
+    "Notas de coração: Rosa, Jasmim",
+    "Notas de fundo: Almíscar Branco, Baunilha, Patchouli, Cedro",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Lancôme, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lancome-idole-feminino-idole-eau-de-parfum-100ml",
+      "label": "Idôle · Eau de Parfum · 100ml",
+      "price": 602.9,
+      "images": [
+        "/catalog/perfumes/pf-lancome-idole-feminino/idole-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lancome-idole-feminino/idole-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lancome-idole-feminino/idole-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lancôme Idôle, Eau de Parfum 100ml. Perfume feminino de família olfativa chipre floral. Notas de topo: Pera, Bergamota, Pimenta Rosa; coração: Rosa, Jasmim; fundo: Almíscar Branco, Baunilha, Patchouli, Cedro.",
+      "specs": [
+        "Edição: Idôle",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Chipre Floral",
+        "Notas de topo: Pera, Bergamota, Pimenta Rosa",
+        "Notas de coração: Rosa, Jasmim",
+        "Notas de fundo: Almíscar Branco, Baunilha, Patchouli, Cedro",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-lancome-idole-feminino-idole-lancome-eau-de-toilette-100ml",
+      "label": "Idôle Lancôme · Eau de Toilette · 100ml",
+      "price": 617.9,
+      "images": [
+        "/catalog/perfumes/pf-lancome-idole-feminino/idole-lancome-eau-de-toilette-100ml-1.webp",
+        "/catalog/perfumes/pf-lancome-idole-feminino/idole-lancome-eau-de-toilette-100ml-2.webp",
+        "/catalog/perfumes/pf-lancome-idole-feminino/idole-lancome-eau-de-toilette-100ml-3.webp"
+      ],
+      "description": "Lancôme Idôle Lancôme, Eau de Toilette 100ml. Perfume feminino de família olfativa chipre floral. Notas de topo: Pêra, Bergamota e Pimenta Rosa; coração: Rosa e Jasmim; fundo: Almíscar Branco, Baunilha, Patchouli e Cedro.",
+      "specs": [
+        "Edição: Idôle Lancôme",
+        "Concentração: Eau de Toilette",
+        "Volume: 100 ml",
+        "Família olfativa: Chipre Floral",
+        "Notas de topo: Pêra, Bergamota e Pimenta Rosa",
+        "Notas de coração: Rosa e Jasmim",
+        "Notas de fundo: Almíscar Branco, Baunilha, Patchouli e Cedro",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

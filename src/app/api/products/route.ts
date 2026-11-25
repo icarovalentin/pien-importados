@@ -15,6 +15,7 @@ import {
 const filePath = path.join(process.cwd(), 'src', 'data', 'products.json');
 const ALLOWED_CATEGORIES = new Set([
   'perfumes',
+  'arabes',
   'beleza',
   'eletronicos',
   'smartphones',

@@ -1,0 +1,101 @@
+{
+  "id": "xm-redmi-17-4g",
+  "name": "Xiaomi Redmi 17 4G",
+  "brand": "Xiaomi",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 1081.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/xm-redmi-17-4g/256gb-4gb-azul-1.webp",
+    "/catalog/phones/xm-redmi-17-4g/256gb-4gb-azul-2.webp",
+    "/catalog/phones/xm-redmi-17-4g/256gb-4gb-azul-3.webp"
+  ],
+  "description": "Xiaomi Redmi 17 4G 256GB/4GB na cor Azul. Conta com tela AMOLED 120Hz de 6.9\", chipset Qualcomm Snapdragon 6s 4G Gen 2, câmera traseira Única 50 MP, câmera frontal Única 16 MP, bateria de 7700 mAh. Sistema: Android 16.",
+  "specs": [
+    "Memória: 256GB/4GB",
+    "Cor: Azul",
+    "Tela: AMOLED 120Hz 6.9\" Full HD+ (1080 x 2396)",
+    "Chipset: Qualcomm Snapdragon 6s 4G Gen 2",
+    "Câmera traseira: Única 50 MP",
+    "Câmera frontal: Única 16 MP",
+    "Bateria: 7700 mAh",
+    "Recursos: Resistência a poeira e respingos IP65",
+    "Sistema: Android 16",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "xm-redmi-17-4g-256gb-4gb-azul",
+      "label": "256GB/4GB · Azul",
+      "price": 1081.9,
+      "images": [
+        "/catalog/phones/xm-redmi-17-4g/256gb-4gb-azul-1.webp",
+        "/catalog/phones/xm-redmi-17-4g/256gb-4gb-azul-2.webp",
+        "/catalog/phones/xm-redmi-17-4g/256gb-4gb-azul-3.webp"
+      ],
+      "description": "Xiaomi Redmi 17 4G 256GB/4GB na cor Azul. Conta com tela AMOLED 120Hz de 6.9\", chipset Qualcomm Snapdragon 6s 4G Gen 2, câmera traseira Única 50 MP, câmera frontal Única 16 MP, bateria de 7700 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 256GB/4GB",
+        "Cor: Azul",
+        "Tela: AMOLED 120Hz 6.9\" Full HD+ (1080 x 2396)",
+        "Chipset: Qualcomm Snapdragon 6s 4G Gen 2",
+        "Câmera traseira: Única 50 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 7700 mAh",
+        "Recursos: Resistência a poeira e respingos IP65",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-redmi-17-4g-256gb-6gb-preto",
+      "label": "256GB/6GB · Preto",
+      "price": 1202.9,
+      "images": [
+        "/catalog/phones/xm-redmi-17-4g/256gb-6gb-preto-1.webp",
+        "/catalog/phones/xm-redmi-17-4g/256gb-6gb-preto-2.webp",
+        "/catalog/phones/xm-redmi-17-4g/256gb-6gb-preto-3.webp"
+      ],
+      "description": "Xiaomi Redmi 17 4G 256GB/6GB na cor Preto. Conta com tela IPS LCD 120Hz de 6.9\", chipset Mediatek Helio G91 Ultra, câmera traseira Única 50 MP, câmera frontal Única 8 MP, bateria de 7500 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 256GB/6GB",
+        "Cor: Preto",
+        "Tela: IPS LCD 120Hz 6.9\" HD+ (720 x 1600)",
+        "Chipset: Mediatek Helio G91 Ultra",
+        "Câmera traseira: Única 50 MP",
+        "Câmera frontal: Única 8 MP",
+        "Bateria: 7500 mAh",
+        "Recursos: Resistência a poeira e água IP65 + Observações + Carregador USA",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-redmi-17-4g-256gb-6gb-verde",
+      "label": "256GB/6GB · Verde",
+      "price": 1202.9,
+      "images": [
+        "/catalog/phones/xm-redmi-17-4g/256gb-6gb-verde-1.webp",
+        "/catalog/phones/xm-redmi-17-4g/256gb-6gb-verde-2.webp",
+        "/catalog/phones/xm-redmi-17-4g/256gb-6gb-verde-3.webp"
+      ],
+      "description": "Xiaomi Redmi 17 4G 256GB/6GB na cor Verde. Conta com tela IPS LCD 120Hz de 6.9\", chipset Mediatek Helio G91 Ultra, câmera traseira Única 50 MP, câmera frontal Única 8 MP, bateria de 7500 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 256GB/6GB",
+        "Cor: Verde",
+        "Tela: IPS LCD 120Hz 6.9\" HD+ (720 x 1600)",
+        "Chipset: Mediatek Helio G91 Ultra",
+        "Câmera traseira: Única 50 MP",
+        "Câmera frontal: Única 8 MP",
+        "Bateria: 7500 mAh",
+        "Recursos: Resistência a poeira e água IP65 + Observações + Carregador USA",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

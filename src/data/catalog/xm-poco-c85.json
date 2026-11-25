@@ -1,0 +1,165 @@
+{
+  "id": "xm-poco-c85",
+  "name": "Xiaomi POCO C85",
+  "brand": "Xiaomi",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 779.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-1.webp",
+    "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-2.webp",
+    "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-3.webp"
+  ],
+  "description": "Xiaomi POCO C85 128GB/6GB na cor Roxo. Conta com tela IPS LCD 120Hz de 6.9\", chipset Mediatek Helio G81 Ultra, câmera traseira Única 50 MP, câmera frontal Única 8 MP, bateria de 6000 mAh. Sistema: Android 15.",
+  "specs": [
+    "Memória: 128GB/6GB",
+    "Cor: Roxo",
+    "Tela: IPS LCD 120Hz 6.9\" HD+ (720 x 1600)",
+    "Chipset: Mediatek Helio G81 Ultra",
+    "Câmera traseira: Única 50 MP",
+    "Câmera frontal: Única 8 MP",
+    "Bateria: 6000 mAh",
+    "Recursos: Resistência a poeira e respingos IP64 + Observações + Caixa Slim",
+    "Sistema: Android 15",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "xm-poco-c85-128gb-6gb-roxo",
+      "label": "128GB/6GB · Roxo",
+      "price": 779.9,
+      "images": [
+        "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-1.webp",
+        "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-2.webp",
+        "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-3.webp"
+      ],
+      "description": "Xiaomi POCO C85 128GB/6GB na cor Roxo. Conta com tela IPS LCD 120Hz de 6.9\", chipset Mediatek Helio G81 Ultra, câmera traseira Única 50 MP, câmera frontal Única 8 MP, bateria de 6000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 128GB/6GB",
+        "Cor: Roxo",
+        "Tela: IPS LCD 120Hz 6.9\" HD+ (720 x 1600)",
+        "Chipset: Mediatek Helio G81 Ultra",
+        "Câmera traseira: Única 50 MP",
+        "Câmera frontal: Única 8 MP",
+        "Bateria: 6000 mAh",
+        "Recursos: Resistência a poeira e respingos IP64 + Observações + Caixa Slim",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-c85-128gb-6gb-roxo-2",
+      "label": "128GB/6GB · Roxo (2)",
+      "price": 841.9,
+      "images": [
+        "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-2-1.webp",
+        "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-2-2.webp",
+        "/catalog/phones/xm-poco-c85/128gb-6gb-roxo-2-3.webp"
+      ],
+      "description": "Xiaomi POCO C85 128GB/6GB na cor Roxo. Conta com tela IPS LCD 120Hz de 6.9\", chipset Mediatek Helio G81 Ultra, câmera traseira Única 50 MP, câmera frontal Única 8 MP, bateria de 6000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 128GB/6GB",
+        "Cor: Roxo",
+        "Tela: IPS LCD 120Hz 6.9\" HD+ (720 x 1600)",
+        "Chipset: Mediatek Helio G81 Ultra",
+        "Câmera traseira: Única 50 MP",
+        "Câmera frontal: Única 8 MP",
+        "Bateria: 6000 mAh",
+        "Recursos: Resistência a poeira e respingos IP64 + Observações + Carregador Brasil",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-c85-128gb-6gb-preto",
+      "label": "128GB/6GB · Preto",
+      "price": 845.9,
+      "images": [
+        "/catalog/phones/xm-poco-c85/128gb-6gb-preto-1.webp",
+        "/catalog/phones/xm-poco-c85/128gb-6gb-preto-2.webp",
+        "/catalog/phones/xm-poco-c85/128gb-6gb-preto-3.webp"
+      ],
+      "description": "Xiaomi POCO C85 128GB/6GB na cor Preto. Conta com bateria de 6000mAh. Sistema: Android15 com interface HyperOS2.0.",
+      "specs": [
+        "Memória: 128GB/6GB",
+        "Cor: Preto",
+        "Bateria: 6000mAh",
+        "Sistema: Android15 com interface HyperOS2.0",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-c85-256gb-8gb-preto",
+      "label": "256GB/8GB · Preto",
+      "price": 1016.9,
+      "images": [
+        "/catalog/phones/xm-poco-c85/256gb-8gb-preto-1.webp",
+        "/catalog/phones/xm-poco-c85/256gb-8gb-preto-2.webp",
+        "/catalog/phones/xm-poco-c85/256gb-8gb-preto-3.webp"
+      ],
+      "description": "Xiaomi POCO C85 256GB/8GB na cor Preto. Conta com tela IPS LCD, 120Hz de 6.9\", chipset Mediatek Helio G81 Ultra, câmera traseira 50 MP, câmera frontal 8MP, bateria de 6000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Preto",
+        "Tela: IPS LCD, 120Hz 6.9\" 1920 x 1080",
+        "Chipset: Mediatek Helio G81 Ultra",
+        "Câmera traseira: 50 MP",
+        "Câmera frontal: 8MP",
+        "Bateria: 6000 mAh",
+        "Recursos: Resistente a poeira e respingos IP64 + Observações + Carregador Brasil",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-c85-256gb-8gb-preto-2",
+      "label": "256GB/8GB · Preto (2)",
+      "price": 1016.9,
+      "images": [
+        "/catalog/phones/xm-poco-c85/256gb-8gb-preto-2-1.webp",
+        "/catalog/phones/xm-poco-c85/256gb-8gb-preto-2-2.webp",
+        "/catalog/phones/xm-poco-c85/256gb-8gb-preto-2-3.webp"
+      ],
+      "description": "Xiaomi POCO C85 256GB/8GB na cor Preto. Conta com tela IPS LCD, 120Hz de 6.9\", chipset Mediatek Helio G81 Ultra, câmera traseira 50 MP, câmera frontal 8MP, bateria de 6000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Preto",
+        "Tela: IPS LCD, 120Hz 6.9\" 1920 x 1080",
+        "Chipset: Mediatek Helio G81 Ultra",
+        "Câmera traseira: 50 MP",
+        "Câmera frontal: 8MP",
+        "Bateria: 6000 mAh",
+        "Recursos: Resistente a poeira e respingos IP64",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-c85-256gb-8gb-verde",
+      "label": "256GB/8GB · Verde",
+      "price": 1016.9,
+      "images": [
+        "/catalog/phones/xm-poco-c85/256gb-8gb-verde-1.webp",
+        "/catalog/phones/xm-poco-c85/256gb-8gb-verde-2.webp",
+        "/catalog/phones/xm-poco-c85/256gb-8gb-verde-3.webp"
+      ],
+      "description": "Xiaomi POCO C85 256GB/8GB na cor Verde. Conta com tela IPS LCD, 120Hz de 6.9\", chipset Mediatek Helio G81 Ultra, câmera traseira 50 MP, câmera frontal 8MP, bateria de 6000 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Verde",
+        "Tela: IPS LCD, 120Hz 6.9\" 1920 x 1080",
+        "Chipset: Mediatek Helio G81 Ultra",
+        "Câmera traseira: 50 MP",
+        "Câmera frontal: 8MP",
+        "Bateria: 6000 mAh",
+        "Recursos: Resistente a poeira e respingos IP64",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

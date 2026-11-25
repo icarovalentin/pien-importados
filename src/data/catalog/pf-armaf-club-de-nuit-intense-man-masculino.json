@@ -1,0 +1,53 @@
+{
+  "id": "pf-armaf-club-de-nuit-intense-man-masculino",
+  "name": "Armaf Club de Nuit Intense Man Masculino",
+  "brand": "ARMAF",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 260.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-armaf-club-de-nuit-intense-man-masculino/club-de-nuit-intense-man-eau-de-toilette-150ml-1.webp",
+    "/catalog/perfumes/pf-armaf-club-de-nuit-intense-man-masculino/club-de-nuit-intense-man-eau-de-toilette-150ml-2.webp",
+    "/catalog/perfumes/pf-armaf-club-de-nuit-intense-man-masculino/club-de-nuit-intense-man-eau-de-toilette-150ml-3.webp"
+  ],
+  "description": "ARMAF Club de Nuit Intense Man, Eau de Toilette 150ml. Perfume masculino de família olfativa amadeirada especiada. Notas de topo: Limão, Abacaxi, Bergamota, Groselha Negra, Maçã; coração: Bétula, Jasmim, Rosa; fundo: Almíscar, Âmbar Cinzento, Patchouli, Baunilha.",
+  "specs": [
+    "Edição: Club de Nuit Intense Man",
+    "Concentração: Eau de Toilette",
+    "Volume: 150 ml",
+    "Família olfativa: Amadeirada Especiada",
+    "Notas de topo: Limão, Abacaxi, Bergamota, Groselha Negra, Maçã",
+    "Notas de coração: Bétula, Jasmim, Rosa",
+    "Notas de fundo: Almíscar, Âmbar Cinzento, Patchouli, Baunilha",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original ARMAF, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-armaf-club-de-nuit-intense-man-masculino-club-de-nuit-intense-man-eau-de-toilette-150ml",
+      "label": "Club de Nuit Intense Man · Eau de Toilette · 150ml",
+      "price": 260.9,
+      "images": [
+        "/catalog/perfumes/pf-armaf-club-de-nuit-intense-man-masculino/club-de-nuit-intense-man-eau-de-toilette-150ml-1.webp",
+        "/catalog/perfumes/pf-armaf-club-de-nuit-intense-man-masculino/club-de-nuit-intense-man-eau-de-toilette-150ml-2.webp",
+        "/catalog/perfumes/pf-armaf-club-de-nuit-intense-man-masculino/club-de-nuit-intense-man-eau-de-toilette-150ml-3.webp"
+      ],
+      "description": "ARMAF Club de Nuit Intense Man, Eau de Toilette 150ml. Perfume masculino de família olfativa amadeirada especiada. Notas de topo: Limão, Abacaxi, Bergamota, Groselha Negra, Maçã; coração: Bétula, Jasmim, Rosa; fundo: Almíscar, Âmbar Cinzento, Patchouli, Baunilha.",
+      "specs": [
+        "Edição: Club de Nuit Intense Man",
+        "Concentração: Eau de Toilette",
+        "Volume: 150 ml",
+        "Família olfativa: Amadeirada Especiada",
+        "Notas de topo: Limão, Abacaxi, Bergamota, Groselha Negra, Maçã",
+        "Notas de coração: Bétula, Jasmim, Rosa",
+        "Notas de fundo: Almíscar, Âmbar Cinzento, Patchouli, Baunilha",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

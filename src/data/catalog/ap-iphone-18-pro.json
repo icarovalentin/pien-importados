@@ -1,0 +1,238 @@
+{
+  "id": "ap-iphone-18-pro",
+  "name": "Apple iPhone 18 Pro",
+  "brand": "Apple",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 7834.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/ap-iphone-18-pro/256gb-12gb-preto-1.webp",
+    "/catalog/phones/ap-iphone-18-pro/256gb-12gb-preto-2.webp",
+    "/catalog/phones/ap-iphone-18-pro/256gb-12gb-preto-3.webp"
+  ],
+  "description": "Apple iPhone 18 Pro 256GB/12GB na cor Preto. Conta com tela Super Retina XDR OLED 120Hz de 6.9\", chipset Apple A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 4056 mAh. Sistema: iOS 27.",
+  "specs": [
+    "Memória: 256GB/12GB",
+    "Cor: Preto",
+    "Tela: Super Retina XDR OLED 120Hz 6.9\" Full HD+ (1206 x 2622)",
+    "Chipset: Apple A20 Pro",
+    "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+    "Câmera frontal: Única 18 MP",
+    "Bateria: 4056 mAh",
+    "Recursos: Dynamic Island, Tela Super Retina XDR, ProMotion (120 Hz), Always-On Display, Botão de Ação, Controle de Câmera, SOS de Emergência via satélite, Detecção de Acidentes, Resistência à água e poeira IP68 + Peso bruto + 420 g",
+    "Sistema: iOS 27",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "ap-iphone-18-pro-256gb-12gb-preto",
+      "label": "256GB/12GB · Preto",
+      "price": 7834.9,
+      "images": [
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-preto-1.webp",
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-preto-2.webp",
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-preto-3.webp"
+      ],
+      "description": "Apple iPhone 18 Pro 256GB/12GB na cor Preto. Conta com tela Super Retina XDR OLED 120Hz de 6.9\", chipset Apple A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 4056 mAh. Sistema: iOS 27.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Preto",
+        "Tela: Super Retina XDR OLED 120Hz 6.9\" Full HD+ (1206 x 2622)",
+        "Chipset: Apple A20 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única 18 MP",
+        "Bateria: 4056 mAh",
+        "Recursos: Dynamic Island, Tela Super Retina XDR, ProMotion (120 Hz), Always-On Display, Botão de Ação, Controle de Câmera, SOS de Emergência via satélite, Detecção de Acidentes, Resistência à água e poeira IP68 + Peso bruto + 420 g",
+        "Sistema: iOS 27",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-18-pro-256gb-12gb-bordo",
+      "label": "256GB/12GB · Bordô",
+      "price": 7865.9,
+      "images": [
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-bordo-1.webp",
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-bordo-2.webp",
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-bordo-3.webp"
+      ],
+      "description": "Apple iPhone 18 Pro 256GB/12GB na cor Bordô. Conta com tela Super Retina XDR OLED 120Hz de 6.3\", chipset A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única, bateria de 4288 mAh. Sistema: iOS 27.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Bordô",
+        "Tela: Super Retina XDR OLED 120Hz 6.3\" Full HD+ (1206 x 2622)",
+        "Chipset: A20 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única",
+        "Bateria: 4288 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 27",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-18-pro-256gb-12gb-azul",
+      "label": "256GB/12GB · Azul",
+      "price": 7865.9,
+      "images": [
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-azul-1.webp",
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-azul-2.webp",
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-azul-3.webp"
+      ],
+      "description": "Apple iPhone 18 Pro 256GB/12GB na cor Azul. Conta com tela Super Retina XDR OLED 120Hz de 6.9\", chipset Apple A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 4056 mAh. Sistema: iOS 27.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Azul",
+        "Tela: Super Retina XDR OLED 120Hz 6.9\" Full HD+ (1206 x 2622)",
+        "Chipset: Apple A20 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única 18 MP",
+        "Bateria: 4056 mAh",
+        "Recursos: Dynamic Island, Tela Super Retina XDR, ProMotion (120 Hz), Always-On Display, Botão de Ação, Controle de Câmera, SOS de Emergência via satélite, Detecção de Acidentes, Resistência à água e poeira IP68 + Peso bruto + 420 g",
+        "Sistema: iOS 27",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-18-pro-256gb-12gb-prata",
+      "label": "256GB/12GB · Prata",
+      "price": 7865.9,
+      "images": [
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-prata-1.webp",
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-prata-2.webp",
+        "/catalog/phones/ap-iphone-18-pro/256gb-12gb-prata-3.webp"
+      ],
+      "description": "Apple iPhone 18 Pro 256GB/12GB na cor Prata. Conta com tela Super Retina XDR OLED 120Hz de 6.9\", chipset Apple A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 4056 mAh. Sistema: iOS 27.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Prata",
+        "Tela: Super Retina XDR OLED 120Hz 6.9\" Full HD+ (1206 x 2622)",
+        "Chipset: Apple A20 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única 18 MP",
+        "Bateria: 4056 mAh",
+        "Recursos: Dynamic Island, Tela Super Retina XDR, ProMotion (120 Hz), Always-On Display, Botão de Ação, Controle de Câmera, SOS de Emergência via satélite, Detecção de Acidentes, Resistência à água e poeira IP68 + Peso bruto + 420 g",
+        "Sistema: iOS 27",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-18-pro-512gb-12gb-bordo",
+      "label": "512GB/12GB · Bordô",
+      "price": 8833.9,
+      "images": [
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-bordo-1.webp",
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-bordo-2.webp",
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-bordo-3.webp"
+      ],
+      "description": "Apple iPhone 18 Pro 512GB/12GB na cor Bordô. Conta com tela Super Retina XDR OLED de 6.3\", chipset Apple A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 4288 mAh. Sistema: iOS 27.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Bordô",
+        "Tela: Super Retina XDR OLED 6.3\" Full HD+ (1206 x 2622)",
+        "Chipset: Apple A20 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única 18 MP",
+        "Bateria: 4288 mAh",
+        "Sistema: iOS 27",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-18-pro-512gb-12gb-prata",
+      "label": "512GB/12GB · Prata",
+      "price": 9014.9,
+      "images": [
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-prata-1.webp",
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-prata-2.webp",
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-prata-3.webp"
+      ],
+      "description": "Apple iPhone 18 Pro 512GB/12GB na cor Prata. Conta com tela Super Retina XDR OLED 120Hz de 6.3\", chipset A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única, bateria de 4288 mAh. Sistema: iOS 27.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Prata",
+        "Tela: Super Retina XDR OLED 120Hz 6.3\" Full HD+ (1206 x 2622)",
+        "Chipset: A20 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única",
+        "Bateria: 4288 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 27",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-18-pro-512gb-12gb-preto",
+      "label": "512GB/12GB · Preto",
+      "price": 9014.9,
+      "images": [
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-preto-1.webp",
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-preto-2.webp",
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-preto-3.webp"
+      ],
+      "description": "Apple iPhone 18 Pro 512GB/12GB na cor Preto. Conta com tela Super Retina XDR OLED 120Hz de 6.3\", chipset A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única, bateria de 4288 mAh. Sistema: iOS 27.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Preto",
+        "Tela: Super Retina XDR OLED 120Hz 6.3\" Full HD+ (1206 x 2622)",
+        "Chipset: A20 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única",
+        "Bateria: 4288 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 27",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-18-pro-512gb-12gb-branco",
+      "label": "512GB/12GB · Branco",
+      "price": 9075.9,
+      "images": [
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-branco-1.webp",
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-branco-2.webp",
+        "/catalog/phones/ap-iphone-18-pro/512gb-12gb-branco-3.webp"
+      ],
+      "description": "Apple iPhone 18 Pro 512GB/12GB na cor Branco. Conta com tela Super Retina XDR OLED 120Hz de 6.3\", chipset A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única, bateria de 4288 mAh. Sistema: iOS 27.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Branco",
+        "Tela: Super Retina XDR OLED 120Hz 6.3\" Full HD+ (1206 x 2622)",
+        "Chipset: A20 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única",
+        "Bateria: 4288 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 27",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-18-pro-1tb-12gb-bordo",
+      "label": "1TB/12GB · Bordô",
+      "price": 12826.9,
+      "images": [
+        "/catalog/phones/ap-iphone-18-pro/1tb-12gb-bordo-1.webp",
+        "/catalog/phones/ap-iphone-18-pro/1tb-12gb-bordo-2.webp",
+        "/catalog/phones/ap-iphone-18-pro/1tb-12gb-bordo-3.webp"
+      ],
+      "description": "Apple iPhone 18 Pro 1TB/12GB na cor Bordô. Conta com tela Super Retina XDR OLED 120Hz de 6.9\", chipset A20 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 5567 mAh. Sistema: iOS 27.",
+      "specs": [
+        "Memória: 1TB/12GB",
+        "Cor: Bordô",
+        "Tela: Super Retina XDR OLED 120Hz 6.9\" Full HD+ (1320 x 2868)",
+        "Chipset: A20 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única 18 MP",
+        "Bateria: 5567 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 27",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

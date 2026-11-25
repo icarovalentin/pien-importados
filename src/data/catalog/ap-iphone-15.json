@@ -1,0 +1,78 @@
+{
+  "id": "ap-iphone-15",
+  "name": "Apple iPhone 15",
+  "brand": "Apple",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 3944.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/ap-iphone-15/128gb-6gb-azul-1.webp",
+    "/catalog/phones/ap-iphone-15/128gb-6gb-azul-2.webp",
+    "/catalog/phones/ap-iphone-15/128gb-6gb-azul-3.webp"
+  ],
+  "description": "Apple iPhone 15 128GB/6GB na cor Azul. Conta com tela Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak) de 6.1\", chipset Apple A16 Bionic, câmera traseira 48 MP e 12 MP, câmera frontal 12MP, bateria de 3349 mAh. Sistema: iOS 17.",
+  "specs": [
+    "Memória: 128GB/6GB",
+    "Cor: Azul",
+    "Tela: Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak) 6.1\" 1179 x 2556 pixels",
+    "Chipset: Apple A16 Bionic",
+    "Câmera traseira: 48 MP + 12 MP",
+    "Câmera frontal: 12MP",
+    "Bateria: 3349 mAh",
+    "Recursos: Resistência a poeira e água IP68",
+    "Sistema: iOS 17",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "ap-iphone-15-128gb-6gb-azul",
+      "label": "128GB/6GB · Azul",
+      "price": 3944.9,
+      "images": [
+        "/catalog/phones/ap-iphone-15/128gb-6gb-azul-1.webp",
+        "/catalog/phones/ap-iphone-15/128gb-6gb-azul-2.webp",
+        "/catalog/phones/ap-iphone-15/128gb-6gb-azul-3.webp"
+      ],
+      "description": "Apple iPhone 15 128GB/6GB na cor Azul. Conta com tela Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak) de 6.1\", chipset Apple A16 Bionic, câmera traseira 48 MP e 12 MP, câmera frontal 12MP, bateria de 3349 mAh. Sistema: iOS 17.",
+      "specs": [
+        "Memória: 128GB/6GB",
+        "Cor: Azul",
+        "Tela: Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak) 6.1\" 1179 x 2556 pixels",
+        "Chipset: Apple A16 Bionic",
+        "Câmera traseira: 48 MP + 12 MP",
+        "Câmera frontal: 12MP",
+        "Bateria: 3349 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 17",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-15-128gb-6gb-preto",
+      "label": "128GB/6GB · Preto",
+      "price": 4023.9,
+      "images": [
+        "/catalog/phones/ap-iphone-15/128gb-6gb-preto-1.webp",
+        "/catalog/phones/ap-iphone-15/128gb-6gb-preto-2.webp",
+        "/catalog/phones/ap-iphone-15/128gb-6gb-preto-3.webp"
+      ],
+      "description": "Apple iPhone 15 128GB/6GB na cor Preto. Conta com tela Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak) de 6.1\", chipset Apple A16 Bionic, câmera traseira 48 MP e 12 MP, câmera frontal 12MP, bateria de 3349 mAh. Sistema: iOS 17.",
+      "specs": [
+        "Memória: 128GB/6GB",
+        "Cor: Preto",
+        "Tela: Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak) 6.1\" 1179 x 2556 pixels",
+        "Chipset: Apple A16 Bionic",
+        "Câmera traseira: 48 MP + 12 MP",
+        "Câmera frontal: 12MP",
+        "Bateria: 3349 mAh",
+        "Recursos: Dynamic Island, IP68",
+        "Sistema: iOS 17",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

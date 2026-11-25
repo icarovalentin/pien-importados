@@ -1,0 +1,75 @@
+{
+  "id": "xm-redmi-a7",
+  "name": "Xiaomi Redmi A7",
+  "brand": "Xiaomi",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 604.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/xm-redmi-a7/64gb-3gb-preto-1.webp",
+    "/catalog/phones/xm-redmi-a7/64gb-3gb-preto-2.webp",
+    "/catalog/phones/xm-redmi-a7/64gb-3gb-preto-3.webp"
+  ],
+  "description": "Xiaomi Redmi A7 64GB/3GB na cor Preto. Conta com tela IPS LCD 120Hz de 6.8\", chipset Unisoc T7250, câmera traseira Única 13 MP, câmera frontal Única 8 MP, bateria de 5200 mAh. Sistema: Android 15.",
+  "specs": [
+    "Memória: 64GB/3GB",
+    "Cor: Preto",
+    "Tela: IPS LCD 120Hz 6.8\" HD+ (720 x 1640)",
+    "Chipset: Unisoc T7250",
+    "Câmera traseira: Única 13 MP",
+    "Câmera frontal: Única 8 MP",
+    "Bateria: 5200 mAh",
+    "Sistema: Android 15",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "xm-redmi-a7-64gb-3gb-preto",
+      "label": "64GB/3GB · Preto",
+      "price": 604.9,
+      "images": [
+        "/catalog/phones/xm-redmi-a7/64gb-3gb-preto-1.webp",
+        "/catalog/phones/xm-redmi-a7/64gb-3gb-preto-2.webp",
+        "/catalog/phones/xm-redmi-a7/64gb-3gb-preto-3.webp"
+      ],
+      "description": "Xiaomi Redmi A7 64GB/3GB na cor Preto. Conta com tela IPS LCD 120Hz de 6.8\", chipset Unisoc T7250, câmera traseira Única 13 MP, câmera frontal Única 8 MP, bateria de 5200 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 64GB/3GB",
+        "Cor: Preto",
+        "Tela: IPS LCD 120Hz 6.8\" HD+ (720 x 1640)",
+        "Chipset: Unisoc T7250",
+        "Câmera traseira: Única 13 MP",
+        "Câmera frontal: Única 8 MP",
+        "Bateria: 5200 mAh",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-redmi-a7-64gb-3gb-roxo",
+      "label": "64GB/3GB · Roxo",
+      "price": 604.9,
+      "images": [
+        "/catalog/phones/xm-redmi-a7/64gb-3gb-roxo-1.webp",
+        "/catalog/phones/xm-redmi-a7/64gb-3gb-roxo-2.webp",
+        "/catalog/phones/xm-redmi-a7/64gb-3gb-roxo-3.webp"
+      ],
+      "description": "Xiaomi Redmi A7 64GB/3GB na cor Roxo. Conta com tela IPS LCD 120Hz de 6.8\", chipset Unisoc T7250, câmera traseira Única 13 MP, câmera frontal Única 8 MP, bateria de 5200 mAh. Sistema: Android 15.",
+      "specs": [
+        "Memória: 64GB/3GB",
+        "Cor: Roxo",
+        "Tela: IPS LCD 120Hz 6.8\" HD+ (720 x 1640)",
+        "Chipset: Unisoc T7250",
+        "Câmera traseira: Única 13 MP",
+        "Câmera frontal: Única 8 MP",
+        "Bateria: 5200 mAh",
+        "Sistema: Android 15",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

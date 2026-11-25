@@ -1,0 +1,53 @@
+{
+  "id": "pf-lattafa-eclaire-feminino",
+  "name": "Lattafa Eclaire Feminino",
+  "brand": "Lattafa",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 175.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lattafa-eclaire-feminino/eclaire-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-lattafa-eclaire-feminino/eclaire-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-lattafa-eclaire-feminino/eclaire-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "Lattafa Eclaire, Eau de Parfum 100ml. Perfume feminino de família olfativa doce e floral. Notas de topo: Caramelo, Leite, Açúcar; coração: Mel, Flores Brancas; fundo: Baunilha, Pralinê, Almíscar.",
+  "specs": [
+    "Edição: Eclaire",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Doce e Floral",
+    "Notas de topo: Caramelo, Leite, Açúcar",
+    "Notas de coração: Mel, Flores Brancas",
+    "Notas de fundo: Baunilha, Pralinê, Almíscar",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Lattafa, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lattafa-eclaire-feminino-eclaire-eau-de-parfum-100ml",
+      "label": "Eclaire · Eau de Parfum · 100ml",
+      "price": 175.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-eclaire-feminino/eclaire-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-eclaire-feminino/eclaire-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-eclaire-feminino/eclaire-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lattafa Eclaire, Eau de Parfum 100ml. Perfume feminino de família olfativa doce e floral. Notas de topo: Caramelo, Leite, Açúcar; coração: Mel, Flores Brancas; fundo: Baunilha, Pralinê, Almíscar.",
+      "specs": [
+        "Edição: Eclaire",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Doce e Floral",
+        "Notas de topo: Caramelo, Leite, Açúcar",
+        "Notas de coração: Mel, Flores Brancas",
+        "Notas de fundo: Baunilha, Pralinê, Almíscar",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}
