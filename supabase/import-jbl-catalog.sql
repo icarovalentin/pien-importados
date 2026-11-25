@@ -1,6 +1,6 @@
--- Importa/atualiza as caixas de som JBL (Go 5, Flip 7, Charge 6, Clip 5, Xtreme 5, Boombox 4), com as cores como variações.
--- ATENÇÃO: os preços são o valor de ATACADO do site de origem (US$ x cotação 6,05), SEM a sua margem.
--- Ajuste os preços no /admin (ou edite o campo price neste arquivo) antes de vender.
+-- Caixas de som JBL (Go 5, Flip 7, Charge 6, Clip 5, Xtreme 5, Boombox 4), cores como variações
+-- ATENÇÃO: os preços são o valor de ATACADO do Atacado Connect (US$ x cotação 6,05), SEM a sua margem.
+-- Ajuste os preços no /admin (ou o campo price neste arquivo) antes de vender.
 -- Cole no SQL Editor do Supabase e clique em Run. Rodar de novo sobrescreve edições feitas no admin.
 
 INSERT INTO public.products
