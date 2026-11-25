@@ -1,5 +1,5 @@
 -- Produto da Farmácia: Tirzec 15 (venda exclusiva no Paraguai, sob prescrição médica).
--- ATENÇÃO: o preço está PROVISÓRIO (R$ 1,00). Ajuste o campo price neste arquivo antes de rodar, ou corrija no /admin logo depois.
+-- Preço: R$ 900,00.
 -- A primeira instrução libera a categoria 'farmacia' no banco (pode rodar mais de uma vez).
 -- Cole no SQL Editor do Supabase e clique em Run.
 
@@ -13,7 +13,7 @@ ALTER TABLE public.products
 INSERT INTO public.products
   (id, name, brand, category, category_label, price, original_price, status, delivery_time, images, description, specs, is_featured, batch_code_info, variants)
 VALUES (
-  $j$fm-tirzec-15$j$, $j$Tirzec 15 (Tirzepatida 15 mg/0,5 mL)$j$, $j$Tirzec$j$, $j$farmacia$j$, $j$Farmácia$j$, 1.0, NULL,
+  $j$fm-tirzec-15$j$, $j$Tirzec 15 (Tirzepatida 15 mg/0,5 mL)$j$, $j$Tirzec$j$, $j$farmacia$j$, $j$Farmácia$j$, 900.0, NULL,
   $j$encomenda$j$, $j$Venda exclusiva no Paraguai$j$, ARRAY[$j$/catalog/farmacia/tirzec-15.webp$j$]::text[], $j$Tirzec 15, tirzepatida 15 mg/0,5 mL, solução injetável. Caixa com 4 frascos-ampola de 0,5 mL.
 
 VENDA NO PARAGUAI: este produto é divulgado para venda no Paraguai, e a compra e a retirada são feitas apenas lá.
