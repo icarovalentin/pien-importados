@@ -7,7 +7,6 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { createClient } from '@supabase/supabase-js';
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -16,7 +15,14 @@ if (!url || !key) {
   process.exit(1);
 }
 
-const supabase = createClient(url, key, { auth: { persistSession: false } });
+// REST direto: chaves novas (sb_secret_...) vão só no cabeçalho apikey; chaves JWT antigas também em Authorization.
+const headers = {
+  apikey: key,
+  'Content-Type': 'application/json',
+  Prefer: 'resolution=merge-duplicates,return=minimal',
+  ...(key.startsWith('eyJ') ? { Authorization: `Bearer ${key}` } : {}),
+};
+const endpoint = `${url.replace(/\/$/, '')}/rest/v1/products?on_conflict=id`;
 const dir = path.join(process.cwd(), 'src', 'data', 'catalog');
 const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
 
@@ -39,9 +45,9 @@ for (const file of files) {
     batch_code_info: p.batchCodeInfo ?? null,
     variants: p.variants ?? [],
   };
-  const { error } = await supabase.from('products').upsert(row, { onConflict: 'id' });
-  if (error) {
-    console.error(`✗ ${p.id}:`, error.message);
+  const res = await fetch(endpoint, { method: 'POST', headers, body: JSON.stringify(row) });
+  if (!res.ok) {
+    console.error(`✗ ${p.id}: HTTP ${res.status} ${await res.text()}`);
     process.exitCode = 1;
   } else {
     console.log(`✓ ${p.name} (${(p.variants ?? []).length} variações)`);
