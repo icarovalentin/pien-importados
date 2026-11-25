@@ -6,7 +6,7 @@ import { CategoryType, Product, SortOption, StockStatus } from '@/types/product'
 import { Navbar } from '@/components/Navbar';
 import { RotatingHeroBanner } from '@/components/RotatingHeroBanner';
 import { CategoryNav } from '@/components/CategoryNav';
-import { GENDER_FILTER_CATEGORIES, GenderFilter, matchesGender } from '@/utils/gender';
+import { getSubFilters, matchesSubFilter } from '@/utils/subfilters';
 import { ProductCard } from '@/components/ProductCard';
 import { ProductGridSkeleton } from '@/components/ProductSkeleton';
 import { ProductModal } from '@/components/ProductModal';
@@ -26,7 +26,7 @@ export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<CategoryType>('todos');
   const [selectedBrand, setSelectedBrand] = useState('');
-  const [selectedGender, setSelectedGender] = useState<GenderFilter>('todos');
+  const [selectedSub, setSelectedSub] = useState('todos');
   const [selectedStock, setSelectedStock] = useState<'todos' | StockStatus>('todos');
   const [sortBy, setSortBy] = useState<SortOption>('featured');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -94,14 +94,14 @@ export default function HomePage() {
   const handleSelectCategory = (cat: CategoryType) => {
     setSelectedCategory(cat);
     setSelectedBrand('');
-    setSelectedGender('todos');
+    setSelectedSub('todos');
   };
 
   const clearAllFilters = () => {
     setSelectedCategory('todos');
     setSelectedBrand('');
     setSelectedStock('todos');
-    setSelectedGender('todos');
+    setSelectedSub('todos');
     setSearchTerm('');
   };
 
@@ -134,7 +134,7 @@ export default function HomePage() {
     searchTerm.trim() === '' &&
     readyHighlights.length > 0;
 
-  const showGenderFilter = GENDER_FILTER_CATEGORIES.includes(selectedCategory);
+  const subConfig = selectedCategory === 'todos' ? undefined : getSubFilters(selectedCategory);
 
   // Produtos filtrados por categoria, marca e busca (contadores coerentes com a seleção atual)
   const baseFilteredProducts = useMemo(() => {
@@ -149,7 +149,7 @@ export default function HomePage() {
         }
       }
 
-      if (showGenderFilter && !matchesGender(product, selectedGender)) {
+      if (subConfig && !matchesSubFilter(product, selectedCategory, selectedSub)) {
         return false;
       }
 
@@ -172,7 +172,7 @@ export default function HomePage() {
 
       return true;
     });
-  }, [products, selectedCategory, selectedBrand, searchTerm, selectedGender, showGenderFilter]);
+  }, [products, selectedCategory, selectedBrand, searchTerm, selectedSub, subConfig]);
 
   const prontaEntregaCount = useMemo(
     () => baseFilteredProducts.filter((p) => p.status === 'pronta_entrega').length,
@@ -259,7 +259,7 @@ export default function HomePage() {
           onSelectBrand={(brand) => {
             setSelectedCategory('todos');
             setSelectedStock('todos');
-            setSelectedGender('todos');
+            setSelectedSub('todos');
             setSelectedBrand(brand);
           }}
         />
@@ -331,8 +331,9 @@ export default function HomePage() {
         </div>
 
         <CategoryNav
-          selectedGender={showGenderFilter ? selectedGender : undefined}
-          setSelectedGender={setSelectedGender}
+          subFilters={subConfig}
+          selectedSub={selectedSub}
+          setSelectedSub={setSelectedSub}
           selectedStock={selectedStock}
           setSelectedStock={setSelectedStock}
           sortBy={sortBy}
