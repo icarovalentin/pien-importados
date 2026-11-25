@@ -1,0 +1,146 @@
+{
+  "id": "ap-iphone-17-pro",
+  "name": "Apple iPhone 17 Pro",
+  "brand": "Apple",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 6806.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-1.webp",
+    "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-2.webp",
+    "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-3.webp"
+  ],
+  "description": "Apple iPhone 17 Pro 256GB/12GB na cor Laranja. Conta com tela Super Retina XDR OLED 120Hz de 6.3\", chipset A19 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 4252 mAh. Sistema: iOS 26.",
+  "specs": [
+    "Memória: 256GB/12GB",
+    "Cor: Laranja",
+    "Tela: Super Retina XDR OLED 120Hz 6.3\" Full HD+ (1206 x 2622)",
+    "Chipset: A19 Pro",
+    "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+    "Câmera frontal: Única 18 MP",
+    "Bateria: 4252 mAh",
+    "Recursos: Resistência a poeira e água IP68",
+    "Sistema: iOS 26",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "ap-iphone-17-pro-256gb-12gb-laranja",
+      "label": "256GB/12GB · Laranja",
+      "price": 6806.9,
+      "images": [
+        "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-1.webp",
+        "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-2.webp",
+        "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-3.webp"
+      ],
+      "description": "Apple iPhone 17 Pro 256GB/12GB na cor Laranja. Conta com tela Super Retina XDR OLED 120Hz de 6.3\", chipset A19 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 4252 mAh. Sistema: iOS 26.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Laranja",
+        "Tela: Super Retina XDR OLED 120Hz 6.3\" Full HD+ (1206 x 2622)",
+        "Chipset: A19 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única 18 MP",
+        "Bateria: 4252 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 26",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-17-pro-256gb-12gb-prata",
+      "label": "256GB/12GB · Prata",
+      "price": 7078.9,
+      "images": [
+        "/catalog/phones/ap-iphone-17-pro/256gb-12gb-prata-1.webp",
+        "/catalog/phones/ap-iphone-17-pro/256gb-12gb-prata-2.webp",
+        "/catalog/phones/ap-iphone-17-pro/256gb-12gb-prata-3.webp"
+      ],
+      "description": "Apple iPhone 17 Pro 256GB/12GB na cor Prata. Conta com tela Super Retina XDR OLED 120Hz de 6.3\", chipset A19 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 4252 mAh. Sistema: iOS 26.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Prata",
+        "Tela: Super Retina XDR OLED 120Hz 6.3\" Full HD+ (1206 x 2622)",
+        "Chipset: A19 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única 18 MP",
+        "Bateria: 4252 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 26",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-17-pro-256gb-12gb-laranja-cosmico",
+      "label": "256GB/12GB · Laranja cósmico",
+      "price": 7108.9,
+      "images": [
+        "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-cosmico-1.webp",
+        "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-cosmico-2.webp",
+        "/catalog/phones/ap-iphone-17-pro/256gb-12gb-laranja-cosmico-3.webp"
+      ],
+      "description": "Apple iPhone 17 Pro 256GB/12GB na cor Laranja cósmico. Conta com tela LTPO Super Retina XDR OLED, 120Hz de 6.3\", chipset A19 Pro, câmera traseira 48 MP e 48 MP e 48 MP, câmera frontal 18MP, bateria de Íon de lítio, 4252 mAh. Sistema: iOS 26.",
+      "specs": [
+        "Memória: 256GB/12GB",
+        "Cor: Laranja cósmico",
+        "Tela: LTPO Super Retina XDR OLED, 120Hz 6.3\" 1206 x 2622p",
+        "Chipset: A19 Pro",
+        "Câmera traseira: 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: 18MP",
+        "Bateria: Íon de lítio, 4252 mAh",
+        "Recursos: IP68, à prova de poeira e resistente à água + Peso bruto + 206 g",
+        "Sistema: iOS 26",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-17-pro-512gb-12gb-laranja",
+      "label": "512GB/12GB · Laranja",
+      "price": 8409.9,
+      "images": [
+        "/catalog/phones/ap-iphone-17-pro/512gb-12gb-laranja-1.webp",
+        "/catalog/phones/ap-iphone-17-pro/512gb-12gb-laranja-2.webp",
+        "/catalog/phones/ap-iphone-17-pro/512gb-12gb-laranja-3.webp"
+      ],
+      "description": "Apple iPhone 17 Pro 512GB/12GB na cor Laranja. Conta com tela XDR OLED, 120Hz de 6.9\", chipset A19 Pro, câmera traseira 48 MP e 48 MP e 48 MP, câmera frontal 18MP, bateria de 5088 mAh. Sistema: iOS 26.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Laranja",
+        "Tela: XDR OLED, 120Hz 6.9\" 1320 x 2868",
+        "Chipset: A19 Pro",
+        "Câmera traseira: 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: 18MP",
+        "Bateria: 5088 mAh",
+        "Recursos: Resistente a poeira e água IP68",
+        "Sistema: iOS 26",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-17-pro-512gb-12gb-laranja-a3523-be",
+      "label": "512GB/12GB · Laranja (A3523 BE)",
+      "price": 8470.9,
+      "images": [
+        "/catalog/phones/ap-iphone-17-pro/512gb-12gb-laranja-a3523-be-1.webp",
+        "/catalog/phones/ap-iphone-17-pro/512gb-12gb-laranja-a3523-be-2.webp",
+        "/catalog/phones/ap-iphone-17-pro/512gb-12gb-laranja-a3523-be-3.webp"
+      ],
+      "description": "Apple iPhone 17 Pro 512GB/12GB na cor Laranja. Conta com tela Super Retina XDR OLED de 6.3\", chipset A19 Pro, câmera traseira Tripla 48 MP e 48 MP e 48 MP, câmera frontal Única 18 MP, bateria de 3998 mAh. Sistema: iOS 26.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Laranja",
+        "Tela: Super Retina XDR OLED 6.3\" 1.5K (1206 x 2622)",
+        "Chipset: A19 Pro",
+        "Câmera traseira: Tripla 48 MP + 48 MP + 48 MP",
+        "Câmera frontal: Única 18 MP",
+        "Bateria: 3998 mAh",
+        "Sistema: iOS 26",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

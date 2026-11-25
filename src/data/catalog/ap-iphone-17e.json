@@ -1,0 +1,78 @@
+{
+  "id": "ap-iphone-17e",
+  "name": "Apple iPhone 17e",
+  "brand": "Apple",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 4325.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/ap-iphone-17e/256gb-8gb-branco-1.webp",
+    "/catalog/phones/ap-iphone-17e/256gb-8gb-branco-2.webp",
+    "/catalog/phones/ap-iphone-17e/256gb-8gb-branco-3.webp"
+  ],
+  "description": "Apple iPhone 17e 256GB/8GB na cor Branco. Conta com tela Super Retina XDR OLED de 6.1\", chipset A19, câmera traseira Única 48 MP, câmera frontal Única 12 MP, bateria de 4005 mAh. Sistema: iOS 26.3.",
+  "specs": [
+    "Memória: 256GB/8GB",
+    "Cor: Branco",
+    "Tela: Super Retina XDR OLED 6.1\" Full HD+ (1170 x 2532)",
+    "Chipset: A19",
+    "Câmera traseira: Única 48 MP",
+    "Câmera frontal: Única 12 MP",
+    "Bateria: 4005 mAh",
+    "Recursos: Resistência a poeira e água IP68",
+    "Sistema: iOS 26.3",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Apple, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "ap-iphone-17e-256gb-8gb-branco",
+      "label": "256GB/8GB · Branco",
+      "price": 4325.9,
+      "images": [
+        "/catalog/phones/ap-iphone-17e/256gb-8gb-branco-1.webp",
+        "/catalog/phones/ap-iphone-17e/256gb-8gb-branco-2.webp",
+        "/catalog/phones/ap-iphone-17e/256gb-8gb-branco-3.webp"
+      ],
+      "description": "Apple iPhone 17e 256GB/8GB na cor Branco. Conta com tela Super Retina XDR OLED de 6.1\", chipset A19, câmera traseira Única 48 MP, câmera frontal Única 12 MP, bateria de 4005 mAh. Sistema: iOS 26.3.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Branco",
+        "Tela: Super Retina XDR OLED 6.1\" Full HD+ (1170 x 2532)",
+        "Chipset: A19",
+        "Câmera traseira: Única 48 MP",
+        "Câmera frontal: Única 12 MP",
+        "Bateria: 4005 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 26.3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "ap-iphone-17e-256gb-8gb-rosa",
+      "label": "256GB/8GB · Rosa",
+      "price": 4325.9,
+      "images": [
+        "/catalog/phones/ap-iphone-17e/256gb-8gb-rosa-1.webp",
+        "/catalog/phones/ap-iphone-17e/256gb-8gb-rosa-2.webp",
+        "/catalog/phones/ap-iphone-17e/256gb-8gb-rosa-3.webp"
+      ],
+      "description": "Apple iPhone 17e 256GB/8GB na cor Rosa. Conta com tela Super Retina XDR OLED de 6.1\", chipset A19, câmera traseira Única 48 MP, câmera frontal Única 12 MP, bateria de 4005 mAh. Sistema: iOS 26.3.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Rosa",
+        "Tela: Super Retina XDR OLED 6.1\" Full HD+ (1170 x 2532)",
+        "Chipset: A19",
+        "Câmera traseira: Única 48 MP",
+        "Câmera frontal: Única 12 MP",
+        "Bateria: 4005 mAh",
+        "Recursos: Resistência a poeira e água IP68",
+        "Sistema: iOS 26.3",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

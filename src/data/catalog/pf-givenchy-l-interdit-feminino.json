@@ -1,0 +1,75 @@
+{
+  "id": "pf-givenchy-l-interdit-feminino",
+  "name": "Givenchy L'Interdit Feminino",
+  "brand": "GIVENCHY",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 438.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-givenchy-l-interdit-feminino/l-interdit-eau-de-toilette-80ml-1.webp",
+    "/catalog/perfumes/pf-givenchy-l-interdit-feminino/l-interdit-eau-de-toilette-80ml-2.webp",
+    "/catalog/perfumes/pf-givenchy-l-interdit-feminino/l-interdit-eau-de-toilette-80ml-3.webp"
+  ],
+  "description": "GIVENCHY l'interdit, Eau de Toilette 80ml. Perfume feminino de família olfativa floral amadeirado. Notas de topo: Bergamota e Gengibre Fresco; coração: Flor de Laranjeira, Jasmim e Tuberosa; fundo: Patchouli e Vetiver.",
+  "specs": [
+    "Edição: l'interdit",
+    "Concentração: Eau de Toilette",
+    "Volume: 80 ml",
+    "Família olfativa: Floral Amadeirado",
+    "Notas de topo: Bergamota e Gengibre Fresco",
+    "Notas de coração: Flor de Laranjeira, Jasmim e Tuberosa",
+    "Notas de fundo: Patchouli e Vetiver",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original GIVENCHY, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-givenchy-l-interdit-feminino-l-interdit-eau-de-toilette-80ml",
+      "label": "l'interdit · Eau de Toilette · 80ml",
+      "price": 438.9,
+      "images": [
+        "/catalog/perfumes/pf-givenchy-l-interdit-feminino/l-interdit-eau-de-toilette-80ml-1.webp",
+        "/catalog/perfumes/pf-givenchy-l-interdit-feminino/l-interdit-eau-de-toilette-80ml-2.webp",
+        "/catalog/perfumes/pf-givenchy-l-interdit-feminino/l-interdit-eau-de-toilette-80ml-3.webp"
+      ],
+      "description": "GIVENCHY l'interdit, Eau de Toilette 80ml. Perfume feminino de família olfativa floral amadeirado. Notas de topo: Bergamota e Gengibre Fresco; coração: Flor de Laranjeira, Jasmim e Tuberosa; fundo: Patchouli e Vetiver.",
+      "specs": [
+        "Edição: l'interdit",
+        "Concentração: Eau de Toilette",
+        "Volume: 80 ml",
+        "Família olfativa: Floral Amadeirado",
+        "Notas de topo: Bergamota e Gengibre Fresco",
+        "Notas de coração: Flor de Laranjeira, Jasmim e Tuberosa",
+        "Notas de fundo: Patchouli e Vetiver",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-givenchy-l-interdit-feminino-linterdit-parfum-80ml",
+      "label": "L’Interdit · Parfum · 80ml",
+      "price": 605.9,
+      "images": [
+        "/catalog/perfumes/pf-givenchy-l-interdit-feminino/linterdit-parfum-80ml-1.webp",
+        "/catalog/perfumes/pf-givenchy-l-interdit-feminino/linterdit-parfum-80ml-2.webp",
+        "/catalog/perfumes/pf-givenchy-l-interdit-feminino/linterdit-parfum-80ml-3.webp"
+      ],
+      "description": "GIVENCHY L’Interdit, Parfum 80ml. Perfume feminino de família olfativa frutado. Notas de topo: Pera, Amêndoa Amarga, Maçã; coração: Tuberosa, Mimosa, Jasmim; fundo: Benjoim, Mirra, Opoponax, Patchouli, Vetiver.",
+      "specs": [
+        "Edição: L’Interdit",
+        "Concentração: Parfum",
+        "Volume: 80 ml",
+        "Família olfativa: Frutado",
+        "Notas de topo: Pera, Amêndoa Amarga, Maçã",
+        "Notas de coração: Tuberosa, Mimosa, Jasmim",
+        "Notas de fundo: Benjoim, Mirra, Opoponax, Patchouli, Vetiver",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

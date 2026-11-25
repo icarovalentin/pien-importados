@@ -1,0 +1,53 @@
+{
+  "id": "pf-giorgio-armani-code-masculino",
+  "name": "Giorgio Armani Code Masculino",
+  "brand": "GIORGIO ARMANI",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 520.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-giorgio-armani-code-masculino/armani-code-eau-de-parfum-150ml-1.webp",
+    "/catalog/perfumes/pf-giorgio-armani-code-masculino/armani-code-eau-de-parfum-150ml-2.webp",
+    "/catalog/perfumes/pf-giorgio-armani-code-masculino/armani-code-eau-de-parfum-150ml-3.webp"
+  ],
+  "description": "GIORGIO ARMANI Armani Code, Eau de Parfum 150ml. Perfume masculino de família olfativa amadeirado aromático. Notas de topo: Bergamota de Calábria e Folhas de Bergamota; coração: Íris, Aldeídos, Sálvia Esclaréia e Raiz de Lírio; fundo: Fava Tonka e Cedro.",
+  "specs": [
+    "Edição: Armani Code",
+    "Concentração: Eau de Parfum",
+    "Volume: 150 ml",
+    "Família olfativa: Amadeirado Aromático",
+    "Notas de topo: Bergamota de Calábria e Folhas de Bergamota",
+    "Notas de coração: Íris, Aldeídos, Sálvia Esclaréia e Raiz de Lírio",
+    "Notas de fundo: Fava Tonka e Cedro",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original GIORGIO ARMANI, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-giorgio-armani-code-masculino-armani-code-eau-de-parfum-150ml",
+      "label": "Armani Code · Eau de Parfum · 150ml",
+      "price": 520.9,
+      "images": [
+        "/catalog/perfumes/pf-giorgio-armani-code-masculino/armani-code-eau-de-parfum-150ml-1.webp",
+        "/catalog/perfumes/pf-giorgio-armani-code-masculino/armani-code-eau-de-parfum-150ml-2.webp",
+        "/catalog/perfumes/pf-giorgio-armani-code-masculino/armani-code-eau-de-parfum-150ml-3.webp"
+      ],
+      "description": "GIORGIO ARMANI Armani Code, Eau de Parfum 150ml. Perfume masculino de família olfativa amadeirado aromático. Notas de topo: Bergamota de Calábria e Folhas de Bergamota; coração: Íris, Aldeídos, Sálvia Esclaréia e Raiz de Lírio; fundo: Fava Tonka e Cedro.",
+      "specs": [
+        "Edição: Armani Code",
+        "Concentração: Eau de Parfum",
+        "Volume: 150 ml",
+        "Família olfativa: Amadeirado Aromático",
+        "Notas de topo: Bergamota de Calábria e Folhas de Bergamota",
+        "Notas de coração: Íris, Aldeídos, Sálvia Esclaréia e Raiz de Lírio",
+        "Notas de fundo: Fava Tonka e Cedro",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

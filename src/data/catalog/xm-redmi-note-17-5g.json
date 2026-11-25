@@ -4,83 +4,97 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 1.0,
+  "price": 1299.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/xiaomi/redmi-note-17-5g/preto.webp",
-    "/catalog/xiaomi/redmi-note-17-5g/verde-celeste.webp",
-    "/catalog/xiaomi/redmi-note-17-5g/roxo-cosmico.webp"
+    "/catalog/phones/xm-redmi-note-17-5g/128gb-6gb-preto-1.webp",
+    "/catalog/phones/xm-redmi-note-17-5g/128gb-6gb-preto-2.webp",
+    "/catalog/phones/xm-redmi-note-17-5g/128gb-6gb-preto-3.webp"
   ],
-  "description": "Xiaomi Redmi Note 17 5G na cor Preto. Conta com tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz, processador Snapdragon 4 Gen 4, bateria de 7700 mAh com carregamento turbo de 45 W, câmera principal de 50 MP e câmera frontal de 16 MP. Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB).",
+  "description": "Xiaomi Redmi Note 17 5G 128GB/6GB na cor Preto. Conta com tela OLED 120Hz de 6.9\", chipset Qualcomm SM4450-AF Snapdragon 4 Gen 4, câmera traseira Única 50 MP, câmera frontal Única 16 MP, bateria de 7700 mAh. Sistema: Android 16.",
   "specs": [
+    "Memória: 128GB/6GB",
     "Cor: Preto",
-    "Tela: tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz",
-    "Processador: Snapdragon 4 Gen 4",
-    "Bateria: bateria de 7700 mAh com carregamento turbo de 45 W",
-    "Câmeras: câmera principal de 50 MP e câmera frontal de 16 MP",
-    "Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB)",
-    "Dimensões e peso: 169,70 × 79,14 × 8,45 mm, 225 g",
-    "Produto original Xiaomi"
+    "Tela: OLED 120Hz 6.9\" Full HD+ (1080 x 2396)",
+    "Chipset: Qualcomm SM4450-AF Snapdragon 4 Gen 4",
+    "Câmera traseira: Única 50 MP",
+    "Câmera frontal: Única 16 MP",
+    "Bateria: 7700 mAh",
+    "Recursos: Resistência a poeira e respingos IP65",
+    "Sistema: Android 16",
+    "Produto novo e original, com lacre"
   ],
   "isFeatured": false,
-  "batchCodeInfo": "Produto original Xiaomi, importado com procedência garantida.",
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
   "variants": [
     {
-      "id": "xm-redmi-note-17-5g-preto",
-      "label": "Preto",
-      "price": 1.0,
+      "id": "xm-redmi-note-17-5g-128gb-6gb-preto",
+      "label": "128GB/6GB · Preto",
+      "price": 1299.9,
       "images": [
-        "/catalog/xiaomi/redmi-note-17-5g/preto.webp"
+        "/catalog/phones/xm-redmi-note-17-5g/128gb-6gb-preto-1.webp",
+        "/catalog/phones/xm-redmi-note-17-5g/128gb-6gb-preto-2.webp",
+        "/catalog/phones/xm-redmi-note-17-5g/128gb-6gb-preto-3.webp"
       ],
-      "description": "Xiaomi Redmi Note 17 5G na cor Preto. Conta com tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz, processador Snapdragon 4 Gen 4, bateria de 7700 mAh com carregamento turbo de 45 W, câmera principal de 50 MP e câmera frontal de 16 MP. Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB).",
+      "description": "Xiaomi Redmi Note 17 5G 128GB/6GB na cor Preto. Conta com tela OLED 120Hz de 6.9\", chipset Qualcomm SM4450-AF Snapdragon 4 Gen 4, câmera traseira Única 50 MP, câmera frontal Única 16 MP, bateria de 7700 mAh. Sistema: Android 16.",
       "specs": [
+        "Memória: 128GB/6GB",
         "Cor: Preto",
-        "Tela: tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz",
-        "Processador: Snapdragon 4 Gen 4",
-        "Bateria: bateria de 7700 mAh com carregamento turbo de 45 W",
-        "Câmeras: câmera principal de 50 MP e câmera frontal de 16 MP",
-        "Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB)",
-        "Dimensões e peso: 169,70 × 79,14 × 8,45 mm, 225 g",
-        "Produto original Xiaomi"
+        "Tela: OLED 120Hz 6.9\" Full HD+ (1080 x 2396)",
+        "Chipset: Qualcomm SM4450-AF Snapdragon 4 Gen 4",
+        "Câmera traseira: Única 50 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 7700 mAh",
+        "Recursos: Resistência a poeira e respingos IP65",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
       ]
     },
     {
-      "id": "xm-redmi-note-17-5g-verde-celeste",
-      "label": "Verde-Celeste",
-      "price": 1.0,
+      "id": "xm-redmi-note-17-5g-256gb-8gb-preto",
+      "label": "256GB/8GB · Preto",
+      "price": 1438.9,
       "images": [
-        "/catalog/xiaomi/redmi-note-17-5g/verde-celeste.webp"
+        "/catalog/phones/xm-redmi-note-17-5g/256gb-8gb-preto-1.webp",
+        "/catalog/phones/xm-redmi-note-17-5g/256gb-8gb-preto-2.webp",
+        "/catalog/phones/xm-redmi-note-17-5g/256gb-8gb-preto-3.webp"
       ],
-      "description": "Xiaomi Redmi Note 17 5G na cor Verde-Celeste. Conta com tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz, processador Snapdragon 4 Gen 4, bateria de 7700 mAh com carregamento turbo de 45 W, câmera principal de 50 MP e câmera frontal de 16 MP. Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB).",
+      "description": "Xiaomi Redmi Note 17 5G 256GB/8GB na cor Preto. Conta com tela OLED 120Hz de 6.9\", chipset Qualcomm SM4450-AF Snapdragon 4 Gen 4, câmera traseira Única 50 MP, câmera frontal Única 16 MP, bateria de 7700 mAh. Sistema: Android 16.",
       "specs": [
-        "Cor: Verde-Celeste",
-        "Tela: tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz",
-        "Processador: Snapdragon 4 Gen 4",
-        "Bateria: bateria de 7700 mAh com carregamento turbo de 45 W",
-        "Câmeras: câmera principal de 50 MP e câmera frontal de 16 MP",
-        "Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB)",
-        "Dimensões e peso: 169,70 × 79,14 × 8,45 mm, 225 g",
-        "Produto original Xiaomi"
+        "Memória: 256GB/8GB",
+        "Cor: Preto",
+        "Tela: OLED 120Hz 6.9\" Full HD+ (1080 x 2396)",
+        "Chipset: Qualcomm SM4450-AF Snapdragon 4 Gen 4",
+        "Câmera traseira: Única 50 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 7700 mAh",
+        "Recursos: Resistência a poeira e respingos IP65",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
       ]
     },
     {
-      "id": "xm-redmi-note-17-5g-roxo-cosmico",
-      "label": "Roxo Cósmico",
-      "price": 1.0,
+      "id": "xm-redmi-note-17-5g-256gb-6gb-verde",
+      "label": "256GB/6GB · Verde",
+      "price": 1492.9,
       "images": [
-        "/catalog/xiaomi/redmi-note-17-5g/roxo-cosmico.webp"
+        "/catalog/phones/xm-redmi-note-17-5g/256gb-6gb-verde-1.webp",
+        "/catalog/phones/xm-redmi-note-17-5g/256gb-6gb-verde-2.webp",
+        "/catalog/phones/xm-redmi-note-17-5g/256gb-6gb-verde-3.webp"
       ],
-      "description": "Xiaomi Redmi Note 17 5G na cor Roxo Cósmico. Conta com tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz, processador Snapdragon 4 Gen 4, bateria de 7700 mAh com carregamento turbo de 45 W, câmera principal de 50 MP e câmera frontal de 16 MP. Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB).",
+      "description": "Xiaomi Redmi Note 17 5G 256GB/6GB na cor Verde. Conta com tela OLED 120Hz de 6.9\", chipset Qualcomm SM4450-AF Snapdragon 4 Gen 4, câmera traseira Única 50 MP, câmera frontal Única 16 MP, bateria de 7700 mAh. Sistema: Android 16.",
       "specs": [
-        "Cor: Roxo Cósmico",
-        "Tela: tela AMOLED FHD+ de 6,99\" com taxa de atualização de até 120 Hz",
-        "Processador: Snapdragon 4 Gen 4",
-        "Bateria: bateria de 7700 mAh com carregamento turbo de 45 W",
-        "Câmeras: câmera principal de 50 MP e câmera frontal de 16 MP",
-        "Memória: 6 GB de RAM + 256 GB (armazenamento expansível até 2 TB)",
-        "Dimensões e peso: 169,70 × 79,14 × 8,45 mm, 225 g",
-        "Produto original Xiaomi"
+        "Memória: 256GB/6GB",
+        "Cor: Verde",
+        "Tela: OLED 120Hz 6.9\" Full HD+ (1080 x 2396)",
+        "Chipset: Qualcomm SM4450-AF Snapdragon 4 Gen 4",
+        "Câmera traseira: Única 50 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 7700 mAh",
+        "Recursos: Resistência a poeira e respingos IP65 + Observações + Carregador Brasil",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
       ]
     }
   ]

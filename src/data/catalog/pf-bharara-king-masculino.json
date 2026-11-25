@@ -1,0 +1,53 @@
+{
+  "id": "pf-bharara-king-masculino",
+  "name": "Bharara King Masculino",
+  "brand": "BHARARA",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 226.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-bharara-king-masculino/king-bharara-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-bharara-king-masculino/king-bharara-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-bharara-king-masculino/king-bharara-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "BHARARA King Bharara, Eau de Parfum 100ml. Perfume masculino de família olfativa aromática cítrica frutada. Notas de topo: Laranja, Bergamota e Limão Siciliano; coração: Notas Frutadas; fundo: Baunilha, Almíscar Branco e Âmbar.",
+  "specs": [
+    "Edição: King Bharara",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Aromática Cítrica Frutada",
+    "Notas de topo: Laranja, Bergamota e Limão Siciliano",
+    "Notas de coração: Notas Frutadas",
+    "Notas de fundo: Baunilha, Almíscar Branco e Âmbar",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original BHARARA, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-bharara-king-masculino-king-bharara-eau-de-parfum-100ml",
+      "label": "King Bharara · Eau de Parfum · 100ml",
+      "price": 226.9,
+      "images": [
+        "/catalog/perfumes/pf-bharara-king-masculino/king-bharara-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-bharara-king-masculino/king-bharara-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-bharara-king-masculino/king-bharara-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "BHARARA King Bharara, Eau de Parfum 100ml. Perfume masculino de família olfativa aromática cítrica frutada. Notas de topo: Laranja, Bergamota e Limão Siciliano; coração: Notas Frutadas; fundo: Baunilha, Almíscar Branco e Âmbar.",
+      "specs": [
+        "Edição: King Bharara",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Aromática Cítrica Frutada",
+        "Notas de topo: Laranja, Bergamota e Limão Siciliano",
+        "Notas de coração: Notas Frutadas",
+        "Notas de fundo: Baunilha, Almíscar Branco e Âmbar",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

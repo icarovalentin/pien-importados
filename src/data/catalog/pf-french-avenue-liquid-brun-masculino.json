@@ -1,0 +1,75 @@
+{
+  "id": "pf-french-avenue-liquid-brun-masculino",
+  "name": "French Avenue Liquid Brun Masculino",
+  "brand": "French Avenue",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 181.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "French Avenue Liquid Brun, Eau de Parfum 100ml. Perfume masculino de família olfativa amadeirado. Notas de topo: Canela, Flor de Laranjeira, Cardamomo, Bergamota; coração: Baunilha de Bourbon, Elemi; fundo: Pralinê, Ambroxan, Madeira Guaiac, Almíscar.",
+  "specs": [
+    "Edição: Liquid Brun",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Amadeirado",
+    "Notas de topo: Canela, Flor de Laranjeira, Cardamomo, Bergamota",
+    "Notas de coração: Baunilha de Bourbon, Elemi",
+    "Notas de fundo: Pralinê, Ambroxan, Madeira Guaiac, Almíscar",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original French Avenue, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-french-avenue-liquid-brun-masculino-liquid-brun-eau-de-parfum-100ml",
+      "label": "Liquid Brun · Eau de Parfum · 100ml",
+      "price": 181.9,
+      "images": [
+        "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "French Avenue Liquid Brun, Eau de Parfum 100ml. Perfume masculino de família olfativa amadeirado. Notas de topo: Canela, Flor de Laranjeira, Cardamomo, Bergamota; coração: Baunilha de Bourbon, Elemi; fundo: Pralinê, Ambroxan, Madeira Guaiac, Almíscar.",
+      "specs": [
+        "Edição: Liquid Brun",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Amadeirado",
+        "Notas de topo: Canela, Flor de Laranjeira, Cardamomo, Bergamota",
+        "Notas de coração: Baunilha de Bourbon, Elemi",
+        "Notas de fundo: Pralinê, Ambroxan, Madeira Guaiac, Almíscar",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-french-avenue-liquid-brun-masculino-liquid-brun-eau-de-parfum-150ml",
+      "label": "Liquid Brun · Eau de Parfum · 150ml",
+      "price": 260.9,
+      "images": [
+        "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-150ml-1.webp",
+        "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-150ml-2.webp",
+        "/catalog/perfumes/pf-french-avenue-liquid-brun-masculino/liquid-brun-eau-de-parfum-150ml-3.webp"
+      ],
+      "description": "French Avenue Liquid Brun, Eau de Parfum 150ml. Perfume masculino de família olfativa oriental amadeirada. Notas de topo: Canela, Flor de Laranjeira, Bergamota, Cardamomo; coração: Baunilha Bourbon, Elemi; fundo: Pralinê, Ambroxan, Madeira Guaiac, Almíscar.",
+      "specs": [
+        "Edição: Liquid Brun",
+        "Concentração: Eau de Parfum",
+        "Volume: 150 ml",
+        "Família olfativa: Oriental Amadeirada",
+        "Notas de topo: Canela, Flor de Laranjeira, Bergamota, Cardamomo",
+        "Notas de coração: Baunilha Bourbon, Elemi",
+        "Notas de fundo: Pralinê, Ambroxan, Madeira Guaiac, Almíscar",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

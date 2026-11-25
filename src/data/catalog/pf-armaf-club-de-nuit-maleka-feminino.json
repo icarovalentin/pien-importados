@@ -1,0 +1,53 @@
+{
+  "id": "pf-armaf-club-de-nuit-maleka-feminino",
+  "name": "Armaf Club de Nuit Maleka Feminino",
+  "brand": "Armaf",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 147.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-armaf-club-de-nuit-maleka-feminino/club-de-nuit-maleka-eau-de-parfum-105ml-1.webp",
+    "/catalog/perfumes/pf-armaf-club-de-nuit-maleka-feminino/club-de-nuit-maleka-eau-de-parfum-105ml-2.webp",
+    "/catalog/perfumes/pf-armaf-club-de-nuit-maleka-feminino/club-de-nuit-maleka-eau-de-parfum-105ml-3.webp"
+  ],
+  "description": "Armaf Club De Nuit Maleka, Eau de Parfum 105ml. Perfume feminino de família olfativa floral frutado. Notas de topo: Lichia, Bergamota e Pimenta Rosa; coração: Raiz de Lírio (Orris); fundo: Pralinê, Sândalo e Ambroxan.",
+  "specs": [
+    "Edição: Club De Nuit Maleka",
+    "Concentração: Eau de Parfum",
+    "Volume: 105 ml",
+    "Família olfativa: Floral Frutado",
+    "Notas de topo: Lichia, Bergamota e Pimenta Rosa",
+    "Notas de coração: Raiz de Lírio (Orris)",
+    "Notas de fundo: Pralinê, Sândalo e Ambroxan",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Armaf, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-armaf-club-de-nuit-maleka-feminino-club-de-nuit-maleka-eau-de-parfum-105ml",
+      "label": "Club De Nuit Maleka · Eau de Parfum · 105ml",
+      "price": 147.9,
+      "images": [
+        "/catalog/perfumes/pf-armaf-club-de-nuit-maleka-feminino/club-de-nuit-maleka-eau-de-parfum-105ml-1.webp",
+        "/catalog/perfumes/pf-armaf-club-de-nuit-maleka-feminino/club-de-nuit-maleka-eau-de-parfum-105ml-2.webp",
+        "/catalog/perfumes/pf-armaf-club-de-nuit-maleka-feminino/club-de-nuit-maleka-eau-de-parfum-105ml-3.webp"
+      ],
+      "description": "Armaf Club De Nuit Maleka, Eau de Parfum 105ml. Perfume feminino de família olfativa floral frutado. Notas de topo: Lichia, Bergamota e Pimenta Rosa; coração: Raiz de Lírio (Orris); fundo: Pralinê, Sândalo e Ambroxan.",
+      "specs": [
+        "Edição: Club De Nuit Maleka",
+        "Concentração: Eau de Parfum",
+        "Volume: 105 ml",
+        "Família olfativa: Floral Frutado",
+        "Notas de topo: Lichia, Bergamota e Pimenta Rosa",
+        "Notas de coração: Raiz de Lírio (Orris)",
+        "Notas de fundo: Pralinê, Sândalo e Ambroxan",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

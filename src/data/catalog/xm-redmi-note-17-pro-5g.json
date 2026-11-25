@@ -4,112 +4,207 @@
   "brand": "Xiaomi",
   "category": "smartphones",
   "categoryLabel": "Smartphones",
-  "price": 1.0,
+  "price": 1571.9,
   "status": "encomenda",
   "deliveryTime": "Sob Encomenda (10 a 15 dias)",
   "images": [
-    "/catalog/xiaomi/redmi-note-17-pro-5g/preto.webp",
-    "/catalog/xiaomi/redmi-note-17-pro-5g/laranja-acetinado.webp",
-    "/catalog/xiaomi/redmi-note-17-pro-5g/roxo.webp"
+    "/catalog/phones/xm-redmi-note-17-pro-5g/128gb-6gb-preto-1.webp",
+    "/catalog/phones/xm-redmi-note-17-pro-5g/128gb-6gb-preto-2.webp",
+    "/catalog/phones/xm-redmi-note-17-pro-5g/128gb-6gb-preto-3.webp"
   ],
-  "description": "Xiaomi Redmi Note 17 Pro 5G na cor Preto. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
+  "description": "Xiaomi Redmi Note 17 Pro 5G 128GB/6GB na cor Preto. Conta com tela AMOLED 120Hz de 6.83\", chipset Qualcomm SM6435-AA Snapdragon 6s Gen 4, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 16 MP, bateria de 8340 mAh. Sistema: Android 16 HyperOS 3.",
   "specs": [
+    "Memória: 128GB/6GB",
     "Cor: Preto",
-    "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
-    "Processador: Snapdragon 6s Gen 4",
-    "Bateria: bateria de 8340 mAh com carregamento de 67 W",
-    "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
-    "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
-    "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
-    "Resistência a poeira e água IP66/IP68",
-    "Vidro Corning Gorilla Glass Victus 2",
-    "Produto original Xiaomi"
+    "Tela: AMOLED 120Hz 6.83\" Full HD+ (1280 x 2772)",
+    "Chipset: Qualcomm SM6435-AA Snapdragon 6s Gen 4",
+    "Câmera traseira: Dupla 50 MP + 8 MP",
+    "Câmera frontal: Única 16 MP",
+    "Bateria: 8340 mAh",
+    "Sistema: Android 16 HyperOS 3",
+    "Produto novo e original, com lacre"
   ],
   "isFeatured": false,
-  "batchCodeInfo": "Produto original Xiaomi, importado com procedência garantida.",
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
   "variants": [
     {
-      "id": "xm-redmi-note-17-pro-5g-preto",
-      "label": "Preto",
-      "price": 1.0,
+      "id": "xm-redmi-note-17-pro-5g-128gb-6gb-preto",
+      "label": "128GB/6GB · Preto",
+      "price": 1571.9,
       "images": [
-        "/catalog/xiaomi/redmi-note-17-pro-5g/preto.webp"
+        "/catalog/phones/xm-redmi-note-17-pro-5g/128gb-6gb-preto-1.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/128gb-6gb-preto-2.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/128gb-6gb-preto-3.webp"
       ],
-      "description": "Xiaomi Redmi Note 17 Pro 5G na cor Preto. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
+      "description": "Xiaomi Redmi Note 17 Pro 5G 128GB/6GB na cor Preto. Conta com tela AMOLED 120Hz de 6.83\", chipset Qualcomm SM6435-AA Snapdragon 6s Gen 4, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 16 MP, bateria de 8340 mAh. Sistema: Android 16 HyperOS 3.",
       "specs": [
+        "Memória: 128GB/6GB",
         "Cor: Preto",
-        "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
-        "Processador: Snapdragon 6s Gen 4",
-        "Bateria: bateria de 8340 mAh com carregamento de 67 W",
-        "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
-        "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
-        "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
-        "Resistência a poeira e água IP66/IP68",
-        "Vidro Corning Gorilla Glass Victus 2",
-        "Produto original Xiaomi"
+        "Tela: AMOLED 120Hz 6.83\" Full HD+ (1280 x 2772)",
+        "Chipset: Qualcomm SM6435-AA Snapdragon 6s Gen 4",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 8340 mAh",
+        "Sistema: Android 16 HyperOS 3",
+        "Produto novo e original, com lacre"
       ]
     },
     {
-      "id": "xm-redmi-note-17-pro-5g-laranja-acetinado",
-      "label": "Laranja Acetinado",
-      "price": 1.0,
+      "id": "xm-redmi-note-17-pro-5g-128gb-6gb-roxo",
+      "label": "128GB/6GB · Roxo",
+      "price": 1571.9,
       "images": [
-        "/catalog/xiaomi/redmi-note-17-pro-5g/laranja-acetinado.webp"
+        "/catalog/phones/xm-redmi-note-17-pro-5g/128gb-6gb-roxo-1.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/128gb-6gb-roxo-2.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/128gb-6gb-roxo-3.webp"
       ],
-      "description": "Xiaomi Redmi Note 17 Pro 5G na cor Laranja Acetinado. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
+      "description": "Xiaomi Redmi Note 17 Pro 5G 128GB/6GB na cor Roxo. Conta com tela AMOLED 120Hz de 6.83\", chipset Qualcomm SM6435-AA Snapdragon 6s Gen 4, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 16 MP, bateria de 8340 mAh. Sistema: Android 16 HyperOS 3.",
       "specs": [
-        "Cor: Laranja Acetinado",
-        "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
-        "Processador: Snapdragon 6s Gen 4",
-        "Bateria: bateria de 8340 mAh com carregamento de 67 W",
-        "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
-        "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
-        "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
-        "Resistência a poeira e água IP66/IP68",
-        "Vidro Corning Gorilla Glass Victus 2",
-        "Produto original Xiaomi"
-      ]
-    },
-    {
-      "id": "xm-redmi-note-17-pro-5g-roxo",
-      "label": "Roxo",
-      "price": 1.0,
-      "images": [
-        "/catalog/xiaomi/redmi-note-17-pro-5g/roxo.webp"
-      ],
-      "description": "Xiaomi Redmi Note 17 Pro 5G na cor Roxo. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
-      "specs": [
+        "Memória: 128GB/6GB",
         "Cor: Roxo",
-        "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
-        "Processador: Snapdragon 6s Gen 4",
-        "Bateria: bateria de 8340 mAh com carregamento de 67 W",
-        "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
-        "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
-        "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
-        "Resistência a poeira e água IP66/IP68",
-        "Vidro Corning Gorilla Glass Victus 2",
-        "Produto original Xiaomi"
+        "Tela: AMOLED 120Hz 6.83\" Full HD+ (1280 x 2772)",
+        "Chipset: Qualcomm SM6435-AA Snapdragon 6s Gen 4",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 8340 mAh",
+        "Sistema: Android 16 HyperOS 3",
+        "Produto novo e original, com lacre"
       ]
     },
     {
-      "id": "xm-redmi-note-17-pro-5g-azul-celeste",
-      "label": "Azul Celeste",
-      "price": 1.0,
+      "id": "xm-redmi-note-17-pro-5g-256gb-8gb-azul",
+      "label": "256GB/8GB · Azul",
+      "price": 1613.9,
       "images": [
-        "/catalog/xiaomi/redmi-note-17-pro-5g/azul-celeste.webp"
+        "/catalog/phones/xm-redmi-note-17-pro-5g/256gb-8gb-azul-1.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/256gb-8gb-azul-2.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/256gb-8gb-azul-3.webp"
       ],
-      "description": "Xiaomi Redmi Note 17 Pro 5G na cor Azul Celeste. Conta com tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz, processador Snapdragon 6s Gen 4, bateria de 8340 mAh com carregamento de 67 W, câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP. Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB.",
+      "description": "Xiaomi Redmi Note 17 Pro 5G 256GB/8GB na cor Azul. Conta com tela AMOLED 120Hz de 6.8\", chipset Qualcomm SM6435-AA Snapdragon 6s Gen 4, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 16 MP, bateria de 9000 mAh. Sistema: Android 16.",
       "specs": [
-        "Cor: Azul Celeste",
-        "Tela: tela AMOLED de 6,83\" com resolução 1,5K e até 120 Hz",
-        "Processador: Snapdragon 6s Gen 4",
-        "Bateria: bateria de 8340 mAh com carregamento de 67 W",
-        "Câmeras: câmera principal de 50 MP com estabilização óptica, ultra-wide de 8 MP e câmera frontal de 16 MP",
-        "Memória: versões de 6 GB + 256 GB e 8 GB + 512 GB",
-        "Dimensões e peso: 163,45 × 78,27 × 8,6 mm, 223 g",
-        "Resistência a poeira e água IP66/IP68",
-        "Vidro Corning Gorilla Glass Victus 2",
-        "Produto original Xiaomi"
+        "Memória: 256GB/8GB",
+        "Cor: Azul",
+        "Tela: AMOLED 120Hz 6.8\" 1.5K (1280 x 2772)",
+        "Chipset: Qualcomm SM6435-AA Snapdragon 6s Gen 4",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 9000 mAh",
+        "Recursos: Resistência a poeira e água IP68/IP69K + Observações + Carregador USA",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-pro-5g-256gb-6gb-preto",
+      "label": "256GB/6GB · Preto",
+      "price": 1831.9,
+      "images": [
+        "/catalog/phones/xm-redmi-note-17-pro-5g/256gb-6gb-preto-1.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/256gb-6gb-preto-2.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/256gb-6gb-preto-3.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 Pro 5G 256GB/6GB na cor Preto. Conta com tela AMOLED 120Hz de 6.8\", chipset Qualcomm SM6435-AA Snapdragon 6s Gen 4, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 16 MP, bateria de 9000 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 256GB/6GB",
+        "Cor: Preto",
+        "Tela: AMOLED 120Hz 6.8\" 1.5K (1280 x 2772)",
+        "Chipset: Qualcomm SM6435-AA Snapdragon 6s Gen 4",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 9000 mAh",
+        "Recursos: Resistência a poeira e água IP68/IP69K + Observações + Lacre Pequeno",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-pro-5g-256gb-8gb-preto",
+      "label": "256GB/8GB · Preto",
+      "price": 1904.9,
+      "images": [
+        "/catalog/phones/xm-redmi-note-17-pro-5g/256gb-8gb-preto-1.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/256gb-8gb-preto-2.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/256gb-8gb-preto-3.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 Pro 5G 256GB/8GB na cor Preto. Conta com tela AMOLED 120Hz de 6.8\", chipset Qualcomm SM6435-AA Snapdragon 6s Gen 4, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 16 MP, bateria de 9000 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Preto",
+        "Tela: AMOLED 120Hz 6.8\" 1.5K (1280 x 2772)",
+        "Chipset: Qualcomm SM6435-AA Snapdragon 6s Gen 4",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 9000 mAh",
+        "Recursos: Resistência a poeira e água IP68/IP69K + Observações + Lacre Pequeno",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-pro-5g-512gb-8gb-azul",
+      "label": "512GB/8GB · Azul",
+      "price": 2243.9,
+      "images": [
+        "/catalog/phones/xm-redmi-note-17-pro-5g/512gb-8gb-azul-1.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/512gb-8gb-azul-2.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/512gb-8gb-azul-3.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 Pro 5G 512GB/8GB na cor Azul. Conta com tela AMOLED 120Hz de 6.83\", chipset Qualcomm SM6435-AA Snapdragon 6s Gen 4, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 16 MP, bateria de 8340 mAh. Sistema: Android 16 HyperOS 3.",
+      "specs": [
+        "Memória: 512GB/8GB",
+        "Cor: Azul",
+        "Tela: AMOLED 120Hz 6.83\" Full HD+ (1280 x 2772)",
+        "Chipset: Qualcomm SM6435-AA Snapdragon 6s Gen 4",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 8340 mAh",
+        "Sistema: Android 16 HyperOS 3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-pro-5g-512gb-8gb-laranja",
+      "label": "512GB/8GB · Laranja",
+      "price": 2243.9,
+      "images": [
+        "/catalog/phones/xm-redmi-note-17-pro-5g/512gb-8gb-laranja-1.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/512gb-8gb-laranja-2.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/512gb-8gb-laranja-3.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 Pro 5G 512GB/8GB na cor Laranja. Conta com tela AMOLED 120Hz de 6.83\", chipset Qualcomm SM6435-AA Snapdragon 6s Gen 4, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 16 MP, bateria de 8340 mAh. Sistema: Android 16 HyperOS 3.",
+      "specs": [
+        "Memória: 512GB/8GB",
+        "Cor: Laranja",
+        "Tela: AMOLED 120Hz 6.83\" Full HD+ (1280 x 2772)",
+        "Chipset: Qualcomm SM6435-AA Snapdragon 6s Gen 4",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 8340 mAh",
+        "Sistema: Android 16 HyperOS 3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-redmi-note-17-pro-5g-512gb-8gb-preto",
+      "label": "512GB/8GB · Preto",
+      "price": 2243.9,
+      "images": [
+        "/catalog/phones/xm-redmi-note-17-pro-5g/512gb-8gb-preto-1.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/512gb-8gb-preto-2.webp",
+        "/catalog/phones/xm-redmi-note-17-pro-5g/512gb-8gb-preto-3.webp"
+      ],
+      "description": "Xiaomi Redmi Note 17 Pro 5G 512GB/8GB na cor Preto. Conta com tela AMOLED 120Hz de 6.8\", chipset Qualcomm SM6435-AA Snapdragon 6s Gen 4, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 16 MP, bateria de 8340 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 512GB/8GB",
+        "Cor: Preto",
+        "Tela: AMOLED 120Hz 6.8\" 1.5K (1280 x 2772)",
+        "Chipset: Qualcomm SM6435-AA Snapdragon 6s Gen 4",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 16 MP",
+        "Bateria: 8340 mAh",
+        "Recursos: Resistência a poeira e água IP68/IP69K",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
       ]
     }
   ]

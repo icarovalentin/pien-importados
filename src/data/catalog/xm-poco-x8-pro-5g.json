@@ -1,0 +1,214 @@
+{
+  "id": "xm-poco-x8-pro-5g",
+  "name": "Xiaomi POCO X8 Pro 5G",
+  "brand": "Xiaomi",
+  "category": "smartphones",
+  "categoryLabel": "Smartphones",
+  "price": 2293.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-amarelo-1.webp",
+    "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-amarelo-2.webp",
+    "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-amarelo-3.webp"
+  ],
+  "description": "Xiaomi POCO X8 Pro 5G 256GB/8GB na cor Amarelo. Conta com tela AMOLED 120Hz de 6.5\", chipset Mediatek Dimensity 8500 Ultra, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 20 MP, bateria de 6500 mAh. Sistema: Android 16.",
+  "specs": [
+    "Memória: 256GB/8GB",
+    "Cor: Amarelo",
+    "Tela: AMOLED 120Hz 6.5\" 1.5K (1268 x 2756)",
+    "Chipset: Mediatek Dimensity 8500 Ultra",
+    "Câmera traseira: Dupla 50 MP + 8 MP",
+    "Câmera frontal: Única 20 MP",
+    "Bateria: 6500 mAh",
+    "Recursos: Resistência a poeira e água IP68/IP69K + Observações + Carregador USA",
+    "Sistema: Android 16",
+    "Produto novo e original, com lacre"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Produto original Xiaomi, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "xm-poco-x8-pro-5g-256gb-8gb-amarelo",
+      "label": "256GB/8GB · Amarelo",
+      "price": 2293.9,
+      "images": [
+        "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-amarelo-1.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-amarelo-2.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-amarelo-3.webp"
+      ],
+      "description": "Xiaomi POCO X8 Pro 5G 256GB/8GB na cor Amarelo. Conta com tela AMOLED 120Hz de 6.5\", chipset Mediatek Dimensity 8500 Ultra, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 20 MP, bateria de 6500 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Amarelo",
+        "Tela: AMOLED 120Hz 6.5\" 1.5K (1268 x 2756)",
+        "Chipset: Mediatek Dimensity 8500 Ultra",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 20 MP",
+        "Bateria: 6500 mAh",
+        "Recursos: Resistência a poeira e água IP68/IP69K + Observações + Carregador USA",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-x8-pro-5g-256gb-8gb-branco",
+      "label": "256GB/8GB · Branco",
+      "price": 2376.9,
+      "images": [
+        "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-branco-1.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-branco-2.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/256gb-8gb-branco-3.webp"
+      ],
+      "description": "Xiaomi POCO X8 Pro 5G 256GB/8GB na cor Branco. Conta com tela AMOLED de 6.59\", chipset Mediatek Dimensity 8500 Ultra, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 20 MP, bateria de 6500 mAh. Sistema: Android 16 HyperOS 3.",
+      "specs": [
+        "Memória: 256GB/8GB",
+        "Cor: Branco",
+        "Tela: AMOLED 6.59\" Super HD+ (1268 x 2756)",
+        "Chipset: Mediatek Dimensity 8500 Ultra",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 20 MP",
+        "Bateria: 6500 mAh",
+        "Recursos: HDR10+, Dolby Vision, IP68/IP69 resistência à água e poeira, áudio Hi-Res",
+        "Sistema: Android 16 HyperOS 3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-x8-pro-5g-512gb-8gb-verde",
+      "label": "512GB/8GB · Verde",
+      "price": 2432.9,
+      "images": [
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-8gb-verde-1.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-8gb-verde-2.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-8gb-verde-3.webp"
+      ],
+      "description": "Xiaomi POCO X8 Pro 5G 512GB/8GB na cor Verde. Conta com tela AMOLED de 6.59\", chipset Mediatek Dimensity 8500 Ultra, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 20 MP, bateria de 6500 mAh. Sistema: Android 16 HyperOS 3.",
+      "specs": [
+        "Memória: 512GB/8GB",
+        "Cor: Verde",
+        "Tela: AMOLED 6.59\" 1.5K (1268 x 2756)",
+        "Chipset: Mediatek Dimensity 8500 Ultra",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 20 MP",
+        "Bateria: 6500 mAh",
+        "Sistema: Android 16 HyperOS 3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-x8-pro-5g-512gb-12gb-amarelo",
+      "label": "512GB/12GB · Amarelo",
+      "price": 2571.9,
+      "images": [
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-amarelo-1.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-amarelo-2.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-amarelo-3.webp"
+      ],
+      "description": "Xiaomi POCO X8 Pro 5G 512GB/12GB na cor Amarelo. Conta com tela AMOLED 120Hz de 6.5\", chipset Mediatek Dimensity 8500 Ultra, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 20 MP, bateria de 6500 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Amarelo",
+        "Tela: AMOLED 120Hz 6.5\" 1.5K (1268 x 2756)",
+        "Chipset: Mediatek Dimensity 8500 Ultra",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 20 MP",
+        "Bateria: 6500 mAh",
+        "Recursos: Resistência a poeira e água IP68/IP69K + Observações + Carregador USA",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-x8-pro-5g-512gb-12gb-verde",
+      "label": "512GB/12GB · Verde",
+      "price": 2589.9,
+      "images": [
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-verde-1.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-verde-2.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-verde-3.webp"
+      ],
+      "description": "Xiaomi POCO X8 Pro 5G 512GB/12GB na cor Verde. Conta com tela AMOLED 120Hz de 6.5\", chipset Mediatek Dimensity 8500 Ultra, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 20 MP, bateria de 6500 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Verde",
+        "Tela: AMOLED 120Hz 6.5\" Full HD+ (1268 x 2756)",
+        "Chipset: Mediatek Dimensity 8500 Ultra",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 20 MP",
+        "Bateria: 6500 mAh",
+        "Recursos: Resistente a poeira e água IP68 + Observações + Carregador Brasil*",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-x8-pro-5g-512gb-12gb-vermelho-dourado",
+      "label": "512GB/12GB · Vermelho, dourado",
+      "price": 2619.9,
+      "images": [
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-vermelho-dourado-1.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-vermelho-dourado-2.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-vermelho-dourado-3.webp"
+      ],
+      "description": "Xiaomi POCO X8 Pro 5G 512GB/12GB na cor Vermelho, dourado. Conta com tela AMOLED 144 Hz de 6.59\", chipset Qualcomm Snapdragon 8 Gen 4, câmera traseira Tripla 50 MP (OIS) e 50 MP e 50 MP, câmera frontal Única 32 MP, bateria de 5100 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Vermelho, dourado",
+        "Tela: AMOLED 144 Hz 6.59\" 1.5K",
+        "Chipset: Qualcomm Snapdragon 8 Gen 4",
+        "Câmera traseira: Tripla 50 MP (OIS) + 50 MP + 50 MP",
+        "Câmera frontal: Única 32 MP",
+        "Bateria: 5100 mAh",
+        "Recursos: IP68, WildBoost Optimization + Peso bruto + 190 g",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-x8-pro-5g-512gb-12gb-preto",
+      "label": "512GB/12GB · Preto",
+      "price": 2630.9,
+      "images": [
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-preto-1.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-preto-2.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-preto-3.webp"
+      ],
+      "description": "Xiaomi POCO X8 Pro 5G 512GB/12GB na cor Preto. Conta com tela AMOLED de 6.59\", chipset Mediatek Dimensity 8500 Ultra, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 20 MP, bateria de 6500 mAh. Sistema: Android 16 HyperOS 3.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Preto",
+        "Tela: AMOLED 6.59\" Super HD+ (1268 x 2756)",
+        "Chipset: Mediatek Dimensity 8500 Ultra",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 20 MP",
+        "Bateria: 6500 mAh",
+        "Sistema: Android 16 HyperOS 3",
+        "Produto novo e original, com lacre"
+      ]
+    },
+    {
+      "id": "xm-poco-x8-pro-5g-512gb-12gb-preto-versao-eua",
+      "label": "512GB/12GB · Preto (versão EUA)",
+      "price": 2630.9,
+      "images": [
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-preto-versao-eua-1.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-preto-versao-eua-2.webp",
+        "/catalog/phones/xm-poco-x8-pro-5g/512gb-12gb-preto-versao-eua-3.webp"
+      ],
+      "description": "Xiaomi POCO X8 Pro 5G 512GB/12GB na cor Preto. Conta com tela AMOLED 120Hz de 6.5\", chipset Mediatek Dimensity 8500 Ultra, câmera traseira Dupla 50 MP e 8 MP, câmera frontal Única 20 MP, bateria de 6500 mAh. Sistema: Android 16.",
+      "specs": [
+        "Memória: 512GB/12GB",
+        "Cor: Preto",
+        "Tela: AMOLED 120Hz 6.5\" 1.5K (1268 x 2756)",
+        "Chipset: Mediatek Dimensity 8500 Ultra",
+        "Câmera traseira: Dupla 50 MP + 8 MP",
+        "Câmera frontal: Única 20 MP",
+        "Bateria: 6500 mAh",
+        "Recursos: Resistente a poeira e água IP68/IP69K + Observações + Carregador USA*",
+        "Sistema: Android 16",
+        "Produto novo e original, com lacre"
+      ]
+    }
+  ]
+}

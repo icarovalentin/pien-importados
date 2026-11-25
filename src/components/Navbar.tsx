@@ -18,6 +18,7 @@ interface NavbarProps {
 const NAV_DEPARTMENTS: { id: CategoryType; label: string }[] = [
   { id: 'todos', label: 'Novidades' },
   { id: 'perfumes', label: 'Perfumaria' },
+  { id: 'arabes', label: 'Perfumes Árabes' },
   { id: 'eletronicos', label: 'Eletrônicos' },
   { id: 'smartphones', label: 'Smartphones' },
   { id: 'acessorios', label: 'Tech & Acessórios' },

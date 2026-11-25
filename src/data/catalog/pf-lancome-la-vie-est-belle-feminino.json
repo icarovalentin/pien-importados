@@ -1,0 +1,53 @@
+{
+  "id": "pf-lancome-la-vie-est-belle-feminino",
+  "name": "Lancôme La Vie Est Belle Feminino",
+  "brand": "Lancôme",
+  "category": "perfumes",
+  "categoryLabel": "Perfumaria",
+  "price": 465.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lancome-la-vie-est-belle-feminino/la-vie-est-belle-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-lancome-la-vie-est-belle-feminino/la-vie-est-belle-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-lancome-la-vie-est-belle-feminino/la-vie-est-belle-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "Lancôme La Vie Est Belle, Eau de Parfum 100ml. Perfume feminino de família olfativa floral frutado gourmand. Notas de topo: Groselha Preta e Pêra; coração: Íris, Jasmim e Flor de Laranjeira; fundo: Pralinê, Baunilha, Patchouli e Fava Tonka.",
+  "specs": [
+    "Edição: La Vie Est Belle",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Floral Frutado Gourmand",
+    "Notas de topo: Groselha Preta e Pêra",
+    "Notas de coração: Íris, Jasmim e Flor de Laranjeira",
+    "Notas de fundo: Pralinê, Baunilha, Patchouli e Fava Tonka",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Lancôme, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lancome-la-vie-est-belle-feminino-la-vie-est-belle-eau-de-parfum-100ml",
+      "label": "La Vie Est Belle · Eau de Parfum · 100ml",
+      "price": 465.9,
+      "images": [
+        "/catalog/perfumes/pf-lancome-la-vie-est-belle-feminino/la-vie-est-belle-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lancome-la-vie-est-belle-feminino/la-vie-est-belle-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lancome-la-vie-est-belle-feminino/la-vie-est-belle-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lancôme La Vie Est Belle, Eau de Parfum 100ml. Perfume feminino de família olfativa floral frutado gourmand. Notas de topo: Groselha Preta e Pêra; coração: Íris, Jasmim e Flor de Laranjeira; fundo: Pralinê, Baunilha, Patchouli e Fava Tonka.",
+      "specs": [
+        "Edição: La Vie Est Belle",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Floral Frutado Gourmand",
+        "Notas de topo: Groselha Preta e Pêra",
+        "Notas de coração: Íris, Jasmim e Flor de Laranjeira",
+        "Notas de fundo: Pralinê, Baunilha, Patchouli e Fava Tonka",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

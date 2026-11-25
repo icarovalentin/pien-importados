@@ -1,0 +1,75 @@
+{
+  "id": "pf-maison-alhambra-jean-lowe-masculino",
+  "name": "Maison Alhambra Jean Lowe Masculino",
+  "brand": "MAISON",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 102.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/summer-vibes-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/summer-vibes-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/summer-vibes-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "MAISON Summer Vibes, Eau de Parfum 100ml. Perfume masculino de família olfativa cítrico aromático frutado. Notas de topo: Groselha preta, coentro, hortelã, laranja, cidra, limão; coração: Rosa de maio, sementes de cenoura, damasco, manjericão; fundo: Figo, tâmaras, ambreta.",
+  "specs": [
+    "Edição: Summer Vibes",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Cítrico Aromático Frutado",
+    "Notas de topo: Groselha preta, coentro, hortelã, laranja, cidra, limão",
+    "Notas de coração: Rosa de maio, sementes de cenoura, damasco, manjericão",
+    "Notas de fundo: Figo, tâmaras, ambreta",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original MAISON, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-maison-alhambra-jean-lowe-masculino-summer-vibes-eau-de-parfum-100ml",
+      "label": "Summer Vibes · Eau de Parfum · 100ml",
+      "price": 102.9,
+      "images": [
+        "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/summer-vibes-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/summer-vibes-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/summer-vibes-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "MAISON Summer Vibes, Eau de Parfum 100ml. Perfume masculino de família olfativa cítrico aromático frutado. Notas de topo: Groselha preta, coentro, hortelã, laranja, cidra, limão; coração: Rosa de maio, sementes de cenoura, damasco, manjericão; fundo: Figo, tâmaras, ambreta.",
+      "specs": [
+        "Edição: Summer Vibes",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Cítrico Aromático Frutado",
+        "Notas de topo: Groselha preta, coentro, hortelã, laranja, cidra, limão",
+        "Notas de coração: Rosa de maio, sementes de cenoura, damasco, manjericão",
+        "Notas de fundo: Figo, tâmaras, ambreta",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-maison-alhambra-jean-lowe-masculino-jean-lowe-summer-vibes-eau-de-parfum-100ml",
+      "label": "Jean Lowe Summer Vibes · Eau de Parfum · 100ml",
+      "price": 115.9,
+      "images": [
+        "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/jean-lowe-summer-vibes-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/jean-lowe-summer-vibes-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-maison-alhambra-jean-lowe-masculino/jean-lowe-summer-vibes-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "MAISON Jean Lowe Summer Vibes, Eau de Parfum 100ml. Perfume masculino de família olfativa oriental amadeirado fresco. Notas de topo: Toranja, Gengibre e Bergamota; coração: Alecrim, Sálvia Esclaréia, Gerânio e Notas Aquáticas; fundo: Ambroxan, Sândalo e Ládano.",
+      "specs": [
+        "Edição: Jean Lowe Summer Vibes",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Oriental Amadeirado Fresco",
+        "Notas de topo: Toranja, Gengibre e Bergamota",
+        "Notas de coração: Alecrim, Sálvia Esclaréia, Gerânio e Notas Aquáticas",
+        "Notas de fundo: Ambroxan, Sândalo e Ládano",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

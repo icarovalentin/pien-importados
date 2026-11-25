@@ -1,0 +1,140 @@
+{
+  "id": "pf-lattafa-yara-feminino",
+  "name": "Lattafa Yara Feminino",
+  "brand": "Lattafa",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 27.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lattafa-yara-feminino/yara-eau-de-parfum-50ml-1.webp",
+    "/catalog/perfumes/pf-lattafa-yara-feminino/yara-eau-de-parfum-50ml-2.webp",
+    "/catalog/perfumes/pf-lattafa-yara-feminino/yara-eau-de-parfum-50ml-3.webp"
+  ],
+  "description": "Lattafa Yara, Eau de Parfum 50ml. Perfume feminino de família olfativa oriental baunilha. Notas de topo: Orquídea, Heliotrópio e Tangerina; coração: Acorde Gourmand e Frutas Tropicais; fundo: Baunilha, Almíscar e Sândalo.",
+  "specs": [
+    "Edição: Yara",
+    "Concentração: Eau de Parfum",
+    "Volume: 50 ml",
+    "Família olfativa: Oriental Baunilha",
+    "Notas de topo: Orquídea, Heliotrópio e Tangerina",
+    "Notas de coração: Acorde Gourmand e Frutas Tropicais",
+    "Notas de fundo: Baunilha, Almíscar e Sândalo",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original Lattafa, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lattafa-yara-feminino-yara-eau-de-parfum-50ml",
+      "label": "Yara · Eau de Parfum · 50ml",
+      "price": 27.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-eau-de-parfum-50ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-eau-de-parfum-50ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-eau-de-parfum-50ml-3.webp"
+      ],
+      "description": "Lattafa Yara, Eau de Parfum 50ml. Perfume feminino de família olfativa oriental baunilha. Notas de topo: Orquídea, Heliotrópio e Tangerina; coração: Acorde Gourmand e Frutas Tropicais; fundo: Baunilha, Almíscar e Sândalo.",
+      "specs": [
+        "Edição: Yara",
+        "Concentração: Eau de Parfum",
+        "Volume: 50 ml",
+        "Família olfativa: Oriental Baunilha",
+        "Notas de topo: Orquídea, Heliotrópio e Tangerina",
+        "Notas de coração: Acorde Gourmand e Frutas Tropicais",
+        "Notas de fundo: Baunilha, Almíscar e Sândalo",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-lattafa-yara-feminino-tous-eau-de-parfum-100ml",
+      "label": "Tous · Eau de Parfum · 100ml",
+      "price": 99.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-yara-feminino/tous-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/tous-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/tous-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lattafa Tous, Eau de Parfum 100ml. Perfume feminino de família olfativa floral oriental. Notas de topo: Manga, Coco, Maracujá; coração: Jasmim, Heliotrópio, Flor de Laranjeira; fundo: Almíscar, Baunilha, Madeira de Cashmere.",
+      "specs": [
+        "Edição: Tous",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Floral Oriental",
+        "Notas de topo: Manga, Coco, Maracujá",
+        "Notas de coração: Jasmim, Heliotrópio, Flor de Laranjeira",
+        "Notas de fundo: Almíscar, Baunilha, Madeira de Cashmere",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-lattafa-yara-feminino-yara-moi-eau-de-parfum-100ml",
+      "label": "Yara Moi · Eau de Parfum · 100ml",
+      "price": 118.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-moi-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-moi-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-moi-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lattafa Yara Moi, Eau de Parfum 100ml. Notas de topo: Jasmim, Pêssego; coração: Âmbar, Caramelo; fundo: Patchouli, Sândalo.",
+      "specs": [
+        "Edição: Yara Moi",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Notas de topo: Jasmim, Pêssego",
+        "Notas de coração: Âmbar, Caramelo",
+        "Notas de fundo: Patchouli, Sândalo",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-lattafa-yara-feminino-yara-candy-eau-de-parfum-100ml",
+      "label": "Yara Candy · Eau de Parfum · 100ml",
+      "price": 127.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-candy-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-candy-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-candy-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lattafa Yara Candy, Eau de Parfum 100ml. Perfume feminino de família olfativa floral frutal gourmand. Notas de topo: Groselhas negras, Mandarina verde; coração: Strawberry Fizz Candy, Gardenia; fundo: Baunilha, Âmbar, Sândalo, Almíscar.",
+      "specs": [
+        "Edição: Yara Candy",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Floral Frutal Gourmand",
+        "Notas de topo: Groselhas negras, Mandarina verde",
+        "Notas de coração: Strawberry Fizz Candy, Gardenia",
+        "Notas de fundo: Baunilha, Âmbar, Sândalo, Almíscar",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    },
+    {
+      "id": "pf-lattafa-yara-feminino-yara-elixir-eau-de-parfum-100ml",
+      "label": "Yara Elixir · Eau de Parfum · 100ml",
+      "price": 145.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-elixir-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-elixir-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-yara-feminino/yara-elixir-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "Lattafa Yara Elixir, Eau de Parfum 100ml. Perfume feminino de família olfativa oriental baunilha. Notas de topo: S'mores de Morango e Groselha Negra; coração: Jasmin e Flor de Laranjeira; fundo: Baunilha, Caramelo, Âmbar e Almíscar.",
+      "specs": [
+        "Edição: Yara Elixir",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Oriental Baunilha",
+        "Notas de topo: S'mores de Morango e Groselha Negra",
+        "Notas de coração: Jasmin e Flor de Laranjeira",
+        "Notas de fundo: Baunilha, Caramelo, Âmbar e Almíscar",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

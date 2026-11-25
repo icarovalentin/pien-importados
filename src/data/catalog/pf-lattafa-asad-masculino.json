@@ -1,0 +1,53 @@
+{
+  "id": "pf-lattafa-asad-masculino",
+  "name": "Lattafa Asad Masculino",
+  "brand": "LATTAFA",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 118.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-lattafa-asad-masculino/asad-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-lattafa-asad-masculino/asad-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-lattafa-asad-masculino/asad-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "LATTAFA Asad, Eau de Parfum 100ml. Perfume masculino de família olfativa oriental especiado. Notas de topo: Pimenta Preta, Abacaxi e Tabaco; coração: Café, Patchouli e Íris; fundo: Âmbar, Baunilha, Madeiras Secas, Benjoim e Ládano.",
+  "specs": [
+    "Edição: Asad",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Oriental Especiado",
+    "Notas de topo: Pimenta Preta, Abacaxi e Tabaco",
+    "Notas de coração: Café, Patchouli e Íris",
+    "Notas de fundo: Âmbar, Baunilha, Madeiras Secas, Benjoim e Ládano",
+    "Gênero: Masculino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original LATTAFA, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-lattafa-asad-masculino-asad-eau-de-parfum-100ml",
+      "label": "Asad · Eau de Parfum · 100ml",
+      "price": 118.9,
+      "images": [
+        "/catalog/perfumes/pf-lattafa-asad-masculino/asad-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-lattafa-asad-masculino/asad-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-lattafa-asad-masculino/asad-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "LATTAFA Asad, Eau de Parfum 100ml. Perfume masculino de família olfativa oriental especiado. Notas de topo: Pimenta Preta, Abacaxi e Tabaco; coração: Café, Patchouli e Íris; fundo: Âmbar, Baunilha, Madeiras Secas, Benjoim e Ládano.",
+      "specs": [
+        "Edição: Asad",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Oriental Especiado",
+        "Notas de topo: Pimenta Preta, Abacaxi e Tabaco",
+        "Notas de coração: Café, Patchouli e Íris",
+        "Notas de fundo: Âmbar, Baunilha, Madeiras Secas, Benjoim e Ládano",
+        "Gênero: Masculino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "pf-afnan-9am-feminino",
+  "name": "Afnan 9am Feminino",
+  "brand": "AFNAN",
+  "category": "arabes",
+  "categoryLabel": "Perfumes Árabes",
+  "price": 136.9,
+  "status": "encomenda",
+  "deliveryTime": "Sob Encomenda (10 a 15 dias)",
+  "images": [
+    "/catalog/perfumes/pf-afnan-9am-feminino/9am-eau-de-parfum-100ml-1.webp",
+    "/catalog/perfumes/pf-afnan-9am-feminino/9am-eau-de-parfum-100ml-2.webp",
+    "/catalog/perfumes/pf-afnan-9am-feminino/9am-eau-de-parfum-100ml-3.webp"
+  ],
+  "description": "AFNAN 9AM, Eau de Parfum 100ml. Perfume feminino de família olfativa ámbar floral. Notas de topo: Mandarina, Bergamota, Toranja (Pomelo) e Cardamomo; coração: Framboesa, Groselha Preta e Maçã Verde; fundo: Almíscar, Âmbar, Sândalo e Cedro.",
+  "specs": [
+    "Edição: 9AM",
+    "Concentração: Eau de Parfum",
+    "Volume: 100 ml",
+    "Família olfativa: Ámbar Floral",
+    "Notas de topo: Mandarina, Bergamota, Toranja (Pomelo) e Cardamomo",
+    "Notas de coração: Framboesa, Groselha Preta e Maçã Verde",
+    "Notas de fundo: Almíscar, Âmbar, Sândalo e Cedro",
+    "Gênero: Feminino",
+    "Produto novo e lacrado"
+  ],
+  "isFeatured": false,
+  "batchCodeInfo": "Perfume original AFNAN, novo e lacrado, importado com procedência garantida.",
+  "variants": [
+    {
+      "id": "pf-afnan-9am-feminino-9am-eau-de-parfum-100ml",
+      "label": "9AM · Eau de Parfum · 100ml",
+      "price": 136.9,
+      "images": [
+        "/catalog/perfumes/pf-afnan-9am-feminino/9am-eau-de-parfum-100ml-1.webp",
+        "/catalog/perfumes/pf-afnan-9am-feminino/9am-eau-de-parfum-100ml-2.webp",
+        "/catalog/perfumes/pf-afnan-9am-feminino/9am-eau-de-parfum-100ml-3.webp"
+      ],
+      "description": "AFNAN 9AM, Eau de Parfum 100ml. Perfume feminino de família olfativa ámbar floral. Notas de topo: Mandarina, Bergamota, Toranja (Pomelo) e Cardamomo; coração: Framboesa, Groselha Preta e Maçã Verde; fundo: Almíscar, Âmbar, Sândalo e Cedro.",
+      "specs": [
+        "Edição: 9AM",
+        "Concentração: Eau de Parfum",
+        "Volume: 100 ml",
+        "Família olfativa: Ámbar Floral",
+        "Notas de topo: Mandarina, Bergamota, Toranja (Pomelo) e Cardamomo",
+        "Notas de coração: Framboesa, Groselha Preta e Maçã Verde",
+        "Notas de fundo: Almíscar, Âmbar, Sândalo e Cedro",
+        "Gênero: Feminino",
+        "Produto novo e lacrado"
+      ]
+    }
+  ]
+}
