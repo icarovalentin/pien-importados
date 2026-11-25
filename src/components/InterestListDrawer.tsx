@@ -62,7 +62,7 @@ export function InterestListDrawer() {
             ) : (
               items.map((item) => (
                 <div key={item.key} className="flex items-start gap-4 py-4">
-                  <div className="relative w-16 h-20 bg-white shrink-0 overflow-hidden">
+                  <div className="relative w-16 h-20 bg-[#fcfbf8] dark:bg-white shrink-0 overflow-hidden">
                     <Image
                       src={
                         item.product.variants?.find((v) => v.label === item.variantLabel)?.images?.[0] ||
@@ -71,7 +71,7 @@ export function InterestListDrawer() {
                       alt={item.product.name}
                       fill
                       sizes="64px"
-                      className="object-contain bg-white"
+                      className="object-contain mix-blend-multiply dark:mix-blend-normal brightness-[1.05]"
                     />
                   </div>
 

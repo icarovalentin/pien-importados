@@ -50,14 +50,14 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
       className="group flex flex-col cursor-pointer space-y-3"
     >
       {/* Fotografia limpa sem corte */}
-      <div className="relative w-full aspect-[3/4] bg-white border border-[#ece7dc] dark:border-dark-800 overflow-hidden">
+      <div className="relative w-full aspect-[3/4] bg-[#fcfbf8] dark:bg-white border border-[#ece7dc] dark:border-dark-800 overflow-hidden">
         <Image
           src={product.images[0]}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           quality={90}
-          className="object-contain object-center p-2 group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+          className="object-contain object-center p-2 mix-blend-multiply dark:mix-blend-normal brightness-[1.05] group-hover:scale-[1.04] transition-transform duration-700 ease-out"
         />
 
         {/* Botão discreto de lista/opções no canto inferior direito */}
