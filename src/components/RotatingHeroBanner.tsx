@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Product } from '@/types/product';
+import { DEFAULT_PRODUCT_IMAGE } from '@/config/site';
 import { formatCurrency, getProductWhatsAppUrl } from '@/utils/whatsapp';
 
 const DEFAULT_BRANDS = ['Apple', 'JBL', "Victoria's Secret", 'Xiaomi'];
@@ -76,6 +77,11 @@ export function RotatingHeroBanner({
     }
   }, [currentSlide, totalSlides]);
 
+  const activeSlideId = slides[currentSlide]?.id;
+  useEffect(() => {
+    setHeroFit('cover');
+  }, [activeSlideId]);
+
   const nextSlide = () => {
     if (totalSlides <= 1) return;
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -102,7 +108,15 @@ export function RotatingHeroBanner({
 
   const slide = slides[currentSlide] || slides[0];
   const isPronta = slide.status === 'pronta_entrega';
-  const whatsappUrl = getProductWhatsAppUrl(slide);
+  const hasMultipleVariants = Boolean(slide.variants && slide.variants.length > 1);
+  const defaultVariant = slide.variants && slide.variants.length > 0 ? slide.variants[0] : undefined;
+  const variantPrices = (slide.variants || []).map((v) => v.price ?? slide.price);
+  const hasPriceRange = variantPrices.length > 1 && new Set(variantPrices).size > 1;
+  const displayPrice = hasPriceRange
+    ? Math.min(...variantPrices)
+    : defaultVariant?.price ?? slide.price;
+  const whatsappUrl = getProductWhatsAppUrl(slide, defaultVariant);
+  const slideImage = slide.images?.[0] || DEFAULT_PRODUCT_IMAGE;
 
   return (
     <section
@@ -121,7 +135,7 @@ export function RotatingHeroBanner({
         >
           <Image
             key={slide.id}
-            src={slide.images[0]}
+            src={slideImage}
             alt={slide.name}
             fill
             priority
@@ -193,9 +207,14 @@ export function RotatingHeroBanner({
               {slide.description}
             </p>
 
-            <div className="flex items-baseline gap-3 pt-1">
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5 pt-1">
+              {hasPriceRange && (
+                <span className="w-full text-[10px] uppercase tracking-[0.12em] text-zinc-500 dark:text-zinc-400">
+                  a partir de
+                </span>
+              )}
               <span className="text-xl sm:text-2xl font-semibold text-[#141414] dark:text-white">
-                {formatCurrency(slide.price)}
+                {formatCurrency(displayPrice)}
               </span>
               {slide.originalPrice && (
                 <span className="text-sm text-zinc-400 line-through">
@@ -205,14 +224,24 @@ export function RotatingHeroBanner({
             </div>
 
             <div className="pt-1 sm:pt-2 flex items-center gap-2 sm:gap-3">
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 sm:flex-none text-center px-4 py-3 sm:px-6 bg-[#141414] hover:bg-[#2c2c2c] dark:bg-gold-500 dark:hover:bg-gold-400 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.18em] font-semibold transition-colors"
-              >
-                Pedir Agora
-              </a>
+              {hasMultipleVariants ? (
+                <button
+                  type="button"
+                  onClick={() => onOpenProduct(slide)}
+                  className="flex-1 sm:flex-none text-center px-4 py-3 sm:px-6 bg-[#141414] hover:bg-[#2c2c2c] dark:bg-gold-500 dark:hover:bg-gold-400 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.18em] font-semibold transition-colors"
+                >
+                  Escolher Opção
+                </button>
+              ) : (
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 sm:flex-none text-center px-4 py-3 sm:px-6 bg-[#141414] hover:bg-[#2c2c2c] dark:bg-gold-500 dark:hover:bg-gold-400 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.18em] font-semibold transition-colors"
+                >
+                  Pedir Agora
+                </a>
+              )}
 
               <button
                 onClick={() => onOpenProduct(slide)}

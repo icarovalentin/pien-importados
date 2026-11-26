@@ -1,11 +1,13 @@
 import crypto from 'crypto';
 import { cookies } from 'next/headers';
+import { isSessionJtiRevoked, revokeSessionJti } from '@/lib/rate-limit';
 
 export const ADMIN_COOKIE_NAME = 'pien_admin_session';
-const SESSION_TTL_SECONDS = 60 * 60 * 12; // 12 horas
+const SESSION_TTL_SECONDS = 60 * 60 * 8; // 8 horas
 
 interface SessionPayload {
   role: 'admin';
+  jti?: string;
   iat: number;
   exp: number;
 }
@@ -19,7 +21,6 @@ export function getServerAdminPassword(): string | null {
   if (!pwd) {
     return null;
   }
-  // Variáveis coladas na Vercel podem carregar espaço ou quebra de linha nas pontas.
   const trimmed = pwd.trim();
   if (trimmed.length === 0) {
     return null;
@@ -40,11 +41,8 @@ export function getSessionSecret(): string | null {
 
 function getSigningKey(): Buffer | null {
   const secret = getSessionSecret();
-  // Em produção, a chave vem exclusivamente do segredo independente.
-  // Em desenvolvimento, aceita a senha como fallback quando o segredo falta.
-  const baseSecret = secret ?? (
-    process.env.NODE_ENV === 'production' ? null : getServerAdminPassword()
-  );
+  const baseSecret =
+    secret ?? (process.env.NODE_ENV === 'production' ? null : getServerAdminPassword());
 
   if (!baseSecret) {
     return null;
@@ -76,7 +74,7 @@ export function verifyAdminPassword(inputPassword: unknown): boolean {
 }
 
 /**
- * Cria um token assinado com HMAC-SHA256 para o cookie HttpOnly.
+ * Cria um token assinado com HMAC-SHA256 e identificador único (jti) para permitir revogação no logout.
  */
 export function createSessionToken(): string | null {
   const key = getSigningKey();
@@ -85,6 +83,7 @@ export function createSessionToken(): string | null {
   const now = Math.floor(Date.now() / 1000);
   const payload: SessionPayload = {
     role: 'admin',
+    jti: crypto.randomBytes(16).toString('hex'),
     iat: now,
     exp: now + SESSION_TTL_SECONDS,
   };
@@ -98,20 +97,17 @@ export function createSessionToken(): string | null {
   return `${encodedPayload}.${signature}`;
 }
 
-/**
- * Valida a assinatura HMAC e a expiração de um token de sessão.
- */
-export function verifySessionToken(token: string | undefined): boolean {
-  if (!token) return false;
+function parseVerifiedPayload(token: string | undefined): SessionPayload | null {
+  if (!token) return null;
 
   const key = getSigningKey();
-  if (!key) return false;
+  if (!key) return null;
 
   const parts = token.split('.');
-  if (parts.length !== 2) return false;
+  if (parts.length !== 2) return null;
 
   const [encodedPayload, providedSig] = parts;
-  if (!encodedPayload || !providedSig) return false;
+  if (!encodedPayload || !providedSig) return null;
 
   const expectedSig = crypto
     .createHmac('sha256', key)
@@ -122,11 +118,11 @@ export function verifySessionToken(token: string | undefined): boolean {
   const expectedBuf = Buffer.from(expectedSig);
 
   if (providedBuf.length !== expectedBuf.length) {
-    return false;
+    return null;
   }
 
   if (!crypto.timingSafeEqual(providedBuf, expectedBuf)) {
-    return false;
+    return null;
   }
 
   try {
@@ -135,29 +131,62 @@ export function verifySessionToken(token: string | undefined): boolean {
     ) as SessionPayload;
 
     const now = Math.floor(Date.now() / 1000);
-    return parsed.role === 'admin' && typeof parsed.exp === 'number' && parsed.exp > now;
+    if (parsed.role !== 'admin' || typeof parsed.exp !== 'number' || parsed.exp <= now) {
+      return null;
+    }
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Valida a assinatura HMAC, expiração e revogação de um token de sessão.
+ */
+export async function verifySessionToken(token: string | undefined): Promise<boolean> {
+  const parsed = parseVerifiedPayload(token);
+  if (!parsed) return false;
+  if (parsed.jti && (await isSessionJtiRevoked(parsed.jti))) {
+    return false;
+  }
+  return true;
+}
+
+/**
+ * Verifica nos Route Handlers se a requisição possui sessão administrativa válida.
+ */
+export async function isAdminAuthenticated(): Promise<boolean> {
+  try {
+    const cookieStore = await cookies();
+    const token = cookieStore.get(ADMIN_COOKIE_NAME)?.value;
+    return await verifySessionToken(token);
   } catch {
     return false;
   }
 }
 
 /**
- * Verifica nos Route Handlers se a requisição possui sessão administrativa válida.
+ * Revoga a sessão atual ao fazer logout.
  */
-export function isAdminAuthenticated(): boolean {
+export async function revokeCurrentSession(): Promise<void> {
   try {
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const token = cookieStore.get(ADMIN_COOKIE_NAME)?.value;
-    return verifySessionToken(token);
+    const parsed = parseVerifiedPayload(token);
+    if (!parsed?.jti) return;
+    const remaining = parsed.exp - Math.floor(Date.now() / 1000);
+    if (remaining > 0) {
+      await revokeSessionJti(parsed.jti, remaining);
+    }
   } catch {
-    return false;
+    // Segue com limpeza do cookie mesmo se falhar revogação remota
   }
 }
 
 export function getSessionCookieOptions(maxAgeSeconds = SESSION_TTL_SECONDS) {
   return {
     httpOnly: true,
-    sameSite: 'lax' as const,
+    sameSite: 'strict' as const,
     secure: process.env.NODE_ENV === 'production',
     path: '/',
     maxAge: maxAgeSeconds,
@@ -165,18 +194,33 @@ export function getSessionCookieOptions(maxAgeSeconds = SESSION_TTL_SECONDS) {
 }
 
 /**
- * Defesa extra contra CSRF: requisições de escrita devem vir da mesma origem.
+ * Defesa contra CSRF: requisições de escrita devem vir explicitamente da mesma origem.
  */
 export function isSameOrigin(req: Request): boolean {
-  const origin = req.headers.get('origin');
-  if (!origin) {
-    // Navegadores sempre enviam Origin em POST/PUT/DELETE cross-site; ausência = cliente não-navegador
-    return req.headers.get('sec-fetch-site') !== 'cross-site';
+  const rawHost = req.headers.get('x-forwarded-host') || req.headers.get('host');
+  const host = rawHost?.split(',')[0]?.trim().toLowerCase();
+  if (!host) return false;
+
+  const secFetchSite = req.headers.get('sec-fetch-site');
+  if (secFetchSite && secFetchSite !== 'same-origin') {
+    return false;
   }
 
-  const host = req.headers.get('x-forwarded-host') || req.headers.get('host');
+  const origin = req.headers.get('origin');
+  if (origin) {
+    if (origin === 'null') return false;
+    try {
+      return new URL(origin).host.toLowerCase() === host;
+    } catch {
+      return false;
+    }
+  }
+
+  // Alguns navegadores mais antigos omitem Origin e enviam apenas Referer em same-origin
+  const referer = req.headers.get('referer');
+  if (!referer) return false;
   try {
-    return new URL(origin).host === host;
+    return new URL(referer).host.toLowerCase() === host;
   } catch {
     return false;
   }

@@ -27,6 +27,7 @@ const csp = [
 const nextConfig = {
   poweredByHeader: false,
   images: {
+    formats: ['image/webp'],
     remotePatterns: imageHosts.map((hostname) => ({ protocol: 'https', hostname })),
   },
   async headers() {
@@ -40,6 +41,19 @@ const nextConfig = {
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains' },
           { key: 'Content-Security-Policy', value: csp },
+        ],
+      },
+      {
+        source: '/admin/:path*',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' },
+          { key: 'Cache-Control', value: 'no-store' },
+        ],
+      },
+      {
+        source: '/api/:path*',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive' },
         ],
       },
     ];

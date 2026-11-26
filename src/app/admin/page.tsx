@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Product, ProductCategory, ProductVariant, StockStatus } from '@/types/product';
-import { CATEGORIES } from '@/config/site';
+import { CATEGORIES, DEFAULT_PRODUCT_IMAGE } from '@/config/site';
 import { formatCurrency } from '@/utils/whatsapp';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { useToast } from '@/context/ToastContext';
@@ -24,6 +24,30 @@ import {
   X,
   Star,
 } from 'lucide-react';
+
+const MAX_PRODUCT_IMAGES = 8;
+
+function collectFormImageUrls(images: string[], variants: ProductVariant[]): Set<string> {
+  const urls = new Set<string>(images);
+  for (const v of variants) {
+    if (Array.isArray(v.images)) {
+      for (const u of v.images) {
+        if (u) urls.add(u);
+      }
+    }
+  }
+  return urls;
+}
+
+function cleanupUnusedUploads(urls: string[]) {
+  if (urls.length === 0) return;
+  fetch('/api/upload', {
+    method: 'DELETE',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ urls }),
+    keepalive: true,
+  }).catch(() => {});
+}
 
 export default function AdminPage() {
   const { showToast } = useToast();
@@ -55,6 +79,8 @@ export default function AdminPage() {
   const [formImageUrlInput, setFormImageUrlInput] = useState('');
   const [formIsFeatured, setFormIsFeatured] = useState(false);
   const [formVariants, setFormVariants] = useState<ProductVariant[]>([]);
+  const [variantPriceDrafts, setVariantPriceDrafts] = useState<Record<string, string>>({});
+  const [variantSpecsDrafts, setVariantSpecsDrafts] = useState<Record<string, string>>({});
   const [newVariantLabel, setNewVariantLabel] = useState('');
   const [newVariantPrice, setNewVariantPrice] = useState('');
   const [expandedVariant, setExpandedVariant] = useState<number | null>(null);
@@ -67,12 +93,28 @@ export default function AdminPage() {
   const [saveLoading, setSaveLoading] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const sessionUploadedUrlsRef = useRef<Set<string>>(new Set());
+
+  const fetchProducts = useCallback(async () => {
+    setLoading(true);
+    try {
+      const res = await fetch('/api/products?fresh=1', { cache: 'no-store' });
+      const data = await res.json();
+      if (Array.isArray(data)) {
+        setProducts(data);
+      }
+    } catch (err) {
+      console.error('Erro ao buscar produtos:', err);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
 
   // Verifica sessão real no servidor via cookie HttpOnly
   useEffect(() => {
     const init = async () => {
       try {
-        const res = await fetch('/api/admin/session');
+        const res = await fetch('/api/admin/session', { cache: 'no-store' });
         const data = await res.json();
         if (res.ok && data.authenticated) {
           setIsAuthenticated(true);
@@ -85,7 +127,29 @@ export default function AdminPage() {
       fetchProducts();
     };
     init();
-  }, []);
+  }, [fetchProducts]);
+
+  const handleCloseModal = useCallback(() => {
+    if (saveLoading || uploadingImage || uploadingVariant !== null) return;
+    const abandoned = Array.from(sessionUploadedUrlsRef.current);
+    sessionUploadedUrlsRef.current.clear();
+    cleanupUnusedUploads(abandoned);
+    setIsModalOpen(false);
+  }, [saveLoading, uploadingImage, uploadingVariant]);
+
+  useEffect(() => {
+    if (!isModalOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') handleCloseModal();
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [isModalOpen, handleCloseModal]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -107,6 +171,7 @@ export default function AdminPage() {
         setIsAuthenticated(true);
         setPinInput('');
         setLoginError('');
+        fetchProducts();
       } else {
         setLoginError(data.error || 'Senha incorreta. Tente novamente.');
       }
@@ -126,23 +191,9 @@ export default function AdminPage() {
     }
   };
 
-  const fetchProducts = async () => {
-    setLoading(true);
-    try {
-      const res = await fetch('/api/products');
-      const data = await res.json();
-      if (Array.isArray(data)) {
-        setProducts(data);
-      }
-    } catch (err) {
-      console.error('Erro ao buscar produtos:', err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   // Abrir modal para novo produto
   const handleOpenNewModal = () => {
+    sessionUploadedUrlsRef.current.clear();
     setEditingProduct(null);
     setFormName('');
     setFormBrand('');
@@ -156,6 +207,8 @@ export default function AdminPage() {
     setFormImageUrlInput('');
     setFormIsFeatured(false);
     setFormVariants([]);
+    setVariantPriceDrafts({});
+    setVariantSpecsDrafts({});
     setNewVariantLabel('');
     setNewVariantPrice('');
     setExpandedVariant(null);
@@ -168,10 +221,20 @@ export default function AdminPage() {
 
   // Abrir modal para editar produto existente
   const handleOpenEditModal = (product: Product) => {
+    sessionUploadedUrlsRef.current.clear();
+    const priceDrafts: Record<string, string> = {};
+    const specsDrafts: Record<string, string> = {};
+    const normalizedVariants = (Array.isArray(product.variants) ? product.variants : []).map((v, i) => {
+      const vid = v.id || `var-init-${i + 1}`;
+      priceDrafts[vid] = v.price !== undefined ? String(v.price).replace('.', ',') : '';
+      specsDrafts[vid] = Array.isArray(v.specs) ? v.specs.join('\n') : '';
+      return { ...v, id: vid };
+    });
+
     setEditingProduct(product);
     setFormName(product.name);
     setFormBrand(product.brand);
-    setFormCategory(product.category as any);
+    setFormCategory(product.category);
     setFormCategoryLabel(product.categoryLabel);
     setFormPrice(String(product.price));
     setFormOriginalPrice(product.originalPrice ? String(product.originalPrice) : '');
@@ -180,7 +243,9 @@ export default function AdminPage() {
     setFormImages(Array.isArray(product.images) ? product.images : []);
     setFormImageUrlInput('');
     setFormIsFeatured(Boolean(product.isFeatured));
-    setFormVariants(Array.isArray(product.variants) ? product.variants : []);
+    setFormVariants(normalizedVariants);
+    setVariantPriceDrafts(priceDrafts);
+    setVariantSpecsDrafts(specsDrafts);
     setNewVariantLabel('');
     setNewVariantPrice('');
     setExpandedVariant(null);
@@ -191,14 +256,26 @@ export default function AdminPage() {
     setIsModalOpen(true);
   };
 
-  // Upload direto de imagem (suporta múltiplos arquivos)
+  // Upload direto de imagem (suporta múltiplos arquivos até o teto de 8 fotos)
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files || files.length === 0) return;
 
+    const remaining = MAX_PRODUCT_IMAGES - formImages.length;
+    if (remaining <= 0) {
+      alert(`Máximo de ${MAX_PRODUCT_IMAGES} fotos por produto.`);
+      if (fileInputRef.current) fileInputRef.current.value = '';
+      return;
+    }
+
+    const filesToUpload = Array.from(files).slice(0, remaining);
+    if (files.length > remaining) {
+      alert(`Você pode adicionar mais ${remaining} foto(s) (limite de ${MAX_PRODUCT_IMAGES} por produto).`);
+    }
+
     setUploadingImage(true);
     try {
-      for (const file of Array.from(files)) {
+      for (const file of filesToUpload) {
         const formData = new FormData();
         formData.append('file', file);
 
@@ -212,6 +289,7 @@ export default function AdminPage() {
         }
         const data = await res.json();
         if (res.ok && data.url) {
+          sessionUploadedUrlsRef.current.add(data.url);
           setFormImages((prev) => [...prev, data.url]);
           showToast('Foto enviada com sucesso.');
         } else {
@@ -227,6 +305,10 @@ export default function AdminPage() {
   };
 
   const handleAddImageUrl = () => {
+    if (formImages.length >= MAX_PRODUCT_IMAGES) {
+      alert(`Máximo de ${MAX_PRODUCT_IMAGES} fotos por produto.`);
+      return;
+    }
     const trimmed = formImageUrlInput.trim();
     if (!trimmed) return;
     setFormImages((prev) => [...prev, trimmed]);
@@ -236,17 +318,24 @@ export default function AdminPage() {
   const handleAddVariant = () => {
     const label = newVariantLabel.trim();
     if (!label) return;
-    const parsedPrice = newVariantPrice.trim()
-      ? parseFloat(newVariantPrice.replace(',', '.'))
-      : undefined;
+    const rawNewPrice = newVariantPrice.trim().replace(',', '.');
+    const parsedPrice = rawNewPrice ? Number(rawNewPrice) : undefined;
+    if (rawNewPrice && (!Number.isFinite(parsedPrice) || (parsedPrice ?? 0) <= 0)) {
+      alert('Informe um preço válido para a opção ou deixe vazio para usar o preço do produto.');
+      return;
+    }
+
+    const vid = `var-${Date.now()}-${formVariants.length + 1}`;
     setFormVariants((prev) => [
       ...prev,
       {
-        id: `var-${Date.now()}-${prev.length + 1}`,
+        id: vid,
         label,
-        price: parsedPrice && Number.isFinite(parsedPrice) && parsedPrice > 0 ? parsedPrice : undefined,
+        price: parsedPrice,
       },
     ]);
+    setVariantPriceDrafts((prev) => ({ ...prev, [vid]: newVariantPrice.trim() }));
+    setVariantSpecsDrafts((prev) => ({ ...prev, [vid]: '' }));
     setNewVariantLabel('');
     setNewVariantPrice('');
   };
@@ -268,6 +357,7 @@ export default function AdminPage() {
       }
       const data = await res.json();
       if (res.ok && data.url) {
+        sessionUploadedUrlsRef.current.add(data.url);
         updateVariant(idx, { images: [data.url] });
         showToast('Foto da variação atualizada.');
       } else {
@@ -283,9 +373,20 @@ export default function AdminPage() {
   // Salvar produto (Criar ou Atualizar)
   const handleSaveProduct = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formName || !formPrice) {
-      alert('Nome e Preço são obrigatórios!');
+    const parsedPrice = Number(formPrice.trim().replace(',', '.'));
+    if (!formName.trim() || !Number.isFinite(parsedPrice) || parsedPrice <= 0) {
+      alert('Nome e um preço válido (maior que zero) são obrigatórios!');
       return;
+    }
+
+    let parsedOriginalPrice: number | undefined;
+    if (formOriginalPrice.trim() !== '') {
+      const orig = Number(formOriginalPrice.trim().replace(',', '.'));
+      if (!Number.isFinite(orig) || orig <= parsedPrice) {
+        alert('O preço original ("De") precisa ser maior que o preço atual de venda.');
+        return;
+      }
+      parsedOriginalPrice = orig;
     }
 
     const labels = formVariants.map((v) => v.label.trim());
@@ -299,7 +400,40 @@ export default function AdminPage() {
       return;
     }
 
-    setSaveLoading(true);
+    const finalVariants: ProductVariant[] = [];
+    for (let i = 0; i < formVariants.length; i++) {
+      const v = formVariants[i];
+      const vKey = v.id || `var-${i}`;
+      const rawPriceDraft = (variantPriceDrafts[vKey] ?? '').trim().replace(',', '.');
+      let finalVariantPrice = v.price;
+
+      if (rawPriceDraft === '') {
+        finalVariantPrice = undefined;
+      } else {
+        const num = Number(rawPriceDraft);
+        if (!Number.isFinite(num) || num <= 0) {
+          alert(`Preço inválido na opção "${v.label}".`);
+          return;
+        }
+        finalVariantPrice = num;
+      }
+
+      const rawSpecsDraft = variantSpecsDrafts[vKey];
+      const finalSpecs =
+        rawSpecsDraft !== undefined
+          ? rawSpecsDraft
+              .split('\n')
+              .map((x) => x.trim())
+              .filter(Boolean)
+          : v.specs;
+
+      finalVariants.push({
+        ...v,
+        label: v.label.trim(),
+        price: finalVariantPrice,
+        specs: finalSpecs,
+      });
+    }
 
     const specsArray = formSpecs
       .split('\n')
@@ -312,24 +446,28 @@ export default function AdminPage() {
         ? [...formImages, pendingUrl]
         : formImages;
 
+    if (finalImages.length > MAX_PRODUCT_IMAGES) {
+      alert(`Máximo de ${MAX_PRODUCT_IMAGES} fotos por produto.`);
+      return;
+    }
+
+    setSaveLoading(true);
+
     const payload = {
       id: editingProduct ? editingProduct.id : undefined,
-      name: formName,
-      brand: formBrand || 'Importado',
+      name: formName.trim(),
+      brand: formBrand.trim() || 'Importado',
       category: formCategory,
-      categoryLabel: formCategoryLabel || formCategory,
-      price: parseFloat(formPrice.replace(',', '.')),
-      originalPrice: formOriginalPrice ? parseFloat(formOriginalPrice.replace(',', '.')) : undefined,
+      categoryLabel: formCategoryLabel.trim() || formCategory,
+      price: parsedPrice,
+      originalPrice: parsedOriginalPrice,
       status: formStatus,
       deliveryTime: formDeliveryTime,
-      images:
-        finalImages.length > 0
-          ? finalImages
-          : ['https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80'],
+      images: finalImages.length > 0 ? finalImages : [DEFAULT_PRODUCT_IMAGE],
       description: formDescription,
       specs: specsArray,
       isFeatured: formIsFeatured,
-      variants: formVariants,
+      variants: finalVariants,
       batchCodeInfo: formBatchCode,
     };
 
@@ -348,6 +486,11 @@ export default function AdminPage() {
       }
 
       if (res.ok) {
+        const kept = collectFormImageUrls(payload.images, finalVariants);
+        const discarded = Array.from(sessionUploadedUrlsRef.current).filter((u) => !kept.has(u));
+        sessionUploadedUrlsRef.current.clear();
+        cleanupUnusedUploads(discarded);
+
         setIsModalOpen(false);
         fetchProducts();
         showToast(editingProduct ? 'Produto atualizado.' : 'Produto publicado na vitrine.');
@@ -379,18 +522,23 @@ export default function AdminPage() {
           prev.map((p) => (p.id === product.id ? { ...p, isFeatured: nextFeatured } : p))
         );
         showToast(nextFeatured ? 'Produto destacado no banner.' : 'Removido do banner.');
+      } else {
+        const data = await res.json().catch(() => null);
+        alert(data?.error || 'Não foi possível atualizar o destaque.');
       }
     } catch (err) {
       console.error('Erro ao destacar produto:', err);
+      alert('Erro de conexão ao atualizar destaque.');
     }
   };
 
   // Alternar rapidamente entre Pronta-Entrega e Encomenda
   const handleQuickToggleStatus = async (product: Product) => {
     const nextStatus: StockStatus = product.status === 'pronta_entrega' ? 'encomenda' : 'pronta_entrega';
-    const nextDeliveryTime = nextStatus === 'pronta_entrega' 
-      ? 'Envio Imediato (em até 24h)' 
-      : 'Sob Encomenda (10 a 15 dias úteis)';
+    const nextDeliveryTime =
+      nextStatus === 'pronta_entrega'
+        ? 'Envio Imediato (em até 24h)'
+        : 'Sob Encomenda (10 a 15 dias úteis)';
 
     try {
       const res = await fetch('/api/products', {
@@ -414,9 +562,13 @@ export default function AdminPage() {
             p.id === product.id ? { ...p, status: nextStatus, deliveryTime: nextDeliveryTime } : p
           )
         );
+      } else {
+        const data = await res.json().catch(() => null);
+        alert(data?.error || 'Não foi possível atualizar a disponibilidade.');
       }
     } catch (err) {
       console.error('Erro ao alternar status:', err);
+      alert('Erro de conexão ao alternar status.');
     }
   };
 
@@ -435,7 +587,7 @@ export default function AdminPage() {
       } else {
         alert('Erro ao excluir produto.');
       }
-    } catch (err) {
+    } catch {
       alert('Erro ao excluir produto.');
     }
   };
@@ -683,7 +835,9 @@ export default function AdminPage() {
         ) : filteredProducts.length === 0 ? (
           <div className="text-center py-12 bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-800 rounded-2xl p-6">
             <Package className="w-10 h-10 text-zinc-400 mx-auto mb-2" />
-            <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">Nenhum produto cadastrado com esses filtros.</p>
+            <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">
+              Nenhum produto cadastrado com esses filtros.
+            </p>
             <button
               onClick={handleOpenNewModal}
               className="mt-3 px-4 py-2 rounded-xl bg-gold-500 text-dark-950 text-xs font-bold"
@@ -703,7 +857,13 @@ export default function AdminPage() {
                   {/* Foto + Informações */}
                   <div className="flex items-center gap-4 min-w-0">
                     <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-zinc-100 dark:bg-dark-950 shrink-0 border border-zinc-200 dark:border-dark-700">
-                      <Image src={p.images[0]} alt={p.name} fill sizes="64px" className="object-contain bg-white" />
+                      <Image
+                        src={p.images?.[0] || DEFAULT_PRODUCT_IMAGE}
+                        alt={p.name}
+                        fill
+                        sizes="64px"
+                        className="object-contain bg-white"
+                      />
                     </div>
 
                     <div className="min-w-0 space-y-1">
@@ -798,7 +958,12 @@ export default function AdminPage() {
 
       {/* Modal de Cadastro / Edição de Produto */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-fadeIn">
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={editingProduct ? 'Editar Produto' : 'Cadastrar Novo Produto'}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-fadeIn"
+        >
           <div className="relative w-full max-w-2xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-700 rounded-3xl overflow-hidden shadow-2xl max-h-[92vh] flex flex-col">
             {/* Cabeçalho do Modal */}
             <div className="p-5 border-b border-zinc-200 dark:border-dark-800 flex items-center justify-between">
@@ -812,7 +977,9 @@ export default function AdminPage() {
               </div>
 
               <button
-                onClick={() => setIsModalOpen(false)}
+                type="button"
+                onClick={handleCloseModal}
+                aria-label="Fechar modal"
                 className="p-2 rounded-xl text-zinc-400 hover:text-black dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-dark-800"
               >
                 <X className="w-5 h-5" />
@@ -858,7 +1025,7 @@ export default function AdminPage() {
                   <select
                     value={formCategory}
                     onChange={(e) => {
-                      const cat = e.target.value as any;
+                      const cat = e.target.value as ProductCategory;
                       setFormCategory(cat);
                       const labels: Record<string, string> = {
                         ...Object.fromEntries(CATEGORIES.map((c) => [c.id, c.label])),
@@ -900,7 +1067,7 @@ export default function AdminPage() {
                   </label>
                   <input
                     type="text"
-                    placeholder="Ex: 699.00 (riscado na vitrine)"
+                    placeholder="Ex: 699.00 (maior que o atual)"
                     value={formOriginalPrice}
                     onChange={(e) => setFormOriginalPrice(e.target.value)}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-100 dark:bg-dark-950 border border-zinc-300 dark:border-dark-700 text-sm text-zinc-900 dark:text-white focus:outline-none focus:border-gold-500"
@@ -965,7 +1132,7 @@ export default function AdminPage() {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <label className="block text-xs font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300">
-                    Fotos do Produto ({formImages.length})
+                    Fotos do Produto ({formImages.length}/{MAX_PRODUCT_IMAGES})
                   </label>
                   <label className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300 cursor-pointer">
                     <input
@@ -1031,12 +1198,18 @@ export default function AdminPage() {
 
                   <button
                     type="button"
-                    disabled={uploadingImage}
+                    disabled={uploadingImage || formImages.length >= MAX_PRODUCT_IMAGES}
                     onClick={() => fileInputRef.current?.click()}
-                    className="w-full py-2.5 px-4 rounded-xl border border-dashed border-zinc-400 dark:border-dark-600 hover:border-gold-500 bg-zinc-50 dark:bg-dark-950 text-xs font-semibold text-zinc-700 dark:text-zinc-300 flex items-center justify-center gap-2 transition-colors"
+                    className="w-full py-2.5 px-4 rounded-xl border border-dashed border-zinc-400 dark:border-dark-600 hover:border-gold-500 bg-zinc-50 dark:bg-dark-950 text-xs font-semibold text-zinc-700 dark:text-zinc-300 flex items-center justify-center gap-2 transition-colors disabled:opacity-50"
                   >
                     <Upload className="w-4 h-4 text-gold-500" />
-                    <span>{uploadingImage ? 'Enviando fotos...' : 'Enviar fotos do computador / celular'}</span>
+                    <span>
+                      {uploadingImage
+                        ? 'Enviando fotos...'
+                        : formImages.length >= MAX_PRODUCT_IMAGES
+                          ? `Limite de ${MAX_PRODUCT_IMAGES} fotos atingido`
+                          : 'Enviar fotos do computador / celular'}
+                    </span>
                   </button>
 
                   <div className="flex items-center gap-2">
@@ -1083,13 +1256,18 @@ export default function AdminPage() {
                       ) {
                         return null;
                       }
+                      const vKey = v.id || `var-${idx}`;
                       const open = expandedVariant === idx;
                       const thumb = v.images?.[0];
                       const duplicated =
                         formVariants.filter((o) => o.label.trim() === v.label.trim()).length > 1;
+                      const previewPriceStr = variantPriceDrafts[vKey];
+                      const previewPrice = previewPriceStr
+                        ? Number(previewPriceStr.replace(',', '.'))
+                        : v.price;
                       return (
                         <div
-                          key={v.id || idx}
+                          key={vKey}
                           className="rounded-xl bg-white dark:bg-dark-900 border border-zinc-200 dark:border-dark-700"
                         >
                           <div className="flex items-center gap-3 p-2">
@@ -1101,7 +1279,9 @@ export default function AdminPage() {
                             <div className="flex-1 min-w-0 text-xs">
                               <p className="font-semibold truncate text-zinc-900 dark:text-white">
                                 {v.label}
-                                {v.price ? ` · ${formatCurrency(v.price)}` : ''}
+                                {previewPrice && Number.isFinite(previewPrice) && previewPrice > 0
+                                  ? ` · ${formatCurrency(previewPrice)}`
+                                  : ''}
                               </p>
                               <p className="text-[11px] text-zinc-500 truncate">
                                 {v.description ? 'Com descrição própria' : 'Usa a descrição do produto'}
@@ -1156,13 +1336,13 @@ export default function AdminPage() {
                                     type="text"
                                     inputMode="decimal"
                                     placeholder="Igual ao produto"
-                                    defaultValue={v.price ? String(v.price).replace('.', ',') : ''}
-                                    onBlur={(e) => {
-                                      const raw = e.target.value.trim().replace(',', '.');
-                                      const n = raw ? parseFloat(raw) : undefined;
-                                      updateVariant(idx, {
-                                        price: n !== undefined && Number.isFinite(n) && n > 0 ? n : undefined,
-                                      });
+                                    value={
+                                      variantPriceDrafts[vKey] ??
+                                      (v.price !== undefined ? String(v.price).replace('.', ',') : '')
+                                    }
+                                    onChange={(e) => {
+                                      const val = e.target.value;
+                                      setVariantPriceDrafts((prev) => ({ ...prev, [vKey]: val }));
                                     }}
                                     className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-dark-950 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
                                   />
@@ -1230,15 +1410,17 @@ export default function AdminPage() {
                                 <textarea
                                   rows={4}
                                   placeholder="Deixe vazio para usar as do produto."
-                                  defaultValue={(v.specs || []).join('\n')}
-                                  onBlur={(e) =>
+                                  value={variantSpecsDrafts[vKey] ?? (v.specs || []).join('\n')}
+                                  onChange={(e) => {
+                                    const val = e.target.value;
+                                    setVariantSpecsDrafts((prev) => ({ ...prev, [vKey]: val }));
                                     updateVariant(idx, {
-                                      specs: e.target.value
+                                      specs: val
                                         .split('\n')
                                         .map((x) => x.trim())
                                         .filter(Boolean),
-                                    })
-                                  }
+                                    });
+                                  }}
                                   className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-dark-950 border border-zinc-200 dark:border-dark-700 text-xs text-zinc-900 dark:text-white"
                                 />
                               </div>
@@ -1322,7 +1504,7 @@ export default function AdminPage() {
               <div className="pt-4 border-t border-zinc-200 dark:border-dark-800 flex items-center justify-end gap-3">
                 <button
                   type="button"
-                  onClick={() => setIsModalOpen(false)}
+                  onClick={handleCloseModal}
                   className="px-4 py-2.5 rounded-xl text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white"
                 >
                   Cancelar

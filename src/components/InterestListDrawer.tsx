@@ -1,8 +1,9 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { X, Trash2, MessageCircle, ShoppingBag, ArrowRight, Minus, Plus } from 'lucide-react';
+import { DEFAULT_PRODUCT_IMAGE, isAdultCategory, SITE } from '@/config/site';
 import { useInterestList } from '@/context/InterestListContext';
 import { formatCurrency, getInterestListWhatsAppUrl } from '@/utils/whatsapp';
 
@@ -17,13 +18,34 @@ export function InterestListDrawer() {
     setIsDrawerOpen,
   } = useInterestList();
 
+  useEffect(() => {
+    if (!isDrawerOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsDrawerOpen(false);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [isDrawerOpen, setIsDrawerOpen]);
+
   if (!isDrawerOpen) return null;
 
   const total = items.reduce((acc, item) => acc + item.unitPrice * item.quantity, 0);
   const whatsappUrl = getInterestListWhatsAppUrl(items);
+  const hasAdultItem = items.some((i) => isAdultCategory(i.product.category));
+  const hasPharmacyItem = items.some((i) => i.product.category === 'farmacia');
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden animate-fadeIn">
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Lista de Orçamento"
+      className="fixed inset-0 z-50 overflow-hidden animate-fadeIn"
+    >
       <div
         className="absolute inset-0 bg-black/55 backdrop-blur-sm transition-opacity"
         onClick={() => setIsDrawerOpen(false)}
@@ -60,77 +82,87 @@ export function InterestListDrawer() {
                 </p>
               </div>
             ) : (
-              items.map((item) => (
-                <div key={item.key} className="flex items-start gap-4 py-4">
-                  <div className="relative w-16 h-20 bg-[#fcfbf8] dark:bg-white shrink-0 overflow-hidden">
-                    <Image
-                      src={
-                        item.product.variants?.find((v) => v.label === item.variantLabel)?.images?.[0] ||
-                        item.product.images[0]
-                      }
-                      alt={item.product.name}
-                      fill
-                      sizes="64px"
-                      className="object-contain mix-blend-multiply dark:mix-blend-normal brightness-[1.05]"
-                    />
-                  </div>
-
-                  <div className="flex-1 min-w-0 space-y-1">
-                    <span className="text-[10px] uppercase tracking-[0.15em] font-semibold text-[#8b6508] dark:text-gold-400">
-                      {item.product.brand}
-                    </span>
-                    <h5 className="text-sm font-display text-[#141414] dark:text-white truncate">
-                      {item.product.name}
-                    </h5>
-                    {item.variantLabel && (
-                      <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                        Opção: {item.variantLabel}
-                      </p>
-                    )}
-
-                    <div className="flex items-center justify-between pt-1.5 gap-2">
-                      {/* Controle de Quantidade */}
-                      <div className="inline-flex items-center border border-[#d6d0c4] dark:border-dark-700">
-                        <button
-                          onClick={() => updateQuantity(item.key, -1)}
-                          aria-label="Diminuir quantidade"
-                          className="p-1 text-zinc-600 dark:text-zinc-300 hover:bg-[#f2efe8] dark:hover:bg-dark-800"
-                        >
-                          <Minus className="w-3 h-3" />
-                        </button>
-                        <span className="px-2.5 text-xs font-semibold text-[#141414] dark:text-white tabular-nums">
-                          {item.quantity}
-                        </span>
-                        <button
-                          onClick={() => updateQuantity(item.key, 1)}
-                          aria-label="Aumentar quantidade"
-                          className="p-1 text-zinc-600 dark:text-zinc-300 hover:bg-[#f2efe8] dark:hover:bg-dark-800"
-                        >
-                          <Plus className="w-3 h-3" />
-                        </button>
-                      </div>
-
-                      <span className="text-xs font-semibold text-[#141414] dark:text-zinc-200">
-                        {formatCurrency(item.unitPrice * item.quantity)}
-                      </span>
+              items.map((item) => {
+                const thumbSrc =
+                  item.product.variants?.find((v) => v.label === item.variantLabel)?.images?.[0] ||
+                  item.product.images?.[0] ||
+                  DEFAULT_PRODUCT_IMAGE;
+                return (
+                  <div key={item.key} className="flex items-start gap-4 py-4">
+                    <div className="relative w-16 h-20 bg-[#fcfbf8] dark:bg-white shrink-0 overflow-hidden">
+                      <Image
+                        src={thumbSrc}
+                        alt={item.product.name}
+                        fill
+                        sizes="64px"
+                        className="object-contain mix-blend-multiply dark:mix-blend-normal brightness-[1.05]"
+                      />
                     </div>
-                  </div>
 
-                  <button
-                    onClick={() => removeItem(item.key)}
-                    className="p-1.5 text-zinc-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
-                    title="Remover da lista"
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </button>
-                </div>
-              ))
+                    <div className="flex-1 min-w-0 space-y-1">
+                      <span className="text-[10px] uppercase tracking-[0.15em] font-semibold text-[#8b6508] dark:text-gold-400">
+                        {item.product.brand}
+                      </span>
+                      <h5 className="text-sm font-display text-[#141414] dark:text-white truncate">
+                        {item.product.name}
+                      </h5>
+                      {item.variantLabel && (
+                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                          Opção: {item.variantLabel}
+                        </p>
+                      )}
+
+                      <div className="flex items-center justify-between pt-1.5 gap-2">
+                        {/* Controle de Quantidade */}
+                        <div className="inline-flex items-center border border-[#d6d0c4] dark:border-dark-700">
+                          <button
+                            onClick={() => updateQuantity(item.key, -1)}
+                            aria-label="Diminuir quantidade"
+                            className="p-1 text-zinc-600 dark:text-zinc-300 hover:bg-[#f2efe8] dark:hover:bg-dark-800"
+                          >
+                            <Minus className="w-3 h-3" />
+                          </button>
+                          <span className="px-2.5 text-xs font-semibold text-[#141414] dark:text-white tabular-nums">
+                            {item.quantity}
+                          </span>
+                          <button
+                            onClick={() => updateQuantity(item.key, 1)}
+                            aria-label="Aumentar quantidade"
+                            className="p-1 text-zinc-600 dark:text-zinc-300 hover:bg-[#f2efe8] dark:hover:bg-dark-800"
+                          >
+                            <Plus className="w-3 h-3" />
+                          </button>
+                        </div>
+
+                        <span className="text-xs font-semibold text-[#141414] dark:text-zinc-200">
+                          {formatCurrency(item.unitPrice * item.quantity)}
+                        </span>
+                      </div>
+                    </div>
+
+                    <button
+                      onClick={() => removeItem(item.key)}
+                      className="p-1.5 text-zinc-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+                      title="Remover da lista"
+                    >
+                      <Trash2 className="w-4 h-4" />
+                    </button>
+                  </div>
+                );
+              })
             )}
           </div>
 
           {/* Rodapé */}
           {items.length > 0 && (
             <div className="p-6 border-t border-[#e5e0d5] dark:border-dark-800 bg-[#f6f3ec] dark:bg-dark-900/80 space-y-3">
+              {(hasAdultItem || hasPharmacyItem) && (
+                <div className="text-[11px] leading-snug text-[#92400e] dark:text-amber-400 bg-[#fbf3e4] dark:bg-amber-950/30 border border-[#ecd9b0] dark:border-amber-900/50 px-3 py-2 space-y-1">
+                  {hasAdultItem && <p>{SITE.adultNotice}</p>}
+                  {hasPharmacyItem && <p>{SITE.pharmacyNotice}</p>}
+                </div>
+              )}
+
               <div className="flex items-baseline justify-between">
                 <span className="text-xs uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">
                   Total estimado

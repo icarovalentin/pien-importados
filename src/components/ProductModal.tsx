@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Product } from '@/types/product';
+import { DEFAULT_PRODUCT_IMAGE, getCategoryNotice } from '@/config/site';
 import {
   X,
   MessageCircle,
@@ -43,11 +44,16 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
   useEffect(() => {
     if (!product) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, [product, onClose]);
 
   if (!product) return null;
@@ -58,8 +64,10 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
   const inList = isInList(product.id, activeVariant?.label);
   const whatsappUrl = getProductWhatsAppUrl(product, activeVariant);
   const isProntaEntrega = product.status === 'pronta_entrega';
+  const baseImages =
+    product.images && product.images.length > 0 ? product.images : [DEFAULT_PRODUCT_IMAGE];
   const galleryImages =
-    activeVariant?.images && activeVariant.images.length > 0 ? activeVariant.images : product.images;
+    activeVariant?.images && activeVariant.images.length > 0 ? activeVariant.images : baseImages;
   const totalImages = galleryImages.length;
   const displayDescription = activeVariant?.description || product.description;
   const displaySpecs =
@@ -69,6 +77,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
     product.category === 'perfumes' ||
     product.category === 'arabes' ||
     product.category === 'beleza';
+  const categoryNotice = getCategoryNotice(product.category);
 
   const nextImage = () => {
     if (totalImages <= 1) return;
@@ -105,7 +114,12 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/65 backdrop-blur-sm animate-fadeIn">
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label={product.name}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/65 backdrop-blur-sm animate-fadeIn"
+    >
       <div className="absolute inset-0" onClick={onClose} />
 
       <div className="relative w-full max-w-3xl bg-[#fcfbf8] dark:bg-[#111116] border border-[#e5e0d5] dark:border-dark-700 overflow-hidden shadow-2xl z-10 flex flex-col md:flex-row max-h-[90vh]">
@@ -177,7 +191,13 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                       : 'border-[#d6d0c4] dark:border-dark-700 opacity-60 hover:opacity-100'
                   }`}
                 >
-                  <Image src={img} alt="" fill sizes="56px" className="object-contain mix-blend-multiply dark:mix-blend-normal brightness-[1.05] p-0.5" />
+                  <Image
+                    src={img}
+                    alt=""
+                    fill
+                    sizes="56px"
+                    className="object-contain mix-blend-multiply dark:mix-blend-normal brightness-[1.05] p-0.5"
+                  />
                 </button>
               ))}
             </div>
@@ -235,6 +255,12 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               <span>{product.deliveryTime}</span>
             </p>
           </div>
+
+          {categoryNotice && (
+            <p className="text-[11px] leading-relaxed text-[#92400e] dark:text-amber-400 bg-[#fbf3e4] dark:bg-amber-950/30 border border-[#ecd9b0] dark:border-amber-900/50 px-3 py-2.5">
+              {categoryNotice}
+            </p>
+          )}
 
           {/* Seletor de Variações: com fotos vira grade de miniaturas; sem fotos, botões de texto */}
           {variants.length > 0 && (
@@ -313,14 +339,16 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           )}
 
           {/* Descrição */}
-          <div>
-            <h4 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400 mb-1.5">
-              Sobre o produto
-            </h4>
-            <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
-              {displayDescription}
-            </p>
-          </div>
+          {displayDescription && (
+            <div>
+              <h4 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400 mb-1.5">
+                Sobre o produto
+              </h4>
+              <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed whitespace-pre-line">
+                {displayDescription}
+              </p>
+            </div>
+          )}
 
           {/* Especificações */}
           {displaySpecs && displaySpecs.length > 0 && (

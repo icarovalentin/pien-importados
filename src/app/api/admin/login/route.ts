@@ -9,43 +9,56 @@ import {
   verifyAdminPassword,
 } from '@/lib/auth';
 import { addFailure, getFailureCount, resetFailures } from '@/lib/rate-limit';
+import { logServerError } from '@/lib/server-error';
 
 const MAX_ATTEMPTS_PER_IP = 5;
-const GLOBAL_MAX_FAILURES = 50; // teto global, independe do IP informado
-const WINDOW_MS = 10 * 60 * 1000; // 10 minutos
+const MAX_ATTEMPTS_PER_SUBNET = 15;
+const WINDOW_MS = 15 * 60 * 1000; // 15 minutos
+const WINDOW_SECONDS = Math.ceil(WINDOW_MS / 1000);
 const MAX_CONTENT_LENGTH = 4096;
-const GLOBAL_KEY = 'login:global';
 const NO_STORE_HEADERS = { 'Cache-Control': 'no-store' };
 
-function jsonNoStore(body: unknown, status = 200) {
-  return NextResponse.json(body, { status, headers: NO_STORE_HEADERS });
+function jsonNoStore(body: unknown, status = 200, extraHeaders?: Record<string, string>) {
+  return NextResponse.json(body, {
+    status,
+    headers: { ...NO_STORE_HEADERS, ...extraHeaders },
+  });
 }
 
-function logError(context: string, error: unknown) {
-  const message =
-    error instanceof Error
-      ? error.message
-      : error && typeof error === 'object' && typeof (error as { message?: unknown }).message === 'string'
-        ? (error as { message: string }).message
-        : String(error);
-  const code =
-    error && typeof error === 'object' && 'code' in error
-      ? (error as { code?: unknown }).code
-      : undefined;
-  console.error(`[${context}] ${message}${code !== undefined ? ` (code: ${String(code)})` : ''}`);
+function normalizeIp(raw: string): string {
+  const cleaned = raw.trim().toLowerCase();
+  if (cleaned.startsWith('::ffff:')) return cleaned.slice(7);
+  return cleaned;
 }
 
 // Atrás de proxy confiável (Vercel etc.), x-real-ip é definido pela plataforma;
 // no x-forwarded-for usamos a última entrada (adicionada pelo proxy), nunca a primeira (forjável).
 function getClientIp(req: Request): string {
   const real = req.headers.get('x-real-ip');
-  if (real) return real.trim();
+  if (real) return normalizeIp(real);
   const forwarded = req.headers.get('x-forwarded-for');
   if (forwarded) {
     const parts = forwarded.split(',');
-    return parts[parts.length - 1].trim();
+    return normalizeIp(parts[parts.length - 1]);
   }
   return 'unknown';
+}
+
+function getSubnetPrefix(ip: string): string | null {
+  if (!ip || ip === 'unknown') return null;
+  if (ip.includes('.')) {
+    const parts = ip.split('.');
+    if (parts.length === 4) return `${parts[0]}.${parts[1]}.${parts[2]}.0/24`;
+  }
+  if (ip.includes(':')) {
+    const parts = ip.split(':').filter(Boolean);
+    if (parts.length >= 3) return `${parts.slice(0, 3).join(':')}::/48`;
+  }
+  return null;
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export async function POST(req: Request) {
@@ -85,23 +98,39 @@ export async function POST(req: Request) {
       );
     }
 
-    const ipKey = `login:ip:${getClientIp(req)}`;
-    const [ipFailures, globalFailures] = await Promise.all([
+    const ip = getClientIp(req);
+    const ipKey = `login:ip:${ip}`;
+    const subnet = getSubnetPrefix(ip);
+    const subnetKey = subnet ? `login:net:${subnet}` : null;
+
+    const [ipFailures, subnetFailures] = await Promise.all([
       getFailureCount(ipKey, WINDOW_MS),
-      getFailureCount(GLOBAL_KEY, WINDOW_MS),
+      subnetKey ? getFailureCount(subnetKey, WINDOW_MS) : Promise.resolve(0),
     ]);
 
-    if (ipFailures >= MAX_ATTEMPTS_PER_IP || globalFailures >= GLOBAL_MAX_FAILURES) {
+    if (ipFailures >= MAX_ATTEMPTS_PER_IP || subnetFailures >= MAX_ATTEMPTS_PER_SUBNET) {
       return jsonNoStore(
         {
           success: false,
           error: 'Muitas tentativas incorretas. Aguarde alguns minutos.',
         },
-        429
+        429,
+        { 'Retry-After': String(WINDOW_SECONDS) }
       );
     }
 
-    const parsedBody = await req.json().catch(() => null);
+    const rawBody = await req.text().catch(() => null);
+    if (rawBody === null || Buffer.byteLength(rawBody, 'utf8') > MAX_CONTENT_LENGTH) {
+      return jsonNoStore({ success: false, error: 'Corpo da requisição muito grande' }, 413);
+    }
+
+    let parsedBody: unknown = null;
+    try {
+      parsedBody = JSON.parse(rawBody);
+    } catch {
+      parsedBody = null;
+    }
+
     if (
       !parsedBody ||
       typeof parsedBody !== 'object' ||
@@ -114,7 +143,10 @@ export async function POST(req: Request) {
     const password = (parsedBody as { password: string }).password;
 
     if (verifyAdminPassword(password)) {
-      await resetFailures(ipKey);
+      await Promise.all([
+        resetFailures(ipKey),
+        subnetKey ? resetFailures(subnetKey) : Promise.resolve(),
+      ]);
 
       const token = createSessionToken();
       if (!token) {
@@ -129,14 +161,22 @@ export async function POST(req: Request) {
       return response;
     }
 
-    await Promise.all([addFailure(ipKey, WINDOW_MS), addFailure(GLOBAL_KEY, WINDOW_MS)]);
+    const [nextIpFailures] = await Promise.all([
+      addFailure(ipKey, WINDOW_MS),
+      subnetKey ? addFailure(subnetKey, WINDOW_MS) : Promise.resolve(0),
+    ]);
+
+    // Atraso progressivo leve para desacelerar força bruta sem bloquear outros IPs legítimos
+    if (nextIpFailures > 1) {
+      await sleep(Math.min(1500, (nextIpFailures - 1) * 300));
+    }
 
     return jsonNoStore(
       { success: false, error: 'Senha incorreta' },
       401
     );
   } catch (error) {
-    logError('POST /api/admin/login', error);
+    logServerError('POST /api/admin/login', error);
     return jsonNoStore(
       { success: false, error: 'Erro no servidor' },
       500

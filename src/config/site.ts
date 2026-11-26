@@ -39,6 +39,9 @@ export const HOME_LABEL = 'Novidades';
 /** Categorias antigas que continuam válidas no banco, mas não aparecem no menu. */
 export const LEGACY_CATEGORY_IDS = ['beleza'] as const;
 
+export const DEFAULT_PRODUCT_IMAGE =
+  'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80';
+
 export const SITE = {
   name: 'PIEN',
   tagline: 'Importados',
@@ -47,6 +50,9 @@ export const SITE = {
   announcementShort: 'Originais · Pronta-entrega 24h · Atendimento direto',
   /** aviso exibido nas categorias marcadas como adultOnly */
   adultNotice: 'Venda e entrega proibidas para menores de 18 anos. Beba com moderação.',
+  /** aviso exibido na categoria farmácia */
+  pharmacyNotice:
+    'Medicamento sujeito a prescrição médica. Venda e retirada exclusivas no Paraguai — consulte as exigências sanitárias antes de encomendar.',
 };
 
 export type MenuCategoryId = (typeof CATEGORIES)[number]['id'];
@@ -65,4 +71,10 @@ export function getCategoryLabel(id: string): string {
 
 export function isAdultCategory(id: string): boolean {
   return Boolean((CATEGORIES as readonly CategoryDef[]).find((c) => c.id === id)?.adultOnly);
+}
+
+export function getCategoryNotice(id: string): string | null {
+  if (isAdultCategory(id)) return SITE.adultNotice;
+  if (id === 'farmacia') return SITE.pharmacyNotice;
+  return null;
 }

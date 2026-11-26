@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { CATEGORIES } from '@/config/site';
 import { getGeneralSupportWhatsAppUrl } from '@/utils/whatsapp';
 import { STORE_PHONE_DISPLAY } from '@/data/products';
 import { ThemeToggle } from '@/components/ThemeToggle';
@@ -23,7 +24,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-zinc-400 max-w-sm leading-relaxed text-xs pt-1">
-              Curadoria de perfumes importados, linha Victoria&apos;s Secret, caixas de som JBL e eletrônicos selecionados com procedência garantida.
+              Curadoria de perfumaria importada, árabes, smartphones, áudio JBL, bebidas e itens selecionados com procedência verificada.
             </p>
           </div>
 
@@ -33,10 +34,12 @@ export function Footer() {
               Departamentos
             </h4>
             <ul className="space-y-1.5 text-zinc-400">
-              <li>Perfumaria Masculina &amp; Feminina</li>
-              <li>Victoria&apos;s Secret (Mists &amp; Cremes)</li>
-              <li>Áudio &amp; Caixas JBL Originais</li>
-              <li>Eletrônicos &amp; Acessórios Tech</li>
+              {CATEGORIES.map((cat) => (
+                <li key={cat.id}>
+                  {cat.label}
+                  {'adultOnly' in cat && cat.adultOnly ? ' (+18)' : ''}
+                </li>
+              ))}
             </ul>
           </div>
 

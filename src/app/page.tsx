@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { PRODUCTS as INITIAL_PRODUCTS } from '@/data/products';
+import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { CategoryType, Product, SortOption, StockStatus } from '@/types/product';
 import { Navbar } from '@/components/Navbar';
 import { RotatingHeroBanner } from '@/components/RotatingHeroBanner';
@@ -16,13 +15,14 @@ import { FaqSection } from '@/components/FaqSection';
 import { Footer } from '@/components/Footer';
 import { ShoppingBag, MessageCircle } from 'lucide-react';
 import { useInterestList } from '@/context/InterestListContext';
+import { useToast } from '@/context/ToastContext';
 import { getGeneralSupportWhatsAppUrl } from '@/utils/whatsapp';
-import { getCategoryLabel, isAdultCategory, SITE } from '@/config/site';
-
+import { getCategoryLabel, getCategoryNotice } from '@/config/site';
 
 export default function HomePage() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loadingProducts, setLoadingProducts] = useState(true);
+  const [loadError, setLoadError] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<CategoryType>('todos');
   const [selectedBrand, setSelectedBrand] = useState('');
@@ -32,30 +32,38 @@ export default function HomePage() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const catalogRef = useRef<HTMLDivElement>(null);
-  const { totalCount, setIsDrawerOpen } = useInterestList();
+  const { totalCount, setIsDrawerOpen, syncWithCatalog } = useInterestList();
+  const { showToast } = useToast();
   const supportUrl = getGeneralSupportWhatsAppUrl();
 
-  useEffect(() => {
-    let active = true;
-    fetch('/api/products')
-      .then((res) => res.json())
-      .then((data) => {
-        if (active && Array.isArray(data)) {
-          setProducts(data);
-        }
-      })
-      .catch((err) => {
-        console.error('Erro ao atualizar produtos da API:', err);
-        if (active) setProducts(INITIAL_PRODUCTS);
-      })
-      .finally(() => {
-        if (active) setLoadingProducts(false);
-      });
+  const loadProducts = useCallback(async () => {
+    setLoadingProducts(true);
+    setLoadError(false);
+    try {
+      const res = await fetch('/api/products');
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}`);
+      }
+      const data = await res.json();
+      if (!Array.isArray(data)) {
+        throw new Error('Formato de catálogo inválido');
+      }
+      setProducts(data);
+      const syncResult = syncWithCatalog(data);
+      if (syncResult.updated > 0 || syncResult.removed > 0) {
+        showToast('Sua lista foi sincronizada com os preços e estoque atuais.');
+      }
+    } catch (err) {
+      console.error('Erro ao carregar produtos da API:', err);
+      setLoadError(true);
+    } finally {
+      setLoadingProducts(false);
+    }
+  }, [syncWithCatalog, showToast]);
 
-    return () => {
-      active = false;
-    };
-  }, []);
+  useEffect(() => {
+    loadProducts();
+  }, [loadProducts]);
 
   // Abre produto automaticamente se vier de um link compartilhado (?produto=id)
   useEffect(() => {
@@ -128,6 +136,7 @@ export default function HomePage() {
 
   const showEditorialHighlights =
     !loadingProducts &&
+    !loadError &&
     selectedCategory === 'todos' &&
     selectedBrand === '' &&
     selectedStock === 'todos' &&
@@ -216,7 +225,7 @@ export default function HomePage() {
           ? 'Sob Encomenda'
           : 'Catálogo Completo';
 
-  const showAdultNotice = isAdultCategory(selectedCategory);
+  const categoryNotice = getCategoryNotice(selectedCategory);
 
   const hasActiveFilters =
     selectedCategory !== 'todos' ||
@@ -343,14 +352,39 @@ export default function HomePage() {
           encomendaCount={encomendaCount}
         />
 
-        {showAdultNotice && (
+        {categoryNotice && (
           <p className="text-xs sm:text-sm text-[#92400e] dark:text-amber-400 bg-[#fbf3e4] dark:bg-amber-950/30 border border-[#ecd9b0] dark:border-amber-900/50 px-4 py-3">
-            {SITE.adultNotice}
+            {categoryNotice}
           </p>
         )}
 
         {loadingProducts ? (
           <ProductGridSkeleton count={8} />
+        ) : loadError ? (
+          <div className="py-20 text-center space-y-4 border border-[#e5e0d5] dark:border-dark-800 bg-[#f6f3ec] dark:bg-dark-900/40 px-6">
+            <h3 className="text-xl font-display text-[#141414] dark:text-white">
+              Não foi possível carregar o catálogo
+            </h3>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto">
+              Verifique sua conexão e tente novamente, ou solicite atendimento direto pelo WhatsApp.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <button
+                onClick={loadProducts}
+                className="px-5 py-2.5 bg-[#141414] dark:bg-gold-500 text-white dark:text-[#0c0c0f] text-[11px] uppercase tracking-[0.16em] font-semibold transition-colors"
+              >
+                Tentar Novamente
+              </button>
+              <a
+                href={supportUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 border border-[#141414] dark:border-dark-600 text-[#141414] dark:text-zinc-200 text-[11px] uppercase tracking-[0.16em] font-semibold"
+              >
+                Falar no WhatsApp
+              </a>
+            </div>
+          </div>
         ) : filteredProducts.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-6 sm:gap-x-5 sm:gap-y-10 pt-1">
             {filteredProducts.map((product) => (
@@ -415,7 +449,7 @@ export default function HomePage() {
           href={supportUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 w-11 h-11 sm:w-auto sm:h-auto rounded-full sm:rounded-none sm:px-4 sm:py-3 bg-[#065f46] hover:bg-[#047857] text-white text-[11px] uppercase tracking-[0.14em] font-semibold shadow-lg transition-colors"
+          className="flex items-center gap-2 px-4 py-3 bg-[#065f46] hover:bg-[#047857] text-white shadow-xl text-[11px] uppercase tracking-[0.16em] font-semibold transition-all"
           title="Atendimento pelo WhatsApp"
         >
           <MessageCircle className="w-4 h-4 fill-white" />

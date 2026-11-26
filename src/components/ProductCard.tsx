@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Product } from '@/types/product';
+import { DEFAULT_PRODUCT_IMAGE, isAdultCategory, SITE } from '@/config/site';
 import { formatCurrency, getProductWhatsAppUrl } from '@/utils/whatsapp';
 import { makeInterestKey, useInterestList } from '@/context/InterestListContext';
 import { useToast } from '@/context/ToastContext';
@@ -23,6 +24,9 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
   const inList = isInList(product.id);
   const whatsappUrl = getProductWhatsAppUrl(product, defaultVariant);
   const isProntaEntrega = product.status === 'pronta_entrega';
+  const coverImage = product.images?.[0] || DEFAULT_PRODUCT_IMAGE;
+  const isAdult = isAdultCategory(product.category);
+  const isPharmacy = product.category === 'farmacia';
   const variantPrices = (product.variants || []).map((v) => v.price ?? product.price);
   const hasPriceRange = variantPrices.length > 1 && new Set(variantPrices).size > 1;
   const displayPrice = hasPriceRange
@@ -52,13 +56,22 @@ export function ProductCard({ product, onOpenModal }: ProductCardProps) {
       {/* Fotografia limpa sem corte */}
       <div className="relative w-full aspect-[3/4] bg-[#fcfbf8] dark:bg-white border border-[#ece7dc] dark:border-dark-800 overflow-hidden">
         <Image
-          src={product.images[0]}
+          src={coverImage}
           alt={product.name}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           quality={90}
           className="object-contain object-center p-2 mix-blend-multiply dark:mix-blend-normal brightness-[1.05] group-hover:scale-[1.04] transition-transform duration-700 ease-out"
         />
+
+        {(isAdult || isPharmacy) && (
+          <span
+            title={isAdult ? SITE.adultNotice : SITE.pharmacyNotice}
+            className="absolute top-2 left-2 sm:top-3 sm:left-3 px-1.5 py-0.5 text-[9px] uppercase tracking-[0.12em] font-semibold bg-[#fbf3e4]/95 text-[#92400e] border border-[#ecd9b0]"
+          >
+            {isAdult ? '+18' : 'PY · Prescrição'}
+          </span>
+        )}
 
         {/* Botão discreto de lista/opções no canto inferior direito */}
         <button

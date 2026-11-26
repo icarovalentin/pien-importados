@@ -1,11 +1,16 @@
 import { NextResponse } from 'next/server';
+import { revalidateTag, unstable_cache } from 'next/cache';
 import fs from 'fs';
 import path from 'path';
 import { Product, ProductVariant } from '@/types/product';
-import { ALL_PRODUCT_CATEGORY_IDS } from '@/config/site';
+import { ALL_PRODUCT_CATEGORY_IDS, DEFAULT_PRODUCT_IMAGE } from '@/config/site';
 import { isAdminAuthenticated, isSameOrigin } from '@/lib/auth';
+import { logServerError } from '@/lib/server-error';
 import {
+  collectProductImageUrls,
+  extractManagedStoragePath,
   getSupabaseAdmin,
+  getSupabasePublic,
   isSupabaseConfigured,
   mapProductToRow,
   mapRowToProduct,
@@ -15,29 +20,14 @@ import {
 
 const filePath = path.join(process.cwd(), 'src', 'data', 'products.json');
 const ALLOWED_CATEGORIES = new Set<string>(ALL_PRODUCT_CATEGORY_IDS);
-const DEFAULT_IMAGE =
-  'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80';
 const MAX_IMAGES = 8;
 // O catalogo importado da Victoria's Secret tem ate 55 variacoes por produto.
 const MAX_VARIANTS = 200;
 const MAX_IMAGE_URL_LENGTH = 1000;
+const MAX_JSON_BODY_BYTES = 256 * 1024; // 256 KB
 const PRICE_MIN = 0.01;
 const PRICE_MAX = 9999999999.99;
 const isProd = process.env.NODE_ENV === 'production';
-
-function logError(context: string, error: unknown) {
-  const message =
-    error instanceof Error
-      ? error.message
-      : error && typeof error === 'object' && typeof (error as { message?: unknown }).message === 'string'
-        ? (error as { message: string }).message
-        : String(error);
-  const code =
-    error && typeof error === 'object' && 'code' in error
-      ? (error as { code?: unknown }).code
-      : undefined;
-  console.error(`[${context}] ${message}${code !== undefined ? ` (code: ${String(code)})` : ''}`);
-}
 
 function getLocalProducts(): Product[] {
   try {
@@ -45,7 +35,7 @@ function getLocalProducts(): Product[] {
     const data = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(data);
   } catch (err) {
-    logError('getLocalProducts', err);
+    logServerError('getLocalProducts', err);
     return [];
   }
 }
@@ -84,43 +74,49 @@ function isSafeImageUrl(url: unknown): url is string {
   }
 }
 
-function collectProductImageUrls(
-  images?: string[] | null,
-  variants?: ProductVariant[] | null
-): string[] {
-  const urls = new Set<string>();
-  if (Array.isArray(images)) {
-    for (const u of images) {
-      if (typeof u === 'string' && u) urls.add(u);
-    }
-  }
-  if (Array.isArray(variants)) {
-    for (const v of variants) {
-      if (Array.isArray(v?.images)) {
-        for (const u of v.images) {
-          if (typeof u === 'string' && u) urls.add(u);
-        }
-      }
-    }
-  }
-  return Array.from(urls);
-}
-
-/** Remove do Supabase Storage as imagens do bucket que deixaram de ser usadas. */
-async function removeOrphanImages(urls: string[]) {
+/** Remove do Supabase Storage as imagens do bucket que não são mais usadas por nenhum produto. */
+async function removeOrphanImages(urls: string[], excludeProductId?: string) {
   if (!isSupabaseConfigured() || urls.length === 0) return;
   const supabase = getSupabaseAdmin();
   if (!supabase) return;
-  const marker = `/storage/v1/object/public/${PRODUCT_IMAGES_BUCKET}/`;
-  const paths = urls
-    .map((u) => {
-      const i = u.indexOf(marker);
-      return i >= 0 ? decodeURIComponent(u.slice(i + marker.length)) : null;
-    })
-    .filter((p): p is string => !!p && p.startsWith('products/'));
-  if (paths.length === 0) return;
-  const { error } = await supabase.storage.from(PRODUCT_IMAGES_BUCKET).remove(paths);
-  if (error) logError('removeOrphanImages', error);
+
+  const candidates = urls
+    .map((u) => ({ url: u, storagePath: extractManagedStoragePath(u) }))
+    .filter((item): item is { url: string; storagePath: string } => Boolean(item.storagePath));
+
+  if (candidates.length === 0) return;
+
+  let query = supabase.from('products').select('id, images, variants');
+  if (excludeProductId) {
+    query = query.neq('id', excludeProductId);
+  }
+  const { data: otherRows, error: refError } = await query;
+  if (refError) {
+    logServerError('removeOrphanImages refs', refError);
+    return;
+  }
+
+  const stillReferenced = new Set<string>();
+  for (const row of otherRows || []) {
+    for (const u of collectProductImageUrls(
+      row.images as string[] | null,
+      row.variants as ProductVariant[] | null
+    )) {
+      stillReferenced.add(u);
+    }
+  }
+
+  const pathsToDelete = Array.from(
+    new Set(
+      candidates
+        .filter((item) => !stillReferenced.has(item.url))
+        .map((item) => item.storagePath)
+    )
+  );
+
+  if (pathsToDelete.length === 0) return;
+  const { error } = await supabase.storage.from(PRODUCT_IMAGES_BUCKET).remove(pathsToDelete);
+  if (error) logServerError('removeOrphanImages', error);
 }
 
 function sanitizeString(value: unknown, fallback = '', maxLen = 500): string {
@@ -134,37 +130,6 @@ function sanitizeStringList(raw: unknown, maxItems: number, maxLen: number): str
     .filter((s: unknown): s is string => typeof s === 'string' && s.trim().length > 0)
     .map((s) => s.trim().slice(0, maxLen))
     .slice(0, maxItems);
-}
-
-function sanitizeVariants(raw: unknown): ProductVariant[] {
-  if (!Array.isArray(raw)) return [];
-  const result: ProductVariant[] = [];
-  const usedLabels = new Set<string>();
-  for (let i = 0; i < raw.length && result.length < MAX_VARIANTS; i++) {
-    const item = raw[i] as ProductVariant | null;
-    if (!item || typeof item !== 'object') continue;
-    const label = sanitizeString(item.label, '', 60);
-    if (!label || usedLabels.has(label)) continue; // o rótulo identifica a variação na sacola
-    usedLabels.add(label);
-    const rawPrice = item.price;
-    let price: number | undefined;
-    if (rawPrice !== undefined && rawPrice !== null && String(rawPrice).trim() !== '') {
-      const parsed = Number(rawPrice);
-      if (Number.isFinite(parsed) && parsed > 0) {
-        price = parsed;
-      }
-    }
-    const id = sanitizeString(item.id, `var-${i + 1}`, 60) || `var-${i + 1}`;
-    const variant: ProductVariant = { id, label, price };
-    const images = Array.isArray(item.images) ? item.images.filter(isSafeImageUrl).slice(0, 10) : [];
-    if (images.length > 0) variant.images = images;
-    const description = sanitizeString(item.description, '', 2000);
-    if (description) variant.description = description;
-    const specs = sanitizeStringList(item.specs, 20, 200);
-    if (specs.length > 0) variant.specs = specs;
-    result.push(variant);
-  }
-  return result;
 }
 
 function validatePrice(
@@ -221,48 +186,187 @@ function validateVariants(
   if (raw.length > MAX_VARIANTS) {
     return { ok: false, error: `Máximo de ${MAX_VARIANTS} variantes por produto` };
   }
-  return { ok: true, value: sanitizeVariants(raw) };
+
+  const result: ProductVariant[] = [];
+  const usedLabels = new Set<string>();
+
+  for (let i = 0; i < raw.length; i++) {
+    const item = raw[i] as Record<string, unknown> | null;
+    if (!item || typeof item !== 'object' || Array.isArray(item)) continue;
+    const label = sanitizeString(item.label, '', 60);
+    if (!label) {
+      return { ok: false, error: `A variação #${i + 1} precisa ter um nome.` };
+    }
+    if (usedLabels.has(label)) {
+      return { ok: false, error: `Variação duplicada: "${label}".` };
+    }
+    usedLabels.add(label);
+
+    let price: number | undefined;
+    if (item.price !== undefined && item.price !== null && String(item.price).trim() !== '') {
+      const parsed = typeof item.price === 'number' ? item.price : Number(item.price);
+      const priceCheck = validatePrice(parsed, `Preço da variação "${label}"`);
+      if (!priceCheck.ok) {
+        return { ok: false, error: priceCheck.error };
+      }
+      price = priceCheck.value;
+    }
+
+    const id = sanitizeString(item.id, `var-${i + 1}`, 60) || `var-${i + 1}`;
+    const variant: ProductVariant = { id, label, price };
+    const images = Array.isArray(item.images) ? item.images.filter(isSafeImageUrl).slice(0, 10) : [];
+    if (images.length > 0) variant.images = images;
+    const description = sanitizeString(item.description, '', 2000);
+    if (description) variant.description = description;
+    const specs = sanitizeStringList(item.specs, 20, 200);
+    if (specs.length > 0) variant.specs = specs;
+    result.push(variant);
+  }
+
+  return { ok: true, value: result };
 }
 
-// GET /api/products (público — leitura da vitrine)
-export async function GET() {
+async function readBoundedJson(
+  req: Request
+): Promise<{ ok: true; data: Record<string, unknown> } | { ok: false; response: NextResponse }> {
+  const contentType = req.headers.get('content-type');
+  if (!contentType || contentType.split(';')[0].trim().toLowerCase() !== 'application/json') {
+    return {
+      ok: false,
+      response: NextResponse.json(
+        { error: 'Content-Type deve ser application/json' },
+        { status: 415 }
+      ),
+    };
+  }
+
+  const contentLengthHeader = req.headers.get('content-length');
+  if (contentLengthHeader !== null) {
+    const len = Number(contentLengthHeader);
+    if (!Number.isFinite(len) || len < 0) {
+      return {
+        ok: false,
+        response: NextResponse.json({ error: 'Content-Length inválido' }, { status: 400 }),
+      };
+    }
+    if (len > MAX_JSON_BODY_BYTES) {
+      return {
+        ok: false,
+        response: NextResponse.json({ error: 'Corpo da requisição muito grande' }, { status: 413 }),
+      };
+    }
+  }
+
+  const rawText = await req.text().catch(() => null);
+  if (rawText === null) {
+    return {
+      ok: false,
+      response: NextResponse.json({ error: 'Requisição inválida' }, { status: 400 }),
+    };
+  }
+  if (Buffer.byteLength(rawText, 'utf8') > MAX_JSON_BODY_BYTES) {
+    return {
+      ok: false,
+      response: NextResponse.json({ error: 'Corpo da requisição muito grande' }, { status: 413 }),
+    };
+  }
+
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(rawText);
+  } catch {
+    return {
+      ok: false,
+      response: NextResponse.json({ error: 'JSON inválido' }, { status: 400 }),
+    };
+  }
+
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    return {
+      ok: false,
+      response: NextResponse.json({ error: 'Requisição inválida' }, { status: 400 }),
+    };
+  }
+
+  return { ok: true, data: parsed as Record<string, unknown> };
+}
+
+async function fetchCatalogFromSupabase(): Promise<Product[]> {
+  const supabase = getSupabasePublic();
+  if (!supabase) {
+    throw new Error('Cliente Supabase indisponível');
+  }
+
+  const { data, error } = await supabase
+    .from('products')
+    .select('*')
+    .order('is_featured', { ascending: false })
+    .order('created_at', { ascending: false });
+
+  if (error || !Array.isArray(data)) {
+    throw error ?? new Error('Resposta inválida do Supabase');
+  }
+
+  return (data as ProductRow[]).map(mapRowToProduct);
+}
+
+const getCachedSupabaseCatalog = unstable_cache(
+  fetchCatalogFromSupabase,
+  ['public-catalog-products'],
+  { tags: ['products'], revalidate: 300 }
+);
+
+function invalidateCatalogCache() {
+  try {
+    revalidateTag('products', { expire: 0 });
+  } catch (err) {
+    logServerError('revalidateTag(products)', err);
+  }
+}
+
+// GET /api/products (público — leitura cacheada com RLS; ?fresh=1 para admin autenticado)
+export async function GET(req: Request) {
   let supabaseFailure: unknown = null;
+  const { searchParams } = new URL(req.url);
+  const wantsFresh = searchParams.get('fresh') === '1';
+  const bypassCache = wantsFresh && (await isAdminAuthenticated());
 
   if (isSupabaseConfigured()) {
-    const supabase = getSupabaseAdmin();
-    if (supabase) {
-      const { data, error } = await supabase
-        .from('products')
-        .select('*')
-        .order('is_featured', { ascending: false })
-        .order('created_at', { ascending: false });
+    try {
+      const products = bypassCache
+        ? await fetchCatalogFromSupabase()
+        : await getCachedSupabaseCatalog();
 
-      if (!error && Array.isArray(data)) {
-        return NextResponse.json((data as ProductRow[]).map(mapRowToProduct));
-      }
-
-      supabaseFailure = error ?? new Error('Resposta inválida do Supabase');
-    } else {
-      supabaseFailure = new Error('Cliente Supabase indisponível');
+      return NextResponse.json(products, {
+        headers: {
+          'Cache-Control': bypassCache
+            ? 'no-store'
+            : 'public, s-maxage=30, stale-while-revalidate=120',
+        },
+      });
+    } catch (err) {
+      supabaseFailure = err;
     }
   }
 
   if (isProd) {
-    logError(
+    logServerError(
       'GET /api/products',
       supabaseFailure ?? new Error('Supabase não configurado em produção')
     );
     return NextResponse.json(
       { error: 'Catálogo indisponível' },
-      { status: 503, headers: { 'X-Catalogo': 'fallback' } }
+      { status: 503, headers: { 'Cache-Control': 'no-store', 'X-Catalogo': 'fallback' } }
     );
   }
 
   if (supabaseFailure) {
-    logError('GET /api/products (fallback local)', supabaseFailure);
+    logServerError('GET /api/products (fallback local)', supabaseFailure);
   }
 
-  return NextResponse.json(getLocalProducts());
+  return NextResponse.json(getLocalProducts(), {
+    headers: { 'Cache-Control': 'no-store' },
+  });
 }
 
 // POST /api/products (restrito ao admin autenticado)
@@ -271,15 +375,14 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'Origem inválida' }, { status: 403 });
   }
 
-  if (!isAdminAuthenticated()) {
+  if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
   }
 
   try {
-    const body = await req.json().catch(() => null);
-    if (!body || typeof body !== 'object' || Array.isArray(body)) {
-      return NextResponse.json({ error: 'Requisição inválida' }, { status: 400 });
-    }
+    const parsedReq = await readBoundedJson(req);
+    if (!parsedReq.ok) return parsedReq.response;
+    const body = parsedReq.data;
 
     const priceResult = validatePrice(body.price, 'Preço');
     if (!priceResult.ok) {
@@ -292,6 +395,12 @@ export async function POST(req: Request) {
       const originalPriceResult = validatePrice(body.originalPrice, 'Preço original');
       if (!originalPriceResult.ok) {
         return NextResponse.json({ error: originalPriceResult.error }, { status: 400 });
+      }
+      if (originalPriceResult.value <= price) {
+        return NextResponse.json(
+          { error: 'Preço original ("De") deve ser maior que o preço atual de venda.' },
+          { status: 400 }
+        );
       }
       originalPrice = originalPriceResult.value;
     }
@@ -334,7 +443,7 @@ export async function POST(req: Request) {
       id: `prod-${Date.now()}`,
       name: sanitizeString(body.name, 'Produto sem nome', 160),
       brand: sanitizeString(body.brand, 'Importado', 80),
-      category,
+      category: category as Product['category'],
       categoryLabel: sanitizeString(body.categoryLabel, 'Diversos', 80),
       price,
       originalPrice,
@@ -344,14 +453,9 @@ export async function POST(req: Request) {
         status === 'encomenda' ? 'Sob Encomenda (10 a 15 dias)' : 'Envio Imediato (em até 24h)',
         120
       ),
-      images: validImages.length > 0 ? validImages : [DEFAULT_IMAGE],
+      images: validImages.length > 0 ? validImages : [DEFAULT_PRODUCT_IMAGE],
       description: sanitizeString(body.description, '', 2000),
-      specs: Array.isArray(body.specs)
-        ? body.specs
-            .filter((s: unknown): s is string => typeof s === 'string' && s.trim().length > 0)
-            .map((s: string) => s.trim().slice(0, 200))
-            .slice(0, 20)
-        : [],
+      specs: sanitizeStringList(body.specs, 20, 200),
       isFeatured,
       batchCodeInfo: sanitizeString(
         body.batchCodeInfo,
@@ -371,13 +475,14 @@ export async function POST(req: Request) {
           .single();
 
         if (error) {
-          logError('POST /api/products INSERT', error);
+          logServerError('POST /api/products INSERT', error);
           return NextResponse.json(
             { error: 'Falha ao salvar produto no banco.' },
             { status: isProd ? 503 : 500 }
           );
         }
 
+        invalidateCatalogCache();
         return NextResponse.json({
           success: true,
           product: mapRowToProduct(data as ProductRow),
@@ -386,7 +491,7 @@ export async function POST(req: Request) {
     }
 
     if (isProd) {
-      logError('POST /api/products', new Error('Supabase não configurado em produção'));
+      logServerError('POST /api/products', new Error('Supabase não configurado em produção'));
       return NextResponse.json({ error: 'Banco não configurado' }, { status: 503 });
     }
 
@@ -396,7 +501,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true, product: newProduct });
   } catch (error) {
-    logError('POST /api/products', error);
+    logServerError('POST /api/products', error);
     return NextResponse.json({ error: 'Falha ao salvar produto' }, { status: 500 });
   }
 }
@@ -407,15 +512,14 @@ export async function PUT(req: Request) {
     return NextResponse.json({ error: 'Origem inválida' }, { status: 403 });
   }
 
-  if (!isAdminAuthenticated()) {
+  if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
   }
 
   try {
-    const body = await req.json().catch(() => null);
-    if (!body || typeof body !== 'object' || Array.isArray(body)) {
-      return NextResponse.json({ error: 'Requisição inválida' }, { status: 400 });
-    }
+    const parsedReq = await readBoundedJson(req);
+    if (!parsedReq.ok) return parsedReq.response;
+    const body = parsedReq.data;
 
     const id = sanitizeString(body.id, '', 80);
     if (!id) {
@@ -429,7 +533,7 @@ export async function PUT(req: Request) {
       const supabase = getSupabaseAdmin();
       if (!supabase) {
         if (isProd) {
-          logError('PUT /api/products', new Error('Cliente Supabase indisponível'));
+          logServerError('PUT /api/products', new Error('Cliente Supabase indisponível'));
           return NextResponse.json({ error: 'Banco indisponível' }, { status: 503 });
         }
         localProducts = getLocalProducts();
@@ -442,7 +546,7 @@ export async function PUT(req: Request) {
           .maybeSingle();
 
         if (error) {
-          logError('PUT /api/products SELECT', error);
+          logServerError('PUT /api/products SELECT', error);
           return NextResponse.json(
             { error: 'Falha ao consultar produto' },
             { status: isProd ? 503 : 500 }
@@ -481,6 +585,17 @@ export async function PUT(req: Request) {
       }
     }
 
+    if (
+      (body.price !== undefined || body.originalPrice !== undefined) &&
+      nextOriginalPrice !== undefined &&
+      nextOriginalPrice <= nextPrice
+    ) {
+      return NextResponse.json(
+        { error: 'Preço original ("De") deve ser maior que o preço atual de venda.' },
+        { status: 400 }
+      );
+    }
+
     let nextIsFeatured = Boolean(current.isFeatured);
     if (body.isFeatured !== undefined) {
       const featuredResult = validateBoolean(body.isFeatured, 'isFeatured');
@@ -514,7 +629,7 @@ export async function PUT(req: Request) {
       brand: body.brand !== undefined ? sanitizeString(body.brand, current.brand, 80) : current.brand,
       category:
         typeof body.category === 'string' && ALLOWED_CATEGORIES.has(body.category)
-          ? body.category
+          ? (body.category as Product['category'])
           : current.category,
       categoryLabel:
         body.categoryLabel !== undefined
@@ -535,12 +650,7 @@ export async function PUT(req: Request) {
         body.description !== undefined
           ? sanitizeString(body.description, '', 2000)
           : current.description,
-      specs: Array.isArray(body.specs)
-        ? body.specs
-            .filter((s: unknown): s is string => typeof s === 'string' && s.trim().length > 0)
-            .map((s: string) => s.trim().slice(0, 200))
-            .slice(0, 20)
-        : current.specs,
+      specs: Array.isArray(body.specs) ? sanitizeStringList(body.specs, 20, 200) : current.specs,
       batchCodeInfo:
         body.batchCodeInfo !== undefined
           ? sanitizeString(body.batchCodeInfo, '', 300)
@@ -561,7 +671,7 @@ export async function PUT(req: Request) {
           .single();
 
         if (error) {
-          logError('PUT /api/products UPDATE', error);
+          logServerError('PUT /api/products UPDATE', error);
           return NextResponse.json(
             { error: 'Falha ao atualizar produto' },
             { status: isProd ? 503 : 500 }
@@ -573,8 +683,9 @@ export async function PUT(req: Request) {
           collectProductImageUrls(updatedProduct.images, updatedProduct.variants)
         );
         const removed = prevUrls.filter((u) => !nextUrls.has(u));
-        await removeOrphanImages(removed);
+        await removeOrphanImages(removed, id);
 
+        invalidateCatalogCache();
         return NextResponse.json({
           success: true,
           product: mapRowToProduct(data as ProductRow),
@@ -583,7 +694,7 @@ export async function PUT(req: Request) {
     }
 
     if (isProd) {
-      logError('PUT /api/products', new Error('Supabase não configurado em produção'));
+      logServerError('PUT /api/products', new Error('Supabase não configurado em produção'));
       return NextResponse.json({ error: 'Banco não configurado' }, { status: 503 });
     }
 
@@ -593,7 +704,7 @@ export async function PUT(req: Request) {
 
     return NextResponse.json({ success: true, product: updatedProduct });
   } catch (error) {
-    logError('PUT /api/products', error);
+    logServerError('PUT /api/products', error);
     return NextResponse.json({ error: 'Falha ao atualizar produto' }, { status: 500 });
   }
 }
@@ -604,7 +715,7 @@ export async function DELETE(req: Request) {
     return NextResponse.json({ error: 'Origem inválida' }, { status: 403 });
   }
 
-  if (!isAdminAuthenticated()) {
+  if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
   }
 
@@ -620,7 +731,7 @@ export async function DELETE(req: Request) {
       const supabase = getSupabaseAdmin();
       if (!supabase) {
         if (isProd) {
-          logError('DELETE /api/products', new Error('Cliente Supabase indisponível'));
+          logServerError('DELETE /api/products', new Error('Cliente Supabase indisponível'));
           return NextResponse.json({ error: 'Banco indisponível' }, { status: 503 });
         }
       } else {
@@ -631,7 +742,7 @@ export async function DELETE(req: Request) {
           .maybeSingle();
 
         if (existingError) {
-          logError('DELETE /api/products SELECT', existingError);
+          logServerError('DELETE /api/products SELECT', existingError);
         }
 
         const { data, error } = await supabase
@@ -641,7 +752,7 @@ export async function DELETE(req: Request) {
           .select('id');
 
         if (error) {
-          logError('DELETE /api/products', error);
+          logServerError('DELETE /api/products', error);
           return NextResponse.json(
             { error: 'Falha ao excluir produto' },
             { status: isProd ? 503 : 500 }
@@ -656,14 +767,16 @@ export async function DELETE(req: Request) {
           collectProductImageUrls(
             existing?.images as string[] | null,
             existing?.variants as ProductVariant[] | null
-          )
+          ),
+          id
         );
+        invalidateCatalogCache();
         return NextResponse.json({ success: true, message: 'Produto removido com sucesso' });
       }
     }
 
     if (isProd) {
-      logError('DELETE /api/products', new Error('Supabase não configurado em produção'));
+      logServerError('DELETE /api/products', new Error('Supabase não configurado em produção'));
       return NextResponse.json({ error: 'Banco não configurado' }, { status: 503 });
     }
 
@@ -677,7 +790,7 @@ export async function DELETE(req: Request) {
     saveLocalProducts(updated);
     return NextResponse.json({ success: true, message: 'Produto removido com sucesso' });
   } catch (error) {
-    logError('DELETE /api/products', error);
+    logServerError('DELETE /api/products', error);
     return NextResponse.json({ error: 'Falha ao excluir produto' }, { status: 500 });
   }
 }

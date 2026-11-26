@@ -81,9 +81,9 @@ Pelo painel `/admin` (login com `ADMIN_PASSWORD`) você cadastra, edita e remove
 2. Conecte o repositório ou suba a pasta pelo terminal com `npx vercel`.
 3. Pronto! Seu catálogo estará no ar com link próprio para colocar na bio do Instagram e compartilhar no WhatsApp.
 
-### 🔐 Variáveis de ambiente (obrigatórias em produção)
+### 🔐 Variáveis de ambiente e banco em produção
 
-Veja `.env.example`. Defina na Vercel: `ADMIN_PASSWORD`, `ADMIN_SESSION_SECRET` (mín. 32 caracteres, gere com `openssl rand -base64 48`), `NEXT_PUBLIC_SUPABASE_URL` e `SUPABASE_SERVICE_ROLE_KEY`. Sem as duas primeiras o login do admin retorna 503. Recomendado: crie um banco gratuito no [Upstash](https://upstash.com) e defina `UPSTASH_REDIS_REST_URL` e `UPSTASH_REDIS_REST_TOKEN` para o limite de tentativas de login valer entre todas as instâncias da Vercel. O deploy é automático: cada merge no `main` publica o site na Vercel. O painel não tem mais link no site: acesse digitando `/admin` na URL.
+Veja `.env.example`. Defina na Vercel: `ADMIN_PASSWORD`, `ADMIN_SESSION_SECRET` (mín. 32 caracteres, gere com `openssl rand -base64 48`), `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` (usada na leitura pública respeitando o RLS) e `SUPABASE_SERVICE_ROLE_KEY` (exclusiva do servidor). Para ativar o limite persistente de tentativas de login e revogação de sessão direto no Supabase, execute `supabase/security-hardening.sql` no SQL Editor do Supabase (ou configure `UPSTASH_REDIS_REST_URL` e `UPSTASH_REDIS_REST_TOKEN`). As fotos enviadas pelo `/admin` são otimizadas para WebP sem metadados EXIF/GPS. O deploy é automático: cada push no `main` publica o site na Vercel. O painel não tem link na vitrine: acesse digitando `/admin` na URL.
 
 ---
 

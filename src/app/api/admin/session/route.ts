@@ -4,6 +4,7 @@ import {
   getSessionCookieOptions,
   isAdminAuthenticated,
   isSameOrigin,
+  revokeCurrentSession,
 } from '@/lib/auth';
 
 export const dynamic = 'force-dynamic';
@@ -15,13 +16,15 @@ function jsonNoStore(body: unknown, status = 200) {
 }
 
 export async function GET() {
-  return jsonNoStore({ authenticated: isAdminAuthenticated() });
+  return jsonNoStore({ authenticated: await isAdminAuthenticated() });
 }
 
 export async function DELETE(req: Request) {
   if (!isSameOrigin(req)) {
     return jsonNoStore({ error: 'Origem inválida' }, 403);
   }
+
+  await revokeCurrentSession();
 
   const response = jsonNoStore({ success: true });
   response.cookies.set(ADMIN_COOKIE_NAME, '', getSessionCookieOptions(0));

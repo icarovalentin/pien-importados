@@ -17,8 +17,22 @@ const playfair = Playfair_Display({
   display: 'swap',
 });
 
+function resolveMetadataBase(): URL {
+  const raw =
+    process.env.NEXT_PUBLIC_SITE_URL?.trim() ||
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : 'https://pien-importados.vercel.app');
+  try {
+    return new URL(raw);
+  } catch {
+    return new URL('https://pien-importados.vercel.app');
+  }
+}
+
 export const metadata: Metadata = {
-  title: "Pien Importados | Perfumaria, Eletrônicos & Smartphones Originais",
+  metadataBase: resolveMetadataBase(),
+  title: 'Pien Importados | Perfumaria, Eletrônicos & Smartphones Originais',
   description:
     "Catálogo oficial da Pien Importados. Perfumes importados, linha Victoria's Secret, smartphones, caixas de som JBL e acessórios tech à pronta-entrega e sob encomenda.",
   keywords: [
@@ -39,13 +53,23 @@ export const metadata: Metadata = {
   },
 };
 
+const themeInitScript =
+  "(function(){try{if(localStorage.getItem('pien_theme_v2')==='dark'){document.documentElement.classList.add('dark');}}catch(e){}})();";
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${playfair.variable}`}>
+    <html
+      lang="pt-BR"
+      suppressHydrationWarning
+      className={`${inter.variable} ${playfair.variable}`}
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="antialiased min-h-screen font-sans">
         <ThemeProvider>
           <ToastProvider>
